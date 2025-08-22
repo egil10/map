@@ -1308,6 +1308,7 @@ class QuizGame {
             // Process data and collect values for color scaling
             data.data.forEach(item => {
                 const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                console.log(`Mapping: "${item.country}" -> "${mappedCountryName}"`);
                 countries[mappedCountryName] = {
                     value: item.exports,
                     unit: 'million USD'
