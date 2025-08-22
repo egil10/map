@@ -1946,15 +1946,25 @@ class QuizGame {
         guessInput.value = '';
         guessInput.focus();
         
-        // Select random quiz
+        // Select random quiz with better randomization
         const quizIds = Object.keys(this.quizData.quizzes);
         if (quizIds.length === 0) {
             console.error('No quizzes available');
             return;
         }
         
-        const randomQuizId = quizIds[Math.floor(Math.random() * quizIds.length)];
+        // Use Fisher-Yates shuffle for better randomization
+        const shuffledQuizIds = [...quizIds];
+        for (let i = shuffledQuizIds.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledQuizIds[i], shuffledQuizIds[j]] = [shuffledQuizIds[j], shuffledQuizIds[i]];
+        }
+        
+        const randomQuizId = shuffledQuizIds[0];
         this.currentQuiz = this.quizData.quizzes[randomQuizId];
+        
+        // Apply random color variations to the quiz
+        this.applyRandomColorVariations();
         
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
@@ -1966,6 +1976,55 @@ class QuizGame {
         } else {
             console.error('Failed to start new quiz');
         }
+    }
+    
+    applyRandomColorVariations() {
+        if (!this.currentQuiz || !this.currentQuiz.countries) return;
+        
+        // Define multiple color schemes for variety
+        const colorSchemes = [
+            { minColor: '#e8f5e8', maxColor: '#2e7d32' }, // Green
+            { minColor: '#e3f2fd', maxColor: '#1565c0' }, // Blue
+            { minColor: '#fff3e0', maxColor: '#e65100' }, // Orange
+            { minColor: '#f3e5f5', maxColor: '#7b1fa2' }, // Purple
+            { minColor: '#ffebee', maxColor: '#c62828' }, // Red
+            { minColor: '#fff8e1', maxColor: '#f57f17' }, // Gold
+            { minColor: '#e0f7fa', maxColor: '#00838f' }, // Teal
+            { minColor: '#fce4ec', maxColor: '#c2185b' }, // Pink
+            { minColor: '#eceff1', maxColor: '#546e7a' }, // Gray
+            { minColor: '#e8f5e8', maxColor: '#1b5e20' }, // Dark Green
+            { minColor: '#e1f5fe', maxColor: '#0277bd' }, // Light Blue
+            { minColor: '#fff8e1', maxColor: '#f9a825' }  // Amber
+        ];
+        
+        // Randomly select a color scheme
+        const selectedScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+        
+        // Get all values for color scaling
+        const values = Object.values(this.currentQuiz.countries).map(country => country.value).filter(val => !isNaN(val));
+        
+        if (values.length === 0) return;
+        
+        // Calculate color scale
+        const maxValue = Math.max(...values);
+        const minValue = Math.min(...values);
+        
+        // Apply colors based on values with selected scheme
+        Object.keys(this.currentQuiz.countries).forEach(country => {
+            const value = this.currentQuiz.countries[country].value;
+            if (!isNaN(value)) {
+                const ratio = (value - minValue) / (maxValue - minValue);
+                this.currentQuiz.countries[country].color = this.getColorForRatio(ratio, selectedScheme.minColor, selectedScheme.maxColor);
+            }
+        });
+        
+        // Update the quiz's color scheme
+        this.currentQuiz.colorScheme = {
+            type: 'gradient',
+            minColor: selectedScheme.minColor,
+            maxColor: selectedScheme.maxColor,
+            defaultColor: '#ffffff'
+        };
     }
     
     transformToCheckIcon() {

@@ -196,6 +196,69 @@ class WorldMap {
         return String(value);
     }
     
+    roundValueForLegend(value, unit) {
+        if (value === null || value === undefined || isNaN(value)) {
+            return 0;
+        }
+        
+        let numValue = value;
+        if (typeof value === 'string') {
+            numValue = parseFloat(value);
+            if (isNaN(numValue)) {
+                return 0;
+            }
+        }
+        
+        // Round based on the magnitude and unit type
+        if (unit === '%' || unit === 'HDI score') {
+            // For percentages and scores, round to nearest whole number
+            return Math.round(numValue);
+        } else if (unit === 'years' || unit === 'cm' || unit === 'laureates' || unit === 'personnel' || unit === 'billionaires' || unit === 'islands' || unit === 'phones/100' || unit === 'neighbours') {
+            // For counts and measurements, round to nearest whole number
+            return Math.round(numValue);
+        } else if (unit === '°C') {
+            // For temperatures, round to nearest whole number
+            return Math.round(numValue);
+        } else if (unit === 'm²/person') {
+            // For area per person, round to nearest whole number
+            return Math.round(numValue);
+        } else if (unit === 'people/km²') {
+            // For density, round to nearest whole number
+            return Math.round(numValue);
+        } else if (unit === 'million USD' || unit === 'USD' || unit === 'USD rate') {
+            // For currency values, round to significant figures
+            if (numValue >= 1000000) {
+                return Math.round(numValue / 100000) * 100000; // Round to nearest 100K
+            } else if (numValue >= 10000) {
+                return Math.round(numValue / 1000) * 1000; // Round to nearest 1K
+            } else if (numValue >= 100) {
+                return Math.round(numValue / 10) * 10; // Round to nearest 10
+            } else {
+                return Math.round(numValue);
+            }
+        } else if (unit === 'km²') {
+            // For land area, round to significant figures
+            if (numValue >= 1000000) {
+                return Math.round(numValue / 100000) * 100000; // Round to nearest 100K km²
+            } else if (numValue >= 10000) {
+                return Math.round(numValue / 1000) * 1000; // Round to nearest 1K km²
+            } else {
+                return Math.round(numValue);
+            }
+        } else {
+            // Default rounding based on magnitude
+            if (numValue >= 1000000) {
+                return Math.round(numValue / 100000) * 100000;
+            } else if (numValue >= 10000) {
+                return Math.round(numValue / 1000) * 1000;
+            } else if (numValue >= 100) {
+                return Math.round(numValue / 10) * 10;
+            } else {
+                return Math.round(numValue);
+            }
+        }
+    }
+    
     createLegend(quiz) {
         // Remove existing legend
         if (this.legend) {
@@ -224,14 +287,18 @@ class WorldMap {
         
         console.log('Legend values:', { minValue, maxValue, unit, totalValues: values.length, validValues: validValues.length });
         
+        // Round the bounds to prevent spoilers
+        const roundedMinValue = this.roundValueForLegend(minValue, unit);
+        const roundedMaxValue = this.roundValueForLegend(maxValue, unit);
+        
         // Create legend HTML
         const legendHtml = `
             <div class="legend">
                 <div class="legend-gradient">
                     <div class="gradient-bar"></div>
                     <div class="gradient-labels">
-                        <span class="min-label">${this.formatValue(minValue, unit)}</span>
-                        <span class="max-label">${this.formatValue(maxValue, unit)}</span>
+                        <span class="min-label">${this.formatValue(roundedMinValue, unit)}</span>
+                        <span class="max-label">${this.formatValue(roundedMaxValue, unit)}</span>
                     </div>
                 </div>
             </div>
