@@ -163,6 +163,25 @@ class WorldMap {
     }
     
     formatValue(value, unit) {
+        // Debug logging
+        console.log('formatValue called with:', { value, unit, type: typeof value });
+        
+        // Handle null, undefined, or NaN values
+        if (value === null || value === undefined || isNaN(value)) {
+            console.warn('Invalid value detected:', value);
+            return 'N/A';
+        }
+        
+        // Convert to number if it's a string
+        if (typeof value === 'string') {
+            const numValue = parseFloat(value);
+            if (isNaN(numValue)) {
+                console.warn('Cannot parse string value to number:', value);
+                return value; // Return original string if it can't be parsed
+            }
+            value = numValue;
+        }
+        
         if (typeof value === 'number') {
             if (value >= 1000000) {
                 return (value / 1000000).toFixed(1) + 'M';
@@ -172,7 +191,9 @@ class WorldMap {
                 return value.toFixed(1);
             }
         }
-        return value;
+        
+        // Fallback for other types
+        return String(value);
     }
     
     createLegend(quiz) {
@@ -183,9 +204,25 @@ class WorldMap {
         
         // Calculate min and max values
         const values = Object.values(quiz.countries).map(country => country.value);
-        const minValue = Math.min(...values);
-        const maxValue = Math.max(...values);
+        
+        // Filter out invalid values
+        const validValues = values.filter(value => 
+            value !== null && 
+            value !== undefined && 
+            !isNaN(value) && 
+            typeof value === 'number'
+        );
+        
+        if (validValues.length === 0) {
+            console.error('No valid numeric values found for legend');
+            return;
+        }
+        
+        const minValue = Math.min(...validValues);
+        const maxValue = Math.max(...validValues);
         const unit = Object.values(quiz.countries)[0]?.unit || '';
+        
+        console.log('Legend values:', { minValue, maxValue, unit, totalValues: values.length, validValues: validValues.length });
         
         // Create legend HTML
         const legendHtml = `
@@ -226,12 +263,31 @@ class WorldMap {
     
     getColorForValue(value, quiz) {
         const values = Object.values(quiz.countries).map(country => country.value);
-        const minValue = Math.min(...values);
-        const maxValue = Math.max(...values);
+        
+        // Filter out invalid values
+        const validValues = values.filter(val => 
+            val !== null && 
+            val !== undefined && 
+            !isNaN(val) && 
+            typeof val === 'number'
+        );
+        
+        if (validValues.length === 0) {
+            console.error('No valid numeric values found for color calculation');
+            return quiz.colorScheme?.defaultColor || '#ffffff';
+        }
+        
+        const minValue = Math.min(...validValues);
+        const maxValue = Math.max(...validValues);
+        
+        // Handle case where min and max are the same
+        if (minValue === maxValue) {
+            return quiz.colorScheme?.minColor || '#ffffff';
+        }
         
         const ratio = (value - minValue) / (maxValue - minValue);
-        const minColor = quiz.colorScheme.minColor;
-        const maxColor = quiz.colorScheme.maxColor;
+        const minColor = quiz.colorScheme?.minColor || '#ffffff';
+        const maxColor = quiz.colorScheme?.maxColor || '#ffffff';
         
         return this.interpolateColor(minColor, maxColor, ratio);
     }
