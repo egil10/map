@@ -44,11 +44,21 @@ body {
 .input-section {
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between;
     margin-bottom: 8px; /* Reduced spacing */
-    max-width: 800px; /* Increased to accommodate social links */
+    max-width: 1200px; /* Increased to accommodate separated elements */
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .guess-input {
@@ -70,6 +80,7 @@ body {
     display: flex;
     gap: 8px;
     align-items: center;
+    margin-left: auto;
 }
 
 .social-link {
