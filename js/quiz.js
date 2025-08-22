@@ -646,6 +646,9 @@ class QuizGame {
             return;
         }
         
+        // Transform send icon to check icon
+        this.transformToCheckIcon();
+        
         const isCorrect = this.checkAnswer(guess);
         
         if (isCorrect) {
@@ -656,6 +659,51 @@ class QuizGame {
         
         // Clear input
         guessInput.value = '';
+    }
+    
+    transformToCheckIcon() {
+        const submitIcon = document.getElementById('submitIcon');
+        if (submitIcon) {
+            // Remove old icon
+            submitIcon.remove();
+            
+            // Create new check icon
+            const checkIcon = document.createElement('i');
+            checkIcon.setAttribute('data-lucide', 'check');
+            checkIcon.id = 'submitIcon';
+            
+            // Add to button
+            const submitBtn = document.getElementById('submitGuess');
+            submitBtn.appendChild(checkIcon);
+            
+            // Reinitialize Lucide icons
+            lucide.createIcons();
+            
+            // Transform back to send icon after a delay
+            setTimeout(() => {
+                this.transformToSendIcon();
+            }, 2000);
+        }
+    }
+    
+    transformToSendIcon() {
+        const submitIcon = document.getElementById('submitIcon');
+        if (submitIcon) {
+            // Remove old icon
+            submitIcon.remove();
+            
+            // Create new send icon
+            const sendIcon = document.createElement('i');
+            sendIcon.setAttribute('data-lucide', 'send');
+            sendIcon.id = 'submitIcon';
+            
+            // Add to button
+            const submitBtn = document.getElementById('submitGuess');
+            submitBtn.appendChild(sendIcon);
+            
+            // Reinitialize Lucide icons
+            lucide.createIcons();
+        }
     }
     
     checkAnswer(guess) {
