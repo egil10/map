@@ -255,6 +255,16 @@ class QuizGame {
             data.data.forEach(item => {
                 if (item.country !== 'Earth' && item.country !== 'Antarctica') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    
+                    // Debug logging for United States
+                    if (item.country === 'United States') {
+                        console.log('Land Area - United States mapping:', {
+                            original: item.country,
+                            mapped: mappedCountryName,
+                            value: item.land_area_km2
+                        });
+                    }
+                    
                     countries[mappedCountryName] = {
                         value: item.land_area_km2,
                         unit: 'km²'

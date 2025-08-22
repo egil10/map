@@ -136,6 +136,15 @@ class WorldMap {
     getCountryStyle(feature) {
         const countryName = feature.properties.name;
         
+        // Debug logging for United States
+        if (countryName === 'United States of America') {
+            console.log('Map styling - United States of America:', {
+                hasQuiz: !!this.currentQuiz,
+                hasCountryData: !!(this.currentQuiz && this.currentQuiz.countries[countryName]),
+                countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null
+            });
+        }
+        
         // Default style
         let style = {
             fillColor: '#ffffff',
@@ -163,6 +172,9 @@ class WorldMap {
         this.countriesLayer.setStyle((feature) => {
             return this.getCountryStyle(feature);
         });
+        
+        // Force redraw to ensure colors appear on all repeating instances
+        this.countriesLayer.redraw();
         
         // Create legend
         this.createLegend(quiz);
