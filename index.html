@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Map</title>
+    <title>Simple World Map</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -14,10 +14,9 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>Interactive Map</h1>
+            <h1>Simple World Map</h1>
             <div class="controls">
-                <button id="addMarker" class="btn">Add Marker</button>
-                <button id="clearMarkers" class="btn">Clear All</button>
+                <button id="clearSelection" class="btn">Clear Selection</button>
             </div>
         </header>
         
@@ -25,9 +24,9 @@
             <div id="map" class="map-container"></div>
             
             <div class="sidebar">
-                <h3>Markers</h3>
-                <div id="markerList" class="marker-list">
-                    <p class="no-markers">No markers added yet</p>
+                <h3>Selected Country</h3>
+                <div id="countryInfo" class="country-info">
+                    <p class="no-selection">Click on a country to select it</p>
                 </div>
             </div>
         </main>

@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #f5f5f5;
     min-height: 100vh;
     color: #333;
 }
@@ -23,12 +23,11 @@ body {
 
 /* Header styles */
 .header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    background: white;
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +38,7 @@ body {
 .header h1 {
     color: #2c3e50;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .controls {
@@ -49,20 +48,19 @@ body {
 }
 
 .btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #3498db;
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    background: #2980b9;
+    transform: translateY(-1px);
 }
 
 .btn:active {
@@ -81,9 +79,9 @@ body {
 /* Map container */
 .map-container {
     background: white;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -95,63 +93,50 @@ body {
 
 /* Sidebar */
 .sidebar {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    background: white;
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 }
 
 .sidebar h3 {
     color: #2c3e50;
     margin-bottom: 15px;
-    font-size: 1.3rem;
-    border-bottom: 2px solid #667eea;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
 }
 
-.marker-list {
+.country-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.marker-item {
+.country-item {
     background: #f8f9fa;
     border: 1px solid #e9ecef;
-    border-radius: 8px;
-    padding: 12px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+    transition: all 0.2s ease;
 }
 
-.marker-item:hover {
-    background: #e9ecef;
-    transform: translateX(5px);
+.country-item h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.marker-item h4 {
-    color: #495057;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-}
-
-.marker-item p {
+.country-item p {
     color: #6c757d;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0;
+    line-height: 1.4;
 }
 
-.marker-item .coordinates {
-    font-family: monospace;
-    background: #e9ecef;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.75rem;
-}
-
-.no-markers {
+.no-selection {
     color: #6c757d;
     font-style: italic;
     text-align: center;
@@ -183,28 +168,36 @@ body {
     }
 }
 
-/* Leaflet customizations */
-.leaflet-popup-content-wrapper {
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+/* Leaflet customizations for simple map */
+.leaflet-container {
+    background: #f8f9fa;
 }
 
-.leaflet-popup-content {
-    margin: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Custom map style - simple and clean */
+.leaflet-tile {
+    filter: grayscale(100%) contrast(120%);
 }
 
-.leaflet-popup-tip {
-    background: white;
+/* Selected country highlight */
+.country-selected {
+    fill: #3498db !important;
+    stroke: #2980b9 !important;
+    stroke-width: 2px !important;
 }
 
-/* Animation for new markers */
-@keyframes markerPulse {
+/* Country hover effect */
+.country-hover {
+    fill: #ecf0f1 !important;
+    cursor: pointer;
+}
+
+/* Animation for selection */
+@keyframes countrySelect {
     0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    50% { transform: scale(1.02); }
     100% { transform: scale(1); }
 }
 
-.marker-pulse {
-    animation: markerPulse 0.6s ease-in-out;
+.country-selected {
+    animation: countrySelect 0.3s ease-in-out;
 }

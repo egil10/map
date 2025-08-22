@@ -1,5 +1,5 @@
-// Main application controller
-class MapApp {
+// Main application controller for Simple World Map
+class SimpleMapApp {
     constructor() {
         this.mapInstance = null;
         this.init();
@@ -10,29 +10,19 @@ class MapApp {
         document.addEventListener('DOMContentLoaded', () => {
             this.initializeMap();
             this.setupEventListeners();
-            this.updateMarkerList();
         });
     }
     
     initializeMap() {
-        // Initialize the interactive map
-        this.mapInstance = new InteractiveMap();
-        
-        // Make map instance globally available for marker list clicks
-        window.mapInstance = this.mapInstance;
+        // Initialize the simple world map
+        this.mapInstance = new SimpleWorldMap();
     }
     
     setupEventListeners() {
-        // Add Marker button
-        const addMarkerBtn = document.getElementById('addMarker');
-        addMarkerBtn.addEventListener('click', () => {
-            this.toggleAddMarkerMode();
-        });
-        
-        // Clear All Markers button
-        const clearMarkersBtn = document.getElementById('clearMarkers');
-        clearMarkersBtn.addEventListener('click', () => {
-            this.clearAllMarkers();
+        // Clear Selection button
+        const clearSelectionBtn = document.getElementById('clearSelection');
+        clearSelectionBtn.addEventListener('click', () => {
+            this.clearSelection();
         });
         
         // Keyboard shortcuts
@@ -46,55 +36,24 @@ class MapApp {
         });
     }
     
-    toggleAddMarkerMode() {
-        if (this.mapInstance.isAddingMarker) {
-            this.mapInstance.stopAddingMarker();
-        } else {
-            this.mapInstance.startAddingMarker();
-        }
-        this.mapInstance.updateUI();
-    }
-    
-    clearAllMarkers() {
-        if (this.mapInstance.markers.length === 0) {
-            this.showNotification('No markers to clear!', 'info');
-            return;
-        }
-        
-        if (confirm('Are you sure you want to clear all markers?')) {
-            this.mapInstance.clearAllMarkers();
-            this.showNotification('All markers cleared!', 'success');
+    clearSelection() {
+        if (this.mapInstance) {
+            this.mapInstance.clearSelection();
+            this.showNotification('Selection cleared!', 'info');
         }
     }
     
     handleKeyboardShortcuts(e) {
-        // Escape key to cancel adding marker
-        if (e.key === 'Escape' && this.mapInstance.isAddingMarker) {
-            this.mapInstance.stopAddingMarker();
-            this.mapInstance.updateUI();
-        }
-        
-        // 'A' key to toggle add marker mode
-        if (e.key === 'a' || e.key === 'A') {
-            e.preventDefault();
-            this.toggleAddMarkerMode();
-        }
-        
-        // 'C' key to clear all markers
+        // 'C' key to clear selection
         if (e.key === 'c' || e.key === 'C') {
             e.preventDefault();
-            this.clearAllMarkers();
+            this.clearSelection();
         }
-    }
-    
-    updateMarkerList() {
-        // Update marker list initially
-        this.mapInstance.updateMarkerList();
         
-        // Set up periodic updates (in case markers are added programmatically)
-        setInterval(() => {
-            this.mapInstance.updateMarkerList();
-        }, 1000);
+        // 'ESC' key to clear selection
+        if (e.key === 'Escape') {
+            this.clearSelection();
+        }
     }
     
     showNotification(message, type = 'info') {
@@ -109,7 +68,7 @@ class MapApp {
             top: '20px',
             right: '20px',
             padding: '12px 20px',
-            borderRadius: '8px',
+            borderRadius: '6px',
             color: 'white',
             fontWeight: '600',
             zIndex: '10000',
@@ -143,73 +102,14 @@ class MapApp {
             }, 300);
         }, 3000);
     }
-    
-    // Export map data
-    exportMapData() {
-        const mapData = {
-            markers: this.mapInstance.markers.map(m => ({
-                lat: m.latlng.lat,
-                lng: m.latlng.lng,
-                name: m.name,
-                description: m.description,
-                timestamp: m.timestamp
-            })),
-            center: this.mapInstance.getCenter(),
-            zoom: this.mapInstance.getZoom(),
-            exportDate: new Date().toISOString()
-        };
-        
-        const dataStr = JSON.stringify(mapData, null, 2);
-        const dataBlob = new Blob([dataStr], { type: 'application/json' });
-        
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(dataBlob);
-        link.download = `map-data-${new Date().toISOString().split('T')[0]}.json`;
-        link.click();
-    }
-    
-    // Import map data
-    importMapData(file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            try {
-                const mapData = JSON.parse(e.target.result);
-                
-                // Clear existing markers
-                this.mapInstance.clearAllMarkers();
-                
-                // Add imported markers
-                if (mapData.markers && Array.isArray(mapData.markers)) {
-                    mapData.markers.forEach(marker => {
-                        this.mapInstance.addMarkerAtPosition(
-                            { lat: marker.lat, lng: marker.lng },
-                            marker.name,
-                            marker.description
-                        );
-                    });
-                }
-                
-                // Set map view if available
-                if (mapData.center && mapData.zoom) {
-                    this.mapInstance.map.setView(mapData.center, mapData.zoom);
-                }
-                
-                this.showNotification(`Imported ${mapData.markers?.length || 0} markers!`, 'success');
-            } catch (error) {
-                this.showNotification('Error importing map data!', 'error');
-                console.error('Import error:', error);
-            }
-        };
-        reader.readAsText(file);
-    }
 }
 
 // Initialize the application when the script loads
-const app = new MapApp();
+const app = new SimpleMapApp();
 
 // Add some helpful console messages
-console.log('🗺️ Interactive Map loaded successfully!');
+console.log('🗺️ Simple World Map loaded successfully!');
 console.log('📝 Available keyboard shortcuts:');
-console.log('   A - Toggle add marker mode');
-console.log('   C - Clear all markers');
-console.log('   ESC - Cancel adding marker');
+console.log('   C - Clear selection');
+console.log('   ESC - Clear selection');
+console.log('   Click on any country to select it');
