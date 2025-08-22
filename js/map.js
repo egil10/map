@@ -180,7 +180,16 @@ class WorldMap {
         });
         
         // Force redraw to ensure colors appear on all repeating instances
-        this.countriesLayer.redraw();
+        // For GeoJSON layers, we need to refresh the map to see changes on repeating instances
+        if (this.map && typeof this.map.invalidateSize === 'function') {
+            this.map.invalidateSize();
+        }
+        
+        // Alternative approach: force a style refresh by temporarily removing and re-adding the layer
+        if (this.countriesLayer) {
+            this.map.removeLayer(this.countriesLayer);
+            this.map.addLayer(this.countriesLayer);
+        }
         
         // Create legend
         this.createLegend(quiz);
