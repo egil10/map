@@ -94,6 +94,61 @@ class QuizGame {
                 console.log('🏭 Added GDP by Country quiz');
             }
             
+            // Convert new data files
+            const landNeighboursQuiz = await this.convertLandNeighboursData();
+            if (landNeighboursQuiz) {
+                this.quizData.quizzes[landNeighboursQuiz.id] = landNeighboursQuiz;
+                console.log('🌍 Added Land Neighbours quiz');
+            }
+            
+            const averageHeightQuiz = await this.convertAverageHeightData();
+            if (averageHeightQuiz) {
+                this.quizData.quizzes[averageHeightQuiz.id] = averageHeightQuiz;
+                console.log('📏 Added Average Height quiz');
+            }
+            
+            const literacyRateQuiz = await this.convertLiteracyRateData();
+            if (literacyRateQuiz) {
+                this.quizData.quizzes[literacyRateQuiz.id] = literacyRateQuiz;
+                console.log('📚 Added Literacy Rate quiz');
+            }
+            
+            const maleMedianAgeQuiz = await this.convertMaleMedianAgeData();
+            if (maleMedianAgeQuiz) {
+                this.quizData.quizzes[maleMedianAgeQuiz.id] = maleMedianAgeQuiz;
+                console.log('👨 Added Male Median Age quiz');
+            }
+            
+            const lowestTempQuiz = await this.convertLowestTemperatureData();
+            if (lowestTempQuiz) {
+                this.quizData.quizzes[lowestTempQuiz.id] = lowestTempQuiz;
+                console.log('❄️ Added Lowest Temperature quiz');
+            }
+            
+            const highestTempQuiz = await this.convertHighestTemperatureData();
+            if (highestTempQuiz) {
+                this.quizData.quizzes[highestTempQuiz.id] = highestTempQuiz;
+                console.log('🔥 Added Highest Temperature quiz');
+            }
+            
+            const flagAdoptionQuiz = await this.convertFlagAdoptionData();
+            if (flagAdoptionQuiz) {
+                this.quizData.quizzes[flagAdoptionQuiz.id] = flagAdoptionQuiz;
+                console.log('🏁 Added Flag Adoption quiz');
+            }
+            
+            const islandsQuiz = await this.convertIslandsData();
+            if (islandsQuiz) {
+                this.quizData.quizzes[islandsQuiz.id] = islandsQuiz;
+                console.log('🏝️ Added Number of Islands quiz');
+            }
+            
+            const mobilePhonesQuiz = await this.convertMobilePhonesData();
+            if (mobilePhonesQuiz) {
+                this.quizData.quizzes[mobilePhonesQuiz.id] = mobilePhonesQuiz;
+                console.log('📱 Added Mobile Phone Numbers quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -569,6 +624,520 @@ class QuizGame {
         }
     }
     
+    async convertLandNeighboursData() {
+        try {
+            const response = await fetch('data/distinct_land_neighbours_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.distinct_land_neighbours,
+                        unit: 'neighbours'
+                    };
+                    values.push(item.distinct_land_neighbours);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (purple gradient for neighbours)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0e0e0', '#607d8b');
+            });
+
+            return {
+                id: 'land_neighbours',
+                title: 'Land Neighbours',
+                description: 'Countries colored by number of land neighbours',
+                category: 'geography',
+                tags: ['land neighbours', 'neighbours', 'borders', 'territory', 'landmass'],
+                answer_variations: [
+                    'land neighbours',
+                    'neighbours',
+                    'borders',
+                    'territory',
+                    'landmass'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0e0e0',
+                    maxColor: '#607d8b',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Land Neighbours data:', error);
+            return null;
+        }
+    }
+
+    async convertAverageHeightData() {
+        try {
+            const response = await fetch('data/average_height_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.average_height_cm,
+                        unit: 'cm'
+                    };
+                    values.push(item.average_height_cm);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (blue gradient for height)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f7fa', '#00838f');
+            });
+
+            return {
+                id: 'average_height',
+                title: 'Average Height',
+                description: 'Countries colored by average height',
+                category: 'demographics',
+                tags: ['average height', 'height', 'demographics', 'population'],
+                answer_variations: [
+                    'average height',
+                    'height',
+                    'demographic height',
+                    'population height'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f7fa',
+                    maxColor: '#00838f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Average Height data:', error);
+            return null;
+        }
+    }
+
+    async convertLiteracyRateData() {
+        try {
+            const response = await fetch('data/total_literacy_rate_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.literacy_rate_percent,
+                        unit: '%'
+                    };
+                    values.push(item.literacy_rate_percent);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (green gradient for literacy)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+
+            return {
+                id: 'literacy_rate',
+                title: 'Literacy Rate',
+                description: 'Countries colored by literacy rate',
+                category: 'education',
+                tags: ['literacy rate', 'reading ability', 'education level', 'literacy'],
+                answer_variations: [
+                    'literacy rate',
+                    'reading ability',
+                    'education level',
+                    'literacy'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Literacy Rate data:', error);
+            return null;
+        }
+    }
+
+    async convertMaleMedianAgeData() {
+        try {
+            const response = await fetch('data/male_median_age_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.male_median_age,
+                        unit: 'years'
+                    };
+                    values.push(item.male_median_age);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (purple gradient for age)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#eceff1', '#546e7a');
+            });
+
+            return {
+                id: 'male_median_age',
+                title: 'Male Median Age',
+                description: 'Countries colored by male median age',
+                category: 'demographics',
+                tags: ['male median age', 'age', 'demographics', 'population'],
+                answer_variations: [
+                    'male median age',
+                    'age',
+                    'demographic age',
+                    'population age'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#eceff1',
+                    maxColor: '#546e7a',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Male Median Age data:', error);
+            return null;
+        }
+    }
+
+    async convertLowestTemperatureData() {
+        try {
+            const response = await fetch('data/lowest_temperature_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.temperature_celsius,
+                        unit: '°C'
+                    };
+                    values.push(item.temperature_celsius);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (blue gradient for cold)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f2f7', '#0077b6');
+            });
+
+            return {
+                id: 'lowest_temperature',
+                title: 'Lowest Temperature',
+                description: 'Countries colored by lowest recorded temperature',
+                category: 'environment',
+                tags: ['lowest temperature', 'cold', 'climate', 'weather'],
+                answer_variations: [
+                    'lowest temperature',
+                    'cold',
+                    'climate',
+                    'weather'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f2f7',
+                    maxColor: '#0077b6',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Lowest Temperature data:', error);
+            return null;
+        }
+    }
+
+    async convertHighestTemperatureData() {
+        try {
+            const response = await fetch('data/highest_temperature_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.temperature_celsius,
+                        unit: '°C'
+                    };
+                    values.push(item.temperature_celsius);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (red gradient for hot)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#d32f2f');
+            });
+
+            return {
+                id: 'highest_temperature',
+                title: 'Highest Temperature',
+                description: 'Countries colored by highest recorded temperature',
+                category: 'environment',
+                tags: ['highest temperature', 'hot', 'climate', 'weather'],
+                answer_variations: [
+                    'highest temperature',
+                    'hot',
+                    'climate',
+                    'weather'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#d32f2f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Highest Temperature data:', error);
+            return null;
+        }
+    }
+
+    async convertFlagAdoptionData() {
+        try {
+            const response = await fetch('data/latest_flag_adoption_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.latest_flag_adoption_year,
+                        unit: 'year'
+                    };
+                    values.push(item.latest_flag_adoption_year);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (purple gradient for adoption)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#eceff1', '#546e7a');
+            });
+
+            return {
+                id: 'flag_adoption',
+                title: 'Flag Adoption',
+                description: 'Countries colored by year of flag adoption',
+                category: 'social',
+                tags: ['flag adoption', 'national flag', 'country flag', 'nationality'],
+                answer_variations: [
+                    'flag adoption',
+                    'national flag',
+                    'country flag',
+                    'nationality'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#eceff1',
+                    maxColor: '#546e7a',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Flag Adoption data:', error);
+            return null;
+        }
+    }
+
+    async convertIslandsData() {
+        try {
+            const response = await fetch('data/number_of_islands_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.number_of_islands,
+                        unit: 'islands'
+                    };
+                    values.push(item.number_of_islands);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (blue gradient for islands)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f7fa', '#00838f');
+            });
+
+            return {
+                id: 'islands',
+                title: 'Number of Islands',
+                description: 'Countries colored by number of islands',
+                category: 'geography',
+                tags: ['islands', 'island', 'geography', 'territory', 'landmass'],
+                answer_variations: [
+                    'islands',
+                    'island',
+                    'geographic islands',
+                    'territory islands'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f7fa',
+                    maxColor: '#00838f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Islands data:', error);
+            return null;
+        }
+    }
+
+    async convertMobilePhonesData() {
+        try {
+            const response = await fetch('data/mobile_phone_numbers_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.phone_numbers_per_100_citizens,
+                        unit: 'phones/100'
+                    };
+                    values.push(item.phone_numbers_per_100_citizens);
+                }
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (purple gradient for phones)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#eceff1', '#546e7a');
+            });
+
+            return {
+                id: 'mobile_phones',
+                title: 'Mobile Phone Numbers',
+                description: 'Countries colored by number of mobile phones per 100 people',
+                category: 'technology',
+                tags: ['mobile phones', 'phones', 'technology', 'communication'],
+                answer_variations: [
+                    'mobile phones',
+                    'phones',
+                    'technology',
+                    'communication'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#eceff1',
+                    maxColor: '#546e7a',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Mobile Phones data:', error);
+            return null;
+        }
+    }
+    
     getColorForRatio(ratio, minColor, maxColor) {
         // Simple linear interpolation between two colors
         const r1 = parseInt(minColor.slice(1, 3), 16);
@@ -786,7 +1355,13 @@ class QuizGame {
             'arable': ['farmland', 'agricultural land', 'cultivable land'],
             'income': ['money', 'wealth', 'earnings', 'salary'],
             'development': ['progress', 'advancement', 'growth'],
-            'quality of life': ['living standards', 'life quality', 'wellbeing']
+            'quality of life': ['living standards', 'life quality', 'wellbeing'],
+            'neighbours': ['borders', 'neighbors', 'adjacent countries', 'surrounding countries'],
+            'height': ['tallness', 'stature', 'physical height', 'body height'],
+            'age': ['median age', 'average age', 'demographic age', 'population age'],
+            'islands': ['island count', 'number of islands', 'island territory', 'archipelago'],
+            'phones': ['mobile phones', 'cell phones', 'mobile devices', 'telecommunications'],
+            'flag': ['national flag', 'country flag', 'flag adoption', 'national symbol']
         };
         
         for (const [key, synonymList] of Object.entries(synonyms)) {
