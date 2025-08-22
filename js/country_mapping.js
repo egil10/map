@@ -285,61 +285,106 @@ class CountryMapper {
             
             // Denmark constituent country
             "Denmark (constituent country)": "Denmark",
+            "Denmark Kingdom of Denmark": "Denmark",
             
             // Netherlands constituent country
             "Netherlands (constituent country)": "Netherlands",
+            "Netherlands": "Netherlands",
             
-            // Réunion
-            "Réunion": "Réunion",
-            "Réunion (France)": "Réunion",
-            "Reunion": "Réunion",
+            // Greenland
+            "Greenland (Denmark)": "Greenland",
+            "Greenland": "Greenland",
+            "Greenland (DK)": "Greenland",
             
-            // French Guiana
-            "French Guiana": "French Guiana",
-            "French Guiana (France)": "French Guiana",
+            // Western Sahara
+            "Western Sahara (disputed)": "Western Sahara",
+            "Western Sahara": "Western Sahara",
+            "Western Sahara (MR)": "Western Sahara",
+            "Sahrawi Arab Democratic Republic": "Western Sahara",
             
-            // Martinique
-            "Martinique": "Martinique",
-            "Martinique (France)": "Martinique",
+            // Cabo Verde / Cape Verde
+            "Cabo Verde": "Cape Verde",
+            "Cape Verde": "Cape Verde",
             
-            // Guadeloupe
-            "Guadeloupe": "Guadeloupe",
-            "Guadeloupe (France)": "Guadeloupe",
+            // Germany
+            "Germany": "Germany",
             
-            // Mayotte
-            "Mayotte": "Mayotte",
-            "Mayotte (France)": "Mayotte",
+            // France metropolitan
+            "France (metropolitan)": "France",
+            "France (Metropolitan)": "France",
             
-            // Akrotiri and Dhekelia
-            "Akrotiri and Dhekelia": "Akrotiri and Dhekelia",
-            "Akrotiri and Dhekelia (UK)": "Akrotiri and Dhekelia",
+            // Norway mainland
+            "Norway (mainland)": "Norway",
             
-            // Afghanistan variations
-            "Afghanistan (Islamic Emirate)": "Afghanistan",
-            "Afghanistan (Islamic Republic)": "Afghanistan",
-            "Afghanistan": "Afghanistan",
+            // Guam
+            "Guam": "Guam",
+            "Guam (US)": "Guam",
             
-            // Spain Canarias
-            "Spain (Canarias)": "Spain",
+            // Gibraltar
+            "Gibraltar": "Gibraltar",
+            "Gibraltar (UK)": "Gibraltar",
             
-            // United States variations
-            "United States (Alaska)": "United States of America",
-            "United States (contiguous)": "United States of America",
-            "United States (Hawaii)": "United States of America",
+            // American Samoa
+            "American Samoa": "American Samoa",
+            "American Samoa (US)": "American Samoa",
             
-            // India/Pakistan disputed territory
-            "India/Pakistan (disputed territory of Ladakh in Kashmir)": "India",
-            "Pakistan/India (undemarcated Kashmir area)": "Pakistan",
+            // U.S. Virgin Islands
+            "U.S. Virgin Islands (US)": "Virgin Islands, U.S.",
             
-            // European Union
-            "European Union": "Germany", // Map to largest EU country
+            // Tokelau
+            "Tokelau (New Zealand)": "Tokelau",
             
-            // Saint Martin (French part)
-            "Saint Martin": "Saint Martin (French part)",
+            // Caribbean Netherlands
+            "Caribbean Netherlands (Netherlands)": "Netherlands",
+            "Bonaire": "Netherlands",
+            "Bonaire (NL)": "Netherlands",
             
-            // The Bahamas
-            "The Bahamas": "Bahamas",
-            "Bahamas": "Bahamas",
+            // China variations
+            "China (PRC)": "China",
+            
+            // Korea variations
+            "Korea (DPRK)": "Korea, Democratic People's Republic of",
+            "Korea (ROK)": "Korea, Republic of",
+            
+            // Hong Kong variations
+            "Hong Kong (CN)": "Hong Kong",
+            
+            // Macau variations
+            "Macau (CN)": "Macao",
+            
+            // Scotland
+            "Scotland (UK)": "United Kingdom",
+            
+            // United States Minor Outlying Islands
+            "United States Minor Outlying Islands (US)": "United States of America",
+            
+            // Saint Pierre and Miquelon
+            "Saint Pierre and Miquelon (FR)": "Saint Pierre and Miquelon",
+            
+            // Wallis and Futuna
+            "Wallis and Futuna (FR)": "Wallis and Futuna",
+            
+            // French Southern and Antarctic Lands
+            "French Southern and Antarctic Lands (FR)": "French Southern Territories",
+            
+            // British Indian Ocean Territory
+            "British Indian Ocean Territory (UK)": "United Kingdom",
+            
+            // Christmas Island
+            "Christmas Island (AU)": "Christmas Island",
+            
+            // Norfolk Island
+            "Norfolk Island (AU)": "Norfolk Island",
+            
+            // Alderney
+            "Alderney": "United Kingdom",
+            
+            // Ascension
+            "Ascension": "Saint Helena",
+            
+            // Russia variations
+            "Russia (Asia)": "Russian Federation",
+            "Russia (Europe)": "Russian Federation",
             
             // All other countries (exact matches)
             "Albania": "Albania",
@@ -637,7 +682,39 @@ class CountryMapper {
             'moldova': 'Moldova, Republic of',
             'brunei': 'Brunei Darussalam',
             'cape verde': 'Cabo Verde',
-            'bolivia': 'Bolivia, Plurinational State of'
+            'bolivia': 'Bolivia, Plurinational State of',
+            // New additions for missing mappings
+            'denmark kingdom': 'Denmark',
+            'greenland': 'Greenland',
+            'western sahara': 'Western Sahara',
+            'cabo verde': 'Cape Verde',
+            'germany': 'Germany',
+            'netherlands': 'Netherlands',
+            'france metropolitan': 'France',
+            'norway mainland': 'Norway',
+            'guam': 'Guam',
+            'gibraltar': 'Gibraltar',
+            'american samoa': 'American Samoa',
+            'caribbean netherlands': 'Netherlands',
+            'bonaire': 'Netherlands',
+            'china prc': 'China',
+            'korea dprk': 'Korea, Democratic People\'s Republic of',
+            'korea rok': 'Korea, Republic of',
+            'hong kong cn': 'Hong Kong',
+            'macau cn': 'Macao',
+            'scotland uk': 'United Kingdom',
+            'united states minor': 'United States of America',
+            'saint pierre miquelon': 'Saint Pierre and Miquelon',
+            'wallis futuna': 'Wallis and Futuna',
+            'french southern antarctic': 'French Southern Territories',
+            'british indian ocean': 'United Kingdom',
+            'christmas island au': 'Christmas Island',
+            'norfolk island au': 'Norfolk Island',
+            'alderney': 'United Kingdom',
+            'ascension': 'Saint Helena',
+            'russia asia': 'Russian Federation',
+            'russia europe': 'Russian Federation',
+            'sahrawi': 'Western Sahara'
         };
         
         for (const [pattern, value] of Object.entries(partialMatches)) {
