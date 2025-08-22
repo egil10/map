@@ -8,6 +8,7 @@ class QuizGame {
         this.usedQuizzes = new Set();
         this.hintUsed = false;
         this.totalQuizzesPlayed = 0;
+        this.countryMapper = new CountryMapper();
         
         this.init();
     }
@@ -81,7 +82,8 @@ class QuizGame {
             // Process data and collect values for color scaling
             data.data.forEach(item => {
                 if (item.country !== 'Earth' && item.country !== 'Antarctica') {
-                    countries[item.country] = {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
                         value: item.land_area_km2,
                         unit: 'km²'
                     };
@@ -140,7 +142,8 @@ class QuizGame {
             // Process data and collect values for color scaling
             data.data.forEach(item => {
                 if (item.country !== 'Earth') {
-                    countries[item.country] = {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
                         value: item.percent_water,
                         unit: '%'
                     };
@@ -198,7 +201,8 @@ class QuizGame {
             // Process data and collect values for color scaling
             data.data.forEach(item => {
                 if (item.country !== 'World') {
-                    countries[item.country] = {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
                         value: item.arable_land_per_person_m2,
                         unit: 'm²/person'
                     };
@@ -256,7 +260,8 @@ class QuizGame {
             // Process data and collect values for color scaling
             data.data.forEach(item => {
                 if (item.country !== 'World') {
-                    countries[item.country] = {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
                         value: item.density_km2,
                         unit: 'people/km²'
                     };
