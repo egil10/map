@@ -301,7 +301,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#1b5e20');
             });
             
             return {
@@ -361,7 +361,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1976d2');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#0d47a1');
             });
             
             return {
@@ -537,7 +537,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#fce4ec', '#c2185b');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#880e4f');
             });
             
             return {
@@ -596,7 +596,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#fff8e1', '#f57f17');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#e65100');
             });
             
             return {
@@ -653,7 +653,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#0d47a1');
             });
             
             return {
@@ -712,7 +712,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#1b5e20');
             });
             
             return {
@@ -1057,7 +1057,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#d32f2f');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#b71c1c');
             });
 
             return {
@@ -1480,7 +1480,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1976d2');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#0d47a1');
             });
 
             return {
@@ -1769,7 +1769,7 @@ class QuizGame {
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#b71c1c');
             });
             
             return {
@@ -1907,7 +1907,10 @@ class QuizGame {
     }
     
     getColorForRatio(ratio, minColor, maxColor) {
-        // Simple linear interpolation between two colors
+        // Enhanced contrast interpolation with non-linear curve for better visual distinction
+        // Apply a curve to make differences more pronounced
+        const enhancedRatio = Math.pow(ratio, 0.7); // Makes differences more visible in mid-range
+        
         const r1 = parseInt(minColor.slice(1, 3), 16);
         const g1 = parseInt(minColor.slice(3, 5), 16);
         const b1 = parseInt(minColor.slice(5, 7), 16);
@@ -1916,9 +1919,9 @@ class QuizGame {
         const g2 = parseInt(maxColor.slice(3, 5), 16);
         const b2 = parseInt(maxColor.slice(5, 7), 16);
         
-        const r = Math.round(r1 + (r2 - r1) * ratio);
-        const g = Math.round(g1 + (g2 - g1) * ratio);
-        const b = Math.round(b1 + (b2 - b1) * ratio);
+        const r = Math.round(r1 + (r2 - r1) * enhancedRatio);
+        const g = Math.round(g1 + (g2 - g1) * enhancedRatio);
+        const b = Math.round(b1 + (b2 - b1) * enhancedRatio);
         
         return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
