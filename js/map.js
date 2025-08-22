@@ -94,75 +94,68 @@ class WorldMap {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+    }
+    
+    getCountryStyle(feature) {
+        const countryName = feature.properties.name;
         
-        // Add zoom event listener for value overlays
-        this.map.on('zoomend', () => {
-            this.updateValueOverlays();
+        // Default style
+        let style = {
+            fillColor: '#ffffff',
+            weight: 1,
+            color: '#cccccc',
+            fillOpacity: 0.8
+        };
+        
+        // Apply quiz colors if available
+        if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
+            const countryData = this.currentQuiz.countries[countryName];
+            if (countryData.color) {
+                style.fillColor = countryData.color;
+                style.fillOpacity = 0.8;
+            }
+        }
+        
+        return style;
+    }
+    
+    applyQuizConfiguration(quiz) {
+        this.currentQuiz = quiz;
+        
+        // Apply colors to countries
+        this.countriesLayer.setStyle((feature) => {
+            return this.getCountryStyle(feature);
         });
-    }
-    
-    updateValueOverlays() {
-        if (!this.currentQuiz) return;
         
-        // Remove existing overlays
-        if (this.valueOverlays) {
-            this.valueOverlays.forEach(overlay => {
-                this.map.removeLayer(overlay);
-            });
-        }
-        
-        this.valueOverlays = [];
-        
-        // Only show overlays if zoomed in enough (zoom level > 3)
-        if (this.map.getZoom() > 3) {
-            this.addValueOverlays();
-        }
-    }
-    
-    addValueOverlays() {
-        if (!this.currentQuiz) return;
-        
-        // Add value overlays for each country with data
+        // Update popups for all countries
         this.countriesLayer.eachLayer((layer) => {
             const countryName = layer.feature.properties.name;
-            const countryData = this.currentQuiz.countries[countryName];
-            
-            if (countryData) {
-                const bounds = layer.getBounds();
-                const center = bounds.getCenter();
-                const value = this.formatValue(countryData.value, countryData.unit);
-                
-                // Create custom div icon for value display (no background)
-                const valueIcon = L.divIcon({
-                    className: 'country-value-overlay',
-                    html: `<div class="value-text">${value}</div>`,
-                    iconSize: [60, 20],
-                    iconAnchor: [30, 10]
+            if (this.currentQuiz.countries[countryName]) {
+                const countryData = this.currentQuiz.countries[countryName];
+                const popupContent = this.createPopupContent(countryName, countryData);
+                layer.bindPopup(popupContent, {
+                    className: 'country-popup',
+                    maxWidth: 300
                 });
-                
-                const valueMarker = L.marker(center, {
-                    icon: valueIcon,
-                    interactive: false
-                }).addTo(this.map);
-                
-                this.valueOverlays.push(valueMarker);
             }
         });
+        
+        // Create legend
+        this.createLegend(quiz);
     }
     
     createPopupContent(countryName, countryData) {
-        const value = countryData.value;
-        const unit = countryData.unit || '';
-        const formattedValue = this.formatValue(value, unit);
+        const formattedValue = this.formatValue(countryData.value, countryData.unit);
+        const colorIndicator = `<div class="popup-color-indicator" style="background-color: ${countryData.color}; width: 20px; height: 20px; border-radius: 50%; display: inline-block; margin-left: 10px;"></div>`;
         
         return `
             <div class="popup-content">
                 <h3>${countryName}</h3>
                 <div class="popup-value">
                     <span class="value-number">${formattedValue}</span>
-                    ${unit ? `<span class="value-unit">${unit}</span>` : ''}
+                    <span class="value-unit">${countryData.unit}</span>
+                    ${colorIndicator}
                 </div>
-                <div class="popup-color-indicator" style="background-color: ${countryData.color}"></div>
             </div>
         `;
     }
@@ -174,62 +167,10 @@ class WorldMap {
             } else if (value >= 1000) {
                 return (value / 1000).toFixed(1) + 'K';
             } else {
-                return value.toLocaleString();
+                return value.toFixed(1);
             }
         }
         return value;
-    }
-    
-    getCountryStyle(feature) {
-        const countryName = feature.properties.name;
-        
-        // Default style
-        let style = {
-            fillColor: '#ffffff',
-            weight: 1,
-            opacity: 1,
-            color: '#cccccc',
-            fillOpacity: 0.7
-        };
-        
-        // Apply quiz configuration if available
-        if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
-            const countryConfig = this.currentQuiz.countries[countryName];
-            style.fillColor = countryConfig.color;
-            style.fillOpacity = 0.8;
-            style.weight = 1.5;
-        }
-        
-        return style;
-    }
-    
-    applyQuizConfiguration(quiz) {
-        this.currentQuiz = quiz;
-        
-        // Update map styles
-        if (this.countriesLayer) {
-            this.countriesLayer.setStyle((feature) => this.getCountryStyle(feature));
-            
-            // Update popups for all countries
-            this.countriesLayer.eachLayer((layer) => {
-                const countryName = layer.feature.properties.name;
-                if (quiz.countries[countryName]) {
-                    const popupContent = this.createPopupContent(countryName, quiz.countries[countryName]);
-                    layer.bindPopup(popupContent, {
-                        className: 'country-popup',
-                        maxWidth: 300
-                    });
-                }
-            });
-        }
-        
-        // Create or update legend
-        this.createLegend(quiz);
-        
-        // Update value overlays
-        this.updateValueOverlays(); // This will now trigger addValueOverlays
-        
-        console.log('Applied quiz configuration:', quiz.title);
     }
     
     createLegend(quiz) {
@@ -238,15 +179,13 @@ class WorldMap {
             this.map.removeControl(this.legend);
         }
         
-        // Get min and max values
-        const values = Object.values(quiz.countries).map(c => c.value).filter(v => typeof v === 'number');
-        if (values.length === 0) return;
-        
+        // Calculate min and max values
+        const values = Object.values(quiz.countries).map(country => country.value);
         const minValue = Math.min(...values);
         const maxValue = Math.max(...values);
-        const unit = quiz.countries[Object.keys(quiz.countries)[0]]?.unit || '';
+        const unit = Object.values(quiz.countries)[0]?.unit || '';
         
-        // Create legend HTML (without title to avoid spoiling the quiz)
+        // Create legend HTML
         const legendHtml = `
             <div class="legend">
                 <div class="legend-gradient">
@@ -259,62 +198,56 @@ class WorldMap {
             </div>
         `;
         
-        // Create legend control (moved to bottom-left)
+        // Create legend control
         this.legend = L.control({ position: 'bottomleft' });
+        
         this.legend.onAdd = function() {
-            const div = L.DomUtil.create('div', 'legend-control');
+            const div = L.DomUtil.create('div', 'legend-control leaflet-control');
             div.innerHTML = legendHtml;
             return div;
         };
         
         this.legend.addTo(this.map);
         
-        // Apply gradient colors to legend
+        // Update gradient colors
         this.updateLegendGradient(quiz);
     }
     
     updateLegendGradient(quiz) {
-        const values = Object.values(quiz.countries).map(c => c.value).filter(v => typeof v === 'number');
-        if (values.length === 0) return;
-        
-        const minValue = Math.min(...values);
-        const maxValue = Math.max(...values);
-        
-        // Get colors for min and max
-        const minColor = this.getColorForValue(minValue, quiz);
-        const maxColor = this.getColorForValue(maxValue, quiz);
-        
-        // Apply gradient to legend
         const gradientBar = document.querySelector('.gradient-bar');
-        if (gradientBar) {
+        if (gradientBar && quiz.colorScheme) {
+            const minColor = quiz.colorScheme.minColor;
+            const maxColor = quiz.colorScheme.maxColor;
             gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
         }
     }
     
     getColorForValue(value, quiz) {
-        // Find the country with this value and return its color
-        for (const [countryName, countryData] of Object.entries(quiz.countries)) {
-            if (countryData.value === value) {
-                return countryData.color;
-            }
-        }
-        return '#cccccc'; // fallback
+        const values = Object.values(quiz.countries).map(country => country.value);
+        const minValue = Math.min(...values);
+        const maxValue = Math.max(...values);
+        
+        const ratio = (value - minValue) / (maxValue - minValue);
+        const minColor = quiz.colorScheme.minColor;
+        const maxColor = quiz.colorScheme.maxColor;
+        
+        return this.interpolateColor(minColor, maxColor, ratio);
     }
     
-    createSimpleWorldOutline() {
-        // Fallback: create a simple world outline if countries data fails to load
-        const worldOutline = L.rectangle([[-90, -180], [90, 180]], {
-            color: '#cccccc',
-            weight: 2,
-            fillColor: '#ffffff',
-            fillOpacity: 0.7
-        }).addTo(this.map);
+    interpolateColor(color1, color2, factor) {
+        const r1 = parseInt(color1.slice(1, 3), 16);
+        const g1 = parseInt(color1.slice(3, 5), 16);
+        const b1 = parseInt(color1.slice(5, 7), 16);
         
-        // Add a message
-        this.updateCountryInfo({
-            name: 'World Map',
-            description: 'Simple world outline loaded. Countries data unavailable.'
-        });
+        const r2 = parseInt(color2.slice(1, 3), 16);
+        const g2 = parseInt(color2.slice(3, 5), 16);
+        const b2 = parseInt(color2.slice(5, 7), 16);
+        
+        const r = Math.round(r1 + (r2 - r1) * factor);
+        const g = Math.round(g1 + (g2 - g1) * factor);
+        const b = Math.round(b1 + (b2 - b1) * factor);
+        
+        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
     
     selectCountry(layer, feature) {
@@ -337,100 +270,25 @@ class WorldMap {
         let countryQuizData = null;
         if (this.currentQuiz && this.currentQuiz.countries[this.selectedCountry]) {
             countryQuizData = this.currentQuiz.countries[this.selectedCountry];
-            
-            // Show value overlay for selected country
-            this.showCountryValue(feature.properties.name, countryQuizData);
         }
         
-        // Update country info
-        this.updateCountryInfo({
-            name: feature.properties.name,
-            description: `Selected: ${feature.properties.name}`,
-            quizData: countryQuizData
-        });
-        
-        // Add animation class
-        layer.addClass('country-selected');
-        setTimeout(() => {
-            layer.removeClass('country-selected');
-        }, 300);
+        // Update country info display
+        this.updateCountryInfo(feature.properties.name, countryQuizData);
     }
     
-    showCountryValue(countryName, countryData) {
-        // Remove existing single country overlay
-        if (this.selectedCountryOverlay) {
-            this.map.removeLayer(this.selectedCountryOverlay);
+    updateCountryInfo(countryName, countryData) {
+        // This method can be used to update any country info display
+        // For now, we'll just log it
+        if (countryData) {
+            console.log(`${countryName}: ${this.formatValue(countryData.value, countryData.unit)}`);
         }
-        
-        // Find the country layer
-        this.countriesLayer.eachLayer((layer) => {
-            if (layer.feature.properties.name === countryName) {
-                const bounds = layer.getBounds();
-                const center = bounds.getCenter();
-                const value = this.formatValue(countryData.value, countryData.unit);
-                
-                // Create value overlay for selected country
-                const valueIcon = L.divIcon({
-                    className: 'country-value-overlay selected',
-                    html: `<div class="value-text selected">${value}</div>`,
-                    iconSize: [80, 25],
-                    iconAnchor: [40, 12]
-                });
-                
-                this.selectedCountryOverlay = L.marker(center, {
-                    icon: valueIcon,
-                    interactive: false
-                }).addTo(this.map);
-            }
-        });
     }
     
-    clearSelection() {
-        if (this.countriesLayer) {
-            this.countriesLayer.resetStyle();
-        }
-        this.selectedCountry = null;
-        this.updateCountryInfo(null);
-    }
-    
-    updateCountryInfo(country) {
-        const countryInfo = document.getElementById('countryInfo');
-        
-        if (!country) {
-            countryInfo.innerHTML = '<p class="no-selection">Click on a country to see details</p>';
-            return;
-        }
-        
-        let quizInfo = '';
-        if (country.quizData) {
-            const formattedValue = this.formatValue(country.quizData.value, country.quizData.unit);
-            quizInfo = `
-                <p>Value: <span class="value">${formattedValue} ${country.quizData.unit || ''}</span></p>
-                <p>Color: <span class="value">${country.quizData.color}</span></p>
-            `;
-        }
-        
-        countryInfo.innerHTML = `
-            <div class="country-item">
-                <h4>${country.name}</h4>
-                <p>${country.description}</p>
-                ${quizInfo}
-            </div>
-        `;
-    }
-    
-    // Get current map bounds
-    getBounds() {
-        return this.map.getBounds();
-    }
-    
-    // Get current center
-    getCenter() {
-        return this.map.getCenter();
-    }
-    
-    // Get current zoom level
-    getZoom() {
-        return this.map.getZoom();
+    createSimpleWorldOutline() {
+        // Fallback: create a simple world outline if GeoJSON fails to load
+        console.log('Creating simple world outline as fallback');
     }
 }
+
+// Initialize map when script loads
+const worldMap = new WorldMap();
