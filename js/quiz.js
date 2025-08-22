@@ -9,6 +9,7 @@ class QuizGame {
         this.hintUsed = false;
         this.totalQuizzesPlayed = 0;
         this.countryMapper = new CountryMapper();
+        this.currentProgress = 0; // Track current progress (0-9)
         
         this.init();
     }
@@ -1489,6 +1490,9 @@ class QuizGame {
         // Clear feedback
         this.clearFeedback();
         
+        // Reset progress bar
+        this.resetProgressBar();
+        
         // Reset input and button
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
@@ -1713,6 +1717,56 @@ class QuizGame {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = message;
         feedback.className = `feedback ${type}`;
+        
+        // Update progress bar based on result
+        if (type === 'correct') {
+            this.updateProgressBar(true);
+        } else if (type === 'incorrect') {
+            this.updateProgressBar(false);
+        }
+    }
+    
+    updateProgressBar(isCorrect) {
+        const circles = document.querySelectorAll('.progress-circle');
+        if (this.currentProgress < circles.length) {
+            // Update current circle with result
+            circles[this.currentProgress].className = `progress-circle ${isCorrect ? 'correct' : 'incorrect'}`;
+            circles[this.currentProgress].setAttribute('data-lucide', 'circle');
+            
+            // Move to next circle
+            this.currentProgress++;
+            
+            // Update next circle to current if available
+            if (this.currentProgress < circles.length) {
+                circles[this.currentProgress].className = 'progress-circle current';
+                circles[this.currentProgress].setAttribute('data-lucide', 'circle');
+            }
+            
+            // Reinitialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+    }
+    
+    resetProgressBar() {
+        const circles = document.querySelectorAll('.progress-circle');
+        this.currentProgress = 0;
+        
+        circles.forEach((circle, index) => {
+            if (index === 0) {
+                circle.className = 'progress-circle current';
+                circle.setAttribute('data-lucide', 'circle');
+            } else {
+                circle.className = 'progress-circle';
+                circle.setAttribute('data-lucide', 'circle-dashed');
+            }
+        });
+        
+        // Reinitialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
     }
     
     clearFeedback() {
