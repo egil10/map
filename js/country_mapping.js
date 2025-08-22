@@ -659,6 +659,14 @@ class CountryMapper {
     
     // Map a country name from data file to Leaflet.js expected name
     mapCountryName(dataCountryName) {
+        // Debug logging for United States
+        if (dataCountryName === 'United States') {
+            console.log('CountryMapper - Mapping United States:', {
+                directMapping: this.countryMappings[dataCountryName],
+                hasMapping: !!this.countryMappings[dataCountryName]
+            });
+        }
+        
         // First try exact match
         if (this.countryMappings[dataCountryName]) {
             return this.countryMappings[dataCountryName];
@@ -815,6 +823,9 @@ class CountryMapper {
         }
         
         // If no match found, log warning and return original name
+        if (dataCountryName === 'United States') {
+            console.error(`CRITICAL: United States mapping failed! Available mappings:`, Object.keys(this.countryMappings).filter(key => key.includes('United')));
+        }
         console.warn(`No mapping found for country: "${dataCountryName}"`);
         return dataCountryName;
     }
