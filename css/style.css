@@ -67,7 +67,7 @@ body {
 .send-button-container {
     position: absolute;
     left: calc(50% + 250px + 12px); /* Center + half search bar width + gap */
-    top: 0;
+    top: 20px;
     height: 48px; /* Match search bar height (12px padding top + 12px padding bottom + 24px content) */
     display: flex;
     align-items: center;
