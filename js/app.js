@@ -1,8 +1,6 @@
 // Main Application Controller
 class App {
     constructor() {
-        this.mapInstance = null;
-        this.quizGame = null;
         this.isDarkTheme = false;
         this.init();
     }
@@ -15,12 +13,6 @@ class App {
         
         // Load theme preference
         this.loadThemePreference();
-        
-        // Initialize map
-        this.mapInstance = new WorldMap();
-        
-        // Store map instance globally for quiz access
-        window.mapInstance = this.mapInstance;
         
         // Setup theme toggle
         this.setupThemeToggle();
@@ -48,6 +40,10 @@ class App {
                 this.toggleTheme();
                 this.updateThemeIcon(themeIcon);
             });
+            
+            console.log('✅ Theme toggle setup complete');
+        } else {
+            console.warn('⚠️ Theme toggle elements not found');
         }
     }
     
@@ -57,9 +53,11 @@ class App {
         if (this.isDarkTheme) {
             document.body.classList.add('dark-theme');
             localStorage.setItem('geoquest-theme', 'dark');
+            console.log('🌙 Switched to dark theme');
         } else {
             document.body.classList.remove('dark-theme');
             localStorage.setItem('geoquest-theme', 'light');
+            console.log('☀️ Switched to light theme');
         }
     }
     
