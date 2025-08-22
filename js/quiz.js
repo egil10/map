@@ -19,14 +19,19 @@ class QuizGame {
         this.setupEventListeners();
         
         // Wait for map to be ready before starting quiz
-        await this.waitForMap();
-        this.startNewQuiz();
+        const mapReady = await this.waitForMap();
+        if (mapReady) {
+            this.startNewQuiz();
+        } else {
+            console.error('❌ Failed to initialize map, retrying in 2 seconds...');
+            setTimeout(() => this.init(), 2000);
+        }
     }
     
     async waitForMap() {
         // Wait for map instance to be available
         let attempts = 0;
-        const maxAttempts = 50; // 5 seconds max wait
+        const maxAttempts = 100; // 10 seconds max wait
         
         while (!window.mapInstance && attempts < maxAttempts) {
             await new Promise(resolve => setTimeout(resolve, 100));
@@ -35,9 +40,23 @@ class QuizGame {
         
         if (!window.mapInstance) {
             console.error('❌ Map instance not available after waiting');
-        } else {
-            console.log('✅ Map instance ready, starting quiz');
+            return false;
         }
+        
+        // Wait for countries layer to be ready
+        attempts = 0;
+        while (!window.mapInstance.countriesLayer && attempts < maxAttempts) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+        
+        if (!window.mapInstance.countriesLayer) {
+            console.error('❌ Countries layer not available after waiting');
+            return false;
+        }
+        
+        console.log('✅ Map instance and countries layer ready, starting quiz');
+        return true;
     }
     
     async loadAllQuizData() {
@@ -226,11 +245,12 @@ class QuizGame {
                 console.log('🩸 Added Blood Types quiz');
             }
             
-            const roadSideQuiz = await this.convertRoadSideData();
-            if (roadSideQuiz) {
-                this.quizData.quizzes[roadSideQuiz.id] = roadSideQuiz;
-                console.log('🚗 Added Road Side quiz');
-            }
+            // Road side data temporarily disabled due to JSON corruption
+            // const roadSideQuiz = await this.convertRoadSideData();
+            // if (roadSideQuiz) {
+            //     this.quizData.quizzes[roadSideQuiz.id] = roadSideQuiz;
+            //     console.log('🚗 Added Road Side quiz');
+            // }
             
             const currencyQuiz = await this.convertCurrencyData();
             if (currencyQuiz) {

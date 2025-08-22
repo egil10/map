@@ -22,16 +22,22 @@ class CountryMapper {
             "Russian Federation (Europe)": "Russian Federation",
             "Russian Federation (Asia)": "Russian Federation",
             
-            // Democratic Republic of the Congo variations
-            "Democratic Republic of the Congo": "Congo, Democratic Republic of the",
-            "DR Congo": "Congo, Democratic Republic of the",
-            "Congo, Democratic Republic of the": "Congo, Democratic Republic of the",
-            "Congo-Brazzaville": "Congo, Democratic Republic of the",
-            
-            // Republic of the Congo
-            "Republic of the Congo": "Congo, Republic of the",
-            "Congo, Republic of the": "Congo, Republic of the",
-            "Congo": "Congo, Republic of the",
+                // Democratic Republic of the Congo variations
+    "Democratic Republic of the Congo": "Democratic Republic of the Congo",
+    "DR Congo": "Democratic Republic of the Congo",
+    "Congo, Democratic Republic of the": "Democratic Republic of the Congo",
+    "Congo-Brazzaville": "Democratic Republic of the Congo",
+    
+    // Republic of the Congo
+    "Republic of the Congo": "Republic of the Congo",
+    "Congo, Republic of the": "Republic of the Congo",
+    "Congo": "Republic of the Congo",
+    "Congo, Republic of": "Republic of the Congo",
+    "Congo, Democratic Republic of": "Democratic Republic of the Congo",
+    "St. Kitts & Nevis": "Saint Kitts and Nevis",
+    "Yugoslavia": "Serbia",
+    "Tibet": "China",
+    "Russia/Soviet Union": "Russian Federation",
             
             // United Kingdom variations
             "United Kingdom": "United Kingdom",
@@ -791,7 +797,14 @@ class CountryMapper {
             'ascension': 'Saint Helena',
             'russia asia': 'Russian Federation',
             'russia europe': 'Russian Federation',
-            'sahrawi': 'Western Sahara'
+            'sahrawi': 'Western Sahara',
+            'congo republic': 'Republic of the Congo',
+            'congo democratic': 'Democratic Republic of the Congo',
+            'st kitts': 'Saint Kitts and Nevis',
+            'st kitts nevis': 'Saint Kitts and Nevis',
+            'yugoslavia': 'Serbia',
+            'tibet': 'China',
+            'russia soviet': 'Russian Federation'
         };
         
         for (const [pattern, value] of Object.entries(partialMatches)) {

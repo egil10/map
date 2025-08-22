@@ -168,6 +168,12 @@ class WorldMap {
     applyQuizConfiguration(quiz) {
         this.currentQuiz = quiz;
         
+        // Check if countries layer exists
+        if (!this.countriesLayer) {
+            console.error('Countries layer not initialized');
+            return;
+        }
+        
         // Apply colors to the single layer
         this.countriesLayer.setStyle((feature) => {
             return this.getCountryStyle(feature);
