@@ -7,6 +7,7 @@ class QuizGame {
         this.streak = 0;
         this.usedQuizzes = new Set();
         this.hintUsed = false;
+        this.totalQuizzesPlayed = 0;
         
         this.init();
     }
@@ -21,9 +22,9 @@ class QuizGame {
         try {
             const response = await fetch('data/quiz_data.json');
             this.quizData = await response.json();
-            console.log('Quiz data loaded:', this.quizData);
+            console.log('🎮 Quiz data loaded:', this.quizData);
         } catch (error) {
-            console.error('Error loading quiz data:', error);
+            console.error('❌ Error loading quiz data:', error);
             this.quizData = { quizzes: {} };
         }
     }
@@ -59,13 +60,14 @@ class QuizGame {
         // If all quizzes used, reset
         if (availableQuizzes.length === 0) {
             this.usedQuizzes.clear();
-            this.showNotification('All quizzes completed! Starting over...', 'info');
+            this.showNotification('🎉 All quizzes completed! Starting over...', 'success');
         }
         
         // Select random quiz
         const randomQuizId = availableQuizzes[Math.floor(Math.random() * availableQuizzes.length)];
         this.currentQuiz = this.quizData.quizzes[randomQuizId];
         this.usedQuizzes.add(randomQuizId);
+        this.totalQuizzesPlayed++;
         
         // Reset quiz state
         this.hintUsed = false;
@@ -75,13 +77,14 @@ class QuizGame {
         // Update UI
         this.updateQuizInfo();
         this.updateScoreDisplay();
+        this.updateQuizCounter();
         
         // Apply quiz to map
         if (window.mapInstance) {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
-        console.log('New quiz started:', this.currentQuiz.title);
+        console.log('🎯 New quiz started:', this.currentQuiz.title);
     }
     
     submitGuess() {
@@ -89,7 +92,7 @@ class QuizGame {
         const guess = guessInput.value.trim().toLowerCase();
         
         if (!guess) {
-            this.showFeedback('Please enter a guess!', 'hint');
+            this.showFeedback('💡 Please enter a guess!', 'hint');
             return;
         }
         
@@ -130,11 +133,15 @@ class QuizGame {
         this.score += points;
         this.streak++;
         
-        // Show success feedback
+        // Show success feedback with emoji
+        const emoji = this.getRandomSuccessEmoji();
         this.showFeedback(
-            `Correct! +${points} points. The answer was: ${this.currentQuiz.title}`,
+            `${emoji} Correct! +${points} points. The answer was: ${this.currentQuiz.title}`,
             'correct'
         );
+        
+        // Add score pulse animation
+        this.addScorePulseAnimation();
         
         // Update displays
         this.updateScoreDisplay();
@@ -142,7 +149,7 @@ class QuizGame {
         // Start new quiz after delay
         setTimeout(() => {
             this.startNewQuiz();
-        }, 2000);
+        }, 2500);
     }
     
     handleIncorrectAnswer() {
@@ -150,14 +157,14 @@ class QuizGame {
         this.updateScoreDisplay();
         
         this.showFeedback(
-            'Incorrect! Try again or use a hint.',
+            '❌ Incorrect! Try again or use a hint.',
             'incorrect'
         );
     }
     
     showHint() {
         if (this.hintUsed) {
-            this.showFeedback('Hint already used!', 'hint');
+            this.showFeedback('💡 Hint already used!', 'hint');
             return;
         }
         
@@ -167,8 +174,8 @@ class QuizGame {
         const tags = this.currentQuiz.tags;
         const randomTag = tags[Math.floor(Math.random() * tags.length)];
         
-        this.showHintText(`Hint: Think about "${randomTag}"`);
-        this.showFeedback('Hint used! -5 points for correct answer.', 'hint');
+        this.showHintText(`💡 Hint: Think about "${randomTag}"`);
+        this.showFeedback('💡 Hint used! -5 points for correct answer.', 'hint');
     }
     
     skipQuiz() {
@@ -176,7 +183,7 @@ class QuizGame {
         this.updateScoreDisplay();
         
         this.showFeedback(
-            `Skipped! The answer was: ${this.currentQuiz.title}`,
+            `⏭️ Skipped! The answer was: ${this.currentQuiz.title}`,
             'hint'
         );
         
@@ -189,7 +196,7 @@ class QuizGame {
     showFeedback(message, type) {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = message;
-        feedback.className = `guess-feedback ${type}`;
+        feedback.className = `game-feedback ${type}`;
         
         // Add animation class
         if (type === 'correct') {
@@ -201,7 +208,7 @@ class QuizGame {
         // Remove animation class after animation
         setTimeout(() => {
             feedback.classList.remove('correct-answer', 'incorrect-answer');
-        }, 500);
+        }, 600);
     }
     
     showHintText(text) {
@@ -212,7 +219,7 @@ class QuizGame {
     clearFeedback() {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = '';
-        feedback.className = 'guess-feedback';
+        feedback.className = 'game-feedback';
     }
     
     clearHint() {
@@ -224,20 +231,74 @@ class QuizGame {
         const quizInfo = document.getElementById('quizInfo');
         
         if (!this.currentQuiz) {
-            quizInfo.innerHTML = '<p class="no-quiz">No quiz available</p>';
+            quizInfo.innerHTML = '<div class="loading-spinner"><i data-lucide="loader-2" class="spinner-icon"></i><span>No quiz available</span></div>';
             return;
         }
         
+        // Get category emoji
+        const categoryEmoji = this.getCategoryEmoji(this.currentQuiz.category);
+        
         quizInfo.innerHTML = `
-            <h4>${this.currentQuiz.title}</h4>
+            <h4>${categoryEmoji} ${this.currentQuiz.title}</h4>
             <p>${this.currentQuiz.description}</p>
             <p><strong>Category:</strong> ${this.currentQuiz.category}</p>
         `;
+        
+        // Reinitialize Lucide icons
+        lucide.createIcons();
     }
     
     updateScoreDisplay() {
-        document.getElementById('score').textContent = this.score;
-        document.getElementById('streak').textContent = this.streak;
+        const scoreElement = document.getElementById('score');
+        const streakElement = document.getElementById('streak');
+        
+        scoreElement.textContent = this.score;
+        streakElement.textContent = this.streak;
+        
+        // Add pulse animation to score elements
+        scoreElement.classList.add('score-pulse');
+        streakElement.classList.add('score-pulse');
+        
+        setTimeout(() => {
+            scoreElement.classList.remove('score-pulse');
+            streakElement.classList.remove('score-pulse');
+        }, 500);
+    }
+    
+    updateQuizCounter() {
+        const totalQuizzesElement = document.getElementById('totalQuizzes');
+        if (totalQuizzesElement) {
+            totalQuizzesElement.textContent = this.totalQuizzesPlayed;
+        }
+    }
+    
+    addScorePulseAnimation() {
+        const scoreItems = document.querySelectorAll('.score-item');
+        scoreItems.forEach(item => {
+            item.classList.add('score-pulse');
+            setTimeout(() => {
+                item.classList.remove('score-pulse');
+            }, 500);
+        });
+    }
+    
+    getRandomSuccessEmoji() {
+        const emojis = ['🎉', '🎊', '🏆', '⭐', '🌟', '💫', '✨', '🎯', '🔥', '💎'];
+        return emojis[Math.floor(Math.random() * emojis.length)];
+    }
+    
+    getCategoryEmoji(category) {
+        const categoryEmojis = {
+            'economics': '💰',
+            'demographics': '👥',
+            'lifestyle': '☕',
+            'social': '😊',
+            'technology': '💻',
+            'environment': '🌍',
+            'health': '🏥',
+            'education': '📚'
+        };
+        return categoryEmojis[category] || '🗺️';
     }
     
     showNotification(message, type = 'info') {
@@ -251,22 +312,25 @@ class QuizGame {
             position: 'fixed',
             top: '20px',
             right: '20px',
-            padding: '12px 20px',
-            borderRadius: '6px',
+            padding: '15px 25px',
+            borderRadius: '15px',
             color: 'white',
-            fontWeight: '600',
+            fontWeight: '700',
+            fontSize: '16px',
             zIndex: '10000',
             transform: 'translateX(100%)',
-            transition: 'transform 0.3s ease',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.2)'
+            transition: 'transform 0.4s ease',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+            border: '3px solid rgba(255,255,255,0.3)',
+            backdropFilter: 'blur(10px)'
         });
         
         // Set background color based on type
         const colors = {
-            success: '#27ae60',
-            error: '#e74c3c',
-            info: '#3498db',
-            warning: '#f39c12'
+            success: 'linear-gradient(135deg, #00b894 0%, #00a085 100%)',
+            error: 'linear-gradient(135deg, #e17055 0%, #d63031 100%)',
+            info: 'linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)',
+            warning: 'linear-gradient(135deg, #fdcb6e 0%, #e17055 100%)'
         };
         notification.style.background = colors[type] || colors.info;
         
@@ -278,13 +342,13 @@ class QuizGame {
             notification.style.transform = 'translateX(0)';
         }, 100);
         
-        // Remove after 3 seconds
+        // Remove after 4 seconds
         setTimeout(() => {
             notification.style.transform = 'translateX(100%)';
             setTimeout(() => {
                 document.body.removeChild(notification);
-            }, 300);
-        }, 3000);
+            }, 400);
+        }, 4000);
     }
 }
 

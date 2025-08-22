@@ -1,115 +1,198 @@
-# Simple World Map
+# 🌍 GeoQuest - World Map Quiz Game
 
-A clean, minimal world map application built with HTML, CSS, and JavaScript using Leaflet.js. Click on countries to highlight them with a simple, elegant design.
+A vibrant, interactive geography quiz game where players guess what data is represented on colored world maps. Built with HTML, CSS, JavaScript, and Leaflet.js, featuring a Nintendo-inspired design with Lucide icons.
 
-## 🌟 Features
+## 🎮 Game Features
 
-- **Simple World Map**: Clean, minimal design with country borders
-- **Country Selection**: Click on any country to highlight it in blue
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Clean UI**: Simple white/grey color scheme with subtle interactions
-- **Keyboard Shortcuts**: Quick access to clear selection
-- **GitHub Pages Ready**: Optimized for static hosting
+### Core Gameplay
+- **Interactive World Maps**: Countries colored by different data types (GDP, population, coffee consumption, etc.)
+- **Free-Text Guessing**: Type your answer instead of multiple choice
+- **Smart Answer System**: Accepts various ways to describe the same concept
+- **Endless Content**: Expandable JSON data files for unlimited quizzes
 
-## 🚀 Quick Start
+### Visual Design
+- **Vibrant Nintendo-Inspired UI**: Bright colors, gradients, and playful animations
+- **Lucide Icons**: Modern, consistent iconography throughout the interface
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Smooth Animations**: Score pulses, button hover effects, and feedback animations
 
-1. **Clone or download** this repository
-2. **Open `index.html`** in your web browser
-3. **Click on any country** to select and highlight it
+### Game Mechanics
+- **Scoring System**: 10 points for correct answers, 5 points with hints
+- **Streak Tracking**: Build consecutive correct answers for bragging rights
+- **Hint System**: Get clues using tags (costs 5 points)
+- **Quiz Counter**: Track total quizzes played
+- **Category Emojis**: Visual indicators for different quiz types
 
-## 📋 Usage
+## 🎯 Current Quiz Categories
 
-### Selecting Countries
-- **Click on any country** to highlight it in blue
-- **Hover over countries** to see a subtle highlight effect
-- **Only one country** can be selected at a time
-
-### Managing Selection
-- **View selected country** in the sidebar on the right
-- **Clear selection** with the "Clear Selection" button (or press `C`)
-- **Press ESC** to clear the current selection
-
-### Keyboard Shortcuts
-- `C` - Clear selection
-- `ESC` - Clear selection
-
-## 🏗️ Project Structure
-
-```
-map/
-├── index.html          # Main HTML file
-├── css/
-│   └── style.css      # Clean, minimal styling
-├── js/
-│   ├── map.js         # World map functionality (SimpleWorldMap class)
-│   └── app.js         # Application controller (SimpleMapApp class)
-└── README.md          # This file
-```
+1. **💰 GDP per Capita 2023** - Economic wealth per person
+2. **👥 Population Density** - People per square kilometer
+3. **👥 World Population 2025** - Total population by country
+4. **☕ Coffee Consumption** - Annual coffee intake per person
+5. **😊 Happiness Index** - Life satisfaction scores
+6. **💻 Internet Speed** - Average download speeds
 
 ## 🎨 Design Features
 
 ### Color Scheme
-- **Background**: Light grey (#f5f5f5)
-- **Countries**: White with grey borders (#cccccc)
-- **Selected Country**: Blue (#3498db)
-- **Hover Effect**: Light grey (#ecf0f1)
+- **Gradient Backgrounds**: Purple to pink gradient theme
+- **Vibrant Headers**: Red-orange gradient with shimmer effects
+- **Blue Sidebar**: Ocean-themed quiz controls
+- **Colorful Feedback**: Green for correct, red for incorrect, yellow for hints
 
-### Map Style
-- **Tile Layer**: CartoDB Positron (clean, minimal)
-- **Country Borders**: Simple grey lines
-- **Selection Highlight**: Blue fill with darker border
+### Interactive Elements
+- **Hover Effects**: Buttons lift and glow on hover
+- **Pulse Animations**: Score updates with satisfying visual feedback
+- **Shimmer Effects**: Header background with moving light
+- **Floating Animations**: Subtle movement for game elements
 
-## 🌐 Deployment
+## 🎮 How to Play
 
-### GitHub Pages
-1. Push your code to a GitHub repository
-2. Go to repository Settings → Pages
-3. Select source branch (usually `main` or `master`)
-4. Your map will be available at `https://username.github.io/repository-name`
+1. **Start the Game**: The map will show countries colored by some data
+2. **Make Your Guess**: Type what you think the map represents in the input field
+3. **Submit Answer**: Press Enter or click the Submit button
+4. **Get Feedback**: See if you're correct and earn points
+5. **Use Hints**: Click the Hint button if you're stuck (costs 5 points)
+6. **Skip if Needed**: Move to the next quiz if you're completely stuck
+7. **Build Streaks**: Consecutive correct answers increase your score
 
-### Other Static Hosting
-- Upload all files to any static hosting service
-- No build process required - just HTML, CSS, and JavaScript
+## ⌨️ Keyboard Shortcuts
 
-## 🔧 Technical Details
+- **Enter** - Submit guess
+- **H** - Show hint
+- **S** - Skip quiz
+- **R** - Restart game (reset score)
+- **N** - Start new quiz immediately
+- **ESC** - Clear country selection
 
-### Dependencies
-- **Leaflet.js 1.9.4**: Open-source mapping library
-- **CartoDB Positron**: Clean, minimal map tiles
-- **GeoJSON**: World countries data from public source
-- **No build tools required**: Pure HTML/CSS/JS
+## 🏗️ Technical Architecture
 
-### Browser Support
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
+### Frontend Technologies
+- **HTML5**: Semantic structure and accessibility
+- **CSS3**: Advanced styling with gradients, animations, and responsive design
+- **JavaScript (ES6+)**: Modern JavaScript with classes and async/await
+- **Leaflet.js**: Interactive mapping library
+- **Lucide Icons**: Beautiful, consistent iconography
 
-### Performance
-- Lightweight (~150KB total)
-- Fast loading with CDN resources
-- Optimized for mobile devices
+### Data Structure
+The game uses a flexible JSON structure for quiz data:
 
-## 🚀 Future Enhancements
+```json
+{
+  "quizzes": {
+    "quiz_id": {
+      "title": "Quiz Title",
+      "description": "What the map shows",
+      "category": "economics",
+      "tags": ["keyword1", "keyword2"],
+      "answer_variations": ["answer1", "answer2"],
+      "countries": {
+        "Country Name": {
+          "value": 123,
+          "color": "#ff0000",
+          "unit": "USD"
+        }
+      }
+    }
+  }
+}
+```
 
-This simple map is designed to be easily expandable. Potential additions:
+### File Structure
+```
+map/
+├── index.html          # Main game interface
+├── css/
+│   └── style.css       # Vibrant game styling
+├── js/
+│   ├── map.js          # World map functionality
+│   ├── quiz.js         # Quiz game logic
+│   └── app.js          # Main application controller
+├── data/
+│   └── quiz_data.json  # Quiz configurations
+└── README.md           # This file
+```
 
-- **Country information display**
-- **Multiple country selection**
-- **Custom color themes**
-- **Country search functionality**
-- **Data visualization overlays**
-- **Export selected countries**
-- **Custom country data**
+## 🚀 Getting Started
 
-## 📝 License
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/map.git
+   cd map
+   ```
 
-This project is open source and available under the [MIT License](LICENSE).
+2. **Open in browser**:
+   - Simply open `index.html` in any modern web browser
+   - Or serve with a local server for best experience
+
+3. **Start playing**:
+   - The game will automatically load and start
+   - Click on countries to see their data values
+   - Type your guesses and earn points!
+
+## 🎯 Adding New Quizzes
+
+To add new quiz data, simply edit `data/quiz_data.json`:
+
+1. **Add a new quiz object** with a unique ID
+2. **Define the quiz metadata** (title, description, category)
+3. **Add tags and answer variations** for flexible answer checking
+4. **Include country data** with values and colors
+5. **Choose a color scheme** that fits the data type
+
+Example new quiz:
+```json
+{
+  "beer_consumption": {
+    "title": "Beer Consumption per Capita",
+    "description": "Annual beer consumption per person",
+    "category": "lifestyle",
+    "tags": ["beer", "alcohol", "consumption", "drinking"],
+    "answer_variations": ["beer consumption", "beer drinking", "alcohol consumption"],
+    "countries": {
+      "Germany": {"value": 104, "color": "#8B4513", "unit": "liters/year"}
+    }
+  }
+}
+```
+
+## 🌟 Future Enhancements
+
+- **More Quiz Categories**: Environment, health, education, sports
+- **Difficulty Levels**: Easy, medium, hard based on data complexity
+- **Leaderboards**: Save and compare scores
+- **Multiplayer Mode**: Real-time competition
+- **Custom Maps**: User-generated quiz data
+- **Achievement System**: Badges for milestones
+- **Sound Effects**: Audio feedback for interactions
+- **Dark Mode**: Alternative color scheme
+
+## 🎨 Design Inspiration
+
+The game's vibrant design is inspired by:
+- **Nintendo Games**: Bright colors and playful UI elements
+- **Modern Web Design**: Clean layouts with gradient backgrounds
+- **Gaming Interfaces**: Intuitive controls and visual feedback
+- **Educational Apps**: Clear information hierarchy and accessibility
+
+## 📱 Browser Support
+
+- Chrome 80+
+- Firefox 75+
+- Safari 13+
+- Edge 80+
 
 ## 🤝 Contributing
 
-Feel free to fork this project and submit pull requests for improvements!
+1. Fork the repository
+2. Create a feature branch
+3. Add new quiz data or improve the design
+4. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ using Leaflet.js and modern web technologies**
+**🎮 Ready to test your geography knowledge? Start playing GeoQuest now!** 🌍✨

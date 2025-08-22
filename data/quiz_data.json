@@ -88,6 +88,500 @@
         }
       }
     },
+    "world_population_2025": {
+      "id": "world_population_2025",
+      "title": "World Population 2025",
+      "description": "Countries colored by total population in 2025",
+      "category": "demographics",
+      "tags": ["population", "people", "inhabitants", "total population", "population size", "demographics", "population count"],
+      "answer_variations": [
+        "population",
+        "total population",
+        "population size",
+        "people",
+        "inhabitants",
+        "population count",
+        "number of people"
+      ],
+      "colorScheme": {
+        "type": "gradient",
+        "minColor": "#fff3e0",
+        "maxColor": "#e65100",
+        "defaultColor": "#ffffff"
+      },
+      "countries": {
+        "India": {
+          "value": 1417492000,
+          "color": "#e65100",
+          "unit": "people"
+        },
+        "China": {
+          "value": 1408280000,
+          "color": "#e65100",
+          "unit": "people"
+        },
+        "United States": {
+          "value": 340110988,
+          "color": "#ff8f00",
+          "unit": "people"
+        },
+        "Indonesia": {
+          "value": 284438782,
+          "color": "#ff8f00",
+          "unit": "people"
+        },
+        "Pakistan": {
+          "value": 241499431,
+          "color": "#ff8f00",
+          "unit": "people"
+        },
+        "Nigeria": {
+          "value": 223800000,
+          "color": "#ff8f00",
+          "unit": "people"
+        },
+        "Brazil": {
+          "value": 212583750,
+          "color": "#ff8f00",
+          "unit": "people"
+        },
+        "Bangladesh": {
+          "value": 169828911,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Russia": {
+          "value": 146028325,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Mexico": {
+          "value": 130417144,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Japan": {
+          "value": 123360000,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Philippines": {
+          "value": 114123600,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Democratic Republic of the Congo": {
+          "value": 112832000,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Ethiopia": {
+          "value": 111652998,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Egypt": {
+          "value": 107271260,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Vietnam": {
+          "value": 101343800,
+          "color": "#ffab00",
+          "unit": "people"
+        },
+        "Iran": {
+          "value": 85961000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Turkey": {
+          "value": 85664944,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Germany": {
+          "value": 83577140,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "France": {
+          "value": 68668000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "United Kingdom": {
+          "value": 68265209,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Tanzania": {
+          "value": 68153004,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Thailand": {
+          "value": 65870610,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "South Africa": {
+          "value": 63100945,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Italy": {
+          "value": 58919837,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Kenya": {
+          "value": 53330978,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Colombia": {
+          "value": 52695952,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Sudan": {
+          "value": 51662000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Myanmar": {
+          "value": 51316756,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "South Korea": {
+          "value": 51164582,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Spain": {
+          "value": 49315949,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Algeria": {
+          "value": 47400000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Argentina": {
+          "value": 47067641,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Iraq": {
+          "value": 46118793,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Uganda": {
+          "value": 45905417,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Afghanistan": {
+          "value": 43844000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Canada": {
+          "value": 41548787,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Uzbekistan": {
+          "value": 37860975,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Poland": {
+          "value": 37412000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Morocco": {
+          "value": 36828330,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Angola": {
+          "value": 36170961,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Saudi Arabia": {
+          "value": 35300280,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Peru": {
+          "value": 34350244,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Malaysia": {
+          "value": 34231700,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Mozambique": {
+          "value": 34090466,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Ghana": {
+          "value": 33742380,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Ukraine": {
+          "value": 32862000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Yemen": {
+          "value": 32684503,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Madagascar": {
+          "value": 31727042,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Nepal": {
+          "value": 29911840,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Cameroon": {
+          "value": 29442327,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Ivory Coast": {
+          "value": 29389150,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Venezuela": {
+          "value": 28517000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Australia": {
+          "value": 27400013,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Niger": {
+          "value": 26312034,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "North Korea": {
+          "value": 25950000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Syria": {
+          "value": 25620000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Burkina Faso": {
+          "value": 24070553,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Taiwan": {
+          "value": 23337936,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Mali": {
+          "value": 22395489,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Sri Lanka": {
+          "value": 21763170,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Malawi": {
+          "value": 20734262,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Kazakhstan": {
+          "value": 20387811,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Chile": {
+          "value": 20206953,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Zambia": {
+          "value": 19693423,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Somalia": {
+          "value": 19655000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Chad": {
+          "value": 19340757,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Romania": {
+          "value": 19064409,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Senegal": {
+          "value": 18126390,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Netherlands": {
+          "value": 18080943,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Guatemala": {
+          "value": 18079810,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Cambodia": {
+          "value": 17577760,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Zimbabwe": {
+          "value": 17073087,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Ecuador": {
+          "value": 16938986,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "South Sudan": {
+          "value": 15786898,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Guinea": {
+          "value": 14363931,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Rwanda": {
+          "value": 14104969,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Benin": {
+          "value": 13224860,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Burundi": {
+          "value": 12332788,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Tunisia": {
+          "value": 11972169,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Haiti": {
+          "value": 11867032,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Belgium": {
+          "value": 11825551,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Papua New Guinea": {
+          "value": 11781559,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Jordan": {
+          "value": 11734000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Bolivia": {
+          "value": 11312620,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Czech Republic": {
+          "value": 10876875,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Dominican Republic": {
+          "value": 10771504,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Portugal": {
+          "value": 10749635,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "United Arab Emirates": {
+          "value": 10678556,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Sweden": {
+          "value": 10592686,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Tajikistan": {
+          "value": 10499000,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Greece": {
+          "value": 10400720,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Azerbaijan": {
+          "value": 10236227,
+          "color": "#ffc107",
+          "unit": "people"
+        },
+        "Israel": {
+          "value": 10105800,
+          "color": "#ffc107",
+          "unit": "people"
+        }
+      }
+    },
     "coffee_consumption": {
       "id": "coffee_consumption",
       "title": "Coffee Consumption per Capita",
