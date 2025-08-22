@@ -589,13 +589,13 @@ class QuizGame {
     setupEventListeners() {
         // Submit guess button
         const submitBtn = document.getElementById('submitGuess');
-        submitBtn.addEventListener('click', () => this.submitGuess());
+        submitBtn.addEventListener('click', () => this.handleSubmitGuess());
         
         // Enter key in input
         const guessInput = document.getElementById('guessInput');
         guessInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
-                this.submitGuess();
+                this.handleSubmitGuess();
             }
         });
         
@@ -604,61 +604,64 @@ class QuizGame {
         skipBtn.addEventListener('click', () => this.skipQuiz());
     }
     
-    startNewQuiz() {
-        // Get available quizzes
-        const availableQuizzes = Object.keys(this.quizData.quizzes).filter(
-            quizId => !this.usedQuizzes.has(quizId)
-        );
+    handleSubmitGuess() {
+        this.transformToCheckIcon();
         
-        // If all quizzes used, reset
-        if (availableQuizzes.length === 0) {
-            this.usedQuizzes.clear();
-            this.showNotification('🎉 All quizzes completed! Starting over...', 'success');
+        const guessInput = document.getElementById('guessInput');
+        const userGuess = guessInput.value.trim();
+        
+        if (!userGuess) {
+            this.showFeedback('Please enter a guess!', 'incorrect');
+            return;
         }
         
-        // Select random quiz
-        const randomQuizId = availableQuizzes[Math.floor(Math.random() * availableQuizzes.length)];
-        this.currentQuiz = this.quizData.quizzes[randomQuizId];
-        this.usedQuizzes.add(randomQuizId);
-        this.totalQuizzesPlayed++;
+        // Disable input and button after first guess
+        guessInput.disabled = true;
+        document.getElementById('submitGuess').disabled = true;
         
-        // Reset quiz state
-        this.hintUsed = false;
+        if (this.checkAnswer(userGuess)) {
+            this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
+            this.score++;
+            this.updateScoreDisplay();
+            
+            // Start new quiz after a delay
+            setTimeout(() => {
+                this.startNewQuiz();
+            }, 3000);
+        } else {
+            this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
+            
+            // Start new quiz after showing the answer
+            setTimeout(() => {
+                this.startNewQuiz();
+            }, 4000);
+        }
+    }
+    
+    startNewQuiz() {
+        // Clear feedback
         this.clearFeedback();
         
-        // Update UI
-        this.updateScoreDisplay();
+        // Reset input and button
+        const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        
+        guessInput.disabled = false;
+        submitButton.disabled = false;
+        guessInput.value = '';
+        guessInput.focus();
+        
+        // Select random quiz
+        const quizIds = Object.keys(this.quizData.quizzes);
+        const randomQuizId = quizIds[Math.floor(Math.random() * quizIds.length)];
+        this.currentQuiz = this.quizData.quizzes[randomQuizId];
         
         // Apply quiz to map
         if (window.mapInstance) {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
-        console.log('🎯 New quiz started:', this.currentQuiz.title);
-    }
-    
-    submitGuess() {
-        const guessInput = document.getElementById('guessInput');
-        const guess = guessInput.value.trim().toLowerCase();
-        
-        if (!guess) {
-            this.showFeedback('💡 Please enter a guess!', 'hint');
-            return;
-        }
-        
-        // Transform send icon to check icon
-        this.transformToCheckIcon();
-        
-        const isCorrect = this.checkAnswer(guess);
-        
-        if (isCorrect) {
-            this.handleCorrectAnswer();
-        } else {
-            this.handleIncorrectAnswer();
-        }
-        
-        // Clear input
-        guessInput.value = '';
+        console.log('Started new quiz:', this.currentQuiz.title);
     }
     
     transformToCheckIcon() {
@@ -706,23 +709,97 @@ class QuizGame {
         }
     }
     
-    checkAnswer(guess) {
+    checkAnswer(userGuess) {
         if (!this.currentQuiz) return false;
         
-        // Check against answer variations
-        const answerVariations = this.currentQuiz.answer_variations.map(
-            answer => answer.toLowerCase().trim()
+        const normalizedGuess = userGuess.toLowerCase().trim();
+        const correctAnswers = this.currentQuiz.answer_variations.map(answer => 
+            answer.toLowerCase().trim()
         );
         
-        // Check against tags
-        const tags = this.currentQuiz.tags.map(tag => tag.toLowerCase().trim());
+        // Check for exact match first
+        if (correctAnswers.includes(normalizedGuess)) {
+            return true;
+        }
         
-        // Check if guess matches any answer variation or tag
-        return answerVariations.some(answer => 
-            guess.includes(answer) || answer.includes(guess)
-        ) || tags.some(tag => 
-            guess.includes(tag) || tag.includes(guess)
-        );
+        // Fuzzy matching with multiple strategies
+        for (const correctAnswer of correctAnswers) {
+            // Strategy 1: Check if user guess contains key words from correct answer
+            const correctWords = correctAnswer.split(/\s+/).filter(word => word.length > 2);
+            const userWords = normalizedGuess.split(/\s+/).filter(word => word.length > 2);
+            
+            let wordMatchCount = 0;
+            for (const correctWord of correctWords) {
+                for (const userWord of userWords) {
+                    if (userWord.includes(correctWord) || correctWord.includes(userWord)) {
+                        wordMatchCount++;
+                        break;
+                    }
+                }
+            }
+            
+            // If more than 50% of key words match, consider it correct
+            if (wordMatchCount >= Math.ceil(correctWords.length * 0.5)) {
+                return true;
+            }
+            
+            // Strategy 2: Check for partial matches (user guess is part of correct answer or vice versa)
+            if (normalizedGuess.includes(correctAnswer) || correctAnswer.includes(normalizedGuess)) {
+                return true;
+            }
+            
+            // Strategy 3: Check for acronyms and abbreviations
+            if (this.checkAcronymMatch(normalizedGuess, correctAnswer)) {
+                return true;
+            }
+            
+            // Strategy 4: Check for common synonyms and variations
+            if (this.checkSynonymMatch(normalizedGuess, correctAnswer)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    checkAcronymMatch(userGuess, correctAnswer) {
+        // Check if user guess is an acronym of the correct answer
+        const words = correctAnswer.split(/\s+/);
+        const acronym = words.map(word => word.charAt(0)).join('');
+        
+        return userGuess === acronym || userGuess === acronym.toLowerCase();
+    }
+    
+    checkSynonymMatch(userGuess, correctAnswer) {
+        // Common synonyms and variations
+        const synonyms = {
+            'population': ['people', 'inhabitants', 'residents', 'citizens'],
+            'gdp': ['gross domestic product', 'economic output', 'economy'],
+            'gni': ['gross national income', 'national income'],
+            'hdi': ['human development index', 'development index', 'human development'],
+            'area': ['land area', 'size', 'territory', 'landmass'],
+            'density': ['population density', 'people per km2', 'crowding'],
+            'fertility': ['birth rate', 'fertility rate', 'births per woman'],
+            'literacy': ['literacy rate', 'reading ability', 'education level'],
+            'temperature': ['temp', 'climate', 'weather'],
+            'water': ['water percentage', 'water coverage', 'water area'],
+            'arable': ['farmland', 'agricultural land', 'cultivable land'],
+            'income': ['money', 'wealth', 'earnings', 'salary'],
+            'development': ['progress', 'advancement', 'growth'],
+            'quality of life': ['living standards', 'life quality', 'wellbeing']
+        };
+        
+        for (const [key, synonymList] of Object.entries(synonyms)) {
+            if (correctAnswer.includes(key)) {
+                for (const synonym of synonymList) {
+                    if (userGuess.includes(synonym) || synonym.includes(userGuess)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        
+        return false;
     }
     
     handleCorrectAnswer() {

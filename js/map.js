@@ -95,11 +95,13 @@ class WorldMap {
             onEachFeature: onEachFeature
         }).addTo(this.map);
         
-        // Add value overlays for countries with data
-        this.addValueOverlays();
+        // Add zoom event listener for value overlays
+        this.map.on('zoomend', () => {
+            this.updateValueOverlays();
+        });
     }
     
-    addValueOverlays() {
+    updateValueOverlays() {
         if (!this.currentQuiz) return;
         
         // Remove existing overlays
@@ -111,6 +113,15 @@ class WorldMap {
         
         this.valueOverlays = [];
         
+        // Only show overlays if zoomed in enough (zoom level > 3)
+        if (this.map.getZoom() > 3) {
+            this.addValueOverlays();
+        }
+    }
+    
+    addValueOverlays() {
+        if (!this.currentQuiz) return;
+        
         // Add value overlays for each country with data
         this.countriesLayer.eachLayer((layer) => {
             const countryName = layer.feature.properties.name;
@@ -121,7 +132,7 @@ class WorldMap {
                 const center = bounds.getCenter();
                 const value = this.formatValue(countryData.value, countryData.unit);
                 
-                // Create custom div icon for value display
+                // Create custom div icon for value display (no background)
                 const valueIcon = L.divIcon({
                     className: 'country-value-overlay',
                     html: `<div class="value-text">${value}</div>`,
@@ -216,7 +227,7 @@ class WorldMap {
         this.createLegend(quiz);
         
         // Update value overlays
-        this.addValueOverlays();
+        this.updateValueOverlays(); // This will now trigger addValueOverlays
         
         console.log('Applied quiz configuration:', quiz.title);
     }
@@ -326,6 +337,9 @@ class WorldMap {
         let countryQuizData = null;
         if (this.currentQuiz && this.currentQuiz.countries[this.selectedCountry]) {
             countryQuizData = this.currentQuiz.countries[this.selectedCountry];
+            
+            // Show value overlay for selected country
+            this.showCountryValue(feature.properties.name, countryQuizData);
         }
         
         // Update country info
@@ -340,6 +354,35 @@ class WorldMap {
         setTimeout(() => {
             layer.removeClass('country-selected');
         }, 300);
+    }
+    
+    showCountryValue(countryName, countryData) {
+        // Remove existing single country overlay
+        if (this.selectedCountryOverlay) {
+            this.map.removeLayer(this.selectedCountryOverlay);
+        }
+        
+        // Find the country layer
+        this.countriesLayer.eachLayer((layer) => {
+            if (layer.feature.properties.name === countryName) {
+                const bounds = layer.getBounds();
+                const center = bounds.getCenter();
+                const value = this.formatValue(countryData.value, countryData.unit);
+                
+                // Create value overlay for selected country
+                const valueIcon = L.divIcon({
+                    className: 'country-value-overlay selected',
+                    html: `<div class="value-text selected">${value}</div>`,
+                    iconSize: [80, 25],
+                    iconAnchor: [40, 12]
+                });
+                
+                this.selectedCountryOverlay = L.marker(center, {
+                    icon: valueIcon,
+                    interactive: false
+                }).addTo(this.map);
+            }
+        });
     }
     
     clearSelection() {
