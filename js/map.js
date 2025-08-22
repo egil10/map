@@ -189,10 +189,9 @@ class WorldMap {
         const maxValue = Math.max(...values);
         const unit = quiz.countries[Object.keys(quiz.countries)[0]]?.unit || '';
         
-        // Create legend HTML
+        // Create legend HTML (without title to avoid spoiling the quiz)
         const legendHtml = `
             <div class="legend">
-                <h4>${quiz.title}</h4>
                 <div class="legend-gradient">
                     <div class="gradient-bar"></div>
                     <div class="gradient-labels">
@@ -203,8 +202,8 @@ class WorldMap {
             </div>
         `;
         
-        // Create legend control
-        this.legend = L.control({ position: 'bottomright' });
+        // Create legend control (moved to bottom-left)
+        this.legend = L.control({ position: 'bottomleft' });
         this.legend.onAdd = function() {
             const div = L.DomUtil.create('div', 'legend-control');
             div.innerHTML = legendHtml;

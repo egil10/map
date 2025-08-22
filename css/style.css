@@ -10,6 +10,13 @@ body {
     background: #f8f9fa;
     color: #333;
     overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background: #1a1a1a;
+    color: #e0e0e0;
 }
 
 /* Main Container */
@@ -25,6 +32,11 @@ body {
     flex: 1;
     width: 100%;
     background: #fff;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .map-container {
+    background: #2d2d2d;
 }
 
 /* Quiz Interface */
@@ -38,6 +50,12 @@ body {
     padding: 20px;
     border-top: 1px solid #e9ecef;
     z-index: 1000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-theme .quiz-interface {
+    background: rgba(26, 26, 26, 0.95);
+    border-top-color: #404040;
 }
 
 /* Input Section */
@@ -57,7 +75,13 @@ body {
     border-radius: 8px;
     font-size: 16px;
     background: #fff;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .guess-input {
+    background: #333;
+    border-color: #404040;
+    color: #e0e0e0;
 }
 
 .guess-input:focus {
@@ -65,8 +89,17 @@ body {
     border-color: #007bff;
 }
 
+body.dark-theme .guess-input:focus {
+    border-color: #4dabf7;
+}
+
 .guess-input::placeholder {
     color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .guess-input::placeholder {
+    color: #a0a0a0;
 }
 
 /* Button Group */
@@ -96,6 +129,11 @@ body {
 .btn:hover {
     background: rgba(0, 0, 0, 0.05);
     color: #333;
+}
+
+body.dark-theme .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
 }
 
 .btn:active {
@@ -142,6 +180,7 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    transition: color 0.3s ease;
 }
 
 .feedback.correct {
@@ -187,11 +226,22 @@ body {
 /* Map Overrides */
 .leaflet-container {
     background: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .leaflet-container {
+    background: #2d2d2d;
 }
 
 .leaflet-popup-content-wrapper {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .leaflet-popup-content-wrapper {
+    background: #333;
+    color: #e0e0e0;
 }
 
 .leaflet-popup-content {
@@ -204,6 +254,11 @@ body {
 .guess-input:focus {
     outline: 2px solid #007bff;
     outline-offset: 2px;
+}
+
+body.dark-theme .btn:focus,
+body.dark-theme .guess-input:focus {
+    outline-color: #4dabf7;
 }
 
 /* Loading State */
@@ -228,6 +283,11 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     border: none;
     padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .country-popup .leaflet-popup-content-wrapper {
+    background: #333;
 }
 
 .country-popup .leaflet-popup-content {
@@ -240,6 +300,11 @@ body {
 .popup-content {
     padding: 16px;
     text-align: center;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .popup-content {
+    color: #e0e0e0;
 }
 
 .popup-content h3 {
@@ -247,6 +312,11 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .popup-content h3 {
+    color: #e0e0e0;
 }
 
 .popup-value {
@@ -261,12 +331,22 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #007bff;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .value-number {
+    color: #4dabf7;
 }
 
 .value-unit {
     font-size: 14px;
     color: #6c757d;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .value-unit {
+    color: #a0a0a0;
 }
 
 .popup-color-indicator {
@@ -287,6 +367,12 @@ body {
     min-width: 200px;
     z-index: 1002;
     margin-bottom: 120px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-theme .legend-control {
+    background: rgba(26, 26, 26, 0.95);
+    border-color: rgba(64, 64, 64, 0.2);
 }
 
 .legend-control.leaflet-control {
@@ -297,12 +383,22 @@ body {
     z-index: 1002;
 }
 
+/* Move legend to bottom-left */
+.leaflet-bottom.leaflet-left {
+    z-index: 1002;
+}
+
 .legend h4 {
     margin: 0 0 12px 0;
     font-size: 14px;
     font-weight: 600;
     color: #333;
     text-align: center;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .legend h4 {
+    color: #e0e0e0;
 }
 
 .legend-gradient {
@@ -315,6 +411,11 @@ body {
     height: 12px;
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+body.dark-theme .gradient-bar {
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .gradient-labels {
@@ -323,6 +424,11 @@ body {
     font-size: 12px;
     color: #6c757d;
     font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .gradient-labels {
+    color: #a0a0a0;
 }
 
 .min-label, .max-label {
@@ -330,4 +436,10 @@ body {
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 11px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .min-label,
+body.dark-theme .max-label {
+    background: rgba(26, 26, 26, 0.8);
 }
