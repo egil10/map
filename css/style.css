@@ -44,17 +44,13 @@ body {
 /* Input Section */
 .input-section {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 12px;
     margin-bottom: 8px; /* Reduced spacing */
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
 .guess-input {
-    flex: 1;
+    width: 500px;
     padding: 12px 16px;
     border: 1px solid #dee2e6;
     border-radius: 8px;
@@ -65,6 +61,15 @@ body {
 
 .guess-input::placeholder {
     color: #6c757d;
+}
+
+/* Send Button Container */
+.send-button-container {
+    position: absolute;
+    left: calc(50% + 250px + 12px); /* Center + half search bar width + gap */
+    top: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* Social Links */
