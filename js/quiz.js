@@ -599,10 +599,6 @@ class QuizGame {
             }
         });
         
-        // Show hint button
-        const showHintBtn = document.getElementById('showHint');
-        showHintBtn.addEventListener('click', () => this.showHint());
-        
         // Skip quiz button
         const skipBtn = document.getElementById('skipQuiz');
         skipBtn.addEventListener('click', () => this.skipQuiz());
@@ -629,12 +625,9 @@ class QuizGame {
         // Reset quiz state
         this.hintUsed = false;
         this.clearFeedback();
-        this.clearHint();
         
         // Update UI
-        this.updateQuizInfo();
         this.updateScoreDisplay();
-        this.updateQuizCounter();
         
         // Apply quiz to map
         if (window.mapInstance) {
@@ -714,25 +707,9 @@ class QuizGame {
         this.updateScoreDisplay();
         
         this.showFeedback(
-            '❌ Incorrect! Try again or use a hint.',
+            '❌ Incorrect! Try again or skip.',
             'incorrect'
         );
-    }
-    
-    showHint() {
-        if (this.hintUsed) {
-            this.showFeedback('💡 Hint already used!', 'hint');
-            return;
-        }
-        
-        this.hintUsed = true;
-        
-        // Get a random tag as hint
-        const tags = this.currentQuiz.tags;
-        const randomTag = tags[Math.floor(Math.random() * tags.length)];
-        
-        this.showHintText(`💡 Hint: Think about "${randomTag}"`);
-        this.showFeedback('💡 Hint used! -5 points for correct answer.', 'hint');
     }
     
     skipQuiz() {
@@ -753,7 +730,7 @@ class QuizGame {
     showFeedback(message, type) {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = message;
-        feedback.className = `game-feedback ${type}`;
+        feedback.className = `feedback ${type}`;
         
         // Add animation class
         if (type === 'correct') {
@@ -768,75 +745,15 @@ class QuizGame {
         }, 600);
     }
     
-    showHintText(text) {
-        const hintText = document.getElementById('hintText');
-        hintText.textContent = text;
-    }
-    
     clearFeedback() {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = '';
-        feedback.className = 'game-feedback';
-    }
-    
-    clearHint() {
-        const hintText = document.getElementById('hintText');
-        hintText.textContent = '';
-    }
-    
-    updateQuizInfo() {
-        const quizInfo = document.getElementById('quizInfo');
-        
-        if (!this.currentQuiz) {
-            quizInfo.innerHTML = '<div class="loading-spinner"><i data-lucide="loader-2" class="spinner-icon"></i><span>No quiz available</span></div>';
-            return;
-        }
-        
-        // Get category emoji
-        const categoryEmoji = this.getCategoryEmoji(this.currentQuiz.category);
-        
-        quizInfo.innerHTML = `
-            <h4>${categoryEmoji} ${this.currentQuiz.title}</h4>
-            <p>${this.currentQuiz.description}</p>
-            <p><strong>Category:</strong> ${this.currentQuiz.category}</p>
-        `;
-        
-        // Reinitialize Lucide icons
-        lucide.createIcons();
+        feedback.className = 'feedback';
     }
     
     updateScoreDisplay() {
-        const scoreElement = document.getElementById('score');
-        const streakElement = document.getElementById('streak');
-        
-        scoreElement.textContent = this.score;
-        streakElement.textContent = this.streak;
-        
-        // Add pulse animation to score elements
-        scoreElement.classList.add('score-pulse');
-        streakElement.classList.add('score-pulse');
-        
-        setTimeout(() => {
-            scoreElement.classList.remove('score-pulse');
-            streakElement.classList.remove('score-pulse');
-        }, 500);
-    }
-    
-    updateQuizCounter() {
-        const totalQuizzesElement = document.getElementById('totalQuizzes');
-        if (totalQuizzesElement) {
-            totalQuizzesElement.textContent = this.totalQuizzesPlayed;
-        }
-    }
-    
-    addScorePulseAnimation() {
-        const scoreItems = document.querySelectorAll('.score-item');
-        scoreItems.forEach(item => {
-            item.classList.add('score-pulse');
-            setTimeout(() => {
-                item.classList.remove('score-pulse');
-            }, 500);
-        });
+        // In minimalistic design, we don't show score/stats
+        // This method is kept for potential future use
     }
     
     getRandomSuccessEmoji() {

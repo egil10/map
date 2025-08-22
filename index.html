@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌍 GeoQuest - World Map Quiz Game</title>
+    <title>GeoQuest - World Map Quiz</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -15,134 +15,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="game-container">
-        <!-- Game Header -->
-        <header class="game-header">
-            <div class="header-left">
-                <div class="game-title">
-                    <i data-lucide="globe" class="title-icon"></i>
-                    <h1>GeoQuest</h1>
-                </div>
-                <p class="game-subtitle">🎮 What does this map show?</p>
-            </div>
-            <div class="header-right">
-                <div class="score-panel">
-                    <div class="score-item">
-                        <i data-lucide="trophy" class="score-icon"></i>
-                        <div class="score-content">
-                            <span class="score-label">Score</span>
-                            <span id="score" class="score-value">0</span>
-                        </div>
-                    </div>
-                    <div class="score-item">
-                        <i data-lucide="flame" class="score-icon"></i>
-                        <div class="score-content">
-                            <span class="score-label">Streak</span>
-                            <span id="streak" class="score-value">0</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Map Container -->
+        <div id="map" class="map-container"></div>
         
-        <!-- Game Main Area -->
-        <main class="game-main">
-            <div id="map" class="game-map"></div>
+        <!-- Quiz Interface -->
+        <div class="quiz-interface">
+            <!-- Input Section -->
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="guessInput" 
+                    placeholder="What does this map show?"
+                    class="guess-input"
+                >
+                <div class="button-group">
+                    <button id="submitGuess" class="btn btn-primary">
+                        <i data-lucide="check"></i>
+                        Check
+                    </button>
+                    <button id="skipQuiz" class="btn btn-secondary">
+                        <i data-lucide="skip-forward"></i>
+                        Skip
+                    </button>
+                </div>
+            </div>
             
-            <div class="game-sidebar">
-                <!-- Quiz Section -->
-                <div class="quiz-section">
-                    <div class="section-header">
-                        <i data-lucide="lightbulb" class="section-icon"></i>
-                        <h3>Your Guess</h3>
-                    </div>
-                    <div class="guess-input-container">
-                        <input 
-                            type="text" 
-                            id="guessInput" 
-                            class="game-input" 
-                            placeholder="What does this map show? (e.g., GDP, population, coffee...)"
-                            autocomplete="off"
-                        >
-                        <button id="submitGuess" class="game-btn game-btn-primary">
-                            <i data-lucide="send" class="btn-icon"></i>
-                            Submit
-                        </button>
-                    </div>
-                    <div id="guessFeedback" class="game-feedback"></div>
-                </div>
-                
-                <!-- Hint Section -->
-                <div class="hint-section">
-                    <div class="section-header">
-                        <i data-lucide="help-circle" class="section-icon"></i>
-                        <h3>Game Help</h3>
-                    </div>
-                    <div class="hint-controls">
-                        <button id="showHint" class="game-btn game-btn-secondary">
-                            <i data-lucide="eye" class="btn-icon"></i>
-                            Hint
-                        </button>
-                        <button id="skipQuiz" class="game-btn game-btn-secondary">
-                            <i data-lucide="skip-forward" class="btn-icon"></i>
-                            Skip
-                        </button>
-                    </div>
-                    <div id="hintText" class="hint-text"></div>
-                </div>
-                
-                <!-- Quiz Info -->
-                <div class="quiz-info">
-                    <div class="section-header">
-                        <i data-lucide="info" class="section-icon"></i>
-                        <h3>Quiz Info</h3>
-                    </div>
-                    <div id="quizInfo" class="quiz-info-content">
-                        <div class="loading-spinner">
-                            <i data-lucide="loader-2" class="spinner-icon"></i>
-                            <span>Loading quiz...</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Selected Country -->
-                <div class="selected-country">
-                    <div class="section-header">
-                        <i data-lucide="map-pin" class="section-icon"></i>
-                        <h3>Selected Country</h3>
-                    </div>
-                    <div id="countryInfo" class="country-info">
-                        <div class="no-selection">
-                            <i data-lucide="mouse-pointer" class="no-selection-icon"></i>
-                            <span>Click on a country to see details</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        
-        <!-- Game Footer -->
-        <footer class="game-footer">
-            <div class="footer-content">
-                <div class="keyboard-shortcuts">
-                    <span class="shortcut">
-                        <kbd>Enter</kbd> Submit Guess
-                    </span>
-                    <span class="shortcut">
-                        <kbd>H</kbd> Show Hint
-                    </span>
-                    <span class="shortcut">
-                        <kbd>S</kbd> Skip Quiz
-                    </span>
-                </div>
-                <div class="game-stats">
-                    <span class="stat">
-                        <i data-lucide="users" class="stat-icon"></i>
-                        <span id="totalQuizzes">0</span> Quizzes
-                    </span>
-                </div>
-            </div>
-        </footer>
+            <!-- Feedback -->
+            <div id="guessFeedback" class="feedback"></div>
+        </div>
     </div>
 
     <!-- Leaflet JS -->
@@ -153,10 +55,5 @@
     <script src="js/map.js"></script>
     <script src="js/quiz.js"></script>
     <script src="js/app.js"></script>
-    
-    <!-- Initialize Lucide Icons -->
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 </html>
