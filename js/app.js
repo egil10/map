@@ -7,6 +7,11 @@ class App {
     }
     
     async init() {
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
         // Initialize map
         this.mapInstance = new WorldMap();
         await this.mapInstance.init();
