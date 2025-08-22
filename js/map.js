@@ -141,7 +141,8 @@ class WorldMap {
             console.log('Map styling - United States of America:', {
                 hasQuiz: !!this.currentQuiz,
                 hasCountryData: !!(this.currentQuiz && this.currentQuiz.countries[countryName]),
-                countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null
+                countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null,
+                allCountries: this.currentQuiz ? Object.keys(this.currentQuiz.countries) : []
             });
         }
         

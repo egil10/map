@@ -293,6 +293,13 @@ class QuizGame {
                 }
             });
             
+            // Debug: Check if United States made it to the final countries object
+            console.log('Land Area - Final countries object:', {
+                hasUnitedStates: !!countries['United States of America'],
+                unitedStatesData: countries['United States of America'],
+                totalCountries: Object.keys(countries).length
+            });
+            
             // Calculate color scale
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
