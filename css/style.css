@@ -37,7 +37,7 @@ body {
     border-top: 1px solid #e9ecef;
     padding: 20px;
     z-index: 1000;
-    height: 140px; /* Reduced from default */
+    height: 180px; /* Increased to accommodate footer links */
 }
 
 /* Input Section */
@@ -45,7 +45,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px; /* Reduced spacing */
+    margin-bottom: 8px; /* Reduced spacing */
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -67,7 +67,7 @@ body {
 
 /* Progress Bar */
 .progress-bar {
-    margin-bottom: 12px; /* Reduced spacing */
+    margin-bottom: 8px; /* Reduced spacing */
     display: flex;
     justify-content: center;
 }
@@ -164,10 +164,10 @@ body {
 /* Feedback */
 .feedback {
     text-align: center;
-    margin-top: 8px; /* Reduced spacing */
+    margin-top: 6px; /* Reduced spacing */
     font-size: 16px;
     font-weight: 500;
-    min-height: 24px;
+    min-height: 20px; /* Reduced height */
 }
 
 .feedback.correct {
@@ -187,8 +187,8 @@ body {
     display: flex;
     justify-content: flex-end; /* Move to the right */
     gap: 20px; /* Reduced gap */
-    margin-top: 8px; /* Reduced spacing */
-    padding-top: 8px; /* Reduced padding */
+    margin-top: 6px; /* Reduced spacing */
+    padding-top: 6px; /* Reduced padding */
     border-top: 1px solid #e9ecef;
 }
 
@@ -296,7 +296,7 @@ body {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 160px; /* Align with search bar height (140px + 20px padding) */
+    margin-bottom: 200px; /* Updated to align with new quiz interface height (180px + 20px padding) */
     z-index: 1002;
     min-width: 200px;
     height: 80px; /* Match the height of the input section area */
@@ -304,7 +304,7 @@ body {
     align-items: center;
     position: absolute;
     left: 20px;
-    bottom: 160px;
+    bottom: 200px; /* Updated to align with new quiz interface height */
 }
 
 .legend-control.leaflet-control {
