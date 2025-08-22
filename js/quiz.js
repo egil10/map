@@ -258,6 +258,13 @@ class QuizGame {
                 console.log('💱 Added Currency quiz');
             }
             
+            // Convert world population data
+            const worldPopulationQuiz = await this.convertWorldPopulationData();
+            if (worldPopulationQuiz) {
+                this.quizData.quizzes[worldPopulationQuiz.id] = worldPopulationQuiz;
+                console.log('🌍 Added World Population quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -297,8 +304,14 @@ class QuizGame {
             console.log('Land Area - Final countries object:', {
                 hasUnitedStates: !!countries['United States of America'],
                 unitedStatesData: countries['United States of America'],
-                totalCountries: Object.keys(countries).length
+                totalCountries: Object.keys(countries).length,
+                sampleCountries: Object.keys(countries).slice(0, 10)
             });
+            
+            // Debug: Check all values for validity
+            const sampleValues = values.slice(0, 10);
+            console.log('Land Area - Sample values:', sampleValues);
+            console.log('Land Area - Values types:', sampleValues.map(v => typeof v));
             
             // Calculate color scale
             const maxValue = Math.max(...values);
@@ -935,10 +948,10 @@ class QuizGame {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
                     countries[mappedCountryName] = {
-                        value: item.male_median_age,
+                        value: item.male_median_age_years,
                         unit: 'years'
                     };
-                    values.push(item.male_median_age);
+                    values.push(item.male_median_age_years);
                 }
             });
 
@@ -1913,6 +1926,65 @@ class QuizGame {
         }
     }
     
+    async convertWorldPopulationData() {
+        try {
+            const response = await fetch('data/world_population_2025.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.population,
+                        unit: 'people'
+                    };
+                    values.push(item.population);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (blue gradient for population)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'world_population_2025',
+                title: 'World Population 2025',
+                description: 'Countries colored by population estimates for 2025',
+                category: 'demographics',
+                tags: ['population', 'demographics', 'people', 'inhabitants', 'residents'],
+                answer_variations: [
+                    'population',
+                    'people',
+                    'inhabitants',
+                    'residents',
+                    'demographics',
+                    'world population'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting world population data:', error);
+            return null;
+        }
+    }
+    
     getColorForRatio(ratio, minColor, maxColor) {
         // Enhanced contrast interpolation with non-linear curve for better visual distinction
         // Apply a curve to make differences more pronounced
@@ -2038,6 +2110,12 @@ class QuizGame {
         
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
+            console.log('Applying quiz to map:', {
+                quizTitle: this.currentQuiz.title,
+                countriesCount: Object.keys(this.currentQuiz.countries).length,
+                sampleCountries: Object.keys(this.currentQuiz.countries).slice(0, 5),
+                hasUnitedStates: !!this.currentQuiz.countries['United States of America']
+            });
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         

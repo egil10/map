@@ -320,6 +320,10 @@ class WorldMap {
         // Handle numeric data
         const values = Object.values(quiz.countries).map(country => country.value);
         
+        // Debug logging for legend creation
+        console.log('Legend creation - All values:', values.slice(0, 10), '... (showing first 10)');
+        console.log('Legend creation - Quiz countries count:', Object.keys(quiz.countries).length);
+        
         // Filter out invalid values
         const validValues = values.filter(value => 
             value !== null && 
@@ -328,8 +332,12 @@ class WorldMap {
             typeof value === 'number'
         );
         
+        console.log('Legend creation - Valid values count:', validValues.length);
+        console.log('Legend creation - Sample valid values:', validValues.slice(0, 5));
+        
         if (validValues.length === 0) {
             console.error('No valid numeric values found for legend');
+            console.error('All values were:', values);
             return;
         }
         
