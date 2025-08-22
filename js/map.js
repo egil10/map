@@ -25,7 +25,9 @@ class WorldMap {
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '© OpenStreetMap contributors, © CartoDB',
             subdomains: 'abcd',
-            maxZoom: 19
+            maxZoom: 19,
+            noWrap: true, // Prevent infinite repetition
+            bounds: [[-90, -180], [90, 180]] // Limit to world bounds
         }).addTo(this.map);
         
         // Load countries data

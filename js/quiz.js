@@ -1916,17 +1916,21 @@ class QuizGame {
             this.score++;
             this.updateScoreDisplay();
             
-            // Start new quiz after a delay
-            setTimeout(() => {
-                this.startNewQuiz();
-            }, 3000);
+            // Only start new quiz if not at the end
+            if (this.currentProgress < 9) { // 9 because we're about to increment to 10
+                setTimeout(() => {
+                    this.startNewQuiz();
+                }, 3000);
+            }
         } else {
             this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
             
-            // Start new quiz after showing the answer
-            setTimeout(() => {
-                this.startNewQuiz();
-            }, 4000);
+            // Only start new quiz if not at the end
+            if (this.currentProgress < 9) { // 9 because we're about to increment to 10
+                setTimeout(() => {
+                    this.startNewQuiz();
+                }, 4000);
+            }
         }
     }
     
@@ -2250,6 +2254,13 @@ class QuizGame {
             // Move to next circle
             this.currentProgress++;
             
+            // Check if we've completed all 10 questions
+            if (this.currentProgress >= circles.length) {
+                // Show completion message
+                this.showCompletionMessage();
+                return;
+            }
+            
             // Update next circle to current if available
             if (this.currentProgress < circles.length) {
                 const nextCircle = circles[this.currentProgress];
@@ -2285,6 +2296,79 @@ class QuizGame {
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
         }
+    }
+    
+    showCompletionMessage() {
+        // Disable input and button
+        const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        guessInput.disabled = true;
+        submitButton.disabled = true;
+        
+        // Calculate final score
+        const correctAnswers = document.querySelectorAll('.progress-circle.correct').length;
+        const totalQuestions = 10;
+        
+        // Show completion message
+        this.showFeedback(`🎉 Quiz Complete! You got ${correctAnswers}/${totalQuestions} correct. Click "Replay" to start over!`, 'correct');
+        
+        // Add replay button
+        this.addReplayButton();
+    }
+    
+    addReplayButton() {
+        // Remove existing replay button if any
+        const existingReplay = document.querySelector('.replay-button');
+        if (existingReplay) {
+            existingReplay.remove();
+        }
+        
+        // Create replay button
+        const replayButton = document.createElement('button');
+        replayButton.className = 'btn replay-button';
+        replayButton.textContent = 'Replay Quiz';
+        replayButton.style.cssText = `
+            margin-top: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        `;
+        
+        // Add click handler
+        replayButton.addEventListener('click', () => {
+            this.restartQuiz();
+        });
+        
+        // Add to feedback area
+        const feedback = document.getElementById('guessFeedback');
+        feedback.appendChild(replayButton);
+    }
+    
+    restartQuiz() {
+        // Reset progress
+        this.currentProgress = 0;
+        this.score = 0;
+        
+        // Reset progress bar
+        this.resetProgressBar();
+        
+        // Clear feedback
+        this.clearFeedback();
+        
+        // Re-enable input and button
+        const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        guessInput.disabled = false;
+        submitButton.disabled = false;
+        guessInput.value = '';
+        guessInput.focus();
+        
+        // Start new quiz
+        this.startNewQuiz();
     }
     
     clearFeedback() {
