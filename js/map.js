@@ -69,6 +69,18 @@ class WorldMap {
             if (layer.getElement()) {
                 layer.getElement().classList.add('country-hover');
             }
+            
+            // Show popup on hover if quiz data exists
+            if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.name]) {
+                const countryData = this.currentQuiz.countries[layer.feature.properties.name];
+                const popupContent = this.createPopupContent(layer.feature.properties.name, countryData);
+                layer.bindPopup(popupContent, {
+                    className: 'country-popup',
+                    maxWidth: 200,
+                    closeButton: false,
+                    autoClose: false
+                }).openPopup();
+            }
         };
         
         // Reset highlight function
@@ -80,25 +92,20 @@ class WorldMap {
             if (e.target.getElement()) {
                 e.target.getElement().classList.remove('country-hover');
             }
+            
+            // Close popup on mouse out
+            if (e.target.isPopupOpen()) {
+                e.target.closePopup();
+            }
         };
         
-        // Click function
+        // Click function (simplified - no popup)
         const onEachFeature = (feature, layer) => {
             layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
                 click: (e) => this.selectCountry(e.target, feature)
             });
-            
-            // Add popup with country data
-            if (this.currentQuiz && this.currentQuiz.countries[feature.properties.name]) {
-                const countryData = this.currentQuiz.countries[feature.properties.name];
-                const popupContent = this.createPopupContent(feature.properties.name, countryData);
-                layer.bindPopup(popupContent, {
-                    className: 'country-popup',
-                    maxWidth: 300
-                });
-            }
         };
         
         // Create the layer
@@ -137,19 +144,6 @@ class WorldMap {
         // Apply colors to countries
         this.countriesLayer.setStyle((feature) => {
             return this.getCountryStyle(feature);
-        });
-        
-        // Update popups for all countries
-        this.countriesLayer.eachLayer((layer) => {
-            const countryName = layer.feature.properties.name;
-            if (this.currentQuiz.countries[countryName]) {
-                const countryData = this.currentQuiz.countries[countryName];
-                const popupContent = this.createPopupContent(countryName, countryData);
-                layer.bindPopup(popupContent, {
-                    className: 'country-popup',
-                    maxWidth: 300
-                });
-            }
         });
         
         // Create legend

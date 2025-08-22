@@ -214,32 +214,45 @@ body {
 /* Country Popup Styles */
 .country-popup .leaflet-popup-content-wrapper {
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+    min-width: 120px;
 }
 
-.popup-content {
+.country-popup .leaflet-popup-content {
     text-align: center;
-    min-width: 150px;
+    min-width: 120px;
+    margin: 0;
+    padding: 0;
 }
 
-.popup-content h3 {
-    margin: 0;
-    font-size: 18px;
+.country-popup .leaflet-popup-content h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
     font-weight: 600;
     color: #333333;
+    line-height: 1.2;
 }
 
-.popup-value {
-    margin-top: 8px;
+.country-popup .leaflet-popup-content .popup-value {
+    margin: 0;
     text-align: center;
 }
 
-.value-number {
-    font-size: 16px;
+.country-popup .leaflet-popup-content .value-number {
+    font-size: 13px;
     font-weight: 600;
     color: #007bff;
+    line-height: 1.2;
+}
+
+.country-popup .leaflet-popup-tip {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    border-left: none;
 }
 
 /* Legend Styles */
