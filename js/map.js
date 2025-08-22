@@ -12,6 +12,12 @@ class WorldMap {
     }
     
     init() {
+        // Check if map is already initialized
+        if (this.map) {
+            console.log('Map already initialized, skipping...');
+            return;
+        }
+        
         // Initialize the map centered on the world
         this.map = L.map('map').setView([20, 0], 2);
         
@@ -59,7 +65,10 @@ class WorldMap {
                 color: '#bdc3c7',
                 fillOpacity: 0.9
             });
-            layer.addClass('country-hover');
+            // Use DOM class instead of Leaflet class
+            if (layer.getElement()) {
+                layer.getElement().classList.add('country-hover');
+            }
         };
         
         // Reset highlight function
@@ -67,7 +76,10 @@ class WorldMap {
             if (this.selectedCountry !== e.target.feature.properties.name) {
                 this.countriesLayer.resetStyle(e.target);
             }
-            e.target.removeClass('country-hover');
+            // Use DOM class instead of Leaflet class
+            if (e.target.getElement()) {
+                e.target.getElement().classList.remove('country-hover');
+            }
         };
         
         // Click function

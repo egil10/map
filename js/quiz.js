@@ -169,6 +169,31 @@ class QuizGame {
                 console.log('📱 Added Mobile Phone Numbers quiz');
             }
             
+            // Convert new data files
+            const monarchiesQuiz = await this.convertMonarchiesData();
+            if (monarchiesQuiz) {
+                this.quizData.quizzes[monarchiesQuiz.id] = monarchiesQuiz;
+                console.log('👑 Added Monarchies quiz');
+            }
+            
+            const partySystemQuiz = await this.convertPartySystemData();
+            if (partySystemQuiz) {
+                this.quizData.quizzes[partySystemQuiz.id] = partySystemQuiz;
+                console.log('🗳️ Added Party System quiz');
+            }
+            
+            const exportsQuiz = await this.convertExportsData();
+            if (exportsQuiz) {
+                this.quizData.quizzes[exportsQuiz.id] = exportsQuiz;
+                console.log('📦 Added Exports quiz');
+            }
+            
+            const importsQuiz = await this.convertImportsData();
+            if (importsQuiz) {
+                this.quizData.quizzes[importsQuiz.id] = importsQuiz;
+                console.log('📥 Added Imports quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -1158,6 +1183,232 @@ class QuizGame {
         }
     }
     
+    async convertMonarchiesData() {
+        try {
+            const response = await fetch('data/monarchies.json');
+            const data = await response.json();
+
+            const countries = {};
+            const monarchyTypes = {};
+
+            // Process data and collect monarchy types
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: item.monarchy_type,
+                    unit: 'monarchy type'
+                };
+                monarchyTypes[item.monarchy_type] = (monarchyTypes[item.monarchy_type] || 0) + 1;
+            });
+
+            // Create color scheme for monarchy types
+            const monarchyTypeList = Object.keys(monarchyTypes);
+            const colors = ['#e3f2fd', '#bbdefb', '#90caf9', '#64b5f6', '#42a5f5', '#2196f3', '#1e88e5', '#1976d2'];
+            
+            monarchyTypeList.forEach((type, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === type) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+
+            return {
+                id: 'monarchies',
+                title: 'Countries with Monarchies',
+                description: 'Countries colored by type of monarchy',
+                category: 'politics',
+                tags: ['monarchy', 'royalty', 'kings', 'queens', 'politics', 'government'],
+                answer_variations: [
+                    'monarchy',
+                    'monarchies',
+                    'kings and queens',
+                    'royalty',
+                    'monarchs'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Monarchies data:', error);
+            return null;
+        }
+    }
+    
+    async convertPartySystemData() {
+        try {
+            const response = await fetch('data/country_party_system.json');
+            const data = await response.json();
+
+            const countries = {};
+            const partySystems = {};
+
+            // Process data and collect party systems
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: item.party_system,
+                    unit: 'party system'
+                };
+                partySystems[item.party_system] = (partySystems[item.party_system] || 0) + 1;
+            });
+
+            // Create color scheme for party systems
+            const partySystemList = Object.keys(partySystems);
+            const colors = ['#f3e5f5', '#e1bee7', '#ce93d8', '#ba68c8', '#ab47bc', '#9c27b0', '#8e24aa', '#7b1fa2'];
+            
+            partySystemList.forEach((system, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === system) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+
+            return {
+                id: 'party_system',
+                title: 'Political Party Systems',
+                description: 'Countries colored by political party system',
+                category: 'politics',
+                tags: ['party system', 'politics', 'democracy', 'political parties', 'government'],
+                answer_variations: [
+                    'party system',
+                    'political parties',
+                    'political system',
+                    'democracy type',
+                    'party systems'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Party System data:', error);
+            return null;
+        }
+    }
+    
+    async convertExportsData() {
+        try {
+            const response = await fetch('data/country_exports_simplified.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: item.exports,
+                    unit: 'million USD'
+                };
+                values.push(item.exports);
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (green gradient for exports)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+
+            return {
+                id: 'exports',
+                title: 'Exports by Country',
+                description: 'Countries colored by total exports (goods and services)',
+                category: 'economics',
+                tags: ['exports', 'trade', 'economy', 'commerce', 'international trade'],
+                answer_variations: [
+                    'exports',
+                    'export',
+                    'trade exports',
+                    'international exports',
+                    'goods exports'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Exports data:', error);
+            return null;
+        }
+    }
+    
+    async convertImportsData() {
+        try {
+            const response = await fetch('data/imports_by_country.json');
+            const data = await response.json();
+
+            const countries = {};
+            const values = [];
+
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: item.imports_million_usd,
+                    unit: 'million USD'
+                };
+                values.push(item.imports_million_usd);
+            });
+
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+
+            // Apply colors based on values (blue gradient for imports)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1976d2');
+            });
+
+            return {
+                id: 'imports',
+                title: 'Imports by Country',
+                description: 'Countries colored by total merchandise imports',
+                category: 'economics',
+                tags: ['imports', 'trade', 'economy', 'commerce', 'international trade'],
+                answer_variations: [
+                    'imports',
+                    'import',
+                    'trade imports',
+                    'international imports',
+                    'goods imports'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1976d2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting Imports data:', error);
+            return null;
+        }
+    }
+    
     getColorForRatio(ratio, minColor, maxColor) {
         // Simple linear interpolation between two colors
         const r1 = parseInt(minColor.slice(1, 3), 16);
@@ -1178,19 +1429,25 @@ class QuizGame {
     setupEventListeners() {
         // Submit guess button
         const submitBtn = document.getElementById('submitGuess');
-        submitBtn.addEventListener('click', () => this.handleSubmitGuess());
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => this.handleSubmitGuess());
+        }
         
         // Enter key in input
         const guessInput = document.getElementById('guessInput');
-        guessInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                this.handleSubmitGuess();
-            }
-        });
+        if (guessInput) {
+            guessInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    this.handleSubmitGuess();
+                }
+            });
+        }
         
-        // Skip quiz button
+        // Skip quiz button (if it exists)
         const skipBtn = document.getElementById('skipQuiz');
-        skipBtn.addEventListener('click', () => this.skipQuiz());
+        if (skipBtn) {
+            skipBtn.addEventListener('click', () => this.skipQuiz());
+        }
     }
     
     handleSubmitGuess() {
@@ -1381,7 +1638,11 @@ class QuizGame {
             'age': ['median age', 'average age', 'demographic age', 'population age'],
             'islands': ['island count', 'number of islands', 'island territory', 'archipelago'],
             'phones': ['mobile phones', 'cell phones', 'mobile devices', 'telecommunications'],
-            'flag': ['national flag', 'country flag', 'flag adoption', 'national symbol']
+            'flag': ['national flag', 'country flag', 'flag adoption', 'national symbol'],
+            'monarchy': ['kings', 'queens', 'royalty', 'monarchs', 'crown'],
+            'party system': ['political parties', 'democracy', 'political system', 'government type'],
+            'exports': ['trade exports', 'international trade', 'goods exports', 'commerce'],
+            'imports': ['trade imports', 'international imports', 'goods imports', 'commerce']
         };
         
         for (const [key, synonymList] of Object.entries(synonyms)) {
@@ -1492,7 +1753,8 @@ class QuizGame {
             'health': '🏥',
             'education': '📚',
             'geography': '🗺️',
-            'agriculture': '🌾'
+            'agriculture': '🌾',
+            'politics': '🏛️'
         };
         return categoryEmojis[category] || '🗺️';
     }
