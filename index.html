@@ -16,6 +16,12 @@
         <header class="header">
             <h1>Simple World Map</h1>
             <div class="controls">
+                <select id="configSelect" class="config-select">
+                    <option value="none">No Color Scheme</option>
+                    <option value="blue_gradient">Blue Gradient</option>
+                    <option value="red_gradient">Red Gradient</option>
+                    <option value="green_gradient">Green Gradient</option>
+                </select>
                 <button id="clearSelection" class="btn">Clear Selection</button>
             </div>
         </header>
@@ -24,6 +30,11 @@
             <div id="map" class="map-container"></div>
             
             <div class="sidebar">
+                <h3>Configuration</h3>
+                <div id="configInfo" class="config-info">
+                    <p class="no-config">Select a color scheme to apply country colors</p>
+                </div>
+                
                 <h3>Selected Country</h3>
                 <div id="countryInfo" class="country-info">
                     <p class="no-selection">Click on a country to select it</p>

@@ -1,0 +1,85 @@
+{
+  "configs": {
+    "blue_gradient": {
+      "name": "Blue Gradient",
+      "description": "Countries colored with blue gradient based on values",
+      "colorScheme": {
+        "minColor": "#e3f2fd",
+        "maxColor": "#1976d2",
+        "defaultColor": "#ffffff"
+      },
+      "countries": {
+        "Norway": {
+          "value": 50,
+          "color": "#64b5f6"
+        },
+        "Sweden": {
+          "value": 100,
+          "color": "#1976d2"
+        },
+        "Denmark": {
+          "value": 75,
+          "color": "#42a5f5"
+        },
+        "Finland": {
+          "value": 60,
+          "color": "#90caf9"
+        }
+      }
+    },
+    "red_gradient": {
+      "name": "Red Gradient", 
+      "description": "Countries colored with red gradient based on values",
+      "colorScheme": {
+        "minColor": "#ffebee",
+        "maxColor": "#d32f2f",
+        "defaultColor": "#ffffff"
+      },
+      "countries": {
+        "Norway": {
+          "value": 10,
+          "color": "#ffcdd2"
+        },
+        "Sweden": {
+          "value": 45,
+          "color": "#ef5350"
+        },
+        "Denmark": {
+          "value": 30,
+          "color": "#ff8a80"
+        },
+        "Finland": {
+          "value": 20,
+          "color": "#ffcdd2"
+        }
+      }
+    },
+    "green_gradient": {
+      "name": "Green Gradient",
+      "description": "Countries colored with green gradient based on values", 
+      "colorScheme": {
+        "minColor": "#e8f5e8",
+        "maxColor": "#2e7d32",
+        "defaultColor": "#ffffff"
+      },
+      "countries": {
+        "Norway": {
+          "value": 80,
+          "color": "#66bb6a"
+        },
+        "Sweden": {
+          "value": 90,
+          "color": "#43a047"
+        },
+        "Denmark": {
+          "value": 85,
+          "color": "#4caf50"
+        },
+        "Finland": {
+          "value": 70,
+          "color": "#81c784"
+        }
+      }
+    }
+  }
+}
