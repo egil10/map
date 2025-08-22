@@ -9,6 +9,7 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 - **Free-Text Guessing**: Type your answer instead of multiple choice
 - **Smart Answer System**: Accepts various ways to describe the same concept
 - **Endless Content**: Expandable JSON data files for unlimited quizzes
+- **Automatic Data Loading**: Converts raw JSON files into quiz format automatically
 
 ### Visual Design
 - **Vibrant Nintendo-Inspired UI**: Bright colors, gradients, and playful animations
@@ -25,12 +26,29 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 
 ## 🎯 Current Quiz Categories
 
-1. **💰 GDP per Capita 2023** - Economic wealth per person
-2. **👥 Population Density** - People per square kilometer
-3. **👥 World Population 2025** - Total population by country
-4. **☕ Coffee Consumption** - Annual coffee intake per person
-5. **😊 Happiness Index** - Life satisfaction scores
-6. **💻 Internet Speed** - Average download speeds
+### 📊 **Economics**
+- **💰 GDP per Capita 2023** - Economic wealth per person
+
+### 👥 **Demographics**
+- **👥 Population Density** - People per square kilometer
+- **👥 World Population 2025** - Total population by country
+- **👥 Population Density (Detailed)** - Comprehensive density data
+
+### 🗺️ **Geography**
+- **🗺️ Land Area** - Total land area by country
+- **💧 Water Percentage** - Percentage of water coverage
+
+### 🌾 **Agriculture**
+- **🌾 Arable Land per Person** - Agricultural land area per person
+
+### ☕ **Lifestyle**
+- **☕ Coffee Consumption** - Annual coffee intake per person
+
+### 😊 **Social**
+- **😊 Happiness Index** - Life satisfaction scores
+
+### 💻 **Technology**
+- **💻 Internet Speed** - Average download speeds
 
 ## 🎨 Design Features
 
@@ -75,7 +93,7 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 - **Lucide Icons**: Beautiful, consistent iconography
 
 ### Data Structure
-The game uses a flexible JSON structure for quiz data:
+The game uses a flexible JSON structure for quiz data and automatically converts raw data files:
 
 ```json
 {
@@ -106,10 +124,15 @@ map/
 │   └── style.css       # Vibrant game styling
 ├── js/
 │   ├── map.js          # World map functionality
-│   ├── quiz.js         # Quiz game logic
+│   ├── quiz.js         # Quiz game logic with data conversion
 │   └── app.js          # Main application controller
 ├── data/
-│   └── quiz_data.json  # Quiz configurations
+│   ├── quiz_data.json  # Base quiz configurations
+│   ├── land_area.json  # Raw land area data
+│   ├── percent_water.json # Raw water percentage data
+│   ├── arable_land_per_person.json # Raw agricultural data
+│   ├── population_density.json # Raw population density data
+│   └── world_population_2025.json # Raw population data
 └── README.md           # This file
 ```
 
@@ -126,33 +149,37 @@ map/
    - Or serve with a local server for best experience
 
 3. **Start playing**:
-   - The game will automatically load and start
+   - The game will automatically load and convert all data files
    - Click on countries to see their data values
    - Type your guesses and earn points!
 
 ## 🎯 Adding New Quizzes
 
-To add new quiz data, simply edit `data/quiz_data.json`:
+### Method 1: Add to quiz_data.json
+Simply edit `data/quiz_data.json` to add new quiz configurations.
 
-1. **Add a new quiz object** with a unique ID
-2. **Define the quiz metadata** (title, description, category)
-3. **Add tags and answer variations** for flexible answer checking
-4. **Include country data** with values and colors
-5. **Choose a color scheme** that fits the data type
+### Method 2: Add Raw Data Files (Recommended)
+1. **Add a new JSON file** to the `data/` folder with this structure:
+   ```json
+   {
+     "title": "Your Data Title",
+     "data": [
+       {"country": "Country Name", "value_field": 123}
+     ]
+   }
+   ```
 
-Example new quiz:
+2. **The game automatically converts** raw data files into quiz format
+3. **No manual configuration needed** - just add the file and restart the game
+
+Example raw data file:
 ```json
 {
-  "beer_consumption": {
-    "title": "Beer Consumption per Capita",
-    "description": "Annual beer consumption per person",
-    "category": "lifestyle",
-    "tags": ["beer", "alcohol", "consumption", "drinking"],
-    "answer_variations": ["beer consumption", "beer drinking", "alcohol consumption"],
-    "countries": {
-      "Germany": {"value": 104, "color": "#8B4513", "unit": "liters/year"}
-    }
-  }
+  "title": "Beer Consumption per Capita",
+  "data": [
+    {"country": "Germany", "beer_consumption": 104},
+    {"country": "Czech Republic", "beer_consumption": 143}
+  ]
 }
 ```
 
@@ -166,6 +193,8 @@ Example new quiz:
 - **Achievement System**: Badges for milestones
 - **Sound Effects**: Audio feedback for interactions
 - **Dark Mode**: Alternative color scheme
+- **Data Import**: Upload custom CSV/JSON files
+- **Quiz Editor**: Visual interface for creating quizzes
 
 ## 🎨 Design Inspiration
 
