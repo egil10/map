@@ -38,6 +38,7 @@ body {
     padding: 20px;
     z-index: 1000;
     height: 140px; /* Reduced since we removed footer */
+    position: relative;
 }
 
 /* Input Section */
@@ -45,19 +46,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
     margin-bottom: 8px; /* Reduced spacing */
-    max-width: 1200px; /* Increased to accommodate separated elements */
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
-    position: relative;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    max-width: 600px;
 }
 
 .guess-input {
@@ -81,8 +74,7 @@ body {
     align-items: center;
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 20px;
 }
 
 .social-link {
