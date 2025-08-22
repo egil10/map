@@ -21,8 +21,7 @@ class WorldMap {
         // Initialize the map centered on the world
         this.map = L.map('map').setView([20, 0], 2);
         
-        // Set map bounds to show 3 world views
-        this.map.setMaxBounds([[-90, -540], [90, 540]]);
+        // Set map bounds for infinite repetition
         this.map.setMinZoom(1);
         
         // Add a simple, clean tile layer (CartoDB Positron - clean and minimal)
@@ -30,8 +29,7 @@ class WorldMap {
             attribution: '© OpenStreetMap contributors, © CartoDB',
             subdomains: 'abcd',
             maxZoom: 19,
-            noWrap: false, // Allow limited repetition
-            bounds: [[-90, -540], [90, 540]] // Allow 3 world views (540° = 3 * 180°)
+            noWrap: false // Allow infinite repetition
         }).addTo(this.map);
         
         // Load countries data
@@ -62,15 +60,26 @@ class WorldMap {
             return this.getCountryStyle(feature);
         };
         
+        // Track current hover popup to ensure only one at a time
+        let currentHoverPopup = null;
+        
         // Highlight function
         const highlightFeature = (e) => {
             const layer = e.target;
+            
+            // Close any existing hover popup
+            if (currentHoverPopup) {
+                currentHoverPopup.closePopup();
+                currentHoverPopup = null;
+            }
+            
             layer.setStyle({
                 fillColor: '#ecf0f1',
                 weight: 2,
                 color: '#bdc3c7',
                 fillOpacity: 0.9
             });
+            
             // Use DOM class instead of Leaflet class
             if (layer.getElement()) {
                 layer.getElement().classList.add('country-hover');
@@ -86,6 +95,7 @@ class WorldMap {
                     closeButton: false,
                     autoClose: false
                 }).openPopup();
+                currentHoverPopup = layer;
             }
         };
         
@@ -94,6 +104,7 @@ class WorldMap {
             if (this.selectedCountry !== e.target.feature.properties.name) {
                 this.countriesLayer.resetStyle(e.target);
             }
+            
             // Use DOM class instead of Leaflet class
             if (e.target.getElement()) {
                 e.target.getElement().classList.remove('country-hover');
@@ -102,6 +113,7 @@ class WorldMap {
             // Close popup on mouse out
             if (e.target.isPopupOpen()) {
                 e.target.closePopup();
+                currentHoverPopup = null;
             }
         };
         
@@ -114,33 +126,11 @@ class WorldMap {
             });
         };
         
-        // Create multiple layers for 3 world views
-        this.countriesLayer = L.layerGroup();
-        
-        // Create countries for the main world view (0° to 360°)
-        const mainLayer = L.geoJSON(this.countriesData, {
+        // Create a single layer that will repeat infinitely
+        this.countriesLayer = L.geoJSON(this.countriesData, {
             style: style,
             onEachFeature: onEachFeature
-        });
-        this.countriesLayer.addLayer(mainLayer);
-        
-        // Create countries for the left world view (-360° to 0°)
-        const leftWorldData = this.cloneAndShiftGeoJSON(this.countriesData, -360);
-        const leftLayer = L.geoJSON(leftWorldData, {
-            style: style,
-            onEachFeature: onEachFeature
-        });
-        this.countriesLayer.addLayer(leftLayer);
-        
-        // Create countries for the right world view (360° to 720°)
-        const rightWorldData = this.cloneAndShiftGeoJSON(this.countriesData, 360);
-        const rightLayer = L.geoJSON(rightWorldData, {
-            style: style,
-            onEachFeature: onEachFeature
-        });
-        this.countriesLayer.addLayer(rightLayer);
-        
-        this.countriesLayer.addTo(this.map);
+        }).addTo(this.map);
     }
     
     getCountryStyle(feature) {
@@ -169,11 +159,9 @@ class WorldMap {
     applyQuizConfiguration(quiz) {
         this.currentQuiz = quiz;
         
-        // Apply colors to all layers in the layer group
-        this.countriesLayer.eachLayer((layer) => {
-            layer.setStyle((feature) => {
-                return this.getCountryStyle(feature);
-            });
+        // Apply colors to the single layer
+        this.countriesLayer.setStyle((feature) => {
+            return this.getCountryStyle(feature);
         });
         
         // Create legend
@@ -439,35 +427,7 @@ class WorldMap {
         }
     }
     
-    cloneAndShiftGeoJSON(geoJSON, longitudeShift) {
-        // Deep clone the GeoJSON data
-        const clonedData = JSON.parse(JSON.stringify(geoJSON));
-        
-        // Shift all longitude coordinates by the specified amount
-        clonedData.features.forEach(feature => {
-            if (feature.geometry && feature.geometry.coordinates) {
-                this.shiftCoordinates(feature.geometry.coordinates, longitudeShift);
-            }
-        });
-        
-        return clonedData;
-    }
-    
-    shiftCoordinates(coordinates, longitudeShift) {
-        if (Array.isArray(coordinates)) {
-            coordinates.forEach(coord => {
-                if (Array.isArray(coord)) {
-                    if (coord.length >= 2 && typeof coord[0] === 'number' && typeof coord[1] === 'number') {
-                        // This is a coordinate pair [longitude, latitude]
-                        coord[0] += longitudeShift;
-                    } else {
-                        // This is a nested array, recurse
-                        this.shiftCoordinates(coord, longitudeShift);
-                    }
-                }
-            });
-        }
-    }
+
     
     createSimpleWorldOutline() {
         // Fallback: create a simple world outline if GeoJSON fails to load
