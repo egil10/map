@@ -40,18 +40,22 @@ class CountryMapper {
     "Russia/Soviet Union": "Russian Federation",
             
             // United Kingdom variations
-            "United Kingdom": "United Kingdom",
-            "UK": "United Kingdom",
-            "Great Britain": "United Kingdom",
-            "United Kingdom (plus British Overseas Territories and Crown Dependencies)": "United Kingdom",
+            "United Kingdom": "United Kingdom of Great Britain and Northern Ireland",
+            "UK": "United Kingdom of Great Britain and Northern Ireland",
+            "Great Britain": "United Kingdom of Great Britain and Northern Ireland",
+            "England": "United Kingdom of Great Britain and Northern Ireland",
+            "Scotland": "United Kingdom of Great Britain and Northern Ireland",
+            "Wales": "United Kingdom of Great Britain and Northern Ireland",
+            "Northern Ireland": "United Kingdom of Great Britain and Northern Ireland",
+            "United Kingdom (plus British Overseas Territories and Crown Dependencies)": "United Kingdom of Great Britain and Northern Ireland",
             
             // France variations
             "France": "France",
             "France (including French overseas departments, collectivities, and territories)": "France",
             
             // Czech Republic
-            "Czech Republic": "Czech Republic",
-            "Czechia": "Czech Republic",
+            "Czech Republic": "Czechia",
+            "Czechia": "Czechia",
             
             // Ivory Coast
             "Ivory Coast": "Côte d'Ivoire",
@@ -67,17 +71,17 @@ class CountryMapper {
             "Korea, Republic of": "Korea, Republic of",
             
             // North Macedonia
-            "North Macedonia": "Macedonia, The Former Yugoslav Republic of",
-            "Macedonia, The Former Yugoslav Republic of": "Macedonia, The Former Yugoslav Republic of",
+            "North Macedonia": "North Macedonia",
+            "Macedonia, The Former Yugoslav Republic of": "North Macedonia",
             
             // East Timor
             "East Timor": "Timor-Leste",
             "Timor-Leste": "Timor-Leste",
             
             // Eswatini
-            "Eswatini": "Swaziland",
-            "Swaziland": "Swaziland",
-            "Eswatini (Swaziland)": "Swaziland",
+            "Eswatini": "Eswatini",
+            "Swaziland": "Eswatini",
+            "Eswatini (Swaziland)": "Eswatini",
             
             // Palestine
             "Palestine": "Palestine, State of",
@@ -92,6 +96,21 @@ class CountryMapper {
             // São Tomé and Príncipe
             "São Tomé and Príncipe": "Sao Tome and Principe",
             "Sao Tome and Principe": "Sao Tome and Principe",
+            
+            // Additional critical mappings based on GeoJSON names
+            "Bolivia": "Bolivia (Plurinational State of)",
+            "Bosnia and Herzegovina": "Bosnia and Herzegovina",
+            "Brunei": "Brunei Darussalam",
+            "Cape Verde": "Cabo Verde",
+            "Congo, Republic of": "Congo",
+            "Congo, Democratic Republic of": "Congo, Democratic Republic of the",
+            "Iran": "Iran (Islamic Republic of)",
+            "Laos": "Lao People's Democratic Republic",
+            "Moldova": "Moldova (Republic of)",
+            "Syria": "Syrian Arab Republic",
+            "Tanzania": "Tanzania, United Republic of",
+            "Venezuela": "Venezuela (Bolivarian Republic of)",
+            "Vietnam": "Viet Nam",
             
             // Saint Barthélemy
             "Saint Barthélemy (France)": "Saint Barthélemy",
