@@ -362,6 +362,33 @@ body {
     backdrop-filter: blur(4px);
 }
 
+.legend-categorical {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.category-swatches {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-swatch {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-count {
+    font-size: 11px;
+    color: #6c757d;
+    text-align: center;
+    font-weight: 500;
+}
+
 /* Leaflet Attribution Styling */
 .leaflet-control-attribution {
     background: rgba(255, 255, 255, 0.9) !important;

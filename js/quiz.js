@@ -1245,9 +1245,22 @@ class QuizGame {
                 monarchyTypes[item.monarchy_type] = (monarchyTypes[item.monarchy_type] || 0) + 1;
             });
 
-            // Create color scheme for monarchy types
+            // Create color scheme for monarchy types with contrasting colors
             const monarchyTypeList = Object.keys(monarchyTypes);
-            const colors = ['#e3f2fd', '#bbdefb', '#90caf9', '#64b5f6', '#42a5f5', '#2196f3', '#1e88e5', '#1976d2'];
+            const colors = [
+                '#e74c3c', // Red
+                '#3498db', // Blue
+                '#2ecc71', // Green
+                '#f39c12', // Orange
+                '#9b59b6', // Purple
+                '#1abc9c', // Teal
+                '#e67e22', // Dark Orange
+                '#34495e', // Dark Blue
+                '#f1c40f', // Yellow
+                '#e91e63', // Pink
+                '#00bcd4', // Cyan
+                '#795548'  // Brown
+            ];
             
             monarchyTypeList.forEach((type, index) => {
                 const color = colors[index % colors.length];
@@ -1302,9 +1315,22 @@ class QuizGame {
                 partySystems[item.party_system] = (partySystems[item.party_system] || 0) + 1;
             });
 
-            // Create color scheme for party systems
+            // Create color scheme for party systems with contrasting colors
             const partySystemList = Object.keys(partySystems);
-            const colors = ['#f3e5f5', '#e1bee7', '#ce93d8', '#ba68c8', '#ab47bc', '#9c27b0', '#8e24aa', '#7b1fa2'];
+            const colors = [
+                '#e74c3c', // Red
+                '#3498db', // Blue
+                '#2ecc71', // Green
+                '#f39c12', // Orange
+                '#9b59b6', // Purple
+                '#1abc9c', // Teal
+                '#e67e22', // Dark Orange
+                '#34495e', // Dark Blue
+                '#f1c40f', // Yellow
+                '#e91e63', // Pink
+                '#00bcd4', // Cyan
+                '#795548'  // Brown
+            ];
             
             partySystemList.forEach((system, index) => {
                 const color = colors[index % colors.length];

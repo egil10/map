@@ -283,7 +283,13 @@ class WorldMap {
             this.map.removeControl(this.legend);
         }
         
-        // Calculate min and max values
+        // Handle categorical data
+        if (quiz.colorScheme?.type === 'categorical') {
+            this.createCategoricalLegend(quiz);
+            return;
+        }
+        
+        // Handle numeric data
         const values = Object.values(quiz.countries).map(country => country.value);
         
         // Filter out invalid values
@@ -337,6 +343,51 @@ class WorldMap {
         this.updateLegendGradient(quiz);
     }
     
+    createCategoricalLegend(quiz) {
+        // Get unique categories and their colors
+        const categories = new Set();
+        const categoryColors = {};
+        
+        Object.values(quiz.countries).forEach(country => {
+            if (country.value && country.color) {
+                categories.add(country.value);
+                categoryColors[country.value] = country.color;
+            }
+        });
+        
+        const categoryList = Array.from(categories);
+        
+        // Create legend HTML with color swatches
+        const colorSwatches = categoryList.map(category => {
+            const color = categoryColors[category];
+            return `<div class="category-swatch" style="background-color: ${color};"></div>`;
+        }).join('');
+        
+        const legendHtml = `
+            <div class="legend">
+                <div class="legend-categorical">
+                    <div class="category-swatches">
+                        ${colorSwatches}
+                    </div>
+                    <div class="category-count">
+                        <span>${categoryList.length} categories</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Create legend control
+        this.legend = L.control({ position: 'bottomleft' });
+        
+        this.legend.onAdd = function() {
+            const div = L.DomUtil.create('div', 'legend-control leaflet-control');
+            div.innerHTML = legendHtml;
+            return div;
+        };
+        
+        this.legend.addTo(this.map);
+    }
+    
     updateLegendGradient(quiz) {
         const gradientBar = document.querySelector('.gradient-bar');
         if (gradientBar && quiz.colorScheme) {
@@ -347,6 +398,13 @@ class WorldMap {
     }
     
     getColorForValue(value, quiz) {
+        // Handle categorical data
+        if (quiz.colorScheme?.type === 'categorical') {
+            // For categorical data, the color is already assigned in the quiz data
+            return quiz.colorScheme?.defaultColor || '#ffffff';
+        }
+        
+        // Handle numeric data
         const values = Object.values(quiz.countries).map(country => country.value);
         
         // Filter out invalid values
