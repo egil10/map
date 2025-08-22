@@ -94,6 +94,49 @@ class WorldMap {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+        
+        // Add value overlays for countries with data
+        this.addValueOverlays();
+    }
+    
+    addValueOverlays() {
+        if (!this.currentQuiz) return;
+        
+        // Remove existing overlays
+        if (this.valueOverlays) {
+            this.valueOverlays.forEach(overlay => {
+                this.map.removeLayer(overlay);
+            });
+        }
+        
+        this.valueOverlays = [];
+        
+        // Add value overlays for each country with data
+        this.countriesLayer.eachLayer((layer) => {
+            const countryName = layer.feature.properties.name;
+            const countryData = this.currentQuiz.countries[countryName];
+            
+            if (countryData) {
+                const bounds = layer.getBounds();
+                const center = bounds.getCenter();
+                const value = this.formatValue(countryData.value, countryData.unit);
+                
+                // Create custom div icon for value display
+                const valueIcon = L.divIcon({
+                    className: 'country-value-overlay',
+                    html: `<div class="value-text">${value}</div>`,
+                    iconSize: [60, 20],
+                    iconAnchor: [30, 10]
+                });
+                
+                const valueMarker = L.marker(center, {
+                    icon: valueIcon,
+                    interactive: false
+                }).addTo(this.map);
+                
+                this.valueOverlays.push(valueMarker);
+            }
+        });
     }
     
     createPopupContent(countryName, countryData) {
@@ -171,6 +214,9 @@ class WorldMap {
         
         // Create or update legend
         this.createLegend(quiz);
+        
+        // Update value overlays
+        this.addValueOverlays();
         
         console.log('Applied quiz configuration:', quiz.title);
     }
