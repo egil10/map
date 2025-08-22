@@ -235,8 +235,8 @@ body {
 /* Focus States */
 .btn:focus,
 .guess-input:focus {
-    outline: 2px solid #007bff;
-    outline-offset: 2px;
+    outline: none;
+    border-color: #dee2e6;
 }
 
 /* Country Popup Styles */
