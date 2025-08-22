@@ -195,6 +195,49 @@ class QuizGame {
                 console.log('📥 Added Imports quiz');
             }
             
+            // New datasets
+            const christianPopulationQuiz = await this.convertChristianPopulationData();
+            if (christianPopulationQuiz) {
+                this.quizData.quizzes[christianPopulationQuiz.id] = christianPopulationQuiz;
+                console.log('⛪ Added Christian Population quiz');
+            }
+            
+            const nobelLaureatesQuiz = await this.convertNobelLaureatesData();
+            if (nobelLaureatesQuiz) {
+                this.quizData.quizzes[nobelLaureatesQuiz.id] = nobelLaureatesQuiz;
+                console.log('🏆 Added Nobel Laureates quiz');
+            }
+            
+            const activeMilitaryQuiz = await this.convertActiveMilitaryData();
+            if (activeMilitaryQuiz) {
+                this.quizData.quizzes[activeMilitaryQuiz.id] = activeMilitaryQuiz;
+                console.log('🎖️ Added Active Military quiz');
+            }
+            
+            const billionairesQuiz = await this.convertBillionairesData();
+            if (billionairesQuiz) {
+                this.quizData.quizzes[billionairesQuiz.id] = billionairesQuiz;
+                console.log('💰 Added Billionaires quiz');
+            }
+            
+            const bloodTypesQuiz = await this.convertBloodTypesData();
+            if (bloodTypesQuiz) {
+                this.quizData.quizzes[bloodTypesQuiz.id] = bloodTypesQuiz;
+                console.log('🩸 Added Blood Types quiz');
+            }
+            
+            const roadSideQuiz = await this.convertRoadSideData();
+            if (roadSideQuiz) {
+                this.quizData.quizzes[roadSideQuiz.id] = roadSideQuiz;
+                console.log('🚗 Added Road Side quiz');
+            }
+            
+            const currencyQuiz = await this.convertCurrencyData();
+            if (currencyQuiz) {
+                this.quizData.quizzes[currencyQuiz.id] = currencyQuiz;
+                console.log('💱 Added Currency quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -1407,6 +1450,402 @@ class QuizGame {
             };
         } catch (error) {
             console.error('Error converting Imports data:', error);
+            return null;
+        }
+    }
+
+    // New dataset conversion methods
+    async convertChristianPopulationData() {
+        try {
+            const response = await fetch('data/percent_christian_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: '%'
+                    };
+                    values.push(value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#e65100');
+            });
+            
+            return {
+                id: 'percent_christian_by_country',
+                title: 'Christian Population Percentage',
+                description: 'Countries colored by percentage of Christian population',
+                category: 'demographics',
+                tags: ['christian', 'religion', 'christianity', 'religious demographics', 'faith', 'christian population'],
+                answer_variations: [
+                    'christian population',
+                    'christianity',
+                    'christian percentage',
+                    'christian demographics',
+                    'christian faith',
+                    'christian religion'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting christian population data:', error);
+            return null;
+        }
+    }
+
+    async convertNobelLaureatesData() {
+        try {
+            const response = await fetch('data/nobel_laureates_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: 'laureates'
+                    };
+                    values.push(value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f3e5f5', '#7b1fa2');
+            });
+            
+            return {
+                id: 'nobel_laureates_by_country',
+                title: 'Nobel Laureates by Country',
+                description: 'Countries colored by number of Nobel Prize winners',
+                category: 'education',
+                tags: ['nobel prize', 'nobel laureates', 'achievement', 'awards', 'academic excellence', 'scientific achievement'],
+                answer_variations: [
+                    'nobel laureates',
+                    'nobel prize winners',
+                    'nobel prize',
+                    'nobel awards',
+                    'nobel achievements',
+                    'nobel winners'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f3e5f5',
+                    maxColor: '#7b1fa2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting nobel laureates data:', error);
+            return null;
+        }
+    }
+
+    async convertActiveMilitaryData() {
+        try {
+            const response = await fetch('data/active_military_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: 'personnel'
+                    };
+                    values.push(value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'active_military_by_country',
+                title: 'Active Military Personnel',
+                description: 'Countries colored by number of active military personnel',
+                category: 'politics',
+                tags: ['military', 'armed forces', 'defense', 'army', 'soldiers', 'military personnel'],
+                answer_variations: [
+                    'military personnel',
+                    'active military',
+                    'armed forces',
+                    'military size',
+                    'army size',
+                    'defense forces'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting active military data:', error);
+            return null;
+        }
+    }
+
+    async convertBillionairesData() {
+        try {
+            const response = await fetch('data/billionaires_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                if (country !== 'World') { // Skip world total
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
+                    if (mappedCountryName) {
+                        countries[mappedCountryName] = {
+                            value: value,
+                            unit: 'billionaires'
+                        };
+                        values.push(value);
+                    }
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff8e1', '#f57f17');
+            });
+            
+            return {
+                id: 'billionaires_by_country',
+                title: 'Billionaires by Country',
+                description: 'Countries colored by number of billionaires',
+                category: 'economics',
+                tags: ['billionaires', 'wealth', 'rich', 'millionaires', 'wealthy people', 'ultra rich'],
+                answer_variations: [
+                    'billionaires',
+                    'wealthy people',
+                    'billionaire count',
+                    'ultra rich',
+                    'wealthy individuals',
+                    'billionaire population'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff8e1',
+                    maxColor: '#f57f17',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting billionaires data:', error);
+            return null;
+        }
+    }
+
+    async convertBloodTypesData() {
+        try {
+            const response = await fetch('data/blood_types_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data).forEach(([country, bloodData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    // Use O+ blood type percentage as the main metric
+                    const value = bloodData['O+'];
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: '%'
+                    };
+                    values.push(value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'blood_types_by_country',
+                title: 'O+ Blood Type Distribution',
+                description: 'Countries colored by percentage of O+ blood type',
+                category: 'health',
+                tags: ['blood types', 'blood type o+', 'blood distribution', 'blood groups', 'o positive blood'],
+                answer_variations: [
+                    'blood types',
+                    'o+ blood type',
+                    'blood type distribution',
+                    'blood groups',
+                    'o positive blood',
+                    'blood type percentage'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting blood types data:', error);
+            return null;
+        }
+    }
+
+    async convertRoadSideData() {
+        try {
+            const response = await fetch('data/country_side_of_road.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                if (mappedCountryName) {
+                    // Convert RHT/LHT to numeric values for coloring
+                    const value = item.side_of_road === 'RHT' ? 1 : 0;
+                    countries[mappedCountryName] = {
+                        value: value,
+                        color: value === 1 ? '#4caf50' : '#f44336', // Green for RHT, Red for LHT
+                        unit: item.side_of_road
+                    };
+                }
+            });
+            
+            return {
+                id: 'country_side_of_road',
+                title: 'Driving Side by Country',
+                description: 'Countries colored by which side of the road they drive on',
+                category: 'lifestyle',
+                tags: ['driving side', 'road side', 'traffic', 'driving', 'left hand drive', 'right hand drive'],
+                answer_variations: [
+                    'driving side',
+                    'side of road',
+                    'traffic side',
+                    'road driving',
+                    'left hand drive',
+                    'right hand drive'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    minColor: '#f44336', // Red for LHT
+                    maxColor: '#4caf50', // Green for RHT
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting road side data:', error);
+            return null;
+        }
+    }
+
+    async convertCurrencyData() {
+        try {
+            const response = await fetch('data/usd_to_country_currencies.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                if (mappedCountryName) {
+                    const value = item.usd_exchange_rate;
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: 'USD rate'
+                    };
+                    values.push(value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'usd_to_country_currencies',
+                title: 'USD Exchange Rates',
+                description: 'Countries colored by USD exchange rate',
+                category: 'economics',
+                tags: ['exchange rate', 'currency', 'usd', 'foreign exchange', 'currency rate', 'money'],
+                answer_variations: [
+                    'exchange rate',
+                    'usd exchange rate',
+                    'currency rate',
+                    'foreign exchange',
+                    'currency value',
+                    'usd rate'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting currency data:', error);
             return null;
         }
     }
