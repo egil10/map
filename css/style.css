@@ -112,6 +112,25 @@ body {
 .btn-icon i {
     width: 20px;
     height: 20px;
+    color: inherit;
+}
+
+.btn-icon svg {
+    color: inherit;
+}
+
+/* Ensure Lucide icons are visible */
+.btn-icon svg path,
+.btn-icon svg line,
+.btn-icon svg polyline,
+.btn-icon svg circle,
+.btn-icon svg rect {
+    stroke: currentColor;
+    fill: none;
+}
+
+.btn-icon svg path[fill] {
+    fill: currentColor;
 }
 
 /* Feedback */
