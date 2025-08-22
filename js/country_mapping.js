@@ -267,6 +267,40 @@ class CountryMapper {
             // Hong Kong
             "Hong Kong": "Hong Kong",
             
+            // The Bahamas
+            "The Bahamas": "Bahamas",
+            "Bahamas": "Bahamas",
+            
+            // Afghanistan variations
+            "Afghanistan": "Afghanistan",
+            
+            // Hong Kong variations
+            "Hong Kong (China)": "Hong Kong",
+            "Hong Kong": "Hong Kong",
+            
+            // Macau variations
+            "Macau (China)": "Macao",
+            "Macau": "Macao",
+            
+            // New Caledonia variations
+            "New Caledonia (FR)": "New Caledonia",
+            "New Caledonia": "New Caledonia",
+            
+            // Faroe Islands variations
+            "Faroe Islands (DK)": "Faroe Islands",
+            "Faroe Islands": "Faroe Islands",
+            
+            // French Polynesia variations
+            "French Polynesia (FR)": "French Polynesia",
+            "French Polynesia": "French Polynesia",
+            
+            // Cocos Islands variations
+            "Cocos Islands (AU)": "Cocos (Keeling) Islands",
+            "Cocos (Keeling) Islands": "Cocos (Keeling) Islands",
+            
+            // Saint Helena variations
+            "Saint Helena": "Saint Helena",
+            
             // The Gambia
             "The Gambia": "Gambia",
             "Gambia": "Gambia",
@@ -428,9 +462,6 @@ class CountryMapper {
             
             // European Union
             "European Union": "Germany", // Map to largest EU country
-            
-            // The Bahamas
-            "The Bahamas": "Bahamas",
             
             // All other countries (exact matches)
             "Albania": "Albania",
