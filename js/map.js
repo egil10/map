@@ -157,9 +157,13 @@ class WorldMap {
     }
     
     createPopupContent(countryName, countryData) {
+        const formattedValue = this.formatValue(countryData.value, countryData.unit);
         return `
             <div class="popup-content">
                 <h3>${countryName}</h3>
+                <div class="popup-value">
+                    <span class="value-number">${formattedValue}</span>
+                </div>
             </div>
         `;
     }
