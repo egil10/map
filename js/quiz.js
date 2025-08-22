@@ -66,6 +66,34 @@ class QuizGame {
                 console.log('👥 Added Population Density (Detailed) quiz');
             }
             
+            // Convert fertility rate data
+            const fertilityRateQuiz = await this.convertFertilityRateData();
+            if (fertilityRateQuiz) {
+                this.quizData.quizzes[fertilityRateQuiz.id] = fertilityRateQuiz;
+                console.log('👶 Added Fertility Rate quiz');
+            }
+            
+            // Convert GNI per capita data
+            const gniPerCapitaQuiz = await this.convertGNIPerCapitaData();
+            if (gniPerCapitaQuiz) {
+                this.quizData.quizzes[gniPerCapitaQuiz.id] = gniPerCapitaQuiz;
+                console.log('💰 Added GNI Per Capita quiz');
+            }
+            
+            // Convert HDI data
+            const hdiQuiz = await this.convertHDIData();
+            if (hdiQuiz) {
+                this.quizData.quizzes[hdiQuiz.id] = hdiQuiz;
+                console.log('📊 Added Human Development Index quiz');
+            }
+            
+            // Convert GDP by country data
+            const gdpByCountryQuiz = await this.convertGDPByCountryData();
+            if (gdpByCountryQuiz) {
+                this.quizData.quizzes[gdpByCountryQuiz.id] = gdpByCountryQuiz;
+                console.log('🏭 Added GDP by Country quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -303,6 +331,240 @@ class QuizGame {
             };
         } catch (error) {
             console.error('Error converting population density data:', error);
+            return null;
+        }
+    }
+    
+    async convertFertilityRateData() {
+        try {
+            const response = await fetch('data/total_fertility_rate_2025.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.total_fertility_rate,
+                        unit: 'children per woman'
+                    };
+                    values.push(item.total_fertility_rate);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (pink gradient for fertility)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fce4ec', '#c2185b');
+            });
+            
+            return {
+                id: 'fertility_rate_2025',
+                title: 'Fertility Rate 2025',
+                description: 'Countries colored by total fertility rate (children per woman)',
+                category: 'demographics',
+                tags: ['fertility rate', 'birth rate', 'children per woman', 'demographics', 'population growth'],
+                answer_variations: [
+                    'fertility rate',
+                    'birth rate',
+                    'children per woman',
+                    'total fertility rate',
+                    'fertility',
+                    'births per woman'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fce4ec',
+                    maxColor: '#c2185b',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting fertility rate data:', error);
+            return null;
+        }
+    }
+    
+    async convertGNIPerCapitaData() {
+        try {
+            const response = await fetch('data/gni_per_capita_2024.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.gni_per_capita_usd,
+                        unit: 'USD'
+                    };
+                    values.push(item.gni_per_capita_usd);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (gold gradient for wealth)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff8e1', '#f57f17');
+            });
+            
+            return {
+                id: 'gni_per_capita_2024',
+                title: 'GNI Per Capita 2024',
+                description: 'Countries colored by Gross National Income per capita',
+                category: 'economics',
+                tags: ['gni per capita', 'income', 'wealth', 'economics', 'gross national income', 'money'],
+                answer_variations: [
+                    'gni per capita',
+                    'income per person',
+                    'wealth per person',
+                    'gross national income',
+                    'income',
+                    'money per person'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff8e1',
+                    maxColor: '#f57f17',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting GNI per capita data:', error);
+            return null;
+        }
+    }
+    
+    async convertHDIData() {
+        try {
+            const response = await fetch('data/hdi_by_country_2023.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: item.hdi_value,
+                    unit: 'HDI score'
+                };
+                values.push(item.hdi_value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (blue gradient for development)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'hdi_2023',
+                title: 'Human Development Index 2023',
+                description: 'Countries colored by Human Development Index score',
+                category: 'social',
+                tags: ['human development index', 'hdi', 'development', 'quality of life', 'social progress'],
+                answer_variations: [
+                    'human development index',
+                    'hdi',
+                    'development',
+                    'quality of life',
+                    'human development',
+                    'development index'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting HDI data:', error);
+            return null;
+        }
+    }
+    
+    async convertGDPByCountryData() {
+        try {
+            const response = await fetch('data/gdp_by_country_2025.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.gdp_million_usd,
+                        unit: 'million USD'
+                    };
+                    values.push(item.gdp_million_usd);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (green gradient for GDP)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'gdp_by_country_2025',
+                title: 'GDP by Country 2025',
+                description: 'Countries colored by total GDP (Gross Domestic Product)',
+                category: 'economics',
+                tags: ['gdp', 'gross domestic product', 'economy', 'economic size', 'economic output'],
+                answer_variations: [
+                    'gdp',
+                    'gross domestic product',
+                    'economy size',
+                    'economic output',
+                    'economic size',
+                    'total gdp'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting GDP by country data:', error);
             return null;
         }
     }

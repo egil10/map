@@ -28,11 +28,14 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 
 ### 📊 **Economics**
 - **💰 GDP per Capita 2023** - Economic wealth per person
+- **💰 GNI Per Capita 2024** - Gross National Income per person
+- **🏭 GDP by Country 2025** - Total economic output by country
 
 ### 👥 **Demographics**
 - **👥 Population Density** - People per square kilometer
 - **👥 World Population 2025** - Total population by country
 - **👥 Population Density (Detailed)** - Comprehensive density data
+- **👶 Fertility Rate 2025** - Children per woman by country
 
 ### 🗺️ **Geography**
 - **🗺️ Land Area** - Total land area by country
@@ -46,6 +49,7 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 
 ### 😊 **Social**
 - **😊 Happiness Index** - Life satisfaction scores
+- **📊 Human Development Index 2023** - Quality of life and development scores
 
 ### 💻 **Technology**
 - **💻 Internet Speed** - Average download speeds
