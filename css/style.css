@@ -221,39 +221,14 @@ body {
 
 .popup-content {
     text-align: center;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .popup-content h3 {
-    margin: 0 0 12px 0;
+    margin: 0;
     font-size: 18px;
     font-weight: 600;
     color: #333333;
-}
-
-.popup-value {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 8px;
-}
-
-.value-number {
-    font-size: 20px;
-    font-weight: 700;
-    color: #007bff;
-}
-
-.value-unit {
-    font-size: 14px;
-    color: #6c757d;
-    font-weight: 500;
-}
-
-.popup-color-indicator {
-    border: 2px solid #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Legend Styles */
