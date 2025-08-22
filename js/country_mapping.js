@@ -386,6 +386,52 @@ class CountryMapper {
             "Russia (Asia)": "Russian Federation",
             "Russia (Europe)": "Russian Federation",
             
+            // Réunion
+            "Réunion": "Réunion",
+            "Réunion (France)": "Réunion",
+            
+            // French Guiana
+            "French Guiana": "French Guiana",
+            "French Guiana (France)": "French Guiana",
+            
+            // Martinique
+            "Martinique": "Martinique",
+            "Martinique (France)": "Martinique",
+            
+            // Guadeloupe
+            "Guadeloupe": "Guadeloupe",
+            "Guadeloupe (France)": "Guadeloupe",
+            
+            // Mayotte
+            "Mayotte": "Mayotte",
+            "Mayotte (France)": "Mayotte",
+            
+            // Akrotiri and Dhekelia
+            "Akrotiri and Dhekelia": "Akrotiri and Dhekelia",
+            "Akrotiri and Dhekelia (UK)": "Akrotiri and Dhekelia",
+            
+            // Afghanistan variations
+            "Afghanistan (Islamic Emirate)": "Afghanistan",
+            "Afghanistan (Islamic Republic)": "Afghanistan",
+            
+            // Spain Canarias
+            "Spain (Canarias)": "Spain",
+            
+            // United States variations
+            "United States (Alaska)": "United States of America",
+            "United States (contiguous)": "United States of America",
+            "United States (Hawaii)": "United States of America",
+            
+            // India/Pakistan disputed territory
+            "India/Pakistan (disputed territory of Ladakh in Kashmir)": "India",
+            "Pakistan/India (undemarcated Kashmir area)": "Pakistan",
+            
+            // European Union
+            "European Union": "Germany", // Map to largest EU country
+            
+            // The Bahamas
+            "The Bahamas": "Bahamas",
+            
             // All other countries (exact matches)
             "Albania": "Albania",
             "Algeria": "Algeria",
