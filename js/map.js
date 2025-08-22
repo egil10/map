@@ -6,6 +6,7 @@ class WorldMap {
         this.selectedCountry = null;
         this.countriesData = null;
         this.currentQuiz = null;
+        this.legend = null;
         
         this.init();
     }
@@ -76,6 +77,16 @@ class WorldMap {
                 mouseout: resetHighlight,
                 click: (e) => this.selectCountry(e.target, feature)
             });
+            
+            // Add popup with country data
+            if (this.currentQuiz && this.currentQuiz.countries[feature.properties.name]) {
+                const countryData = this.currentQuiz.countries[feature.properties.name];
+                const popupContent = this.createPopupContent(feature.properties.name, countryData);
+                layer.bindPopup(popupContent, {
+                    className: 'country-popup',
+                    maxWidth: 300
+                });
+            }
         };
         
         // Create the layer
@@ -83,6 +94,36 @@ class WorldMap {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+    }
+    
+    createPopupContent(countryName, countryData) {
+        const value = countryData.value;
+        const unit = countryData.unit || '';
+        const formattedValue = this.formatValue(value, unit);
+        
+        return `
+            <div class="popup-content">
+                <h3>${countryName}</h3>
+                <div class="popup-value">
+                    <span class="value-number">${formattedValue}</span>
+                    ${unit ? `<span class="value-unit">${unit}</span>` : ''}
+                </div>
+                <div class="popup-color-indicator" style="background-color: ${countryData.color}"></div>
+            </div>
+        `;
+    }
+    
+    formatValue(value, unit) {
+        if (typeof value === 'number') {
+            if (value >= 1000000) {
+                return (value / 1000000).toFixed(1) + 'M';
+            } else if (value >= 1000) {
+                return (value / 1000).toFixed(1) + 'K';
+            } else {
+                return value.toLocaleString();
+            }
+        }
+        return value;
     }
     
     getCountryStyle(feature) {
@@ -114,9 +155,94 @@ class WorldMap {
         // Update map styles
         if (this.countriesLayer) {
             this.countriesLayer.setStyle((feature) => this.getCountryStyle(feature));
+            
+            // Update popups for all countries
+            this.countriesLayer.eachLayer((layer) => {
+                const countryName = layer.feature.properties.name;
+                if (quiz.countries[countryName]) {
+                    const popupContent = this.createPopupContent(countryName, quiz.countries[countryName]);
+                    layer.bindPopup(popupContent, {
+                        className: 'country-popup',
+                        maxWidth: 300
+                    });
+                }
+            });
         }
         
+        // Create or update legend
+        this.createLegend(quiz);
+        
         console.log('Applied quiz configuration:', quiz.title);
+    }
+    
+    createLegend(quiz) {
+        // Remove existing legend
+        if (this.legend) {
+            this.map.removeControl(this.legend);
+        }
+        
+        // Get min and max values
+        const values = Object.values(quiz.countries).map(c => c.value).filter(v => typeof v === 'number');
+        if (values.length === 0) return;
+        
+        const minValue = Math.min(...values);
+        const maxValue = Math.max(...values);
+        const unit = quiz.countries[Object.keys(quiz.countries)[0]]?.unit || '';
+        
+        // Create legend HTML
+        const legendHtml = `
+            <div class="legend">
+                <h4>${quiz.title}</h4>
+                <div class="legend-gradient">
+                    <div class="gradient-bar"></div>
+                    <div class="gradient-labels">
+                        <span class="min-label">${this.formatValue(minValue, unit)}</span>
+                        <span class="max-label">${this.formatValue(maxValue, unit)}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        // Create legend control
+        this.legend = L.control({ position: 'bottomright' });
+        this.legend.onAdd = function() {
+            const div = L.DomUtil.create('div', 'legend-control');
+            div.innerHTML = legendHtml;
+            return div;
+        };
+        
+        this.legend.addTo(this.map);
+        
+        // Apply gradient colors to legend
+        this.updateLegendGradient(quiz);
+    }
+    
+    updateLegendGradient(quiz) {
+        const values = Object.values(quiz.countries).map(c => c.value).filter(v => typeof v === 'number');
+        if (values.length === 0) return;
+        
+        const minValue = Math.min(...values);
+        const maxValue = Math.max(...values);
+        
+        // Get colors for min and max
+        const minColor = this.getColorForValue(minValue, quiz);
+        const maxColor = this.getColorForValue(maxValue, quiz);
+        
+        // Apply gradient to legend
+        const gradientBar = document.querySelector('.gradient-bar');
+        if (gradientBar) {
+            gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
+        }
+    }
+    
+    getColorForValue(value, quiz) {
+        // Find the country with this value and return its color
+        for (const [countryName, countryData] of Object.entries(quiz.countries)) {
+            if (countryData.value === value) {
+                return countryData.color;
+            }
+        }
+        return '#cccccc'; // fallback
     }
     
     createSimpleWorldOutline() {
@@ -189,8 +315,9 @@ class WorldMap {
         
         let quizInfo = '';
         if (country.quizData) {
+            const formattedValue = this.formatValue(country.quizData.value, country.quizData.unit);
             quizInfo = `
-                <p>Value: <span class="value">${country.quizData.value} ${country.quizData.unit}</span></p>
+                <p>Value: <span class="value">${formattedValue} ${country.quizData.unit || ''}</span></p>
                 <p>Color: <span class="value">${country.quizData.color}</span></p>
             `;
         }
