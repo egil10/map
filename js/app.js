@@ -1,5 +1,5 @@
-// Main application controller for Simple World Map
-class SimpleMapApp {
+// Main application controller for Quiz Game
+class QuizApp {
     constructor() {
         this.mapInstance = null;
         this.init();
@@ -14,23 +14,11 @@ class SimpleMapApp {
     }
     
     initializeMap() {
-        // Initialize the simple world map
-        this.mapInstance = new SimpleWorldMap();
+        // Initialize the world map for quiz game
+        this.mapInstance = new WorldMap();
     }
     
     setupEventListeners() {
-        // Configuration selector
-        const configSelect = document.getElementById('configSelect');
-        configSelect.addEventListener('change', (e) => {
-            this.changeConfiguration(e.target.value);
-        });
-        
-        // Clear Selection button
-        const clearSelectionBtn = document.getElementById('clearSelection');
-        clearSelectionBtn.addEventListener('click', () => {
-            this.clearSelection();
-        });
-        
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
             this.handleKeyboardShortcuts(e);
@@ -42,40 +30,27 @@ class SimpleMapApp {
         });
     }
     
-    changeConfiguration(configKey) {
-        if (this.mapInstance) {
-            this.mapInstance.applyConfiguration(configKey);
-            this.showNotification(`Applied ${configKey === 'none' ? 'no color scheme' : configKey}`, 'success');
-        }
-    }
-    
-    clearSelection() {
-        if (this.mapInstance) {
-            this.mapInstance.clearSelection();
-            this.showNotification('Selection cleared!', 'info');
-        }
-    }
-    
     handleKeyboardShortcuts(e) {
-        // 'C' key to clear selection
-        if (e.key === 'c' || e.key === 'C') {
-            e.preventDefault();
-            this.clearSelection();
-        }
-        
         // 'ESC' key to clear selection
         if (e.key === 'Escape') {
-            this.clearSelection();
+            if (this.mapInstance) {
+                this.mapInstance.clearSelection();
+            }
         }
         
-        // Number keys to switch configurations
-        if (e.key >= '1' && e.key <= '3') {
-            const configSelect = document.getElementById('configSelect');
-            const configs = ['none', 'blue_gradient', 'red_gradient', 'green_gradient'];
-            const selectedIndex = parseInt(e.key);
-            if (configs[selectedIndex]) {
-                configSelect.value = configs[selectedIndex];
-                this.changeConfiguration(configs[selectedIndex]);
+        // 'H' key to show hint
+        if (e.key === 'h' || e.key === 'H') {
+            const showHintBtn = document.getElementById('showHint');
+            if (showHintBtn) {
+                showHintBtn.click();
+            }
+        }
+        
+        // 'S' key to skip quiz
+        if (e.key === 's' || e.key === 'S') {
+            const skipBtn = document.getElementById('skipQuiz');
+            if (skipBtn) {
+                skipBtn.click();
             }
         }
     }
@@ -129,14 +104,13 @@ class SimpleMapApp {
 }
 
 // Initialize the application when the script loads
-const app = new SimpleMapApp();
+const app = new QuizApp();
 
 // Add some helpful console messages
-console.log('🗺️ Simple World Map loaded successfully!');
+console.log('🗺️ Geography Quiz Game loaded successfully!');
 console.log('📝 Available keyboard shortcuts:');
-console.log('   C - Clear selection');
-console.log('   ESC - Clear selection');
-console.log('   1 - No color scheme');
-console.log('   2 - Blue gradient');
-console.log('   3 - Red gradient');
-console.log('   Click on any country to select it');
+console.log('   H - Show hint');
+console.log('   S - Skip quiz');
+console.log('   ESC - Clear country selection');
+console.log('   Enter - Submit guess');
+console.log('   Click on any country to see details');

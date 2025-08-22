@@ -1,12 +1,11 @@
-// Simple World Map class with color configurations
-class SimpleWorldMap {
+// World Map class for Quiz Game
+class WorldMap {
     constructor() {
         this.map = null;
         this.countriesLayer = null;
         this.selectedCountry = null;
         this.countriesData = null;
-        this.configs = null;
-        this.currentConfig = null;
+        this.currentQuiz = null;
         
         this.init();
     }
@@ -22,20 +21,11 @@ class SimpleWorldMap {
             maxZoom: 19
         }).addTo(this.map);
         
-        // Load configurations and countries data
-        this.loadConfigurations();
+        // Load countries data
         this.loadCountriesData();
-    }
-    
-    async loadConfigurations() {
-        try {
-            const response = await fetch('data/configs.json');
-            this.configs = await response.json();
-            console.log('Configurations loaded:', this.configs);
-        } catch (error) {
-            console.error('Error loading configurations:', error);
-            this.configs = { configs: {} };
-        }
+        
+        // Make map instance globally available
+        window.mapInstance = this;
     }
     
     async loadCountriesData() {
@@ -107,9 +97,9 @@ class SimpleWorldMap {
             fillOpacity: 0.7
         };
         
-        // Apply configuration if available
-        if (this.currentConfig && this.currentConfig.countries[countryName]) {
-            const countryConfig = this.currentConfig.countries[countryName];
+        // Apply quiz configuration if available
+        if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
+            const countryConfig = this.currentQuiz.countries[countryName];
             style.fillColor = countryConfig.color;
             style.fillOpacity = 0.8;
             style.weight = 1.5;
@@ -118,20 +108,15 @@ class SimpleWorldMap {
         return style;
     }
     
-    applyConfiguration(configKey) {
-        if (configKey === 'none') {
-            this.currentConfig = null;
-        } else if (this.configs && this.configs.configs[configKey]) {
-            this.currentConfig = this.configs.configs[configKey];
-        }
+    applyQuizConfiguration(quiz) {
+        this.currentQuiz = quiz;
         
         // Update map styles
         if (this.countriesLayer) {
             this.countriesLayer.setStyle((feature) => this.getCountryStyle(feature));
         }
         
-        // Update configuration info
-        this.updateConfigInfo();
+        console.log('Applied quiz configuration:', quiz.title);
     }
     
     createSimpleWorldOutline() {
@@ -166,17 +151,17 @@ class SimpleWorldMap {
         
         this.selectedCountry = feature.properties.name;
         
-        // Get country configuration if available
-        let countryConfig = null;
-        if (this.currentConfig && this.currentConfig.countries[this.selectedCountry]) {
-            countryConfig = this.currentConfig.countries[this.selectedCountry];
+        // Get country quiz data if available
+        let countryQuizData = null;
+        if (this.currentQuiz && this.currentQuiz.countries[this.selectedCountry]) {
+            countryQuizData = this.currentQuiz.countries[this.selectedCountry];
         }
         
         // Update country info
         this.updateCountryInfo({
             name: feature.properties.name,
             description: `Selected: ${feature.properties.name}`,
-            config: countryConfig
+            quizData: countryQuizData
         });
         
         // Add animation class
@@ -194,60 +179,19 @@ class SimpleWorldMap {
         this.updateCountryInfo(null);
     }
     
-    updateConfigInfo() {
-        const configInfo = document.getElementById('configInfo');
-        
-        if (!this.currentConfig) {
-            configInfo.innerHTML = '<p class="no-config">Select a color scheme to apply country colors</p>';
-            return;
-        }
-        
-        const countriesList = Object.entries(this.currentConfig.countries)
-            .map(([country, data]) => `
-                <div class="config-item">
-                    <h4>${country}</h4>
-                    <p>Value: <span class="value">${data.value}</span></p>
-                    <div class="color-preview">
-                        <div class="color-sample">
-                            <div class="color-box" style="background-color: ${data.color}"></div>
-                            <span>${data.color}</span>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-        
-        configInfo.innerHTML = `
-            <div class="config-item">
-                <h4>${this.currentConfig.name}</h4>
-                <p>${this.currentConfig.description}</p>
-                <div class="color-preview">
-                    <div class="color-sample">
-                        <div class="color-box" style="background-color: ${this.currentConfig.colorScheme.minColor}"></div>
-                        <span>Min</span>
-                    </div>
-                    <div class="color-sample">
-                        <div class="color-box" style="background-color: ${this.currentConfig.colorScheme.maxColor}"></div>
-                        <span>Max</span>
-                    </div>
-                </div>
-            </div>
-            ${countriesList}
-        `;
-    }
-    
     updateCountryInfo(country) {
         const countryInfo = document.getElementById('countryInfo');
         
         if (!country) {
-            countryInfo.innerHTML = '<p class="no-selection">Click on a country to select it</p>';
+            countryInfo.innerHTML = '<p class="no-selection">Click on a country to see details</p>';
             return;
         }
         
-        let configInfo = '';
-        if (country.config) {
-            configInfo = `
-                <p>Value: <span class="value">${country.config.value}</span></p>
-                <p>Color: <span class="value">${country.config.color}</span></p>
+        let quizInfo = '';
+        if (country.quizData) {
+            quizInfo = `
+                <p>Value: <span class="value">${country.quizData.value} ${country.quizData.unit}</span></p>
+                <p>Color: <span class="value">${country.quizData.color}</span></p>
             `;
         }
         
@@ -255,7 +199,7 @@ class SimpleWorldMap {
             <div class="country-item">
                 <h4>${country.name}</h4>
                 <p>${country.description}</p>
-                ${configInfo}
+                ${quizInfo}
             </div>
         `;
     }
