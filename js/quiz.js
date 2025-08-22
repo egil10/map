@@ -1453,19 +1453,24 @@ class QuizGame {
     }
     
     handleSubmitGuess() {
+        const userGuess = document.getElementById('guessInput').value.trim();
+        if (!userGuess) return;
+        
+        // Transform button icon to check
         this.transformToCheckIcon();
         
+        // Disable input and button
         const guessInput = document.getElementById('guessInput');
-        const userGuess = guessInput.value.trim();
+        const submitButton = document.getElementById('submitGuess');
+        guessInput.disabled = true;
+        submitButton.disabled = true;
         
-        if (!userGuess) {
-            this.showFeedback('Please enter a guess!', 'incorrect');
+        // Check if currentQuiz exists before accessing its properties
+        if (!this.currentQuiz) {
+            console.error('No current quiz available');
+            this.showFeedback('Error: No quiz available', 'incorrect');
             return;
         }
-        
-        // Disable input and button after first guess
-        guessInput.disabled = true;
-        document.getElementById('submitGuess').disabled = true;
         
         if (this.checkAnswer(userGuess)) {
             this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
@@ -1504,15 +1509,24 @@ class QuizGame {
         
         // Select random quiz
         const quizIds = Object.keys(this.quizData.quizzes);
+        if (quizIds.length === 0) {
+            console.error('No quizzes available');
+            return;
+        }
+        
         const randomQuizId = quizIds[Math.floor(Math.random() * quizIds.length)];
         this.currentQuiz = this.quizData.quizzes[randomQuizId];
         
         // Apply quiz to map
-        if (window.mapInstance) {
+        if (window.mapInstance && this.currentQuiz) {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
-        console.log('Started new quiz:', this.currentQuiz.title);
+        if (this.currentQuiz) {
+            console.log('Started new quiz:', this.currentQuiz.title);
+        } else {
+            console.error('Failed to start new quiz');
+        }
     }
     
     transformToCheckIcon() {
@@ -1730,16 +1744,20 @@ class QuizGame {
         const circles = document.querySelectorAll('.progress-circle');
         if (this.currentProgress < circles.length) {
             // Update current circle with result
-            circles[this.currentProgress].className = `progress-circle ${isCorrect ? 'correct' : 'incorrect'}`;
-            circles[this.currentProgress].setAttribute('data-lucide', 'circle');
+            const currentCircle = circles[this.currentProgress];
+            currentCircle.classList.remove('current');
+            currentCircle.classList.add(isCorrect ? 'correct' : 'incorrect');
+            currentCircle.setAttribute('data-lucide', 'circle');
             
             // Move to next circle
             this.currentProgress++;
             
             // Update next circle to current if available
             if (this.currentProgress < circles.length) {
-                circles[this.currentProgress].className = 'progress-circle current';
-                circles[this.currentProgress].setAttribute('data-lucide', 'circle');
+                const nextCircle = circles[this.currentProgress];
+                nextCircle.classList.remove('correct', 'incorrect');
+                nextCircle.classList.add('current');
+                nextCircle.setAttribute('data-lucide', 'circle');
             }
             
             // Reinitialize Lucide icons
@@ -1754,11 +1772,13 @@ class QuizGame {
         this.currentProgress = 0;
         
         circles.forEach((circle, index) => {
+            // Remove all classes first
+            circle.classList.remove('current', 'correct', 'incorrect');
+            
             if (index === 0) {
-                circle.className = 'progress-circle current';
+                circle.classList.add('current');
                 circle.setAttribute('data-lucide', 'circle');
             } else {
-                circle.className = 'progress-circle';
                 circle.setAttribute('data-lucide', 'circle-dashed');
             }
         });
