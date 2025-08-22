@@ -18,7 +18,6 @@ class App {
         
         // Initialize map
         this.mapInstance = new WorldMap();
-        await this.mapInstance.init();
         
         // Store map instance globally for quiz access
         window.mapInstance = this.mapInstance;

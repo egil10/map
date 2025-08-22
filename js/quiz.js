@@ -16,7 +16,27 @@ class QuizGame {
     async init() {
         await this.loadAllQuizData();
         this.setupEventListeners();
+        
+        // Wait for map to be ready before starting quiz
+        await this.waitForMap();
         this.startNewQuiz();
+    }
+    
+    async waitForMap() {
+        // Wait for map instance to be available
+        let attempts = 0;
+        const maxAttempts = 50; // 5 seconds max wait
+        
+        while (!window.mapInstance && attempts < maxAttempts) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+        
+        if (!window.mapInstance) {
+            console.error('❌ Map instance not available after waiting');
+        } else {
+            console.log('✅ Map instance ready, starting quiz');
+        }
     }
     
     async loadAllQuizData() {
