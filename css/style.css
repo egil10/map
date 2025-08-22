@@ -68,6 +68,7 @@ body {
     position: absolute;
     left: calc(50% + 250px + 12px); /* Center + half search bar width + gap */
     top: 0;
+    height: 48px; /* Match search bar height (12px padding top + 12px padding bottom + 24px content) */
     display: flex;
     align-items: center;
 }
@@ -302,7 +303,6 @@ body {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    margin-bottom: 160px; /* Updated to align with new quiz interface height (140px + 20px padding) */
     z-index: 1002;
     min-width: 200px;
     height: 80px; /* Match the height of the input section area */
@@ -310,7 +310,7 @@ body {
     align-items: center;
     position: absolute;
     left: 20px;
-    bottom: 160px; /* Updated to align with new quiz interface height */
+    bottom: 20px; /* Position just above the footer */
 }
 
 .legend-control.leaflet-control {
@@ -360,6 +360,31 @@ body {
     padding: 2px 6px;
     border-radius: 4px;
     backdrop-filter: blur(4px);
+}
+
+/* Leaflet Attribution Styling */
+.leaflet-control-attribution {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 6px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    margin: 10px !important;
+}
+
+.leaflet-control-attribution a {
+    color: #6c757d !important;
+    text-decoration: none !important;
+}
+
+.leaflet-control-attribution a:hover {
+    color: #495057 !important;
+}
+
+.leaflet-attribution-flag {
+    opacity: 0.7;
 }
 
 /* Responsive Design */
