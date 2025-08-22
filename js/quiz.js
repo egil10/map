@@ -1712,18 +1712,6 @@ class QuizGame {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = message;
         feedback.className = `feedback ${type}`;
-        
-        // Add animation class
-        if (type === 'correct') {
-            feedback.classList.add('correct-answer');
-        } else if (type === 'incorrect') {
-            feedback.classList.add('incorrect-answer');
-        }
-        
-        // Remove animation class after animation
-        setTimeout(() => {
-            feedback.classList.remove('correct-answer', 'incorrect-answer');
-        }, 600);
     }
     
     clearFeedback() {
