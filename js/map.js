@@ -21,13 +21,17 @@ class WorldMap {
         // Initialize the map centered on the world
         this.map = L.map('map').setView([20, 0], 2);
         
+        // Set map bounds to show 3 world views
+        this.map.setMaxBounds([[-90, -540], [90, 540]]);
+        this.map.setMinZoom(1);
+        
         // Add a simple, clean tile layer (CartoDB Positron - clean and minimal)
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: '© OpenStreetMap contributors, © CartoDB',
             subdomains: 'abcd',
             maxZoom: 19,
-            noWrap: true, // Prevent infinite repetition
-            bounds: [[-90, -180], [90, 180]] // Limit to world bounds
+            noWrap: false, // Allow limited repetition
+            bounds: [[-90, -540], [90, 540]] // Allow 3 world views (540° = 3 * 180°)
         }).addTo(this.map);
         
         // Load countries data
@@ -110,11 +114,33 @@ class WorldMap {
             });
         };
         
-        // Create the layer
-        this.countriesLayer = L.geoJSON(this.countriesData, {
+        // Create multiple layers for 3 world views
+        this.countriesLayer = L.layerGroup();
+        
+        // Create countries for the main world view (0° to 360°)
+        const mainLayer = L.geoJSON(this.countriesData, {
             style: style,
             onEachFeature: onEachFeature
-        }).addTo(this.map);
+        });
+        this.countriesLayer.addLayer(mainLayer);
+        
+        // Create countries for the left world view (-360° to 0°)
+        const leftWorldData = this.cloneAndShiftGeoJSON(this.countriesData, -360);
+        const leftLayer = L.geoJSON(leftWorldData, {
+            style: style,
+            onEachFeature: onEachFeature
+        });
+        this.countriesLayer.addLayer(leftLayer);
+        
+        // Create countries for the right world view (360° to 720°)
+        const rightWorldData = this.cloneAndShiftGeoJSON(this.countriesData, 360);
+        const rightLayer = L.geoJSON(rightWorldData, {
+            style: style,
+            onEachFeature: onEachFeature
+        });
+        this.countriesLayer.addLayer(rightLayer);
+        
+        this.countriesLayer.addTo(this.map);
     }
     
     getCountryStyle(feature) {
@@ -143,9 +169,11 @@ class WorldMap {
     applyQuizConfiguration(quiz) {
         this.currentQuiz = quiz;
         
-        // Apply colors to countries
-        this.countriesLayer.setStyle((feature) => {
-            return this.getCountryStyle(feature);
+        // Apply colors to all layers in the layer group
+        this.countriesLayer.eachLayer((layer) => {
+            layer.setStyle((feature) => {
+                return this.getCountryStyle(feature);
+            });
         });
         
         // Create legend
@@ -408,6 +436,36 @@ class WorldMap {
         // For now, we'll just log it
         if (countryData) {
             console.log(`${countryName}: ${this.formatValue(countryData.value, countryData.unit)}`);
+        }
+    }
+    
+    cloneAndShiftGeoJSON(geoJSON, longitudeShift) {
+        // Deep clone the GeoJSON data
+        const clonedData = JSON.parse(JSON.stringify(geoJSON));
+        
+        // Shift all longitude coordinates by the specified amount
+        clonedData.features.forEach(feature => {
+            if (feature.geometry && feature.geometry.coordinates) {
+                this.shiftCoordinates(feature.geometry.coordinates, longitudeShift);
+            }
+        });
+        
+        return clonedData;
+    }
+    
+    shiftCoordinates(coordinates, longitudeShift) {
+        if (Array.isArray(coordinates)) {
+            coordinates.forEach(coord => {
+                if (Array.isArray(coord)) {
+                    if (coord.length >= 2 && typeof coord[0] === 'number' && typeof coord[1] === 'number') {
+                        // This is a coordinate pair [longitude, latitude]
+                        coord[0] += longitudeShift;
+                    } else {
+                        // This is a nested array, recurse
+                        this.shiftCoordinates(coord, longitudeShift);
+                    }
+                }
+            });
         }
     }
     
