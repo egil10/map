@@ -663,7 +663,9 @@ class CountryMapper {
         if (dataCountryName === 'United States') {
             console.log('CountryMapper - Mapping United States:', {
                 directMapping: this.countryMappings[dataCountryName],
-                hasMapping: !!this.countryMappings[dataCountryName]
+                hasMapping: !!this.countryMappings[dataCountryName],
+                inputName: dataCountryName,
+                expectedOutput: 'United States of America'
             });
         }
         

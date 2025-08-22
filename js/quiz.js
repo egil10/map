@@ -1938,12 +1938,30 @@ class QuizGame {
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    
+                    // Debug logging for United States
+                    if (item.country === 'United States') {
+                        console.log('World Population - United States mapping:', {
+                            original: item.country,
+                            mapped: mappedCountryName,
+                            value: item.population
+                        });
+                    }
+                    
                     countries[mappedCountryName] = {
                         value: item.population,
                         unit: 'people'
                     };
                     values.push(item.population);
                 }
+            });
+            
+            // Debug: Check if United States made it to the final countries object
+            console.log('World Population - Final countries object:', {
+                hasUnitedStates: !!countries['United States of America'],
+                unitedStatesData: countries['United States of America'],
+                totalCountries: Object.keys(countries).length,
+                sampleCountries: Object.keys(countries).slice(0, 10)
             });
             
             // Calculate color scale

@@ -45,6 +45,21 @@ class WorldMap {
             const response = await fetch('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson');
             this.countriesData = await response.json();
             
+            // Debug: Log all country names containing "United" to see what's available
+            const unitedCountries = this.countriesData.features
+                .map(f => f.properties.name)
+                .filter(name => name && name.toLowerCase().includes('united'))
+                .sort();
+            console.log('GeoJSON countries containing "United":', unitedCountries);
+            
+            // Debug: Log a sample of all country names
+            const allCountryNames = this.countriesData.features
+                .map(f => f.properties.name)
+                .filter(name => name)
+                .sort()
+                .slice(0, 20);
+            console.log('Sample of all GeoJSON country names:', allCountryNames);
+            
             // Create the countries layer
             this.createCountriesLayer();
         } catch (error) {
@@ -142,8 +157,13 @@ class WorldMap {
                 hasQuiz: !!this.currentQuiz,
                 hasCountryData: !!(this.currentQuiz && this.currentQuiz.countries[countryName]),
                 countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null,
-                allCountries: this.currentQuiz ? Object.keys(this.currentQuiz.countries) : []
+                allCountries: this.currentQuiz ? Object.keys(this.currentQuiz.countries).filter(c => c.toLowerCase().includes('united')).slice(0, 5) : []
             });
+        }
+        
+        // Debug: Log all available country names in the GeoJSON to see what we have
+        if (countryName && countryName.toLowerCase().includes('united')) {
+            console.log('GeoJSON country name containing "united":', countryName);
         }
         
         // Default style
