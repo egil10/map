@@ -128,12 +128,14 @@ body {
     position: relative;
 }
 
-/* Shared control height */
-:root {
-  --content-max: clamp(680px, 92vw, 1100px); /* overall width cap */
-  --control-h: 44px;        /* keep from previous step */
-  --control-radius: 999px;  /* keep from previous step */
-  --control-pad-x: 14px;    /* keep from previous step */
+:root{
+  --content-max: clamp(680px, 92vw, 1100px);
+  --input-max: clamp(420px, 52vw, 720px);
+  --control-h: 44px;
+  --control-radius: 999px;
+  --pad-x: 14px;
+  --inline-gap: 6px;            /* space between right-side icons */
+  --inline-btn-w: 34px;         /* inside buttons' square size */
 }
 
 /* Center the whole quiz interface content if not already */
@@ -141,45 +143,35 @@ body {
   display: block;
 }
 
-/* Input section constrained & centered */
-.input-section {
-  max-width: var(--content-max);
-  margin: 0 auto;                /* center horizontally */
-  width: 100%;
-}
-
-/* Two-column row: left controls, right meta */
-.input-row {
+/* Centering scaffold from previous step (keep) */
+.input-section{ max-width: var(--content-max); margin: 0 auto; width: 100%; }
+.input-row{
   display: grid;
-  grid-template-columns: 1fr auto; /* left grows, right hugs content */
+  grid-template-columns: 1fr minmax(300px, var(--input-max)) 1fr;
   align-items: center;
   column-gap: 16px;
 }
+.input-left{ justify-self:start; display:flex; align-items:center; }
+.input-center{ justify-self:center; display:flex; align-items:center; min-width:0; }
+.input-right{ justify-self:end; display:flex; align-items:center; gap:16px; }
 
-/* Left cluster: reuse from earlier */
-.input-section .input-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  min-width: 0; /* prevent overflow from long placeholder text */
-}
-
-/* Input-with-button wrapper */
-.input-with-button {
+/* ===== Embedded controls inside the input ===== */
+.input-with-embedded{
   position: relative;
-  flex: 1 1 auto;        /* allow to expand */
-  min-width: 120px;
-}
-
-.input-with-button .guess-input {
   width: 100%;
   height: var(--control-h);
-  padding: 0 calc(var(--control-h) + 6px) 0 var(--control-pad-x); 
-  /* right padding makes room for button */
+}
+
+/* The input itself gets extra padding to avoid overlap with inside buttons */
+.input-with-embedded .guess-input{
+  width: 100%;
+  height: 100%;
   border-radius: var(--control-radius);
   box-sizing: border-box;
   line-height: calc(var(--control-h) - 2px);
+  /* left padding for left chevron; right padding for send + right chevron + gaps */
+  padding-left: calc(var(--inline-btn-w) + var(--pad-x));
+  padding-right: calc(var(--inline-btn-w) * 2 + var(--inline-gap) + var(--pad-x));
   border: 1px solid #dee2e6;
   font-size: 16px;
   background: #ffffff;
@@ -188,27 +180,49 @@ body {
   transition: border-color 0.2s ease;
 }
 
-.input-with-button .input-arrow-btn {
+/* Generic inline button inside the input */
+.input-with-embedded .inline-btn{
   position: absolute;
   top: 50%;
-  right: 6px;
   transform: translateY(-50%);
-  height: calc(var(--control-h) - 6px);
-  width: calc(var(--control-h) - 6px);
+  width: var(--inline-btn-w);
+  height: var(--inline-btn-w);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
+  border: none;
   cursor: pointer;
-  background: transparent;  /* match input background */
-  border: none;             /* optional, can add subtle border */
 }
 
-.input-with-button .input-arrow-btn svg {
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
+/* Left chevron sits inside on the far left */
+.input-with-embedded .inline-left{ left: 6px; }
+
+/* Right-side group sits inside on the far right */
+.input-with-embedded .inline-right-group{
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--inline-gap);
 }
+
+.input-with-embedded .inline-right-group .inline-btn{
+  position: static;  /* group manages placement */
+  transform: none;
+}
+
+/* Specific roles (optional hooks for theming/hover) */
+.inline-send svg,
+.inline-right svg,
+.inline-left svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
+
+/* Focus/hover (tweak to your theme) */
+.input-with-embedded .inline-btn:focus-visible{ outline: 2px solid rgba(0,0,0,0.2); outline-offset: 2px; }
+.input-with-embedded .inline-btn:hover{ background: rgba(0,0,0,0.04); }
 
 .guess-input::placeholder {
     color: #6c757d;
@@ -250,46 +264,41 @@ body {
     line-height: 1.3;
 }
 
-/* Keep buttons aligned (from earlier step) */
-.input-section .mode-toggle-btn,
-.input-section .input-skip-btn {
+/* Mode toggle button */
+.mode-toggle-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   height: var(--control-h);
   border-radius: var(--control-radius);
   box-sizing: border-box;
-  flex: 0 0 auto;
   background: none;
   border: none;
   color: #6c757d;
   cursor: pointer;
   transition: all 0.2s ease;
+  padding: 0 12px;
+  gap: 8px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
 }
-.input-section .input-skip-btn { width: var(--control-h); }
 
-.input-section .mode-toggle-btn { padding: 0 12px; gap: 8px; white-space: nowrap; font-size: 12px; font-weight: 500; }
-
-.input-skip-btn:hover {
+.mode-toggle-btn:hover {
     background: #f8f9fa;
     color: #007bff;
 }
 
-.input-skip-btn:active {
-    transform: scale(0.95);
-}
-
-.input-with-button .input-arrow-btn:hover {
+.input-with-embedded .inline-btn:hover {
     background: #f8f9fa;
     color: #007bff;
 }
 
-.input-with-button .input-arrow-btn:active {
+.input-with-embedded .inline-btn:active {
     transform: scale(0.95);
 }
 
-.input-section .input-skip-btn svg,
-.input-section .mode-toggle-btn svg { width: 20px; height: 20px; display: block; }
+.mode-toggle-btn svg { width: 20px; height: 20px; display: block; }
 
 /* Prevent accidental stacking on mid widths */
 .input-section {
@@ -315,29 +324,26 @@ body {
   }
 }
 
-/* Responsive behavior */
-@media (max-width: 900px) {
-  .input-row { grid-template-columns: 1fr; row-gap: 10px; }
-  .input-meta { justify-content: space-between; }
+/* Responsive fallbacks */
+@media (max-width: 900px){
+  .input-row{ grid-template-columns: 1fr; row-gap: 10px; }
+  .input-right{ justify-content: space-between; justify-self: stretch; }
+}
+@media (max-width: 520px){
+  .input-right{ flex-direction: column; gap: 8px; align-items: flex-start; }
 }
 @media (max-width: 520px) {
-  .input-meta { flex-direction: column; gap: 8px; align-items: flex-start; }
   .progress-bar { margin-top: 10px; }
 }
 
 /* Right meta cluster (same row) */
-.input-meta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.input-meta .social-links {
+.input-right .social-links {
   display: flex;
   align-items: center;
   gap: 12px;
   position: static;
 }
-.input-meta .social-links .social-link {
+.input-right .social-links .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,12 +354,12 @@ body {
   border-radius: 8px;
   transition: all 0.2s ease;
 }
-.input-meta .social-links .social-link:hover {
+.input-right .social-links .social-link:hover {
   background: #f8f9fa;
   color: #495057;
 }
-.input-meta .social-links .social-link svg { width: 22px; height: 22px; display: block; }
-.input-meta .dataset-counter { 
+.input-right .social-links .social-link svg { width: 22px; height: 22px; display: block; }
+.input-right .dataset-counter { 
   font-weight: 500; 
   color: #444; 
   white-space: nowrap; 
@@ -362,10 +368,10 @@ body {
   cursor: pointer;
   transition: color 0.2s ease;
 }
-.input-meta .dataset-counter:hover {
+.input-right .dataset-counter:hover {
   color: #007bff;
 }
-.input-meta .dataset-counter #datasetCount {
+.input-right .dataset-counter #datasetCount {
   font-weight: 600;
   color: #495057;
 }
@@ -753,18 +759,12 @@ body {
         margin-bottom: 12px;
     }
     
-    .input-wrapper {
-        width: 100%;
-        max-width: 100%;
-    }
-    
     .guess-input {
         font-size: 16px; /* Prevent zoom on iOS */
         border-radius: 12px;
     }
     
-    .input-arrow-btn i,
-    .input-arrow-btn svg {
+    .inline-btn svg {
         width: 18px;
         height: 18px;
     }
@@ -843,9 +843,7 @@ body {
     }
     
     /* Dataset Counter - Mobile */
-    .dataset-counter {
-        right: 16px;
-        top: 100px;
+    .input-right .dataset-counter {
         font-size: 11px;
     }
     
@@ -966,13 +964,13 @@ body {
         height: 24px;
     }
     
-    .input-meta .social-links .social-link {
+    .input-right .social-links .social-link {
         width: 48px;
         height: 48px;
         border-radius: 16px;
     }
     
-    .input-meta .social-links .social-link svg {
+    .input-right .social-links .social-link svg {
         width: 22px;
         height: 22px;
     }
@@ -1029,11 +1027,11 @@ body {
         height: 48px;
     }
     
-    .input-meta .social-links {
+    .input-right .social-links {
         gap: 12px;
     }
     
-    .input-meta .social-links .social-link {
+    .input-right .social-links .social-link {
         width: 44px;
         height: 44px;
     }
@@ -1078,7 +1076,7 @@ body {
         max-width: 100%;
     }
     
-    .social-links {
+    .input-right .social-links {
         position: absolute;
         right: 12px;
         top: 12px;

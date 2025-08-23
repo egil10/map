@@ -3528,22 +3528,13 @@ class QuizGame {
     }
     
     transformToCheckIcon() {
-        const submitIcon = document.getElementById('submitIcon');
-        if (submitIcon) {
-            // Remove old icon
-            submitIcon.remove();
-            
-            // Create new check icon
-            const checkIcon = document.createElement('i');
-            checkIcon.setAttribute('data-lucide', 'check');
-            checkIcon.id = 'submitIcon';
-            
-            // Add to button
-            const submitBtn = document.getElementById('submitGuess');
-            submitBtn.appendChild(checkIcon);
-            
-            // Reinitialize Lucide icons
-            lucide.createIcons();
+        const submitBtn = document.getElementById('submitGuess');
+        if (submitBtn) {
+            // Replace the SVG content with check icon
+            const svg = submitBtn.querySelector('svg');
+            if (svg) {
+                svg.innerHTML = '<path d="M20 6 9 17l-5-5"></path>';
+            }
             
             // Transform back to arrow-up icon after a delay
             setTimeout(() => {
@@ -3553,22 +3544,13 @@ class QuizGame {
     }
     
     transformToArrowIcon() {
-        const submitIcon = document.getElementById('submitIcon');
-        if (submitIcon) {
-            // Remove old icon
-            submitIcon.remove();
-            
-            // Create new arrow-up icon
-            const arrowIcon = document.createElement('i');
-            arrowIcon.setAttribute('data-lucide', 'arrow-up');
-            arrowIcon.id = 'submitIcon';
-            
-            // Add to button
-            const submitBtn = document.getElementById('submitGuess');
-            submitBtn.appendChild(arrowIcon);
-            
-            // Reinitialize Lucide icons
-            lucide.createIcons();
+        const submitBtn = document.getElementById('submitGuess');
+        if (submitBtn) {
+            // Replace the SVG content with arrow-up icon
+            const svg = submitBtn.querySelector('svg');
+            if (svg) {
+                svg.innerHTML = '<path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path>';
+            }
         }
     }
     

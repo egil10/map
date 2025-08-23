@@ -51,35 +51,47 @@
             <!-- Input Section -->
             <div class="input-section">
                 <div class="input-row">
-                    <!-- Left: controls -->
-                    <div class="input-wrapper">
+                    <!-- Left: mode toggle -->
+                    <div class="input-left">
                         <div class="mode-toggle">
                             <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
                                 <i data-lucide="toggle-left" id="modeToggleIcon"></i>
                                 <span id="modeToggleText">Play</span>
                             </button>
                         </div>
-                        <div class="input-with-button">
-                            <input 
-                                type="text" 
-                                id="guessInput" 
-                                placeholder="What does this map show?"
-                                class="guess-input"
-                            >
-                            <button id="submitGuess" class="input-arrow-btn">
-                                <i data-lucide="arrow-up" id="submitIcon"></i>
-                            </button>
-                        </div>
-                        <button id="skipLeft" class="input-skip-btn">
-                            <i data-lucide="chevron-left" id="skipLeftIcon"></i>
-                        </button>
-                        <button id="skipRight" class="input-skip-btn">
-                            <i data-lucide="chevron-right" id="skipRightIcon"></i>
-                        </button>
                     </div>
 
-                    <!-- Right: meta (same row on wide screens) -->
-                    <div class="input-meta">
+                    <!-- Center: input with embedded controls -->
+                    <div class="input-center">
+                        <div class="input-with-embedded">
+                            <!-- Left inside: skip left -->
+                            <button id="skipLeft" class="inline-btn inline-left" aria-label="Previous" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m15 18-6-6 6-6"></path>
+                                </svg>
+                            </button>
+
+                            <!-- The actual input -->
+                            <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
+
+                            <!-- Right inside: small group with send + skip right -->
+                            <div class="inline-right-group">
+                                <button id="submitGuess" class="inline-btn inline-send" aria-label="Send">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path>
+                                    </svg>
+                                </button>
+                                <button id="skipRight" class="inline-btn inline-right" aria-label="Next" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: meta -->
+                    <div class="input-right">
                         <div class="social-links">
                             <a href="https://github.com/egil10/map" target="_blank" class="social-link" aria-label="GitHub">
                                 <i data-lucide="github"></i>
