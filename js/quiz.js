@@ -6041,8 +6041,6 @@ class QuizGame {
             
             // Copy to clipboard
             navigator.clipboard.writeText(tableData).then(() => {
-                this.showFeedback('Data copied to clipboard!', 'correct');
-                
                 // Change icon from copy to check for 2 seconds
                 const copyBtn = document.getElementById('copyData');
                 if (copyBtn) {
