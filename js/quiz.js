@@ -2574,46 +2574,89 @@ class QuizGame {
         const correctAnswers = document.querySelectorAll('.progress-circle.correct').length;
         const totalQuestions = 10;
         
-        // Show completion message
-        this.showFeedback(`🎉 Quiz Complete! You got ${correctAnswers}/${totalQuestions} correct. Click "Replay" to start over!`, 'correct');
-        
-        // Add replay button
-        this.addReplayButton();
+        // Create completion screen
+        this.showCompletionScreen(correctAnswers, totalQuestions);
     }
     
-    addReplayButton() {
-        // Remove existing replay button if any
-        const existingReplay = document.querySelector('.replay-button');
-        if (existingReplay) {
-            existingReplay.remove();
-        }
+    showCompletionScreen(correctAnswers, totalQuestions) {
+        // Clear any existing feedback
+        this.clearFeedback();
         
-        // Create replay button
-        const replayButton = document.createElement('button');
-        replayButton.className = 'btn replay-button';
-        replayButton.textContent = 'Replay Quiz';
-        replayButton.style.cssText = `
-            margin-top: 10px;
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
+        // Create completion container
+        const completionContainer = document.createElement('div');
+        completionContainer.className = 'completion-screen';
+        completionContainer.innerHTML = `
+            <div class="completion-content">
+                <h2>Quiz Complete!</h2>
+                <p class="score-text">${correctAnswers}/${totalQuestions} correct</p>
+                <div class="completion-buttons">
+                    <button class="completion-btn play-again-btn" id="playAgainBtn">
+                        <i data-lucide="rotate-ccw"></i>
+                        <span>Play Again</span>
+                    </button>
+                    <button class="completion-btn share-btn" id="shareBtn">
+                        <i data-lucide="square-arrow-out-up-right"></i>
+                        <span>Share Result</span>
+                    </button>
+                </div>
+            </div>
         `;
         
-        // Add click handler
-        replayButton.addEventListener('click', () => {
+        // Add to the main container
+        const appContainer = document.querySelector('.app-container');
+        appContainer.appendChild(completionContainer);
+        
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
+        // Add event listeners
+        document.getElementById('playAgainBtn').addEventListener('click', () => {
             this.restartQuiz();
         });
         
-        // Add to feedback area
-        const feedback = document.getElementById('guessFeedback');
-        feedback.appendChild(replayButton);
+        document.getElementById('shareBtn').addEventListener('click', () => {
+            this.shareResult(correctAnswers, totalQuestions);
+        });
+    }
+    
+    shareResult(correctAnswers, totalQuestions) {
+        const text = `I scored ${correctAnswers}/${totalQuestions} on the Geography Quiz! 🌍`;
+        const url = window.location.href;
+        
+        if (navigator.share) {
+            navigator.share({
+                title: 'Geography Quiz Result',
+                text: text,
+                url: url
+            });
+        } else {
+            // Fallback: copy to clipboard
+            const shareText = `${text}\n${url}`;
+            navigator.clipboard.writeText(shareText).then(() => {
+                // Show temporary feedback
+                const shareBtn = document.getElementById('shareBtn');
+                const originalText = shareBtn.innerHTML;
+                shareBtn.innerHTML = '<i data-lucide="check"></i><span>Copied!</span>';
+                
+                setTimeout(() => {
+                    shareBtn.innerHTML = originalText;
+                    if (typeof lucide !== 'undefined') {
+                        lucide.createIcons();
+                    }
+                }, 2000);
+            });
+        }
     }
     
     restartQuiz() {
+        // Remove completion screen if it exists
+        const completionScreen = document.querySelector('.completion-screen');
+        if (completionScreen) {
+            completionScreen.remove();
+        }
+        
         // Reset progress
         this.currentProgress = 0;
         this.score = 0;

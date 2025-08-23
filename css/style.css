@@ -982,6 +982,134 @@ body {
     .progress-circle {
         color: #adb5bd;
     }
+    
+    .completion-screen {
+        color: #f8f9fa;
+    }
+    
+    .completion-content h2 {
+        color: #f8f9fa;
+    }
+    
+    .score-text {
+        color: #adb5bd;
+    }
+    
+    .completion-btn {
+        background: #343a40;
+        border-color: #495057;
+        color: #f8f9fa;
+    }
+    
+    .completion-btn:hover {
+        background: #495057;
+    }
 }
 
+/* Completion Screen */
+.completion-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
 
+.completion-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+.completion-content h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.score-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666666;
+    margin-bottom: 32px;
+}
+
+.completion-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.completion-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.completion-btn:hover {
+    background: #f8f9fa;
+    border-color: #007bff;
+    color: #007bff;
+    transform: translateY(-1px);
+}
+
+.completion-btn:active {
+    transform: translateY(0);
+}
+
+.completion-btn i {
+    width: 16px;
+    height: 16px;
+}
+
+/* Mobile responsive completion screen */
+@media (max-width: 768px) {
+    .completion-content {
+        padding: 32px 24px;
+        margin: 20px;
+    }
+    
+    .completion-content h2 {
+        font-size: 20px;
+    }
+    
+    .score-text {
+        font-size: 16px;
+    }
+    
+    .completion-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .completion-btn {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+    
+    .completion-btn i {
+        width: 18px;
+        height: 18px;
+    }
+}
