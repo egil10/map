@@ -3140,8 +3140,10 @@ class QuizGame {
             this.updateProgressBar(false);
         }
         
-        // Show skip button for next question
-        this.showSkipButton();
+        // Show skip button for next question (only in learn mode)
+        if (this.isLearnMode) {
+            this.showSkipButton();
+        }
     }
     
     showAnswerTitle() {
