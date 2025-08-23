@@ -130,7 +130,7 @@ body {
 
 :root{
   --content-max: clamp(680px, 92vw, 1100px);
-  --input-max: clamp(420px, 52vw, 720px);
+  --input-max: clamp(520px, 65vw, 900px);
   --control-h: 44px;
   --control-radius: 999px;
   --pad-x: 14px;

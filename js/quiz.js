@@ -3168,21 +3168,63 @@ class QuizGame {
     }
     
     skipToPreviousQuestion() {
-        // Go to previous question if possible
-        if (this.currentProgress > 0) {
-            this.currentProgress--;
-            this.startNewQuiz();
+        if (this.isLearnMode) {
+            // In learn mode, go to a random previous dataset
+            this.loadRandomDataset();
+        } else {
+            // In play mode, go to previous question if possible
+            if (this.currentProgress > 0) {
+                this.currentProgress--;
+                this.startNewQuiz();
+            }
         }
     }
     
     skipToNextQuestion() {
-        // Only proceed if not at the end
-        if (this.currentProgress < 10) {
-            this.startNewQuiz();
+        if (this.isLearnMode) {
+            // In learn mode, go to a random next dataset
+            this.loadRandomDataset();
         } else {
-            // If at the end, trigger completion
-            this.updateProgressBar(false);
+            // In play mode, only proceed if not at the end
+            if (this.currentProgress < 10) {
+                this.startNewQuiz();
+            } else {
+                // If at the end, trigger completion
+                this.updateProgressBar(false);
+            }
         }
+    }
+    
+    loadRandomDataset() {
+        if (!this.quizData || !this.quizData.quizzes) return;
+        
+        // Get all available datasets
+        const availableDatasets = Object.values(this.quizData.quizzes);
+        if (availableDatasets.length === 0) return;
+        
+        // Select a random dataset
+        const randomIndex = Math.floor(Math.random() * availableDatasets.length);
+        const randomDataset = availableDatasets[randomIndex];
+        
+        // Load the random dataset
+        this.currentQuiz = randomDataset;
+        
+        // Apply random color variations to the quiz
+        this.applyRandomColorVariations();
+        
+        // Apply quiz to map
+        if (window.mapInstance && this.currentQuiz) {
+            console.log('Applying random dataset to map:', {
+                quizTitle: this.currentQuiz.title,
+                countriesCount: Object.keys(this.currentQuiz.countries).length
+            });
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+        }
+        
+        // Show the answer title in learn mode
+        this.showAnswerTitle();
+        
+        console.log('Loaded random dataset:', this.currentQuiz.title);
     }
     
     toggleMode() {
