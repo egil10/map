@@ -6534,18 +6534,21 @@ class QuizGame {
                 if (copyBtn) {
                     const svg = copyBtn.querySelector('svg');
                     if (svg) {
-                        // Store original icon
-                        const originalIcon = svg.outerHTML;
+                        // Store original icon content (copy icon)
+                        const originalIconContent = '<rect width="14" height="20" x="8" y="2" rx="2" ry="2"></rect><path d="M4 6h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-2"></path>';
+                        const originalDataLucide = 'copy';
                         
                         // Change to check icon
-                        svg.outerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg>';
+                        svg.innerHTML = '<path d="M20 6 9 17l-5-5"></path>';
+                        svg.setAttribute('data-lucide', 'check');
                         
                         // Change color to green
                         copyBtn.style.color = '#28a745';
                         
                         // Revert back after 2 seconds
                         setTimeout(() => {
-                            svg.outerHTML = originalIcon;
+                            svg.innerHTML = originalIconContent;
+                            svg.setAttribute('data-lucide', originalDataLucide);
                             copyBtn.style.color = '';
                         }, 2000);
                     }
