@@ -340,6 +340,20 @@ class QuizGame {
                 console.log('📦 Added Top Goods Export quiz');
             }
             
+            // Convert world bank income group data
+            const worldBankIncomeGroupQuiz = await this.convertWorldBankIncomeGroupData();
+            if (worldBankIncomeGroupQuiz) {
+                this.quizData.quizzes[worldBankIncomeGroupQuiz.id] = worldBankIncomeGroupQuiz;
+                console.log('💰 Added World Bank Income Group quiz');
+            }
+            
+            // Convert leading import source data
+            const leadingImportSourceQuiz = await this.convertLeadingImportSourceData();
+            if (leadingImportSourceQuiz) {
+                this.quizData.quizzes[leadingImportSourceQuiz.id] = leadingImportSourceQuiz;
+                console.log('📥 Added Leading Import Source quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -2684,6 +2698,137 @@ class QuizGame {
             };
         } catch (error) {
             console.error('Error converting top goods export data:', error);
+            return null;
+        }
+    }
+    
+    async convertWorldBankIncomeGroupData() {
+        try {
+            const response = await fetch('data/world_bank_income_group_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const incomeGroups = {};
+            
+            // Process data and collect income groups
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                incomeGroups[countryData.value] = (incomeGroups[countryData.value] || 0) + 1;
+            });
+            
+            // Create color scheme for income groups with distinct colors
+            const incomeGroupList = Object.keys(incomeGroups);
+            const colors = [
+                '#e74c3c', // Low income - red
+                '#f39c12', // Lower middle income - orange
+                '#f1c40f', // Upper middle income - yellow
+                '#2ecc71'  // High income - green
+            ];
+            
+            incomeGroupList.forEach((group, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === group) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'world_bank_income_group_by_country',
+                title: 'World Bank Income Group',
+                description: 'Countries colored by their World Bank income group classification',
+                category: 'economics',
+                tags: ['income group', 'world bank', 'economics', 'development', 'wealth'],
+                answer_variations: [
+                    'world bank income group',
+                    'income group',
+                    'economic classification',
+                    'wealth classification',
+                    'development level',
+                    'economic status'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting world bank income group data:', error);
+            return null;
+        }
+    }
+    
+    async convertLeadingImportSourceData() {
+        try {
+            const response = await fetch('data/leading_import_source_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const importSources = {};
+            
+            // Process data and collect import sources
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                importSources[countryData.value] = (importSources[countryData.value] || 0) + 1;
+            });
+            
+            // Create color scheme for import sources with distinct colors
+            const importSourceList = Object.keys(importSources);
+            const colors = [
+                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+                '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#e91e63',
+                '#00bcd4', '#795548', '#607d8b', '#ff5722', '#2196f3',
+                '#4caf50', '#ff9800', '#9c27b0', '#607d8b', '#795548',
+                '#8bc34a', '#ff5722', '#3f51b5', '#009688', '#ffc107'
+            ];
+            
+            importSourceList.forEach((source, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === source) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'leading_import_source_by_country',
+                title: 'Leading Import Source',
+                description: 'Countries colored by their leading import source',
+                category: 'economics',
+                tags: ['import source', 'trade', 'economics', 'commerce', 'imports'],
+                answer_variations: [
+                    'leading import source',
+                    'import source',
+                    'main import',
+                    'primary import',
+                    'leading trade partner',
+                    'major import source'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting leading import source data:', error);
             return null;
         }
     }
