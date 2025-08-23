@@ -5,9 +5,9 @@ class CountryMapper {
     constructor() {
         this.countryMappings = {
             // Major countries with multiple variations
-            "United States": "United States of America",
-            "United States of America": "United States of America",
-            "USA": "United States of America",
+                    "United States": "USA",
+        "United States of America": "USA",
+        "USA": "USA",
             "US": "United States of America",
             "America": "United States of America",
             
@@ -710,10 +710,10 @@ class CountryMapper {
         
         // Try partial matches for common patterns
         const partialMatches = {
-            'united states': 'United States of America',
-            'usa': 'United States of America',
-            'us': 'United States of America',
-            'america': 'United States of America',
+            'united states': 'USA',
+            'usa': 'USA',
+            'us': 'USA',
+            'america': 'USA',
             'russia': 'Russia',
             'china': 'China',
             'uk': 'United Kingdom',

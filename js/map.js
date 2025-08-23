@@ -2,28 +2,28 @@
 function resolveToGeoName(name, geoNames) {
     if (geoNames.has(name)) return name;
 
-    const aliases = new Map([
-        ['United States', 'United States of America'],
-        ['United States of America', 'United States'],
-        ['Russia', 'Russian Federation'],
-        ['Russian Federation', 'Russia'],
-        ['Czech Republic', 'Czechia'],
-        ['Swaziland', 'Eswatini'],
-        ['Macedonia, The Former Yugoslav Republic of', 'North Macedonia'],
-        ['Korea, Republic of', 'South Korea'],
-        ["Korea, Democratic People's Republic of", 'North Korea'],
-        ['Iran, Islamic Republic of', 'Iran'],
-        ["Lao People's Democratic Republic", 'Laos'],
-        ['Syrian Arab Republic', 'Syria'],
-        ['Tanzania, United Republic of', 'Tanzania'],
-        ['Venezuela, Bolivarian Republic of', 'Venezuela'],
-        ['Moldova, Republic of', 'Moldova'],
-        ['Viet Nam', 'Vietnam'],
-        ['Brunei Darussalam', 'Brunei'],
-        ['Holy See (Vatican City State)', 'Vatican'],
-        ['Micronesia, Federated States of', 'Micronesia'],
-        ['Taiwan, Province of China', 'Taiwan'],
-    ]);
+            const aliases = new Map([
+            ['United States', 'USA'],
+            ['United States of America', 'USA'],
+            ['Russia', 'Russian Federation'],
+            ['Russian Federation', 'Russia'],
+            ['Czech Republic', 'Czechia'],
+            ['Swaziland', 'Eswatini'],
+            ['Macedonia, The Former Yugoslav Republic of', 'North Macedonia'],
+            ['Korea, Republic of', 'South Korea'],
+            ["Korea, Democratic People's Republic of", 'North Korea'],
+            ['Iran, Islamic Republic of', 'Iran'],
+            ["Lao People's Democratic Republic", 'Laos'],
+            ['Syrian Arab Republic', 'Syria'],
+            ['Tanzania, United Republic of', 'Tanzania'],
+            ['Venezuela, Bolivarian Republic of', 'Venezuela'],
+            ['Moldova, Republic of', 'Moldova'],
+            ['Viet Nam', 'Vietnam'],
+            ['Brunei Darussalam', 'Brunei'],
+            ['Holy See (Vatican City State)', 'Vatican'],
+            ['Micronesia, Federated States of', 'Micronesia'],
+            ['Taiwan, Province of China', 'Taiwan'],
+        ]);
 
     const alt = aliases.get(name);
     if (alt && geoNames.has(alt)) return alt;
