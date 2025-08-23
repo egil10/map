@@ -2165,8 +2165,10 @@ class QuizGame {
         // Clear feedback
         this.clearFeedback();
         
-        // Reset progress bar
-        this.resetProgressBar();
+        // Only reset progress bar if we're starting fresh (not just changing quiz)
+        if (this.currentProgress === 0) {
+            this.resetProgressBar();
+        }
         
         // Reset input and button
         const guessInput = document.getElementById('guessInput');

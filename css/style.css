@@ -160,6 +160,27 @@ body {
     align-items: center;
 }
 
+/* Reset Button Container */
+.reset-button-container {
+    position: absolute;
+    left: calc(50% + 250px + 12px + 60px); /* Send button position + button width + gap */
+    top: 20px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.reset-btn {
+    color: #6c757d;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    color: #dc3545;
+    transform: scale(1.1);
+}
+
 /* Social Links */
 .social-links {
     display: flex;
@@ -510,6 +531,10 @@ body {
     .send-button-container {
         left: calc(50% + 200px + 12px);
     }
+    
+    .reset-button-container {
+        left: calc(50% + 200px + 12px + 60px);
+    }
 }
 
 @media (max-width: 768px) {
@@ -540,6 +565,14 @@ body {
         align-self: flex-end;
         margin-top: -60px; /* Overlap with input */
         margin-right: 8px;
+    }
+    
+    /* Reset Button - Reposition for mobile */
+    .reset-button-container {
+        position: static;
+        align-self: flex-end;
+        margin-top: -60px; /* Overlap with input */
+        margin-right: -60px; /* Position to the right of send button */
     }
     
     .btn-icon {
@@ -795,6 +828,12 @@ body {
     .send-button-container {
         position: static;
         margin: 0;
+    }
+    
+    .reset-button-container {
+        position: static;
+        margin: 0;
+        margin-left: 8px;
     }
     
     .social-links {
