@@ -129,13 +129,13 @@ body {
 }
 
 :root{
-  --content-max: clamp(680px, 92vw, 1100px);
-  --input-max: clamp(520px, 65vw, 900px);
+  --content-max: clamp(680px, 92vw, 1100px); /* total strip max width */
+  --input-max: clamp(420px, 52vw, 720px);    /* center column cap */
   --control-h: 44px;
   --control-radius: 999px;
   --pad-x: 14px;
-  --inline-gap: 6px;            /* space between right-side icons */
-  --inline-btn-w: 34px;         /* inside buttons' square size */
+  --inline-gap: 6px;
+  --inline-btn-w: 34px;
 }
 
 /* Center the whole quiz interface content if not already */
@@ -143,23 +143,33 @@ body {
   display: block;
 }
 
-/* Centering scaffold from previous step (keep) */
 .input-section{ max-width: var(--content-max); margin: 0 auto; width: 100%; }
+
+/* 3-column grid: LEFT | CENTER (auto) | RIGHT */
 .input-row{
   display: grid;
-  grid-template-columns: 1fr minmax(300px, var(--input-max)) 1fr;
-  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
   column-gap: 16px;
 }
+
 .input-left{ justify-self:start; display:flex; align-items:center; }
-.input-center{ justify-self:center; display:flex; align-items:center; min-width:0; }
 .input-right{ justify-self:end; display:flex; align-items:center; gap:16px; }
 
-/* ===== Embedded controls inside the input ===== */
+/* Center column is sized by its content (center-stack), which we cap */
+.center-stack{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: min(100%, var(--input-max));
+  justify-self: center;   /* center in the middle track */
+}
+
+/* Input with embedded controls */
 .input-with-embedded{
   position: relative;
-  width: 100%;
   height: var(--control-h);
+  width: 100%;
 }
 
 /* The input itself gets extra padding to avoid overlap with inside buttons */
@@ -223,6 +233,14 @@ body {
 /* Focus/hover (tweak to your theme) */
 .input-with-embedded .inline-btn:focus-visible{ outline: 2px solid rgba(0,0,0,0.2); outline-offset: 2px; }
 .input-with-embedded .inline-btn:hover{ background: rgba(0,0,0,0.04); }
+
+/* Right meta visuals */
+.social-links{ display:flex; align-items:center; gap:12px; }
+.social-links .social-link svg{ width:22px; height:22px; display:block; }
+.dataset-counter{ font-weight:500; color:#444; white-space:nowrap; }
+
+/* Toggle styling */
+.mode-toggle-btn{ display:flex; align-items:center; gap:8px; height: var(--control-h); padding: 0 12px; border-radius: var(--control-radius); }
 
 .guess-input::placeholder {
     color: #6c757d;
@@ -324,16 +342,15 @@ body {
   }
 }
 
-/* Responsive fallbacks */
+/* Responsive */
 @media (max-width: 900px){
-  .input-row{ grid-template-columns: 1fr; row-gap: 10px; }
-  .input-right{ justify-content: space-between; justify-self: stretch; }
+  .input-row{ grid-template-columns: 1fr; row-gap: 12px; }
+  .input-left{ justify-self: start; }
+  .center-stack{ justify-self: center; width: min(92vw, var(--input-max)); }
+  .input-right{ justify-self: stretch; justify-content: space-between; }
 }
 @media (max-width: 520px){
-  .input-right{ flex-direction: column; gap: 8px; align-items: flex-start; }
-}
-@media (max-width: 520px) {
-  .progress-bar { margin-top: 10px; }
+  .input-right{ flex-direction: column; gap:8px; align-items:flex-start; }
 }
 
 /* Right meta cluster (same row) */
@@ -410,20 +427,15 @@ body {
     color: #495057;
 }
 
-/* Progress bar centered */
-.progress-bar {
+/* Progress bar matches center width and is centered by container */
+.progress-bar{
   display: flex;
-  justify-content: center;  /* center horizontally */
-  margin: 16px auto 0;
-  max-width: var(--content-max);
+  justify-content: center;
+  margin-top: 12px;
   width: 100%;
 }
-
-.progress-bar .progress-circles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;   /* keep circles centered */
+.progress-bar .progress-circles{
+  display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center;
 }
 
 .progress-circle {

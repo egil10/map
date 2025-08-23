@@ -51,77 +51,64 @@
             <!-- Input Section -->
             <div class="input-section">
                 <div class="input-row">
-                    <!-- Left: mode toggle -->
+                    <!-- LEFT: toggle -->
                     <div class="input-left">
-                        <div class="mode-toggle">
-                            <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
-                                <i data-lucide="toggle-left" id="modeToggleIcon"></i>
-                                <span id="modeToggleText">Play</span>
-                            </button>
-                        </div>
+                        <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="toggle-left" id="modeToggleIcon" class="lucide lucide-toggle-left"><circle cx="9" cy="12" r="3"></circle><rect width="20" height="14" x="2" y="5" rx="7"></rect></svg>
+                            <span id="modeToggleText">Play</span>
+                        </button>
                     </div>
 
-                    <!-- Center: input with embedded controls -->
-                    <div class="input-center">
+                    <!-- CENTER: perfectly centered stack (INPUT + PROGRESS) -->
+                    <div class="center-stack">
                         <div class="input-with-embedded">
-                            <!-- Left inside: skip left -->
-                            <button id="skipLeft" class="inline-btn inline-left" aria-label="Previous" style="display: none;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="m15 18-6-6 6-6"></path>
-                                </svg>
+                            <button id="skipLeft" class="inline-btn inline-left" aria-label="Previous" style="display:none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
                             </button>
 
-                            <!-- The actual input -->
                             <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
 
-                            <!-- Right inside: small group with send + skip right -->
                             <div class="inline-right-group">
-                                <button id="submitGuess" class="inline-btn inline-send" aria-label="Send">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path>
-                                    </svg>
+                                <button id="submitGuess" class="inline-btn inline-send" aria-label="Send" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
                                 </button>
-                                <button id="skipRight" class="inline-btn inline-right" aria-label="Next" style="display: none;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="m9 18 6-6-6-6"></path>
-                                    </svg>
+                                <button id="skipRight" class="inline-btn inline-right" aria-label="Next" style="display:none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
                                 </button>
+                            </div>
+                        </div>
+
+                        <!-- Progress bar directly under the input, same center width -->
+                        <div class="progress-bar">
+                            <div class="progress-circles">
+                                <i data-lucide="circle" class="progress-circle current"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right: meta -->
+                    <!-- RIGHT: social + dataset -->
                     <div class="input-right">
                         <div class="social-links">
                             <a href="https://github.com/egil10/map" target="_blank" class="social-link" aria-label="GitHub">
-                                <i data-lucide="github"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="github" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
                             </a>
                             <a href="mailto:" class="social-link" aria-label="Email">
-                                <i data-lucide="mail"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
                             </a>
                         </div>
-                        <div class="dataset-counter" id="datasetCounter">
-                            <span id="datasetCount">##</span> datasets
-                        </div>
+                        <div class="dataset-counter" id="datasetCounter"><span id="datasetCount">52</span> datasets</div>
                     </div>
-                </div> <!-- /.input-row -->
-            </div> <!-- /.input-section -->
-            
-            <!-- Progress Bar -->
-            <div class="progress-bar">
-                <div class="progress-circles">
-                    <i data-lucide="circle" class="progress-circle current"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                </div>
-            </div>
+                </div><!-- /.input-row -->
+            </div><!-- /.input-section -->
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
