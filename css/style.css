@@ -414,42 +414,446 @@ body {
     opacity: 0.7;
 }
 
-/* Responsive Design */
+/* Responsive Design - Mobile First Approach */
+@media (max-width: 1200px) {
+    .guess-input {
+        width: 400px;
+    }
+    
+    .send-button-container {
+        left: calc(50% + 200px + 12px);
+    }
+}
+
 @media (max-width: 768px) {
+    /* Quiz Interface - Mobile Layout */
+    .quiz-interface {
+        height: 180px; /* Increased height for mobile */
+        padding: 16px;
+    }
+    
+    /* Input Section - Stack vertically on mobile */
     .input-section {
-        padding: 0 20px;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
     }
     
     .guess-input {
-        font-size: 14px;
-        padding: 10px 14px;
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 14px 16px;
+        border-radius: 12px;
+    }
+    
+    /* Send Button - Reposition for mobile */
+    .send-button-container {
+        position: static;
+        align-self: flex-end;
+        margin-top: -60px; /* Overlap with input */
+        margin-right: 8px;
     }
     
     .btn-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: #007bff;
+        color: white;
+        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    }
+    
+    .btn-icon:hover {
+        background: #0056b3;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    }
+    
+    /* Social Links - Move to bottom on mobile */
+    .social-links {
+        position: static;
+        justify-content: center;
+        margin-top: 8px;
+        gap: 16px;
+    }
+    
+    .social-link {
         width: 44px;
         height: 44px;
+        border-radius: 12px;
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+    }
+    
+    .social-link:hover {
+        background: #e9ecef;
+        transform: translateY(-1px);
+    }
+    
+    /* Progress Bar - Adjust for mobile */
+    .progress-bar {
+        margin-bottom: 12px;
+    }
+    
+    .progress-circles {
+        gap: 6px;
+    }
+    
+    .progress-circle {
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* Feedback - Mobile optimized */
+    .feedback {
+        font-size: 15px;
+        margin-top: 8px;
+        padding: 0 16px;
+    }
+    
+    /* Legend - Mobile positioning */
+    .legend-control {
+        position: fixed !important;
+        left: 16px !important;
+        bottom: 200px !important; /* Above the quiz interface */
+        min-width: 160px;
+        max-width: 200px;
+        height: auto;
+        min-height: 80px;
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .legend h4 {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    
+    .gradient-bar {
+        height: 14px;
+    }
+    
+    .gradient-labels {
+        font-size: 11px;
+    }
+    
+    .min-label,
+    .max-label {
+        padding: 1px 4px;
+        font-size: 10px;
+    }
+    
+    /* Popup adjustments for mobile */
+    .country-popup .leaflet-popup-content-wrapper {
+        min-width: 140px;
+        max-width: 200px;
+        padding: 10px 14px;
+    }
+    
+    .country-popup .leaflet-popup-content h3 {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    .country-popup .leaflet-popup-content .value-number {
+        font-size: 12px;
+    }
+    
+    /* Leaflet attribution - Mobile friendly */
+    .leaflet-control-attribution {
+        font-size: 10px !important;
+        padding: 3px 6px !important;
+        margin: 8px !important;
+        border-radius: 8px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small screens */
+    .quiz-interface {
+        height: 200px;
+        padding: 12px;
+    }
+    
+    .guess-input {
+        font-size: 16px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    
+    .btn-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
     }
     
     .btn-icon i,
     .btn-icon svg {
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .social-link {
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+    }
+    
+    .social-link i,
+    .social-link svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .progress-circle {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .legend-control {
+        left: 12px !important;
+        bottom: 220px !important;
+        min-width: 140px;
+        max-width: 180px;
+        padding: 10px;
+    }
+    
+    .legend h4 {
+        font-size: 12px;
+    }
+    
+    .gradient-bar {
+        height: 12px;
+    }
+    
+    .gradient-labels {
+        font-size: 10px;
+    }
+    
+    .min-label,
+    .max-label {
+        font-size: 9px;
+        padding: 1px 3px;
     }
     
     .feedback {
         font-size: 14px;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Very small screens */
+    .quiz-interface {
+        height: 220px;
+        padding: 10px;
     }
     
-    .popup-content {
-        min-width: 150px;
+    .guess-input {
+        padding: 14px;
     }
     
-    .popup-content h3 {
-        font-size: 16px;
+    .btn-icon {
+        width: 48px;
+        height: 48px;
     }
     
-    .value-number {
-        font-size: 18px;
+    .social-links {
+        gap: 12px;
+    }
+    
+    .social-link {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .legend-control {
+        left: 8px !important;
+        bottom: 240px !important;
+        min-width: 120px;
+        max-width: 160px;
+        padding: 8px;
+    }
+    
+    .progress-circles {
+        gap: 4px;
+    }
+    
+    .progress-circle {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    .quiz-interface {
+        height: 140px;
+        padding: 12px;
+    }
+    
+    .input-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .guess-input {
+        width: 60%;
+        max-width: 400px;
+    }
+    
+    .send-button-container {
+        position: static;
+        margin: 0;
+    }
+    
+    .social-links {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        margin: 0;
+    }
+    
+    .legend-control {
+        bottom: 160px !important;
+    }
+    
+    .progress-bar {
+        margin-bottom: 8px;
+    }
+    
+    .feedback {
+        margin-top: 4px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .btn-icon,
+    .social-link {
+        border-width: 0.5px;
+    }
+    
+    .guess-input {
+        border-width: 0.5px;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn-icon:hover,
+    .social-link:hover {
+        transform: none;
+    }
+    
+    .btn-icon:active,
+    .social-link:active {
+        transform: scale(0.95);
+    }
+    
+    .guess-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+    
+    /* Prevent text selection on buttons */
+    .btn-icon,
+    .social-link {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Larger touch targets for mobile */
+    .btn-icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .social-link {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    /* Improve map touch interactions */
+    .leaflet-container {
+        touch-action: manipulation;
+    }
+    
+    /* Prevent zoom on double tap */
+    .leaflet-container {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+/* Dark mode support for mobile */
+@media (prefers-color-scheme: dark) {
+    .quiz-interface {
+        background: rgba(33, 37, 41, 0.95);
+        border-top-color: #495057;
+    }
+    
+    .guess-input {
+        background: #343a40;
+        border-color: #495057;
+        color: #f8f9fa;
+    }
+    
+    .guess-input::placeholder {
+        color: #adb5bd;
+    }
+    
+    .btn-icon {
+        background: #007bff;
+        color: white;
+    }
+    
+    .social-link {
+        background: #343a40;
+        border-color: #495057;
+        color: #adb5bd;
+    }
+    
+    .social-link:hover {
+        background: #495057;
+        color: #f8f9fa;
+    }
+    
+    .legend-control {
+        background: rgba(33, 37, 41, 0.95);
+        border-color: #495057;
+    }
+    
+    .legend h4 {
+        color: #f8f9fa;
+    }
+    
+    .gradient-labels {
+        color: #adb5bd;
+    }
+    
+    .min-label,
+    .max-label {
+        background: rgba(33, 37, 41, 0.8);
+        color: #f8f9fa;
+    }
+    
+    .feedback {
+        color: #f8f9fa;
+    }
+    
+    .progress-circle {
+        color: #adb5bd;
     }
 }
 
