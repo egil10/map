@@ -248,6 +248,16 @@ class WorldMap {
         console.log('🇺🇸 USA DEBUG - Available GeoJSON names:');
         usaNames.forEach(name => console.log(`  - "${name}"`));
         
+        // Also debug UK names
+        const ukNames = Array.from(geoNames).filter(name => 
+            name.toLowerCase().includes('kingdom') || 
+            name.toLowerCase().includes('britain') || 
+            name.toLowerCase().includes('england') ||
+            name.toLowerCase().includes('uk ')
+        );
+        console.log('🇬🇧 UK DEBUG - Available GeoJSON names:');
+        ukNames.forEach(name => console.log(`  - "${name}"`));
+        
         const fixed = {};
         for (const [k, v] of Object.entries(this.currentQuiz.countries)) {
             const resolvedName = resolveToGeoName(k, geoNames);
@@ -255,6 +265,16 @@ class WorldMap {
             // Debug USA specifically
             if (k.toLowerCase().includes('united') || k.toLowerCase().includes('america')) {
                 console.log('🇺🇸 USA DEBUG - Processing:', {
+                    original: k,
+                    resolved: resolvedName,
+                    inGeoJSON: geoNames.has(resolvedName),
+                    value: v
+                });
+            }
+            
+            // Debug UK specifically
+            if (k.toLowerCase().includes('kingdom') || k.toLowerCase().includes('britain')) {
+                console.log('🇬🇧 UK DEBUG - Processing:', {
                     original: k,
                     resolved: resolvedName,
                     inGeoJSON: geoNames.has(resolvedName),
@@ -274,6 +294,15 @@ class WorldMap {
         );
         console.log('🇺🇸 USA DEBUG - Final quiz countries with USA data:');
         finalUSAEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
+        
+        // Debug: Show final UK entries in the fixed countries object
+        const finalUKEntries = Object.keys(fixed).filter(k => 
+            k.toLowerCase().includes('kingdom') || 
+            k.toLowerCase().includes('britain') ||
+            k.toLowerCase().includes('england')
+        );
+        console.log('🇬🇧 UK DEBUG - Final quiz countries with UK data:');
+        finalUKEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
         
         // Check if countries layer exists
         if (!this.countriesLayer) {
