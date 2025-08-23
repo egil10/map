@@ -3143,6 +3143,15 @@ class QuizGame {
         // Show skip button for next question (only in learn mode)
         if (this.isLearnMode) {
             this.showSkipButton();
+        } else {
+            // In play mode, re-enable input for next question navigation
+            const guessInput = document.getElementById('guessInput');
+            if (guessInput) {
+                guessInput.disabled = false;
+                guessInput.value = '';
+                guessInput.placeholder = 'Press Enter to continue...';
+                guessInput.focus();
+            }
         }
     }
     
