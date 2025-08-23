@@ -2003,7 +2003,7 @@ class QuizGame {
         }
     }
     
-    getColorForRatio(ratio, colorScheme) {
+    getColorForRatio(ratio, minColor, maxColor) {
         // Enhanced contrast interpolation with dramatic non-linear curves
         // Use different curves for better visual distinction across the spectrum
         let enhancedRatio;
@@ -2016,22 +2016,29 @@ class QuizGame {
             enhancedRatio = 0.5 + Math.pow((ratio - 0.5) * 2, 1.5) * 0.5;
         }
         
-        // Support multi-color gradients
-        if (colorScheme.colors && colorScheme.colors.length > 2) {
-            return this.interpolateMultiColor(enhancedRatio, colorScheme.colors);
+        // Support both old format (minColor, maxColor) and new format (colorScheme object)
+        let color1, color2;
+        
+        if (typeof minColor === 'object' && minColor.colors) {
+            // New format: colorScheme object
+            if (minColor.colors && minColor.colors.length > 2) {
+                return this.interpolateMultiColor(enhancedRatio, minColor.colors);
+            }
+            color1 = minColor.minColor || minColor.colors[0];
+            color2 = minColor.maxColor || minColor.colors[1];
+        } else {
+            // Old format: minColor, maxColor strings
+            color1 = minColor;
+            color2 = maxColor;
         }
         
-        // Fallback to two-color interpolation
-        const minColor = colorScheme.minColor || colorScheme.colors[0];
-        const maxColor = colorScheme.maxColor || colorScheme.colors[1];
+        const r1 = parseInt(color1.slice(1, 3), 16);
+        const g1 = parseInt(color1.slice(3, 5), 16);
+        const b1 = parseInt(color1.slice(5, 7), 16);
         
-        const r1 = parseInt(minColor.slice(1, 3), 16);
-        const g1 = parseInt(minColor.slice(3, 5), 16);
-        const b1 = parseInt(minColor.slice(5, 7), 16);
-        
-        const r2 = parseInt(maxColor.slice(1, 3), 16);
-        const g2 = parseInt(maxColor.slice(3, 5), 16);
-        const b2 = parseInt(maxColor.slice(5, 7), 16);
+        const r2 = parseInt(color2.slice(1, 3), 16);
+        const g2 = parseInt(color2.slice(3, 5), 16);
+        const b2 = parseInt(color2.slice(5, 7), 16);
         
         const r = Math.round(r1 + (r2 - r1) * enhancedRatio);
         const g = Math.round(g1 + (g2 - g1) * enhancedRatio);
