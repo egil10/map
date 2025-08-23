@@ -4436,6 +4436,7 @@ class QuizGame {
         this.isQuizCompleted = false;
         this.isAnswerShown = false;
         this.score = 0;
+        this.currentProgress = 0; // Reset progress counter
         this.lastAnswerWasCorrect = undefined; // Reset answer tracking
         
         // Reset progress bar
