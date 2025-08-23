@@ -1,3 +1,35 @@
+// Runtime resolver to handle name mismatches between data and GeoJSON
+function resolveToGeoName(name, geoNames) {
+    if (geoNames.has(name)) return name;
+
+    const aliases = new Map([
+        ['United States', 'United States of America'],
+        ['United States of America', 'United States'],
+        ['Russia', 'Russian Federation'],
+        ['Russian Federation', 'Russia'],
+        ['Czech Republic', 'Czechia'],
+        ['Swaziland', 'Eswatini'],
+        ['Macedonia, The Former Yugoslav Republic of', 'North Macedonia'],
+        ['Korea, Republic of', 'South Korea'],
+        ["Korea, Democratic People's Republic of", 'North Korea'],
+        ['Iran, Islamic Republic of', 'Iran'],
+        ["Lao People's Democratic Republic", 'Laos'],
+        ['Syrian Arab Republic', 'Syria'],
+        ['Tanzania, United Republic of', 'Tanzania'],
+        ['Venezuela, Bolivarian Republic of', 'Venezuela'],
+        ['Moldova, Republic of', 'Moldova'],
+        ['Viet Nam', 'Vietnam'],
+        ['Brunei Darussalam', 'Brunei'],
+        ['Holy See (Vatican City State)', 'Vatican'],
+        ['Micronesia, Federated States of', 'Micronesia'],
+        ['Taiwan, Province of China', 'Taiwan'],
+    ]);
+
+    const alt = aliases.get(name);
+    if (alt && geoNames.has(alt)) return alt;
+    return name; // fallback
+}
+
 // World Map class for Quiz Game
 class WorldMap {
     constructor() {
@@ -201,6 +233,15 @@ class WorldMap {
     
     applyQuizConfiguration(quiz) {
         this.currentQuiz = quiz;
+        
+        // Normalize country names to match GeoJSON names
+        const geoNames = new Set(this.countriesData.features.map(f => f.properties.name));
+        const fixed = {};
+        for (const [k, v] of Object.entries(this.currentQuiz.countries)) {
+            const resolvedName = resolveToGeoName(k, geoNames);
+            fixed[resolvedName] = v;
+        }
+        this.currentQuiz.countries = fixed;
         
         // Check if countries layer exists
         if (!this.countriesLayer) {
