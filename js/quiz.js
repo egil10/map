@@ -6535,11 +6535,11 @@ class QuizGame {
                     const svg = copyBtn.querySelector('svg');
                     if (svg) {
                         // Store original icon content (copy icon)
-                        const originalIconContent = '<rect width="14" height="20" x="8" y="2" rx="2" ry="2"></rect><path d="M4 6h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-2"></path>';
+                        const originalIconContent = '<rect width="14" height="20" x="8" y="2" rx="2" ry="2"/><path d="m4 2 2-2h8a2 2 0 0 1 2 2v14h-2V2H6L4 4V2Z"/>';
                         const originalDataLucide = 'copy';
                         
                         // Change to check icon
-                        svg.innerHTML = '<path d="M20 6 9 17l-5-5"></path>';
+                        svg.innerHTML = '<path d="m9 12 2 2 4-4"/>';
                         svg.setAttribute('data-lucide', 'check');
                         
                         // Change color to green
