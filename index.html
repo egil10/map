@@ -50,45 +50,48 @@
             
             <!-- Input Section -->
             <div class="input-section">
-                <div class="input-wrapper">
-                    <div class="mode-toggle">
-                        <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
-                            <i data-lucide="toggle-right" id="modeToggleIcon"></i>
-                            <span id="modeToggleText">Play</span>
+                <div class="input-row">
+                    <!-- Left: controls -->
+                    <div class="input-wrapper">
+                        <div class="mode-toggle">
+                            <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
+                                <i data-lucide="toggle-right" id="modeToggleIcon"></i>
+                                <span id="modeToggleText">Play</span>
+                            </button>
+                        </div>
+                        <input 
+                            type="text" 
+                            id="guessInput" 
+                            placeholder="What does this map show?"
+                            class="guess-input"
+                        >
+                        <button id="submitGuess" class="input-arrow-btn">
+                            <i data-lucide="arrow-up" id="submitIcon"></i>
+                        </button>
+                        <button id="skipLeft" class="input-skip-btn">
+                            <i data-lucide="chevron-left" id="skipLeftIcon"></i>
+                        </button>
+                        <button id="skipRight" class="input-skip-btn">
+                            <i data-lucide="chevron-right" id="skipRightIcon"></i>
                         </button>
                     </div>
-                    <input 
-                        type="text" 
-                        id="guessInput" 
-                        placeholder="What does this map show?"
-                        class="guess-input"
-                    >
-                    <button id="submitGuess" class="input-arrow-btn">
-                        <i data-lucide="arrow-up" id="submitIcon"></i>
-                    </button>
-                    <button id="skipLeft" class="input-skip-btn">
-                        <i data-lucide="chevron-left" id="skipLeftIcon"></i>
-                    </button>
-                    <button id="skipRight" class="input-skip-btn">
-                        <i data-lucide="chevron-right" id="skipRightIcon"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Social Media Links -->
-            <div class="social-links">
-                <a href="https://github.com/egil10/map" target="_blank" class="social-link">
-                    <i data-lucide="github"></i>
-                </a>
-                <a href="mailto:" class="social-link">
-                    <i data-lucide="mail"></i>
-                </a>
-            </div>
-            
-            <!-- Dataset Counter -->
-            <div class="dataset-counter" id="datasetCounter">
-                <span id="datasetCount">##</span> datasets
-            </div>
+
+                    <!-- Right: meta (same row on wide screens) -->
+                    <div class="input-meta">
+                        <div class="social-links">
+                            <a href="https://github.com/egil10/map" target="_blank" class="social-link" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="mailto:" class="social-link" aria-label="Email">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                        <div class="dataset-counter" id="datasetCounter">
+                            <span id="datasetCount">##</span> datasets
+                        </div>
+                    </div>
+                </div> <!-- /.input-row -->
+            </div> <!-- /.input-section -->
             
             <!-- Progress Bar -->
             <div class="progress-bar">

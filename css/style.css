@@ -128,23 +128,44 @@ body {
     position: relative;
 }
 
-/* === Input row layout === */
-.input-section .input-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;           /* vertical centering */
-  gap: 8px;                      /* space between controls */
+/* Shared control height */
+:root {
+  --content-max: clamp(680px, 92vw, 1100px); /* overall width cap */
+  --control-h: 44px;        /* keep from previous step */
+  --control-radius: 999px;  /* keep from previous step */
+  --control-pad-x: 14px;    /* keep from previous step */
+}
+
+/* Center the whole quiz interface content if not already */
+.quiz-interface {
+  display: block;
+}
+
+/* Input section constrained & centered */
+.input-section {
+  max-width: var(--content-max);
+  margin: 0 auto;                /* center horizontally */
   width: 100%;
 }
 
-/* Shared control height */
-:root {
-  --control-h: 44px;             /* tweak as needed to match your design */
-  --control-radius: 999px;       /* pill look; adjust if you prefer */
-  --control-pad-x: 14px;
+/* Two-column row: left controls, right meta */
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr auto; /* left grows, right hugs content */
+  align-items: center;
+  column-gap: 16px;
 }
 
-/* Input takes remaining space */
+/* Left cluster: reuse from earlier */
+.input-section .input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  min-width: 0; /* prevent overflow from long placeholder text */
+}
+
+/* Input expands but respects max container width */
 .input-section .guess-input {
   flex: 1 1 auto;
   min-width: 120px;
@@ -201,43 +222,27 @@ body {
     line-height: 1.3;
 }
 
-/* Left toggle button */
-.input-section .mode-toggle-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--control-h);
-  padding: 0 12px;
-  border-radius: var(--control-radius);
-  box-sizing: border-box;
-  white-space: nowrap;
-  gap: 8px;
-  background: none;
-  border: none;
-  color: #6c757d;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/* Right-side buttons (submit + skips) */
+/* Keep buttons aligned (from earlier step) */
+.input-section .mode-toggle-btn,
 .input-section .input-arrow-btn,
 .input-section .input-skip-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   height: var(--control-h);
-  width: var(--control-h);       /* square for icon buttons */
   border-radius: var(--control-radius);
   box-sizing: border-box;
-  flex: 0 0 auto;                /* don't stretch */
+  flex: 0 0 auto;
   background: none;
   border: none;
   color: #6c757d;
   cursor: pointer;
   transition: all 0.2s ease;
 }
+.input-section .input-arrow-btn,
+.input-section .input-skip-btn { width: var(--control-h); }
+
+.input-section .mode-toggle-btn { padding: 0 12px; gap: 8px; white-space: nowrap; font-size: 12px; font-weight: 500; }
 
 .input-skip-btn:hover {
     background: #f8f9fa;
@@ -257,14 +262,9 @@ body {
     transform: scale(0.95);
 }
 
-/* Ensure icons fit neatly */
 .input-section .input-arrow-btn svg,
 .input-section .input-skip-btn svg,
-.input-section .mode-toggle-btn svg {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
+.input-section .mode-toggle-btn svg { width: 20px; height: 20px; display: block; }
 
 /* Prevent accidental stacking on mid widths */
 .input-section {
@@ -290,37 +290,59 @@ body {
   }
 }
 
-/* Social Links */
-.social-links {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    position: absolute;
-    right: 20px;
-    top: 60px;
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .input-row { grid-template-columns: 1fr; row-gap: 10px; }
+  .input-meta { justify-content: space-between; }
+}
+@media (max-width: 520px) {
+  .input-meta { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .progress-bar { margin-top: 10px; }
 }
 
-.social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    color: #6c757d;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.2s ease;
+/* Right meta cluster (same row) */
+.input-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-
-.social-link:hover {
-    background: #f8f9fa;
-    color: #495057;
+.input-meta .social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: static;
 }
-
-.social-link i,
-.social-link svg {
-    width: 20px;
-    height: 20px;
+.input-meta .social-links .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #6c757d;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.input-meta .social-links .social-link:hover {
+  background: #f8f9fa;
+  color: #495057;
+}
+.input-meta .social-links .social-link svg { width: 22px; height: 22px; display: block; }
+.input-meta .dataset-counter { 
+  font-weight: 500; 
+  color: #444; 
+  white-space: nowrap; 
+  position: static;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.input-meta .dataset-counter:hover {
+  color: #007bff;
+}
+.input-meta .dataset-counter #datasetCount {
+  font-weight: 600;
+  color: #495057;
 }
 
 /* Mode Toggle */
@@ -333,7 +355,7 @@ body {
     color: #007bff;
 }
 
-/* Dataset Counter */
+/* Legacy dataset counter (for backward compatibility) */
 .dataset-counter {
     text-align: right;
     font-size: 12px;
@@ -357,18 +379,23 @@ body {
     color: #495057;
 }
 
-/* Progress Bar */
+/* Progress bar should sit below the input row and never overlap */
 .progress-bar {
-    margin-bottom: 8px; /* Reduced spacing */
-    display: flex;
-    justify-content: center;
+  position: static;      /* ensure not absolute */
+  display: flex;         /* keep your current display */
+  max-width: var(--content-max);
+  margin: 12px auto 0;   /* spacing and center */
+  width: 100%;
+  z-index: 0;
+  clear: both;
 }
 
-.progress-circles {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
+/* Make progress circles wrap nicely if too many */
+.progress-bar .progress-circles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
 }
 
 .progress-circle {
@@ -735,27 +762,6 @@ body {
         box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
     }
     
-    /* Social Links - Move to bottom on mobile */
-    .social-links {
-        position: static;
-        justify-content: center;
-        margin-top: 8px;
-        gap: 16px;
-    }
-    
-    .social-link {
-        width: 44px;
-        height: 44px;
-        border-radius: 12px;
-        background: #f8f9fa;
-        border: 1px solid #e9ecef;
-    }
-    
-    .social-link:hover {
-        background: #e9ecef;
-        transform: translateY(-1px);
-    }
-    
     /* Progress Bar - Adjust for mobile */
     .progress-bar {
         margin-bottom: 12px;
@@ -938,14 +944,13 @@ body {
         height: 24px;
     }
     
-    .social-link {
+    .input-meta .social-links .social-link {
         width: 48px;
         height: 48px;
         border-radius: 16px;
     }
     
-    .social-link i,
-    .social-link svg {
+    .input-meta .social-links .social-link svg {
         width: 22px;
         height: 22px;
     }
@@ -1002,11 +1007,11 @@ body {
         height: 48px;
     }
     
-    .social-links {
+    .input-meta .social-links {
         gap: 12px;
     }
     
-    .social-link {
+    .input-meta .social-links .social-link {
         width: 44px;
         height: 44px;
     }
