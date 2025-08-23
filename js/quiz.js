@@ -3025,6 +3025,20 @@ class QuizGame {
                     this.handleSubmitGuess();
                 }
             });
+            
+            // Input field input event for enabling/disabling submit button
+            guessInput.addEventListener('input', () => {
+                const hasValue = guessInput.value.trim().length > 0;
+                submitBtn.disabled = !hasValue || this.isLearnMode;
+            });
+            
+            // Input field keydown for Tab to skip
+            guessInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab' && !this.isLearnMode) {
+                    e.preventDefault();
+                    this.skipToNextQuestion();
+                }
+            });
         }
         
         // Skip quiz button (if it exists)
@@ -3170,24 +3184,33 @@ class QuizGame {
     }
     
     updateModeToggle() {
+        const commandBar = document.querySelector('.commandbar');
         const toggleBtn = document.getElementById('modeToggle');
-        const toggleIcon = document.getElementById('modeToggleIcon');
         const toggleText = document.getElementById('modeToggleText');
+        const toggleIcon = toggleBtn.querySelector('svg');
+        const helpText = document.getElementById('cmdHelp');
         
-        if (toggleBtn && toggleIcon && toggleText) {
+        if (commandBar && toggleBtn && toggleText && toggleIcon) {
             if (this.isLearnMode) {
-                toggleIcon.setAttribute('data-lucide', 'toggle-left');
+                commandBar.setAttribute('data-mode', 'learn');
                 toggleText.textContent = 'Learn';
+                toggleBtn.setAttribute('aria-pressed', 'false');
                 toggleBtn.title = 'Switch to Play Mode';
+                // Update toggle icon for learn mode
+                toggleIcon.innerHTML = '<circle cx="9" cy="12" r="3"/><rect width="20" height="14" x="2" y="5" rx="7"/>';
+                if (helpText) {
+                    helpText.textContent = 'Explore the map. Click a country to see details.';
+                }
             } else {
-                toggleIcon.setAttribute('data-lucide', 'toggle-right');
+                commandBar.setAttribute('data-mode', 'play');
                 toggleText.textContent = 'Play';
+                toggleBtn.setAttribute('aria-pressed', 'true');
                 toggleBtn.title = 'Switch to Learn Mode';
-            }
-            
-            // Reinitialize Lucide icons
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
+                // Update toggle icon for play mode
+                toggleIcon.innerHTML = '<circle cx="15" cy="12" r="3"/><rect width="20" height="14" x="2" y="5" rx="7"/>';
+                if (helpText) {
+                    helpText.textContent = 'Type your guess. Enter = submit, Tab = skip.';
+                }
             }
         }
     }
@@ -3209,15 +3232,16 @@ class QuizGame {
         this.showAnswerTitle();
         this.showSkipButton();
         
-        // Update input placeholder
+        // Update input placeholder and state
         const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        
         if (guessInput) {
-            guessInput.placeholder = 'Explore the data (click countries to see details)';
+            guessInput.placeholder = 'Explore the data — click a country or start typing…';
             guessInput.disabled = true;
+            guessInput.value = '';
         }
         
-        // Disable submit button in learn mode
-        const submitButton = document.getElementById('submitGuess');
         if (submitButton) {
             submitButton.disabled = true;
         }
@@ -3228,17 +3252,19 @@ class QuizGame {
         this.hideAnswerTitle();
         this.hideSkipButton();
         
-        // Update input placeholder
+        // Update input placeholder and state
         const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        
         if (guessInput) {
-            guessInput.placeholder = 'What does this map show?';
+            guessInput.placeholder = 'Type a country name…';
             guessInput.disabled = false;
+            guessInput.value = '';
+            guessInput.focus();
         }
         
-        // Enable submit button in play mode
-        const submitButton = document.getElementById('submitGuess');
         if (submitButton) {
-            submitButton.disabled = false;
+            submitButton.disabled = true; // Will be enabled when user types
         }
     }
     

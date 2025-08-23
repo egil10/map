@@ -1450,3 +1450,151 @@ body {
         height: 18px;
     }
 }
+
+/* Command Bar - New Modern Layout */
+.commandbar {
+    --bg: hsl(0 0% 100% / 0.8);
+    --ring: hsl(220 90% 56%);
+    --text: hsl(222 47% 11%);
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 999px;
+    background: var(--bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid hsl(220 14% 90%);
+    box-shadow: 0 2px 12px hsl(220 8% 60% / 0.15);
+    max-width: min(900px, 92vw);
+    margin-inline: auto;
+    margin-bottom: 8px;
+}
+
+/* Mode chip */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid hsl(220 14% 90%);
+    background: hsl(220 20% 97%);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background: hsl(220 20% 94%);
+    border-color: hsl(220 14% 80%);
+}
+
+.chip svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* Input field */
+.field {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.4rem 0.25rem;
+    font-size: 1rem;
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.field::placeholder {
+    color: hsl(220 10% 50%);
+}
+
+.field:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Actions */
+.action {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    border: 1px solid hsl(220 14% 90%);
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.action svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+.action.primary {
+    background: var(--text);
+    color: white;
+    border-color: var(--text);
+}
+
+.action.primary:hover:not(:disabled) {
+    background: hsl(222 47% 8%);
+    transform: translateY(-1px);
+}
+
+.action.ghost {
+    background: transparent;
+}
+
+.action.ghost:hover:not(:disabled) {
+    background: hsl(220 20% 97%);
+    border-color: hsl(220 14% 80%);
+}
+
+.action:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Focus ring */
+.chip:focus-visible,
+.field:focus-visible,
+.action:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px hsl(220 90% 56% / 0.12);
+}
+
+/* Helper text */
+.helper {
+    margin: 0.5rem auto 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: hsl(220 10% 45%);
+    margin-bottom: 8px;
+}
+
+/* Compact on small screens */
+@media (max-width: 520px) {
+    .commandbar {
+        gap: 0.25rem;
+    }
+    .chip span {
+        display: none; /* icon-only chip on mobile */
+    }
+    .action {
+        width: 36px;
+        height: 36px;
+    }
+}
