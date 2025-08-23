@@ -3401,7 +3401,11 @@ class QuizGame {
             skipBtn.addEventListener('click', () => this.skipQuiz());
         }
         
-
+        // Copy data button
+        const copyDataBtn = document.getElementById('copyData');
+        if (copyDataBtn) {
+            copyDataBtn.addEventListener('click', () => this.copyCurrentData());
+        }
         
         const skipRightBtn = document.getElementById('skipRight');
         console.log('Setting up skipRightBtn event listener, found:', skipRightBtn);
@@ -6013,6 +6017,52 @@ class QuizGame {
     async convertCommonwealthMembershipData() { /* Implementation similar to above */ return null; }
     async convertTimeZonesData() { /* Implementation similar to above */ return null; }
     async convertCountryByFirstLetterData() { /* Implementation similar to above */ return null; }
+    
+    copyCurrentData() {
+        if (!this.currentQuiz || !this.currentQuiz.countries) {
+            this.showFeedback('No data available to copy', 'incorrect');
+            return;
+        }
+        
+        try {
+            // Create table header
+            let tableData = 'Country\tValue\tUnit\n';
+            
+            // Sort countries by value (descending) for better readability
+            const sortedCountries = Object.entries(this.currentQuiz.countries)
+                .sort(([,a], [,b]) => b.value - a.value);
+            
+            // Add each country's data
+            sortedCountries.forEach(([country, data]) => {
+                const value = typeof data.value === 'number' ? data.value.toLocaleString() : data.value;
+                const unit = data.unit || '';
+                tableData += `${country}\t${value}\t${unit}\n`;
+            });
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(tableData).then(() => {
+                this.showFeedback('Data copied to clipboard!', 'correct');
+                
+                // Show a brief success animation on the copy button
+                const copyBtn = document.getElementById('copyData');
+                if (copyBtn) {
+                    copyBtn.style.transform = 'scale(1.1)';
+                    copyBtn.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
+                    setTimeout(() => {
+                        copyBtn.style.transform = 'scale(1)';
+                        copyBtn.style.backgroundColor = 'transparent';
+                    }, 300);
+                }
+            }).catch(err => {
+                console.error('Failed to copy data:', err);
+                this.showFeedback('Failed to copy data', 'incorrect');
+            });
+            
+        } catch (error) {
+            console.error('Error copying data:', error);
+            this.showFeedback('Error copying data', 'incorrect');
+        }
+    }
 }
 
 // Initialize quiz game when script loads
