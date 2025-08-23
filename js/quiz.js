@@ -11,9 +11,10 @@ class QuizGame {
         this.countryMapper = new CountryMapper();
         this.currentProgress = 0; // Track current progress (0-9)
         this.isReady = false; // Flag to indicate quiz is ready
-        this.isLearnMode = true; // Start in learn mode
+        this.isLearnMode = false; // Start in play mode
         this.currentDatasetIndex = 0;
         this.datasetList = [];
+        this.skipDirection = 'forward'; // Track skip direction
         
         this.init();
     }
@@ -3031,14 +3032,6 @@ class QuizGame {
                 const hasValue = guessInput.value.trim().length > 0;
                 submitBtn.disabled = !hasValue || this.isLearnMode;
             });
-            
-            // Input field keydown for Tab to skip
-            guessInput.addEventListener('keydown', (e) => {
-                if (e.key === 'Tab' && !this.isLearnMode) {
-                    e.preventDefault();
-                    this.skipToNextQuestion();
-                }
-            });
         }
         
         // Skip quiz button (if it exists)
@@ -3162,6 +3155,18 @@ class QuizGame {
     }
     
     skipToNextQuestion() {
+        // Toggle skip direction
+        this.skipDirection = this.skipDirection === 'forward' ? 'backward' : 'forward';
+        
+        // Update skip button icon
+        const skipIcon = document.getElementById('skipIcon');
+        if (skipIcon) {
+            skipIcon.setAttribute('data-lucide', this.skipDirection === 'forward' ? 'chevron-right' : 'chevron-left');
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+        
         // Only proceed if not at the end
         if (this.currentProgress < 10) {
             this.startNewQuiz();
@@ -3180,37 +3185,39 @@ class QuizGame {
             this.startLearnMode();
         } else {
             this.startPlayMode();
+            // Refresh the map when switching back to play mode
+            this.refreshMap();
         }
     }
     
     updateModeToggle() {
-        const commandBar = document.querySelector('.commandbar');
         const toggleBtn = document.getElementById('modeToggle');
         const toggleText = document.getElementById('modeToggleText');
-        const toggleIcon = toggleBtn.querySelector('svg');
-        const helpText = document.getElementById('cmdHelp');
+        const toggleIcon = document.getElementById('modeToggleIcon');
+        const progressBar = document.querySelector('.progress-bar');
         
-        if (commandBar && toggleBtn && toggleText && toggleIcon) {
+        if (toggleBtn && toggleText && toggleIcon) {
             if (this.isLearnMode) {
-                commandBar.setAttribute('data-mode', 'learn');
+                toggleIcon.setAttribute('data-lucide', 'toggle-left');
                 toggleText.textContent = 'Learn';
-                toggleBtn.setAttribute('aria-pressed', 'false');
                 toggleBtn.title = 'Switch to Play Mode';
-                // Update toggle icon for learn mode
-                toggleIcon.innerHTML = '<circle cx="9" cy="12" r="3"/><rect width="20" height="14" x="2" y="5" rx="7"/>';
-                if (helpText) {
-                    helpText.textContent = 'Explore the map. Click a country to see details.';
+                // Hide progress bar in learn mode
+                if (progressBar) {
+                    progressBar.style.display = 'none';
                 }
             } else {
-                commandBar.setAttribute('data-mode', 'play');
+                toggleIcon.setAttribute('data-lucide', 'toggle-right');
                 toggleText.textContent = 'Play';
-                toggleBtn.setAttribute('aria-pressed', 'true');
                 toggleBtn.title = 'Switch to Learn Mode';
-                // Update toggle icon for play mode
-                toggleIcon.innerHTML = '<circle cx="15" cy="12" r="3"/><rect width="20" height="14" x="2" y="5" rx="7"/>';
-                if (helpText) {
-                    helpText.textContent = 'Type your guess. Enter = submit, Tab = skip.';
+                // Show progress bar in play mode
+                if (progressBar) {
+                    progressBar.style.display = 'flex';
                 }
+            }
+            
+            // Reinitialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
             }
         }
     }
@@ -3281,6 +3288,14 @@ class QuizGame {
         if (browser) {
             browser.style.display = 'none';
         }
+    }
+    
+    refreshMap() {
+        // Force a new quiz to be selected when switching back to play mode
+        this.usedQuizzes.clear();
+        this.currentProgress = 0;
+        this.resetProgressBar();
+        this.startNewQuiz();
     }
     
     populateDatasetList() {
