@@ -2003,10 +2003,27 @@ class QuizGame {
         }
     }
     
-    getColorForRatio(ratio, minColor, maxColor) {
-        // Enhanced contrast interpolation with non-linear curve for better visual distinction
-        // Apply a curve to make differences more pronounced
-        const enhancedRatio = Math.pow(ratio, 0.7); // Makes differences more visible in mid-range
+    getColorForRatio(ratio, colorScheme) {
+        // Enhanced contrast interpolation with dramatic non-linear curves
+        // Use different curves for better visual distinction across the spectrum
+        let enhancedRatio;
+        
+        if (ratio < 0.5) {
+            // First half: slower progression for subtle differences
+            enhancedRatio = Math.pow(ratio * 2, 0.5) * 0.5;
+        } else {
+            // Second half: faster progression for dramatic differences
+            enhancedRatio = 0.5 + Math.pow((ratio - 0.5) * 2, 1.5) * 0.5;
+        }
+        
+        // Support multi-color gradients
+        if (colorScheme.colors && colorScheme.colors.length > 2) {
+            return this.interpolateMultiColor(enhancedRatio, colorScheme.colors);
+        }
+        
+        // Fallback to two-color interpolation
+        const minColor = colorScheme.minColor || colorScheme.colors[0];
+        const maxColor = colorScheme.maxColor || colorScheme.colors[1];
         
         const r1 = parseInt(minColor.slice(1, 3), 16);
         const g1 = parseInt(minColor.slice(3, 5), 16);
@@ -2019,6 +2036,31 @@ class QuizGame {
         const r = Math.round(r1 + (r2 - r1) * enhancedRatio);
         const g = Math.round(g1 + (g2 - g1) * enhancedRatio);
         const b = Math.round(b1 + (b2 - b1) * enhancedRatio);
+        
+        return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+    }
+    
+    interpolateMultiColor(ratio, colors) {
+        // Interpolate between multiple colors for smoother gradients
+        const segments = colors.length - 1;
+        const segmentSize = 1 / segments;
+        const segment = Math.min(Math.floor(ratio / segmentSize), segments - 1);
+        const localRatio = (ratio - segment * segmentSize) / segmentSize;
+        
+        const color1 = colors[segment];
+        const color2 = colors[segment + 1];
+        
+        const r1 = parseInt(color1.slice(1, 3), 16);
+        const g1 = parseInt(color1.slice(3, 5), 16);
+        const b1 = parseInt(color1.slice(5, 7), 16);
+        
+        const r2 = parseInt(color2.slice(1, 3), 16);
+        const g2 = parseInt(color2.slice(3, 5), 16);
+        const b2 = parseInt(color2.slice(5, 7), 16);
+        
+        const r = Math.round(r1 + (r2 - r1) * localRatio);
+        const g = Math.round(g1 + (g2 - g1) * localRatio);
+        const b = Math.round(b1 + (b2 - b1) * localRatio);
         
         return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
@@ -2147,20 +2189,35 @@ class QuizGame {
     applyRandomColorVariations() {
         if (!this.currentQuiz || !this.currentQuiz.countries) return;
         
-        // Define multiple color schemes for variety
+        // Define dramatic color schemes with high contrast and multi-color gradients
         const colorSchemes = [
-            { minColor: '#e8f5e8', maxColor: '#2e7d32' }, // Green
-            { minColor: '#e3f2fd', maxColor: '#1565c0' }, // Blue
-            { minColor: '#fff3e0', maxColor: '#e65100' }, // Orange
-            { minColor: '#f3e5f5', maxColor: '#7b1fa2' }, // Purple
-            { minColor: '#ffebee', maxColor: '#c62828' }, // Red
-            { minColor: '#fff8e1', maxColor: '#f57f17' }, // Gold
-            { minColor: '#e0f7fa', maxColor: '#00838f' }, // Teal
-            { minColor: '#fce4ec', maxColor: '#c2185b' }, // Pink
-            { minColor: '#eceff1', maxColor: '#546e7a' }, // Gray
-            { minColor: '#e8f5e8', maxColor: '#1b5e20' }, // Dark Green
-            { minColor: '#e1f5fe', maxColor: '#0277bd' }, // Light Blue
-            { minColor: '#fff8e1', maxColor: '#f9a825' }  // Amber
+            // Multi-color gradients for maximum visual distinction
+            { colors: ['#ffffff', '#ffeb3b', '#ff9800', '#e91e63', '#8e24aa'] }, // White → Yellow → Orange → Pink → Purple
+            { colors: ['#e8f5e8', '#4caf50', '#2196f3', '#3f51b5'] }, // Light Green → Green → Blue → Indigo
+            { colors: ['#fff3e0', '#ff9800', '#f44336', '#9c27b0'] }, // Light Orange → Orange → Red → Purple
+            { colors: ['#e1f5fe', '#00bcd4', '#009688', '#4caf50'] }, // Light Cyan → Cyan → Teal → Green
+            { colors: ['#fce4ec', '#e91e63', '#9c27b0', '#673ab7'] }, // Light Pink → Pink → Purple → Deep Purple
+            { colors: ['#fff8e1', '#ffc107', '#ff5722', '#795548'] }, // Light Amber → Amber → Deep Orange → Brown
+            
+            // High contrast two-color schemes
+            { minColor: '#ffffff', maxColor: '#000000' }, // White to Black (maximum contrast)
+            { minColor: '#ffebee', maxColor: '#b71c1c' }, // Light Pink to Dark Red
+            { minColor: '#e8f5e8', maxColor: '#1b5e20' }, // Light Green to Dark Green  
+            { minColor: '#e3f2fd', maxColor: '#0d47a1' }, // Light Blue to Dark Blue
+            { minColor: '#fff3e0', maxColor: '#bf360c' }, // Light Orange to Dark Orange
+            { minColor: '#f3e5f5', maxColor: '#4a148c' }, // Light Purple to Dark Purple
+            
+            // Contrasting color combinations
+            { minColor: '#ffecb3', maxColor: '#1a237e' }, // Light Yellow to Dark Blue
+            { minColor: '#c8e6c9', maxColor: '#7b1fa2' }, // Light Green to Purple
+            { minColor: '#ffcdd2', maxColor: '#004d40' }, // Light Red to Dark Teal
+            { minColor: '#d1c4e9', maxColor: '#e65100' }, // Light Purple to Dark Orange
+            
+            // Vibrant rainbow-style gradients
+            { colors: ['#ff1744', '#ff9800', '#ffeb3b', '#4caf50', '#2196f3'] }, // Red → Orange → Yellow → Green → Blue
+            { colors: ['#e91e63', '#9c27b0', '#3f51b5', '#00bcd4', '#4caf50'] }, // Pink → Purple → Indigo → Cyan → Green
+            { colors: ['#ff5722', '#ff9800', '#ffc107', '#8bc34a', '#009688'] }, // Deep Orange → Orange → Amber → Light Green → Teal
+            { colors: ['#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#00bcd4'] }  // Purple → Deep Purple → Indigo → Blue → Cyan
         ];
         
         // Randomly select a color scheme
@@ -2180,15 +2237,18 @@ class QuizGame {
             const value = this.currentQuiz.countries[country].value;
             if (!isNaN(value)) {
                 const ratio = (value - minValue) / (maxValue - minValue);
-                this.currentQuiz.countries[country].color = this.getColorForRatio(ratio, selectedScheme.minColor, selectedScheme.maxColor);
+                this.currentQuiz.countries[country].color = this.getColorForRatio(ratio, selectedScheme);
             }
         });
         
         // Update the quiz's color scheme
         this.currentQuiz.colorScheme = {
             type: 'gradient',
-            minColor: selectedScheme.minColor,
-            maxColor: selectedScheme.maxColor,
+            minColor: selectedScheme.minColor || selectedScheme.colors[0],
+            maxColor: selectedScheme.maxColor || selectedScheme.colors[selectedScheme.colors.length - 1],
+            colors: selectedScheme.colors,
+            minValue: Math.round(minValue * 100) / 100,
+            maxValue: Math.round(maxValue * 100) / 100,
             defaultColor: '#ffffff'
         };
     }
