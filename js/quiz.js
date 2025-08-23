@@ -72,6 +72,9 @@ class QuizGame {
             await this.loadConvertedData();
             
             console.log('🎮 Total quizzes available:', Object.keys(this.quizData.quizzes).length, 'quizzes');
+            
+            // Update dataset counter
+            this.updateDatasetCounter();
         } catch (error) {
             console.error('❌ Error loading quiz data:', error);
             this.quizData = { quizzes: {} };
@@ -279,6 +282,62 @@ class QuizGame {
             if (carbonEmissionsQuiz) {
                 this.quizData.quizzes[carbonEmissionsQuiz.id] = carbonEmissionsQuiz;
                 console.log('🌱 Added Carbon Emissions quiz');
+            }
+            
+            // Convert currencies data
+            const currenciesQuiz = await this.convertCurrenciesData();
+            if (currenciesQuiz) {
+                this.quizData.quizzes[currenciesQuiz.id] = currenciesQuiz;
+                console.log('💱 Added Currencies quiz');
+            }
+            
+            // Convert firearms data
+            const firearmsQuiz = await this.convertFirearmsData();
+            if (firearmsQuiz) {
+                this.quizData.quizzes[firearmsQuiz.id] = firearmsQuiz;
+                console.log('🔫 Added Firearms quiz');
+            }
+            
+            // Convert traffic deaths data
+            const trafficDeathsQuiz = await this.convertTrafficDeathsData();
+            if (trafficDeathsQuiz) {
+                this.quizData.quizzes[trafficDeathsQuiz.id] = trafficDeathsQuiz;
+                console.log('🚗 Added Traffic Deaths quiz');
+            }
+            
+            // Convert broadband subscriptions data
+            const broadbandQuiz = await this.convertBroadbandData();
+            if (broadbandQuiz) {
+                this.quizData.quizzes[broadbandQuiz.id] = broadbandQuiz;
+                console.log('📡 Added Broadband Subscriptions quiz');
+            }
+            
+            // Convert mobile connection speed data
+            const mobileSpeedQuiz = await this.convertMobileSpeedData();
+            if (mobileSpeedQuiz) {
+                this.quizData.quizzes[mobileSpeedQuiz.id] = mobileSpeedQuiz;
+                console.log('📱 Added Mobile Connection Speed quiz');
+            }
+            
+            // Convert internet speed data
+            const internetSpeedQuiz = await this.convertInternetSpeedData();
+            if (internetSpeedQuiz) {
+                this.quizData.quizzes[internetSpeedQuiz.id] = internetSpeedQuiz;
+                console.log('🌐 Added Internet Speed quiz');
+            }
+            
+            // Convert leading export market data
+            const leadingExportMarketQuiz = await this.convertLeadingExportMarketData();
+            if (leadingExportMarketQuiz) {
+                this.quizData.quizzes[leadingExportMarketQuiz.id] = leadingExportMarketQuiz;
+                console.log('🌍 Added Leading Export Market quiz');
+            }
+            
+            // Convert top goods export data
+            const topGoodsExportQuiz = await this.convertTopGoodsExportData();
+            if (topGoodsExportQuiz) {
+                this.quizData.quizzes[topGoodsExportQuiz.id] = topGoodsExportQuiz;
+                console.log('📦 Added Top Goods Export quiz');
             }
             
         } catch (error) {
@@ -2139,6 +2198,496 @@ class QuizGame {
         }
     }
     
+    async convertCurrenciesData() {
+        try {
+            const response = await fetch('data/currencies_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const currencyTypes = {};
+            
+            // Process data and collect currency types
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                currencyTypes[countryData.value] = (currencyTypes[countryData.value] || 0) + 1;
+            });
+            
+            // Create color scheme for currency types with contrasting colors
+            const currencyTypeList = Object.keys(currencyTypes);
+            const colors = [
+                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+                '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#e91e63',
+                '#00bcd4', '#795548', '#607d8b', '#ff5722', '#2196f3'
+            ];
+            
+            currencyTypeList.forEach((type, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === type) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'currencies_by_country',
+                title: 'Currency by Country',
+                description: 'Countries colored by their official currency',
+                category: 'economics',
+                tags: ['currency', 'money', 'economics', 'financial', 'monetary'],
+                answer_variations: [
+                    'currency',
+                    'money',
+                    'official currency',
+                    'national currency',
+                    'monetary unit',
+                    'currency type'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting currencies data:', error);
+            return null;
+        }
+    }
+    
+    async convertFirearmsData() {
+        try {
+            const response = await fetch('data/firearms_per_100_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (red gradient for firearms - higher is more concerning)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'firearms_per_100_by_country',
+                title: 'Firearms per 100 People',
+                description: 'Countries colored by estimated civilian firearms per 100 people',
+                category: 'social',
+                tags: ['firearms', 'guns', 'weapons', 'social', 'safety', 'gun ownership'],
+                answer_variations: [
+                    'firearms per 100 people',
+                    'guns per 100 people',
+                    'firearms ownership',
+                    'gun ownership',
+                    'civilian firearms',
+                    'weapons per capita'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting firearms data:', error);
+            return null;
+        }
+    }
+    
+    async convertTrafficDeathsData() {
+        try {
+            const response = await fetch('data/traffic_related_death_rate_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (red gradient for traffic deaths - higher is worse)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'traffic_related_death_rate_by_country',
+                title: 'Traffic Death Rate',
+                description: 'Countries colored by traffic-related death rate per 100,000 people',
+                category: 'social',
+                tags: ['traffic deaths', 'road safety', 'accidents', 'mortality', 'transportation'],
+                answer_variations: [
+                    'traffic death rate',
+                    'road deaths',
+                    'traffic fatalities',
+                    'road safety',
+                    'traffic mortality',
+                    'accident deaths'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting traffic deaths data:', error);
+            return null;
+        }
+    }
+    
+    async convertBroadbandData() {
+        try {
+            const response = await fetch('data/fixed_broadband_subscriptions_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (blue gradient for broadband - higher is better)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'fixed_broadband_subscriptions_by_country',
+                title: 'Fixed Broadband Subscriptions',
+                description: 'Countries colored by fixed broadband subscriptions per 100 people',
+                category: 'technology',
+                tags: ['broadband', 'internet', 'technology', 'connectivity', 'digital infrastructure'],
+                answer_variations: [
+                    'fixed broadband subscriptions',
+                    'broadband subscriptions',
+                    'internet subscriptions',
+                    'broadband access',
+                    'fixed internet',
+                    'broadband connectivity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting broadband data:', error);
+            return null;
+        }
+    }
+    
+    async convertMobileSpeedData() {
+        try {
+            const response = await fetch('data/mobile_connection_speed_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (green gradient for speed - higher is better)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'mobile_connection_speed_by_country',
+                title: 'Mobile Connection Speed',
+                description: 'Countries colored by average mobile internet connection speed',
+                category: 'technology',
+                tags: ['mobile speed', 'internet speed', 'technology', 'connectivity', 'mobile data'],
+                answer_variations: [
+                    'mobile connection speed',
+                    'mobile internet speed',
+                    'mobile data speed',
+                    'mobile speed',
+                    'connection speed',
+                    'mobile network speed'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting mobile speed data:', error);
+            return null;
+        }
+    }
+    
+    async convertInternetSpeedData() {
+        try {
+            const response = await fetch('data/internet_speed_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (blue gradient for internet speed - higher is better)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'internet_speed_by_country',
+                title: 'Internet Speed by Country',
+                description: 'Countries colored by average fixed internet connection speed',
+                category: 'technology',
+                tags: ['internet speed', 'broadband speed', 'technology', 'connectivity', 'digital'],
+                answer_variations: [
+                    'internet speed',
+                    'broadband speed',
+                    'connection speed',
+                    'internet connection speed',
+                    'fixed internet speed',
+                    'download speed'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting internet speed data:', error);
+            return null;
+        }
+    }
+    
+    async convertLeadingExportMarketData() {
+        try {
+            const response = await fetch('data/leading_export_market_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const marketTypes = {};
+            
+            // Process data and collect market types
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                marketTypes[countryData.value] = (marketTypes[countryData.value] || 0) + 1;
+            });
+            
+            // Create color scheme for market types with contrasting colors
+            const marketTypeList = Object.keys(marketTypes);
+            const colors = [
+                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+                '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#e91e63',
+                '#00bcd4', '#795548', '#607d8b', '#ff5722', '#2196f3',
+                '#4caf50', '#ff9800', '#9c27b0', '#607d8b', '#795548'
+            ];
+            
+            marketTypeList.forEach((type, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === type) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'leading_export_market_by_country',
+                title: 'Leading Export Market',
+                description: 'Countries colored by their leading export market',
+                category: 'economics',
+                tags: ['export market', 'trade', 'economics', 'commerce', 'international trade'],
+                answer_variations: [
+                    'leading export market',
+                    'export market',
+                    'main export market',
+                    'primary export market',
+                    'top export market',
+                    'major export market'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting leading export market data:', error);
+            return null;
+        }
+    }
+    
+    async convertTopGoodsExportData() {
+        try {
+            const response = await fetch('data/top_goods_export_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const goodsTypes = {};
+            
+            // Process data and collect goods types
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                goodsTypes[countryData.value] = (goodsTypes[countryData.value] || 0) + 1;
+            });
+            
+            // Create color scheme for goods types with contrasting colors
+            const goodsTypeList = Object.keys(goodsTypes);
+            const colors = [
+                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+                '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#e91e63',
+                '#00bcd4', '#795548', '#607d8b', '#ff5722', '#2196f3',
+                '#4caf50', '#ff9800', '#9c27b0', '#607d8b', '#795548',
+                '#8bc34a', '#ff5722', '#3f51b5', '#009688', '#ffc107'
+            ];
+            
+            goodsTypeList.forEach((type, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === type) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'top_goods_export_by_country',
+                title: 'Top Goods Export',
+                description: 'Countries colored by their primary goods export',
+                category: 'economics',
+                tags: ['goods export', 'trade', 'economics', 'commerce', 'exports'],
+                answer_variations: [
+                    'top goods export',
+                    'goods export',
+                    'main export',
+                    'primary export',
+                    'leading export',
+                    'major export'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting top goods export data:', error);
+            return null;
+        }
+    }
+    
     getColorForRatio(ratio, minColor, maxColor) {
         // Enhanced contrast interpolation with dramatic non-linear curves
         // Use different curves for better visual distinction across the spectrum
@@ -2817,6 +3366,14 @@ class QuizGame {
         
         // Start new quiz
         this.startNewQuiz();
+    }
+    
+    updateDatasetCounter() {
+        const datasetCountElement = document.getElementById('datasetCount');
+        if (datasetCountElement) {
+            const totalQuizzes = Object.keys(this.quizData.quizzes).length;
+            datasetCountElement.textContent = totalQuizzes;
+        }
     }
     
     clearFeedback() {
