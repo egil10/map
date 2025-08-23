@@ -3140,11 +3140,15 @@ class QuizGame {
         } else {
             // In play mode, re-enable input for next question navigation
             const guessInput = document.getElementById('guessInput');
+            const submitButton = document.getElementById('submitGuess');
             if (guessInput) {
                 guessInput.disabled = false;
                 guessInput.value = '';
-                guessInput.placeholder = 'Press Enter to continue...';
+                guessInput.placeholder = 'Enter to continue';
                 guessInput.focus();
+            }
+            if (submitButton) {
+                submitButton.disabled = false; // Enable send button for next question
             }
         }
     }
@@ -3171,17 +3175,14 @@ class QuizGame {
     showSkipButton() {
         const skipLeftBtn = document.getElementById('skipLeft');
         const skipRightBtn = document.getElementById('skipRight');
-        console.log('showSkipButton called, skipLeftBtn:', skipLeftBtn, 'skipRightBtn:', skipRightBtn);
         
         if (skipLeftBtn) {
             skipLeftBtn.style.display = 'flex';
             skipLeftBtn.disabled = false; // Ensure button is enabled
-            console.log('Set skipLeftBtn display to flex, disabled:', skipLeftBtn.disabled);
         }
         if (skipRightBtn) {
             skipRightBtn.style.display = 'flex';
             skipRightBtn.disabled = false; // Ensure button is enabled
-            console.log('Set skipRightBtn display to flex, disabled:', skipRightBtn.disabled);
         }
     }
     
@@ -3197,19 +3198,14 @@ class QuizGame {
     }
     
     skipToPreviousQuestion() {
-        console.log('skipToPreviousQuestion called, isLearnMode:', this.isLearnMode);
-        console.log('Current sequence length:', this.learnModeSequence.length, 'Current index:', this.learnModeCurrentIndex);
-        
         if (this.isLearnMode) {
             // In learn mode, go to previous dataset in sequence
             if (this.learnModeSequence.length === 0) {
-                console.log('No sequence found, generating new one');
                 this.generateLearnModeSequence();
             }
             
             // Move to previous index (with wraparound)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
-            console.log('Moving to previous index:', this.learnModeCurrentIndex);
             this.loadRandomDataset();
         } else {
             // In play mode, go to previous question if possible
@@ -3221,8 +3217,6 @@ class QuizGame {
     }
     
     skipToNextQuestion() {
-        console.log('skipToNextQuestion called, isLearnMode:', this.isLearnMode);
-        
         if (this.isLearnMode) {
             // In learn mode, go to next dataset in sequence
             if (this.learnModeSequence.length === 0) {
@@ -3231,7 +3225,6 @@ class QuizGame {
             
             // Move to next index (with wraparound)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
-            console.log('Moving to next index:', this.learnModeCurrentIndex);
             this.loadRandomDataset();
         } else {
             // In play mode, only proceed if not at the end
@@ -3262,9 +3255,6 @@ class QuizGame {
         
         // Reset current index
         this.learnModeCurrentIndex = 0;
-        
-        console.log('Generated new learn mode sequence with', this.learnModeSequence.length, 'datasets');
-        console.log('First few datasets in sequence:', this.learnModeSequence.slice(0, 3).map(d => d.title));
     }
     
     loadRandomDataset() {
@@ -3286,12 +3276,6 @@ class QuizGame {
         
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
-            console.log('Applying dataset to map:', {
-                quizTitle: this.currentQuiz.title,
-                countriesCount: Object.keys(this.currentQuiz.countries).length,
-                sequenceIndex: this.learnModeCurrentIndex + 1,
-                totalInSequence: this.learnModeSequence.length
-            });
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
@@ -3306,7 +3290,7 @@ class QuizGame {
             this.showSkipButton();
         }
         
-        console.log('Loaded dataset from sequence:', this.currentQuiz.title, `(${this.learnModeCurrentIndex + 1}/${this.learnModeSequence.length})`);
+
     }
     
     toggleMode() {
@@ -3382,7 +3366,7 @@ class QuizGame {
         const submitButton = document.getElementById('submitGuess');
         
         if (guessInput) {
-            guessInput.placeholder = 'Explore the data — click a country or start typing…';
+            guessInput.placeholder = 'Explore the data';
             guessInput.disabled = true;
             guessInput.value = '';
         }
