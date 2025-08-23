@@ -132,6 +132,7 @@ body {
 .input-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 8px; /* Reduced spacing */
     position: relative;
 }
@@ -290,8 +291,9 @@ body {
 /* Mode Toggle */
 .mode-toggle {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    left: calc(50% + 260px); /* Position to the right of the centered input field (500px/2 + some spacing) */
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1001;
 }
 
@@ -300,7 +302,7 @@ body {
     align-items: center;
     gap: 8px;
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #e9ecef;
+    border: none;
     border-radius: 20px;
     padding: 8px 12px;
     cursor: pointer;
@@ -313,7 +315,6 @@ body {
 
 .mode-toggle-btn:hover {
     background: rgba(255, 255, 255, 1);
-    border-color: #007bff;
     color: #007bff;
 }
 
@@ -794,8 +795,10 @@ body {
     
     /* Mode Toggle - Mobile */
     .mode-toggle {
-        right: 16px;
-        top: 16px;
+        position: static;
+        transform: none;
+        margin-left: 12px;
+        align-self: center;
     }
     
     .mode-toggle-btn {
