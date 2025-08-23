@@ -497,11 +497,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('geography', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#1b5e20');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -521,8 +522,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#e8f5e8',
-                    maxColor: '#2e7d32',
+                    colors: ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'],
+                    minColor: '#f0f8ff',
+                    maxColor: '#1e3a8a',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -557,11 +559,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (blue gradient for water)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('geography', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#0d47a1');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -580,8 +583,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#e3f2fd',
-                    maxColor: '#1976d2',
+                    colors: ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'],
+                    minColor: '#f0f8ff',
+                    maxColor: '#1e3a8a',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -616,11 +620,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (brown gradient for arable land)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('agriculture', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#8d6e63');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -639,8 +644,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#fff3e0',
-                    maxColor: '#8d6e63',
+                    colors: ['#fefce8', '#fef08a', '#eab308', '#a16207'],
+                    minColor: '#fefce8',
+                    maxColor: '#a16207',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -675,11 +681,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (purple gradient for density)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('demographics', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#f3e5f5', '#7b1fa2');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -697,8 +704,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#f3e5f5',
-                    maxColor: '#7b1fa2',
+                    colors: ['#fef3c7', '#fbbf24', '#f59e0b', '#d97706'],
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -733,11 +741,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (pink gradient for fertility)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('demographics', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#880e4f');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -756,8 +765,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#fce4ec',
-                    maxColor: '#c2185b',
+                    colors: ['#fef3c7', '#fbbf24', '#f59e0b', '#d97706'],
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -792,11 +802,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (gold gradient for wealth)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('economics', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#e65100');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -815,8 +826,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#fff8e1',
-                    maxColor: '#f57f17',
+                    colors: ['#dcfce7', '#22c55e', '#16a34a', '#15803d'],
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -849,11 +861,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (blue gradient for development)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('social', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#0d47a1');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -872,8 +885,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#e3f2fd',
-                    maxColor: '#1565c0',
+                    colors: ['#fdf4ff', '#f3e8ff', '#c084fc', '#9333ea'],
+                    minColor: '#fdf4ff',
+                    maxColor: '#9333ea',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -908,11 +922,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values (green gradient for GDP)
+            // Apply colors based on values using enhanced color scheme
+            const colorScheme = this.getColorSchemeForCategory('economics', 'numeric');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#1b5e20');
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
             });
             
             return {
@@ -931,8 +946,9 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    minColor: '#e8f5e8',
-                    maxColor: '#2e7d32',
+                    colors: ['#dcfce7', '#22c55e', '#16a34a', '#15803d'],
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d',
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -1477,20 +1493,8 @@ class QuizGame {
 
             // Create color scheme for monarchy types with contrasting colors
             const monarchyTypeList = Object.keys(monarchyTypes);
-            const colors = [
-                '#e74c3c', // Red
-                '#3498db', // Blue
-                '#2ecc71', // Green
-                '#f39c12', // Orange
-                '#9b59b6', // Purple
-                '#1abc9c', // Teal
-                '#e67e22', // Dark Orange
-                '#34495e', // Dark Blue
-                '#f1c40f', // Yellow
-                '#e91e63', // Pink
-                '#00bcd4', // Cyan
-                '#795548'  // Brown
-            ];
+            const colorScheme = this.getColorSchemeForCategory('politics', 'categorical');
+            const colors = colorScheme.colors;
             
             monarchyTypeList.forEach((type, index) => {
                 const color = colors[index % colors.length];
@@ -1547,20 +1551,8 @@ class QuizGame {
 
             // Create color scheme for party systems with contrasting colors
             const partySystemList = Object.keys(partySystems);
-            const colors = [
-                '#e74c3c', // Red
-                '#3498db', // Blue
-                '#2ecc71', // Green
-                '#f39c12', // Orange
-                '#9b59b6', // Purple
-                '#1abc9c', // Teal
-                '#e67e22', // Dark Orange
-                '#34495e', // Dark Blue
-                '#f1c40f', // Yellow
-                '#e91e63', // Pink
-                '#00bcd4', // Cyan
-                '#795548'  // Brown
-            ];
+            const colorScheme = this.getColorSchemeForCategory('politics', 'categorical');
+            const colors = colorScheme.colors;
             
             partySystemList.forEach((system, index) => {
                 const color = colors[index % colors.length];
@@ -2325,11 +2317,8 @@ class QuizGame {
             
             // Create color scheme for currency types with contrasting colors
             const currencyTypeList = Object.keys(currencyTypes);
-            const colors = [
-                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
-                '#1abc9c', '#e67e22', '#34495e', '#f1c40f', '#e91e63',
-                '#00bcd4', '#795548', '#607d8b', '#ff5722', '#2196f3'
-            ];
+            const colorScheme = this.getColorSchemeForCategory('economics', 'categorical');
+            const colors = colorScheme.colors;
             
             currencyTypeList.forEach((type, index) => {
                 const color = colors[index % colors.length];
@@ -2925,8 +2914,7 @@ class QuizGame {
     }
     
     getColorForRatio(ratio, minColor, maxColor) {
-        // Enhanced contrast interpolation with dramatic non-linear curves
-        // Use different curves for better visual distinction across the spectrum
+        // Enhanced color system with multiple color schemes and better gradients
         let enhancedRatio;
         
         if (ratio < 0.5) {
@@ -2945,18 +2933,18 @@ class QuizGame {
             if (minColor.colors && minColor.colors.length > 2) {
                 return this.interpolateMultiColor(enhancedRatio, minColor.colors);
             }
-            color1 = minColor.minColor || (minColor.colors && minColor.colors[0]) || '#ffffff';
+            color1 = minColor.minColor || (minColor.colors && minColor.colors[0]) || '#f8f9fa';
             color2 = minColor.maxColor || (minColor.colors && minColor.colors[1]) || '#000000';
         } else {
             // Old format: minColor, maxColor strings
-            color1 = minColor || '#ffffff';
+            color1 = minColor || '#f8f9fa';
             color2 = maxColor || '#000000';
         }
         
         // Ensure colors are strings and have the correct format
         if (typeof color1 !== 'string' || typeof color2 !== 'string') {
             console.warn('Invalid color format:', { color1, color2, minColor, maxColor });
-            return '#ffffff'; // Default fallback
+            return '#f8f9fa'; // Default fallback (light gray instead of white)
         }
         
         // Ensure colors start with #
@@ -2978,6 +2966,158 @@ class QuizGame {
         return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
     }
     
+    // Enhanced color schemes with more variety and better gradients
+    getColorSchemeForCategory(category, dataType = 'numeric') {
+        const schemes = {
+            // Geography & Environment
+            geography: {
+                numeric: {
+                    colors: ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'],
+                    minColor: '#f0f8ff',
+                    maxColor: '#1e3a8a'
+                },
+                categorical: {
+                    colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316']
+                }
+            },
+            
+            // Demographics & Population
+            demographics: {
+                numeric: {
+                    colors: ['#fef3c7', '#fbbf24', '#f59e0b', '#d97706'],
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706'
+                },
+                categorical: {
+                    colors: ['#ec4899', '#8b5cf6', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#3b82f6', '#84cc16']
+                }
+            },
+            
+            // Economics & Finance
+            economics: {
+                numeric: {
+                    colors: ['#dcfce7', '#22c55e', '#16a34a', '#15803d'],
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d'
+                },
+                categorical: {
+                    colors: ['#fbbf24', '#f59e0b', '#d97706', '#92400e', '#78350f', '#451a03', '#dcfce7', '#22c55e']
+                }
+            },
+            
+            // Politics & Government
+            politics: {
+                numeric: {
+                    colors: ['#fce7f3', '#f472b6', '#ec4899', '#be185d'],
+                    minColor: '#fce7f3',
+                    maxColor: '#be185d'
+                },
+                categorical: {
+                    colors: ['#ef4444', '#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316']
+                }
+            },
+            
+            // Technology & Infrastructure
+            technology: {
+                numeric: {
+                    colors: ['#e0e7ff', '#a5b4fc', '#6366f1', '#4338ca'],
+                    minColor: '#e0e7ff',
+                    maxColor: '#4338ca'
+                },
+                categorical: {
+                    colors: ['#06b6d4', '#3b82f6', '#8b5cf6', '#ec4899', '#ef4444', '#f59e0b', '#10b981', '#84cc16']
+                }
+            },
+            
+            // Health & Medicine
+            health: {
+                numeric: {
+                    colors: ['#fef2f2', '#fecaca', '#f87171', '#dc2626'],
+                    minColor: '#fef2f2',
+                    maxColor: '#dc2626'
+                },
+                categorical: {
+                    colors: ['#ef4444', '#f97316', '#f59e0b', '#eab308', '#84cc16', '#22c55e', '#10b981', '#06b6d4']
+                }
+            },
+            
+            // Education & Science
+            education: {
+                numeric: {
+                    colors: ['#f0fdf4', '#bbf7d0', '#4ade80', '#16a34a'],
+                    minColor: '#f0fdf4',
+                    maxColor: '#16a34a'
+                },
+                categorical: {
+                    colors: ['#8b5cf6', '#06b6d4', '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#84cc16', '#f97316']
+                }
+            },
+            
+            // Social & Culture
+            social: {
+                numeric: {
+                    colors: ['#fdf4ff', '#f3e8ff', '#c084fc', '#9333ea'],
+                    minColor: '#fdf4ff',
+                    maxColor: '#9333ea'
+                },
+                categorical: {
+                    colors: ['#ec4899', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#06b6d4', '#84cc16', '#ef4444']
+                }
+            },
+            
+            // Environment & Climate
+            environment: {
+                numeric: {
+                    colors: ['#f0fdfa', '#5eead4', '#14b8a6', '#0f766e'],
+                    minColor: '#f0fdfa',
+                    maxColor: '#0f766e'
+                },
+                categorical: {
+                    colors: ['#10b981', '#84cc16', '#eab308', '#f59e0b', '#f97316', '#ef4444', '#06b6d4', '#3b82f6']
+                }
+            },
+            
+            // Sports & Recreation
+            sports: {
+                numeric: {
+                    colors: ['#fff7ed', '#fed7aa', '#fb923c', '#ea580c'],
+                    minColor: '#fff7ed',
+                    maxColor: '#ea580c'
+                },
+                categorical: {
+                    colors: ['#fbbf24', '#f59e0b', '#d97706', '#92400e', '#ef4444', '#dc2626', '#991b1b', '#7f1d1d']
+                }
+            },
+            
+            // Agriculture & Food
+            agriculture: {
+                numeric: {
+                    colors: ['#fefce8', '#fef08a', '#eab308', '#a16207'],
+                    minColor: '#fefce8',
+                    maxColor: '#a16207'
+                },
+                categorical: {
+                    colors: ['#84cc16', '#22c55e', '#16a34a', '#15803d', '#fbbf24', '#f59e0b', '#d97706', '#92400e']
+                }
+            }
+        };
+        
+        // Default scheme if category not found
+        const defaultScheme = {
+            numeric: {
+                colors: ['#f8fafc', '#cbd5e1', '#64748b', '#334155'],
+                minColor: '#f8fafc',
+                maxColor: '#334155'
+            },
+            categorical: {
+                colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316']
+            }
+        };
+        
+        return schemes[category] || defaultScheme;
+    }
+    
+    // Enhanced multi-color interpolation with better color transitions
     interpolateMultiColor(ratio, colors) {
         // Interpolate between multiple colors for smoother gradients
         const segments = colors.length - 1;
@@ -2991,7 +3131,7 @@ class QuizGame {
         // Ensure colors are strings and have the correct format
         if (typeof color1 !== 'string' || typeof color2 !== 'string') {
             console.warn('Invalid color format in multi-color interpolation:', { color1, color2 });
-            return '#ffffff'; // Default fallback
+            return '#f8f9fa'; // Default fallback (light gray instead of white)
         }
         
         // Ensure colors start with #

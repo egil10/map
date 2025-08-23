@@ -282,9 +282,9 @@ class WorldMap {
             console.log('GeoJSON country name containing "america" or "usa":', countryName);
         }
         
-        // Default style
+        // Default style - use white only for countries without data
         let style = {
-            fillColor: '#ffffff',
+            fillColor: '#ffffff', // White for countries without data
             weight: 1,
             color: '#cccccc',
             fillOpacity: 0.8
@@ -681,9 +681,18 @@ class WorldMap {
     updateLegendGradient(quiz) {
         const gradientBar = document.querySelector('.gradient-bar');
         if (gradientBar && quiz.colorScheme) {
-            const minColor = quiz.colorScheme.minColor;
-            const maxColor = quiz.colorScheme.maxColor;
-            gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
+            // Use multi-color gradient if available, otherwise fall back to simple gradient
+            if (quiz.colorScheme.colors && quiz.colorScheme.colors.length > 2) {
+                const colorStops = quiz.colorScheme.colors.map((color, index) => {
+                    const percentage = (index / (quiz.colorScheme.colors.length - 1)) * 100;
+                    return `${color} ${percentage}%`;
+                }).join(', ');
+                gradientBar.style.background = `linear-gradient(to right, ${colorStops})`;
+            } else {
+                const minColor = quiz.colorScheme.minColor;
+                const maxColor = quiz.colorScheme.maxColor;
+                gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
+            }
         }
     }
     
