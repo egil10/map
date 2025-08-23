@@ -3461,9 +3461,6 @@ class QuizGame {
         
         if (!userGuess) return;
         
-        // Transform button icon to check
-        this.transformToCheckIcon();
-        
         // Disable input and submit button
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
@@ -3473,20 +3470,25 @@ class QuizGame {
         // Check if currentQuiz exists before accessing its properties
         if (!this.currentQuiz) {
             console.error('No current quiz available');
-            this.showFeedback('Error: No quiz available', 'incorrect');
+            this.transformToXIcon();
             return;
         }
         
-        // Show the answer title
-        this.showAnswerTitle();
+        // Check the answer first
+        const isCorrect = this.checkAnswer(userGuess);
+        
+        // Show the answer title with appropriate styling
+        this.showAnswerTitle(isCorrect);
         this.isAnswerShown = true;
         
-        if (this.checkAnswer(userGuess)) {
-            this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
+        if (isCorrect) {
+            this.transformToCheckIcon();
             this.score++;
             this.updateScoreDisplay();
+            this.updateProgressBar(true);
         } else {
-            this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
+            this.transformToXIcon();
+            this.updateProgressBar(false);
         }
         
         // Show skip button for next question (only in learn mode)
@@ -3508,7 +3510,7 @@ class QuizGame {
         }
     }
     
-    showAnswerTitle() {
+    showAnswerTitle(isCorrect = true) {
         const answerTitle = document.getElementById('answerTitle');
         const answerTitleText = document.getElementById('answerTitleText');
         const answerDescription = document.getElementById('answerDescription');
@@ -3517,13 +3519,31 @@ class QuizGame {
             answerTitleText.textContent = this.currentQuiz.title;
             answerDescription.textContent = this.currentQuiz.description;
             answerTitle.style.display = 'block';
+            
+            // Set background color based on correct/incorrect
+            if (isCorrect) {
+                answerTitle.style.background = 'rgba(40, 167, 69, 0.1)';
+                answerTitle.style.borderColor = 'rgba(40, 167, 69, 0.2)';
+                answerTitleText.style.color = '#28a745';
+            } else {
+                answerTitle.style.background = 'rgba(220, 53, 69, 0.1)';
+                answerTitle.style.borderColor = 'rgba(220, 53, 69, 0.2)';
+                answerTitleText.style.color = '#dc3545';
+            }
         }
     }
     
     hideAnswerTitle() {
         const answerTitle = document.getElementById('answerTitle');
+        const answerTitleText = document.getElementById('answerTitleText');
         if (answerTitle) {
             answerTitle.style.display = 'none';
+            // Reset styling
+            answerTitle.style.background = '';
+            answerTitle.style.borderColor = '';
+            if (answerTitleText) {
+                answerTitleText.style.color = '';
+            }
         }
     }
     
@@ -3986,7 +4006,31 @@ class QuizGame {
             const svg = submitBtn.querySelector('svg');
             if (svg) {
                 svg.innerHTML = '<path d="M20 6 9 17l-5-5"></path>';
+                svg.setAttribute('data-lucide', 'check');
             }
+            
+            // Change color to green
+            submitBtn.style.color = '#28a745';
+            
+            // Transform back to arrow-up icon after a delay
+            setTimeout(() => {
+                this.transformToArrowIcon();
+            }, 2000);
+        }
+    }
+    
+    transformToXIcon() {
+        const submitBtn = document.getElementById('submitGuess');
+        if (submitBtn) {
+            // Replace the SVG content with X icon
+            const svg = submitBtn.querySelector('svg');
+            if (svg) {
+                svg.innerHTML = '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>';
+                svg.setAttribute('data-lucide', 'x');
+            }
+            
+            // Change color to red
+            submitBtn.style.color = '#dc3545';
             
             // Transform back to arrow-up icon after a delay
             setTimeout(() => {
@@ -4002,7 +4046,11 @@ class QuizGame {
             const svg = submitBtn.querySelector('svg');
             if (svg) {
                 svg.innerHTML = '<path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path>';
+                svg.setAttribute('data-lucide', 'arrow-up');
             }
+            
+            // Reset color
+            submitBtn.style.color = '';
         }
     }
     
