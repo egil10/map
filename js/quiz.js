@@ -15,6 +15,8 @@ class QuizGame {
         this.currentDatasetIndex = 0;
         this.datasetList = [];
         this.skipDirection = 'forward'; // Track skip direction
+        this.learnModeSequence = []; // Store the predetermined order for learn mode
+        this.learnModeCurrentIndex = 0; // Current position in the sequence
         
         this.init();
     }
@@ -3177,7 +3179,13 @@ class QuizGame {
     
     skipToPreviousQuestion() {
         if (this.isLearnMode) {
-            // In learn mode, go to a random previous dataset
+            // In learn mode, go to previous dataset in sequence
+            if (this.learnModeSequence.length === 0) {
+                this.generateLearnModeSequence();
+            }
+            
+            // Move to previous index (with wraparound)
+            this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
             this.loadRandomDataset();
         } else {
             // In play mode, go to previous question if possible
@@ -3190,7 +3198,13 @@ class QuizGame {
     
     skipToNextQuestion() {
         if (this.isLearnMode) {
-            // In learn mode, go to a random next dataset
+            // In learn mode, go to next dataset in sequence
+            if (this.learnModeSequence.length === 0) {
+                this.generateLearnModeSequence();
+            }
+            
+            // Move to next index (with wraparound)
+            this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
             this.loadRandomDataset();
         } else {
             // In play mode, only proceed if not at the end
@@ -3203,28 +3217,52 @@ class QuizGame {
         }
     }
     
-    loadRandomDataset() {
+    generateLearnModeSequence() {
         if (!this.quizData || !this.quizData.quizzes) return;
         
         // Get all available datasets
         const availableDatasets = Object.values(this.quizData.quizzes);
         if (availableDatasets.length === 0) return;
         
-        // Select a random dataset
-        const randomIndex = Math.floor(Math.random() * availableDatasets.length);
-        const randomDataset = availableDatasets[randomIndex];
+        // Create a shuffled copy of all datasets
+        this.learnModeSequence = [...availableDatasets];
         
-        // Load the random dataset
-        this.currentQuiz = randomDataset;
+        // Fisher-Yates shuffle for better randomization
+        for (let i = this.learnModeSequence.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this.learnModeSequence[i], this.learnModeSequence[j]] = [this.learnModeSequence[j], this.learnModeSequence[i]];
+        }
+        
+        // Reset current index
+        this.learnModeCurrentIndex = 0;
+        
+        console.log('Generated new learn mode sequence with', this.learnModeSequence.length, 'datasets');
+    }
+    
+    loadRandomDataset() {
+        if (!this.quizData || !this.quizData.quizzes) return;
+        
+        // If no sequence exists, generate one
+        if (this.learnModeSequence.length === 0) {
+            this.generateLearnModeSequence();
+        }
+        
+        // Get current dataset from sequence
+        const currentDataset = this.learnModeSequence[this.learnModeCurrentIndex];
+        
+        // Load the dataset
+        this.currentQuiz = currentDataset;
         
         // Apply random color variations to the quiz
         this.applyRandomColorVariations();
         
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
-            console.log('Applying random dataset to map:', {
+            console.log('Applying dataset to map:', {
                 quizTitle: this.currentQuiz.title,
-                countriesCount: Object.keys(this.currentQuiz.countries).length
+                countriesCount: Object.keys(this.currentQuiz.countries).length,
+                sequenceIndex: this.learnModeCurrentIndex + 1,
+                totalInSequence: this.learnModeSequence.length
             });
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
@@ -3235,7 +3273,7 @@ class QuizGame {
         // Reset answer shown flag for learn mode
         this.isAnswerShown = false;
         
-        console.log('Loaded random dataset:', this.currentQuiz.title);
+        console.log('Loaded dataset from sequence:', this.currentQuiz.title, `(${this.learnModeCurrentIndex + 1}/${this.learnModeSequence.length})`);
     }
     
     toggleMode() {
@@ -3244,6 +3282,8 @@ class QuizGame {
         this.resetGame();
         
         if (this.isLearnMode) {
+            // Generate a new sequence when entering learn mode
+            this.generateLearnModeSequence();
             this.startLearnMode();
         } else {
             this.startPlayMode();
@@ -3297,6 +3337,9 @@ class QuizGame {
     }
     
     startLearnMode() {
+        // Load the first dataset from the sequence
+        this.loadRandomDataset();
+        
         // Show answer title immediately in learn mode
         this.showAnswerTitle();
         this.showSkipButton();
