@@ -109,6 +109,8 @@ body {
 .map-container {
     flex: 1;
     background: #f8f9fa;
+    min-height: 400px; /* Ensure minimum height */
+    position: relative; /* Ensure proper positioning */
 }
 
 /* Quiz Interface */

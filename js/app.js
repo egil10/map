@@ -75,6 +75,14 @@ class App {
             appContainer.style.display = 'flex';
         }
         
+        // Force map refresh after showing the app to ensure proper rendering
+        setTimeout(() => {
+            if (this.mapInstance && this.mapInstance.map && typeof this.mapInstance.map.invalidateSize === 'function') {
+                this.mapInstance.map.invalidateSize();
+                console.log('🗺️ Map refreshed after app visibility');
+            }
+        }, 100);
+        
         this.isReady = true;
         console.log('🎉 Game is now visible and ready to play!');
     }

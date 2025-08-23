@@ -62,6 +62,21 @@ class WorldMap {
             return;
         }
         
+        // Check if map container exists
+        const mapContainer = document.getElementById('map');
+        if (!mapContainer) {
+            console.error('Map container not found!');
+            return;
+        }
+        
+        console.log('🗺️ Initializing map in container:', mapContainer);
+        console.log('🗺️ Container dimensions:', {
+            width: mapContainer.offsetWidth,
+            height: mapContainer.offsetHeight,
+            clientWidth: mapContainer.clientWidth,
+            clientHeight: mapContainer.clientHeight
+        });
+        
         // Initialize the map centered on the world
         this.map = L.map('map').setView([20, 0], 2);
         
@@ -81,6 +96,7 @@ class WorldMap {
         
         // Lazy load quiz data after map is ready
         this.map.on('load', () => {
+            console.log('🗺️ Map tiles loaded successfully');
             // Use requestIdleCallback for better performance, fallback to setTimeout
             if (window.requestIdleCallback) {
                 requestIdleCallback(() => {
@@ -105,9 +121,16 @@ class WorldMap {
     
     async loadCountriesData() {
         try {
+            console.log('🗺️ Loading countries GeoJSON data...');
             // Using a simple countries GeoJSON from a public source
             const response = await fetch('https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson');
             this.countriesData = await response.json();
+            
+            console.log('🗺️ GeoJSON loaded successfully:', {
+                featureCount: this.countriesData.features.length,
+                type: this.countriesData.type,
+                hasProperties: this.countriesData.features[0]?.properties ? true : false
+            });
             
             // Debug: Log all country names containing "United" to see what's available
             const unitedCountries = this.countriesData.features
@@ -216,6 +239,20 @@ class WorldMap {
             style: style,
             onEachFeature: onEachFeature
         }).addTo(this.map);
+        
+        console.log('🗺️ Countries layer created and added to map:', {
+            layerCount: this.countriesLayer.getLayers().length,
+            hasStyle: !!style,
+            hasOnEachFeature: !!onEachFeature
+        });
+        
+        // Force map refresh to ensure proper rendering
+        setTimeout(() => {
+            if (this.map && typeof this.map.invalidateSize === 'function') {
+                this.map.invalidateSize();
+                console.log('🗺️ Map invalidated after countries layer creation');
+            }
+        }, 100);
     }
     
     getCountryStyle(feature) {
@@ -351,10 +388,17 @@ class WorldMap {
             this.map.invalidateSize();
         }
         
-        // Alternative approach: force a style refresh by temporarily removing and re-adding the layer
+        // Force a complete layer refresh to ensure proper rendering
         if (this.countriesLayer) {
             this.map.removeLayer(this.countriesLayer);
             this.map.addLayer(this.countriesLayer);
+            
+            // Additional refresh after re-adding
+            setTimeout(() => {
+                if (this.map && typeof this.map.invalidateSize === 'function') {
+                    this.map.invalidateSize();
+                }
+            }, 50);
         }
         
         // Create legend
