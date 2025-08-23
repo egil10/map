@@ -159,13 +159,9 @@ class WorldMap {
                 currentHoverPopup = null;
             }
             
-            // Keep original colors, just increase weight slightly for subtle highlight
+            // Keep original colors, no border changes
             const originalStyle = this.getCountryStyle(layer.feature);
-            layer.setStyle({
-                ...originalStyle,
-                weight: 2,
-                color: '#666666'
-            });
+            layer.setStyle(originalStyle);
             
             // Use DOM class instead of Leaflet class
             if (layer.getElement()) {
@@ -188,18 +184,20 @@ class WorldMap {
         
         // Reset highlight function
         const resetHighlight = (e) => {
-            if (this.selectedCountry !== e.target.feature.properties.name) {
-                this.countriesLayer.resetStyle(e.target);
-            }
+            const layer = e.target;
+            
+            // Explicitly reset to original quiz style
+            const originalStyle = this.getCountryStyle(layer.feature);
+            layer.setStyle(originalStyle);
             
             // Use DOM class instead of Leaflet class
-            if (e.target.getElement()) {
-                e.target.getElement().classList.remove('country-hover');
+            if (layer.getElement()) {
+                layer.getElement().classList.remove('country-hover');
             }
             
             // Close popup on mouse out
-            if (e.target.isPopupOpen()) {
-                e.target.closePopup();
+            if (layer.isPopupOpen()) {
+                layer.closePopup();
                 currentHoverPopup = null;
             }
         };

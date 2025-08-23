@@ -24,8 +24,19 @@
     <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <i data-lucide="map" class="loading-icon"></i>
+            </div>
+            <h2 class="loading-title">Loading GeoQuest...</h2>
+            <p class="loading-subtitle">Preparing your world map quiz adventure</p>
+        </div>
+    </div>
+
     <!-- Main Container -->
-    <div class="app-container">
+    <div class="app-container" style="display: none;">
         <!-- Map Container -->
         <div id="map" class="map-container"></div>
         

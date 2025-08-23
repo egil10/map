@@ -10,6 +10,7 @@ class QuizGame {
         this.totalQuizzesPlayed = 0;
         this.countryMapper = new CountryMapper();
         this.currentProgress = 0; // Track current progress (0-9)
+        this.isReady = false; // Flag to indicate quiz is ready
         
         this.init();
     }
@@ -2189,6 +2190,13 @@ class QuizGame {
         
         if (this.currentQuiz) {
             console.log('Started new quiz:', this.currentQuiz.title);
+            
+            // Mark quiz as ready on first successful start
+            if (!this.isReady) {
+                this.isReady = true;
+                window.quizInstance = this;
+                console.log('🎯 Quiz system is now ready!');
+            }
         } else {
             console.error('Failed to start new quiz');
         }
