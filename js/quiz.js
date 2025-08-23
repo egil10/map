@@ -3044,13 +3044,21 @@ class QuizGame {
         
         // Skip buttons
         const skipLeftBtn = document.getElementById('skipLeft');
+        console.log('Setting up skipLeftBtn event listener, found:', skipLeftBtn);
         if (skipLeftBtn) {
-            skipLeftBtn.addEventListener('click', () => this.skipToPreviousQuestion());
+            skipLeftBtn.addEventListener('click', () => {
+                console.log('skipLeftBtn clicked!');
+                this.skipToPreviousQuestion();
+            });
         }
         
         const skipRightBtn = document.getElementById('skipRight');
+        console.log('Setting up skipRightBtn event listener, found:', skipRightBtn);
         if (skipRightBtn) {
-            skipRightBtn.addEventListener('click', () => this.skipToNextQuestion());
+            skipRightBtn.addEventListener('click', () => {
+                console.log('skipRightBtn clicked!');
+                this.skipToNextQuestion();
+            });
         }
         
         // Mode toggle button
@@ -3162,11 +3170,13 @@ class QuizGame {
         
         if (skipLeftBtn) {
             skipLeftBtn.style.display = 'flex';
-            console.log('Set skipLeftBtn display to flex');
+            skipLeftBtn.disabled = false; // Ensure button is enabled
+            console.log('Set skipLeftBtn display to flex, disabled:', skipLeftBtn.disabled);
         }
         if (skipRightBtn) {
             skipRightBtn.style.display = 'flex';
-            console.log('Set skipRightBtn display to flex');
+            skipRightBtn.disabled = false; // Ensure button is enabled
+            console.log('Set skipRightBtn display to flex, disabled:', skipRightBtn.disabled);
         }
     }
     
@@ -3389,6 +3399,9 @@ class QuizGame {
             submitButton.style.display = 'flex';
             submitButton.disabled = true; // Will be enabled when user types
         }
+        
+        // Ensure skip buttons are hidden in play mode
+        this.hideSkipButton();
     }
     
     openDatasetBrowser() {
@@ -3514,6 +3527,9 @@ class QuizGame {
             guessInput.value = '';
             guessInput.placeholder = 'What does this map show?';
             guessInput.focus();
+            
+            // Ensure skip buttons are hidden in play mode
+            this.hideSkipButton();
         }
         
         // Only reset progress bar if we're starting fresh (not just changing quiz)
