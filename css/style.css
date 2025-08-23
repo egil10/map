@@ -179,8 +179,8 @@ body {
   border-radius: var(--control-radius);
   box-sizing: border-box;
   line-height: calc(var(--control-h) - 2px);
-  /* left padding for left chevron; right padding for send + right chevron + gaps */
-  padding-left: calc(var(--inline-btn-w) + var(--pad-x));
+  /* right padding for send + right chevron + gaps */
+  padding-left: var(--pad-x);
   padding-right: calc(var(--inline-btn-w) * 2 + var(--inline-gap) + var(--pad-x));
   border: 1px solid #dee2e6;
   font-size: 16px;
@@ -206,8 +206,7 @@ body {
   cursor: pointer;
 }
 
-/* Left chevron sits inside on the far left */
-.input-with-embedded .inline-left{ left: 6px; }
+
 
 /* Right-side group sits inside on the far right */
 .input-with-embedded .inline-right-group{
@@ -227,8 +226,7 @@ body {
 
 /* Specific roles (optional hooks for theming/hover) */
 .inline-send svg,
-.inline-right svg,
-.inline-left svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
+.inline-right svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
 
 /* Focus/hover (tweak to your theme) */
 .input-with-embedded .inline-btn:focus-visible{ outline: 2px solid rgba(0,0,0,0.2); outline-offset: 2px; }

@@ -3401,15 +3401,7 @@ class QuizGame {
             skipBtn.addEventListener('click', () => this.skipQuiz());
         }
         
-        // Skip buttons
-        const skipLeftBtn = document.getElementById('skipLeft');
-        console.log('Setting up skipLeftBtn event listener, found:', skipLeftBtn);
-        if (skipLeftBtn) {
-            skipLeftBtn.addEventListener('click', () => {
-                console.log('skipLeftBtn clicked!');
-                this.skipToPreviousQuestion();
-            });
-        }
+
         
         const skipRightBtn = document.getElementById('skipRight');
         console.log('Setting up skipRightBtn event listener, found:', skipRightBtn);
@@ -3532,13 +3524,7 @@ class QuizGame {
     }
     
     showSkipButton() {
-        const skipLeftBtn = document.getElementById('skipLeft');
         const skipRightBtn = document.getElementById('skipRight');
-        
-        if (skipLeftBtn) {
-            skipLeftBtn.style.display = 'flex';
-            skipLeftBtn.disabled = false; // Ensure button is enabled
-        }
         if (skipRightBtn) {
             skipRightBtn.style.display = 'flex';
             skipRightBtn.disabled = false; // Ensure button is enabled
@@ -3546,34 +3532,13 @@ class QuizGame {
     }
     
     hideSkipButton() {
-        const skipLeftBtn = document.getElementById('skipLeft');
         const skipRightBtn = document.getElementById('skipRight');
-        if (skipLeftBtn) {
-            skipLeftBtn.style.display = 'none';
-        }
         if (skipRightBtn) {
             skipRightBtn.style.display = 'none';
         }
     }
     
-    skipToPreviousQuestion() {
-        if (this.isLearnMode) {
-            // In learn mode, go to previous dataset in sequence
-            if (this.learnModeSequence.length === 0) {
-                this.generateLearnModeSequence();
-            }
-            
-            // Move to previous index (with wraparound)
-            this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
-            this.loadRandomDataset();
-        } else {
-            // In play mode, go to previous question if possible
-            if (this.currentProgress > 0) {
-                this.currentProgress--;
-                this.startNewQuiz();
-            }
-        }
-    }
+
     
     skipToNextQuestion() {
         if (this.isLearnMode) {
