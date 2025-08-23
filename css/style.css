@@ -165,21 +165,49 @@ body {
   min-width: 0; /* prevent overflow from long placeholder text */
 }
 
-/* Input expands but respects max container width */
-.input-section .guess-input {
-  flex: 1 1 auto;
+/* Input-with-button wrapper */
+.input-with-button {
+  position: relative;
+  flex: 1 1 auto;        /* allow to expand */
   min-width: 120px;
+}
+
+.input-with-button .guess-input {
+  width: 100%;
   height: var(--control-h);
-  line-height: calc(var(--control-h) - 2px);
-  padding: 0 var(--control-pad-x);
+  padding: 0 calc(var(--control-h) + 6px) 0 var(--control-pad-x); 
+  /* right padding makes room for button */
   border-radius: var(--control-radius);
   box-sizing: border-box;
+  line-height: calc(var(--control-h) - 2px);
   border: 1px solid #dee2e6;
   font-size: 16px;
   background: #ffffff;
   color: #495057;
   outline: none;
   transition: border-color 0.2s ease;
+}
+
+.input-with-button .input-arrow-btn {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  height: calc(var(--control-h) - 6px);
+  width: calc(var(--control-h) - 6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;  /* match input background */
+  border: none;             /* optional, can add subtle border */
+}
+
+.input-with-button .input-arrow-btn svg {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
 }
 
 .guess-input::placeholder {
@@ -224,7 +252,6 @@ body {
 
 /* Keep buttons aligned (from earlier step) */
 .input-section .mode-toggle-btn,
-.input-section .input-arrow-btn,
 .input-section .input-skip-btn {
   display: flex;
   align-items: center;
@@ -239,7 +266,6 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.input-section .input-arrow-btn,
 .input-section .input-skip-btn { width: var(--control-h); }
 
 .input-section .mode-toggle-btn { padding: 0 12px; gap: 8px; white-space: nowrap; font-size: 12px; font-weight: 500; }
@@ -253,16 +279,15 @@ body {
     transform: scale(0.95);
 }
 
-.input-arrow-btn:hover {
+.input-with-button .input-arrow-btn:hover {
     background: #f8f9fa;
     color: #007bff;
 }
 
-.input-arrow-btn:active {
+.input-with-button .input-arrow-btn:active {
     transform: scale(0.95);
 }
 
-.input-section .input-arrow-btn svg,
 .input-section .input-skip-btn svg,
 .input-section .mode-toggle-btn svg { width: 20px; height: 20px; display: block; }
 
@@ -379,23 +404,20 @@ body {
     color: #495057;
 }
 
-/* Progress bar should sit below the input row and never overlap */
+/* Progress bar centered */
 .progress-bar {
-  position: static;      /* ensure not absolute */
-  display: flex;         /* keep your current display */
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  margin: 16px auto 0;
   max-width: var(--content-max);
-  margin: 12px auto 0;   /* spacing and center */
   width: 100%;
-  z-index: 0;
-  clear: both;
 }
 
-/* Make progress circles wrap nicely if too many */
 .progress-bar .progress-circles {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  align-items: center;
+  justify-content: center;   /* keep circles centered */
 }
 
 .progress-circle {

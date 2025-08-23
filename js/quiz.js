@@ -3206,23 +3206,23 @@ class QuizGame {
         const progressBar = document.querySelector('.progress-bar');
         
         if (toggleBtn && toggleText && toggleIcon) {
-            if (this.isLearnMode) {
-                toggleIcon.setAttribute('data-lucide', 'toggle-left');
-                toggleText.textContent = 'Learn';
-                toggleBtn.title = 'Switch to Play Mode';
-                // Hide progress bar in learn mode
-                if (progressBar) {
-                    progressBar.style.display = 'none';
-                }
-            } else {
-                toggleIcon.setAttribute('data-lucide', 'toggle-right');
-                toggleText.textContent = 'Play';
-                toggleBtn.title = 'Switch to Learn Mode';
-                // Show progress bar in play mode
-                if (progressBar) {
-                    progressBar.style.display = 'flex';
-                }
+                    if (this.isLearnMode) {
+            toggleIcon.setAttribute('data-lucide', 'toggle-right');
+            toggleText.textContent = 'Learn';
+            toggleBtn.title = 'Switch to Play Mode';
+            // Hide progress bar in learn mode
+            if (progressBar) {
+                progressBar.style.display = 'none';
             }
+        } else {
+            toggleIcon.setAttribute('data-lucide', 'toggle-left');
+            toggleText.textContent = 'Play';
+            toggleBtn.title = 'Switch to Learn Mode';
+            // Show progress bar in play mode
+            if (progressBar) {
+                progressBar.style.display = 'flex';
+            }
+        }
             
             // Reinitialize Lucide icons
             if (typeof lucide !== 'undefined') {

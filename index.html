@@ -55,19 +55,21 @@
                     <div class="input-wrapper">
                         <div class="mode-toggle">
                             <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
-                                <i data-lucide="toggle-right" id="modeToggleIcon"></i>
+                                <i data-lucide="toggle-left" id="modeToggleIcon"></i>
                                 <span id="modeToggleText">Play</span>
                             </button>
                         </div>
-                        <input 
-                            type="text" 
-                            id="guessInput" 
-                            placeholder="What does this map show?"
-                            class="guess-input"
-                        >
-                        <button id="submitGuess" class="input-arrow-btn">
-                            <i data-lucide="arrow-up" id="submitIcon"></i>
-                        </button>
+                        <div class="input-with-button">
+                            <input 
+                                type="text" 
+                                id="guessInput" 
+                                placeholder="What does this map show?"
+                                class="guess-input"
+                            >
+                            <button id="submitGuess" class="input-arrow-btn">
+                                <i data-lucide="arrow-up" id="submitIcon"></i>
+                            </button>
+                        </div>
                         <button id="skipLeft" class="input-skip-btn">
                             <i data-lucide="chevron-left" id="skipLeftIcon"></i>
                         </button>
