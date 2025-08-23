@@ -4414,11 +4414,11 @@ class QuizGame {
             answerTitleText.style.color = '#1976d2';
         }
         
-        // Update input placeholder to restart
+        // Update input placeholder to restart (but keep it disabled like "Enter to continue")
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
         if (guessInput) {
-            guessInput.disabled = false;
+            guessInput.disabled = true; // Keep disabled like "Enter to continue" stages
             guessInput.value = '';
             guessInput.placeholder = 'Enter to restart';
             guessInput.focus();
