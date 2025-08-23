@@ -179,9 +179,9 @@ body {
   border-radius: var(--control-radius);
   box-sizing: border-box;
   line-height: calc(var(--control-h) - 2px);
-  /* right padding for copy + send + right chevron + gaps */
+  /* right padding for send + right chevron + gaps */
   padding-left: var(--pad-x);
-  padding-right: calc(var(--inline-btn-w) * 3 + var(--inline-gap) * 2 + var(--pad-x));
+  padding-right: calc(var(--inline-btn-w) * 2 + var(--inline-gap) + var(--pad-x));
   border: 1px solid #dee2e6;
   font-size: 16px;
   background: #ffffff;
@@ -226,8 +226,32 @@ body {
 
 /* Specific roles (optional hooks for theming/hover) */
 .inline-send svg,
-.inline-right svg,
-.inline-copy svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
+.inline-right svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
+
+/* Copy button styling */
+.copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: #f8f9fa;
+    color: #495057;
+}
+
+.copy-btn svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+    transition: all 0.2s ease;
+}
 
 /* Focus/hover (tweak to your theme) */
 .input-with-embedded .inline-btn:focus-visible{ outline: 2px solid rgba(0,0,0,0.2); outline-offset: 2px; }

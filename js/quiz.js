@@ -6025,8 +6025,8 @@ class QuizGame {
         }
         
         try {
-            // Create table header
-            let tableData = 'Country\tValue\tUnit\n';
+            // Create table header (lowercase)
+            let tableData = 'country\tvalue\tunit\n';
             
             // Sort countries by value (descending) for better readability
             const sortedCountries = Object.entries(this.currentQuiz.countries)
@@ -6043,15 +6043,26 @@ class QuizGame {
             navigator.clipboard.writeText(tableData).then(() => {
                 this.showFeedback('Data copied to clipboard!', 'correct');
                 
-                // Show a brief success animation on the copy button
+                // Change icon from copy to check for 2 seconds
                 const copyBtn = document.getElementById('copyData');
                 if (copyBtn) {
-                    copyBtn.style.transform = 'scale(1.1)';
-                    copyBtn.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
-                    setTimeout(() => {
-                        copyBtn.style.transform = 'scale(1)';
-                        copyBtn.style.backgroundColor = 'transparent';
-                    }, 300);
+                    const svg = copyBtn.querySelector('svg');
+                    if (svg) {
+                        // Store original icon
+                        const originalIcon = svg.outerHTML;
+                        
+                        // Change to check icon
+                        svg.outerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg>';
+                        
+                        // Change color to green
+                        copyBtn.style.color = '#28a745';
+                        
+                        // Revert back after 2 seconds
+                        setTimeout(() => {
+                            svg.outerHTML = originalIcon;
+                            copyBtn.style.color = '';
+                        }, 2000);
+                    }
                 }
             }).catch(err => {
                 console.error('Failed to copy data:', err);
