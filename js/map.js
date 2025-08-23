@@ -192,12 +192,16 @@ class WorldMap {
         const countryName = feature.properties.name;
         
         // Debug logging for United States
-        if (countryName === 'United States of America') {
-            console.log('Map styling - United States of America:', {
+        if (countryName === 'United States of America' || countryName === 'United States') {
+            console.log('🇺🇸 Map styling - USA country:', countryName, {
                 hasQuiz: !!this.currentQuiz,
                 hasCountryData: !!(this.currentQuiz && this.currentQuiz.countries[countryName]),
                 countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null,
-                allCountries: this.currentQuiz ? Object.keys(this.currentQuiz.countries).filter(c => c.toLowerCase().includes('united')).slice(0, 5) : []
+                allUSAKeys: this.currentQuiz ? Object.keys(this.currentQuiz.countries).filter(c => 
+                    c.toLowerCase().includes('united') || 
+                    c.toLowerCase().includes('america') || 
+                    c.toLowerCase().includes('usa')
+                ) : []
             });
         }
         
@@ -236,9 +240,28 @@ class WorldMap {
         
         // Normalize country names to match GeoJSON names
         const geoNames = new Set(this.countriesData.features.map(f => f.properties.name));
+        console.log('🇺🇸 USA DEBUG - Available GeoJSON names containing "United" or "America":', 
+            Array.from(geoNames).filter(name => 
+                name.toLowerCase().includes('united') || 
+                name.toLowerCase().includes('america') || 
+                name.toLowerCase().includes('usa')
+            )
+        );
+        
         const fixed = {};
         for (const [k, v] of Object.entries(this.currentQuiz.countries)) {
             const resolvedName = resolveToGeoName(k, geoNames);
+            
+            // Debug USA specifically
+            if (k.toLowerCase().includes('united') || k.toLowerCase().includes('america')) {
+                console.log('🇺🇸 USA DEBUG - Processing:', {
+                    original: k,
+                    resolved: resolvedName,
+                    inGeoJSON: geoNames.has(resolvedName),
+                    value: v
+                });
+            }
+            
             fixed[resolvedName] = v;
         }
         this.currentQuiz.countries = fixed;
