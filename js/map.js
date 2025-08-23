@@ -407,12 +407,33 @@ class WorldMap {
     
     createPopupContent(countryName, countryData) {
         const formattedValue = this.formatValue(countryData.value, countryData.unit);
+        
+        // Check if answer is revealed (quiz interface has answer title visible)
+        const answerTitle = document.getElementById('answerTitle');
+        const isAnswerRevealed = answerTitle && answerTitle.style.display !== 'none';
+        
+        let additionalInfo = '';
+        if (isAnswerRevealed && window.quizGame && window.quizGame.currentQuiz) {
+            const currentQuiz = window.quizGame.currentQuiz;
+            additionalInfo = `
+                <div class="popup-context">
+                    <div class="popup-quiz-info">
+                        <strong>${currentQuiz.title}</strong>
+                    </div>
+                    <div class="popup-unit-info">
+                        Unit: ${countryData.unit}
+                    </div>
+                </div>
+            `;
+        }
+        
         return `
             <div class="popup-content">
                 <h3>${countryName}</h3>
                 <div class="popup-value">
                     <span class="value-number">${formattedValue}</span>
                 </div>
+                ${additionalInfo}
             </div>
         `;
     }

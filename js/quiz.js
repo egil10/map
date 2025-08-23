@@ -2944,6 +2944,12 @@ class QuizGame {
         if (skipBtn) {
             skipBtn.addEventListener('click', () => this.skipQuiz());
         }
+        
+        // Skip to next question button
+        const skipQuestionBtn = document.getElementById('skipQuestion');
+        if (skipQuestionBtn) {
+            skipQuestionBtn.addEventListener('click', () => this.skipToNextQuestion());
+        }
     }
     
     handleSubmitGuess() {
@@ -2953,7 +2959,7 @@ class QuizGame {
         // Transform button icon to check
         this.transformToCheckIcon();
         
-        // Disable input and button
+        // Disable input and submit button
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
         guessInput.disabled = true;
@@ -2966,6 +2972,9 @@ class QuizGame {
             return;
         }
         
+        // Show the answer title
+        this.showAnswerTitle();
+        
         if (this.checkAnswer(userGuess)) {
             this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
             this.score++;
@@ -2973,31 +2982,67 @@ class QuizGame {
             
             // Update progress bar (this will handle completion if needed)
             this.updateProgressBar(true);
-            
-            // Only start new quiz if not at the end
-            if (this.currentProgress < 10) { // Check if we haven't completed all questions
-                setTimeout(() => {
-                    this.startNewQuiz();
-                }, 3000);
-            }
         } else {
             this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
             
             // Update progress bar (this will handle completion if needed)
             this.updateProgressBar(false);
-            
-            // Only start new quiz if not at the end
-            if (this.currentProgress < 10) { // Check if we haven't completed all questions
-                setTimeout(() => {
-                    this.startNewQuiz();
-                }, 4000);
-            }
+        }
+        
+        // Show skip button for next question
+        this.showSkipButton();
+    }
+    
+    showAnswerTitle() {
+        const answerTitle = document.getElementById('answerTitle');
+        const answerTitleText = document.getElementById('answerTitleText');
+        const answerDescription = document.getElementById('answerDescription');
+        
+        if (this.currentQuiz && answerTitle && answerTitleText && answerDescription) {
+            answerTitleText.textContent = this.currentQuiz.title;
+            answerDescription.textContent = this.currentQuiz.description;
+            answerTitle.style.display = 'block';
+        }
+    }
+    
+    hideAnswerTitle() {
+        const answerTitle = document.getElementById('answerTitle');
+        if (answerTitle) {
+            answerTitle.style.display = 'none';
+        }
+    }
+    
+    showSkipButton() {
+        const skipButton = document.getElementById('skipQuestion');
+        if (skipButton) {
+            skipButton.style.display = 'flex';
+        }
+    }
+    
+    hideSkipButton() {
+        const skipButton = document.getElementById('skipQuestion');
+        if (skipButton) {
+            skipButton.style.display = 'none';
+        }
+    }
+    
+    skipToNextQuestion() {
+        // Only proceed if not at the end
+        if (this.currentProgress < 10) {
+            this.startNewQuiz();
+        } else {
+            // If at the end, trigger completion
+            this.updateProgressBar(false);
         }
     }
     
     startNewQuiz() {
         // Clear feedback
         this.clearFeedback();
+        
+        // Hide answer title and skip button
+        this.hideAnswerTitle();
+        this.hideSkipButton();
         
         // Only reset progress bar if we're starting fresh (not just changing quiz)
         if (this.currentProgress === 0) {
@@ -3607,3 +3652,4 @@ class QuizGame {
 
 // Initialize quiz game when script loads
 const quizGame = new QuizGame();
+window.quizGame = quizGame;

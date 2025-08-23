@@ -41,6 +41,12 @@
         
         <!-- Quiz Interface -->
         <div class="quiz-interface">
+            <!-- Answer Title (hidden by default) -->
+            <div id="answerTitle" class="answer-title" style="display: none;">
+                <h2 id="answerTitleText"></h2>
+                <p id="answerDescription"></p>
+            </div>
+            
             <!-- Input Section -->
             <div class="input-section">
                 <div class="input-wrapper">
@@ -52,6 +58,9 @@
                     >
                     <button id="submitGuess" class="input-arrow-btn">
                         <i data-lucide="arrow-up" id="submitIcon"></i>
+                    </button>
+                    <button id="skipQuestion" class="input-skip-btn" style="display: none;">
+                        <i data-lucide="circle-arrow-right"></i>
                     </button>
                 </div>
             </div>
