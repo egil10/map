@@ -52,6 +52,13 @@ class WorldMap {
                 .sort();
             console.log('GeoJSON countries containing "United":', unitedCountries);
             
+            // Debug: Also check for "America" and "USA" variations
+            const americaCountries = this.countriesData.features
+                .map(f => f.properties.name)
+                .filter(name => name && (name.toLowerCase().includes('america') || name.toLowerCase().includes('usa')))
+                .sort();
+            console.log('GeoJSON countries containing "America" or "USA":', americaCountries);
+            
             // Debug: Log a sample of all country names
             const allCountryNames = this.countriesData.features
                 .map(f => f.properties.name)
@@ -164,6 +171,11 @@ class WorldMap {
         // Debug: Log all available country names in the GeoJSON to see what we have
         if (countryName && countryName.toLowerCase().includes('united')) {
             console.log('GeoJSON country name containing "united":', countryName);
+        }
+        
+        // Debug: Also log America/USA variations
+        if (countryName && (countryName.toLowerCase().includes('america') || countryName.toLowerCase().includes('usa'))) {
+            console.log('GeoJSON country name containing "america" or "usa":', countryName);
         }
         
         // Default style

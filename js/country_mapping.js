@@ -684,13 +684,14 @@ class CountryMapper {
             .trim();
             
         // Debug logging for United States
-        if (dataCountryName === 'United States') {
+        if (dataCountryName === 'United States' || cleaned === 'United States') {
             console.log('CountryMapper - Mapping United States:', {
                 original: dataCountryName,
                 cleaned: cleaned,
                 directMapping: this.countryMappings[cleaned],
                 hasMapping: !!this.countryMappings[cleaned],
-                expectedOutput: 'United States of America'
+                expectedOutput: 'United States of America',
+                allUnitedMappings: Object.keys(this.countryMappings).filter(key => key.includes('United'))
             });
         }
         
