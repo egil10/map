@@ -3158,11 +3158,15 @@ class QuizGame {
     showSkipButton() {
         const skipLeftBtn = document.getElementById('skipLeft');
         const skipRightBtn = document.getElementById('skipRight');
+        console.log('showSkipButton called, skipLeftBtn:', skipLeftBtn, 'skipRightBtn:', skipRightBtn);
+        
         if (skipLeftBtn) {
             skipLeftBtn.style.display = 'flex';
+            console.log('Set skipLeftBtn display to flex');
         }
         if (skipRightBtn) {
             skipRightBtn.style.display = 'flex';
+            console.log('Set skipRightBtn display to flex');
         }
     }
     
@@ -3178,6 +3182,8 @@ class QuizGame {
     }
     
     skipToPreviousQuestion() {
+        console.log('skipToPreviousQuestion called, isLearnMode:', this.isLearnMode);
+        
         if (this.isLearnMode) {
             // In learn mode, go to previous dataset in sequence
             if (this.learnModeSequence.length === 0) {
@@ -3186,6 +3192,7 @@ class QuizGame {
             
             // Move to previous index (with wraparound)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
+            console.log('Moving to previous index:', this.learnModeCurrentIndex);
             this.loadRandomDataset();
         } else {
             // In play mode, go to previous question if possible
@@ -3197,6 +3204,8 @@ class QuizGame {
     }
     
     skipToNextQuestion() {
+        console.log('skipToNextQuestion called, isLearnMode:', this.isLearnMode);
+        
         if (this.isLearnMode) {
             // In learn mode, go to next dataset in sequence
             if (this.learnModeSequence.length === 0) {
@@ -3205,6 +3214,7 @@ class QuizGame {
             
             // Move to next index (with wraparound)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
+            console.log('Moving to next index:', this.learnModeCurrentIndex);
             this.loadRandomDataset();
         } else {
             // In play mode, only proceed if not at the end
