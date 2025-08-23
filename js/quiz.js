@@ -3565,6 +3565,9 @@ class QuizGame {
 
     
     skipToNextQuestion() {
+        // Reset button icon to arrow before moving to next question
+        this.transformToArrowIcon();
+        
         if (this.isLearnMode) {
             // In learn mode, go to next dataset in sequence
             if (this.learnModeSequence.length === 0) {
@@ -4011,11 +4014,6 @@ class QuizGame {
             
             // Change color to green
             submitBtn.style.color = '#28a745';
-            
-            // Transform back to arrow-up icon after a delay
-            setTimeout(() => {
-                this.transformToArrowIcon();
-            }, 2000);
         }
     }
     
@@ -4031,11 +4029,6 @@ class QuizGame {
             
             // Change color to red
             submitBtn.style.color = '#dc3545';
-            
-            // Transform back to arrow-up icon after a delay
-            setTimeout(() => {
-                this.transformToArrowIcon();
-            }, 2000);
         }
     }
     
