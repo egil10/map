@@ -4326,19 +4326,50 @@ class QuizGame {
         if (answerTitle && answerTitleText && answerDescription) {
             answerTitleText.textContent = `${correctAnswers}/${totalQuestions} correct`;
             
-            // Set a congratulatory message based on score
-            let message = '';
+            // Set a congratulatory message based on score with multiple variations
+            const messages = {
+                10: [
+                    'Perfect score! Amazing geography knowledge!',
+                    'Flawless performance! You truly know your world geography!',
+                    'Outstanding! You nailed every single question!'
+                ],
+                8: [
+                    'Excellent work! You really know your world geography!',
+                    'Impressive performance! Your knowledge is outstanding!',
+                    'Superb job! You clearly have strong geography skills!'
+                ],
+                6: [
+                    'Great job! Your geography skills are impressive!',
+                    'Well done! You have solid knowledge of world geography!',
+                    'Nice work! You clearly understand global geography well!'
+                ],
+                4: [
+                    'Good effort! Keep exploring to learn more!',
+                    'Not bad! With more practice, you\'ll improve quickly!',
+                    'Decent performance! Continue studying to boost your knowledge!'
+                ],
+                0: [
+                    'Every expert was once a beginner. Keep learning!',
+                    'Geography is challenging, but practice makes perfect!',
+                    'Don\'t give up! Each attempt helps you learn something new!'
+                ]
+            };
+            
+            let messageArray;
             if (correctAnswers === totalQuestions) {
-                message = '🎉 Perfect score! Amazing geography knowledge!';
+                messageArray = messages[10];
             } else if (correctAnswers >= 8) {
-                message = '🌟 Excellent work! You really know your world geography!';
+                messageArray = messages[8];
             } else if (correctAnswers >= 6) {
-                message = '👍 Great job! Your geography skills are impressive!';
+                messageArray = messages[6];
             } else if (correctAnswers >= 4) {
-                message = '📚 Good effort! Keep exploring to learn more!';
+                messageArray = messages[4];
             } else {
-                message = '🌍 Every expert was once a beginner. Keep learning!';
+                messageArray = messages[0];
             }
+            
+            // Pick a random message from the appropriate array
+            const message = messageArray[Math.floor(Math.random() * messageArray.length)];
             
             answerDescription.textContent = message;
             answerTitle.style.display = 'block';
