@@ -3040,10 +3040,15 @@ class QuizGame {
             skipBtn.addEventListener('click', () => this.skipQuiz());
         }
         
-        // Skip to next question button
-        const skipQuestionBtn = document.getElementById('skipQuestion');
-        if (skipQuestionBtn) {
-            skipQuestionBtn.addEventListener('click', () => this.skipToNextQuestion());
+        // Skip buttons
+        const skipLeftBtn = document.getElementById('skipLeft');
+        if (skipLeftBtn) {
+            skipLeftBtn.addEventListener('click', () => this.skipToPreviousQuestion());
+        }
+        
+        const skipRightBtn = document.getElementById('skipRight');
+        if (skipRightBtn) {
+            skipRightBtn.addEventListener('click', () => this.skipToNextQuestion());
         }
         
         // Mode toggle button
@@ -3141,32 +3146,36 @@ class QuizGame {
     }
     
     showSkipButton() {
-        const skipButton = document.getElementById('skipQuestion');
-        if (skipButton) {
-            skipButton.style.display = 'flex';
+        const skipLeftBtn = document.getElementById('skipLeft');
+        const skipRightBtn = document.getElementById('skipRight');
+        if (skipLeftBtn) {
+            skipLeftBtn.style.display = 'flex';
+        }
+        if (skipRightBtn) {
+            skipRightBtn.style.display = 'flex';
         }
     }
     
     hideSkipButton() {
-        const skipButton = document.getElementById('skipQuestion');
-        if (skipButton) {
-            skipButton.style.display = 'none';
+        const skipLeftBtn = document.getElementById('skipLeft');
+        const skipRightBtn = document.getElementById('skipRight');
+        if (skipLeftBtn) {
+            skipLeftBtn.style.display = 'none';
+        }
+        if (skipRightBtn) {
+            skipRightBtn.style.display = 'none';
+        }
+    }
+    
+    skipToPreviousQuestion() {
+        // Go to previous question if possible
+        if (this.currentProgress > 0) {
+            this.currentProgress--;
+            this.startNewQuiz();
         }
     }
     
     skipToNextQuestion() {
-        // Toggle skip direction
-        this.skipDirection = this.skipDirection === 'forward' ? 'backward' : 'forward';
-        
-        // Update skip button icon
-        const skipIcon = document.getElementById('skipIcon');
-        if (skipIcon) {
-            skipIcon.setAttribute('data-lucide', this.skipDirection === 'forward' ? 'chevron-right' : 'chevron-left');
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-        }
-        
         // Only proceed if not at the end
         if (this.currentProgress < 10) {
             this.startNewQuiz();

@@ -1469,7 +1469,7 @@ body {
 
 .guess-input {
     width: 100%;
-    padding: 12px 88px 12px 80px; /* Extra padding on right for both buttons, left for toggle */
+    padding: 12px 128px 12px 80px; /* Extra padding on right for three buttons (left chevron, right chevron, submit), left for toggle */
     border: 1px solid #dee2e6;
     border-radius: 8px;
     font-size: 14px; /* Smaller font size */
