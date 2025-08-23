@@ -17,6 +17,7 @@ class QuizGame {
         this.skipDirection = 'forward'; // Track skip direction
         this.learnModeSequence = []; // Store the predetermined order for learn mode
         this.learnModeCurrentIndex = 0; // Current position in the sequence
+        this.isQuizCompleted = false; // Track if quiz is completed
         
         this.init();
     }
@@ -3488,6 +3489,12 @@ class QuizGame {
             return;
         }
         
+        // If quiz is completed, restart the quiz
+        if (this.isQuizCompleted) {
+            this.restartQuiz();
+            return;
+        }
+        
         const userGuess = document.getElementById('guessInput').value.trim();
         
         // If answer is already shown, skip to next question
@@ -3619,8 +3626,8 @@ class QuizGame {
             if (this.currentProgress < 10) {
                 this.startNewQuiz();
             } else {
-                // If at the end, show completion
-                this.showCompletionMessage();
+                // If at the end, show completion in answer card
+                this.showCompletionInAnswerCard();
             }
         }
     }
@@ -4264,8 +4271,8 @@ class QuizGame {
             
             // Check if we've completed all 10 questions
             if (this.currentProgress >= circles.length) {
-                // Show completion message
-                this.showCompletionMessage();
+                // Show completion in answer card
+                this.showCompletionInAnswerCard();
                 return;
             }
             
@@ -4306,19 +4313,86 @@ class QuizGame {
         }
     }
     
-    showCompletionMessage() {
-        // Disable input and button
-        const guessInput = document.getElementById('guessInput');
-        const submitButton = document.getElementById('submitGuess');
-        guessInput.disabled = true;
-        submitButton.disabled = true;
-        
+    showCompletionInAnswerCard() {
         // Calculate final score
         const correctAnswers = document.querySelectorAll('.progress-circle.correct').length;
         const totalQuestions = 10;
         
-        // Create completion screen
-        this.showCompletionScreen(correctAnswers, totalQuestions);
+        // Show completion message in the answer card
+        const answerTitle = document.getElementById('answerTitle');
+        const answerTitleText = document.getElementById('answerTitleText');
+        const answerDescription = document.getElementById('answerDescription');
+        
+        if (answerTitle && answerTitleText && answerDescription) {
+            answerTitleText.textContent = `${correctAnswers}/${totalQuestions} correct`;
+            
+            // Set a congratulatory message based on score
+            let message = '';
+            if (correctAnswers === totalQuestions) {
+                message = '🎉 Perfect score! Amazing geography knowledge!';
+            } else if (correctAnswers >= 8) {
+                message = '🌟 Excellent work! You really know your world geography!';
+            } else if (correctAnswers >= 6) {
+                message = '👍 Great job! Your geography skills are impressive!';
+            } else if (correctAnswers >= 4) {
+                message = '📚 Good effort! Keep exploring to learn more!';
+            } else {
+                message = '🌍 Every expert was once a beginner. Keep learning!';
+            }
+            
+            answerDescription.textContent = message;
+            answerTitle.style.display = 'block';
+            
+            // Set a nice blue color for completion
+            answerTitle.style.background = 'rgba(33, 150, 243, 0.1)';
+            answerTitle.style.borderColor = 'rgba(33, 150, 243, 0.2)';
+            answerTitleText.style.color = '#1976d2';
+        }
+        
+        // Update input placeholder to restart
+        const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        if (guessInput) {
+            guessInput.disabled = false;
+            guessInput.value = '';
+            guessInput.placeholder = 'Enter to restart';
+            guessInput.focus();
+        }
+        if (submitButton) {
+            submitButton.disabled = false;
+        }
+        
+        // Mark quiz as completed
+        this.isQuizCompleted = true;
+    }
+    
+    restartQuiz() {
+        // Reset quiz state
+        this.isQuizCompleted = false;
+        this.isAnswerShown = false;
+        this.score = 0;
+        
+        // Reset progress bar
+        this.resetProgressBar();
+        
+        // Hide answer title
+        this.hideAnswerTitle();
+        
+        // Reset button icon
+        this.transformToArrowIcon();
+        
+        // Update score display
+        this.updateScoreDisplay();
+        
+        // Start a new quiz
+        this.startNewQuiz();
+        
+        // Update input placeholder
+        const guessInput = document.getElementById('guessInput');
+        if (guessInput) {
+            guessInput.placeholder = 'What does this map show?';
+            guessInput.focus();
+        }
     }
     
     showCompletionScreen(correctAnswers, totalQuestions) {
