@@ -17,10 +17,10 @@ class CountryMapper {
             "PRC": "China",
             
             // Russia variations
-            "Russia": "Russian Federation",
-            "Russian Federation": "Russian Federation",
-            "Russian Federation (Europe)": "Russian Federation",
-            "Russian Federation (Asia)": "Russian Federation",
+            "Russia": "Russia",
+            "Russian Federation": "Russia",
+            "Russian Federation (Europe)": "Russia",
+            "Russian Federation (Asia)": "Russia",
             
                 // Democratic Republic of the Congo variations
     "Democratic Republic of the Congo": "Democratic Republic of the Congo",
@@ -678,23 +678,29 @@ class CountryMapper {
     
     // Map a country name from data file to Leaflet.js expected name
     mapCountryName(dataCountryName) {
+        // 1) Remove region qualifiers like " (Alaska)" / " (Asia)" / " (Hawaii)" etc.
+        const cleaned = (dataCountryName || "")
+            .replace(/\s*\([^)]*\)\s*$/g, "")
+            .trim();
+            
         // Debug logging for United States
         if (dataCountryName === 'United States') {
             console.log('CountryMapper - Mapping United States:', {
-                directMapping: this.countryMappings[dataCountryName],
-                hasMapping: !!this.countryMappings[dataCountryName],
-                inputName: dataCountryName,
+                original: dataCountryName,
+                cleaned: cleaned,
+                directMapping: this.countryMappings[cleaned],
+                hasMapping: !!this.countryMappings[cleaned],
                 expectedOutput: 'United States of America'
             });
         }
         
-        // First try exact match
-        if (this.countryMappings[dataCountryName]) {
-            return this.countryMappings[dataCountryName];
+        // First try exact match on cleaned name
+        if (this.countryMappings[cleaned]) {
+            return this.countryMappings[cleaned];
         }
         
         // Try case-insensitive match
-        const lowerDataName = dataCountryName.toLowerCase();
+        const lowerDataName = cleaned.toLowerCase();
         for (const [key, value] of Object.entries(this.countryMappings)) {
             if (key.toLowerCase() === lowerDataName) {
                 return value;
@@ -707,7 +713,7 @@ class CountryMapper {
             'usa': 'United States of America',
             'us': 'United States of America',
             'america': 'United States of America',
-            'russia': 'Russian Federation',
+            'russia': 'Russia',
             'china': 'China',
             'uk': 'United Kingdom',
             'great britain': 'United Kingdom',
@@ -847,8 +853,8 @@ class CountryMapper {
         if (dataCountryName === 'United States') {
             console.error(`CRITICAL: United States mapping failed! Available mappings:`, Object.keys(this.countryMappings).filter(key => key.includes('United')));
         }
-        console.warn(`No mapping found for country: "${dataCountryName}"`);
-        return dataCountryName;
+        console.warn(`No mapping found for country: "${dataCountryName}", using cleaned: "${cleaned}"`);
+        return cleaned;
     }
     
     // Get all mapped country names
