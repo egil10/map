@@ -75,8 +75,16 @@
                 </a>
             </div>
             
+            <!-- Mode Toggle -->
+            <div class="mode-toggle">
+                <button id="modeToggle" class="mode-toggle-btn">
+                    <i data-lucide="toggle-left" id="modeToggleIcon"></i>
+                    <span id="modeToggleText">Learn</span>
+                </button>
+            </div>
+            
             <!-- Dataset Counter -->
-            <div class="dataset-counter">
+            <div class="dataset-counter" id="datasetCounter">
                 <span id="datasetCount">##</span> datasets
             </div>
             
@@ -98,6 +106,21 @@
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Dataset Browser Modal -->
+    <div id="datasetBrowser" class="dataset-browser" style="display: none;">
+        <div class="dataset-browser-content">
+            <div class="dataset-browser-header">
+                <h2>Browse Datasets</h2>
+                <button id="closeDatasetBrowser" class="close-btn">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="dataset-browser-list" id="datasetBrowserList">
+                <!-- Datasets will be populated here -->
+            </div>
         </div>
     </div>
 

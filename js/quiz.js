@@ -11,6 +11,9 @@ class QuizGame {
         this.countryMapper = new CountryMapper();
         this.currentProgress = 0; // Track current progress (0-9)
         this.isReady = false; // Flag to indicate quiz is ready
+        this.isLearnMode = true; // Start in learn mode
+        this.currentDatasetIndex = 0;
+        this.datasetList = [];
         
         this.init();
     }
@@ -23,6 +26,7 @@ class QuizGame {
         if (mapReady) {
             // Load quiz data after map is ready (lazy loading)
             await this.loadAllQuizData();
+            this.updateModeToggle(); // Initialize mode toggle
             this.startNewQuiz();
         } else {
             console.error('❌ Failed to initialize map, retrying in 2 seconds...');
@@ -2950,9 +2954,42 @@ class QuizGame {
         if (skipQuestionBtn) {
             skipQuestionBtn.addEventListener('click', () => this.skipToNextQuestion());
         }
+        
+        // Mode toggle button
+        const modeToggleBtn = document.getElementById('modeToggle');
+        if (modeToggleBtn) {
+            modeToggleBtn.addEventListener('click', () => this.toggleMode());
+        }
+        
+        // Dataset counter (opens browser)
+        const datasetCounter = document.getElementById('datasetCounter');
+        if (datasetCounter) {
+            datasetCounter.addEventListener('click', () => this.openDatasetBrowser());
+        }
+        
+        // Close dataset browser button
+        const closeBrowserBtn = document.getElementById('closeDatasetBrowser');
+        if (closeBrowserBtn) {
+            closeBrowserBtn.addEventListener('click', () => this.closeDatasetBrowser());
+        }
+        
+        // Close dataset browser when clicking outside
+        const datasetBrowser = document.getElementById('datasetBrowser');
+        if (datasetBrowser) {
+            datasetBrowser.addEventListener('click', (e) => {
+                if (e.target === datasetBrowser) {
+                    this.closeDatasetBrowser();
+                }
+            });
+        }
     }
     
     handleSubmitGuess() {
+        // Only allow submissions in play mode
+        if (this.isLearnMode) {
+            return;
+        }
+        
         const userGuess = document.getElementById('guessInput').value.trim();
         if (!userGuess) return;
         
@@ -3036,27 +3073,208 @@ class QuizGame {
         }
     }
     
+    toggleMode() {
+        this.isLearnMode = !this.isLearnMode;
+        this.updateModeToggle();
+        this.resetGame();
+        
+        if (this.isLearnMode) {
+            this.startLearnMode();
+        } else {
+            this.startPlayMode();
+        }
+    }
+    
+    updateModeToggle() {
+        const toggleBtn = document.getElementById('modeToggle');
+        const toggleIcon = document.getElementById('modeToggleIcon');
+        const toggleText = document.getElementById('modeToggleText');
+        
+        if (toggleBtn && toggleIcon && toggleText) {
+            if (this.isLearnMode) {
+                toggleIcon.setAttribute('data-lucide', 'toggle-left');
+                toggleText.textContent = 'Learn';
+                toggleBtn.title = 'Switch to Play Mode';
+            } else {
+                toggleIcon.setAttribute('data-lucide', 'toggle-right');
+                toggleText.textContent = 'Play';
+                toggleBtn.title = 'Switch to Learn Mode';
+            }
+            
+            // Reinitialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+    }
+    
+    resetGame() {
+        this.score = 0;
+        this.currentProgress = 0;
+        this.usedQuizzes = new Set();
+        this.hintUsed = false;
+        this.totalQuizzesPlayed = 0;
+        this.hideAnswerTitle();
+        this.hideSkipButton();
+        this.clearFeedback();
+        this.resetProgressBar();
+    }
+    
+    startLearnMode() {
+        // Show answer title immediately in learn mode
+        this.showAnswerTitle();
+        this.showSkipButton();
+        
+        // Update input placeholder
+        const guessInput = document.getElementById('guessInput');
+        if (guessInput) {
+            guessInput.placeholder = 'Explore the data (click countries to see details)';
+            guessInput.disabled = true;
+        }
+        
+        // Disable submit button in learn mode
+        const submitButton = document.getElementById('submitGuess');
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
+    }
+    
+    startPlayMode() {
+        // Hide answer title in play mode
+        this.hideAnswerTitle();
+        this.hideSkipButton();
+        
+        // Update input placeholder
+        const guessInput = document.getElementById('guessInput');
+        if (guessInput) {
+            guessInput.placeholder = 'What does this map show?';
+            guessInput.disabled = false;
+        }
+        
+        // Enable submit button in play mode
+        const submitButton = document.getElementById('submitGuess');
+        if (submitButton) {
+            submitButton.disabled = false;
+        }
+    }
+    
+    openDatasetBrowser() {
+        this.populateDatasetList();
+        const browser = document.getElementById('datasetBrowser');
+        if (browser) {
+            browser.style.display = 'flex';
+        }
+    }
+    
+    closeDatasetBrowser() {
+        const browser = document.getElementById('datasetBrowser');
+        if (browser) {
+            browser.style.display = 'none';
+        }
+    }
+    
+    populateDatasetList() {
+        const listContainer = document.getElementById('datasetBrowserList');
+        if (!listContainer || !this.quizData) return;
+        
+        // Create sorted list of datasets
+        this.datasetList = Object.values(this.quizData.quizzes)
+            .sort((a, b) => a.title.localeCompare(b.title));
+        
+        listContainer.innerHTML = '';
+        
+        this.datasetList.forEach((dataset, index) => {
+            const datasetItem = document.createElement('div');
+            datasetItem.className = 'dataset-item';
+            datasetItem.innerHTML = `
+                <div class="dataset-info">
+                    <div class="dataset-title">${dataset.title}</div>
+                    <div class="dataset-description">${dataset.description}</div>
+                </div>
+                <div class="dataset-category">${dataset.category}</div>
+            `;
+            
+            // Highlight current dataset
+            if (this.currentQuiz && this.currentQuiz.id === dataset.id) {
+                datasetItem.classList.add('active');
+            }
+            
+            datasetItem.addEventListener('click', () => {
+                this.loadDataset(index);
+                this.closeDatasetBrowser();
+            });
+            
+            listContainer.appendChild(datasetItem);
+        });
+    }
+    
+    loadDataset(index) {
+        if (index >= 0 && index < this.datasetList.length) {
+            this.currentDatasetIndex = index;
+            this.currentQuiz = this.datasetList[index];
+            
+            // Apply quiz to map
+            if (window.mapInstance && this.currentQuiz) {
+                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            }
+            
+            // Show answer title in learn mode
+            if (this.isLearnMode) {
+                this.showAnswerTitle();
+            }
+            
+            // Update active item in browser
+            this.updateActiveDatasetInBrowser();
+        }
+    }
+    
+    updateActiveDatasetInBrowser() {
+        const items = document.querySelectorAll('.dataset-item');
+        items.forEach((item, index) => {
+            item.classList.remove('active');
+            if (index === this.currentDatasetIndex) {
+                item.classList.add('active');
+            }
+        });
+    }
+    
     startNewQuiz() {
         // Clear feedback
         this.clearFeedback();
         
-        // Hide answer title and skip button
-        this.hideAnswerTitle();
-        this.hideSkipButton();
+        // Handle mode-specific behavior
+        if (this.isLearnMode) {
+            // In learn mode, show answer immediately
+            this.showAnswerTitle();
+            this.showSkipButton();
+            
+            // Disable input in learn mode
+            const guessInput = document.getElementById('guessInput');
+            const submitButton = document.getElementById('submitGuess');
+            
+            guessInput.disabled = true;
+            submitButton.disabled = true;
+            guessInput.placeholder = 'Explore the data (click countries to see details)';
+        } else {
+            // In play mode, hide answer and enable input
+            this.hideAnswerTitle();
+            this.hideSkipButton();
+            
+            // Reset input and button for play mode
+            const guessInput = document.getElementById('guessInput');
+            const submitButton = document.getElementById('submitGuess');
+            
+            guessInput.disabled = false;
+            submitButton.disabled = false;
+            guessInput.value = '';
+            guessInput.placeholder = 'What does this map show?';
+            guessInput.focus();
+        }
         
         // Only reset progress bar if we're starting fresh (not just changing quiz)
         if (this.currentProgress === 0) {
             this.resetProgressBar();
         }
-        
-        // Reset input and button
-        const guessInput = document.getElementById('guessInput');
-        const submitButton = document.getElementById('submitGuess');
-        
-        guessInput.disabled = false;
-        submitButton.disabled = false;
-        guessInput.value = '';
-        guessInput.focus();
         
         // Select random quiz with better randomization
         const quizIds = Object.keys(this.quizData.quizzes);
