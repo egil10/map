@@ -18,6 +18,7 @@ class QuizGame {
         this.learnModeSequence = []; // Store the predetermined order for learn mode
         this.learnModeCurrentIndex = 0; // Current position in the sequence
         this.isQuizCompleted = false; // Track if quiz is completed
+        this.lastAnswerWasCorrect = undefined; // Track the result of the last answer for progress bar
         
         this.init();
     }
@@ -3529,11 +3530,12 @@ class QuizGame {
             this.transformToCheckIcon();
             this.score++;
             this.updateScoreDisplay();
-            this.updateProgressBar(true);
         } else {
             this.transformToXIcon();
-            this.updateProgressBar(false);
         }
+        
+        // Store the result for progress bar update when moving to next question
+        this.lastAnswerWasCorrect = isCorrect;
         
         // Show skip button for next question (only in learn mode)
         if (this.isLearnMode) {
@@ -3611,6 +3613,12 @@ class QuizGame {
     skipToNextQuestion() {
         // Reset button icon to arrow before moving to next question
         this.transformToArrowIcon();
+        
+        // Update progress bar with the result from the previous answer
+        if (this.lastAnswerWasCorrect !== undefined) {
+            this.updateProgressBar(this.lastAnswerWasCorrect);
+            this.lastAnswerWasCorrect = undefined; // Reset for next question
+        }
         
         if (this.isLearnMode) {
             // In learn mode, go to next dataset in sequence
@@ -4428,6 +4436,7 @@ class QuizGame {
         this.isQuizCompleted = false;
         this.isAnswerShown = false;
         this.score = 0;
+        this.lastAnswerWasCorrect = undefined; // Reset answer tracking
         
         // Reset progress bar
         this.resetProgressBar();
