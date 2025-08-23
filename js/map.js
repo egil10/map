@@ -637,8 +637,15 @@ class WorldMap {
             return;
         }
         
-        // Create legend HTML with color swatches
-        const colorSwatches = categoryList.map(category => {
+        // Don't show legend if there are too many categories (more than 9)
+        if (categoryList.length > 9) {
+            console.log('Too many categories (' + categoryList.length + '), skipping categorical legend');
+            return;
+        }
+        
+        // Create legend HTML with color swatches (max 9)
+        const maxCategories = Math.min(categoryList.length, 9);
+        const colorSwatches = categoryList.slice(0, maxCategories).map(category => {
             const color = categoryColors[category];
             return `<div class="category-swatch" style="background-color: ${color};" title="${category}"></div>`;
         }).join('');
@@ -650,7 +657,8 @@ class WorldMap {
                         ${colorSwatches}
                     </div>
                     <div class="category-count">
-                        <span>${categoryList.length} categories</span>
+                        <span>${maxCategories} categories</span>
+                        ${categoryList.length > maxCategories ? ` (+${categoryList.length - maxCategories} more)` : ''}
                     </div>
                 </div>
             </div>
@@ -667,7 +675,7 @@ class WorldMap {
         
         this.legend.addTo(this.map);
         
-        console.log('Categorical legend created successfully with', categoryList.length, 'categories');
+        console.log('Categorical legend created successfully with', maxCategories, 'categories (out of', categoryList.length, 'total)');
     }
     
     updateLegendGradient(quiz) {

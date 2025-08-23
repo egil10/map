@@ -563,10 +563,12 @@ body {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     z-index: 1002;
     min-width: 200px;
-    height: 80px; /* Match the height of the input section area */
+    height: auto;
+    min-height: 80px;
     display: flex;
     align-items: center;
     margin: 10px;
+    max-width: 300px;
 }
 
 .legend-control.leaflet-control {
@@ -625,10 +627,11 @@ body {
 }
 
 .category-swatches {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 4px;
-    flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%;
 }
 
 .category-swatch {
@@ -636,6 +639,7 @@ body {
     height: 16px;
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: help;
 }
 
 .category-count {
