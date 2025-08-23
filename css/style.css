@@ -166,16 +166,20 @@ body {
 
 /* Answer Title */
 .answer-title {
+    position: fixed;
+    bottom: 160px; /* Position above the quiz interface */
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
-    margin-bottom: 8px;
     padding: 8px 12px;
     background: rgba(40, 167, 69, 0.1);
     border-radius: 8px;
     border: 1px solid rgba(40, 167, 69, 0.2);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    z-index: 999;
+    backdrop-filter: blur(4px);
 }
 
 .answer-title h2 {
@@ -781,10 +785,10 @@ body {
     
     /* Answer Title - Mobile */
     .answer-title {
-        margin-bottom: 8px;
+        bottom: 200px; /* Adjust for mobile footer height */
         padding: 6px 10px;
         border-radius: 8px;
-        max-width: 100%;
+        width: 95%;
     }
     
     .answer-title h2 {
