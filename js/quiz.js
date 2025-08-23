@@ -4095,6 +4095,12 @@ class QuizGame {
         if (!this.currentQuiz) return false;
         
         const normalizedGuess = userGuess.toLowerCase().trim();
+        
+        // Reject answers that are too short (less than 3 characters)
+        if (normalizedGuess.length < 3) {
+            return false;
+        }
+        
         const correctAnswers = this.currentQuiz.answer_variations.map(answer => 
             answer.toLowerCase().trim()
         );
@@ -4110,28 +4116,36 @@ class QuizGame {
             const correctWords = correctAnswer.split(/\s+/).filter(word => word.length > 2);
             const userWords = normalizedGuess.split(/\s+/).filter(word => word.length > 2);
             
+            // Only proceed if user has meaningful words
+            if (userWords.length === 0) continue;
+            
             let wordMatchCount = 0;
             for (const correctWord of correctWords) {
                 for (const userWord of userWords) {
-                    if (userWord.includes(correctWord) || correctWord.includes(userWord)) {
-                        wordMatchCount++;
-                        break;
+                    // Require at least 3 characters and 70% similarity for word matching
+                    if (userWord.length >= 3 && correctWord.length >= 3) {
+                        if (userWord.includes(correctWord) || correctWord.includes(userWord)) {
+                            wordMatchCount++;
+                            break;
+                        }
                     }
                 }
             }
             
-            // If more than 50% of key words match, consider it correct
-            if (wordMatchCount >= Math.ceil(correctWords.length * 0.5)) {
+            // Require at least 70% of key words to match (more strict)
+            if (correctWords.length > 0 && wordMatchCount >= Math.ceil(correctWords.length * 0.7)) {
                 return true;
             }
             
-            // Strategy 2: Check for partial matches (user guess is part of correct answer or vice versa)
-            if (normalizedGuess.includes(correctAnswer) || correctAnswer.includes(normalizedGuess)) {
-                return true;
+            // Strategy 2: Check for partial matches (but with minimum length requirements)
+            if (normalizedGuess.length >= 4 && correctAnswer.length >= 4) {
+                if (normalizedGuess.includes(correctAnswer) || correctAnswer.includes(normalizedGuess)) {
+                    return true;
+                }
             }
             
-            // Strategy 3: Check for acronyms and abbreviations
-            if (this.checkAcronymMatch(normalizedGuess, correctAnswer)) {
+            // Strategy 3: Check for acronyms and abbreviations (minimum 2 characters)
+            if (normalizedGuess.length >= 2 && this.checkAcronymMatch(normalizedGuess, correctAnswer)) {
                 return true;
             }
             
@@ -4153,39 +4167,51 @@ class QuizGame {
     }
     
     checkSynonymMatch(userGuess, correctAnswer) {
+        // Require minimum length for synonym matching
+        if (userGuess.length < 4) return false;
+        
         // Common synonyms and variations
         const synonyms = {
-            'population': ['people', 'inhabitants', 'residents', 'citizens'],
-            'gdp': ['gross domestic product', 'economic output', 'economy'],
-            'gni': ['gross national income', 'national income'],
-            'hdi': ['human development index', 'development index', 'human development'],
-            'area': ['land area', 'size', 'territory', 'landmass'],
-            'density': ['population density', 'people per km2', 'crowding'],
-            'fertility': ['birth rate', 'fertility rate', 'births per woman'],
-            'literacy': ['literacy rate', 'reading ability', 'education level'],
-            'temperature': ['temp', 'climate', 'weather'],
-            'water': ['water percentage', 'water coverage', 'water area'],
-            'arable': ['farmland', 'agricultural land', 'cultivable land'],
-            'income': ['money', 'wealth', 'earnings', 'salary'],
+            'population': ['people', 'inhabitants', 'residents', 'citizens', 'demographics'],
+            'gdp': ['gross domestic product', 'economic output', 'economy', 'wealth'],
+            'gni': ['gross national income', 'national income', 'income'],
+            'hdi': ['human development index', 'development index', 'human development', 'development'],
+            'area': ['land area', 'size', 'territory', 'landmass', 'surface'],
+            'density': ['population density', 'crowding', 'people per km'],
+            'fertility': ['birth rate', 'fertility rate', 'births per woman', 'reproduction'],
+            'literacy': ['literacy rate', 'reading ability', 'education level', 'education'],
+            'temperature': ['temp', 'climate', 'weather', 'heat', 'cold'],
+            'water': ['water percentage', 'water coverage', 'water area', 'ocean', 'sea'],
+            'arable': ['farmland', 'agricultural land', 'cultivable land', 'farming', 'agriculture'],
+            'income': ['money', 'wealth', 'earnings', 'salary', 'wages'],
             'development': ['progress', 'advancement', 'growth'],
-            'quality of life': ['living standards', 'life quality', 'wellbeing'],
-            'neighbours': ['borders', 'neighbors', 'adjacent countries', 'surrounding countries'],
-            'height': ['tallness', 'stature', 'physical height', 'body height'],
-            'age': ['median age', 'average age', 'demographic age', 'population age'],
-            'islands': ['island count', 'number of islands', 'island territory', 'archipelago'],
-            'phones': ['mobile phones', 'cell phones', 'mobile devices', 'telecommunications'],
-            'flag': ['national flag', 'country flag', 'flag adoption', 'national symbol'],
-            'monarchy': ['kings', 'queens', 'royalty', 'monarchs', 'crown'],
-            'party system': ['political parties', 'democracy', 'political system', 'government type'],
-            'exports': ['trade exports', 'international trade', 'goods exports', 'commerce'],
-            'imports': ['trade imports', 'international imports', 'goods imports', 'commerce']
+            'neighbours': ['borders', 'neighbors', 'adjacent countries', 'bordering'],
+            'height': ['tallness', 'stature', 'elevation'],
+            'age': ['median age', 'average age'],
+            'islands': ['island count', 'archipelago'],
+            'phones': ['mobile phones', 'cell phones', 'telecommunications'],
+            'flag': ['national flag', 'country flag'],
+            'monarchy': ['kings', 'queens', 'royalty', 'monarchs'],
+            'exports': ['trade exports', 'international trade', 'commerce'],
+            'imports': ['trade imports', 'international imports', 'commerce'],
+            'military': ['army', 'armed forces', 'defense', 'soldiers'],
+            'currency': ['money', 'exchange rate', 'forex'],
+            'landlocked': ['no coastline', 'inland', 'no sea access'],
+            'consumption': ['intake', 'usage', 'drinking', 'eating'],
+            'production': ['manufacturing', 'output', 'making'],
+            'wine': ['alcohol', 'beverages', 'viticulture'],
+            'tea': ['beverages', 'drinks'],
+            'food': ['nutrition', 'diet', 'calories', 'eating']
         };
         
         for (const [key, synonymList] of Object.entries(synonyms)) {
             if (correctAnswer.includes(key)) {
                 for (const synonym of synonymList) {
-                    if (userGuess.includes(synonym) || synonym.includes(userGuess)) {
-                        return true;
+                    // Require both strings to be at least 4 characters for synonym matching
+                    if (synonym.length >= 4 && userGuess.length >= 4) {
+                        if (userGuess.includes(synonym) || synonym.includes(userGuess)) {
+                            return true;
+                        }
                     }
                 }
             }
