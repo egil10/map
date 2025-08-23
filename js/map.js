@@ -30,6 +30,18 @@ function resolveToGeoName(name, geoNames) {
     return name; // fallback
 }
 
+// Throttle function for performance optimization
+function throttle(fn, wait = 50) {
+    let timeout;
+    return (...args) => {
+        if (timeout) return;
+        timeout = setTimeout(() => {
+            fn(...args);
+            timeout = null;
+        }, wait);
+    };
+}
+
 // World Map class for Quiz Game
 class WorldMap {
     constructor() {
@@ -67,8 +79,28 @@ class WorldMap {
         // Load countries data
         this.loadCountriesData();
         
+        // Lazy load quiz data after map is ready
+        this.map.on('load', () => {
+            // Use requestIdleCallback for better performance, fallback to setTimeout
+            if (window.requestIdleCallback) {
+                requestIdleCallback(() => {
+                    this.notifyQuizDataReady();
+                }, { timeout: 1000 });
+            } else {
+                setTimeout(() => {
+                    this.notifyQuizDataReady();
+                }, 100);
+            }
+        });
+        
         // Make map instance globally available
         window.mapInstance = this;
+    }
+    
+    // Notify that map is ready for quiz data
+    notifyQuizDataReady() {
+        // Dispatch custom event to notify quiz system
+        window.dispatchEvent(new CustomEvent('mapReadyForQuiz'));
     }
     
     async loadCountriesData() {
@@ -175,7 +207,7 @@ class WorldMap {
         // Click function (simplified - no popup)
         const onEachFeature = (feature, layer) => {
             layer.on({
-                mouseover: highlightFeature,
+                mouseover: throttle(highlightFeature, 50), // Throttle hover for performance
                 mouseout: resetHighlight,
                 click: (e) => this.selectCountry(e.target, feature)
             });

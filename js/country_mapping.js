@@ -677,8 +677,16 @@ class CountryMapper {
         };
     }
     
+    // Cache for memoization
+    _cache = new Map();
+    
     // Map a country name from data file to Leaflet.js expected name
     mapCountryName(dataCountryName) {
+        // Check cache first for O(1) lookup
+        if (this._cache.has(dataCountryName)) {
+            return this._cache.get(dataCountryName);
+        }
+        
         // 1) Remove region qualifiers like " (Alaska)" / " (Asia)" / " (Hawaii)" etc.
         const cleaned = (dataCountryName || "")
             .replace(/\s*\([^)]*\)\s*$/g, "")
@@ -696,167 +704,181 @@ class CountryMapper {
             });
         }
         
+        let result;
+        
         // First try exact match on cleaned name
         if (this.countryMappings[cleaned]) {
-            return this.countryMappings[cleaned];
-        }
-        
-        // Try case-insensitive match
-        const lowerDataName = cleaned.toLowerCase();
-        for (const [key, value] of Object.entries(this.countryMappings)) {
-            if (key.toLowerCase() === lowerDataName) {
-                return value;
+            result = this.countryMappings[cleaned];
+        } else {
+            // Try case-insensitive match
+            const lowerDataName = cleaned.toLowerCase();
+            let found = false;
+            for (const [key, value] of Object.entries(this.countryMappings)) {
+                if (key.toLowerCase() === lowerDataName) {
+                    result = value;
+                    found = true;
+                    break;
+                }
             }
-        }
-        
-        // Try partial matches for common patterns
-        const partialMatches = {
-            'united states': 'USA',
-            'usa': 'USA',
-            'us': 'USA',
-            'america': 'USA',
-            'russia': 'Russia',
-            'china': 'China',
+            
+            if (!found) {
+                // Try partial matches for common patterns
+                const partialMatches = {
+                    'united states': 'USA',
+                    'usa': 'USA',
+                    'us': 'USA',
+                    'america': 'USA',
+                    'russia': 'Russia',
+                    'china': 'China',
                     'uk': 'England',
-        'great britain': 'England',
-        'england': 'England',
-        'scotland': 'England',
-        'wales': 'England',
-        'northern ireland': 'England',
-            'czech': 'Czech Republic',
-            'czechia': 'Czech Republic',
-            'ivory coast': 'Côte d\'Ivoire',
-            'cote divoire': 'Côte d\'Ivoire',
-            'north korea': 'North Korea',
-            'south korea': 'South Korea',
-            'korea': 'South Korea', // Default to South Korea
-            'macedonia': 'North Macedonia',
-            'east timor': 'Timor-Leste',
-            'eswatini': 'Eswatini',
-            'swaziland': 'Eswatini',
-            'palestine': 'Palestine, State of',
-            'vatican': 'Vatican',
-            'sao tome': 'Sao Tome and Principe',
-            'saint barthelemy': 'Saint Barthélemy',
-            'saint martin': 'Saint Martin (French part)',
-            'sint maarten': 'Sint Maarten (Dutch part)',
-            'bermuda': 'Bermuda',
-            'jersey': 'Jersey',
-            'guernsey': 'Guernsey',
-            'aruba': 'Aruba',
-            'curacao': 'Curaçao',
-            'puerto rico': 'Puerto Rico',
-            'us virgin islands': 'Virgin Islands, U.S.',
-            'british virgin islands': 'Virgin Islands, British',
-            'cayman islands': 'Cayman Islands',
-            'turks and caicos': 'Turks and Caicos Islands',
-            'northern mariana': 'Northern Mariana Islands',
-            'faroe': 'Faroe Islands',
-            'new caledonia': 'New Caledonia',
-            'french polynesia': 'French Polynesia',
-            'wallis and futuna': 'Wallis and Futuna',
-            'saint pierre': 'Saint Pierre and Miquelon',
-            'saint helena': 'Saint Helena',
-            'falkland': 'Falkland Islands (Malvinas)',
-            'pitcairn': 'Pitcairn',
-            'christmas island': 'Christmas Island',
-            'cocos': 'Cocos (Keeling) Islands',
-            'norfolk': 'Norfolk Island',
-            'cook islands': 'Cook Islands',
-            'tokelau': 'Tokelau',
-            'niue': 'Niue',
-            'montserrat': 'Montserrat',
-            'anguilla': 'Anguilla',
-            'isle of man': 'Isle of Man',
-            'aland': 'Åland Islands',
-            'svalbard': 'Svalbard and Jan Mayen',
-            'bouvet': 'Bouvet Island',
-            'heard': 'Heard Island and McDonald Islands',
-            'french southern': 'French Southern Territories',
-            'south georgia': 'South Georgia and the South Sandwich Islands',
-            'antarctica': 'Antarctica',
-            'macau': 'Macao',
-            'hong kong': 'Hong Kong',
-            'gambia': 'Gambia',
-            'guinea bissau': 'Guinea-Bissau',
-            'micronesia': 'Micronesia',
-            'reunion': 'Réunion',
-            'french guiana': 'French Guiana',
-            'martinique': 'Martinique',
-            'guadeloupe': 'Guadeloupe',
-            'mayotte': 'Mayotte',
-            'akrotiri': 'Akrotiri and Dhekelia',
-            'afghanistan': 'Afghanistan',
-            'spain canarias': 'Spain',
-            'india pakistan': 'India',
-            'pakistan india': 'Pakistan',
-            'european union': 'Germany',
-            'bahamas': 'Bahamas',
-            'taiwan': 'Taiwan',
-            'iran': 'Iran',
-            'laos': 'Laos',
-            'syria': 'Syria',
-            'tanzania': 'Tanzania',
-            'venezuela': 'Venezuela',
-            'vietnam': 'Vietnam',
-            'moldova': 'Moldova',
-            'brunei': 'Brunei',
-            'cape verde': 'Cabo Verde',
-            'bolivia': 'Bolivia, Plurinational State of',
-            // New additions for missing mappings
-            'denmark kingdom': 'Denmark',
-            'greenland': 'Greenland',
-            'western sahara': 'Western Sahara',
-            'cabo verde': 'Cape Verde',
-            'germany': 'Germany',
-            'netherlands': 'Netherlands',
-            'france metropolitan': 'France',
-            'norway mainland': 'Norway',
-            'guam': 'Guam',
-            'gibraltar': 'Gibraltar',
-            'american samoa': 'American Samoa',
-            'caribbean netherlands': 'Netherlands',
-            'bonaire': 'Netherlands',
-            'china prc': 'China',
-            'korea dprk': 'North Korea',
-            'korea rok': 'South Korea',
-            'hong kong cn': 'Hong Kong',
-            'macau cn': 'Macao',
-            'scotland uk': 'England',
-            'united states minor': 'United States of America',
-            'saint pierre miquelon': 'Saint Pierre and Miquelon',
-            'wallis futuna': 'Wallis and Futuna',
-            'french southern antarctic': 'French Southern Territories',
-            'british indian ocean': 'England',
-            'christmas island au': 'Christmas Island',
-            'norfolk island au': 'Norfolk Island',
-            'alderney': 'England',
-            'ascension': 'Saint Helena',
-            'russia asia': 'Russian Federation',
-            'russia europe': 'Russian Federation',
-            'sahrawi': 'Western Sahara',
-            'congo republic': 'Republic of the Congo',
-            'congo democratic': 'Democratic Republic of the Congo',
-            'st kitts': 'Saint Kitts and Nevis',
-            'st kitts nevis': 'Saint Kitts and Nevis',
-            'yugoslavia': 'Serbia',
-            'tibet': 'China',
-            'russia soviet': 'Russian Federation'
-        };
-        
-        for (const [pattern, value] of Object.entries(partialMatches)) {
-            if (lowerDataName.includes(pattern)) {
-                console.log(`Partial match found: "${dataCountryName}" -> "${value}"`);
-                return value;
+                    'great britain': 'England',
+                    'england': 'England',
+                    'scotland': 'England',
+                    'wales': 'England',
+                    'northern ireland': 'England',
+                    'czech': 'Czech Republic',
+                    'czechia': 'Czech Republic',
+                    'ivory coast': 'Côte d\'Ivoire',
+                    'cote divoire': 'Côte d\'Ivoire',
+                    'north korea': 'North Korea',
+                    'south korea': 'South Korea',
+                    'korea': 'South Korea', // Default to South Korea
+                    'macedonia': 'North Macedonia',
+                    'east timor': 'Timor-Leste',
+                    'eswatini': 'Eswatini',
+                    'swaziland': 'Eswatini',
+                    'palestine': 'Palestine, State of',
+                    'vatican': 'Vatican',
+                    'sao tome': 'Sao Tome and Principe',
+                    'saint barthelemy': 'Saint Barthélemy',
+                    'saint martin': 'Saint Martin (French part)',
+                    'sint maarten': 'Sint Maarten (Dutch part)',
+                    'bermuda': 'Bermuda',
+                    'jersey': 'Jersey',
+                    'guernsey': 'Guernsey',
+                    'aruba': 'Aruba',
+                    'curacao': 'Curaçao',
+                    'puerto rico': 'Puerto Rico',
+                    'us virgin islands': 'Virgin Islands, U.S.',
+                    'british virgin islands': 'Virgin Islands, British',
+                    'cayman islands': 'Cayman Islands',
+                    'turks and caicos': 'Turks and Caicos Islands',
+                    'northern mariana': 'Northern Mariana Islands',
+                    'faroe': 'Faroe Islands',
+                    'new caledonia': 'New Caledonia',
+                    'french polynesia': 'French Polynesia',
+                    'wallis and futuna': 'Wallis and Futuna',
+                    'saint pierre': 'Saint Pierre and Miquelon',
+                    'saint helena': 'Saint Helena',
+                    'falkland': 'Falkland Islands (Malvinas)',
+                    'pitcairn': 'Pitcairn',
+                    'christmas island': 'Christmas Island',
+                    'cocos': 'Cocos (Keeling) Islands',
+                    'norfolk': 'Norfolk Island',
+                    'cook islands': 'Cook Islands',
+                    'tokelau': 'Tokelau',
+                    'niue': 'Niue',
+                    'montserrat': 'Montserrat',
+                    'anguilla': 'Anguilla',
+                    'isle of man': 'Isle of Man',
+                    'aland': 'Åland Islands',
+                    'svalbard': 'Svalbard and Jan Mayen',
+                    'bouvet': 'Bouvet Island',
+                    'heard': 'Heard Island and McDonald Islands',
+                    'french southern': 'French Southern Territories',
+                    'south georgia': 'South Georgia and the South Sandwich Islands',
+                    'antarctica': 'Antarctica',
+                    'macau': 'Macao',
+                    'hong kong': 'Hong Kong',
+                    'gambia': 'Gambia',
+                    'guinea bissau': 'Guinea-Bissau',
+                    'micronesia': 'Micronesia',
+                    'reunion': 'Réunion',
+                    'french guiana': 'French Guiana',
+                    'martinique': 'Martinique',
+                    'guadeloupe': 'Guadeloupe',
+                    'mayotte': 'Mayotte',
+                    'akrotiri': 'Akrotiri and Dhekelia',
+                    'afghanistan': 'Afghanistan',
+                    'spain canarias': 'Spain',
+                    'india pakistan': 'India',
+                    'pakistan india': 'Pakistan',
+                    'european union': 'Germany',
+                    'bahamas': 'Bahamas',
+                    'taiwan': 'Taiwan',
+                    'iran': 'Iran',
+                    'laos': 'Laos',
+                    'syria': 'Syria',
+                    'tanzania': 'Tanzania',
+                    'venezuela': 'Venezuela',
+                    'vietnam': 'Vietnam',
+                    'moldova': 'Moldova',
+                    'brunei': 'Brunei',
+                    'cape verde': 'Cabo Verde',
+                    'bolivia': 'Bolivia, Plurinational State of',
+                    // New additions for missing mappings
+                    'denmark kingdom': 'Denmark',
+                    'greenland': 'Greenland',
+                    'western sahara': 'Western Sahara',
+                    'cabo verde': 'Cape Verde',
+                    'germany': 'Germany',
+                    'netherlands': 'Netherlands',
+                    'france metropolitan': 'France',
+                    'norway mainland': 'Norway',
+                    'guam': 'Guam',
+                    'gibraltar': 'Gibraltar',
+                    'american samoa': 'American Samoa',
+                    'caribbean netherlands': 'Netherlands',
+                    'bonaire': 'Netherlands',
+                    'china prc': 'China',
+                    'korea dprk': 'North Korea',
+                    'korea rok': 'South Korea',
+                    'hong kong cn': 'Hong Kong',
+                    'macau cn': 'Macao',
+                    'scotland uk': 'England',
+                    'united states minor': 'United States of America',
+                    'saint pierre miquelon': 'Saint Pierre and Miquelon',
+                    'wallis futuna': 'Wallis and Futuna',
+                    'french southern antarctic': 'French Southern Territories',
+                    'british indian ocean': 'England',
+                    'christmas island au': 'Christmas Island',
+                    'norfolk island au': 'Norfolk Island',
+                    'alderney': 'England',
+                    'ascension': 'Saint Helena',
+                    'russia asia': 'Russian Federation',
+                    'russia europe': 'Russian Federation',
+                    'sahrawi': 'Western Sahara',
+                    'congo republic': 'Republic of the Congo',
+                    'congo democratic': 'Democratic Republic of the Congo',
+                    'st kitts': 'Saint Kitts and Nevis',
+                    'st kitts nevis': 'Saint Kitts and Nevis',
+                    'yugoslavia': 'Serbia',
+                    'tibet': 'China',
+                    'russia soviet': 'Russian Federation'
+                };
+                
+                for (const [pattern, value] of Object.entries(partialMatches)) {
+                    if (lowerDataName.includes(pattern)) {
+                        console.log(`Partial match found: "${dataCountryName}" -> "${value}"`);
+                        result = value;
+                        break;
+                    }
+                }
+                
+                // If no match found, log warning and return original name
+                if (!result) {
+                    if (dataCountryName === 'United States') {
+                        console.error(`CRITICAL: United States mapping failed! Available mappings:`, Object.keys(this.countryMappings).filter(key => key.includes('United')));
+                    }
+                    console.warn(`No mapping found for country: "${dataCountryName}", using cleaned: "${cleaned}"`);
+                    result = cleaned;
+                }
             }
         }
         
-        // If no match found, log warning and return original name
-        if (dataCountryName === 'United States') {
-            console.error(`CRITICAL: United States mapping failed! Available mappings:`, Object.keys(this.countryMappings).filter(key => key.includes('United')));
-        }
-        console.warn(`No mapping found for country: "${dataCountryName}", using cleaned: "${cleaned}"`);
-        return cleaned;
+        // Cache the result for future O(1) lookups
+        this._cache.set(dataCountryName, result);
+        return result;
     }
     
     // Get all mapped country names

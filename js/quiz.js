@@ -15,12 +15,13 @@ class QuizGame {
     }
     
     async init() {
-        await this.loadAllQuizData();
         this.setupEventListeners();
         
-        // Wait for map to be ready before starting quiz
+        // Wait for map to be ready before loading quiz data
         const mapReady = await this.waitForMap();
         if (mapReady) {
+            // Load quiz data after map is ready (lazy loading)
+            await this.loadAllQuizData();
             this.startNewQuiz();
         } else {
             console.error('❌ Failed to initialize map, retrying in 2 seconds...');
