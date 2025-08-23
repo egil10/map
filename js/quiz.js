@@ -358,6 +358,90 @@ class QuizGame {
                 console.log('📥 Added Leading Import Source quiz');
             }
             
+            // Convert female average height data
+            const femaleHeightQuiz = await this.convertFemaleHeightData();
+            if (femaleHeightQuiz) {
+                this.quizData.quizzes[femaleHeightQuiz.id] = femaleHeightQuiz;
+                console.log('👩 Added Female Average Height quiz');
+            }
+            
+            // Convert Academy Awards data
+            const academyAwardsQuiz = await this.convertAcademyAwardsData();
+            if (academyAwardsQuiz) {
+                this.quizData.quizzes[academyAwardsQuiz.id] = academyAwardsQuiz;
+                console.log('🏆 Added Academy Awards quiz');
+            }
+            
+            // Convert Winter Olympic Gold Medals data
+            const winterOlympicGoldQuiz = await this.convertWinterOlympicGoldData();
+            if (winterOlympicGoldQuiz) {
+                this.quizData.quizzes[winterOlympicGoldQuiz.id] = winterOlympicGoldQuiz;
+                console.log('⛷️ Added Winter Olympic Gold Medals quiz');
+            }
+            
+            // Convert Summer Olympic Bronze Medals data
+            const summerOlympicBronzeQuiz = await this.convertSummerOlympicBronzeData();
+            if (summerOlympicBronzeQuiz) {
+                this.quizData.quizzes[summerOlympicBronzeQuiz.id] = summerOlympicBronzeQuiz;
+                console.log('🥉 Added Summer Olympic Bronze Medals quiz');
+            }
+            
+            // Convert Summer Olympic Silver Medals data
+            const summerOlympicSilverQuiz = await this.convertSummerOlympicSilverData();
+            if (summerOlympicSilverQuiz) {
+                this.quizData.quizzes[summerOlympicSilverQuiz.id] = summerOlympicSilverQuiz;
+                console.log('🥈 Added Summer Olympic Silver Medals quiz');
+            }
+            
+            // Convert Summer Olympic Gold Medals data
+            const summerOlympicGoldQuiz = await this.convertSummerOlympicGoldData();
+            if (summerOlympicGoldQuiz) {
+                this.quizData.quizzes[summerOlympicGoldQuiz.id] = summerOlympicGoldQuiz;
+                console.log('🥇 Added Summer Olympic Gold Medals quiz');
+            }
+            
+            // Convert Nobel Literature Laureates data
+            const nobelLiteratureQuiz = await this.convertNobelLiteratureData();
+            if (nobelLiteratureQuiz) {
+                this.quizData.quizzes[nobelLiteratureQuiz.id] = nobelLiteratureQuiz;
+                console.log('📚 Added Nobel Literature Laureates quiz');
+            }
+            
+            // Convert World Cup Wins data
+            const worldCupWinsQuiz = await this.convertWorldCupWinsData();
+            if (worldCupWinsQuiz) {
+                this.quizData.quizzes[worldCupWinsQuiz.id] = worldCupWinsQuiz;
+                console.log('⚽ Added World Cup Wins quiz');
+            }
+            
+            // Convert Age of Consent data
+            const ageOfConsentQuiz = await this.convertAgeOfConsentData();
+            if (ageOfConsentQuiz) {
+                this.quizData.quizzes[ageOfConsentQuiz.id] = ageOfConsentQuiz;
+                console.log('📋 Added Age of Consent quiz');
+            }
+            
+            // Convert Population per Lower House Seat data
+            const populationPerSeatQuiz = await this.convertPopulationPerSeatData();
+            if (populationPerSeatQuiz) {
+                this.quizData.quizzes[populationPerSeatQuiz.id] = populationPerSeatQuiz;
+                console.log('🏛️ Added Population per Lower House Seat quiz');
+            }
+            
+            // Convert Lower House Seats data
+            const lowerHouseSeatsQuiz = await this.convertLowerHouseSeatsData();
+            if (lowerHouseSeatsQuiz) {
+                this.quizData.quizzes[lowerHouseSeatsQuiz.id] = lowerHouseSeatsQuiz;
+                console.log('🏛️ Added Lower House Seats quiz');
+            }
+            
+            // Convert Total Naval Assets data
+            const navalAssetsQuiz = await this.convertNavalAssetsData();
+            if (navalAssetsQuiz) {
+                this.quizData.quizzes[navalAssetsQuiz.id] = navalAssetsQuiz;
+                console.log('🚢 Added Total Naval Assets quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -3865,6 +3949,705 @@ class QuizGame {
                 document.body.removeChild(notification);
             }, 400);
         }, 4000);
+    }
+    
+    // New dataset conversion functions
+    async convertFemaleHeightData() {
+        try {
+            const response = await fetch('data/female_average_height_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#e91e63');
+            });
+            
+            return {
+                id: 'female_average_height',
+                title: 'Female Average Height',
+                description: 'Countries colored by average female height',
+                category: 'demographics',
+                tags: ['height', 'female', 'demographics', 'anthropometry', 'women', 'stature'],
+                answer_variations: [
+                    'female height',
+                    'women height',
+                    'average female height',
+                    'female average height',
+                    'women average height',
+                    'female stature',
+                    'women stature'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fce4ec',
+                    maxColor: '#c2185b',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting female height data:', error);
+            return null;
+        }
+    }
+    
+    async convertAcademyAwardsData() {
+        try {
+            const response = await fetch('data/academy_awards_best_international_feature_film_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#ffd700');
+            });
+            
+            return {
+                id: 'academy_awards',
+                title: 'Academy Awards for Best International Feature Film',
+                description: 'Countries colored by number of Academy Awards won',
+                category: 'culture',
+                tags: ['academy awards', 'oscars', 'movies', 'film', 'international', 'cinema'],
+                answer_variations: [
+                    'academy awards',
+                    'oscars',
+                    'international feature film',
+                    'best international film',
+                    'academy awards international',
+                    'oscar wins',
+                    'film awards'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff8e1',
+                    maxColor: '#f57f17',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting academy awards data:', error);
+            return null;
+        }
+    }
+    
+    async convertWinterOlympicGoldData() {
+        try {
+            const response = await fetch('data/winter_olympic_gold_medals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#ffd700');
+            });
+            
+            return {
+                id: 'winter_olympic_gold',
+                title: 'Winter Olympic Gold Medals',
+                description: 'Countries colored by number of Winter Olympic gold medals',
+                category: 'sports',
+                tags: ['winter olympics', 'gold medals', 'olympics', 'sports', 'winter sports'],
+                answer_variations: [
+                    'winter olympic gold medals',
+                    'winter olympics gold',
+                    'winter olympic medals',
+                    'winter sports medals',
+                    'olympic gold medals winter',
+                    'winter olympics'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff8e1',
+                    maxColor: '#f57f17',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting winter olympic gold data:', error);
+            return null;
+        }
+    }
+    
+    async convertSummerOlympicBronzeData() {
+        try {
+            const response = await fetch('data/summer_olympic_bronze_medals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#cd7f32');
+            });
+            
+            return {
+                id: 'summer_olympic_bronze',
+                title: 'Summer Olympic Bronze Medals',
+                description: 'Countries colored by number of Summer Olympic bronze medals',
+                category: 'sports',
+                tags: ['summer olympics', 'bronze medals', 'olympics', 'sports'],
+                answer_variations: [
+                    'summer olympic bronze medals',
+                    'summer olympics bronze',
+                    'olympic bronze medals',
+                    'summer olympic medals',
+                    'olympics bronze',
+                    'summer olympics'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting summer olympic bronze data:', error);
+            return null;
+        }
+    }
+    
+    async convertSummerOlympicSilverData() {
+        try {
+            const response = await fetch('data/summer_olympic_silver_medals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#c0c0c0');
+            });
+            
+            return {
+                id: 'summer_olympic_silver',
+                title: 'Summer Olympic Silver Medals',
+                description: 'Countries colored by number of Summer Olympic silver medals',
+                category: 'sports',
+                tags: ['summer olympics', 'silver medals', 'olympics', 'sports'],
+                answer_variations: [
+                    'summer olympic silver medals',
+                    'summer olympics silver',
+                    'olympic silver medals',
+                    'summer olympic medals',
+                    'olympics silver',
+                    'summer olympics'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f5f5f5',
+                    maxColor: '#757575',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting summer olympic silver data:', error);
+            return null;
+        }
+    }
+    
+    async convertSummerOlympicGoldData() {
+        try {
+            const response = await fetch('data/summer_olympic_gold_medals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#ffd700');
+            });
+            
+            return {
+                id: 'summer_olympic_gold',
+                title: 'Summer Olympic Gold Medals',
+                description: 'Countries colored by number of Summer Olympic gold medals',
+                category: 'sports',
+                tags: ['summer olympics', 'gold medals', 'olympics', 'sports'],
+                answer_variations: [
+                    'summer olympic gold medals',
+                    'summer olympics gold',
+                    'olympic gold medals',
+                    'summer olympic medals',
+                    'olympics gold',
+                    'summer olympics'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff8e1',
+                    maxColor: '#f57f17',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting summer olympic gold data:', error);
+            return null;
+        }
+    }
+    
+    async convertNobelLiteratureData() {
+        try {
+            const response = await fetch('data/nobel_literature_laureates_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#9c27b0');
+            });
+            
+            return {
+                id: 'nobel_literature',
+                title: 'Nobel Literature Laureates',
+                description: 'Countries colored by number of Nobel Literature laureates',
+                category: 'culture',
+                tags: ['nobel prize', 'literature', 'laureates', 'books', 'authors', 'writing'],
+                answer_variations: [
+                    'nobel literature',
+                    'nobel prize literature',
+                    'nobel literature laureates',
+                    'literature nobel',
+                    'nobel prize authors',
+                    'literature laureates'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f3e5f5',
+                    maxColor: '#7b1fa2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting nobel literature data:', error);
+            return null;
+        }
+    }
+    
+    async convertWorldCupWinsData() {
+        try {
+            const response = await fetch('data/world_cup_wins_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#4caf50');
+            });
+            
+            return {
+                id: 'world_cup_wins',
+                title: 'FIFA World Cup Wins',
+                description: 'Countries colored by number of FIFA World Cup titles',
+                category: 'sports',
+                tags: ['world cup', 'fifa', 'soccer', 'football', 'world cup wins', 'football titles'],
+                answer_variations: [
+                    'world cup wins',
+                    'fifa world cup',
+                    'world cup titles',
+                    'football world cup',
+                    'soccer world cup',
+                    'fifa titles'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting world cup wins data:', error);
+            return null;
+        }
+    }
+    
+    async convertAgeOfConsentData() {
+        try {
+            const response = await fetch('data/age_of_consent_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#ff5722');
+            });
+            
+            return {
+                id: 'age_of_consent',
+                title: 'Age of Consent by Country',
+                description: 'Countries colored by age of consent for sexual activity',
+                category: 'social',
+                tags: ['age of consent', 'legal age', 'social', 'law', 'legal'],
+                answer_variations: [
+                    'age of consent',
+                    'legal age',
+                    'consent age',
+                    'age of consent law',
+                    'legal consent age',
+                    'sexual consent age'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting age of consent data:', error);
+            return null;
+        }
+    }
+    
+    async convertPopulationPerSeatData() {
+        try {
+            const response = await fetch('data/population_per_lower_house_seat_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#3f51b5');
+            });
+            
+            return {
+                id: 'population_per_seat',
+                title: 'Population per Lower House Seat',
+                description: 'Countries colored by population per lower house seat',
+                category: 'politics',
+                tags: ['population', 'parliament', 'legislature', 'representation', 'politics', 'government'],
+                answer_variations: [
+                    'population per seat',
+                    'population per lower house seat',
+                    'parliament representation',
+                    'legislative representation',
+                    'population per representative',
+                    'parliament seats population'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8eaf6',
+                    maxColor: '#303f9f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting population per seat data:', error);
+            return null;
+        }
+    }
+    
+    async convertLowerHouseSeatsData() {
+        try {
+            const response = await fetch('data/lower_house_seats_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#3f51b5');
+            });
+            
+            return {
+                id: 'lower_house_seats',
+                title: 'Lower House Seats by Country',
+                description: 'Countries colored by number of lower house seats',
+                category: 'politics',
+                tags: ['parliament', 'legislature', 'seats', 'politics', 'government', 'lower house'],
+                answer_variations: [
+                    'lower house seats',
+                    'parliament seats',
+                    'legislative seats',
+                    'lower house',
+                    'parliament',
+                    'legislature seats'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8eaf6',
+                    maxColor: '#303f9f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting lower house seats data:', error);
+            return null;
+        }
+    }
+    
+    async convertNavalAssetsData() {
+        try {
+            const response = await fetch('data/total_naval_assets_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.keys(data.data).forEach(country => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                const value = data.data[country].value;
+                
+                if (typeof value === 'number') {
+                    countries[mappedCountryName] = {
+                        value: value,
+                        unit: data.data[country].unit
+                    };
+                    values.push(value);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffffff', '#2196f3');
+            });
+            
+            return {
+                id: 'naval_assets',
+                title: 'Total Naval Assets by Country',
+                description: 'Countries colored by total naval assets',
+                category: 'military',
+                tags: ['naval', 'military', 'navy', 'ships', 'naval assets', 'defense'],
+                answer_variations: [
+                    'naval assets',
+                    'total naval assets',
+                    'navy ships',
+                    'naval fleet',
+                    'military ships',
+                    'naval vessels'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1976d2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting naval assets data:', error);
+            return null;
+        }
     }
 }
 

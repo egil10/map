@@ -1,0 +1,16 @@
+{
+  "title": "FIFA World Cup Wins by Country",
+  "description": "Number of FIFA World Cup titles won by each country as of 2025",
+  "unit": "titles",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup",
+  "data": {
+    "Brazil": { "value": 5, "unit": "titles" },
+    "Germany": { "value": 4, "unit": "titles" },
+    "Italy": { "value": 4, "unit": "titles" },
+    "Argentina": { "value": 3, "unit": "titles" },
+    "Uruguay": { "value": 2, "unit": "titles" },
+    "France": { "value": 2, "unit": "titles" },
+    "United Kingdom": { "value": 1, "unit": "titles" },
+    "Spain": { "value": 1, "unit": "titles" }
+  }
+}
