@@ -2314,27 +2314,27 @@ class QuizGame {
             // Reinitialize Lucide icons
             lucide.createIcons();
             
-            // Transform back to send icon after a delay
+            // Transform back to arrow-up icon after a delay
             setTimeout(() => {
-                this.transformToSendIcon();
+                this.transformToArrowIcon();
             }, 2000);
         }
     }
     
-    transformToSendIcon() {
+    transformToArrowIcon() {
         const submitIcon = document.getElementById('submitIcon');
         if (submitIcon) {
             // Remove old icon
             submitIcon.remove();
             
-            // Create new send icon
-            const sendIcon = document.createElement('i');
-            sendIcon.setAttribute('data-lucide', 'send');
-            sendIcon.id = 'submitIcon';
+            // Create new arrow-up icon
+            const arrowIcon = document.createElement('i');
+            arrowIcon.setAttribute('data-lucide', 'arrow-up');
+            arrowIcon.id = 'submitIcon';
             
             // Add to button
             const submitBtn = document.getElementById('submitGuess');
-            submitBtn.appendChild(sendIcon);
+            submitBtn.appendChild(arrowIcon);
             
             // Reinitialize Lucide icons
             lucide.createIcons();
