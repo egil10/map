@@ -628,13 +628,14 @@ body {
     padding: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     z-index: 1002;
-    min-width: 200px;
+    min-width: 250px;
+    width: 250px;
     height: auto;
     min-height: 80px;
     display: flex;
     align-items: center;
     margin: 10px;
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .legend-control.leaflet-control {
@@ -668,6 +669,8 @@ body {
     border-radius: 8px;
     border: 1px solid #e9ecef;
     overflow: hidden;
+    width: 100%;
+    min-width: 200px;
 }
 
 .gradient-labels {
@@ -885,7 +888,8 @@ body {
     
     /* Legend - Mobile positioning */
     .legend-control {
-        min-width: 160px;
+        min-width: 200px;
+        width: 200px;
         max-width: 200px;
         height: auto;
         min-height: 80px;
@@ -981,7 +985,8 @@ body {
     }
     
     .legend-control {
-        min-width: 140px;
+        min-width: 180px;
+        width: 180px;
         max-width: 180px;
         padding: 10px;
         margin: 6px;
@@ -1037,7 +1042,8 @@ body {
     }
     
     .legend-control {
-        min-width: 120px;
+        min-width: 160px;
+        width: 160px;
         max-width: 160px;
         padding: 8px;
         margin: 4px;

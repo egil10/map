@@ -3087,6 +3087,13 @@ class QuizGame {
         }
         
         const userGuess = document.getElementById('guessInput').value.trim();
+        
+        // If answer is already shown, skip to next question
+        if (this.isAnswerShown) {
+            this.skipToNextQuestion();
+            return;
+        }
+        
         if (!userGuess) return;
         
         // Transform button icon to check
@@ -3107,6 +3114,7 @@ class QuizGame {
         
         // Show the answer title
         this.showAnswerTitle();
+        this.isAnswerShown = true;
         
         if (this.checkAnswer(userGuess)) {
             this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
@@ -3224,6 +3232,9 @@ class QuizGame {
         // Show the answer title in learn mode
         this.showAnswerTitle();
         
+        // Reset answer shown flag for learn mode
+        this.isAnswerShown = false;
+        
         console.log('Loaded random dataset:', this.currentQuiz.title);
     }
     
@@ -3301,7 +3312,7 @@ class QuizGame {
         }
         
         if (submitButton) {
-            submitButton.disabled = true;
+            submitButton.style.display = 'none';
         }
     }
     
@@ -3322,6 +3333,7 @@ class QuizGame {
         }
         
         if (submitButton) {
+            submitButton.style.display = 'flex';
             submitButton.disabled = true; // Will be enabled when user types
         }
     }
@@ -3418,6 +3430,9 @@ class QuizGame {
         // Clear feedback
         this.clearFeedback();
         
+        // Reset answer shown flag
+        this.isAnswerShown = false;
+        
         // Handle mode-specific behavior
         if (this.isLearnMode) {
             // In learn mode, show answer immediately
@@ -3429,7 +3444,7 @@ class QuizGame {
             const submitButton = document.getElementById('submitGuess');
             
             guessInput.disabled = true;
-            submitButton.disabled = true;
+            submitButton.style.display = 'none';
             guessInput.placeholder = 'Explore the data (click countries to see details)';
         } else {
             // In play mode, hide answer and enable input
@@ -3441,7 +3456,8 @@ class QuizGame {
             const submitButton = document.getElementById('submitGuess');
             
             guessInput.disabled = false;
-            submitButton.disabled = false;
+            submitButton.style.display = 'flex';
+            submitButton.disabled = true; // Will be enabled when user types
             guessInput.value = '';
             guessInput.placeholder = 'What does this map show?';
             guessInput.focus();
