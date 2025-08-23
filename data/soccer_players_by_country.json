@@ -1,0 +1,400 @@
+{
+  "title": "Soccer Players by Country",
+  "description": "Number of professional soccer players by country, 2023",
+  "unit": "players",
+  "source": "https://worldpopulationreview.com/country-rankings/soccer-players-by-country",
+  "data": {
+    "Mexico": {
+      "value": 9464,
+      "unit": "players"
+    },
+    "Spain": {
+      "value": 8560,
+      "unit": "players"
+    },
+    "United Kingdom": {
+      "value": 5582,
+      "unit": "players"
+    },
+    "Turkey": {
+      "value": 3917,
+      "unit": "players"
+    },
+    "Russia": {
+      "value": 3633,
+      "unit": "players"
+    },
+    "Argentina": {
+      "value": 3613,
+      "unit": "players"
+    },
+    "Italy": {
+      "value": 3101,
+      "unit": "players"
+    },
+    "France": {
+      "value": 2906,
+      "unit": "players"
+    },
+    "United States": {
+      "value": 2791,
+      "unit": "players"
+    },
+    "Japan": {
+      "value": 2126,
+      "unit": "players"
+    },
+    "Brazil": {
+      "value": 2123,
+      "unit": "players"
+    },
+    "Portugal": {
+      "value": 2074,
+      "unit": "players"
+    },
+    "Iran": {
+      "value": 1800,
+      "unit": "players"
+    },
+    "Poland": {
+      "value": 1710,
+      "unit": "players"
+    },
+    "El Salvador": {
+      "value": 1700,
+      "unit": "players"
+    },
+    "Australia": {
+      "value": 1597,
+      "unit": "players"
+    },
+    "China": {
+      "value": 1586,
+      "unit": "players"
+    },
+    "Germany": {
+      "value": 1562,
+      "unit": "players"
+    },
+    "Belarus": {
+      "value": 1534,
+      "unit": "players"
+    },
+    "India": {
+      "value": 1506,
+      "unit": "players"
+    },
+    "Saudi Arabia": {
+      "value": 1505,
+      "unit": "players"
+    },
+    "Belgium": {
+      "value": 1491,
+      "unit": "players"
+    },
+    "Indonesia": {
+      "value": 1431,
+      "unit": "players"
+    },
+    "Chile": {
+      "value": 1350,
+      "unit": "players"
+    },
+    "Thailand": {
+      "value": 1338,
+      "unit": "players"
+    },
+    "Ukraine": {
+      "value": 1288,
+      "unit": "players"
+    },
+    "Kazakhstan": {
+      "value": 1195,
+      "unit": "players"
+    },
+    "Croatia": {
+      "value": 1188,
+      "unit": "players"
+    },
+    "Colombia": {
+      "value": 1163,
+      "unit": "players"
+    },
+    "Netherlands": {
+      "value": 1150,
+      "unit": "players"
+    },
+    "Switzerland": {
+      "value": 1140,
+      "unit": "players"
+    },
+    "Greece": {
+      "value": 1086,
+      "unit": "players"
+    },
+    "Hungary": {
+      "value": 1055,
+      "unit": "players"
+    },
+    "Uganda": {
+      "value": 991,
+      "unit": "players"
+    },
+    "Serbia": {
+      "value": 972,
+      "unit": "players"
+    },
+    "Guatemala": {
+      "value": 945,
+      "unit": "players"
+    },
+    "Slovakia": {
+      "value": 907,
+      "unit": "players"
+    },
+    "Ecuador": {
+      "value": 897,
+      "unit": "players"
+    },
+    "Albania": {
+      "value": 869,
+      "unit": "players"
+    },
+    "Israel": {
+      "value": 818,
+      "unit": "players"
+    },
+    "Costa Rica": {
+      "value": 818,
+      "unit": "players"
+    },
+    "Austria": {
+      "value": 814,
+      "unit": "players"
+    },
+    "Malaysia": {
+      "value": 782,
+      "unit": "players"
+    },
+    "South Korea": {
+      "value": 780,
+      "unit": "players"
+    },
+    "Vietnam": {
+      "value": 770,
+      "unit": "players"
+    },
+    "Haiti": {
+      "value": 720,
+      "unit": "players"
+    },
+    "Bulgaria": {
+      "value": 711,
+      "unit": "players"
+    },
+    "Ghana": {
+      "value": 704,
+      "unit": "players"
+    },
+    "Denmark": {
+      "value": 673,
+      "unit": "players"
+    },
+    "Paraguay": {
+      "value": 662,
+      "unit": "players"
+    },
+    "Egypt": {
+      "value": 642,
+      "unit": "players"
+    },
+    "Armenia": {
+      "value": 637,
+      "unit": "players"
+    },
+    "Azerbaijan": {
+      "value": 630,
+      "unit": "players"
+    },
+    "Cambodia": {
+      "value": 614,
+      "unit": "players"
+    },
+    "Uzbekistan": {
+      "value": 611,
+      "unit": "players"
+    },
+    "Bolivia": {
+      "value": 563,
+      "unit": "players"
+    },
+    "Peru": {
+      "value": 555,
+      "unit": "players"
+    },
+    "Angola": {
+      "value": 550,
+      "unit": "players"
+    },
+    "Algeria": {
+      "value": 549,
+      "unit": "players"
+    },
+    "South Africa": {
+      "value": 541,
+      "unit": "players"
+    },
+    "Georgia": {
+      "value": 533,
+      "unit": "players"
+    },
+    "Romania": {
+      "value": 531,
+      "unit": "players"
+    },
+    "Oman": {
+      "value": 531,
+      "unit": "players"
+    },
+    "United Arab Emirates": {
+      "value": 530,
+      "unit": "players"
+    },
+    "Ethiopia": {
+      "value": 517,
+      "unit": "players"
+    },
+    "Uruguay": {
+      "value": 516,
+      "unit": "players"
+    },
+    "Cyprus": {
+      "value": 511,
+      "unit": "players"
+    },
+    "Venezuela": {
+      "value": 505,
+      "unit": "players"
+    },
+    "Kuwait": {
+      "value": 451,
+      "unit": "players"
+    },
+    "Jamaica": {
+      "value": 447,
+      "unit": "players"
+    },
+    "Qatar": {
+      "value": 430,
+      "unit": "players"
+    },
+    "Norway": {
+      "value": 420,
+      "unit": "players"
+    },
+    "Botswana": {
+      "value": 400,
+      "unit": "players"
+    },
+    "Panama": {
+      "value": 396,
+      "unit": "players"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 387,
+      "unit": "players"
+    },
+    "Bangladesh": {
+      "value": 368,
+      "unit": "players"
+    },
+    "Mozambique": {
+      "value": 360,
+      "unit": "players"
+    },
+    "Estonia": {
+      "value": 347,
+      "unit": "players"
+    },
+    "Iceland": {
+      "value": 330,
+      "unit": "players"
+    },
+    "Honduras": {
+      "value": 328,
+      "unit": "players"
+    },
+    "Ireland": {
+      "value": 326,
+      "unit": "players"
+    },
+    "Finland": {
+      "value": 311,
+      "unit": "players"
+    },
+    "Fiji": {
+      "value": 307,
+      "unit": "players"
+    },
+    "Montenegro": {
+      "value": 296,
+      "unit": "players"
+    },
+    "Lithuania": {
+      "value": 288,
+      "unit": "players"
+    },
+    "Slovenia": {
+      "value": 271,
+      "unit": "players"
+    },
+    "Mongolia": {
+      "value": 264,
+      "unit": "players"
+    },
+    "Nicaragua": {
+      "value": 263,
+      "unit": "players"
+    },
+    "Belize": {
+      "value": 260,
+      "unit": "players"
+    },
+    "Tajikistan": {
+      "value": 227,
+      "unit": "players"
+    },
+    "Singapore": {
+      "value": 220,
+      "unit": "players"
+    },
+    "Palestine": {
+      "value": 207,
+      "unit": "players"
+    },
+    "Latvia": {
+      "value": 200,
+      "unit": "players"
+    },
+    "Canada": {
+      "value": 189,
+      "unit": "players"
+    },
+    "Moldova": {
+      "value": 180,
+      "unit": "players"
+    },
+    "Andorra": {
+      "value": 170,
+      "unit": "players"
+    },
+    "Philippines": {
+      "value": 136,
+      "unit": "players"
+    },
+    "Liechtenstein": {
+      "value": 25,
+      "unit": "players"
+    }
+  }
+}

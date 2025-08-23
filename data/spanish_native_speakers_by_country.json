@@ -1,0 +1,88 @@
+{
+  "title": "Spanish Native Speakers by Country",
+  "description": "Estimated number of native Spanish speakers in countries where Spanish is an official language, 2021",
+  "unit": "speakers",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Spanish_is_an_official_language",
+  "data": {
+    "Mexico": {
+      "value": 130207371,
+      "unit": "speakers"
+    },
+    "Colombia": {
+      "value": 52695952,
+      "unit": "speakers"
+    },
+    "Spain": {
+      "value": 48797875,
+      "unit": "speakers"
+    },
+    "Argentina": {
+      "value": 45864941,
+      "unit": "speakers"
+    },
+    "Peru": {
+      "value": 32201224,
+      "unit": "speakers"
+    },
+    "Venezuela": {
+      "value": 29069159,
+      "unit": "speakers"
+    },
+    "Chile": {
+      "value": 18307925,
+      "unit": "speakers"
+    },
+    "Guatemala": {
+      "value": 17422821,
+      "unit": "speakers"
+    },
+    "Ecuador": {
+      "value": 17093159,
+      "unit": "speakers"
+    },
+    "Bolivia": {
+      "value": 11758869,
+      "unit": "speakers"
+    },
+    "Cuba": {
+      "value": 11032343,
+      "unit": "speakers"
+    },
+    "Dominican Republic": {
+      "value": 10597348,
+      "unit": "speakers"
+    },
+    "Honduras": {
+      "value": 9346277,
+      "unit": "speakers"
+    },
+    "Paraguay": {
+      "value": 7272639,
+      "unit": "speakers"
+    },
+    "El Salvador": {
+      "value": 6528135,
+      "unit": "speakers"
+    },
+    "Nicaragua": {
+      "value": 6243931,
+      "unit": "speakers"
+    },
+    "Costa Rica": {
+      "value": 5151140,
+      "unit": "speakers"
+    },
+    "Panama": {
+      "value": 3928646,
+      "unit": "speakers"
+    },
+    "Uruguay": {
+      "value": 3398239,
+      "unit": "speakers"
+    },
+    "Equatorial Guinea": {
+      "value": 1468777,
+      "unit": "speakers"
+    }
+  }
+}

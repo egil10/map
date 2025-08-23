@@ -1,0 +1,168 @@
+{
+  "title": "Wheat Production by Country",
+  "description": "Wheat production in million metric tons, 2022",
+  "unit": "million tons",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_wheat_production",
+  "data": {
+    "China": {
+      "value": 137.7,
+      "unit": "million tons"
+    },
+    "India": {
+      "value": 107.7,
+      "unit": "million tons"
+    },
+    "Russia": {
+      "value": 104.2,
+      "unit": "million tons"
+    },
+    "United States": {
+      "value": 44.9,
+      "unit": "million tons"
+    },
+    "Australia": {
+      "value": 36.2,
+      "unit": "million tons"
+    },
+    "France": {
+      "value": 34.6,
+      "unit": "million tons"
+    },
+    "Canada": {
+      "value": 34.3,
+      "unit": "million tons"
+    },
+    "Pakistan": {
+      "value": 26.2,
+      "unit": "million tons"
+    },
+    "Germany": {
+      "value": 22.6,
+      "unit": "million tons"
+    },
+    "Argentina": {
+      "value": 22.2,
+      "unit": "million tons"
+    },
+    "Ukraine": {
+      "value": 20.7,
+      "unit": "million tons"
+    },
+    "Turkey": {
+      "value": 19.8,
+      "unit": "million tons"
+    },
+    "Kazakhstan": {
+      "value": 16.4,
+      "unit": "million tons"
+    },
+    "United Kingdom": {
+      "value": 15.5,
+      "unit": "million tons"
+    },
+    "Poland": {
+      "value": 13.2,
+      "unit": "million tons"
+    },
+    "Brazil": {
+      "value": 10.3,
+      "unit": "million tons"
+    },
+    "Iran": {
+      "value": 10.0,
+      "unit": "million tons"
+    },
+    "Egypt": {
+      "value": 9.7,
+      "unit": "million tons"
+    },
+    "Romania": {
+      "value": 8.7,
+      "unit": "million tons"
+    },
+    "Ethiopia": {
+      "value": 7.0,
+      "unit": "million tons"
+    },
+    "Italy": {
+      "value": 6.6,
+      "unit": "million tons"
+    },
+    "Spain": {
+      "value": 6.5,
+      "unit": "million tons"
+    },
+    "Bulgaria": {
+      "value": 6.4,
+      "unit": "million tons"
+    },
+    "Uzbekistan": {
+      "value": 6.3,
+      "unit": "million tons"
+    },
+    "Czech Republic": {
+      "value": 5.2,
+      "unit": "million tons"
+    },
+    "Lithuania": {
+      "value": 4.5,
+      "unit": "million tons"
+    },
+    "Hungary": {
+      "value": 4.4,
+      "unit": "million tons"
+    },
+    "Denmark": {
+      "value": 4.2,
+      "unit": "million tons"
+    },
+    "Afghanistan": {
+      "value": 3.8,
+      "unit": "million tons"
+    },
+    "Mexico": {
+      "value": 3.6,
+      "unit": "million tons"
+    },
+    "Sweden": {
+      "value": 3.2,
+      "unit": "million tons"
+    },
+    "Serbia": {
+      "value": 3.1,
+      "unit": "million tons"
+    },
+    "Algeria": {
+      "value": 3.0,
+      "unit": "million tons"
+    },
+    "Iraq": {
+      "value": 2.8,
+      "unit": "million tons"
+    },
+    "Morocco": {
+      "value": 2.7,
+      "unit": "million tons"
+    },
+    "Latvia": {
+      "value": 2.5,
+      "unit": "million tons"
+    },
+    "Belarus": {
+      "value": 2.4,
+      "unit": "million tons"
+    },
+    "Nepal": {
+      "value": 2.1,
+      "unit": "million tons"
+    },
+    "South Africa": {
+      "value": 2.1,
+      "unit": "million tons"
+    },
+    "Slovakia": {
+      "value": 2.0,
+      "unit": "million tons"
+    }
+  }
+}

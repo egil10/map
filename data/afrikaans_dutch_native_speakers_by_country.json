@@ -1,0 +1,28 @@
+{
+  "title": "Afrikaans or Dutch Native Speakers by Country",
+  "description": "Number of native Afrikaans or Dutch speakers in countries where Afrikaans or Dutch are official languages, 2011",
+  "unit": "speakers",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Afrikaans_or_Dutch_are_official_languages",
+  "data": {
+    "Belgium": {
+      "value": 6215000,
+      "unit": "speakers"
+    },
+    "Namibia": {
+      "value": 220000,
+      "unit": "speakers"
+    },
+    "Netherlands": {
+      "value": 16431360,
+      "unit": "speakers"
+    },
+    "South Africa": {
+      "value": 6860000,
+      "unit": "speakers"
+    },
+    "Suriname": {
+      "value": 325000,
+      "unit": "speakers"
+    }
+  }
+}

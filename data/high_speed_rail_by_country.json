@@ -1,0 +1,176 @@
+{
+  "title": "High-Speed Rail by Country",
+  "description": "High-speed rail network length in kilometers, latest available data",
+  "unit": "km",
+  "source": "https://worldpopulationreview.com/country-rankings/high-speed-rail-by-country",
+  "data": {
+    "China": {
+      "value": 64775,
+      "unit": "km"
+    },
+    "Spain": {
+      "value": 5579,
+      "unit": "km"
+    },
+    "Japan": {
+      "value": 3677,
+      "unit": "km"
+    },
+    "France": {
+      "value": 4460,
+      "unit": "km"
+    },
+    "Germany": {
+      "value": 2009,
+      "unit": "km"
+    },
+    "Finland": {
+      "value": 1514,
+      "unit": "km"
+    },
+    "Turkey": {
+      "value": 4659,
+      "unit": "km"
+    },
+    "Italy": {
+      "value": 1248,
+      "unit": "km"
+    },
+    "South Korea": {
+      "value": 922,
+      "unit": "km"
+    },
+    "Sweden": {
+      "value": 1412,
+      "unit": "km"
+    },
+    "United States": {
+      "value": 6071,
+      "unit": "km"
+    },
+    "Saudi Arabia": {
+      "value": 449,
+      "unit": "km"
+    },
+    "Austria": {
+      "value": 606,
+      "unit": "km"
+    },
+    "Poland": {
+      "value": 1904,
+      "unit": "km"
+    },
+    "Belgium": {
+      "value": 209,
+      "unit": "km"
+    },
+    "Morocco": {
+      "value": 826,
+      "unit": "km"
+    },
+    "Switzerland": {
+      "value": 176,
+      "unit": "km"
+    },
+    "United Kingdom": {
+      "value": 679,
+      "unit": "km"
+    },
+    "Netherlands": {
+      "value": 90,
+      "unit": "km"
+    },
+    "Denmark": {
+      "value": 56,
+      "unit": "km"
+    },
+    "India": {
+      "value": 7987,
+      "unit": "km"
+    },
+    "Indonesia": {
+      "value": 712,
+      "unit": "km"
+    },
+    "Brazil": {
+      "value": 511,
+      "unit": "km"
+    },
+    "Russia": {
+      "value": 1080,
+      "unit": "km"
+    },
+    "Mexico": {
+      "value": 210,
+      "unit": "km"
+    },
+    "Egypt": {
+      "value": 3375,
+      "unit": "km"
+    },
+    "Vietnam": {
+      "value": 1545,
+      "unit": "km"
+    },
+    "Iran": {
+      "value": 3104,
+      "unit": "km"
+    },
+    "Thailand": {
+      "value": 2642,
+      "unit": "km"
+    },
+    "South Africa": {
+      "value": 2390,
+      "unit": "km"
+    },
+    "Canada": {
+      "value": 1523,
+      "unit": "km"
+    },
+    "Australia": {
+      "value": 1749,
+      "unit": "km"
+    },
+    "Chile": {
+      "value": 127,
+      "unit": "km"
+    },
+    "Czech Republic": {
+      "value": 1005,
+      "unit": "km"
+    },
+    "Portugal": {
+      "value": 498,
+      "unit": "km"
+    },
+    "Hungary": {
+      "value": 166,
+      "unit": "km"
+    },
+    "Israel": {
+      "value": 85,
+      "unit": "km"
+    },
+    "Serbia": {
+      "value": 388,
+      "unit": "km"
+    },
+    "Norway": {
+      "value": 333,
+      "unit": "km"
+    },
+    "Latvia": {
+      "value": 870,
+      "unit": "km"
+    },
+    "Bahrain": {
+      "value": 180,
+      "unit": "km"
+    },
+    "Estonia": {
+      "value": 870,
+      "unit": "km"
+    }
+  }
+}

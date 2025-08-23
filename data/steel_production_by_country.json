@@ -1,0 +1,180 @@
+{
+  "title": "Steel Production by Country",
+  "description": "Crude steel production in million metric tons, 2024",
+  "unit": "million tons",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_steel_production",
+  "data": {
+    "China": {
+      "value": 1005.1,
+      "unit": "million tons"
+    },
+    "India": {
+      "value": 149.6,
+      "unit": "million tons"
+    },
+    "Japan": {
+      "value": 84.0,
+      "unit": "million tons"
+    },
+    "United States": {
+      "value": 79.4,
+      "unit": "million tons"
+    },
+    "Russia": {
+      "value": 70.7,
+      "unit": "million tons"
+    },
+    "South Korea": {
+      "value": 63.5,
+      "unit": "million tons"
+    },
+    "Germany": {
+      "value": 37.2,
+      "unit": "million tons"
+    },
+    "Turkey": {
+      "value": 36.9,
+      "unit": "million tons"
+    },
+    "Brazil": {
+      "value": 33.7,
+      "unit": "million tons"
+    },
+    "Iran": {
+      "value": 30.9,
+      "unit": "million tons"
+    },
+    "Vietnam": {
+      "value": 22.1,
+      "unit": "million tons"
+    },
+    "Italy": {
+      "value": 20.0,
+      "unit": "million tons"
+    },
+    "Taiwan": {
+      "value": 19.1,
+      "unit": "million tons"
+    },
+    "Indonesia": {
+      "value": 17.0,
+      "unit": "million tons"
+    },
+    "Mexico": {
+      "value": 13.7,
+      "unit": "million tons"
+    },
+    "Canada": {
+      "value": 12.2,
+      "unit": "million tons"
+    },
+    "Spain": {
+      "value": 11.8,
+      "unit": "million tons"
+    },
+    "France": {
+      "value": 10.8,
+      "unit": "million tons"
+    },
+    "Egypt": {
+      "value": 10.7,
+      "unit": "million tons"
+    },
+    "Saudi Arabia": {
+      "value": 9.6,
+      "unit": "million tons"
+    },
+    "Malaysia": {
+      "value": 8.8,
+      "unit": "million tons"
+    },
+    "Ukraine": {
+      "value": 7.6,
+      "unit": "million tons"
+    },
+    "Austria": {
+      "value": 7.1,
+      "unit": "million tons"
+    },
+    "Belgium": {
+      "value": 7.1,
+      "unit": "million tons"
+    },
+    "Poland": {
+      "value": 7.1,
+      "unit": "million tons"
+    },
+    "Netherlands": {
+      "value": 6.4,
+      "unit": "million tons"
+    },
+    "Thailand": {
+      "value": 4.9,
+      "unit": "million tons"
+    },
+    "Australia": {
+      "value": 4.8,
+      "unit": "million tons"
+    },
+    "South Africa": {
+      "value": 4.7,
+      "unit": "million tons"
+    },
+    "Algeria": {
+      "value": 4.5,
+      "unit": "million tons"
+    },
+    "Bangladesh": {
+      "value": 4.5,
+      "unit": "million tons"
+    },
+    "Kazakhstan": {
+      "value": 4.2,
+      "unit": "million tons"
+    },
+    "Pakistan": {
+      "value": 4.1,
+      "unit": "million tons"
+    },
+    "Sweden": {
+      "value": 4.0,
+      "unit": "million tons"
+    },
+    "United Kingdom": {
+      "value": 4.0,
+      "unit": "million tons"
+    },
+    "Slovakia": {
+      "value": 3.9,
+      "unit": "million tons"
+    },
+    "Argentina": {
+      "value": 3.9,
+      "unit": "million tons"
+    },
+    "United Arab Emirates": {
+      "value": 3.7,
+      "unit": "million tons"
+    },
+    "Finland": {
+      "value": 3.7,
+      "unit": "million tons"
+    },
+    "Oman": {
+      "value": 3.0,
+      "unit": "million tons"
+    },
+    "Iraq": {
+      "value": 3.0,
+      "unit": "million tons"
+    },
+    "Czech Republic": {
+      "value": 2.5,
+      "unit": "million tons"
+    },
+    "Belarus": {
+      "value": 2.3,
+      "unit": "million tons"
+    }
+  }
+}

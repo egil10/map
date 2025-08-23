@@ -1,0 +1,380 @@
+{
+  "title": "Oil Production by Country",
+  "description": "Oil production in barrels per day, December 2024",
+  "unit": "bbl/day",
+  "source": "https://www.example.com/oil-production-data",
+  "data": {
+    "United States": {
+      "value": 13401000,
+      "unit": "bbl/day"
+    },
+    "Saudi Arabia": {
+      "value": 10815700,
+      "unit": "bbl/day"
+    },
+    "Russia": {
+      "value": 10750000,
+      "unit": "bbl/day"
+    },
+    "Canada": {
+      "value": 5500000,
+      "unit": "bbl/day"
+    },
+    "China": {
+      "value": 4715000,
+      "unit": "bbl/day"
+    },
+    "Iraq": {
+      "value": 4162000,
+      "unit": "bbl/day"
+    },
+    "Iran": {
+      "value": 4084000,
+      "unit": "bbl/day"
+    },
+    "United Arab Emirates": {
+      "value": 3770000,
+      "unit": "bbl/day"
+    },
+    "Brazil": {
+      "value": 3630000,
+      "unit": "bbl/day"
+    },
+    "Kuwait": {
+      "value": 2720000,
+      "unit": "bbl/day"
+    },
+    "Norway": {
+      "value": 2026000,
+      "unit": "bbl/day"
+    },
+    "Mexico": {
+      "value": 1905500,
+      "unit": "bbl/day"
+    },
+    "Kazakhstan": {
+      "value": 1897000,
+      "unit": "bbl/day"
+    },
+    "Qatar": {
+      "value": 1815100,
+      "unit": "bbl/day"
+    },
+    "United Kingdom": {
+      "value": 1790000,
+      "unit": "bbl/day"
+    },
+    "Nigeria": {
+      "value": 1647000,
+      "unit": "bbl/day"
+    },
+    "Algeria": {
+      "value": 1415000,
+      "unit": "bbl/day"
+    },
+    "Libya": {
+      "value": 1255000,
+      "unit": "bbl/day"
+    },
+    "Angola": {
+      "value": 1235000,
+      "unit": "bbl/day"
+    },
+    "Oman": {
+      "value": 1040000,
+      "unit": "bbl/day"
+    },
+    "Venezuela": {
+      "value": 943000,
+      "unit": "bbl/day"
+    },
+    "Indonesia": {
+      "value": 845000,
+      "unit": "bbl/day"
+    },
+    "India": {
+      "value": 772000,
+      "unit": "bbl/day"
+    },
+    "Colombia": {
+      "value": 765500,
+      "unit": "bbl/day"
+    },
+    "Azerbaijan": {
+      "value": 712000,
+      "unit": "bbl/day"
+    },
+    "Argentina": {
+      "value": 700000,
+      "unit": "bbl/day"
+    },
+    "Egypt": {
+      "value": 661000,
+      "unit": "bbl/day"
+    },
+    "Guyana": {
+      "value": 645000,
+      "unit": "bbl/day"
+    },
+    "Malaysia": {
+      "value": 600000,
+      "unit": "bbl/day"
+    },
+    "Ecuador": {
+      "value": 486000,
+      "unit": "bbl/day"
+    },
+    "Australia": {
+      "value": 445000,
+      "unit": "bbl/day"
+    },
+    "Thailand": {
+      "value": 440000,
+      "unit": "bbl/day"
+    },
+    "Congo": {
+      "value": 275000,
+      "unit": "bbl/day"
+    },
+    "Turkmenistan": {
+      "value": 270000,
+      "unit": "bbl/day"
+    },
+    "Gabon": {
+      "value": 226000,
+      "unit": "bbl/day"
+    },
+    "Sudan": {
+      "value": 200000,
+      "unit": "bbl/day"
+    },
+    "Vietnam": {
+      "value": 190000,
+      "unit": "bbl/day"
+    },
+    "Ghana": {
+      "value": 186000,
+      "unit": "bbl/day"
+    },
+    "South Sudan": {
+      "value": 160000,
+      "unit": "bbl/day"
+    },
+    "Italy": {
+      "value": 150000,
+      "unit": "bbl/day"
+    },
+    "Chad": {
+      "value": 140000,
+      "unit": "bbl/day"
+    },
+    "Germany": {
+      "value": 135000,
+      "unit": "bbl/day"
+    },
+    "Peru": {
+      "value": 123000,
+      "unit": "bbl/day"
+    },
+    "Pakistan": {
+      "value": 101000,
+      "unit": "bbl/day"
+    },
+    "South Africa": {
+      "value": 100000,
+      "unit": "bbl/day"
+    },
+    "Syria": {
+      "value": 95000,
+      "unit": "bbl/day"
+    },
+    "Turkey": {
+      "value": 89000,
+      "unit": "bbl/day"
+    },
+    "France": {
+      "value": 82000,
+      "unit": "bbl/day"
+    },
+    "Netherlands": {
+      "value": 76100,
+      "unit": "bbl/day"
+    },
+    "Romania": {
+      "value": 75000,
+      "unit": "bbl/day"
+    },
+    "Yemen": {
+      "value": 70200,
+      "unit": "bbl/day"
+    },
+    "Denmark": {
+      "value": 70000,
+      "unit": "bbl/day"
+    },
+    "Uzbekistan": {
+      "value": 67000,
+      "unit": "bbl/day"
+    },
+    "Bolivia": {
+      "value": 66000,
+      "unit": "bbl/day"
+    },
+    "Cameroon": {
+      "value": 65000,
+      "unit": "bbl/day"
+    },
+    "Ukraine": {
+      "value": 60000,
+      "unit": "bbl/day"
+    },
+    "Spain": {
+      "value": 50000,
+      "unit": "bbl/day"
+    },
+    "Tunisia": {
+      "value": 45000,
+      "unit": "bbl/day"
+    },
+    "Cuba": {
+      "value": 40000,
+      "unit": "bbl/day"
+    },
+    "South Korea": {
+      "value": 38000,
+      "unit": "bbl/day"
+    },
+    "Belarus": {
+      "value": 35000,
+      "unit": "bbl/day"
+    },
+    "Ivory Coast": {
+      "value": 35000,
+      "unit": "bbl/day"
+    },
+    "Hungary": {
+      "value": 35000,
+      "unit": "bbl/day"
+    },
+    "Papua New Guinea": {
+      "value": 31000,
+      "unit": "bbl/day"
+    },
+    "Senegal": {
+      "value": 30000,
+      "unit": "bbl/day"
+    },
+    "Poland": {
+      "value": 28500,
+      "unit": "bbl/day"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 22000,
+      "unit": "bbl/day"
+    },
+    "Austria": {
+      "value": 20000,
+      "unit": "bbl/day"
+    },
+    "Mongolia": {
+      "value": 17000,
+      "unit": "bbl/day"
+    },
+    "Israel": {
+      "value": 15000,
+      "unit": "bbl/day"
+    },
+    "Suriname": {
+      "value": 15000,
+      "unit": "bbl/day"
+    },
+    "Albania": {
+      "value": 14000,
+      "unit": "bbl/day"
+    },
+    "New Zealand": {
+      "value": 14000,
+      "unit": "bbl/day"
+    },
+    "Serbia": {
+      "value": 13000,
+      "unit": "bbl/day"
+    },
+    "Philippines": {
+      "value": 10500,
+      "unit": "bbl/day"
+    },
+    "Croatia": {
+      "value": 10000,
+      "unit": "bbl/day"
+    },
+    "Myanmar": {
+      "value": 8000,
+      "unit": "bbl/day"
+    },
+    "Kyrgyzstan": {
+      "value": 6200,
+      "unit": "bbl/day"
+    },
+    "Guatemala": {
+      "value": 6000,
+      "unit": "bbl/day"
+    },
+    "Niger": {
+      "value": 6000,
+      "unit": "bbl/day"
+    },
+    "Japan": {
+      "value": 3500,
+      "unit": "bbl/day"
+    },
+    "Bangladesh": {
+      "value": 3000,
+      "unit": "bbl/day"
+    },
+    "Chile": {
+      "value": 2300,
+      "unit": "bbl/day"
+    },
+    "Greece": {
+      "value": 1500,
+      "unit": "bbl/day"
+    },
+    "Czech Republic": {
+      "value": 1400,
+      "unit": "bbl/day"
+    },
+    "Bulgaria": {
+      "value": 1000,
+      "unit": "bbl/day"
+    },
+    "Belize": {
+      "value": 800,
+      "unit": "bbl/day"
+    },
+    "Lithuania": {
+      "value": 700,
+      "unit": "bbl/day"
+    },
+    "Tajikistan": {
+      "value": 300,
+      "unit": "bbl/day"
+    },
+    "Georgia": {
+      "value": 200,
+      "unit": "bbl/day"
+    },
+    "Taiwan": {
+      "value": 200,
+      "unit": "bbl/day"
+    },
+    "Jordan": {
+      "value": 100,
+      "unit": "bbl/day"
+    },
+    "Slovakia": {
+      "value": 100,
+      "unit": "bbl/day"
+    }
+  }
+}

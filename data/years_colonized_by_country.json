@@ -1,0 +1,516 @@
+{
+  "title": "Years a Country was an European Overseas Colony",
+  "description": "Total number of years current countries were colonized by European powers (United Kingdom, France, Spain, Portugal, Netherlands, Germany, Italy), 1462–2022",
+  "unit": "years",
+  "source": "https://ourworldindata.org/grapher/years-colonized?tab=table",
+  "data": {
+    "Cape Verde": {
+      "value": 514,
+      "unit": "years"
+    },
+    "Belize": {
+      "value": 458,
+      "unit": "years"
+    },
+    "Jamaica": {
+      "value": 454,
+      "unit": "years"
+    },
+    "Sao Tome and Principe": {
+      "value": 454,
+      "unit": "years"
+    },
+    "Ghana": {
+      "value": 426,
+      "unit": "years"
+    },
+    "Angola": {
+      "value": 400,
+      "unit": "years"
+    },
+    "Cuba": {
+      "value": 389,
+      "unit": "years"
+    },
+    "Guyana": {
+      "value": 387,
+      "unit": "years"
+    },
+    "Dominican Republic": {
+      "value": 371,
+      "unit": "years"
+    },
+    "Trinidad and Tobago": {
+      "value": 371,
+      "unit": "years"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 361,
+      "unit": "years"
+    },
+    "Antigua and Barbuda": {
+      "value": 350,
+      "unit": "years"
+    },
+    "Barbados": {
+      "value": 340,
+      "unit": "years"
+    },
+    "Indonesia": {
+      "value": 340,
+      "unit": "years"
+    },
+    "East Timor": {
+      "value": 334,
+      "unit": "years"
+    },
+    "Philippines": {
+      "value": 334,
+      "unit": "years"
+    },
+    "Saint Lucia": {
+      "value": 330,
+      "unit": "years"
+    },
+    "Grenada": {
+      "value": 325,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 312,
+      "unit": "years"
+    },
+    "Suriname": {
+      "value": 308,
+      "unit": "years"
+    },
+    "Dominica": {
+      "value": 306,
+      "unit": "years"
+    },
+    "Panama": {
+      "value": 303,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 301,
+      "unit": "years"
+    },
+    "Costa Rica": {
+      "value": 298,
+      "unit": "years"
+    },
+    "Guatemala": {
+      "value": 298,
+      "unit": "years"
+    },
+    "Honduras": {
+      "value": 298,
+      "unit": "years"
+    },
+    "Nicaragua": {
+      "value": 298,
+      "unit": "years"
+    },
+    "Colombia": {
+      "value": 296,
+      "unit": "years"
+    },
+    "Ecuador": {
+      "value": 295,
+      "unit": "years"
+    },
+    "El Salvador": {
+      "value": 294,
+      "unit": "years"
+    },
+    "Peru": {
+      "value": 292,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 290,
+      "unit": "years"
+    },
+    "Chile": {
+      "value": 278,
+      "unit": "years"
+    },
+    "Paraguay": {
+      "value": 275,
+      "unit": "years"
+    },
+    "Bolivia": {
+      "value": 267,
+      "unit": "years"
+    },
+    "Venezuela": {
+      "value": 266,
+      "unit": "years"
+    },
+    "South Africa": {
+      "value": 262,
+      "unit": "years"
+    },
+    "Mauritius": {
+      "value": 254,
+      "unit": "years"
+    },
+    "Micronesia": {
+      "value": 250,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 240,
+      "unit": "years"
+    },
+    "Senegal": {
+      "value": 232,
+      "unit": "years"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 218,
+      "unit": "years"
+    },
+    "Malaysia": {
+      "value": 207,
+      "unit": "years"
+    },
+    "Uruguay": {
+      "value": 204,
+      "unit": "years"
+    },
+    "Seychelles": {
+      "value": 202,
+      "unit": "years"
+    },
+    "Bahamas": {
+      "value": 191,
+      "unit": "years"
+    },
+    "Sri Lanka": {
+      "value": 189,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 177,
+      "unit": "years"
+    },
+    "Equatorial Guinea": {
+      "value": 143,
+      "unit": "years"
+    },
+    "Haiti": {
+      "value": 140,
+      "unit": "years"
+    },
+    "Singapore": {
+      "value": 138,
+      "unit": "years"
+    },
+    "Algeria": {
+      "value": 115,
+      "unit": "years"
+    },
+    "Bahrain": {
+      "value": 111,
+      "unit": "years"
+    },
+    "Brunei": {
+      "value": 97,
+      "unit": "years"
+    },
+    "Fiji": {
+      "value": 97,
+      "unit": "years"
+    },
+    "Guinea-Bissau": {
+      "value": 96,
+      "unit": "years"
+    },
+    "Djibouti": {
+      "value": 94,
+      "unit": "years"
+    },
+    "Solomon Islands": {
+      "value": 94,
+      "unit": "years"
+    },
+    "Vanuatu": {
+      "value": 94,
+      "unit": "years"
+    },
+    "Morocco": {
+      "value": 92,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 91,
+      "unit": "years"
+    },
+    "Bangladesh": {
+      "value": 91,
+      "unit": "years"
+    },
+    "India": {
+      "value": 91,
+      "unit": "years"
+    },
+    "Mozambique": {
+      "value": 91,
+      "unit": "years"
+    },
+    "Pakistan": {
+      "value": 91,
+      "unit": "years"
+    },
+    "Kiribati": {
+      "value": 88,
+      "unit": "years"
+    },
+    "Tuvalu": {
+      "value": 88,
+      "unit": "years"
+    },
+    "Lesotho": {
+      "value": 83,
+      "unit": "years"
+    },
+    "Nauru": {
+      "value": 81,
+      "unit": "years"
+    },
+    "New Zealand": {
+      "value": 81,
+      "unit": "years"
+    },
+    "United Arab Emirates": {
+      "value": 80,
+      "unit": "years"
+    },
+    "Congo": {
+      "value": 79,
+      "unit": "years"
+    },
+    "Maldives": {
+      "value": 79,
+      "unit": "years"
+    },
+    "Gambia": {
+      "value": 78,
+      "unit": "years"
+    },
+    "Guinea": {
+      "value": 78,
+      "unit": "years"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 76,
+      "unit": "years"
+    },
+    "Tunisia": {
+      "value": 76,
+      "unit": "years"
+    },
+    "Gabon": {
+      "value": 75,
+      "unit": "years"
+    },
+    "Malawi": {
+      "value": 74,
+      "unit": "years"
+    },
+    "Somalia": {
+      "value": 73,
+      "unit": "years"
+    },
+    "Tanzania": {
+      "value": 73,
+      "unit": "years"
+    },
+    "Botswana": {
+      "value": 72,
+      "unit": "years"
+    },
+    "Cameroon": {
+      "value": 72,
+      "unit": "years"
+    },
+    "Ivory Coast": {
+      "value": 72,
+      "unit": "years"
+    },
+    "Togo": {
+      "value": 71,
+      "unit": "years"
+    },
+    "Tonga": {
+      "value": 71,
+      "unit": "years"
+    },
+    "Cambodia": {
+      "value": 70,
+      "unit": "years"
+    },
+    "Kenya": {
+      "value": 69,
+      "unit": "years"
+    },
+    "Uganda": {
+      "value": 69,
+      "unit": "years"
+    },
+    "Vietnam": {
+      "value": 68,
+      "unit": "years"
+    },
+    "Benin": {
+      "value": 67,
+      "unit": "years"
+    },
+    "Burkina Faso": {
+      "value": 66,
+      "unit": "years"
+    },
+    "Eswatini": {
+      "value": 66,
+      "unit": "years"
+    },
+    "Madagascar": {
+      "value": 66,
+      "unit": "years"
+    },
+    "Sierra Leone": {
+      "value": 66,
+      "unit": "years"
+    },
+    "Burundi": {
+      "value": 64,
+      "unit": "years"
+    },
+    "Myanmar": {
+      "value": 63,
+      "unit": "years"
+    },
+    "Comoros": {
+      "value": 62,
+      "unit": "years"
+    },
+    "Eritrea": {
+      "value": 62,
+      "unit": "years"
+    },
+    "Laos": {
+      "value": 62,
+      "unit": "years"
+    },
+    "Nigeria": {
+      "value": 62,
+      "unit": "years"
+    },
+    "Sudan": {
+      "value": 59,
+      "unit": "years"
+    },
+    "Mauritania": {
+      "value": 58,
+      "unit": "years"
+    },
+    "Rwanda": {
+      "value": 58,
+      "unit": "years"
+    },
+    "Zimbabwe": {
+      "value": 58,
+      "unit": "years"
+    },
+    "Mali": {
+      "value": 57,
+      "unit": "years"
+    },
+    "Qatar": {
+      "value": 56,
+      "unit": "years"
+    },
+    "Central African Republic": {
+      "value": 55,
+      "unit": "years"
+    },
+    "Egypt": {
+      "value": 54,
+      "unit": "years"
+    },
+    "Chad": {
+      "value": 51,
+      "unit": "years"
+    },
+    "Kuwait": {
+      "value": 48,
+      "unit": "years"
+    },
+    "Cyprus": {
+      "value": 47,
+      "unit": "years"
+    },
+    "Zambia": {
+      "value": 42,
+      "unit": "years"
+    },
+    "Bhutan": {
+      "value": 40,
+      "unit": "years"
+    },
+    "Niger": {
+      "value": 39,
+      "unit": "years"
+    },
+    "Libya": {
+      "value": 38,
+      "unit": "years"
+    },
+    "Papua New Guinea": {
+      "value": 37,
+      "unit": "years"
+    },
+    "Namibia": {
+      "value": 36,
+      "unit": "years"
+    },
+    "Marshall Islands": {
+      "value": 30,
+      "unit": "years"
+    },
+    "Palau": {
+      "value": 30,
+      "unit": "years"
+    },
+    "Israel": {
+      "value": 26,
+      "unit": "years"
+    },
+    "Jordan": {
+      "value": 24,
+      "unit": "years"
+    },
+    "Lebanon": {
+      "value": 24,
+      "unit": "years"
+    },
+    "Syria": {
+      "value": 24,
+      "unit": "years"
+    },
+    "Samoa": {
+      "value": 21,
+      "unit": "years"
+    },
+    "Iraq": {
+      "value": 13,
+      "unit": "years"
+    },
+    "Yemen": {
+      "value": 9,
+      "unit": "years"
+    }
+  }
+}

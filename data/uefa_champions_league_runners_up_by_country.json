@@ -1,0 +1,60 @@
+{
+  "title": "UEFA Champions League Runners-Up by Country",
+  "description": "Number of UEFA Champions League and European Cup runner-up finishes by clubs from each nation, 1955-2025",
+  "unit": "runner-up finishes",
+  "source": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics",
+  "data": {
+    "Italy": {
+      "value": 18,
+      "unit": "runner-up finishes"
+    },
+    "Spain": {
+      "value": 11,
+      "unit": "runner-up finishes"
+    },
+    "England": {
+      "value": 11,
+      "unit": "runner-up finishes"
+    },
+    "Germany": {
+      "value": 11,
+      "unit": "runner-up finishes"
+    },
+    "France": {
+      "value": 6,
+      "unit": "runner-up finishes"
+    },
+    "Portugal": {
+      "value": 5,
+      "unit": "runner-up finishes"
+    },
+    "Netherlands": {
+      "value": 2,
+      "unit": "runner-up finishes"
+    },
+    "Yugoslavia": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    },
+    "Romania": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    },
+    "Scotland": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    },
+    "Greece": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    },
+    "Belgium": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    },
+    "Sweden": {
+      "value": 1,
+      "unit": "runner-up finishes"
+    }
+  }
+}

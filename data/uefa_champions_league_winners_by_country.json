@@ -1,0 +1,48 @@
+{
+  "title": "UEFA Champions League Winners by Country",
+  "description": "Number of UEFA Champions League and European Cup titles won by clubs from each nation, 1955-2025",
+  "unit": "titles",
+  "source": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics",
+  "data": {
+    "Spain": {
+      "value": 20,
+      "unit": "titles"
+    },
+    "England": {
+      "value": 15,
+      "unit": "titles"
+    },
+    "Italy": {
+      "value": 12,
+      "unit": "titles"
+    },
+    "Germany": {
+      "value": 8,
+      "unit": "titles"
+    },
+    "Netherlands": {
+      "value": 6,
+      "unit": "titles"
+    },
+    "Portugal": {
+      "value": 4,
+      "unit": "titles"
+    },
+    "France": {
+      "value": 2,
+      "unit": "titles"
+    },
+    "Yugoslavia": {
+      "value": 1,
+      "unit": "titles"
+    },
+    "Romania": {
+      "value": 1,
+      "unit": "titles"
+    },
+    "Scotland": {
+      "value": 1,
+      "unit": "titles"
+    }
+  }
+}

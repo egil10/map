@@ -1,0 +1,440 @@
+{
+  "title": "Stock Market Capitalization by Country",
+  "description": "Total market capitalization of domestic companies in millions of US dollars, latest available data",
+  "unit": "million USD",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_stock_market_capitalization",
+  "data": {
+    "United States": {
+      "value": 62185685,
+      "unit": "million USD"
+    },
+    "China": {
+      "value": 11870548,
+      "unit": "million USD"
+    },
+    "Japan": {
+      "value": 6358159,
+      "unit": "million USD"
+    },
+    "India": {
+      "value": 5320626,
+      "unit": "million USD"
+    },
+    "Canada": {
+      "value": 3499751,
+      "unit": "million USD"
+    },
+    "France": {
+      "value": 3421737,
+      "unit": "million USD"
+    },
+    "United Kingdom": {
+      "value": 3182091,
+      "unit": "million USD"
+    },
+    "Saudi Arabia": {
+      "value": 2667273,
+      "unit": "million USD"
+    },
+    "Taiwan": {
+      "value": 2251495,
+      "unit": "million USD"
+    },
+    "Germany": {
+      "value": 2044249,
+      "unit": "million USD"
+    },
+    "Switzerland": {
+      "value": 1881413,
+      "unit": "million USD"
+    },
+    "Australia": {
+      "value": 1878429,
+      "unit": "million USD"
+    },
+    "Iran": {
+      "value": 1743023,
+      "unit": "million USD"
+    },
+    "South Korea": {
+      "value": 1680766,
+      "unit": "million USD"
+    },
+    "Netherlands": {
+      "value": 1644047,
+      "unit": "million USD"
+    },
+    "Spain": {
+      "value": 1357381,
+      "unit": "million USD"
+    },
+    "Sweden": {
+      "value": 1109657,
+      "unit": "million USD"
+    },
+    "United Arab Emirates": {
+      "value": 1048490,
+      "unit": "million USD"
+    },
+    "South Africa": {
+      "value": 985697,
+      "unit": "million USD"
+    },
+    "Italy": {
+      "value": 747439,
+      "unit": "million USD"
+    },
+    "Brazil": {
+      "value": 704236,
+      "unit": "million USD"
+    },
+    "Belgium": {
+      "value": 689117,
+      "unit": "million USD"
+    },
+    "Indonesia": {
+      "value": 661308,
+      "unit": "million USD"
+    },
+    "Russia": {
+      "value": 650488,
+      "unit": "million USD"
+    },
+    "Singapore": {
+      "value": 644807,
+      "unit": "million USD"
+    },
+    "Denmark": {
+      "value": 642539,
+      "unit": "million USD"
+    },
+    "Thailand": {
+      "value": 519672,
+      "unit": "million USD"
+    },
+    "Mexico": {
+      "value": 451056,
+      "unit": "million USD"
+    },
+    "Malaysia": {
+      "value": 405860,
+      "unit": "million USD"
+    },
+    "Turkey": {
+      "value": 366750,
+      "unit": "million USD"
+    },
+    "Norway": {
+      "value": 351244,
+      "unit": "million USD"
+    },
+    "Israel": {
+      "value": 350900,
+      "unit": "million USD"
+    },
+    "Philippines": {
+      "value": 324833,
+      "unit": "million USD"
+    },
+    "Finland": {
+      "value": 278027,
+      "unit": "million USD"
+    },
+    "Chile": {
+      "value": 262011,
+      "unit": "million USD"
+    },
+    "Vietnam": {
+      "value": 220052,
+      "unit": "million USD"
+    },
+    "Poland": {
+      "value": 197361,
+      "unit": "million USD"
+    },
+    "Qatar": {
+      "value": 168527,
+      "unit": "million USD"
+    },
+    "Ireland": {
+      "value": 157585,
+      "unit": "million USD"
+    },
+    "Kuwait": {
+      "value": 155475,
+      "unit": "million USD"
+    },
+    "Austria": {
+      "value": 146839,
+      "unit": "million USD"
+    },
+    "New Zealand": {
+      "value": 92867,
+      "unit": "million USD"
+    },
+    "Portugal": {
+      "value": 89222,
+      "unit": "million USD"
+    },
+    "Bangladesh": {
+      "value": 87942,
+      "unit": "million USD"
+    },
+    "Morocco": {
+      "value": 86586,
+      "unit": "million USD"
+    },
+    "Greece": {
+      "value": 83199,
+      "unit": "million USD"
+    },
+    "Peru": {
+      "value": 82196,
+      "unit": "million USD"
+    },
+    "Romania": {
+      "value": 77188,
+      "unit": "million USD"
+    },
+    "Colombia": {
+      "value": 72638,
+      "unit": "million USD"
+    },
+    "Kazakhstan": {
+      "value": 63851,
+      "unit": "million USD"
+    },
+    "Oman": {
+      "value": 58932,
+      "unit": "million USD"
+    },
+    "Argentina": {
+      "value": 52948,
+      "unit": "million USD"
+    },
+    "Pakistan": {
+      "value": 49986,
+      "unit": "million USD"
+    },
+    "Hungary": {
+      "value": 45508,
+      "unit": "million USD"
+    },
+    "Nigeria": {
+      "value": 45036,
+      "unit": "million USD"
+    },
+    "Egypt": {
+      "value": 44801,
+      "unit": "million USD"
+    },
+    "Luxembourg": {
+      "value": 41862,
+      "unit": "million USD"
+    },
+    "Nepal": {
+      "value": 33645,
+      "unit": "million USD"
+    },
+    "Czech Republic": {
+      "value": 34621,
+      "unit": "million USD"
+    },
+    "Croatia": {
+      "value": 30586,
+      "unit": "million USD"
+    },
+    "Jordan": {
+      "value": 26784,
+      "unit": "million USD"
+    },
+    "Lebanon": {
+      "value": 24447,
+      "unit": "million USD"
+    },
+    "Iceland": {
+      "value": 21480,
+      "unit": "million USD"
+    },
+    "Bahrain": {
+      "value": 20188,
+      "unit": "million USD"
+    },
+    "Sri Lanka": {
+      "value": 19689,
+      "unit": "million USD"
+    },
+    "Uzbekistan": {
+      "value": 18744,
+      "unit": "million USD"
+    },
+    "Panama": {
+      "value": 18288,
+      "unit": "million USD"
+    },
+    "Ivory Coast": {
+      "value": 16234,
+      "unit": "million USD"
+    },
+    "Kenya": {
+      "value": 16071,
+      "unit": "million USD"
+    },
+    "Slovenia": {
+      "value": 14094,
+      "unit": "million USD"
+    },
+    "Jamaica": {
+      "value": 12429,
+      "unit": "million USD"
+    },
+    "Tunisia": {
+      "value": 8836,
+      "unit": "million USD"
+    },
+    "Ecuador": {
+      "value": 8340,
+      "unit": "million USD"
+    },
+    "Ghana": {
+      "value": 8231,
+      "unit": "million USD"
+    },
+    "Zambia": {
+      "value": 7765,
+      "unit": "million USD"
+    },
+    "Tanzania": {
+      "value": 7320,
+      "unit": "million USD"
+    },
+    "Mauritius": {
+      "value": 7052,
+      "unit": "million USD"
+    },
+    "Bulgaria": {
+      "value": 6501,
+      "unit": "million USD"
+    },
+    "Cyprus": {
+      "value": 6264,
+      "unit": "million USD"
+    },
+    "North Macedonia": {
+      "value": 6111,
+      "unit": "million USD"
+    },
+    "Belarus": {
+      "value": 6011,
+      "unit": "million USD"
+    },
+    "Estonia": {
+      "value": 5745,
+      "unit": "million USD"
+    },
+    "Lithuania": {
+      "value": 5477,
+      "unit": "million USD"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 5293,
+      "unit": "million USD"
+    },
+    "Armenia": {
+      "value": 4847,
+      "unit": "million USD"
+    },
+    "Ukraine": {
+      "value": 4415,
+      "unit": "million USD"
+    },
+    "Malta": {
+      "value": 4288,
+      "unit": "million USD"
+    },
+    "Serbia": {
+      "value": 4208,
+      "unit": "million USD"
+    },
+    "Palestine": {
+      "value": 4019,
+      "unit": "million USD"
+    },
+    "Montenegro": {
+      "value": 3919,
+      "unit": "million USD"
+    },
+    "Botswana": {
+      "value": 3897,
+      "unit": "million USD"
+    },
+    "Algeria": {
+      "value": 3889,
+      "unit": "million USD"
+    },
+    "Malawi": {
+      "value": 3600,
+      "unit": "million USD"
+    },
+    "Mozambique": {
+      "value": 3203,
+      "unit": "million USD"
+    },
+    "Rwanda": {
+      "value": 2755,
+      "unit": "million USD"
+    },
+    "Georgia": {
+      "value": 2608,
+      "unit": "million USD"
+    },
+    "Slovakia": {
+      "value": 2507,
+      "unit": "million USD"
+    },
+    "Namibia": {
+      "value": 2480,
+      "unit": "million USD"
+    },
+    "Costa Rica": {
+      "value": 2232,
+      "unit": "million USD"
+    },
+    "Kyrgyzstan": {
+      "value": 1847,
+      "unit": "million USD"
+    },
+    "Azerbaijan": {
+      "value": 1635,
+      "unit": "million USD"
+    },
+    "Syria": {
+      "value": 1400,
+      "unit": "million USD"
+    },
+    "Seychelles": {
+      "value": 811,
+      "unit": "million USD"
+    },
+    "Latvia": {
+      "value": 408,
+      "unit": "million USD"
+    },
+    "Myanmar": {
+      "value": 325,
+      "unit": "million USD"
+    },
+    "Sudan": {
+      "value": 231,
+      "unit": "million USD"
+    },
+    "Laos": {
+      "value": 83,
+      "unit": "million USD"
+    },
+    "Mongolia": {
+      "value": 0.388,
+      "unit": "million USD"
+    }
+  }
+}

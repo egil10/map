@@ -1,0 +1,488 @@
+{
+  "title": "English-Speaking Population by Country",
+  "description": "Percentage of population speaking English, latest available data",
+  "unit": "%",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population",
+  "data": {
+    "United States": {
+      "value": 95.88,
+      "unit": "%"
+    },
+    "India": {
+      "value": 15.76,
+      "unit": "%"
+    },
+    "Nigeria": {
+      "value": 60.64,
+      "unit": "%"
+    },
+    "Pakistan": {
+      "value": 48.91,
+      "unit": "%"
+    },
+    "United Kingdom": {
+      "value": 98.28,
+      "unit": "%"
+    },
+    "Philippines": {
+      "value": 63.74,
+      "unit": "%"
+    },
+    "Germany": {
+      "value": 55.73,
+      "unit": "%"
+    },
+    "Uganda": {
+      "value": 45.00,
+      "unit": "%"
+    },
+    "France": {
+      "value": 57.25,
+      "unit": "%"
+    },
+    "Canada": {
+      "value": 83.06,
+      "unit": "%"
+    },
+    "Egypt": {
+      "value": 39.98,
+      "unit": "%"
+    },
+    "Australia": {
+      "value": 91.10,
+      "unit": "%"
+    },
+    "Bangladesh": {
+      "value": 6.53,
+      "unit": "%"
+    },
+    "Poland": {
+      "value": 50.00,
+      "unit": "%"
+    },
+    "Ghana": {
+      "value": 67.19,
+      "unit": "%"
+    },
+    "Thailand": {
+      "value": 27.16,
+      "unit": "%"
+    },
+    "Ukraine": {
+      "value": 51.00,
+      "unit": "%"
+    },
+    "Italy": {
+      "value": 13.74,
+      "unit": "%"
+    },
+    "South Africa": {
+      "value": 27.93,
+      "unit": "%"
+    },
+    "Mexico": {
+      "value": 12.90,
+      "unit": "%"
+    },
+    "Malaysia": {
+      "value": 62.57,
+      "unit": "%"
+    },
+    "Indonesia": {
+      "value": 30.80,
+      "unit": "%"
+    },
+    "Afghanistan": {
+      "value": 6.00,
+      "unit": "%"
+    },
+    "Netherlands": {
+      "value": 90.90,
+      "unit": "%"
+    },
+    "Turkey": {
+      "value": 17.00,
+      "unit": "%"
+    },
+    "Zimbabwe": {
+      "value": 90.00,
+      "unit": "%"
+    },
+    "Iraq": {
+      "value": 35.00,
+      "unit": "%"
+    },
+    "Brazil": {
+      "value": 5.00,
+      "unit": "%"
+    },
+    "Spain": {
+      "value": 22.00,
+      "unit": "%"
+    },
+    "China": {
+      "value": 0.90,
+      "unit": "%"
+    },
+    "Sweden": {
+      "value": 89.00,
+      "unit": "%"
+    },
+    "Kenya": {
+      "value": 78.68,
+      "unit": "%"
+    },
+    "Cameroon": {
+      "value": 38.00,
+      "unit": "%"
+    },
+    "Morocco": {
+      "value": 18.30,
+      "unit": "%"
+    },
+    "Belgium": {
+      "value": 60.00,
+      "unit": "%"
+    },
+    "Israel": {
+      "value": 84.97,
+      "unit": "%"
+    },
+    "Austria": {
+      "value": 73.00,
+      "unit": "%"
+    },
+    "Romania": {
+      "value": 31.00,
+      "unit": "%"
+    },
+    "Hungary": {
+      "value": 25.29,
+      "unit": "%"
+    },
+    "Greece": {
+      "value": 51.00,
+      "unit": "%"
+    },
+    "Czech Republic": {
+      "value": 50.65,
+      "unit": "%"
+    },
+    "Russia": {
+      "value": 3.75,
+      "unit": "%"
+    },
+    "Sierra Leone": {
+      "value": 83.53,
+      "unit": "%"
+    },
+    "Denmark": {
+      "value": 86.00,
+      "unit": "%"
+    },
+    "Switzerland": {
+      "value": 37.96,
+      "unit": "%"
+    },
+    "Norway": {
+      "value": 90.00,
+      "unit": "%"
+    },
+    "Papua New Guinea": {
+      "value": 70.40,
+      "unit": "%"
+    },
+    "Ireland": {
+      "value": 97.52,
+      "unit": "%"
+    },
+    "New Zealand": {
+      "value": 97.15,
+      "unit": "%"
+    },
+    "Madagascar": {
+      "value": 18.00,
+      "unit": "%"
+    },
+    "Tanzania": {
+      "value": 21.70,
+      "unit": "%"
+    },
+    "Sri Lanka": {
+      "value": 18.32,
+      "unit": "%"
+    },
+    "Singapore": {
+      "value": 74.21,
+      "unit": "%"
+    },
+    "Finland": {
+      "value": 70.00,
+      "unit": "%"
+    },
+    "Cambodia": {
+      "value": 22.20,
+      "unit": "%"
+    },
+    "Liberia": {
+      "value": 82.67,
+      "unit": "%"
+    },
+    "Jordan": {
+      "value": 45.00,
+      "unit": "%"
+    },
+    "Portugal": {
+      "value": 27.00,
+      "unit": "%"
+    },
+    "Argentina": {
+      "value": 6.52,
+      "unit": "%"
+    },
+    "Jamaica": {
+      "value": 97.64,
+      "unit": "%"
+    },
+    "Croatia": {
+      "value": 41.00,
+      "unit": "%"
+    },
+    "Algeria": {
+      "value": 7.00,
+      "unit": "%"
+    },
+    "Myanmar": {
+      "value": 4.45,
+      "unit": "%"
+    },
+    "Yemen": {
+      "value": 9.00,
+      "unit": "%"
+    },
+    "Colombia": {
+      "value": 4.22,
+      "unit": "%"
+    },
+    "Zambia": {
+      "value": 16.02,
+      "unit": "%"
+    },
+    "Bulgaria": {
+      "value": 25.00,
+      "unit": "%"
+    },
+    "Kazakhstan": {
+      "value": 15.42,
+      "unit": "%"
+    },
+    "Lebanon": {
+      "value": 40.00,
+      "unit": "%"
+    },
+    "Chile": {
+      "value": 9.53,
+      "unit": "%"
+    },
+    "Rwanda": {
+      "value": 15.00,
+      "unit": "%"
+    },
+    "Slovakia": {
+      "value": 26.00,
+      "unit": "%"
+    },
+    "Slovenia": {
+      "value": 59.00,
+      "unit": "%"
+    },
+    "Lithuania": {
+      "value": 31.09,
+      "unit": "%"
+    },
+    "Trinidad and Tobago": {
+      "value": 87.74,
+      "unit": "%"
+    },
+    "Latvia": {
+      "value": 46.00,
+      "unit": "%"
+    },
+    "Nepal": {
+      "value": 0.35,
+      "unit": "%"
+    },
+    "Uruguay": {
+      "value": 24.00,
+      "unit": "%"
+    },
+    "Guyana": {
+      "value": 90.55,
+      "unit": "%"
+    },
+    "Estonia": {
+      "value": 47.03,
+      "unit": "%"
+    },
+    "Botswana": {
+      "value": 38.42,
+      "unit": "%"
+    },
+    "South Sudan": {
+      "value": 94.00,
+      "unit": "%"
+    },
+    "Cyprus": {
+      "value": 73.00,
+      "unit": "%"
+    },
+    "Panama": {
+      "value": 14.00,
+      "unit": "%"
+    },
+    "Eswatini": {
+      "value": 48.20,
+      "unit": "%"
+    },
+    "Malawi": {
+      "value": 3.88,
+      "unit": "%"
+    },
+    "Lesotho": {
+      "value": 27.86,
+      "unit": "%"
+    },
+    "Suriname": {
+      "value": 87.09,
+      "unit": "%"
+    },
+    "Malta": {
+      "value": 89.00,
+      "unit": "%"
+    },
+    "Iceland": {
+      "value": 98.00,
+      "unit": "%"
+    },
+    "Namibia": {
+      "value": 17.24,
+      "unit": "%"
+    },
+    "Luxembourg": {
+      "value": 25.67,
+      "unit": "%"
+    },
+    "Bahamas": {
+      "value": 87.13,
+      "unit": "%"
+    },
+    "Barbados": {
+      "value": 100.00,
+      "unit": "%"
+    },
+    "Belize": {
+      "value": 75.46,
+      "unit": "%"
+    },
+    "Costa Rica": {
+      "value": 8.20,
+      "unit": "%"
+    },
+    "Mauritius": {
+      "value": 15.97,
+      "unit": "%"
+    },
+    "Ecuador": {
+      "value": 1.20,
+      "unit": "%"
+    },
+    "Turkmenistan": {
+      "value": 2.89,
+      "unit": "%"
+    },
+    "Armenia": {
+      "value": 4.93,
+      "unit": "%"
+    },
+    "Vanuatu": {
+      "value": 76.87,
+      "unit": "%"
+    },
+    "Azerbaijan": {
+      "value": 1.29,
+      "unit": "%"
+    },
+    "Fiji": {
+      "value": 20.62,
+      "unit": "%"
+    },
+    "Solomon Islands": {
+      "value": 72.88,
+      "unit": "%"
+    },
+    "Brunei": {
+      "value": 39.07,
+      "unit": "%"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 95.00,
+      "unit": "%"
+    },
+    "Grenada": {
+      "value": 90.91,
+      "unit": "%"
+    },
+    "Samoa": {
+      "value": 49.86,
+      "unit": "%"
+    },
+    "Saint Lucia": {
+      "value": 43.03,
+      "unit": "%"
+    },
+    "Antigua and Barbuda": {
+      "value": 80.00,
+      "unit": "%"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 78.00,
+      "unit": "%"
+    },
+    "Seychelles": {
+      "value": 37.93,
+      "unit": "%"
+    },
+    "Tonga": {
+      "value": 30.00,
+      "unit": "%"
+    },
+    "Kiribati": {
+      "value": 72.91,
+      "unit": "%"
+    },
+    "Nauru": {
+      "value": 96.67,
+      "unit": "%"
+    },
+    "Dominica": {
+      "value": 94.03,
+      "unit": "%"
+    },
+    "Andorra": {
+      "value": 22.00,
+      "unit": "%"
+    },
+    "Liechtenstein": {
+      "value": 15.00,
+      "unit": "%"
+    },
+    "Anguilla": {
+      "value": 92.31,
+      "unit": "%"
+    },
+    "Montserrat": {
+      "value": 67.80,
+      "unit": "%"
+    }
+  }
+}

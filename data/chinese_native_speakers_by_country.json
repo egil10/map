@@ -1,0 +1,20 @@
+{
+  "title": "Chinese Native Speakers by Country",
+  "description": "Estimated number of native Chinese speakers in countries where Chinese is an official language, 2017",
+  "unit": "speakers",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Chinese_is_an_official_language",
+  "data": {
+    "China": {
+      "value": 1379302771,
+      "unit": "speakers"
+    },
+    "Taiwan": {
+      "value": 23508428,
+      "unit": "speakers"
+    },
+    "Singapore": {
+      "value": 3000000,
+      "unit": "speakers"
+    }
+  }
+}

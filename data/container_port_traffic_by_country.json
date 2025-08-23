@@ -1,0 +1,572 @@
+{
+  "title": "Container Port Traffic by Country",
+  "description": "Container port traffic in Twenty-foot Equivalent Units (TEUs), 2022",
+  "unit": "TEUs",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_container_port_traffic",
+  "data": {
+    "China": {
+      "value": 268990000,
+      "unit": "TEUs"
+    },
+    "United States": {
+      "value": 62214119,
+      "unit": "TEUs"
+    },
+    "Singapore": {
+      "value": 37289600,
+      "unit": "TEUs"
+    },
+    "South Korea": {
+      "value": 28502044,
+      "unit": "TEUs"
+    },
+    "Malaysia": {
+      "value": 27293935,
+      "unit": "TEUs"
+    },
+    "Japan": {
+      "value": 22515870,
+      "unit": "TEUs"
+    },
+    "Vietnam": {
+      "value": 20518926,
+      "unit": "TEUs"
+    },
+    "United Arab Emirates": {
+      "value": 20300000,
+      "unit": "TEUs"
+    },
+    "India": {
+      "value": 19717168,
+      "unit": "TEUs"
+    },
+    "Spain": {
+      "value": 17161676,
+      "unit": "TEUs"
+    },
+    "Netherlands": {
+      "value": 14929333,
+      "unit": "TEUs"
+    },
+    "Germany": {
+      "value": 13733867,
+      "unit": "TEUs"
+    },
+    "Indonesia": {
+      "value": 12380584,
+      "unit": "TEUs"
+    },
+    "Turkey": {
+      "value": 12366172,
+      "unit": "TEUs"
+    },
+    "Belgium": {
+      "value": 12303822,
+      "unit": "TEUs"
+    },
+    "Brazil": {
+      "value": 11683239,
+      "unit": "TEUs"
+    },
+    "Italy": {
+      "value": 11577495,
+      "unit": "TEUs"
+    },
+    "Thailand": {
+      "value": 10497112,
+      "unit": "TEUs"
+    },
+    "Saudi Arabia": {
+      "value": 10459765,
+      "unit": "TEUs"
+    },
+    "United Kingdom": {
+      "value": 9738676,
+      "unit": "TEUs"
+    },
+    "Australia": {
+      "value": 9375992,
+      "unit": "TEUs"
+    },
+    "Philippines": {
+      "value": 9249451,
+      "unit": "TEUs"
+    },
+    "Morocco": {
+      "value": 8835181,
+      "unit": "TEUs"
+    },
+    "Panama": {
+      "value": 8518425,
+      "unit": "TEUs"
+    },
+    "Mexico": {
+      "value": 8307884,
+      "unit": "TEUs"
+    },
+    "Egypt": {
+      "value": 7765482,
+      "unit": "TEUs"
+    },
+    "Canada": {
+      "value": 7010704,
+      "unit": "TEUs"
+    },
+    "Sri Lanka": {
+      "value": 6860000,
+      "unit": "TEUs"
+    },
+    "France": {
+      "value": 6467242,
+      "unit": "TEUs"
+    },
+    "Oman": {
+      "value": 5228456,
+      "unit": "TEUs"
+    },
+    "Greece": {
+      "value": 5166629,
+      "unit": "TEUs"
+    },
+    "Colombia": {
+      "value": 4480670,
+      "unit": "TEUs"
+    },
+    "Chile": {
+      "value": 4158260,
+      "unit": "TEUs"
+    },
+    "South Africa": {
+      "value": 4053350,
+      "unit": "TEUs"
+    },
+    "Russia": {
+      "value": 3914304,
+      "unit": "TEUs"
+    },
+    "New Zealand": {
+      "value": 3426030,
+      "unit": "TEUs"
+    },
+    "Pakistan": {
+      "value": 3383580,
+      "unit": "TEUs"
+    },
+    "Bangladesh": {
+      "value": 3200236,
+      "unit": "TEUs"
+    },
+    "Poland": {
+      "value": 3061848,
+      "unit": "TEUs"
+    },
+    "Malta": {
+      "value": 2993799,
+      "unit": "TEUs"
+    },
+    "Israel": {
+      "value": 2951000,
+      "unit": "TEUs"
+    },
+    "Peru": {
+      "value": 2865239,
+      "unit": "TEUs"
+    },
+    "Portugal": {
+      "value": 2794454,
+      "unit": "TEUs"
+    },
+    "Ecuador": {
+      "value": 2682600,
+      "unit": "TEUs"
+    },
+    "Jamaica": {
+      "value": 2137500,
+      "unit": "TEUs"
+    },
+    "Dominican Republic": {
+      "value": 2043326,
+      "unit": "TEUs"
+    },
+    "Togo": {
+      "value": 1952879,
+      "unit": "TEUs"
+    },
+    "Bahamas": {
+      "value": 1724000,
+      "unit": "TEUs"
+    },
+    "Argentina": {
+      "value": 1667161,
+      "unit": "TEUs"
+    },
+    "Guatemala": {
+      "value": 1660504,
+      "unit": "TEUs"
+    },
+    "Sweden": {
+      "value": 1631248,
+      "unit": "TEUs"
+    },
+    "Costa Rica": {
+      "value": 1594323,
+      "unit": "TEUs"
+    },
+    "Nigeria": {
+      "value": 1566109,
+      "unit": "TEUs"
+    },
+    "Algeria": {
+      "value": 1553362,
+      "unit": "TEUs"
+    },
+    "Iran": {
+      "value": 1550304,
+      "unit": "TEUs"
+    },
+    "Qatar": {
+      "value": 1543600,
+      "unit": "TEUs"
+    },
+    "Kenya": {
+      "value": 1450000,
+      "unit": "TEUs"
+    },
+    "Finland": {
+      "value": 1446004,
+      "unit": "TEUs"
+    },
+    "Ghana": {
+      "value": 1244245,
+      "unit": "TEUs"
+    },
+    "Ireland": {
+      "value": 1154803,
+      "unit": "TEUs"
+    },
+    "Myanmar": {
+      "value": 1090000,
+      "unit": "TEUs"
+    },
+    "Uruguay": {
+      "value": 1080445,
+      "unit": "TEUs"
+    },
+    "Denmark": {
+      "value": 1079649,
+      "unit": "TEUs"
+    },
+    "Lithuania": {
+      "value": 1047941,
+      "unit": "TEUs"
+    },
+    "Ukraine": {
+      "value": 1022376,
+      "unit": "TEUs"
+    },
+    "Slovenia": {
+      "value": 1017798,
+      "unit": "TEUs"
+    },
+    "Ivory Coast": {
+      "value": 1015624,
+      "unit": "TEUs"
+    },
+    "Congo": {
+      "value": 1003734,
+      "unit": "TEUs"
+    },
+    "Iraq": {
+      "value": 932729,
+      "unit": "TEUs"
+    },
+    "Norway": {
+      "value": 881238,
+      "unit": "TEUs"
+    },
+    "Kuwait": {
+      "value": 863618,
+      "unit": "TEUs"
+    },
+    "Honduras": {
+      "value": 772871,
+      "unit": "TEUs"
+    },
+    "Jordan": {
+      "value": 765662,
+      "unit": "TEUs"
+    },
+    "Tanzania": {
+      "value": 709881,
+      "unit": "TEUs"
+    },
+    "Senegal": {
+      "value": 696899,
+      "unit": "TEUs"
+    },
+    "Lebanon": {
+      "value": 675077,
+      "unit": "TEUs"
+    },
+    "Angola": {
+      "value": 654590,
+      "unit": "TEUs"
+    },
+    "Djibouti": {
+      "value": 635000,
+      "unit": "TEUs"
+    },
+    "Romania": {
+      "value": 631964,
+      "unit": "TEUs"
+    },
+    "Cambodia": {
+      "value": 600107,
+      "unit": "TEUs"
+    },
+    "Georgia": {
+      "value": 553302,
+      "unit": "TEUs"
+    },
+    "Croatia": {
+      "value": 544015,
+      "unit": "TEUs"
+    },
+    "Benin": {
+      "value": 510896,
+      "unit": "TEUs"
+    },
+    "Tunisia": {
+      "value": 469568,
+      "unit": "TEUs"
+    },
+    "Sudan": {
+      "value": 469526,
+      "unit": "TEUs"
+    },
+    "Mozambique": {
+      "value": 440582,
+      "unit": "TEUs"
+    },
+    "Mauritius": {
+      "value": 438078,
+      "unit": "TEUs"
+    },
+    "Latvia": {
+      "value": 434388,
+      "unit": "TEUs"
+    },
+    "South Sudan": {
+      "value": 430000,
+      "unit": "TEUs"
+    },
+    "Yemen": {
+      "value": 418711,
+      "unit": "TEUs"
+    },
+    "Trinidad and Tobago": {
+      "value": 410395,
+      "unit": "TEUs"
+    },
+    "Bahrain": {
+      "value": 404904,
+      "unit": "TEUs"
+    },
+    "Cameroon": {
+      "value": 366667,
+      "unit": "TEUs"
+    },
+    "Cuba": {
+      "value": 322000,
+      "unit": "TEUs"
+    },
+    "Cyprus": {
+      "value": 319131,
+      "unit": "TEUs"
+    },
+    "Iceland": {
+      "value": 297263,
+      "unit": "TEUs"
+    },
+    "El Salvador": {
+      "value": 294326,
+      "unit": "TEUs"
+    },
+    "Austria": {
+      "value": 285900,
+      "unit": "TEUs"
+    },
+    "Libya": {
+      "value": 271231,
+      "unit": "TEUs"
+    },
+    "Guinea": {
+      "value": 250000,
+      "unit": "TEUs"
+    },
+    "Bulgaria": {
+      "value": 245160,
+      "unit": "TEUs"
+    },
+    "Syria": {
+      "value": 243348,
+      "unit": "TEUs"
+    },
+    "Estonia": {
+      "value": 227000,
+      "unit": "TEUs"
+    },
+    "Papua New Guinea": {
+      "value": 204518,
+      "unit": "TEUs"
+    },
+    "Madagascar": {
+      "value": 199713,
+      "unit": "TEUs"
+    },
+    "Gabon": {
+      "value": 180000,
+      "unit": "TEUs"
+    },
+    "Venezuela": {
+      "value": 179529,
+      "unit": "TEUs"
+    },
+    "Haiti": {
+      "value": 177043,
+      "unit": "TEUs"
+    },
+    "Nicaragua": {
+      "value": 172544,
+      "unit": "TEUs"
+    },
+    "Seychelles": {
+      "value": 154423,
+      "unit": "TEUs"
+    },
+    "Namibia": {
+      "value": 154207,
+      "unit": "TEUs"
+    },
+    "Fiji": {
+      "value": 145782,
+      "unit": "TEUs"
+    },
+    "Albania": {
+      "value": 145762,
+      "unit": "TEUs"
+    },
+    "Solomon Islands": {
+      "value": 128036,
+      "unit": "TEUs"
+    },
+    "Switzerland": {
+      "value": 114075,
+      "unit": "TEUs"
+    },
+    "Suriname": {
+      "value": 109200,
+      "unit": "TEUs"
+    },
+    "Maldives": {
+      "value": 107728,
+      "unit": "TEUs"
+    },
+    "Brunei": {
+      "value": 106174,
+      "unit": "TEUs"
+    },
+    "Barbados": {
+      "value": 93899,
+      "unit": "TEUs"
+    },
+    "Somalia": {
+      "value": 92238,
+      "unit": "TEUs"
+    },
+    "Liberia": {
+      "value": 91454,
+      "unit": "TEUs"
+    },
+    "Mauritania": {
+      "value": 84458,
+      "unit": "TEUs"
+    },
+    "Cape Verde": {
+      "value": 79754,
+      "unit": "TEUs"
+    },
+    "Sierra Leone": {
+      "value": 78413,
+      "unit": "TEUs"
+    },
+    "Vanuatu": {
+      "value": 77436,
+      "unit": "TEUs"
+    },
+    "Tonga": {
+      "value": 76854,
+      "unit": "TEUs"
+    },
+    "Gambia": {
+      "value": 71470,
+      "unit": "TEUs"
+    },
+    "Guyana": {
+      "value": 58377,
+      "unit": "TEUs"
+    },
+    "Comoros": {
+      "value": 54359,
+      "unit": "TEUs"
+    },
+    "Timor-Leste": {
+      "value": 53289,
+      "unit": "TEUs"
+    },
+    "Sao Tome and Principe": {
+      "value": 49553,
+      "unit": "TEUs"
+    },
+    "Antigua and Barbuda": {
+      "value": 27657,
+      "unit": "TEUs"
+    },
+    "Eritrea": {
+      "value": 27453,
+      "unit": "TEUs"
+    },
+    "Grenada": {
+      "value": 22117,
+      "unit": "TEUs"
+    },
+    "Belize": {
+      "value": 20259,
+      "unit": "TEUs"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 18222,
+      "unit": "TEUs"
+    },
+    "Montenegro": {
+      "value": 15744,
+      "unit": "TEUs"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 13560,
+      "unit": "TEUs"
+    },
+    "Equatorial Guinea": {
+      "value": 9951,
+      "unit": "TEUs"
+    },
+    "Moldova": {
+      "value": 8646,
+      "unit": "TEUs"
+    },
+    "Dominica": {
+      "value": 7401,
+      "unit": "TEUs"
+    }
+  }
+}

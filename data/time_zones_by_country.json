@@ -1,0 +1,784 @@
+{
+  "title": "Number of Time Zones by Country",
+  "description": "Total number of time zones used by each country or territory, latest available data",
+  "unit": "time zones",
+  "source": "https://en.wikipedia.org/wiki/List_of_time_zones_by_country",
+  "data": {
+    "France": {
+      "value": 12,
+      "unit": "time zones"
+    },
+    "Russia": {
+      "value": 11,
+      "unit": "time zones"
+    },
+    "United States": {
+      "value": 11,
+      "unit": "time zones"
+    },
+    "Australia": {
+      "value": 9,
+      "unit": "time zones"
+    },
+    "United Kingdom": {
+      "value": 9,
+      "unit": "time zones"
+    },
+    "Canada": {
+      "value": 6,
+      "unit": "time zones"
+    },
+    "Denmark": {
+      "value": 5,
+      "unit": "time zones"
+    },
+    "New Zealand": {
+      "value": 5,
+      "unit": "time zones"
+    },
+    "Brazil": {
+      "value": 4,
+      "unit": "time zones"
+    },
+    "Mexico": {
+      "value": 4,
+      "unit": "time zones"
+    },
+    "Chile": {
+      "value": 3,
+      "unit": "time zones"
+    },
+    "Indonesia": {
+      "value": 3,
+      "unit": "time zones"
+    },
+    "Kiribati": {
+      "value": 3,
+      "unit": "time zones"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Ecuador": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Micronesia": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Mongolia": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Papua New Guinea": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Portugal": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "South Africa": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Spain": {
+      "value": 2,
+      "unit": "time zones"
+    },
+    "Afghanistan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Albania": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Algeria": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Andorra": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Angola": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Antigua and Barbuda": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Argentina": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Armenia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Austria": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Azerbaijan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bahamas": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bahrain": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bangladesh": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Barbados": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Belarus": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Belgium": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Belize": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Benin": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bhutan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bolivia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Botswana": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Brunei": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Bulgaria": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Burkina Faso": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Burundi": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Cambodia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Cameroon": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Cape Verde": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Central African Republic": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Chad": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "China": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Colombia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Comoros": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Congo": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Costa Rica": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Croatia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Cuba": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Cyprus": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Czech Republic": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Djibouti": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Dominica": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Dominican Republic": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "East Timor": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Egypt": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "El Salvador": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Equatorial Guinea": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Eritrea": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Estonia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Eswatini": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Ethiopia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Fiji": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Finland": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Gabon": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Gambia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Georgia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Germany": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Ghana": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Greece": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Grenada": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Guatemala": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Guinea": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Guinea-Bissau": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Guyana": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Haiti": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Honduras": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Hungary": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Iceland": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "India": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Iran": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Iraq": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Ireland": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Israel": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Italy": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Ivory Coast": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Jamaica": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Japan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Jordan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Kazakhstan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Kenya": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "North Korea": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "South Korea": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Kuwait": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Kyrgyzstan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Laos": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Latvia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Lebanon": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Lesotho": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Liberia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Libya": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Liechtenstein": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Lithuania": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Luxembourg": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Madagascar": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Malawi": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Malaysia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Maldives": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Mali": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Malta": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Marshall Islands": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Mauritania": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Mauritius": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Moldova": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Monaco": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Montenegro": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Morocco": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Mozambique": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Myanmar": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Namibia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Nauru": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Nepal": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Nicaragua": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Niger": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Nigeria": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "North Macedonia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Norway": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Oman": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Pakistan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Palau": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Panama": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Paraguay": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Peru": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Philippines": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Poland": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Qatar": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Romania": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Rwanda": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Saint Lucia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Samoa": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "San Marino": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Sao Tome and Principe": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Saudi Arabia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Senegal": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Serbia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Seychelles": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Sierra Leone": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Singapore": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Slovakia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Slovenia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Solomon Islands": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Somalia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "South Sudan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Sri Lanka": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Sudan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Suriname": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Sweden": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Switzerland": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Syria": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Taiwan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Tajikistan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Tanzania": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Thailand": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Togo": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Tonga": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Trinidad and Tobago": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Tunisia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Turkey": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Turkmenistan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Tuvalu": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Uganda": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Ukraine": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "United Arab Emirates": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Uruguay": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Uzbekistan": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Vanuatu": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Vatican City": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Venezuela": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Vietnam": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Yemen": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Zambia": {
+      "value": 1,
+      "unit": "time zones"
+    },
+    "Zimbabwe": {
+      "value": 1,
+      "unit": "time zones"
+    }
+  }
+}

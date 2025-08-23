@@ -1,0 +1,72 @@
+{
+  "title": "Number of Popes by Country",
+  "description": "Total number of popes by country of origin, 2025",
+  "unit": "popes",
+  "source": "https://worldpopulationreview.com/country-rankings/popes-by-country",
+  "data": {
+    "Italy": {
+      "value": 217,
+      "unit": "popes"
+    },
+    "France": {
+      "value": 16,
+      "unit": "popes"
+    },
+    "Germany": {
+      "value": 6,
+      "unit": "popes"
+    },
+    "Syria": {
+      "value": 5,
+      "unit": "popes"
+    },
+    "Greece": {
+      "value": 4,
+      "unit": "popes"
+    },
+    "Tunisia": {
+      "value": 3,
+      "unit": "popes"
+    },
+    "Israel": {
+      "value": 3,
+      "unit": "popes"
+    },
+    "Turkey": {
+      "value": 2,
+      "unit": "popes"
+    },
+    "Spain": {
+      "value": 2,
+      "unit": "popes"
+    },
+    "Portugal": {
+      "value": 2,
+      "unit": "popes"
+    },
+    "Croatia": {
+      "value": 2,
+      "unit": "popes"
+    },
+    "United States": {
+      "value": 1,
+      "unit": "popes"
+    },
+    "United Kingdom": {
+      "value": 1,
+      "unit": "popes"
+    },
+    "Argentina": {
+      "value": 1,
+      "unit": "popes"
+    },
+    "Poland": {
+      "value": 1,
+      "unit": "popes"
+    },
+    "Netherlands": {
+      "value": 1,
+      "unit": "popes"
+    }
+  }
+}

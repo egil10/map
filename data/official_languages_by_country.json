@@ -1,0 +1,88 @@
+{
+  "title": "Number of Official Languages by Country",
+  "description": "Total number of official languages (national or local) in each country, latest available data",
+  "unit": "languages",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_number_of_languages",
+  "data": {
+    "Bolivia": {
+      "value": 37,
+      "unit": "languages"
+    },
+    "India": {
+      "value": 22,
+      "unit": "languages"
+    },
+    "Zimbabwe": {
+      "value": 16,
+      "unit": "languages"
+    },
+    "Mali": {
+      "value": 13,
+      "unit": "languages"
+    },
+    "South Africa": {
+      "value": 12,
+      "unit": "languages"
+    },
+    "Papua New Guinea": {
+      "value": 4,
+      "unit": "languages"
+    },
+    "Rwanda": {
+      "value": 4,
+      "unit": "languages"
+    },
+    "Switzerland": {
+      "value": 4,
+      "unit": "languages"
+    },
+    "Singapore": {
+      "value": 4,
+      "unit": "languages"
+    },
+    "Belgium": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Burundi": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Comoros": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Ecuador": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Equatorial Guinea": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Fiji": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Luxembourg": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "New Zealand": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Seychelles": {
+      "value": 3,
+      "unit": "languages"
+    },
+    "Vanuatu": {
+      "value": 3,
+      "unit": "languages"
+    }
+  }
+}

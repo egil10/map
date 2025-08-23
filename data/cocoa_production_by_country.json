@@ -1,0 +1,228 @@
+{
+  "title": "Cocoa Production by Country",
+  "description": "Cocoa bean production in metric tons, 2023",
+  "unit": "tons",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_cocoa_production",
+  "data": {
+    "Ivory Coast": {
+      "value": 2377442,
+      "unit": "tons"
+    },
+    "Ghana": {
+      "value": 653700,
+      "unit": "tons"
+    },
+    "Indonesia": {
+      "value": 641741,
+      "unit": "tons"
+    },
+    "Ecuador": {
+      "value": 375719,
+      "unit": "tons"
+    },
+    "Brazil": {
+      "value": 296145,
+      "unit": "tons"
+    },
+    "Cameroon": {
+      "value": 295819,
+      "unit": "tons"
+    },
+    "Nigeria": {
+      "value": 284232,
+      "unit": "tons"
+    },
+    "Peru": {
+      "value": 166709,
+      "unit": "tons"
+    },
+    "Dominican Republic": {
+      "value": 65930,
+      "unit": "tons"
+    },
+    "Colombia": {
+      "value": 59831,
+      "unit": "tons"
+    },
+    "Papua New Guinea": {
+      "value": 43200,
+      "unit": "tons"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 35000,
+      "unit": "tons"
+    },
+    "Uganda": {
+      "value": 35000,
+      "unit": "tons"
+    },
+    "India": {
+      "value": 30000,
+      "unit": "tons"
+    },
+    "Venezuela": {
+      "value": 29359,
+      "unit": "tons"
+    },
+    "Mexico": {
+      "value": 29047,
+      "unit": "tons"
+    },
+    "Guinea": {
+      "value": 23164,
+      "unit": "tons"
+    },
+    "Madagascar": {
+      "value": 20000,
+      "unit": "tons"
+    },
+    "Liberia": {
+      "value": 20000,
+      "unit": "tons"
+    },
+    "Sierra Leone": {
+      "value": 18000,
+      "unit": "tons"
+    },
+    "Togo": {
+      "value": 15000,
+      "unit": "tons"
+    },
+    "Tanzania": {
+      "value": 12000,
+      "unit": "tons"
+    },
+    "Guatemala": {
+      "value": 11652,
+      "unit": "tons"
+    },
+    "Philippines": {
+      "value": 10759,
+      "unit": "tons"
+    },
+    "Nicaragua": {
+      "value": 9317,
+      "unit": "tons"
+    },
+    "Bolivia": {
+      "value": 5971,
+      "unit": "tons"
+    },
+    "Solomon Islands": {
+      "value": 4000,
+      "unit": "tons"
+    },
+    "Haiti": {
+      "value": 2500,
+      "unit": "tons"
+    },
+    "Honduras": {
+      "value": 2000,
+      "unit": "tons"
+    },
+    "Vanuatu": {
+      "value": 1500,
+      "unit": "tons"
+    },
+    "Cuba": {
+      "value": 1388,
+      "unit": "tons"
+    },
+    "Sri Lanka": {
+      "value": 1321,
+      "unit": "tons"
+    },
+    "Vietnam": {
+      "value": 1207,
+      "unit": "tons"
+    },
+    "Equatorial Guinea": {
+      "value": 1000,
+      "unit": "tons"
+    },
+    "Dominica": {
+      "value": 1000,
+      "unit": "tons"
+    },
+    "Costa Rica": {
+      "value": 800,
+      "unit": "tons"
+    },
+    "Panama": {
+      "value": 562,
+      "unit": "tons"
+    },
+    "Guyana": {
+      "value": 484,
+      "unit": "tons"
+    },
+    "Samoa": {
+      "value": 482,
+      "unit": "tons"
+    },
+    "Angola": {
+      "value": 458,
+      "unit": "tons"
+    },
+    "Grenada": {
+      "value": 364,
+      "unit": "tons"
+    },
+    "El Salvador": {
+      "value": 363,
+      "unit": "tons"
+    },
+    "Trinidad and Tobago": {
+      "value": 300,
+      "unit": "tons"
+    },
+    "Malaysia": {
+      "value": 269,
+      "unit": "tons"
+    },
+    "Belize": {
+      "value": 233,
+      "unit": "tons"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 229,
+      "unit": "tons"
+    },
+    "Timor-Leste": {
+      "value": 175,
+      "unit": "tons"
+    },
+    "Jamaica": {
+      "value": 151,
+      "unit": "tons"
+    },
+    "Central African Republic": {
+      "value": 135,
+      "unit": "tons"
+    },
+    "Thailand": {
+      "value": 123,
+      "unit": "tons"
+    },
+    "Fiji": {
+      "value": 118,
+      "unit": "tons"
+    },
+    "Gabon": {
+      "value": 104,
+      "unit": "tons"
+    },
+    "Comoros": {
+      "value": 43,
+      "unit": "tons"
+    },
+    "Saint Lucia": {
+      "value": 18,
+      "unit": "tons"
+    },
+    "Suriname": {
+      "value": 5,
+      "unit": "tons"
+    }
+  }
+}

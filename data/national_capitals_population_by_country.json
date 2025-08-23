@@ -1,0 +1,772 @@
+{
+  "title": "National Capitals Population by Country",
+  "description": "Population of the capital city for each country or territory, latest available data",
+  "unit": "people",
+  "source": "https://en.wikipedia.org/wiki/List_of_national_capitals_by_population",
+  "data": {
+    "China": {
+      "value": 21858000,
+      "unit": "people"
+    },
+    "Japan": {
+      "value": 14094034,
+      "unit": "people"
+    },
+    "Russia": {
+      "value": 13104177,
+      "unit": "people"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 12691000,
+      "unit": "people"
+    },
+    "Indonesia": {
+      "value": 10562088,
+      "unit": "people"
+    },
+    "Peru": {
+      "value": 10151000,
+      "unit": "people"
+    },
+    "Egypt": {
+      "value": 10107125,
+      "unit": "people"
+    },
+    "South Korea": {
+      "value": 9508451,
+      "unit": "people"
+    },
+    "Mexico": {
+      "value": 9209944,
+      "unit": "people"
+    },
+    "United Kingdom": {
+      "value": 9002488,
+      "unit": "people"
+    },
+    "Bangladesh": {
+      "value": 8906039,
+      "unit": "people"
+    },
+    "Iran": {
+      "value": 8693706,
+      "unit": "people"
+    },
+    "Thailand": {
+      "value": 8305218,
+      "unit": "people"
+    },
+    "Vietnam": {
+      "value": 8053663,
+      "unit": "people"
+    },
+    "Iraq": {
+      "value": 7682136,
+      "unit": "people"
+    },
+    "Saudi Arabia": {
+      "value": 7676654,
+      "unit": "people"
+    },
+    "Colombia": {
+      "value": 7181469,
+      "unit": "people"
+    },
+    "Chile": {
+      "value": 6310000,
+      "unit": "people"
+    },
+    "Turkey": {
+      "value": 5747325,
+      "unit": "people"
+    },
+    "Singapore": {
+      "value": 5917600,
+      "unit": "people"
+    },
+    "Afghanistan": {
+      "value": 4601789,
+      "unit": "people"
+    },
+    "Kenya": {
+      "value": 4397073,
+      "unit": "people"
+    },
+    "Jordan": {
+      "value": 4061150,
+      "unit": "people"
+    },
+    "Algeria": {
+      "value": 3915811,
+      "unit": "people"
+    },
+    "Germany": {
+      "value": 3677472,
+      "unit": "people"
+    },
+    "Spain": {
+      "value": 3305408,
+      "unit": "people"
+    },
+    "Argentina": {
+      "value": 3120612,
+      "unit": "people"
+    },
+    "Ethiopia": {
+      "value": 3040740,
+      "unit": "people"
+    },
+    "Kuwait": {
+      "value": 2989000,
+      "unit": "people"
+    },
+    "Brazil": {
+      "value": 2982818,
+      "unit": "people"
+    },
+    "Guatemala": {
+      "value": 2934841,
+      "unit": "people"
+    },
+    "South Africa": {
+      "value": 2921488,
+      "unit": "people"
+    },
+    "Ukraine": {
+      "value": 2920873,
+      "unit": "people"
+    },
+    "North Korea": {
+      "value": 2870000,
+      "unit": "people"
+    },
+    "Uzbekistan": {
+      "value": 2860600,
+      "unit": "people"
+    },
+    "Italy": {
+      "value": 2761632,
+      "unit": "people"
+    },
+    "Ecuador": {
+      "value": 2800388,
+      "unit": "people"
+    },
+    "Cameroon": {
+      "value": 2765568,
+      "unit": "people"
+    },
+    "Zambia": {
+      "value": 2731696,
+      "unit": "people"
+    },
+    "Sudan": {
+      "value": 2682431,
+      "unit": "people"
+    },
+    "Taiwan": {
+      "value": 2608332,
+      "unit": "people"
+    },
+    "Yemen": {
+      "value": 2575347,
+      "unit": "people"
+    },
+    "Angola": {
+      "value": 2571861,
+      "unit": "people"
+    },
+    "Burkina Faso": {
+      "value": 2453496,
+      "unit": "people"
+    },
+    "Ghana": {
+      "value": 2388000,
+      "unit": "people"
+    },
+    "Somalia": {
+      "value": 2388000,
+      "unit": "people"
+    },
+    "Azerbaijan": {
+      "value": 2303100,
+      "unit": "people"
+    },
+    "Cambodia": {
+      "value": 2281951,
+      "unit": "people"
+    },
+    "Venezuela": {
+      "value": 2245744,
+      "unit": "people"
+    },
+    "France": {
+      "value": 2139907,
+      "unit": "people"
+    },
+    "Cuba": {
+      "value": 2132183,
+      "unit": "people"
+    },
+    "Zimbabwe": {
+      "value": 2123132,
+      "unit": "people"
+    },
+    "Syria": {
+      "value": 2079000,
+      "unit": "people"
+    },
+    "Belarus": {
+      "value": 1996553,
+      "unit": "people"
+    },
+    "Austria": {
+      "value": 1962779,
+      "unit": "people"
+    },
+    "Poland": {
+      "value": 1863056,
+      "unit": "people"
+    },
+    "Philippines": {
+      "value": 1846513,
+      "unit": "people"
+    },
+    "Mali": {
+      "value": 1809106,
+      "unit": "people"
+    },
+    "Malaysia": {
+      "value": 1782500,
+      "unit": "people"
+    },
+    "Romania": {
+      "value": 1716983,
+      "unit": "people"
+    },
+    "Hungary": {
+      "value": 1706851,
+      "unit": "people"
+    },
+    "Congo": {
+      "value": 1696392,
+      "unit": "people"
+    },
+    "Serbia": {
+      "value": 1688667,
+      "unit": "people"
+    },
+    "Uganda": {
+      "value": 1680600,
+      "unit": "people"
+    },
+    "Guinea": {
+      "value": 1660973,
+      "unit": "people"
+    },
+    "Kazakhstan": {
+      "value": 1511807,
+      "unit": "people"
+    },
+    "Mongolia": {
+      "value": 1466125,
+      "unit": "people"
+    },
+    "Honduras": {
+      "value": 1444085,
+      "unit": "people"
+    },
+    "Senegal": {
+      "value": 1438725,
+      "unit": "people"
+    },
+    "Czech Republic": {
+      "value": 1357326,
+      "unit": "people"
+    },
+    "Niger": {
+      "value": 1334984,
+      "unit": "people"
+    },
+    "Uruguay": {
+      "value": 1319108,
+      "unit": "people"
+    },
+    "Bulgaria": {
+      "value": 1307439,
+      "unit": "people"
+    },
+    "Oman": {
+      "value": 1294101,
+      "unit": "people"
+    },
+    "Madagascar": {
+      "value": 1275207,
+      "unit": "people"
+    },
+    "Nigeria": {
+      "value": 1235880,
+      "unit": "people"
+    },
+    "Georgia": {
+      "value": 1201769,
+      "unit": "people"
+    },
+    "Mauritania": {
+      "value": 1195600,
+      "unit": "people"
+    },
+    "Qatar": {
+      "value": 1186023,
+      "unit": "people"
+    },
+    "Libya": {
+      "value": 1170000,
+      "unit": "people"
+    },
+    "Myanmar": {
+      "value": 1160242,
+      "unit": "people"
+    },
+    "Rwanda": {
+      "value": 1132686,
+      "unit": "people"
+    },
+    "Mozambique": {
+      "value": 1124988,
+      "unit": "people"
+    },
+    "Dominican Republic": {
+      "value": 1111838,
+      "unit": "people"
+    },
+    "Armenia": {
+      "value": 1096100,
+      "unit": "people"
+    },
+    "Panama": {
+      "value": 1086990,
+      "unit": "people"
+    },
+    "Kyrgyzstan": {
+      "value": 1074075,
+      "unit": "people"
+    },
+    "Sierra Leone": {
+      "value": 1055964,
+      "unit": "people"
+    },
+    "Nicaragua": {
+      "value": 1055247,
+      "unit": "people"
+    },
+    "Canada": {
+      "value": 1017449,
+      "unit": "people"
+    },
+    "Pakistan": {
+      "value": 1014825,
+      "unit": "people"
+    },
+    "Liberia": {
+      "value": 1010970,
+      "unit": "people"
+    },
+    "United Arab Emirates": {
+      "value": 1010092,
+      "unit": "people"
+    },
+    "Malawi": {
+      "value": 989318,
+      "unit": "people"
+    },
+    "Haiti": {
+      "value": 987310,
+      "unit": "people"
+    },
+    "Sweden": {
+      "value": 978770,
+      "unit": "people"
+    },
+    "Eritrea": {
+      "value": 963000,
+      "unit": "people"
+    },
+    "Israel": {
+      "value": 936425,
+      "unit": "people"
+    },
+    "Laos": {
+      "value": 927724,
+      "unit": "people"
+    },
+    "Chad": {
+      "value": 916000,
+      "unit": "people"
+    },
+    "Netherlands": {
+      "value": 905234,
+      "unit": "people"
+    },
+    "Central African Republic": {
+      "value": 889231,
+      "unit": "people"
+    },
+    "Tajikistan": {
+      "value": 863400,
+      "unit": "people"
+    },
+    "Nepal": {
+      "value": 845767,
+      "unit": "people"
+    },
+    "Togo": {
+      "value": 837437,
+      "unit": "people"
+    },
+    "Turkmenistan": {
+      "value": 791000,
+      "unit": "people"
+    },
+    "Moldova": {
+      "value": 779300,
+      "unit": "people"
+    },
+    "Croatia": {
+      "value": 769944,
+      "unit": "people"
+    },
+    "Gabon": {
+      "value": 703904,
+      "unit": "people"
+    },
+    "Norway": {
+      "value": 697010,
+      "unit": "people"
+    },
+    "United States": {
+      "value": 670050,
+      "unit": "people"
+    },
+    "Jamaica": {
+      "value": 662491,
+      "unit": "people"
+    },
+    "Finland": {
+      "value": 658864,
+      "unit": "people"
+    },
+    "Tunisia": {
+      "value": 638845,
+      "unit": "people"
+    },
+    "Denmark": {
+      "value": 638117,
+      "unit": "people"
+    },
+    "Greece": {
+      "value": 637798,
+      "unit": "people"
+    },
+    "Latvia": {
+      "value": 605802,
+      "unit": "people"
+    },
+    "Djibouti": {
+      "value": 604013,
+      "unit": "people"
+    },
+    "Ireland": {
+      "value": 592713,
+      "unit": "people"
+    },
+    "Morocco": {
+      "value": 577827,
+      "unit": "people"
+    },
+    "Lithuania": {
+      "value": 576195,
+      "unit": "people"
+    },
+    "El Salvador": {
+      "value": 570459,
+      "unit": "people"
+    },
+    "Albania": {
+      "value": 557422,
+      "unit": "people"
+    },
+    "North Macedonia": {
+      "value": 544086,
+      "unit": "people"
+    },
+    "South Sudan": {
+      "value": 525953,
+      "unit": "people"
+    },
+    "Paraguay": {
+      "value": 521559,
+      "unit": "people"
+    },
+    "Portugal": {
+      "value": 509614,
+      "unit": "people"
+    },
+    "Guinea-Bissau": {
+      "value": 492004,
+      "unit": "people"
+    },
+    "Slovakia": {
+      "value": 440948,
+      "unit": "people"
+    },
+    "Estonia": {
+      "value": 438341,
+      "unit": "people"
+    },
+    "Australia": {
+      "value": 431380,
+      "unit": "people"
+    },
+    "Namibia": {
+      "value": 431000,
+      "unit": "people"
+    },
+    "Tanzania": {
+      "value": 410956,
+      "unit": "people"
+    },
+    "Papua New Guinea": {
+      "value": 364145,
+      "unit": "people"
+    },
+    "Ivory Coast": {
+      "value": 361893,
+      "unit": "people"
+    },
+    "Lebanon": {
+      "value": 361366,
+      "unit": "people"
+    },
+    "Bolivia": {
+      "value": 360544,
+      "unit": "people"
+    },
+    "Costa Rica": {
+      "value": 342188,
+      "unit": "people"
+    },
+    "Lesotho": {
+      "value": 330760,
+      "unit": "people"
+    },
+    "Cyprus": {
+      "value": 326739,
+      "unit": "people"
+    },
+    "Equatorial Guinea": {
+      "value": 297000,
+      "unit": "people"
+    },
+    "Slovenia": {
+      "value": 285604,
+      "unit": "people"
+    },
+    "Timor-Leste": {
+      "value": 277279,
+      "unit": "people"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 275524,
+      "unit": "people"
+    },
+    "Bahamas": {
+      "value": 274400,
+      "unit": "people"
+    },
+    "Botswana": {
+      "value": 273602,
+      "unit": "people"
+    },
+    "Benin": {
+      "value": 264320,
+      "unit": "people"
+    },
+    "Suriname": {
+      "value": 240924,
+      "unit": "people"
+    },
+    "New Zealand": {
+      "value": 217000,
+      "unit": "people"
+    },
+    "Maldives": {
+      "value": 211908,
+      "unit": "people"
+    },
+    "Bahrain": {
+      "value": 200000,
+      "unit": "people"
+    },
+    "Montenegro": {
+      "value": 190488,
+      "unit": "people"
+    },
+    "Belgium": {
+      "value": 187686,
+      "unit": "people"
+    },
+    "Cape Verde": {
+      "value": 159050,
+      "unit": "people"
+    },
+    "Mauritius": {
+      "value": 147066,
+      "unit": "people"
+    },
+    "Luxembourg": {
+      "value": 136208,
+      "unit": "people"
+    },
+    "Burundi": {
+      "value": 135467,
+      "unit": "people"
+    },
+    "Switzerland": {
+      "value": 134591,
+      "unit": "people"
+    },
+    "Iceland": {
+      "value": 133262,
+      "unit": "people"
+    },
+    "Guyana": {
+      "value": 118363,
+      "unit": "people"
+    },
+    "Bhutan": {
+      "value": 114551,
+      "unit": "people"
+    },
+    "Comoros": {
+      "value": 111326,
+      "unit": "people"
+    },
+    "Barbados": {
+      "value": 110000,
+      "unit": "people"
+    },
+    "Sri Lanka": {
+      "value": 107925,
+      "unit": "people"
+    },
+    "Brunei": {
+      "value": 100700,
+      "unit": "people"
+    },
+    "Eswatini": {
+      "value": 94874,
+      "unit": "people"
+    },
+    "Fiji": {
+      "value": 93970,
+      "unit": "people"
+    },
+    "Solomon Islands": {
+      "value": 92344,
+      "unit": "people"
+    },
+    "Gambia": {
+      "value": 73000,
+      "unit": "people"
+    },
+    "Sao Tome and Principe": {
+      "value": 71868,
+      "unit": "people"
+    },
+    "Kiribati": {
+      "value": 70480,
+      "unit": "people"
+    },
+    "Vanuatu": {
+      "value": 51437,
+      "unit": "people"
+    },
+    "Samoa": {
+      "value": 41611,
+      "unit": "people"
+    },
+    "Trinidad and Tobago": {
+      "value": 37074,
+      "unit": "people"
+    },
+    "Grenada": {
+      "value": 33734,
+      "unit": "people"
+    },
+    "Tonga": {
+      "value": 27600,
+      "unit": "people"
+    },
+    "Seychelles": {
+      "value": 26450,
+      "unit": "people"
+    },
+    "Antigua and Barbuda": {
+      "value": 22219,
+      "unit": "people"
+    },
+    "Belize": {
+      "value": 20621,
+      "unit": "people"
+    },
+    "Saint Lucia": {
+      "value": 20000,
+      "unit": "people"
+    },
+    "Dominica": {
+      "value": 14725,
+      "unit": "people"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 14000,
+      "unit": "people"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 12909,
+      "unit": "people"
+    },
+    "Micronesia": {
+      "value": 6647,
+      "unit": "people"
+    },
+    "Tuvalu": {
+      "value": 6320,
+      "unit": "people"
+    },
+    "Malta": {
+      "value": 5827,
+      "unit": "people"
+    },
+    "Liechtenstein": {
+      "value": 5774,
+      "unit": "people"
+    },
+    "San Marino": {
+      "value": 4061,
+      "unit": "people"
+    },
+    "Vatican City": {
+      "value": 764,
+      "unit": "people"
+    },
+    "Nauru": {
+      "value": 747,
+      "unit": "people"
+    },
+    "Palau": {
+      "value": 0,
+      "unit": "people"
+    }
+  }
+}

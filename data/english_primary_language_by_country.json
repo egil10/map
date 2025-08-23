@@ -1,0 +1,216 @@
+{
+  "title": "English as Primary Language by Country",
+  "description": "Binary indicator (1 for Yes, 0 for No) of whether English is the primary language, based on official language status and usage",
+  "unit": "binary",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_English_is_an_official_language",
+  "data": {
+    "Bahamas": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Barbados": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Belize": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Botswana": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Burundi": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Cameroon": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Canada": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Dominica": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Eswatini": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Fiji": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Gambia": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Ghana": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Grenada": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Guyana": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "India": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Ireland": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Jamaica": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Kenya": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Kiribati": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Lesotho": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Liberia": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Malawi": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Malta": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Marshall Islands": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Micronesia": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Namibia": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Nauru": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Nigeria": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Pakistan": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Palau": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Papua New Guinea": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Philippines": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Rwanda": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Saint Lucia": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Samoa": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Seychelles": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Sierra Leone": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Singapore": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Solomon Islands": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "South Africa": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "South Sudan": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Sudan": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Tanzania": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Tonga": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Trinidad and Tobago": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Tuvalu": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Uganda": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Vanuatu": {
+      "value": 0,
+      "unit": "binary"
+    },
+    "Zambia": {
+      "value": 1,
+      "unit": "binary"
+    },
+    "Zimbabwe": {
+      "value": 0,
+      "unit": "binary"
+    }
+  }
+}

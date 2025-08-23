@@ -1,0 +1,32 @@
+{
+  "title": "German Native Speakers by Country",
+  "description": "Number of native German speakers in countries where German is an official language, latest available data",
+  "unit": "speakers",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_German_is_an_official_language",
+  "data": {
+    "Germany": {
+      "value": 75101421,
+      "unit": "speakers"
+    },
+    "Belgium": {
+      "value": 73000,
+      "unit": "speakers"
+    },
+    "Austria": {
+      "value": 8040960,
+      "unit": "speakers"
+    },
+    "Switzerland": {
+      "value": 5329393,
+      "unit": "speakers"
+    },
+    "Luxembourg": {
+      "value": 11000,
+      "unit": "speakers"
+    },
+    "Liechtenstein": {
+      "value": 32075,
+      "unit": "speakers"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "title": "French Official Language Status by Country",
+  "description": "Status of French as either the sole or co-official language in countries and territories, latest available data",
+  "unit": "status",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_French_is_an_official_language",
+  "data": {
+    "Benin": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Congo": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "France": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Ivory Coast": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Guinea": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Monaco": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Senegal": {
+      "value": "Sole",
+      "unit": "status"
+    },
+    "Belgium": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Chad": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Djibouti": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Equatorial Guinea": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Haiti": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Luxembourg": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Madagascar": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "Co-official",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Co-official",
+      "unit": "status"
+    }
+  }
+}

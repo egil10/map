@@ -1,0 +1,664 @@
+{
+  "title": "Road Network Size by Country",
+  "description": "Total road network size in kilometers, including paved and unpaved roads, latest available data",
+  "unit": "km",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_road_network_size",
+  "data": {
+    "India": {
+      "value": 6617100,
+      "unit": "km"
+    },
+    "United States": {
+      "value": 6586610,
+      "unit": "km"
+    },
+    "China": {
+      "value": 5490400,
+      "unit": "km"
+    },
+    "Brazil": {
+      "value": 2000000,
+      "unit": "km"
+    },
+    "Russia": {
+      "value": 1579291,
+      "unit": "km"
+    },
+    "Japan": {
+      "value": 1218772,
+      "unit": "km"
+    },
+    "France": {
+      "value": 1053215,
+      "unit": "km"
+    },
+    "Canada": {
+      "value": 1042300,
+      "unit": "km"
+    },
+    "Australia": {
+      "value": 977874,
+      "unit": "km"
+    },
+    "Mexico": {
+      "value": 836603,
+      "unit": "km"
+    },
+    "Germany": {
+      "value": 830000,
+      "unit": "km"
+    },
+    "South Africa": {
+      "value": 750000,
+      "unit": "km"
+    },
+    "Thailand": {
+      "value": 702989,
+      "unit": "km"
+    },
+    "Spain": {
+      "value": 683175,
+      "unit": "km"
+    },
+    "Sweden": {
+      "value": 573134,
+      "unit": "km"
+    },
+    "Vietnam": {
+      "value": 570448,
+      "unit": "km"
+    },
+    "Indonesia": {
+      "value": 548097,
+      "unit": "km"
+    },
+    "Italy": {
+      "value": 487700,
+      "unit": "km"
+    },
+    "Finland": {
+      "value": 454000,
+      "unit": "km"
+    },
+    "Turkey": {
+      "value": 438633,
+      "unit": "km"
+    },
+    "Poland": {
+      "value": 429800,
+      "unit": "km"
+    },
+    "United Kingdom": {
+      "value": 424129,
+      "unit": "km"
+    },
+    "Bangladesh": {
+      "value": 369105,
+      "unit": "km"
+    },
+    "Egypt": {
+      "value": 325250,
+      "unit": "km"
+    },
+    "Malaysia": {
+      "value": 279862,
+      "unit": "km"
+    },
+    "Pakistan": {
+      "value": 264175,
+      "unit": "km"
+    },
+    "Argentina": {
+      "value": 240000,
+      "unit": "km"
+    },
+    "Iran": {
+      "value": 223485,
+      "unit": "km"
+    },
+    "Saudi Arabia": {
+      "value": 221372,
+      "unit": "km"
+    },
+    "Philippines": {
+      "value": 216387,
+      "unit": "km"
+    },
+    "Hungary": {
+      "value": 210791,
+      "unit": "km"
+    },
+    "Uzbekistan": {
+      "value": 209496,
+      "unit": "km"
+    },
+    "Colombia": {
+      "value": 204389,
+      "unit": "km"
+    },
+    "Nigeria": {
+      "value": 195000,
+      "unit": "km"
+    },
+    "Kenya": {
+      "value": 177800,
+      "unit": "km"
+    },
+    "Peru": {
+      "value": 175589,
+      "unit": "km"
+    },
+    "Ukraine": {
+      "value": 169694,
+      "unit": "km"
+    },
+    "Myanmar": {
+      "value": 157000,
+      "unit": "km"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 152373,
+      "unit": "km"
+    },
+    "Uganda": {
+      "value": 146000,
+      "unit": "km"
+    },
+    "Tanzania": {
+      "value": 145203,
+      "unit": "km"
+    },
+    "Algeria": {
+      "value": 141000,
+      "unit": "km"
+    },
+    "Mali": {
+      "value": 139107,
+      "unit": "km"
+    },
+    "Netherlands": {
+      "value": 141820,
+      "unit": "km"
+    },
+    "Austria": {
+      "value": 126400,
+      "unit": "km"
+    },
+    "Ethiopia": {
+      "value": 120171,
+      "unit": "km"
+    },
+    "Belgium": {
+      "value": 118414,
+      "unit": "km"
+    },
+    "Greece": {
+      "value": 117000,
+      "unit": "km"
+    },
+    "Sri Lanka": {
+      "value": 114093,
+      "unit": "km"
+    },
+    "Mongolia": {
+      "value": 113200,
+      "unit": "km"
+    },
+    "South Korea": {
+      "value": 110714,
+      "unit": "km"
+    },
+    "Ghana": {
+      "value": 109515,
+      "unit": "km"
+    },
+    "Ireland": {
+      "value": 99830,
+      "unit": "km"
+    },
+    "Zimbabwe": {
+      "value": 97267,
+      "unit": "km"
+    },
+    "New Zealand": {
+      "value": 96817,
+      "unit": "km"
+    },
+    "Venezuela": {
+      "value": 96189,
+      "unit": "km"
+    },
+    "Kazakhstan": {
+      "value": 95409,
+      "unit": "km"
+    },
+    "Romania": {
+      "value": 86388,
+      "unit": "km"
+    },
+    "Chile": {
+      "value": 85983,
+      "unit": "km"
+    },
+    "Lithuania": {
+      "value": 84166,
+      "unit": "km"
+    },
+    "Switzerland": {
+      "value": 84114,
+      "unit": "km"
+    },
+    "Nepal": {
+      "value": 80078,
+      "unit": "km"
+    },
+    "Azerbaijan": {
+      "value": 77824,
+      "unit": "km"
+    },
+    "Uruguay": {
+      "value": 77732,
+      "unit": "km"
+    },
+    "Angola": {
+      "value": 76000,
+      "unit": "km"
+    },
+    "Denmark": {
+      "value": 73574,
+      "unit": "km"
+    },
+    "Zambia": {
+      "value": 67671,
+      "unit": "km"
+    },
+    "Morocco": {
+      "value": 57334,
+      "unit": "km"
+    },
+    "Czech Republic": {
+      "value": 55744,
+      "unit": "km"
+    },
+    "Cambodia": {
+      "value": 55000,
+      "unit": "km"
+    },
+    "Serbia": {
+      "value": 45419,
+      "unit": "km"
+    },
+    "Ecuador": {
+      "value": 43216,
+      "unit": "km"
+    },
+    "Taiwan": {
+      "value": 41475,
+      "unit": "km"
+    },
+    "Chad": {
+      "value": 40000,
+      "unit": "km"
+    },
+    "Laos": {
+      "value": 39586,
+      "unit": "km"
+    },
+    "Slovakia": {
+      "value": 38985,
+      "unit": "km"
+    },
+    "Slovenia": {
+      "value": 38985,
+      "unit": "km"
+    },
+    "Libya": {
+      "value": 37000,
+      "unit": "km"
+    },
+    "Afghanistan": {
+      "value": 34903,
+      "unit": "km"
+    },
+    "Kyrgyzstan": {
+      "value": 34000,
+      "unit": "km"
+    },
+    "Botswana": {
+      "value": 31747,
+      "unit": "km"
+    },
+    "Madagascar": {
+      "value": 31640,
+      "unit": "km"
+    },
+    "Mozambique": {
+      "value": 31083,
+      "unit": "km"
+    },
+    "Sudan": {
+      "value": 31000,
+      "unit": "km"
+    },
+    "Tajikistan": {
+      "value": 30000,
+      "unit": "km"
+    },
+    "Croatia": {
+      "value": 26958,
+      "unit": "km"
+    },
+    "North Korea": {
+      "value": 25554,
+      "unit": "km"
+    },
+    "Central African Republic": {
+      "value": 24000,
+      "unit": "km"
+    },
+    "Nicaragua": {
+      "value": 23897,
+      "unit": "km"
+    },
+    "Congo": {
+      "value": 23324,
+      "unit": "km"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 22926,
+      "unit": "km"
+    },
+    "Jamaica": {
+      "value": 22121,
+      "unit": "km"
+    },
+    "Lebanon": {
+      "value": 21705,
+      "unit": "km"
+    },
+    "Israel": {
+      "value": 20391,
+      "unit": "km"
+    },
+    "Georgia": {
+      "value": 20295,
+      "unit": "km"
+    },
+    "Tunisia": {
+      "value": 19750,
+      "unit": "km"
+    },
+    "Cyprus": {
+      "value": 19901,
+      "unit": "km"
+    },
+    "Dominican Republic": {
+      "value": 19705,
+      "unit": "km"
+    },
+    "Bulgaria": {
+      "value": 19512,
+      "unit": "km"
+    },
+    "Niger": {
+      "value": 18949,
+      "unit": "km"
+    },
+    "Guatemala": {
+      "value": 17621,
+      "unit": "km"
+    },
+    "Senegal": {
+      "value": 16665,
+      "unit": "km"
+    },
+    "Paraguay": {
+      "value": 16630,
+      "unit": "km"
+    },
+    "Benin": {
+      "value": 16000,
+      "unit": "km"
+    },
+    "Eritrea": {
+      "value": 16000,
+      "unit": "km"
+    },
+    "Malawi": {
+      "value": 15452,
+      "unit": "km"
+    },
+    "Burkina Faso": {
+      "value": 15304,
+      "unit": "km"
+    },
+    "Somalia": {
+      "value": 15000,
+      "unit": "km"
+    },
+    "Honduras": {
+      "value": 14742,
+      "unit": "km"
+    },
+    "Gabon": {
+      "value": 14300,
+      "unit": "km"
+    },
+    "North Macedonia": {
+      "value": 14182,
+      "unit": "km"
+    },
+    "Iceland": {
+      "value": 12898,
+      "unit": "km"
+    },
+    "Burundi": {
+      "value": 12322,
+      "unit": "km"
+    },
+    "Mauritania": {
+      "value": 12253,
+      "unit": "km"
+    },
+    "Bhutan": {
+      "value": 12205,
+      "unit": "km"
+    },
+    "Togo": {
+      "value": 11734,
+      "unit": "km"
+    },
+    "Sierra Leone": {
+      "value": 11700,
+      "unit": "km"
+    },
+    "Liberia": {
+      "value": 10600,
+      "unit": "km"
+    },
+    "Moldova": {
+      "value": 9352,
+      "unit": "km"
+    },
+    "Papua New Guinea": {
+      "value": 9349,
+      "unit": "km"
+    },
+    "El Salvador": {
+      "value": 9012,
+      "unit": "km"
+    },
+    "Montenegro": {
+      "value": 7762,
+      "unit": "km"
+    },
+    "Armenia": {
+      "value": 7700,
+      "unit": "km"
+    },
+    "Jordan": {
+      "value": 7203,
+      "unit": "km"
+    },
+    "Qatar": {
+      "value": 7039,
+      "unit": "km"
+    },
+    "Timor-Leste": {
+      "value": 6040,
+      "unit": "km"
+    },
+    "Lesotho": {
+      "value": 5940,
+      "unit": "km"
+    },
+    "Kuwait": {
+      "value": 5749,
+      "unit": "km"
+    },
+    "Costa Rica": {
+      "value": 5035,
+      "unit": "km"
+    },
+    "Rwanda": {
+      "value": 4700,
+      "unit": "km"
+    },
+    "Guinea-Bissau": {
+      "value": 4400,
+      "unit": "km"
+    },
+    "Suriname": {
+      "value": 4304,
+      "unit": "km"
+    },
+    "Haiti": {
+      "value": 4266,
+      "unit": "km"
+    },
+    "Bahrain": {
+      "value": 4122,
+      "unit": "km"
+    },
+    "United Arab Emirates": {
+      "value": 4080,
+      "unit": "km"
+    },
+    "Guyana": {
+      "value": 3995,
+      "unit": "km"
+    },
+    "Albania": {
+      "value": 3945,
+      "unit": "km"
+    },
+    "Eswatini": {
+      "value": 3769,
+      "unit": "km"
+    },
+    "Singapore": {
+      "value": 3500,
+      "unit": "km"
+    },
+    "Fiji": {
+      "value": 3440,
+      "unit": "km"
+    },
+    "Belize": {
+      "value": 3281,
+      "unit": "km"
+    },
+    "Gambia": {
+      "value": 2977,
+      "unit": "km"
+    },
+    "Brunei": {
+      "value": 2976,
+      "unit": "km"
+    },
+    "Djibouti": {
+      "value": 2893,
+      "unit": "km"
+    },
+    "Equatorial Guinea": {
+      "value": 2880,
+      "unit": "km"
+    },
+    "Luxembourg": {
+      "value": 2875,
+      "unit": "km"
+    },
+    "Bahamas": {
+      "value": 2700,
+      "unit": "km"
+    },
+    "Mauritius": {
+      "value": 2428,
+      "unit": "km"
+    },
+    "Malta": {
+      "value": 2254,
+      "unit": "km"
+    },
+    "Samoa": {
+      "value": 1150,
+      "unit": "km"
+    },
+    "Grenada": {
+      "value": 1127,
+      "unit": "km"
+    },
+    "Vanuatu": {
+      "value": 1070,
+      "unit": "km"
+    },
+    "Comoros": {
+      "value": 880,
+      "unit": "km"
+    },
+    "Sao Tome and Principe": {
+      "value": 1300,
+      "unit": "km"
+    },
+    "Saint Lucia": {
+      "value": 1210,
+      "unit": "km"
+    },
+    "Antigua and Barbuda": {
+      "value": 1170,
+      "unit": "km"
+    },
+    "Dominica": {
+      "value": 1512,
+      "unit": "km"
+    },
+    "Barbados": {
+      "value": 1700,
+      "unit": "km"
+    },
+    "Seychelles": {
+      "value": 526,
+      "unit": "km"
+    },
+    "Tonga": {
+      "value": 680,
+      "unit": "km"
+    },
+    "Kiribati": {
+      "value": 670,
+      "unit": "km"
+    },
+    "Liechtenstein": {
+      "value": 630,
+      "unit": "km"
+    },
+    "San Marino": {
+      "value": 292,
+      "unit": "km"
+    },
+    "Tuvalu": {
+      "value": 8,
+      "unit": "km"
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "title": "Commonwealth Membership by Country",
+  "description": "Status of countries as current or former members of the Commonwealth of Nations, 2020",
+  "unit": "status",
+  "source": "https://en.wikipedia.org/wiki/Member_states_of_the_Commonwealth_of_Nations",
+  "data": {
+    "Antigua and Barbuda": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Australia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Bahamas": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Bangladesh": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Barbados": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Belize": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Botswana": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Brunei": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Cyprus": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Eswatini": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Gambia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Ghana": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Grenada": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "India": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "Former",
+      "unit": "status"
+    },
+    "Jamaica": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Kenya": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Kiribati": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Malawi": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Malaysia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Maldives": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Malta": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Mauritius": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Nauru": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "New Zealand": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Papua New Guinea": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Saint Lucia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Samoa": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Sierra Leone": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Singapore": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Sri Lanka": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Tanzania": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Tonga": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Trinidad and Tobago": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Tuvalu": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "United Kingdom": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Zambia": {
+      "value": "Current",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Former",
+      "unit": "status"
+    }
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "title": "Total English Speakers by Country",
+  "description": "Total number of English speakers (native and non-native) in each country, latest available data",
+  "unit": "speakers",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population",
+  "data": {
+    "United States": {
+      "value": 299270000,
+      "unit": "speakers"
+    },
+    "India": {
+      "value": 228539090,
+      "unit": "speakers"
+    },
+    "Nigeria": {
+      "value": 125039680,
+      "unit": "speakers"
+    },
+    "Pakistan": {
+      "value": 108044691,
+      "unit": "speakers"
+    },
+    "United Kingdom": {
+      "value": 63718834,
+      "unit": "speakers"
+    },
+    "Philippines": {
+      "value": 70117935,
+      "unit": "speakers"
+    },
+    "Germany": {
+      "value": 45900000,
+      "unit": "speakers"
+    },
+    "Uganda": {
+      "value": 19800000,
+      "unit": "speakers"
+    },
+    "France": {
+      "value": 38643750,
+      "unit": "speakers"
+    },
+    "Canada": {
+      "value": 30480750,
+      "unit": "speakers"
+    },
+    "Egypt": {
+      "value": 44373802,
+      "unit": "speakers"
+    },
+    "Australia": {
+      "value": 23161344,
+      "unit": "speakers"
+    },
+    "Bangladesh": {
+      "value": 10784488,
+      "unit": "speakers"
+    },
+    "Poland": {
+      "value": 19000000,
+      "unit": "speakers"
+    },
+    "Ghana": {
+      "value": 17610870,
+      "unit": "speakers"
+    },
+    "Thailand": {
+      "value": 17121187,
+      "unit": "speakers"
+    },
+    "Ukraine": {
+      "value": 17016000,
+      "unit": "speakers"
+    },
+    "Italy": {
+      "value": 8121000,
+      "unit": "speakers"
+    },
+    "South Africa": {
+      "value": 16722208,
+      "unit": "speakers"
+    },
+    "Mexico": {
+      "value": 15686262,
+      "unit": "speakers"
+    },
+    "Malaysia": {
+      "value": 15580000,
+      "unit": "speakers"
+    },
+    "Indonesia": {
+      "value": 85968611,
+      "unit": "speakers"
+    },
+    "Afghanistan": {
+      "value": 2467800,
+      "unit": "speakers"
+    },
+    "Netherlands": {
+      "value": 15250000,
+      "unit": "speakers"
+    },
+    "Turkey": {
+      "value": 12000000,
+      "unit": "speakers"
+    },
+    "Zimbabwe": {
+      "value": 11850710,
+      "unit": "speakers"
+    },
+    "Iraq": {
+      "value": 11095000,
+      "unit": "speakers"
+    },
+    "Brazil": {
+      "value": 12000000,
+      "unit": "speakers"
+    },
+    "Spain": {
+      "value": 10400000,
+      "unit": "speakers"
+    },
+    "China": {
+      "value": 10000000,
+      "unit": "speakers"
+    },
+    "Sweden": {
+      "value": 9236000,
+      "unit": "speakers"
+    },
+    "Kenya": {
+      "value": 41332711,
+      "unit": "speakers"
+    },
+    "Cameroon": {
+      "value": 7500000,
+      "unit": "speakers"
+    },
+    "Morocco": {
+      "value": 6883220,
+      "unit": "speakers"
+    },
+    "Belgium": {
+      "value": 6250000,
+      "unit": "speakers"
+    },
+    "Israel": {
+      "value": 6205000,
+      "unit": "speakers"
+    },
+    "Austria": {
+      "value": 6150000,
+      "unit": "speakers"
+    },
+    "Romania": {
+      "value": 5900000,
+      "unit": "speakers"
+    },
+    "Hungary": {
+      "value": 2428295,
+      "unit": "speakers"
+    },
+    "Greece": {
+      "value": 5500000,
+      "unit": "speakers"
+    },
+    "Czech Republic": {
+      "value": 5350000,
+      "unit": "speakers"
+    },
+    "Russia": {
+      "value": 5066515,
+      "unit": "speakers"
+    },
+    "Sierra Leone": {
+      "value": 4900000,
+      "unit": "speakers"
+    },
+    "Denmark": {
+      "value": 4770000,
+      "unit": "speakers"
+    },
+    "Switzerland": {
+      "value": 3279538,
+      "unit": "speakers"
+    },
+    "Norway": {
+      "value": 4500000,
+      "unit": "speakers"
+    },
+    "Papua New Guinea": {
+      "value": 4459191,
+      "unit": "speakers"
+    },
+    "Ireland": {
+      "value": 4958527,
+      "unit": "speakers"
+    },
+    "New Zealand": {
+      "value": 4750056,
+      "unit": "speakers"
+    },
+    "Madagascar": {
+      "value": 4147614,
+      "unit": "speakers"
+    },
+    "Tanzania": {
+      "value": 7660000,
+      "unit": "speakers"
+    },
+    "Sri Lanka": {
+      "value": 3994174,
+      "unit": "speakers"
+    },
+    "Singapore": {
+      "value": 2668719,
+      "unit": "speakers"
+    },
+    "Finland": {
+      "value": 3900000,
+      "unit": "speakers"
+    },
+    "Cambodia": {
+      "value": 3500000,
+      "unit": "speakers"
+    },
+    "Hong Kong": {
+      "value": 4217535,
+      "unit": "speakers"
+    },
+    "Liberia": {
+      "value": 3100000,
+      "unit": "speakers"
+    },
+    "Jordan": {
+      "value": 2969370,
+      "unit": "speakers"
+    },
+    "Portugal": {
+      "value": 2900000,
+      "unit": "speakers"
+    },
+    "Argentina": {
+      "value": 2752681,
+      "unit": "speakers"
+    },
+    "Jamaica": {
+      "value": 2650000,
+      "unit": "speakers"
+    },
+    "Croatia": {
+      "value": 1500000,
+      "unit": "speakers"
+    },
+    "Algeria": {
+      "value": 2516780,
+      "unit": "speakers"
+    },
+    "Myanmar": {
+      "value": 2400000,
+      "unit": "speakers"
+    },
+    "Yemen": {
+      "value": 2232000,
+      "unit": "speakers"
+    },
+    "Colombia": {
+      "value": 2012950,
+      "unit": "speakers"
+    },
+    "Puerto Rico": {
+      "value": 1247939,
+      "unit": "speakers"
+    },
+    "Zambia": {
+      "value": 1910000,
+      "unit": "speakers"
+    },
+    "Bulgaria": {
+      "value": 1900000,
+      "unit": "speakers"
+    },
+    "Kazakhstan": {
+      "value": 1874583,
+      "unit": "speakers"
+    },
+    "Lebanon": {
+      "value": 1706000,
+      "unit": "speakers"
+    },
+    "Chile": {
+      "value": 1585027,
+      "unit": "speakers"
+    },
+    "Rwanda": {
+      "value": 1520610,
+      "unit": "speakers"
+    },
+    "Slovakia": {
+      "value": 1400000,
+      "unit": "speakers"
+    },
+    "Slovenia": {
+      "value": 1210000,
+      "unit": "speakers"
+    },
+    "Lithuania": {
+      "value": 873941,
+      "unit": "speakers"
+    },
+    "Trinidad and Tobago": {
+      "value": 1145000,
+      "unit": "speakers"
+    },
+    "Latvia": {
+      "value": 950000,
+      "unit": "speakers"
+    },
+    "Nepal": {
+      "value": 103884,
+      "unit": "speakers"
+    },
+    "Uruguay": {
+      "value": 840000,
+      "unit": "speakers"
+    },
+    "Guyana": {
+      "value": 680000,
+      "unit": "speakers"
+    },
+    "Estonia": {
+      "value": 626439,
+      "unit": "speakers"
+    },
+    "Botswana": {
+      "value": 630000,
+      "unit": "speakers"
+    },
+    "South Sudan": {
+      "value": 10258374,
+      "unit": "speakers"
+    },
+    "Cyprus": {
+      "value": 670000,
+      "unit": "speakers"
+    },
+    "Panama": {
+      "value": 584762,
+      "unit": "speakers"
+    },
+    "Eswatini": {
+      "value": 550000,
+      "unit": "speakers"
+    },
+    "Malawi": {
+      "value": 540209,
+      "unit": "speakers"
+    },
+    "Lesotho": {
+      "value": 500000,
+      "unit": "speakers"
+    },
+    "Suriname": {
+      "value": 410000,
+      "unit": "speakers"
+    },
+    "Malta": {
+      "value": 440000,
+      "unit": "speakers"
+    },
+    "Iceland": {
+      "value": 368723,
+      "unit": "speakers"
+    },
+    "Namibia": {
+      "value": 314000,
+      "unit": "speakers"
+    },
+    "Luxembourg": {
+      "value": 122467,
+      "unit": "speakers"
+    },
+    "Bahamas": {
+      "value": 288000,
+      "unit": "speakers"
+    },
+    "Barbados": {
+      "value": 296000,
+      "unit": "speakers"
+    },
+    "Belize": {
+      "value": 278390,
+      "unit": "speakers"
+    },
+    "Costa Rica": {
+      "value": 400415,
+      "unit": "speakers"
+    },
+    "Mauritius": {
+      "value": 202000,
+      "unit": "speakers"
+    },
+    "Ecuador": {
+      "value": 225000,
+      "unit": "speakers"
+    },
+    "Turkmenistan": {
+      "value": 204189,
+      "unit": "speakers"
+    },
+    "Armenia": {
+      "value": 143939,
+      "unit": "speakers"
+    },
+    "Vanuatu": {
+      "value": 137827,
+      "unit": "speakers"
+    },
+    "Azerbaijan": {
+      "value": 123664,
+      "unit": "speakers"
+    },
+    "Fiji": {
+      "value": 176000,
+      "unit": "speakers"
+    },
+    "Solomon Islands": {
+      "value": 459906,
+      "unit": "speakers"
+    },
+    "Brunei": {
+      "value": 144000,
+      "unit": "speakers"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 114000,
+      "unit": "speakers"
+    },
+    "Grenada": {
+      "value": 100000,
+      "unit": "speakers"
+    },
+    "Samoa": {
+      "value": 94000,
+      "unit": "speakers"
+    },
+    "Saint Lucia": {
+      "value": 71000,
+      "unit": "speakers"
+    },
+    "Antigua and Barbuda": {
+      "value": 68000,
+      "unit": "speakers"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 39000,
+      "unit": "speakers"
+    },
+    "Seychelles": {
+      "value": 33000,
+      "unit": "speakers"
+    },
+    "Tonga": {
+      "value": 30000,
+      "unit": "speakers"
+    },
+    "Kiribati": {
+      "value": 68765,
+      "unit": "speakers"
+    },
+    "Nauru": {
+      "value": 11600,
+      "unit": "speakers"
+    },
+    "Dominica": {
+      "value": 63000,
+      "unit": "speakers"
+    },
+    "Andorra": {
+      "value": 17869,
+      "unit": "speakers"
+    },
+    "Liechtenstein": {
+      "value": 5900,
+      "unit": "speakers"
+    },
+    "Anguilla": {
+      "value": 12000,
+      "unit": "speakers"
+    },
+    "Montserrat": {
+      "value": 4000,
+      "unit": "speakers"
+    }
+  }
+}
