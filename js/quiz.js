@@ -2021,22 +2021,22 @@ class QuizGame {
         // Support both old format (minColor, maxColor) and new format (colorScheme object)
         let color1, color2;
         
-        if (typeof minColor === 'object' && minColor.colors) {
+        if (typeof minColor === 'object' && minColor !== null) {
             // New format: colorScheme object
             if (minColor.colors && minColor.colors.length > 2) {
                 return this.interpolateMultiColor(enhancedRatio, minColor.colors);
             }
-            color1 = minColor.minColor || minColor.colors[0];
-            color2 = minColor.maxColor || minColor.colors[1];
+            color1 = minColor.minColor || (minColor.colors && minColor.colors[0]) || '#ffffff';
+            color2 = minColor.maxColor || (minColor.colors && minColor.colors[1]) || '#000000';
         } else {
             // Old format: minColor, maxColor strings
-            color1 = minColor;
-            color2 = maxColor;
+            color1 = minColor || '#ffffff';
+            color2 = maxColor || '#000000';
         }
         
         // Ensure colors are strings and have the correct format
         if (typeof color1 !== 'string' || typeof color2 !== 'string') {
-            console.warn('Invalid color format:', { color1, color2 });
+            console.warn('Invalid color format:', { color1, color2, minColor, maxColor });
             return '#ffffff'; // Default fallback
         }
         
@@ -2260,6 +2260,7 @@ class QuizGame {
         
         // Randomly select a color scheme
         const selectedScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+        console.log('Selected color scheme:', selectedScheme);
         
         // Get all values for color scaling
         const values = Object.values(this.currentQuiz.countries).map(country => country.value).filter(val => !isNaN(val));
@@ -2275,7 +2276,11 @@ class QuizGame {
             const value = this.currentQuiz.countries[country].value;
             if (!isNaN(value)) {
                 const ratio = (value - minValue) / (maxValue - minValue);
-                this.currentQuiz.countries[country].color = this.getColorForRatio(ratio, selectedScheme);
+                const color = this.getColorForRatio(ratio, selectedScheme, null);
+                this.currentQuiz.countries[country].color = color;
+                if (color === '#ffffff') {
+                    console.warn('Fallback color used for country:', country, 'with ratio:', ratio, 'and scheme:', selectedScheme);
+                }
             }
         });
         
