@@ -539,6 +539,13 @@ class WorldMap {
         // Remove existing legend
         if (this.legend) {
             this.map.removeControl(this.legend);
+            this.legend = null;
+        }
+        
+        // Validate quiz data
+        if (!quiz || !quiz.countries || Object.keys(quiz.countries).length === 0) {
+            console.warn('No valid quiz data for legend creation');
+            return;
         }
         
         // Handle categorical data
@@ -607,6 +614,8 @@ class WorldMap {
         
         // Update gradient colors
         this.updateLegendGradient(quiz);
+        
+        console.log('Legend created successfully');
     }
     
     createCategoricalLegend(quiz) {
@@ -623,10 +632,15 @@ class WorldMap {
         
         const categoryList = Array.from(categories);
         
+        if (categoryList.length === 0) {
+            console.warn('No valid categories found for categorical legend');
+            return;
+        }
+        
         // Create legend HTML with color swatches
         const colorSwatches = categoryList.map(category => {
             const color = categoryColors[category];
-            return `<div class="category-swatch" style="background-color: ${color};"></div>`;
+            return `<div class="category-swatch" style="background-color: ${color};" title="${category}"></div>`;
         }).join('');
         
         const legendHtml = `
@@ -652,6 +666,8 @@ class WorldMap {
         };
         
         this.legend.addTo(this.map);
+        
+        console.log('Categorical legend created successfully with', categoryList.length, 'categories');
     }
     
     updateLegendGradient(quiz) {
@@ -660,6 +676,14 @@ class WorldMap {
             const minColor = quiz.colorScheme.minColor;
             const maxColor = quiz.colorScheme.maxColor;
             gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
+        }
+    }
+    
+    clearLegend() {
+        if (this.legend) {
+            this.map.removeControl(this.legend);
+            this.legend = null;
+            console.log('Legend cleared');
         }
     }
     

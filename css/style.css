@@ -566,9 +566,7 @@ body {
     height: 80px; /* Match the height of the input section area */
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 20px;
-    bottom: 20px; /* Position just above the footer */
+    margin: 10px;
 }
 
 .legend-control.leaflet-control {
@@ -851,9 +849,6 @@ body {
     
     /* Legend - Mobile positioning */
     .legend-control {
-        position: fixed !important;
-        left: 16px !important;
-        bottom: 200px !important; /* Above the quiz interface */
         min-width: 160px;
         max-width: 200px;
         height: auto;
@@ -861,6 +856,7 @@ body {
         padding: 12px;
         border-radius: 12px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        margin: 8px;
     }
     
     .legend h4 {
@@ -950,11 +946,10 @@ body {
     }
     
     .legend-control {
-        left: 12px !important;
-        bottom: 220px !important;
         min-width: 140px;
         max-width: 180px;
         padding: 10px;
+        margin: 6px;
     }
     
     .legend h4 {
@@ -1007,11 +1002,10 @@ body {
     }
     
     .legend-control {
-        left: 8px !important;
-        bottom: 240px !important;
         min-width: 120px;
         max-width: 160px;
         padding: 8px;
+        margin: 4px;
     }
     
     .progress-circles {
@@ -1055,7 +1049,7 @@ body {
     }
     
     .legend-control {
-        bottom: 160px !important;
+        margin: 6px;
     }
     
     .progress-bar {
