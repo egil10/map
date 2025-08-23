@@ -240,13 +240,13 @@ class WorldMap {
         
         // Normalize country names to match GeoJSON names
         const geoNames = new Set(this.countriesData.features.map(f => f.properties.name));
-        console.log('🇺🇸 USA DEBUG - Available GeoJSON names containing "United" or "America":', 
-            Array.from(geoNames).filter(name => 
-                name.toLowerCase().includes('united') || 
-                name.toLowerCase().includes('america') || 
-                name.toLowerCase().includes('usa')
-            )
+        const usaNames = Array.from(geoNames).filter(name => 
+            name.toLowerCase().includes('united') || 
+            name.toLowerCase().includes('america') || 
+            name.toLowerCase().includes('usa')
         );
+        console.log('🇺🇸 USA DEBUG - Available GeoJSON names:');
+        usaNames.forEach(name => console.log(`  - "${name}"`));
         
         const fixed = {};
         for (const [k, v] of Object.entries(this.currentQuiz.countries)) {
@@ -265,6 +265,15 @@ class WorldMap {
             fixed[resolvedName] = v;
         }
         this.currentQuiz.countries = fixed;
+        
+        // Debug: Show final USA entries in the fixed countries object
+        const finalUSAEntries = Object.keys(fixed).filter(k => 
+            k.toLowerCase().includes('united') || 
+            k.toLowerCase().includes('america') || 
+            k.toLowerCase().includes('usa')
+        );
+        console.log('🇺🇸 USA DEBUG - Final quiz countries with USA data:');
+        finalUSAEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
         
         // Check if countries layer exists
         if (!this.countriesLayer) {
