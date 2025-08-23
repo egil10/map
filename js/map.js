@@ -95,11 +95,12 @@ class WorldMap {
                 currentHoverPopup = null;
             }
             
+            // Keep original colors, just increase weight slightly for subtle highlight
+            const originalStyle = this.getCountryStyle(layer.feature);
             layer.setStyle({
-                fillColor: '#ecf0f1',
+                ...originalStyle,
                 weight: 2,
-                color: '#bdc3c7',
-                fillOpacity: 0.9
+                color: '#666666'
             });
             
             // Use DOM class instead of Leaflet class
