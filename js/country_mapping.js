@@ -39,15 +39,16 @@ class CountryMapper {
     "Tibet": "China",
     "Russia/Soviet Union": "Russian Federation",
             
-            // United Kingdom variations
-            "United Kingdom": "United Kingdom of Great Britain and Northern Ireland",
-            "UK": "United Kingdom of Great Britain and Northern Ireland",
-            "Great Britain": "United Kingdom of Great Britain and Northern Ireland",
-            "England": "United Kingdom of Great Britain and Northern Ireland",
-            "Scotland": "United Kingdom of Great Britain and Northern Ireland",
-            "Wales": "United Kingdom of Great Britain and Northern Ireland",
-            "Northern Ireland": "United Kingdom of Great Britain and Northern Ireland",
-            "United Kingdom (plus British Overseas Territories and Crown Dependencies)": "United Kingdom of Great Britain and Northern Ireland",
+                // United Kingdom variations
+    "United Kingdom": "England",
+    "UK": "England",
+    "Great Britain": "England",
+    "England": "England",
+    "Scotland": "England",
+    "Wales": "England",
+    "Northern Ireland": "England",
+    "United Kingdom of Great Britain and Northern Ireland": "England",
+    "United Kingdom (plus British Overseas Territories and Crown Dependencies)": "England",
             
             // France variations
             "France": "France",
@@ -412,7 +413,7 @@ class CountryMapper {
             "Macau (CN)": "Macao",
             
             // Scotland
-            "Scotland (UK)": "United Kingdom",
+            "Scotland (UK)": "England",
             
             // United States Minor Outlying Islands
             "United States Minor Outlying Islands (US)": "United States of America",
@@ -427,7 +428,7 @@ class CountryMapper {
             "French Southern and Antarctic Lands (FR)": "French Southern Territories",
             
             // British Indian Ocean Territory
-            "British Indian Ocean Territory (UK)": "United Kingdom",
+            "British Indian Ocean Territory (UK)": "England",
             
             // Christmas Island
             "Christmas Island (AU)": "Christmas Island",
@@ -436,7 +437,7 @@ class CountryMapper {
             "Norfolk Island (AU)": "Norfolk Island",
             
             // Alderney
-            "Alderney": "United Kingdom",
+            "Alderney": "England",
             
             // Ascension
             "Ascension": "Saint Helena",
@@ -716,12 +717,12 @@ class CountryMapper {
             'america': 'USA',
             'russia': 'Russia',
             'china': 'China',
-            'uk': 'United Kingdom',
-            'great britain': 'United Kingdom',
-            'england': 'United Kingdom',
-            'scotland': 'United Kingdom',
-            'wales': 'United Kingdom',
-            'northern ireland': 'United Kingdom',
+                    'uk': 'England',
+        'great britain': 'England',
+        'england': 'England',
+        'scotland': 'England',
+        'wales': 'England',
+        'northern ireland': 'England',
             'czech': 'Czech Republic',
             'czechia': 'Czech Republic',
             'ivory coast': 'Côte d\'Ivoire',
@@ -821,15 +822,15 @@ class CountryMapper {
             'korea rok': 'South Korea',
             'hong kong cn': 'Hong Kong',
             'macau cn': 'Macao',
-            'scotland uk': 'United Kingdom',
+            'scotland uk': 'England',
             'united states minor': 'United States of America',
             'saint pierre miquelon': 'Saint Pierre and Miquelon',
             'wallis futuna': 'Wallis and Futuna',
             'french southern antarctic': 'French Southern Territories',
-            'british indian ocean': 'United Kingdom',
+            'british indian ocean': 'England',
             'christmas island au': 'Christmas Island',
             'norfolk island au': 'Norfolk Island',
-            'alderney': 'United Kingdom',
+            'alderney': 'England',
             'ascension': 'Saint Helena',
             'russia asia': 'Russian Federation',
             'russia europe': 'Russian Federation',
