@@ -3193,10 +3193,12 @@ class QuizGame {
     
     skipToPreviousQuestion() {
         console.log('skipToPreviousQuestion called, isLearnMode:', this.isLearnMode);
+        console.log('Current sequence length:', this.learnModeSequence.length, 'Current index:', this.learnModeCurrentIndex);
         
         if (this.isLearnMode) {
             // In learn mode, go to previous dataset in sequence
             if (this.learnModeSequence.length === 0) {
+                console.log('No sequence found, generating new one');
                 this.generateLearnModeSequence();
             }
             
@@ -3257,6 +3259,7 @@ class QuizGame {
         this.learnModeCurrentIndex = 0;
         
         console.log('Generated new learn mode sequence with', this.learnModeSequence.length, 'datasets');
+        console.log('First few datasets in sequence:', this.learnModeSequence.slice(0, 3).map(d => d.title));
     }
     
     loadRandomDataset() {
@@ -3292,6 +3295,11 @@ class QuizGame {
         
         // Reset answer shown flag for learn mode
         this.isAnswerShown = false;
+        
+        // Ensure skip buttons are still visible and enabled in learn mode
+        if (this.isLearnMode) {
+            this.showSkipButton();
+        }
         
         console.log('Loaded dataset from sequence:', this.currentQuiz.title, `(${this.learnModeCurrentIndex + 1}/${this.learnModeSequence.length})`);
     }
