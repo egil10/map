@@ -2034,6 +2034,16 @@ class QuizGame {
             color2 = maxColor;
         }
         
+        // Ensure colors are strings and have the correct format
+        if (typeof color1 !== 'string' || typeof color2 !== 'string') {
+            console.warn('Invalid color format:', { color1, color2 });
+            return '#ffffff'; // Default fallback
+        }
+        
+        // Ensure colors start with #
+        if (!color1.startsWith('#')) color1 = '#' + color1;
+        if (!color2.startsWith('#')) color2 = '#' + color2;
+        
         const r1 = parseInt(color1.slice(1, 3), 16);
         const g1 = parseInt(color1.slice(3, 5), 16);
         const b1 = parseInt(color1.slice(5, 7), 16);
@@ -2059,13 +2069,23 @@ class QuizGame {
         const color1 = colors[segment];
         const color2 = colors[segment + 1];
         
-        const r1 = parseInt(color1.slice(1, 3), 16);
-        const g1 = parseInt(color1.slice(3, 5), 16);
-        const b1 = parseInt(color1.slice(5, 7), 16);
+        // Ensure colors are strings and have the correct format
+        if (typeof color1 !== 'string' || typeof color2 !== 'string') {
+            console.warn('Invalid color format in multi-color interpolation:', { color1, color2 });
+            return '#ffffff'; // Default fallback
+        }
         
-        const r2 = parseInt(color2.slice(1, 3), 16);
-        const g2 = parseInt(color2.slice(3, 5), 16);
-        const b2 = parseInt(color2.slice(5, 7), 16);
+        // Ensure colors start with #
+        const normalizedColor1 = color1.startsWith('#') ? color1 : '#' + color1;
+        const normalizedColor2 = color2.startsWith('#') ? color2 : '#' + color2;
+        
+        const r1 = parseInt(normalizedColor1.slice(1, 3), 16);
+        const g1 = parseInt(normalizedColor1.slice(3, 5), 16);
+        const b1 = parseInt(normalizedColor1.slice(5, 7), 16);
+        
+        const r2 = parseInt(normalizedColor2.slice(1, 3), 16);
+        const g2 = parseInt(normalizedColor2.slice(3, 5), 16);
+        const b2 = parseInt(normalizedColor2.slice(5, 7), 16);
         
         const r = Math.round(r1 + (r2 - r1) * localRatio);
         const g = Math.round(g1 + (g2 - g1) * localRatio);
