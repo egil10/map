@@ -1,0 +1,692 @@
+{
+  "title": "Average Daily Caloric Food Supply Per Capita by Country",
+  "description": "Average daily caloric food supply per capita in kilojoules, including food waste, 2018",
+  "unit": "kJ",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_food_energy_intake",
+  "data": {
+    "Ireland": {
+      "value": 16250,
+      "unit": "kJ"
+    },
+    "United States": {
+      "value": 15820,
+      "unit": "kJ"
+    },
+    "Belgium": {
+      "value": 15770,
+      "unit": "kJ"
+    },
+    "Turkey": {
+      "value": 15530,
+      "unit": "kJ"
+    },
+    "Austria": {
+      "value": 15460,
+      "unit": "kJ"
+    },
+    "Iceland": {
+      "value": 15290,
+      "unit": "kJ"
+    },
+    "Romania": {
+      "value": 14980,
+      "unit": "kJ"
+    },
+    "Canada": {
+      "value": 14920,
+      "unit": "kJ"
+    },
+    "Germany": {
+      "value": 14870,
+      "unit": "kJ"
+    },
+    "Poland": {
+      "value": 14800,
+      "unit": "kJ"
+    },
+    "Israel": {
+      "value": 14760,
+      "unit": "kJ"
+    },
+    "Italy": {
+      "value": 14660,
+      "unit": "kJ"
+    },
+    "France": {
+      "value": 14650,
+      "unit": "kJ"
+    },
+    "Montenegro": {
+      "value": 15000,
+      "unit": "kJ"
+    },
+    "Portugal": {
+      "value": 14600,
+      "unit": "kJ"
+    },
+    "Kuwait": {
+      "value": 14520,
+      "unit": "kJ"
+    },
+    "Luxembourg": {
+      "value": 14500,
+      "unit": "kJ"
+    },
+    "Tunisia": {
+      "value": 14400,
+      "unit": "kJ"
+    },
+    "South Korea": {
+      "value": 14300,
+      "unit": "kJ"
+    },
+    "Malta": {
+      "value": 14300,
+      "unit": "kJ"
+    },
+    "Morocco": {
+      "value": 14280,
+      "unit": "kJ"
+    },
+    "Lithuania": {
+      "value": 14270,
+      "unit": "kJ"
+    },
+    "Denmark": {
+      "value": 14230,
+      "unit": "kJ"
+    },
+    "Australia": {
+      "value": 14190,
+      "unit": "kJ"
+    },
+    "Greece": {
+      "value": 14150,
+      "unit": "kJ"
+    },
+    "Norway": {
+      "value": 14100,
+      "unit": "kJ"
+    },
+    "Albania": {
+      "value": 14100,
+      "unit": "kJ"
+    },
+    "Switzerland": {
+      "value": 14030,
+      "unit": "kJ"
+    },
+    "Russia": {
+      "value": 14000,
+      "unit": "kJ"
+    },
+    "United Kingdom": {
+      "value": 13990,
+      "unit": "kJ"
+    },
+    "Cuba": {
+      "value": 13990,
+      "unit": "kJ"
+    },
+    "Finland": {
+      "value": 13990,
+      "unit": "kJ"
+    },
+    "Algeria": {
+      "value": 13900,
+      "unit": "kJ"
+    },
+    "Spain": {
+      "value": 13900,
+      "unit": "kJ"
+    },
+    "Hungary": {
+      "value": 13870,
+      "unit": "kJ"
+    },
+    "United Arab Emirates": {
+      "value": 13870,
+      "unit": "kJ"
+    },
+    "Argentina": {
+      "value": 13840,
+      "unit": "kJ"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 13840,
+      "unit": "kJ"
+    },
+    "Saudi Arabia": {
+      "value": 13840,
+      "unit": "kJ"
+    },
+    "Brazil": {
+      "value": 13810,
+      "unit": "kJ"
+    },
+    "Netherlands": {
+      "value": 13790,
+      "unit": "kJ"
+    },
+    "Egypt": {
+      "value": 13770,
+      "unit": "kJ"
+    },
+    "Czech Republic": {
+      "value": 13710,
+      "unit": "kJ"
+    },
+    "Belarus": {
+      "value": 13700,
+      "unit": "kJ"
+    },
+    "Hong Kong (China)": {
+      "value": 13670,
+      "unit": "kJ"
+    },
+    "Estonia": {
+      "value": 13590,
+      "unit": "kJ"
+    },
+    "Latvia": {
+      "value": 13510,
+      "unit": "kJ"
+    },
+    "China": {
+      "value": 13410,
+      "unit": "kJ"
+    },
+    "Uruguay": {
+      "value": 13400,
+      "unit": "kJ"
+    },
+    "New Zealand": {
+      "value": 13350,
+      "unit": "kJ"
+    },
+    "Slovenia": {
+      "value": 13350,
+      "unit": "kJ"
+    },
+    "Sweden": {
+      "value": 13320,
+      "unit": "kJ"
+    },
+    "Mexico": {
+      "value": 13210,
+      "unit": "kJ"
+    },
+    "Azerbaijan": {
+      "value": 13180,
+      "unit": "kJ"
+    },
+    "Colombia": {
+      "value": 13030,
+      "unit": "kJ"
+    },
+    "Ukraine": {
+      "value": 12980,
+      "unit": "kJ"
+    },
+    "Iran": {
+      "value": 12920,
+      "unit": "kJ"
+    },
+    "Kiribati": {
+      "value": 12880,
+      "unit": "kJ"
+    },
+    "Croatia": {
+      "value": 12860,
+      "unit": "kJ"
+    },
+    "North Macedonia": {
+      "value": 12850,
+      "unit": "kJ"
+    },
+    "Kazakhstan": {
+      "value": 12830,
+      "unit": "kJ"
+    },
+    "Mauritius": {
+      "value": 12770,
+      "unit": "kJ"
+    },
+    "Ghana": {
+      "value": 12700,
+      "unit": "kJ"
+    },
+    "Samoa": {
+      "value": 12700,
+      "unit": "kJ"
+    },
+    "Chile": {
+      "value": 12670,
+      "unit": "kJ"
+    },
+    "Costa Rica": {
+      "value": 12670,
+      "unit": "kJ"
+    },
+    "Vietnam": {
+      "value": 12660,
+      "unit": "kJ"
+    },
+    "Cyprus": {
+      "value": 12630,
+      "unit": "kJ"
+    },
+    "Uzbekistan": {
+      "value": 12600,
+      "unit": "kJ"
+    },
+    "Armenia": {
+      "value": 12540,
+      "unit": "kJ"
+    },
+    "Trinidad and Tobago": {
+      "value": 12510,
+      "unit": "kJ"
+    },
+    "Brunei": {
+      "value": 12490,
+      "unit": "kJ"
+    },
+    "Taiwan": {
+      "value": 12480,
+      "unit": "kJ"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 12420,
+      "unit": "kJ"
+    },
+    "Barbados": {
+      "value": 12370,
+      "unit": "kJ"
+    },
+    "Dominica": {
+      "value": 12350,
+      "unit": "kJ"
+    },
+    "Oman": {
+      "value": 12300,
+      "unit": "kJ"
+    },
+    "Guyana": {
+      "value": 12190,
+      "unit": "kJ"
+    },
+    "South Africa": {
+      "value": 12130,
+      "unit": "kJ"
+    },
+    "Dominican Republic": {
+      "value": 12100,
+      "unit": "kJ"
+    },
+    "Indonesia": {
+      "value": 12070,
+      "unit": "kJ"
+    },
+    "Mauritania": {
+      "value": 12040,
+      "unit": "kJ"
+    },
+    "Mali": {
+      "value": 12020,
+      "unit": "kJ"
+    },
+    "Slovakia": {
+      "value": 12010,
+      "unit": "kJ"
+    },
+    "New Caledonia (France)": {
+      "value": 11960,
+      "unit": "kJ"
+    },
+    "Lebanon": {
+      "value": 11950,
+      "unit": "kJ"
+    },
+    "Bulgaria": {
+      "value": 11940,
+      "unit": "kJ"
+    },
+    "Panama": {
+      "value": 11930,
+      "unit": "kJ"
+    },
+    "Malaysia": {
+      "value": 11900,
+      "unit": "kJ"
+    },
+    "Georgia": {
+      "value": 11860,
+      "unit": "kJ"
+    },
+    "Turkmenistan": {
+      "value": 11800,
+      "unit": "kJ"
+    },
+    "Serbia": {
+      "value": 11830,
+      "unit": "kJ"
+    },
+    "Thailand": {
+      "value": 11730,
+      "unit": "kJ"
+    },
+    "Jamaica": {
+      "value": 11680,
+      "unit": "kJ"
+    },
+    "Fiji": {
+      "value": 11640,
+      "unit": "kJ"
+    },
+    "Ivory Coast": {
+      "value": 11620,
+      "unit": "kJ"
+    },
+    "Peru": {
+      "value": 11610,
+      "unit": "kJ"
+    },
+    "Belize": {
+      "value": 11610,
+      "unit": "kJ"
+    },
+    "Nepal": {
+      "value": 11590,
+      "unit": "kJ"
+    },
+    "Paraguay": {
+      "value": 11580,
+      "unit": "kJ"
+    },
+    "Laos": {
+      "value": 11540,
+      "unit": "kJ"
+    },
+    "Benin": {
+      "value": 11530,
+      "unit": "kJ"
+    },
+    "Guinea": {
+      "value": 11490,
+      "unit": "kJ"
+    },
+    "Burkina Faso": {
+      "value": 11450,
+      "unit": "kJ"
+    },
+    "Sri Lanka": {
+      "value": 11450,
+      "unit": "kJ"
+    },
+    "Cameroon": {
+      "value": 11430,
+      "unit": "kJ"
+    },
+    "Jordan": {
+      "value": 11430,
+      "unit": "kJ"
+    },
+    "Kyrgyzstan": {
+      "value": 11420,
+      "unit": "kJ"
+    },
+    "Japan": {
+      "value": 11320,
+      "unit": "kJ"
+    },
+    "Suriname": {
+      "value": 11290,
+      "unit": "kJ"
+    },
+    "El Salvador": {
+      "value": 11280,
+      "unit": "kJ"
+    },
+    "Djibouti": {
+      "value": 11270,
+      "unit": "kJ"
+    },
+    "Honduras": {
+      "value": 11180,
+      "unit": "kJ"
+    },
+    "Myanmar": {
+      "value": 11180,
+      "unit": "kJ"
+    },
+    "Philippines": {
+      "value": 11140,
+      "unit": "kJ"
+    },
+    "Bahamas": {
+      "value": 11110,
+      "unit": "kJ"
+    },
+    "Gabon": {
+      "value": 11020,
+      "unit": "kJ"
+    },
+    "Saint Lucia": {
+      "value": 10950,
+      "unit": "kJ"
+    },
+    "Iraq": {
+      "value": 10910,
+      "unit": "kJ"
+    },
+    "Vanuatu": {
+      "value": 10910,
+      "unit": "kJ"
+    },
+    "Ecuador": {
+      "value": 10900,
+      "unit": "kJ"
+    },
+    "Niger": {
+      "value": 10880,
+      "unit": "kJ"
+    },
+    "Nicaragua": {
+      "value": 10800,
+      "unit": "kJ"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 10800,
+      "unit": "kJ"
+    },
+    "Mongolia": {
+      "value": 10790,
+      "unit": "kJ"
+    },
+    "Sudan": {
+      "value": 10790,
+      "unit": "kJ"
+    },
+    "Nigeria": {
+      "value": 10760,
+      "unit": "kJ"
+    },
+    "Bangladesh": {
+      "value": 10720,
+      "unit": "kJ"
+    },
+    "Guatemala": {
+      "value": 10670,
+      "unit": "kJ"
+    },
+    "Senegal": {
+      "value": 10650,
+      "unit": "kJ"
+    },
+    "Cape Verde": {
+      "value": 10630,
+      "unit": "kJ"
+    },
+    "India": {
+      "value": 10600,
+      "unit": "kJ"
+    },
+    "Gambia": {
+      "value": 10600,
+      "unit": "kJ"
+    },
+    "Cambodia": {
+      "value": 10430,
+      "unit": "kJ"
+    },
+    "Pakistan": {
+      "value": 10400,
+      "unit": "kJ"
+    },
+    "Namibia": {
+      "value": 10330,
+      "unit": "kJ"
+    },
+    "Sao Tome and Principe": {
+      "value": 10230,
+      "unit": "kJ"
+    },
+    "Antigua and Barbuda": {
+      "value": 10230,
+      "unit": "kJ"
+    },
+    "Togo": {
+      "value": 10220,
+      "unit": "kJ"
+    },
+    "Eswatini": {
+      "value": 10150,
+      "unit": "kJ"
+    },
+    "Solomon Islands": {
+      "value": 10100,
+      "unit": "kJ"
+    },
+    "Bolivia": {
+      "value": 10090,
+      "unit": "kJ"
+    },
+    "Grenada": {
+      "value": 10050,
+      "unit": "kJ"
+    },
+    "Malawi": {
+      "value": 10010,
+      "unit": "kJ"
+    },
+    "Angola": {
+      "value": 9980,
+      "unit": "kJ"
+    },
+    "Moldova": {
+      "value": 9970,
+      "unit": "kJ"
+    },
+    "Tanzania": {
+      "value": 9930,
+      "unit": "kJ"
+    },
+    "Sierra Leone": {
+      "value": 9910,
+      "unit": "kJ"
+    },
+    "Botswana": {
+      "value": 9800,
+      "unit": "kJ"
+    },
+    "Ethiopia": {
+      "value": 9780,
+      "unit": "kJ"
+    },
+    "Lesotho": {
+      "value": 9720,
+      "unit": "kJ"
+    },
+    "Timor-Leste": {
+      "value": 9570,
+      "unit": "kJ"
+    },
+    "Republic of the Congo": {
+      "value": 9560,
+      "unit": "kJ"
+    },
+    "Maldives": {
+      "value": 9350,
+      "unit": "kJ"
+    },
+    "Guinea-Bissau": {
+      "value": 9330,
+      "unit": "kJ"
+    },
+    "Kenya": {
+      "value": 9190,
+      "unit": "kJ"
+    },
+    "Rwanda": {
+      "value": 9150,
+      "unit": "kJ"
+    },
+    "Liberia": {
+      "value": 9070,
+      "unit": "kJ"
+    },
+    "Yemen": {
+      "value": 9010,
+      "unit": "kJ"
+    },
+    "Haiti": {
+      "value": 8870,
+      "unit": "kJ"
+    },
+    "Venezuela": {
+      "value": 8900,
+      "unit": "kJ"
+    },
+    "Chad": {
+      "value": 8850,
+      "unit": "kJ"
+    },
+    "Tajikistan": {
+      "value": 8820,
+      "unit": "kJ"
+    },
+    "Mozambique": {
+      "value": 8800,
+      "unit": "kJ"
+    },
+    "Afghanistan": {
+      "value": 8500,
+      "unit": "kJ"
+    },
+    "North Korea": {
+      "value": 8450,
+      "unit": "kJ"
+    },
+    "Zambia": {
+      "value": 8380,
+      "unit": "kJ"
+    },
+    "Uganda": {
+      "value": 8290,
+      "unit": "kJ"
+    },
+    "Madagascar": {
+      "value": 8110,
+      "unit": "kJ"
+    },
+    "Zimbabwe": {
+      "value": 7980,
+      "unit": "kJ"
+    },
+    "Central African Republic": {
+      "value": 7470,
+      "unit": "kJ"
+    }
+  }
+}

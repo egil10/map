@@ -1,0 +1,692 @@
+{
+  "title": "Wine Consumption Per Capita by Country",
+  "description": "Annual wine consumption per capita in liters for each country, 2022",
+  "unit": "liters",
+  "source": "https://worldpopulationreview.com/country-rankings/wine-consumption-by-country",
+  "data": {
+    "Luxembourg": {
+      "value": 67.2,
+      "unit": "liters"
+    },
+    "Portugal": {
+      "value": 52.3,
+      "unit": "liters"
+    },
+    "France": {
+      "value": 42.8,
+      "unit": "liters"
+    },
+    "Italy": {
+      "value": 39.2,
+      "unit": "liters"
+    },
+    "Switzerland": {
+      "value": 33.1,
+      "unit": "liters"
+    },
+    "Australia": {
+      "value": 29.9,
+      "unit": "liters"
+    },
+    "Austria": {
+      "value": 27.4,
+      "unit": "liters"
+    },
+    "Romania": {
+      "value": 25.3,
+      "unit": "liters"
+    },
+    "Denmark": {
+      "value": 24.9,
+      "unit": "liters"
+    },
+    "Netherlands": {
+      "value": 23.8,
+      "unit": "liters"
+    },
+    "Belgium": {
+      "value": 23.4,
+      "unit": "liters"
+    },
+    "Seychelles": {
+      "value": 23.0,
+      "unit": "liters"
+    },
+    "Uruguay": {
+      "value": 22.4,
+      "unit": "liters"
+    },
+    "Spain": {
+      "value": 19.6,
+      "unit": "liters"
+    },
+    "Sweden": {
+      "value": 19.6,
+      "unit": "liters"
+    },
+    "United Kingdom": {
+      "value": 19.4,
+      "unit": "liters"
+    },
+    "Chile": {
+      "value": 18.9,
+      "unit": "liters"
+    },
+    "Argentina": {
+      "value": 18.6,
+      "unit": "liters"
+    },
+    "Moldova": {
+      "value": 17.9,
+      "unit": "liters"
+    },
+    "Hungary": {
+      "value": 17.9,
+      "unit": "liters"
+    },
+    "Ireland": {
+      "value": 17.5,
+      "unit": "liters"
+    },
+    "Germany": {
+      "value": 17.3,
+      "unit": "liters"
+    },
+    "Norway": {
+      "value": 17.0,
+      "unit": "liters"
+    },
+    "Estonia": {
+      "value": 16.9,
+      "unit": "liters"
+    },
+    "Greece": {
+      "value": 15.9,
+      "unit": "liters"
+    },
+    "Sao Tome and Principe": {
+      "value": 15.2,
+      "unit": "liters"
+    },
+    "Montenegro": {
+      "value": 15.1,
+      "unit": "liters"
+    },
+    "Namibia": {
+      "value": 14.9,
+      "unit": "liters"
+    },
+    "Latvia": {
+      "value": 14.8,
+      "unit": "liters"
+    },
+    "Croatia": {
+      "value": 14.6,
+      "unit": "liters"
+    },
+    "Saint Lucia": {
+      "value": 13.8,
+      "unit": "liters"
+    },
+    "Antigua and Barbuda": {
+      "value": 13.7,
+      "unit": "liters"
+    },
+    "Cyprus": {
+      "value": 13.7,
+      "unit": "liters"
+    },
+    "Iceland": {
+      "value": 13.6,
+      "unit": "liters"
+    },
+    "Malta": {
+      "value": 12.9,
+      "unit": "liters"
+    },
+    "Barbados": {
+      "value": 12.6,
+      "unit": "liters"
+    },
+    "Finland": {
+      "value": 11.9,
+      "unit": "liters"
+    },
+    "Lithuania": {
+      "value": 11.5,
+      "unit": "liters"
+    },
+    "Macau": {
+      "value": 11.4,
+      "unit": "liters"
+    },
+    "Czech Republic": {
+      "value": 11.2,
+      "unit": "liters"
+    },
+    "Bulgaria": {
+      "value": 11.0,
+      "unit": "liters"
+    },
+    "New Zealand": {
+      "value": 10.7,
+      "unit": "liters"
+    },
+    "New Caledonia": {
+      "value": 10.7,
+      "unit": "liters"
+    },
+    "Cape Verde": {
+      "value": 9.43,
+      "unit": "liters"
+    },
+    "United States": {
+      "value": 9.27,
+      "unit": "liters"
+    },
+    "Belarus": {
+      "value": 9.01,
+      "unit": "liters"
+    },
+    "North Macedonia": {
+      "value": 8.63,
+      "unit": "liters"
+    },
+    "Turkmenistan": {
+      "value": 8.24,
+      "unit": "liters"
+    },
+    "Grenada": {
+      "value": 8.03,
+      "unit": "liters"
+    },
+    "Dominica": {
+      "value": 7.88,
+      "unit": "liters"
+    },
+    "Slovenia": {
+      "value": 7.67,
+      "unit": "liters"
+    },
+    "Canada": {
+      "value": 7.13,
+      "unit": "liters"
+    },
+    "Russia": {
+      "value": 6.54,
+      "unit": "liters"
+    },
+    "Bahamas": {
+      "value": 5.36,
+      "unit": "liters"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 5.25,
+      "unit": "liters"
+    },
+    "Serbia": {
+      "value": 5.19,
+      "unit": "liters"
+    },
+    "Poland": {
+      "value": 5.04,
+      "unit": "liters"
+    },
+    "Georgia": {
+      "value": 4.84,
+      "unit": "liters"
+    },
+    "Costa Rica": {
+      "value": 3.91,
+      "unit": "liters"
+    },
+    "Trinidad and Tobago": {
+      "value": 3.84,
+      "unit": "liters"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 3.82,
+      "unit": "liters"
+    },
+    "Hong Kong": {
+      "value": 3.67,
+      "unit": "liters"
+    },
+    "Mauritius": {
+      "value": 3.55,
+      "unit": "liters"
+    },
+    "Paraguay": {
+      "value": 3.39,
+      "unit": "liters"
+    },
+    "Mongolia": {
+      "value": 3.16,
+      "unit": "liters"
+    },
+    "South Africa": {
+      "value": 3.03,
+      "unit": "liters"
+    },
+    "Botswana": {
+      "value": 2.91,
+      "unit": "liters"
+    },
+    "Belize": {
+      "value": 2.84,
+      "unit": "liters"
+    },
+    "Peru": {
+      "value": 2.82,
+      "unit": "liters"
+    },
+    "Maldives": {
+      "value": 2.73,
+      "unit": "liters"
+    },
+    "Japan": {
+      "value": 2.61,
+      "unit": "liters"
+    },
+    "Tunisia": {
+      "value": 2.55,
+      "unit": "liters"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 2.53,
+      "unit": "liters"
+    },
+    "Albania": {
+      "value": 2.5,
+      "unit": "liters"
+    },
+    "Gabon": {
+      "value": 2.26,
+      "unit": "liters"
+    },
+    "Eswatini": {
+      "value": 2.24,
+      "unit": "liters"
+    },
+    "Fiji": {
+      "value": 2.24,
+      "unit": "liters"
+    },
+    "Panama": {
+      "value": 2.23,
+      "unit": "liters"
+    },
+    "Kazakhstan": {
+      "value": 2.22,
+      "unit": "liters"
+    },
+    "Tonga": {
+      "value": 2.16,
+      "unit": "liters"
+    },
+    "Brazil": {
+      "value": 2.12,
+      "unit": "liters"
+    },
+    "Slovakia": {
+      "value": 2.12,
+      "unit": "liters"
+    },
+    "Ukraine": {
+      "value": 2.1,
+      "unit": "liters"
+    },
+    "Ivory Coast": {
+      "value": 2.07,
+      "unit": "liters"
+    },
+    "Vanuatu": {
+      "value": 2.01,
+      "unit": "liters"
+    },
+    "United Arab Emirates": {
+      "value": 1.87,
+      "unit": "liters"
+    },
+    "Dominican Republic": {
+      "value": 1.75,
+      "unit": "liters"
+    },
+    "Armenia": {
+      "value": 1.75,
+      "unit": "liters"
+    },
+    "China": {
+      "value": 1.51,
+      "unit": "liters"
+    },
+    "Tuvalu": {
+      "value": 1.42,
+      "unit": "liters"
+    },
+    "South Korea": {
+      "value": 1.36,
+      "unit": "liters"
+    },
+    "Morocco": {
+      "value": 1.33,
+      "unit": "liters"
+    },
+    "Cuba": {
+      "value": 1.33,
+      "unit": "liters"
+    },
+    "Bahrain": {
+      "value": 1.22,
+      "unit": "liters"
+    },
+    "Angola": {
+      "value": 1.21,
+      "unit": "liters"
+    },
+    "Israel": {
+      "value": 1.21,
+      "unit": "liters"
+    },
+    "Lesotho": {
+      "value": 1.19,
+      "unit": "liters"
+    },
+    "Suriname": {
+      "value": 0.97,
+      "unit": "liters"
+    },
+    "Taiwan": {
+      "value": 0.93,
+      "unit": "liters"
+    },
+    "Turkey": {
+      "value": 0.91,
+      "unit": "liters"
+    },
+    "Qatar": {
+      "value": 0.87,
+      "unit": "liters"
+    },
+    "Malaysia": {
+      "value": 0.85,
+      "unit": "liters"
+    },
+    "Ecuador": {
+      "value": 0.83,
+      "unit": "liters"
+    },
+    "Bolivia": {
+      "value": 0.82,
+      "unit": "liters"
+    },
+    "Republic of the Congo": {
+      "value": 0.77,
+      "unit": "liters"
+    },
+    "Colombia": {
+      "value": 0.72,
+      "unit": "liters"
+    },
+    "Ghana": {
+      "value": 0.71,
+      "unit": "liters"
+    },
+    "Azerbaijan": {
+      "value": 0.68,
+      "unit": "liters"
+    },
+    "Burkina Faso": {
+      "value": 0.67,
+      "unit": "liters"
+    },
+    "Bhutan": {
+      "value": 0.66,
+      "unit": "liters"
+    },
+    "El Salvador": {
+      "value": 0.63,
+      "unit": "liters"
+    },
+    "Guyana": {
+      "value": 0.6,
+      "unit": "liters"
+    },
+    "Samoa": {
+      "value": 0.55,
+      "unit": "liters"
+    },
+    "Benin": {
+      "value": 0.54,
+      "unit": "liters"
+    },
+    "Kyrgyzstan": {
+      "value": 0.49,
+      "unit": "liters"
+    },
+    "Cameroon": {
+      "value": 0.39,
+      "unit": "liters"
+    },
+    "Guatemala": {
+      "value": 0.39,
+      "unit": "liters"
+    },
+    "Haiti": {
+      "value": 0.38,
+      "unit": "liters"
+    },
+    "Senegal": {
+      "value": 0.34,
+      "unit": "liters"
+    },
+    "Timor-Leste": {
+      "value": 0.34,
+      "unit": "liters"
+    },
+    "Uzbekistan": {
+      "value": 0.33,
+      "unit": "liters"
+    },
+    "Rwanda": {
+      "value": 0.32,
+      "unit": "liters"
+    },
+    "Vietnam": {
+      "value": 0.29,
+      "unit": "liters"
+    },
+    "Zimbabwe": {
+      "value": 0.29,
+      "unit": "liters"
+    },
+    "Venezuela": {
+      "value": 0.28,
+      "unit": "liters"
+    },
+    "Algeria": {
+      "value": 0.27,
+      "unit": "liters"
+    },
+    "Madagascar": {
+      "value": 0.26,
+      "unit": "liters"
+    },
+    "Papua New Guinea": {
+      "value": 0.26,
+      "unit": "liters"
+    },
+    "Oman": {
+      "value": 0.26,
+      "unit": "liters"
+    },
+    "Nicaragua": {
+      "value": 0.25,
+      "unit": "liters"
+    },
+    "Guinea": {
+      "value": 0.22,
+      "unit": "liters"
+    },
+    "Solomon Islands": {
+      "value": 0.22,
+      "unit": "liters"
+    },
+    "Honduras": {
+      "value": 0.21,
+      "unit": "liters"
+    },
+    "Djibouti": {
+      "value": 0.19,
+      "unit": "liters"
+    },
+    "Comoros": {
+      "value": 0.19,
+      "unit": "liters"
+    },
+    "Kenya": {
+      "value": 0.17,
+      "unit": "liters"
+    },
+    "Laos": {
+      "value": 0.17,
+      "unit": "liters"
+    },
+    "Liberia": {
+      "value": 0.17,
+      "unit": "liters"
+    },
+    "Philippines": {
+      "value": 0.15,
+      "unit": "liters"
+    },
+    "Mozambique": {
+      "value": 0.14,
+      "unit": "liters"
+    },
+    "Zambia": {
+      "value": 0.14,
+      "unit": "liters"
+    },
+    "Nigeria": {
+      "value": 0.13,
+      "unit": "liters"
+    },
+    "Mexico": {
+      "value": 0.13,
+      "unit": "liters"
+    },
+    "Micronesia": {
+      "value": 0.13,
+      "unit": "liters"
+    },
+    "Lebanon": {
+      "value": 0.12,
+      "unit": "liters"
+    },
+    "Kiribati": {
+      "value": 0.12,
+      "unit": "liters"
+    },
+    "Tanzania": {
+      "value": 0.11,
+      "unit": "liters"
+    },
+    "Sierra Leone": {
+      "value": 0.1,
+      "unit": "liters"
+    },
+    "Jordan": {
+      "value": 0.09,
+      "unit": "liters"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 0.08,
+      "unit": "liters"
+    },
+    "Cambodia": {
+      "value": 0.08,
+      "unit": "liters"
+    },
+    "Burundi": {
+      "value": 0.08,
+      "unit": "liters"
+    },
+    "Uganda": {
+      "value": 0.07,
+      "unit": "liters"
+    },
+    "Thailand": {
+      "value": 0.06,
+      "unit": "liters"
+    },
+    "Egypt": {
+      "value": 0.05,
+      "unit": "liters"
+    },
+    "Mali": {
+      "value": 0.05,
+      "unit": "liters"
+    },
+    "Sri Lanka": {
+      "value": 0.05,
+      "unit": "liters"
+    },
+    "Central African Republic": {
+      "value": 0.05,
+      "unit": "liters"
+    },
+    "Gambia": {
+      "value": 0.05,
+      "unit": "liters"
+    },
+    "Tajikistan": {
+      "value": 0.04,
+      "unit": "liters"
+    },
+    "Kuwait": {
+      "value": 0.04,
+      "unit": "liters"
+    },
+    "Myanmar": {
+      "value": 0.03,
+      "unit": "liters"
+    },
+    "Iraq": {
+      "value": 0.02,
+      "unit": "liters"
+    },
+    "Nepal": {
+      "value": 0.02,
+      "unit": "liters"
+    },
+    "Niger": {
+      "value": 0.02,
+      "unit": "liters"
+    },
+    "Jamaica": {
+      "value": 0.02,
+      "unit": "liters"
+    },
+    "Indonesia": {
+      "value": 0.01,
+      "unit": "liters"
+    },
+    "Ethiopia": {
+      "value": 0.01,
+      "unit": "liters"
+    },
+    "Malawi": {
+      "value": 0.01,
+      "unit": "liters"
+    },
+    "Chad": {
+      "value": 0.01,
+      "unit": "liters"
+    },
+    "India": {
+      "value": 0.007,
+      "unit": "liters"
+    }
+  }
+}

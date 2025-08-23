@@ -1,0 +1,1340 @@
+{
+  "title": "Currency Exchange Rates Compared to U.S. Dollar by Country",
+  "description": "Exchange rates of national currencies against the U.S. Dollar, latest available data",
+  "unit": "USD",
+  "source": "https://www.madisontrust.com/information-center/visualizations/strongest-and-weakest-currencies-in-world-compared-to-us-dollar/",
+  "data": {
+    "Kuwait": {
+      "value": 0.31,
+      "unit": "USD",
+      "currency_code": "KWD",
+      "currency_name": "Kuwaiti Dinar"
+    },
+    "Bahrain": {
+      "value": 0.38,
+      "unit": "USD",
+      "currency_code": "BHD",
+      "currency_name": "Bahraini Dinar"
+    },
+    "Oman": {
+      "value": 0.39,
+      "unit": "USD",
+      "currency_code": "OMR",
+      "currency_name": "Oman Rial"
+    },
+    "Jordan": {
+      "value": 0.71,
+      "unit": "USD",
+      "currency_code": "JOD",
+      "currency_name": "Jordanian Dinar"
+    },
+    "Gibraltar": {
+      "value": 0.79,
+      "unit": "USD",
+      "currency_code": "GIP",
+      "currency_name": "Gibraltar Pound"
+    },
+    "Saint Helena": {
+      "value": 0.79,
+      "unit": "USD",
+      "currency_code": "SHP",
+      "currency_name": "St. Helena Pound"
+    },
+    "United Kingdom": {
+      "value": 0.79,
+      "unit": "USD",
+      "currency_code": "GBP",
+      "currency_name": "U.K. Pound"
+    },
+    "Cayman Islands": {
+      "value": 0.82,
+      "unit": "USD",
+      "currency_code": "KYD",
+      "currency_name": "Cayman Islands Dollar"
+    },
+    "Liechtenstein": {
+      "value": 0.88,
+      "unit": "USD",
+      "currency_code": "CHF",
+      "currency_name": "Swiss Franc"
+    },
+    "Switzerland": {
+      "value": 0.88,
+      "unit": "USD",
+      "currency_code": "CHF",
+      "currency_name": "Swiss Franc"
+    },
+    "Andorra": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Austria": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Belgium": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Canary Islands": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Croatia": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Cyprus": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Estonia": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Finland": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "France": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "French Guiana": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Germany": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Greece": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Guadeloupe": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Ireland": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Italy": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Latvia": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Lithuania": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Luxembourg": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Malta": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Martinique": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Monaco": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Montenegro": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Netherlands": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Portugal": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Reunion": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "San Marino": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Slovakia": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Slovenia": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "Spain": {
+      "value": 0.91,
+      "unit": "USD",
+      "currency_code": "EUR",
+      "currency_name": "Euro"
+    },
+    "American Samoa": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Bahamas": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "BSD",
+      "currency_name": "Bahamian Dollar"
+    },
+    "Bermuda": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "BMD",
+      "currency_name": "Bermuda Dollar"
+    },
+    "East Timor": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Ecuador": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "El Salvador": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Guam": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Marshall Islands": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Micronesia": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Northern Mariana Islands": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Palau": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Panama": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "PAB",
+      "currency_name": "Panamanian Balboa"
+    },
+    "Puerto Rico": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Turks and Caicos Islands": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "United States of America": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "British Virgin Islands": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "U.S. Virgin Islands": {
+      "value": 1.00,
+      "unit": "USD",
+      "currency_code": "USD",
+      "currency_name": "U.S. Dollar"
+    },
+    "Brunei": {
+      "value": 1.35,
+      "unit": "USD",
+      "currency_code": "BND",
+      "currency_name": "Brunei Dollar"
+    },
+    "Singapore": {
+      "value": 1.35,
+      "unit": "USD",
+      "currency_code": "SGD",
+      "currency_name": "Singapore Dollar"
+    },
+    "Canada": {
+      "value": 1.35,
+      "unit": "USD",
+      "currency_code": "CAD",
+      "currency_name": "Canadian Dollar"
+    },
+    "Australia": {
+      "value": 1.53,
+      "unit": "USD",
+      "currency_code": "AUD",
+      "currency_name": "Australian Dollar"
+    },
+    "Kiribati": {
+      "value": 1.53,
+      "unit": "USD",
+      "currency_code": "AUD",
+      "currency_name": "Australian Dollar"
+    },
+    "Nauru": {
+      "value": 1.53,
+      "unit": "USD",
+      "currency_code": "AUD",
+      "currency_name": "Australian Dollar"
+    },
+    "Tuvalu": {
+      "value": 1.53,
+      "unit": "USD",
+      "currency_code": "AUD",
+      "currency_name": "Australian Dollar"
+    },
+    "Cook Islands": {
+      "value": 1.67,
+      "unit": "USD",
+      "currency_code": "NZD",
+      "currency_name": "New Zealand Dollar"
+    },
+    "New Zealand": {
+      "value": 1.67,
+      "unit": "USD",
+      "currency_code": "NZD",
+      "currency_name": "New Zealand Dollar"
+    },
+    "Niue": {
+      "value": 1.67,
+      "unit": "USD",
+      "currency_code": "NZD",
+      "currency_name": "New Zealand Dollar"
+    },
+    "Tokelau Islands": {
+      "value": 1.67,
+      "unit": "USD",
+      "currency_code": "NZD",
+      "currency_name": "New Zealand Dollar"
+    },
+    "Azerbaijan": {
+      "value": 1.70,
+      "unit": "USD",
+      "currency_code": "AZN",
+      "currency_name": "Azerbaijan Manat"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 1.79,
+      "unit": "USD",
+      "currency_code": "BAM",
+      "currency_name": "Bosnia and Herzegovina Convertible Mark"
+    },
+    "Bulgaria": {
+      "value": 1.79,
+      "unit": "USD",
+      "currency_code": "BGN",
+      "currency_name": "Bulgarian Lev"
+    },
+    "Aruba": {
+      "value": 1.79,
+      "unit": "USD",
+      "currency_code": "AWG",
+      "currency_name": "Aruban Guilder"
+    },
+    "Netherlands Antilles": {
+      "value": 1.79,
+      "unit": "USD",
+      "currency_code": "ANG",
+      "currency_name": "Netherlands Antilles Guilder"
+    },
+    "Barbados": {
+      "value": 2.00,
+      "unit": "USD",
+      "currency_code": "BBD",
+      "currency_name": "Barbados Dollar"
+    },
+    "Belize": {
+      "value": 2.00,
+      "unit": "USD",
+      "currency_code": "BZD",
+      "currency_name": "Belize Dollar"
+    },
+    "Fiji": {
+      "value": 2.28,
+      "unit": "USD",
+      "currency_code": "FJD",
+      "currency_name": "Fiji Dollar"
+    },
+    "Tonga": {
+      "value": 2.31,
+      "unit": "USD",
+      "currency_code": "TOP",
+      "currency_name": "Tonga Pa'anga"
+    },
+    "Georgia": {
+      "value": 2.64,
+      "unit": "USD",
+      "currency_code": "GEL",
+      "currency_name": "Georgian Lari"
+    },
+    "Anguilla": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Antigua and Barbuda": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Dominica": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Grenada": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Montserrat": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Saint Lucia": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "St. Vincent and the Grenadines": {
+      "value": 2.70,
+      "unit": "USD",
+      "currency_code": "XCD",
+      "currency_name": "East Caribbean Dollar"
+    },
+    "Samoa": {
+      "value": 2.74,
+      "unit": "USD",
+      "currency_code": "WST",
+      "currency_name": "Samoa Tala"
+    },
+    "Tunisia": {
+      "value": 3.09,
+      "unit": "USD",
+      "currency_code": "TND",
+      "currency_name": "Tunisian Dinar"
+    },
+    "Belarus": {
+      "value": 3.17,
+      "unit": "USD",
+      "currency_code": "BYN",
+      "currency_name": "Belarusian Ruble"
+    },
+    "Turkmenistan": {
+      "value": 3.50,
+      "unit": "USD",
+      "currency_code": "TMT",
+      "currency_name": "Turkmenistan Manat"
+    },
+    "Papua New Guinea": {
+      "value": 3.58,
+      "unit": "USD",
+      "currency_code": "PGK",
+      "currency_name": "Papua New Guinean Kina"
+    },
+    "Qatar": {
+      "value": 3.65,
+      "unit": "USD",
+      "currency_code": "QAR",
+      "currency_name": "Qatari Rial"
+    },
+    "United Arab Emirates": {
+      "value": 3.67,
+      "unit": "USD",
+      "currency_code": "AED",
+      "currency_name": "United Arab Emirates Dirham"
+    },
+    "Peru": {
+      "value": 3.69,
+      "unit": "USD",
+      "currency_code": "PEN",
+      "currency_name": "Peruvian Sol"
+    },
+    "Saudi Arabia": {
+      "value": 3.75,
+      "unit": "USD",
+      "currency_code": "SAR",
+      "currency_name": "Saudi Riyal"
+    },
+    "Israel": {
+      "value": 3.78,
+      "unit": "USD",
+      "currency_code": "ILS",
+      "currency_name": "Israel Shekel"
+    },
+    "Poland": {
+      "value": 4.08,
+      "unit": "USD",
+      "currency_code": "PLN",
+      "currency_name": "Poland Zloty"
+    },
+    "Romania": {
+      "value": 4.51,
+      "unit": "USD",
+      "currency_code": "RON",
+      "currency_name": "Romanian Leu"
+    },
+    "Malaysia": {
+      "value": 4.64,
+      "unit": "USD",
+      "currency_code": "MYR",
+      "currency_name": "Malaysia Ringgit"
+    },
+    "Libya": {
+      "value": 4.84,
+      "unit": "USD",
+      "currency_code": "LYD",
+      "currency_name": "Libyan Dinar"
+    },
+    "Brazil": {
+      "value": 4.86,
+      "unit": "USD",
+      "currency_code": "BRL",
+      "currency_name": "Brazilian Real"
+    },
+    "Trinidad and Tobago": {
+      "value": 6.76,
+      "unit": "USD",
+      "currency_code": "TTD",
+      "currency_name": "Trinidad and Tobago Dollar"
+    },
+    "Denmark": {
+      "value": 6.81,
+      "unit": "USD",
+      "currency_code": "DKK",
+      "currency_name": "Danish Krone"
+    },
+    "Greenland": {
+      "value": 6.81,
+      "unit": "USD",
+      "currency_code": "DKK",
+      "currency_name": "Danish Krone"
+    },
+    "Bolivia": {
+      "value": 6.85,
+      "unit": "USD",
+      "currency_code": "BOB",
+      "currency_name": "Bolivia Boliviano"
+    },
+    "China": {
+      "value": 7.28,
+      "unit": "USD",
+      "currency_code": "CNY",
+      "currency_name": "Chinese Renminbi"
+    },
+    "Hong Kong": {
+      "value": 7.85,
+      "unit": "USD",
+      "currency_code": "HKD",
+      "currency_name": "Hong Kong Dollar"
+    },
+    "Guatemala": {
+      "value": 7.85,
+      "unit": "USD",
+      "currency_code": "GTQ",
+      "currency_name": "Guatemala Quetzal"
+    },
+    "Macao": {
+      "value": 8.08,
+      "unit": "USD",
+      "currency_code": "MOP",
+      "currency_name": "Macao Pataca"
+    },
+    "Solomon Islands": {
+      "value": 8.16,
+      "unit": "USD",
+      "currency_code": "SBD",
+      "currency_name": "Solomon Islands Dollar"
+    },
+    "Morocco": {
+      "value": 10.08,
+      "unit": "USD",
+      "currency_code": "MAD",
+      "currency_name": "Morocco Dirham"
+    },
+    "Norway": {
+      "value": 10.54,
+      "unit": "USD",
+      "currency_code": "NOK",
+      "currency_name": "Norwegian Krone"
+    },
+    "Sweden": {
+      "value": 10.80,
+      "unit": "USD",
+      "currency_code": "SEK",
+      "currency_name": "Swedish Krona"
+    },
+    "Tajikistan": {
+      "value": 10.94,
+      "unit": "USD",
+      "currency_code": "TJS",
+      "currency_name": "Tajikistan Somoni"
+    },
+    "Ghana": {
+      "value": 11.35,
+      "unit": "USD",
+      "currency_code": "GHS",
+      "currency_name": "Ghana Cedi"
+    },
+    "Seychelles": {
+      "value": 13.13,
+      "unit": "USD",
+      "currency_code": "SCR",
+      "currency_name": "Seychelles Rupee"
+    },
+    "Botswana": {
+      "value": 13.41,
+      "unit": "USD",
+      "currency_code": "BWP",
+      "currency_name": "Botswana Pula"
+    },
+    "Eritrea": {
+      "value": 15.00,
+      "unit": "USD",
+      "currency_code": "ERN",
+      "currency_name": "Eritrea Nakfa"
+    },
+    "Maldives": {
+      "value": 15.00,
+      "unit": "USD",
+      "currency_code": "MVR",
+      "currency_name": "Maldives Rufiyaa"
+    },
+    "Mexico": {
+      "value": 16.74,
+      "unit": "USD",
+      "currency_code": "MXN",
+      "currency_name": "Mexican Peso"
+    },
+    "Moldova": {
+      "value": 17.74,
+      "unit": "USD",
+      "currency_code": "MDL",
+      "currency_name": "Moldovan Leu"
+    },
+    "Eswatini": {
+      "value": 18.47,
+      "unit": "USD",
+      "currency_code": "SZL",
+      "currency_name": "Swazi Lilangeni"
+    },
+    "Lesotho": {
+      "value": 18.47,
+      "unit": "USD",
+      "currency_code": "LSL",
+      "currency_name": "Lesotho Loti"
+    },
+    "Namibia": {
+      "value": 18.47,
+      "unit": "USD",
+      "currency_code": "NAD",
+      "currency_name": "Namibia Dollar"
+    },
+    "South Africa": {
+      "value": 18.47,
+      "unit": "USD",
+      "currency_code": "ZAR",
+      "currency_name": "South Africa Rand"
+    },
+    "Zambia": {
+      "value": 20.07,
+      "unit": "USD",
+      "currency_code": "ZMW",
+      "currency_name": "Zambia Kwacha"
+    },
+    "Sao Tome and Principe": {
+      "value": 20.60,
+      "unit": "USD",
+      "currency_code": "STN",
+      "currency_name": "Sao Tome and Principe Dobra"
+    },
+    "Sierra Leone": {
+      "value": 21.80,
+      "unit": "USD",
+      "currency_code": "SLE",
+      "currency_name": "Sierra Leone Leone"
+    },
+    "Czechia": {
+      "value": 22.03,
+      "unit": "USD",
+      "currency_code": "CZK",
+      "currency_name": "Czech Koruna"
+    },
+    "Cuba": {
+      "value": 24.00,
+      "unit": "USD",
+      "currency_code": "CUP",
+      "currency_name": "Cuban Peso"
+    },
+    "Honduras": {
+      "value": 24.47,
+      "unit": "USD",
+      "currency_code": "HNL",
+      "currency_name": "Honduras Lempira"
+    },
+    "Turkey": {
+      "value": 26.71,
+      "unit": "USD",
+      "currency_code": "TRY",
+      "currency_name": "Turkish Lira"
+    },
+    "Egypt": {
+      "value": 30.92,
+      "unit": "USD",
+      "currency_code": "EGP",
+      "currency_name": "Egyptian Pound"
+    },
+    "Venezuela": {
+      "value": 32.44,
+      "unit": "USD",
+      "currency_code": "VES",
+      "currency_name": "Venezuelan Bolivar Digital"
+    },
+    "Thailand": {
+      "value": 34.94,
+      "unit": "USD",
+      "currency_code": "THB",
+      "currency_name": "Thai Baht"
+    },
+    "Nicaragua": {
+      "value": 36.19,
+      "unit": "USD",
+      "currency_code": "NIO",
+      "currency_name": "Nicaragua Cordoba Oro"
+    },
+    "Ukraine": {
+      "value": 37.00,
+      "unit": "USD",
+      "currency_code": "UAH",
+      "currency_name": "Ukraine Hryvnia"
+    },
+    "Uruguay": {
+      "value": 37.57,
+      "unit": "USD",
+      "currency_code": "UYU",
+      "currency_name": "Uruguay Peso"
+    },
+    "Mauritania": {
+      "value": 37.71,
+      "unit": "USD",
+      "currency_code": "MRU",
+      "currency_name": "Mauritania Ouguiya"
+    },
+    "Suriname": {
+      "value": 38.37,
+      "unit": "USD",
+      "currency_code": "SRD",
+      "currency_name": "Surinamese Dollar"
+    },
+    "Mauritius": {
+      "value": 45.35,
+      "unit": "USD",
+      "currency_code": "MUR",
+      "currency_name": "Mauritius Rupee"
+    },
+    "Ethiopia": {
+      "value": 55.03,
+      "unit": "USD",
+      "currency_code": "ETB",
+      "currency_name": "Ethiopian Birr"
+    },
+    "North Macedonia": {
+      "value": 56.10,
+      "unit": "USD",
+      "currency_code": "MKD",
+      "currency_name": "Macedonian Denar"
+    },
+    "Dominican Republic": {
+      "value": 56.41,
+      "unit": "USD",
+      "currency_code": "DOP",
+      "currency_name": "Dominican Peso"
+    },
+    "Philippines": {
+      "value": 56.73,
+      "unit": "USD",
+      "currency_code": "PHP",
+      "currency_name": "Philippine Peso"
+    },
+    "Gambia": {
+      "value": 60.82,
+      "unit": "USD",
+      "currency_code": "GMD",
+      "currency_name": "Gambian Dalasi"
+    },
+    "Mozambique": {
+      "value": 63.25,
+      "unit": "USD",
+      "currency_code": "MZN",
+      "currency_name": "Mozambique Metical"
+    },
+    "Bhutan": {
+      "value": 82.73,
+      "unit": "USD",
+      "currency_code": "BTN",
+      "currency_name": "Bhutan Ngultrum"
+    },
+    "India": {
+      "value": 82.73,
+      "unit": "USD",
+      "currency_code": "INR",
+      "currency_name": "Indian Rupee"
+    },
+    "Afghanistan": {
+      "value": 84.04,
+      "unit": "USD",
+      "currency_code": "AFN",
+      "currency_name": "Afghanistan Afghani"
+    },
+    "Kyrgyzstan": {
+      "value": 87.50,
+      "unit": "USD",
+      "currency_code": "KGS",
+      "currency_name": "Kyrgyzstan Som"
+    },
+    "Russia": {
+      "value": 95.94,
+      "unit": "USD",
+      "currency_code": "RUB",
+      "currency_name": "Russian Rouble"
+    },
+    "Albania": {
+      "value": 97.32,
+      "unit": "USD",
+      "currency_code": "ALL",
+      "currency_name": "Albania Lek"
+    },
+    "Cape Verde": {
+      "value": 100.77,
+      "unit": "USD",
+      "currency_code": "CVE",
+      "currency_name": "Cape Verde Escudo"
+    },
+    "Serbia": {
+      "value": 107.07,
+      "unit": "USD",
+      "currency_code": "RSD",
+      "currency_name": "Serbian Dinar"
+    },
+    "Bangladesh": {
+      "value": 108.50,
+      "unit": "USD",
+      "currency_code": "BDT",
+      "currency_name": "Bangladesh Taka"
+    },
+    "French Polynesia": {
+      "value": 109.06,
+      "unit": "USD",
+      "currency_code": "XPF",
+      "currency_name": "CFP Franc"
+    },
+    "New Caledonia": {
+      "value": 109.06,
+      "unit": "USD",
+      "currency_code": "XPF",
+      "currency_name": "CFP Franc"
+    },
+    "Wallis and Futuna Islands": {
+      "value": 109.06,
+      "unit": "USD",
+      "currency_code": "XPF",
+      "currency_name": "CFP Franc"
+    },
+    "North Korea": {
+      "value": 110.00,
+      "unit": "USD",
+      "currency_code": "KPW",
+      "currency_name": "North Korean Won"
+    },
+    "Vanuatu": {
+      "value": 118.06,
+      "unit": "USD",
+      "currency_code": "VUV",
+      "currency_name": "Vanuatu Vatu"
+    },
+    "Iceland": {
+      "value": 130.15,
+      "unit": "USD",
+      "currency_code": "ISK",
+      "currency_name": "Iceland Krona"
+    },
+    "Nepal": {
+      "value": 132.24,
+      "unit": "USD",
+      "currency_code": "NPR",
+      "currency_name": "Nepalese Rupee"
+    },
+    "Algeria": {
+      "value": 135.77,
+      "unit": "USD",
+      "currency_code": "DZD",
+      "currency_name": "Algerian Dinar"
+    },
+    "Haiti": {
+      "value": 135.82,
+      "unit": "USD",
+      "currency_code": "HTG",
+      "currency_name": "Haiti Gourde"
+    },
+    "Kenya": {
+      "value": 145.23,
+      "unit": "USD",
+      "currency_code": "KES",
+      "currency_name": "Kenyan Shilling"
+    },
+    "Japan": {
+      "value": 145.57,
+      "unit": "USD",
+      "currency_code": "JPY",
+      "currency_name": "Japanese Yen"
+    },
+    "Jamaica": {
+      "value": 153.43,
+      "unit": "USD",
+      "currency_code": "JMD",
+      "currency_name": "Jamaican Dollar"
+    },
+    "Djibouti": {
+      "value": 177.00,
+      "unit": "USD",
+      "currency_code": "DJF",
+      "currency_name": "Djibouti Franc"
+    },
+    "Liberia": {
+      "value": 184.99,
+      "unit": "USD",
+      "currency_code": "LRD",
+      "currency_name": "Liberian Dollar"
+    },
+    "Guyana": {
+      "value": 208.50,
+      "unit": "USD",
+      "currency_code": "GYD",
+      "currency_name": "Guyana Dollar"
+    },
+    "Pakistan": {
+      "value": 303.95,
+      "unit": "USD",
+      "currency_code": "PKR",
+      "currency_name": "Pakistani Rupee"
+    },
+    "Sri Lanka": {
+      "value": 320.34,
+      "unit": "USD",
+      "currency_code": "LKR",
+      "currency_name": "Sri Lanka Rupee"
+    },
+    "Hungary": {
+      "value": 346.24,
+      "unit": "USD",
+      "currency_code": "HUF",
+      "currency_name": "Hungary Forint"
+    },
+    "Argentina": {
+      "value": 349.95,
+      "unit": "USD",
+      "currency_code": "ARS",
+      "currency_name": "Argentine Peso"
+    },
+    "Armenia": {
+      "value": 383.61,
+      "unit": "USD",
+      "currency_code": "AMD",
+      "currency_name": "Armenian Dram"
+    },
+    "Comoros": {
+      "value": 449.61,
+      "unit": "USD",
+      "currency_code": "KMF",
+      "currency_name": "Comoros Franc"
+    },
+    "Kazakhstan": {
+      "value": 461.85,
+      "unit": "USD",
+      "currency_code": "KZT",
+      "currency_name": "Kazakhstan Tenge"
+    },
+    "Yemen": {
+      "value": 516.95,
+      "unit": "USD",
+      "currency_code": "YER",
+      "currency_name": "Yemeni Rial"
+    },
+    "Costa Rica": {
+      "value": 538.60,
+      "unit": "USD",
+      "currency_code": "CRC",
+      "currency_name": "Costa Rica Colon"
+    },
+    "Benin": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Burkina Faso": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Cameroon": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Central African Republic": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Chad": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Republic of the Congo": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Cote d'Ivoire": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Equatorial Guinea": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Gabon": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XAF",
+      "currency_name": "Central African CFA Franc"
+    },
+    "Guinea-Bissau": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Mali": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Niger": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Senegal": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Togo": {
+      "value": 599.49,
+      "unit": "USD",
+      "currency_code": "XOF",
+      "currency_name": "West African CFA Franc"
+    },
+    "Sudan": {
+      "value": 608.00,
+      "unit": "USD",
+      "currency_code": "SDG",
+      "currency_name": "Sudanese Pound"
+    },
+    "Nigeria": {
+      "value": 771.60,
+      "unit": "USD",
+      "currency_code": "NGN",
+      "currency_name": "Nigeria Naira"
+    },
+    "Angola": {
+      "value": 824.90,
+      "unit": "USD",
+      "currency_code": "AOA",
+      "currency_name": "Angolan Kwanza"
+    },
+    "Chile": {
+      "value": 855.00,
+      "unit": "USD",
+      "currency_code": "CLP",
+      "currency_name": "Chilean Peso"
+    },
+    "South Sudan": {
+      "value": 1007.29,
+      "unit": "USD",
+      "currency_code": "SSP",
+      "currency_name": "South Sudanese Pound"
+    },
+    "Malawi": {
+      "value": 1095.32,
+      "unit": "USD",
+      "currency_code": "MWK",
+      "currency_name": "Malawi Kwacha"
+    },
+    "Rwanda": {
+      "value": 1179.52,
+      "unit": "USD",
+      "currency_code": "RWF",
+      "currency_name": "Rwanda Franc"
+    },
+    "Iraq": {
+      "value": 1310.00,
+      "unit": "USD",
+      "currency_code": "IQD",
+      "currency_name": "Iraqi Dinar"
+    },
+    "South Korea": {
+      "value": 1323.26,
+      "unit": "USD",
+      "currency_code": "KRW",
+      "currency_name": "South Korean Won"
+    },
+    "Myanmar": {
+      "value": 2100.00,
+      "unit": "USD",
+      "currency_code": "MMK",
+      "currency_name": "Myanmar Kyat"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 2421.49,
+      "unit": "USD",
+      "currency_code": "CDF",
+      "currency_name": "Congolese Franc"
+    },
+    "Tanzania": {
+      "value": 2493.14,
+      "unit": "USD",
+      "currency_code": "TZS",
+      "currency_name": "Tanzania Shilling"
+    },
+    "Burundi": {
+      "value": 2814.00,
+      "unit": "USD",
+      "currency_code": "BIF",
+      "currency_name": "Burundi Franc"
+    },
+    "Mongolia": {
+      "value": 3465.64,
+      "unit": "USD",
+      "currency_code": "MNT",
+      "currency_name": "Mongolia Tugrik"
+    },
+    "Uganda": {
+      "value": 3717.00,
+      "unit": "USD",
+      "currency_code": "UGX",
+      "currency_name": "Uganda Shilling"
+    },
+    "Colombia": {
+      "value": 4082.00,
+      "unit": "USD",
+      "currency_code": "COP",
+      "currency_name": "Colombian Peso"
+    },
+    "Cambodia": {
+      "value": 4138.00,
+      "unit": "USD",
+      "currency_code": "KHR",
+      "currency_name": "Cambodian Riel"
+    },
+    "Madagascar": {
+      "value": 4465.92,
+      "unit": "USD",
+      "currency_code": "MGA",
+      "currency_name": "Malagasy Ariary"
+    },
+    "Zimbabwe": {
+      "value": 4570.34,
+      "unit": "USD",
+      "currency_code": "ZWL",
+      "currency_name": "Zimbabwean RTGS Dollar"
+    },
+    "Paraguay": {
+      "value": 7275.00,
+      "unit": "USD",
+      "currency_code": "PYG",
+      "currency_name": "Paraguay Guarani"
+    },
+    "Guinea": {
+      "value": 8497.01,
+      "unit": "USD",
+      "currency_code": "GNF",
+      "currency_name": "Guinean Franc"
+    },
+    "Syria": {
+      "value": 8500.00,
+      "unit": "USD",
+      "currency_code": "SYP",
+      "currency_name": "Syrian Pound"
+    },
+    "Uzbekistan": {
+      "value": 12060.00,
+      "unit": "USD",
+      "currency_code": "UZS",
+      "currency_name": "Uzbekistan Sum"
+    },
+    "Indonesia": {
+      "value": 15236.00,
+      "unit": "USD",
+      "currency_code": "IDR",
+      "currency_name": "Indonesia Rupiah"
+    },
+    "Laos": {
+      "value": 19686.00,
+      "unit": "USD",
+      "currency_code": "LAK",
+      "currency_name": "Laos Kip"
+    },
+    "Vietnam": {
+      "value": 24129.00,
+      "unit": "USD",
+      "currency_code": "VND",
+      "currency_name": "Vietnamese Dong"
+    },
+    "Somalia": {
+      "value": 24300.00,
+      "unit": "USD",
+      "currency_code": "SOS",
+      "currency_name": "Somali Shilling"
+    },
+    "Lebanon": {
+      "value": 85500.00,
+      "unit": "USD",
+      "currency_code": "LBP",
+      "currency_name": "Lebanese Pound"
+    },
+    "Iran": {
+      "value": 371992.00,
+      "unit": "USD",
+      "currency_code": "IRR",
+      "currency_name": "Iranian Rial"
+    }
+  }
+}

@@ -664,6 +664,43 @@ class QuizGame {
                 console.log('🔤 Added Country by First Letter quiz');
             }
             
+            // Convert newest datasets
+            const landlockedCountriesQuiz = await this.convertLandlockedCountriesData();
+            if (landlockedCountriesQuiz) {
+                this.quizData.quizzes[landlockedCountriesQuiz.id] = landlockedCountriesQuiz;
+                console.log('🏔️ Added Landlocked Countries quiz');
+            }
+            
+            const foodEnergyIntakeQuiz = await this.convertFoodEnergyIntakeData();
+            if (foodEnergyIntakeQuiz) {
+                this.quizData.quizzes[foodEnergyIntakeQuiz.id] = foodEnergyIntakeQuiz;
+                console.log('🍽️ Added Food Energy Intake quiz');
+            }
+            
+            const wineProductionQuiz = await this.convertWineProductionData();
+            if (wineProductionQuiz) {
+                this.quizData.quizzes[wineProductionQuiz.id] = wineProductionQuiz;
+                console.log('🍷 Added Wine Production quiz');
+            }
+            
+            const wineConsumptionQuiz = await this.convertWineConsumptionData();
+            if (wineConsumptionQuiz) {
+                this.quizData.quizzes[wineConsumptionQuiz.id] = wineConsumptionQuiz;
+                console.log('🍷 Added Wine Consumption quiz');
+            }
+            
+            const teaConsumptionQuiz = await this.convertTeaConsumptionData();
+            if (teaConsumptionQuiz) {
+                this.quizData.quizzes[teaConsumptionQuiz.id] = teaConsumptionQuiz;
+                console.log('🫖 Added Tea Consumption quiz');
+            }
+            
+            const currencyExchangeRateQuiz = await this.convertCurrencyExchangeRateData();
+            if (currencyExchangeRateQuiz) {
+                this.quizData.quizzes[currencyExchangeRateQuiz.id] = currencyExchangeRateQuiz;
+                console.log('💱 Added Currency Exchange Rate quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -6058,6 +6095,342 @@ class QuizGame {
     async convertCommonwealthMembershipData() { /* Implementation similar to above */ return null; }
     async convertTimeZonesData() { /* Implementation similar to above */ return null; }
     async convertCountryByFirstLetterData() { /* Implementation similar to above */ return null; }
+    
+    // New datasets
+    async convertLandlockedCountriesData() {
+        try {
+            const response = await fetch('data/landlocked_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value === 'Landlocked' ? 1 : 0,
+                        unit: 'status'
+                    };
+                    values.push(value.value === 'Landlocked' ? 1 : 0);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'landlocked_countries',
+                title: 'Landlocked Countries',
+                description: 'Countries colored by landlocked status',
+                category: 'geography',
+                tags: ['landlocked', 'geography', 'borders', 'coastline', 'access to sea'],
+                answer_variations: [
+                    'landlocked countries',
+                    'landlocked',
+                    'no coastline',
+                    'no sea access',
+                    'inland countries'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting landlocked countries data:', error);
+            return null;
+        }
+    }
+    
+    async convertFoodEnergyIntakeData() {
+        try {
+            const response = await fetch('data/food_energy_intake_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value,
+                        unit: 'kJ'
+                    };
+                    values.push(value.value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#e65100');
+            });
+            
+            return {
+                id: 'food_energy_intake_by_country',
+                title: 'Daily Caloric Food Supply',
+                description: 'Average daily caloric food supply per capita in kilojoules',
+                category: 'food',
+                tags: ['food', 'calories', 'nutrition', 'diet', 'energy intake', 'food supply'],
+                answer_variations: [
+                    'food energy intake',
+                    'caloric intake',
+                    'daily calories',
+                    'food supply',
+                    'nutrition',
+                    'diet'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting food energy intake data:', error);
+            return null;
+        }
+    }
+    
+    async convertWineProductionData() {
+        try {
+            const response = await fetch('data/wine_production_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value,
+                        unit: 'tonnes'
+                    };
+                    values.push(value.value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fce4ec', '#880e4f');
+            });
+            
+            return {
+                id: 'wine_production_by_country',
+                title: 'Wine Production',
+                description: 'Annual wine production in tonnes',
+                category: 'food',
+                tags: ['wine', 'alcohol', 'beverages', 'production', 'agriculture'],
+                answer_variations: [
+                    'wine production',
+                    'wine',
+                    'viticulture',
+                    'wine making',
+                    'grape production'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fce4ec',
+                    maxColor: '#880e4f',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting wine production data:', error);
+            return null;
+        }
+    }
+    
+    async convertWineConsumptionData() {
+        try {
+            const response = await fetch('data/wine_consumption_per_capita_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value,
+                        unit: 'liters'
+                    };
+                    values.push(value.value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f3e5f5', '#4a148c');
+            });
+            
+            return {
+                id: 'wine_consumption_per_capita_by_country',
+                title: 'Wine Consumption per Capita',
+                description: 'Annual wine consumption per capita in liters',
+                category: 'food',
+                tags: ['wine', 'alcohol', 'consumption', 'beverages', 'per capita'],
+                answer_variations: [
+                    'wine consumption',
+                    'wine drinking',
+                    'wine per capita',
+                    'wine intake'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f3e5f5',
+                    maxColor: '#4a148c',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting wine consumption data:', error);
+            return null;
+        }
+    }
+    
+    async convertTeaConsumptionData() {
+        try {
+            const response = await fetch('data/tea_consumption_per_capita_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value,
+                        unit: 'kg'
+                    };
+                    values.push(value.value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'tea_consumption_per_capita_by_country',
+                title: 'Tea Consumption per Capita',
+                description: 'Annual tea consumption per capita in kilograms',
+                category: 'food',
+                tags: ['tea', 'beverages', 'consumption', 'per capita'],
+                answer_variations: [
+                    'tea consumption',
+                    'tea drinking',
+                    'tea per capita',
+                    'tea intake'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting tea consumption data:', error);
+            return null;
+        }
+    }
+    
+    async convertCurrencyExchangeRateData() {
+        try {
+            const response = await fetch('data/currency_exchange_rate_usd.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            Object.entries(data.data).forEach(([country, value]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
+                if (mappedCountryName) {
+                    countries[mappedCountryName] = {
+                        value: value.value,
+                        unit: 'USD'
+                    };
+                    values.push(value.value);
+                }
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'currency_exchange_rate_usd',
+                title: 'Currency Exchange Rate to USD',
+                description: 'Exchange rate of local currency to US Dollar',
+                category: 'economics',
+                tags: ['currency', 'exchange rate', 'usd', 'money', 'forex'],
+                answer_variations: [
+                    'currency exchange rate',
+                    'exchange rate',
+                    'usd rate',
+                    'currency value',
+                    'forex rate'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting currency exchange rate data:', error);
+            return null;
+        }
+    }
     
     copyCurrentData() {
         if (!this.currentQuiz || !this.currentQuiz.countries) {

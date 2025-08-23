@@ -1,0 +1,284 @@
+{
+  "title": "Wine Production by Country",
+  "description": "Annual wine production in tonnes for each country, 2021",
+  "unit": "tonnes",
+  "source": "https://en.wikipedia.org/wiki/List_of_wine-producing_regions",
+  "data": {
+    "Italy": {
+      "value": 5088500,
+      "unit": "tonnes"
+    },
+    "France": {
+      "value": 3713200,
+      "unit": "tonnes"
+    },
+    "Spain": {
+      "value": 3700588,
+      "unit": "tonnes"
+    },
+    "United States": {
+      "value": 2057021,
+      "unit": "tonnes"
+    },
+    "China": {
+      "value": 1814400,
+      "unit": "tonnes"
+    },
+    "Australia": {
+      "value": 1482000,
+      "unit": "tonnes"
+    },
+    "Chile": {
+      "value": 1343729,
+      "unit": "tonnes"
+    },
+    "Argentina": {
+      "value": 1248155,
+      "unit": "tonnes"
+    },
+    "South Africa": {
+      "value": 1133300,
+      "unit": "tonnes"
+    },
+    "Portugal": {
+      "value": 718547,
+      "unit": "tonnes"
+    },
+    "Romania": {
+      "value": 530000,
+      "unit": "tonnes"
+    },
+    "Germany": {
+      "value": 452693,
+      "unit": "tonnes"
+    },
+    "Russia": {
+      "value": 450000,
+      "unit": "tonnes"
+    },
+    "Brazil": {
+      "value": 348449,
+      "unit": "tonnes"
+    },
+    "Hungary": {
+      "value": 310000,
+      "unit": "tonnes"
+    },
+    "Greece": {
+      "value": 290000,
+      "unit": "tonnes"
+    },
+    "Turkey": {
+      "value": 266962,
+      "unit": "tonnes"
+    },
+    "New Zealand": {
+      "value": 266400,
+      "unit": "tonnes"
+    },
+    "Austria": {
+      "value": 246000,
+      "unit": "tonnes"
+    },
+    "Moldova": {
+      "value": 167500,
+      "unit": "tonnes"
+    },
+    "Georgia": {
+      "value": 119617,
+      "unit": "tonnes"
+    },
+    "North Macedonia": {
+      "value": 93600,
+      "unit": "tonnes"
+    },
+    "Bulgaria": {
+      "value": 82300,
+      "unit": "tonnes"
+    },
+    "Peru": {
+      "value": 81000,
+      "unit": "tonnes"
+    },
+    "Uruguay": {
+      "value": 74865,
+      "unit": "tonnes"
+    },
+    "Ukraine": {
+      "value": 68470,
+      "unit": "tonnes"
+    },
+    "Croatia": {
+      "value": 66000,
+      "unit": "tonnes"
+    },
+    "Canada": {
+      "value": 65357,
+      "unit": "tonnes"
+    },
+    "Switzerland": {
+      "value": 60904,
+      "unit": "tonnes"
+    },
+    "Czech Republic": {
+      "value": 59000,
+      "unit": "tonnes"
+    },
+    "Turkmenistan": {
+      "value": 52098,
+      "unit": "tonnes"
+    },
+    "Japan": {
+      "value": 49473,
+      "unit": "tonnes"
+    },
+    "Mexico": {
+      "value": 43268,
+      "unit": "tonnes"
+    },
+    "Morocco": {
+      "value": 43083,
+      "unit": "tonnes"
+    },
+    "Tunisia": {
+      "value": 28000,
+      "unit": "tonnes"
+    },
+    "Serbia": {
+      "value": 26550,
+      "unit": "tonnes"
+    },
+    "Belarus": {
+      "value": 26430,
+      "unit": "tonnes"
+    },
+    "Kazakhstan": {
+      "value": 23343,
+      "unit": "tonnes"
+    },
+    "Vietnam": {
+      "value": 18153,
+      "unit": "tonnes"
+    },
+    "Belgium": {
+      "value": 17496,
+      "unit": "tonnes"
+    },
+    "Uzbekistan": {
+      "value": 16899,
+      "unit": "tonnes"
+    },
+    "Armenia": {
+      "value": 12829,
+      "unit": "tonnes"
+    },
+    "Slovenia": {
+      "value": 10192,
+      "unit": "tonnes"
+    },
+    "Azerbaijan": {
+      "value": 10116,
+      "unit": "tonnes"
+    },
+    "Montenegro": {
+      "value": 10022,
+      "unit": "tonnes"
+    },
+    "Luxembourg": {
+      "value": 9800,
+      "unit": "tonnes"
+    },
+    "Cyprus": {
+      "value": 8900,
+      "unit": "tonnes"
+    },
+    "Bolivia": {
+      "value": 8400,
+      "unit": "tonnes"
+    },
+    "Madagascar": {
+      "value": 7791,
+      "unit": "tonnes"
+    },
+    "Slovakia": {
+      "value": 7711,
+      "unit": "tonnes"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 5677,
+      "unit": "tonnes"
+    },
+    "Egypt": {
+      "value": 4775,
+      "unit": "tonnes"
+    },
+    "Saint Lucia": {
+      "value": 4449,
+      "unit": "tonnes"
+    },
+    "Lithuania": {
+      "value": 4143,
+      "unit": "tonnes"
+    },
+    "Mauritius": {
+      "value": 3166,
+      "unit": "tonnes"
+    },
+    "Colombia": {
+      "value": 2606,
+      "unit": "tonnes"
+    },
+    "Albania": {
+      "value": 2587,
+      "unit": "tonnes"
+    },
+    "Latvia": {
+      "value": 2569,
+      "unit": "tonnes"
+    },
+    "Kyrgyzstan": {
+      "value": 2316,
+      "unit": "tonnes"
+    },
+    "Estonia": {
+      "value": 2088,
+      "unit": "tonnes"
+    },
+    "Israel": {
+      "value": 2020,
+      "unit": "tonnes"
+    },
+    "Paraguay": {
+      "value": 1981,
+      "unit": "tonnes"
+    },
+    "Lebanon": {
+      "value": 932,
+      "unit": "tonnes"
+    },
+    "Jordan": {
+      "value": 557,
+      "unit": "tonnes"
+    },
+    "Thailand": {
+      "value": 461,
+      "unit": "tonnes"
+    },
+    "Mongolia": {
+      "value": 371,
+      "unit": "tonnes"
+    },
+    "United Kingdom": {
+      "value": 354,
+      "unit": "tonnes"
+    },
+    "Tajikistan": {
+      "value": 182,
+      "unit": "tonnes"
+    },
+    "Panama": {
+      "value": 108,
+      "unit": "tonnes"
+    }
+  }
+}

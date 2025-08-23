@@ -1,0 +1,196 @@
+{
+  "title": "Landlocked Countries and De Facto States",
+  "description": "List of landlocked countries and de facto states, indicating their landlocked status",
+  "unit": "status",
+  "source": "https://en.wikipedia.org/wiki/Landlocked_country#Landlocked_by_a_single_country",
+  "data": {
+    "Afghanistan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Andorra": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Armenia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Austria": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Azerbaijan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Bhutan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Botswana": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Burkina Faso": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Chad": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Czech Republic": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Eswatini": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Hungary": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Kazakhstan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Kosovo": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Kyrgyzstan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Laos": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Liechtenstein": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Luxembourg": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Malawi": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Moldova": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Mongolia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Nepal": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "North Macedonia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Paraguay": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Transnistria": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Serbia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Slovakia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "South Ossetia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "South Sudan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Tajikistan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Turkmenistan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Uzbekistan": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Vatican City": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Zambia": {
+      "value": "Landlocked",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Landlocked",
+      "unit": "status"
+    }
+  }
+}

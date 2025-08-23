@@ -1,0 +1,192 @@
+{
+  "title": "Landlocked Countries by Number of Neighbours with Ocean Access",
+  "description": "Number of neighbouring countries with ocean access for each landlocked country or de facto state, latest available data",
+  "unit": "neighbours",
+  "source": "https://en.wikipedia.org/wiki/Landlocked_country#Landlocked_by_a_single_country",
+  "data": {
+    "Serbia": {
+      "value": 6,
+      "unit": "neighbours"
+    },
+    "Ethiopia": {
+      "value": 6,
+      "unit": "neighbours"
+    },
+    "Mali": {
+      "value": 5,
+      "unit": "neighbours"
+    },
+    "Zambia": {
+      "value": 5,
+      "unit": "neighbours"
+    },
+    "Belarus": {
+      "value": 5,
+      "unit": "neighbours"
+    },
+    "Azerbaijan": {
+      "value": 4,
+      "unit": "neighbours"
+    },
+    "Bolivia": {
+      "value": 4,
+      "unit": "neighbours"
+    },
+    "Burkina Faso": {
+      "value": 4,
+      "unit": "neighbours"
+    },
+    "Hungary": {
+      "value": 4,
+      "unit": "neighbours"
+    },
+    "Niger": {
+      "value": 4,
+      "unit": "neighbours"
+    },
+    "Armenia": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Austria": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Central African Republic": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "South Sudan": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Switzerland": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Uganda": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Afghanistan": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "North Macedonia": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Andorra": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Bhutan": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Botswana": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Burundi": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Czech Republic": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Eswatini": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Kosovo": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Malawi": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Moldova": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Mongolia": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Nepal": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Paraguay": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Rwanda": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Slovakia": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "South Ossetia": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Zimbabwe": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Kazakhstan": {
+      "value": 2,
+      "unit": "neighbours"
+    },
+    "Luxembourg": {
+      "value": 3,
+      "unit": "neighbours"
+    },
+    "Lesotho": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "San Marino": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Transnistria": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Vatican City": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Kyrgyzstan": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Tajikistan": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Liechtenstein": {
+      "value": 0,
+      "unit": "neighbours"
+    },
+    "Uzbekistan": {
+      "value": 0,
+      "unit": "neighbours"
+    },
+    "Turkmenistan": {
+      "value": 1,
+      "unit": "neighbours"
+    },
+    "Laos": {
+      "value": 5,
+      "unit": "neighbours"
+    }
+  }
+}

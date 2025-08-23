@@ -1,0 +1,228 @@
+{
+  "title": "Tea Consumption Per Capita by Country",
+  "description": "Annual tea consumption per capita in kilograms for each country, 2016",
+  "unit": "kg",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_tea_consumption_per_capita",
+  "data": {
+    "Turkey": {
+      "value": 3.16,
+      "unit": "kg"
+    },
+    "Ireland": {
+      "value": 2.36,
+      "unit": "kg"
+    },
+    "Azerbaijan": {
+      "value": 2.10,
+      "unit": "kg"
+    },
+    "United Kingdom": {
+      "value": 1.82,
+      "unit": "kg"
+    },
+    "Iran": {
+      "value": 1.50,
+      "unit": "kg"
+    },
+    "Pakistan": {
+      "value": 1.50,
+      "unit": "kg"
+    },
+    "Russia": {
+      "value": 1.38,
+      "unit": "kg"
+    },
+    "Morocco": {
+      "value": 1.22,
+      "unit": "kg"
+    },
+    "New Zealand": {
+      "value": 1.19,
+      "unit": "kg"
+    },
+    "Chile": {
+      "value": 1.19,
+      "unit": "kg"
+    },
+    "Egypt": {
+      "value": 1.01,
+      "unit": "kg"
+    },
+    "Poland": {
+      "value": 1.00,
+      "unit": "kg"
+    },
+    "Japan": {
+      "value": 0.97,
+      "unit": "kg"
+    },
+    "Saudi Arabia": {
+      "value": 0.90,
+      "unit": "kg"
+    },
+    "South Africa": {
+      "value": 0.81,
+      "unit": "kg"
+    },
+    "Netherlands": {
+      "value": 0.78,
+      "unit": "kg"
+    },
+    "Australia": {
+      "value": 0.75,
+      "unit": "kg"
+    },
+    "United Arab Emirates": {
+      "value": 0.72,
+      "unit": "kg"
+    },
+    "Germany": {
+      "value": 0.69,
+      "unit": "kg"
+    },
+    "Hong Kong": {
+      "value": 0.65,
+      "unit": "kg"
+    },
+    "Ukraine": {
+      "value": 0.58,
+      "unit": "kg"
+    },
+    "China": {
+      "value": 0.57,
+      "unit": "kg"
+    },
+    "Canada": {
+      "value": 0.51,
+      "unit": "kg"
+    },
+    "Malaysia": {
+      "value": 0.48,
+      "unit": "kg"
+    },
+    "Indonesia": {
+      "value": 0.46,
+      "unit": "kg"
+    },
+    "Switzerland": {
+      "value": 0.44,
+      "unit": "kg"
+    },
+    "Czech Republic": {
+      "value": 0.42,
+      "unit": "kg"
+    },
+    "Singapore": {
+      "value": 0.37,
+      "unit": "kg"
+    },
+    "Slovakia": {
+      "value": 0.36,
+      "unit": "kg"
+    },
+    "India": {
+      "value": 0.33,
+      "unit": "kg"
+    },
+    "Taiwan": {
+      "value": 0.29,
+      "unit": "kg"
+    },
+    "Sweden": {
+      "value": 0.29,
+      "unit": "kg"
+    },
+    "Hungary": {
+      "value": 0.28,
+      "unit": "kg"
+    },
+    "Norway": {
+      "value": 0.27,
+      "unit": "kg"
+    },
+    "Austria": {
+      "value": 0.27,
+      "unit": "kg"
+    },
+    "Finland": {
+      "value": 0.24,
+      "unit": "kg"
+    },
+    "United States": {
+      "value": 0.23,
+      "unit": "kg"
+    },
+    "Argentina": {
+      "value": 0.21,
+      "unit": "kg"
+    },
+    "Israel": {
+      "value": 0.20,
+      "unit": "kg"
+    },
+    "France": {
+      "value": 0.20,
+      "unit": "kg"
+    },
+    "Vietnam": {
+      "value": 0.20,
+      "unit": "kg"
+    },
+    "South Korea": {
+      "value": 0.17,
+      "unit": "kg"
+    },
+    "Spain": {
+      "value": 0.15,
+      "unit": "kg"
+    },
+    "Denmark": {
+      "value": 0.15,
+      "unit": "kg"
+    },
+    "Italy": {
+      "value": 0.14,
+      "unit": "kg"
+    },
+    "Belgium": {
+      "value": 0.13,
+      "unit": "kg"
+    },
+    "Bulgaria": {
+      "value": 0.11,
+      "unit": "kg"
+    },
+    "Romania": {
+      "value": 0.073,
+      "unit": "kg"
+    },
+    "Portugal": {
+      "value": 0.064,
+      "unit": "kg"
+    },
+    "Thailand": {
+      "value": 0.050,
+      "unit": "kg"
+    },
+    "Philippines": {
+      "value": 0.027,
+      "unit": "kg"
+    },
+    "Greece": {
+      "value": 0.023,
+      "unit": "kg"
+    },
+    "Venezuela": {
+      "value": 0.023,
+      "unit": "kg"
+    },
+    "Peru": {
+      "value": 0.023,
+      "unit": "kg"
+    },
+    "Colombia": {
+      "value": 0.018,
+      "unit": "kg"
+    }
+  }
+}
