@@ -3130,14 +3130,8 @@ class QuizGame {
             this.showFeedback(`Correct! This map shows ${this.currentQuiz.title}.`, 'correct');
             this.score++;
             this.updateScoreDisplay();
-            
-            // Update progress bar (this will handle completion if needed)
-            this.updateProgressBar(true);
         } else {
             this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
-            
-            // Update progress bar (this will handle completion if needed)
-            this.updateProgressBar(false);
         }
         
         // Show skip button for next question (only in learn mode)
@@ -3244,8 +3238,8 @@ class QuizGame {
             if (this.currentProgress < 10) {
                 this.startNewQuiz();
             } else {
-                // If at the end, trigger completion
-                this.updateProgressBar(false);
+                // If at the end, show completion
+                this.showCompletionMessage();
             }
         }
     }
