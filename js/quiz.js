@@ -267,6 +267,20 @@ class QuizGame {
                 console.log('🌍 Added World Population quiz');
             }
             
+            // Convert internet usage data
+            const internetUsageQuiz = await this.convertInternetUsageData();
+            if (internetUsageQuiz) {
+                this.quizData.quizzes[internetUsageQuiz.id] = internetUsageQuiz;
+                console.log('🌐 Added Internet Usage quiz');
+            }
+            
+            // Convert carbon emissions data
+            const carbonEmissionsQuiz = await this.convertCarbonEmissionsData();
+            if (carbonEmissionsQuiz) {
+                this.quizData.quizzes[carbonEmissionsQuiz.id] = carbonEmissionsQuiz;
+                console.log('🌱 Added Carbon Emissions quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -2005,6 +2019,126 @@ class QuizGame {
         }
     }
     
+    async convertInternetUsageData() {
+        try {
+            const response = await fetch('data/internet_usage_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (blue gradient for internet usage)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'internet_usage',
+                title: 'Internet Usage by Country',
+                description: 'Countries colored by percentage of population using the internet',
+                category: 'technology',
+                tags: ['internet', 'technology', 'connectivity', 'digital', 'online', 'web'],
+                answer_variations: [
+                    'internet usage',
+                    'internet',
+                    'online',
+                    'digital',
+                    'connectivity',
+                    'web usage',
+                    'internet access'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting internet usage data:', error);
+            return null;
+        }
+    }
+    
+    async convertCarbonEmissionsData() {
+        try {
+            const response = await fetch('data/carbon_emissions_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            // Process data and collect values for color scaling
+            Object.keys(data.data).forEach(countryName => {
+                const mappedCountryName = this.countryMapper.mapCountryName(countryName);
+                const countryData = data.data[countryName];
+                
+                countries[mappedCountryName] = {
+                    value: countryData.value,
+                    unit: countryData.unit
+                };
+                values.push(countryData.value);
+            });
+            
+            // Calculate color scale
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            // Apply colors based on values (red gradient for carbon emissions - higher is worse)
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'carbon_emissions',
+                title: 'Carbon Emissions by Country',
+                description: 'Countries colored by fossil CO2 emissions in 2023',
+                category: 'environment',
+                tags: ['carbon', 'emissions', 'environment', 'climate', 'pollution', 'co2'],
+                answer_variations: [
+                    'carbon emissions',
+                    'co2 emissions',
+                    'emissions',
+                    'carbon',
+                    'pollution',
+                    'climate',
+                    'fossil fuels'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting carbon emissions data:', error);
+            return null;
+        }
+    }
+    
     getColorForRatio(ratio, minColor, maxColor) {
         // Enhanced contrast interpolation with dramatic non-linear curves
         // Use different curves for better visual distinction across the spectrum
@@ -2143,8 +2277,11 @@ class QuizGame {
             this.score++;
             this.updateScoreDisplay();
             
+            // Update progress bar (this will handle completion if needed)
+            this.updateProgressBar(true);
+            
             // Only start new quiz if not at the end
-            if (this.currentProgress < 9) { // 9 because we're about to increment to 10
+            if (this.currentProgress < 10) { // Check if we haven't completed all questions
                 setTimeout(() => {
                     this.startNewQuiz();
                 }, 3000);
@@ -2152,8 +2289,11 @@ class QuizGame {
         } else {
             this.showFeedback(`Incorrect. The correct answer was: ${this.currentQuiz.title}`, 'incorrect');
             
+            // Update progress bar (this will handle completion if needed)
+            this.updateProgressBar(false);
+            
             // Only start new quiz if not at the end
-            if (this.currentProgress < 9) { // 9 because we're about to increment to 10
+            if (this.currentProgress < 10) { // Check if we haven't completed all questions
                 setTimeout(() => {
                     this.startNewQuiz();
                 }, 4000);
