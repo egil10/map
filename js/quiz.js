@@ -6746,14 +6746,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.gdp_per_working_hour_usd,
-                        unit: 'USD/hour'
+                        value: countryData.value,
+                        unit: countryData.unit || 'USD/hour'
                     };
-                    values.push(item.gdp_per_working_hour_usd);
+                    values.push(countryData.value);
                 }
             });
             
@@ -6800,14 +6800,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.wealth_gini_percent,
-                        unit: '%'
+                        value: countryData.value,
+                        unit: countryData.unit || '%'
                     };
-                    values.push(item.wealth_gini_percent);
+                    values.push(countryData.value);
                 }
             });
             
@@ -6854,14 +6854,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.median_wealth_per_adult_usd,
-                        unit: 'USD'
+                        value: countryData.value,
+                        unit: countryData.unit || 'USD'
                     };
-                    values.push(item.median_wealth_per_adult_usd);
+                    values.push(countryData.value);
                 }
             });
             
@@ -6908,14 +6908,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.average_annual_wages_usd_ppp,
-                        unit: 'USD PPP'
+                        value: countryData.value,
+                        unit: countryData.unit || 'USD PPP'
                     };
-                    values.push(item.average_annual_wages_usd_ppp);
+                    values.push(countryData.value);
                 }
             });
             
@@ -6962,14 +6962,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.corporate_tax_rate_percent,
-                        unit: '%'
+                        value: countryData.value,
+                        unit: countryData.unit || '%'
                     };
-                    values.push(item.corporate_tax_rate_percent);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7016,14 +7016,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.marriage_rate_per_1000,
-                        unit: 'per 1000'
+                        value: countryData.value,
+                        unit: countryData.unit || 'per 1000'
                     };
-                    values.push(item.marriage_rate_per_1000);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7070,14 +7070,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.motor_vehicle_production,
-                        unit: 'vehicles'
+                        value: countryData.value,
+                        unit: countryData.unit || 'vehicles'
                     };
-                    values.push(item.motor_vehicle_production);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7124,14 +7124,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.forest_area_km2,
-                        unit: 'km²'
+                        value: countryData.value,
+                        unit: countryData.unit || 'km²'
                     };
-                    values.push(item.forest_area_km2);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7178,14 +7178,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.forest_area_percentage,
-                        unit: '%'
+                        value: countryData.value,
+                        unit: countryData.unit || '%'
                     };
-                    values.push(item.forest_area_percentage);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7232,14 +7232,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.olympics_hosted,
-                        unit: 'times'
+                        value: countryData.value,
+                        unit: countryData.unit || 'times'
                     };
-                    values.push(item.olympics_hosted);
+                    values.push(countryData.value);
                 }
             });
             
@@ -7286,14 +7286,14 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                if (item.country !== 'World') {
-                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                if (country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(country);
                     countries[mappedCountryName] = {
-                        value: item.figure_skating_gold_medals,
-                        unit: 'medals'
+                        value: countryData.value,
+                        unit: countryData.unit || 'medals'
                     };
-                    values.push(item.figure_skating_gold_medals);
+                    values.push(countryData.value);
                 }
             });
             
