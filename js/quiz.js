@@ -4680,6 +4680,7 @@ class QuizGame {
         if (datasetCountElement) {
             const totalQuizzes = Object.keys(this.quizData.quizzes).length;
             datasetCountElement.textContent = totalQuizzes;
+            console.log('📊 Updated dataset counter to:', totalQuizzes, 'datasets');
         }
     }
     
