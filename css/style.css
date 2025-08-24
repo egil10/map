@@ -844,160 +844,455 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Quiz Interface - Mobile Layout */
+    /* Quiz Interface - Mobile Layout - Much more compact */
     .quiz-interface {
-        height: 180px; /* Increased height for mobile */
-        padding: 16px;
+        height: 120px; /* Significantly reduced height */
+        padding: 12px 16px;
+        border-top: 2px solid #e9ecef;
     }
     
-    /* Input Section - Mobile layout */
+    /* Input Section - Simplified mobile layout */
     .input-section {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+    }
+    
+    /* Simplify the 3-column grid to a more mobile-friendly layout */
+    .input-row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    
+    /* Center stack takes full width on mobile */
+    .center-stack {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Input with embedded controls - Mobile optimized */
+    .input-with-embedded {
+        height: 44px; /* Slightly smaller */
     }
     
     .guess-input {
         font-size: 16px; /* Prevent zoom on iOS */
-        border-radius: 12px;
+        border-radius: 22px; /* More rounded */
+        padding-left: 16px;
+        padding-right: 80px; /* Space for buttons */
+        border: 2px solid #e9ecef;
+        background: #ffffff;
+    }
+    
+    .guess-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+    
+    /* Inline buttons - Mobile optimized */
+    .inline-btn {
+        width: 32px;
+        height: 32px;
     }
     
     .inline-btn svg {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
     }
     
-    .btn-icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-        background: #007bff;
-        color: white;
-        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    .inline-right-group {
+        right: 8px;
+        gap: 4px;
     }
     
-    .btn-icon:hover {
-        background: #0056b3;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
-    }
-    
-    /* Progress Bar - Adjust for mobile */
+    /* Progress bar - Mobile optimized */
     .progress-bar {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
     
     .progress-circles {
-        gap: 6px;
+        gap: 4px;
+        justify-content: center;
     }
     
     .progress-circle {
-        width: 14px;
-        height: 14px;
+        width: 12px;
+        height: 12px;
     }
     
     /* Feedback - Mobile optimized */
     .feedback {
-        font-size: 15px;
-        margin-top: 8px;
-        padding: 0 16px;
+        font-size: 14px;
+        margin-top: 6px;
+        padding: 0 8px;
+        text-align: center;
     }
     
-    /* Answer Title - Mobile */
+    /* Answer Title - Mobile repositioned */
     .answer-title {
-        bottom: 200px; /* Adjust for mobile footer height */
-        padding: 6px 10px;
-        border-radius: 8px;
+        bottom: 140px; /* Adjust for new mobile footer height */
+        padding: 8px 12px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+    
+    .answer-title h2 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    
+    .answer-title p {
+        font-size: 12px;
+    }
+    
+    /* Mode Toggle - Mobile simplified */
+    .input-left {
+        order: 3; /* Move to bottom */
+        justify-content: center;
+        margin-top: 4px;
+    }
+    
+    .mode-toggle-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        gap: 6px;
+        border-radius: 16px;
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        color: #495057;
+    }
+    
+    .mode-toggle-btn:hover {
+        background: #e9ecef;
+    }
+    
+    .mode-toggle-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .mode-toggle-btn span {
+        display: inline; /* Show text on mobile */
+        font-weight: 500;
+    }
+    
+    /* Right section - Mobile simplified */
+    .input-right {
+        order: 2; /* Move to middle */
+        justify-content: center;
+        margin-top: 4px;
+    }
+    
+    .social-links {
+        gap: 16px;
+    }
+    
+    .social-links .social-link svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dataset-counter {
+        font-size: 12px;
+        color: #6c757d;
+        font-weight: 400;
+    }
+    
+    /* Dataset Browser - Mobile optimized */
+    .dataset-browser-content {
+        max-width: 95%;
+        max-height: 85vh;
+        margin: 20px;
+    }
+    
+    .dataset-browser-header {
+        padding: 20px;
+    }
+    
+    .dataset-browser-header h2 {
+        font-size: 20px;
+    }
+    
+    .dataset-browser-list {
+        padding: 16px 20px;
+        max-height: 60vh;
+    }
+    
+    .dataset-item {
+        padding: 12px 16px;
+        margin-bottom: 8px;
+        border-radius: 12px;
+    }
+    
+    .dataset-title {
+        font-size: 14px;
+    }
+    
+    .dataset-description {
+        font-size: 12px;
+    }
+    
+    .dataset-category {
+        font-size: 11px;
+    }
+    
+    /* Legend - Mobile positioning improved */
+    .legend-control {
+        position: fixed !important;
+        top: 16px !important;
+        right: 16px !important;
+        bottom: auto !important;
+        left: auto !important;
+        min-width: 180px;
+        width: 180px;
+        max-width: 180px;
+        height: auto;
+        min-height: 60px;
+        padding: 12px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        margin: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .legend h4 {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+    
+    /* Legend extremes - Mobile */
+    .legend-extremes {
+        display: none; /* Hide on mobile to save space */
+    }
+    
+    /* Gradient labels - Mobile */
+    .gradient-labels {
+        font-size: 10px;
+    }
+    
+    /* Map container - Mobile optimized */
+    .map-container {
+        min-height: 300px;
+    }
+    
+    /* Popup content - Mobile optimized */
+    .popup-content h3 {
+        font-size: 14px;
+    }
+    
+    .popup-content .value-number {
+        font-size: 16px;
+    }
+    
+    .popup-context {
+        font-size: 11px;
+    }
+    
+    /* Loading screen - Mobile optimized */
+    .loading-text {
+        font-size: 14px;
+    }
+    
+    .loading-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Completion screen - Mobile optimized */
+    .completion-content {
+        padding: 24px 20px;
+        margin: 16px;
+        border-radius: 16px;
+    }
+    
+    .completion-content h2 {
+        font-size: 20px;
+    }
+    
+    .score-text {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    
+    .completion-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .completion-btn {
+        padding: 12px 16px;
+        font-size: 14px;
+        justify-content: center;
+    }
+    
+    .completion-btn i {
+        width: 16px;
+        height: 16px;
+    }
+    
+    /* Additional mobile optimizations */
+    .copy-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Ensure touch targets are large enough */
+    .inline-btn,
+    .mode-toggle-btn,
+    .social-link,
+    .completion-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Improve scrolling on mobile */
+    .dataset-browser-list {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Prevent horizontal scroll */
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Better touch feedback */
+    .inline-btn:active,
+    .mode-toggle-btn:active,
+    .social-link:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Extra small mobile devices (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .quiz-interface {
+        height: 110px;
+        padding: 10px 12px;
+    }
+    
+    .guess-input {
+        font-size: 16px;
+        padding-left: 12px;
+        padding-right: 70px;
+    }
+    
+    .inline-btn {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .inline-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .inline-right-group {
+        right: 6px;
+        gap: 3px;
+    }
+    
+    .progress-circle {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .answer-title {
+        bottom: 130px;
         width: 95%;
+        padding: 6px 10px;
     }
     
     .answer-title h2 {
         font-size: 14px;
-        margin-bottom: 3px;
     }
     
     .answer-title p {
         font-size: 11px;
     }
     
-    /* Mode Toggle - Mobile */
-    .mode-toggle {
-        /* Removed absolute positioning for flexbox layout */
-    }
-    
     .mode-toggle-btn {
-        padding: 0 8px;
-        font-size: 10px;
+        padding: 4px 8px;
+        font-size: 11px;
         gap: 4px;
     }
     
-    .mode-toggle-btn i {
+    .mode-toggle-btn svg {
         width: 12px;
         height: 12px;
     }
     
-    .mode-toggle-btn span {
-        display: none; /* Hide text on mobile */
+    .social-links .social-link svg {
+        width: 18px;
+        height: 18px;
     }
     
-    /* Dataset Counter - Mobile */
-    .input-right .dataset-counter {
+    .dataset-counter {
         font-size: 11px;
     }
     
-    /* Dataset Browser - Mobile */
-    .dataset-browser-content {
-        max-width: 95%;
-        max-height: 90vh;
-    }
-    
-    .dataset-browser-header {
-        padding: 16px 20px;
-    }
-    
-    .dataset-browser-header h2 {
-        font-size: 18px;
-    }
-    
-    .dataset-browser-list {
-        padding: 12px 20px;
-        max-height: 70vh;
-    }
-    
-    .dataset-item {
-        padding: 10px 12px;
-        margin-bottom: 6px;
-    }
-    
-    .dataset-title {
-        font-size: 13px;
-    }
-    
-    .dataset-description {
-        font-size: 11px;
-    }
-    
-    .dataset-category {
-        font-size: 10px;
-    }
-    
-    /* Legend - Mobile positioning */
     .legend-control {
-        min-width: 200px;
-        width: 200px;
-        max-width: 200px;
-        height: auto;
-        min-height: 80px;
-        padding: 12px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        margin: 8px;
+        top: 12px !important;
+        right: 12px !important;
+        min-width: 160px;
+        width: 160px;
+        max-width: 160px;
+        padding: 10px;
     }
     
-         .legend h4 {
-         font-size: 13px;
-         margin-bottom: 8px;
-     }
-     
-     /* Legend extremes - Mobile */
+    .legend h4 {
+        font-size: 11px;
+    }
+    
+    .gradient-labels {
+        font-size: 9px;
+    }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .quiz-interface {
+        height: 100px;
+        padding: 8px 16px;
+    }
+    
+    .input-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .center-stack {
+        flex: 1;
+        max-width: 300px;
+    }
+    
+    .input-left {
+        order: 1;
+        margin-top: 0;
+    }
+    
+    .input-right {
+        order: 3;
+        margin-top: 0;
+    }
+    
+    .answer-title {
+        bottom: 120px;
+    }
+    
+    .legend-control {
+        top: 8px !important;
+        right: 8px !important;
+        min-width: 150px;
+        width: 150px;
+        max-width: 150px;
+        padding: 8px;
+    }
+}
      .legend-extremes {
          margin-top: 6px;
          padding-top: 6px;
@@ -1601,6 +1896,8 @@ body {
     backdrop-filter: blur(10px) !important;
     border: 1px solid rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
 }
 
 .country-popup .leaflet-popup-tip {
@@ -1610,4 +1907,40 @@ body {
 
 .country-popup .leaflet-popup-close-button {
     display: none !important;
+}
+
+/* Popup content styling */
+.popup-content {
+    text-align: center;
+    min-width: 120px;
+}
+
+.popup-content h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.popup-content .value-number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #007bff;
+    margin-bottom: 4px;
+}
+
+.popup-context {
+    font-size: 11px;
+    color: #6c757d;
+    line-height: 1.3;
+}
+
+.popup-quiz-info {
+    margin-bottom: 2px;
+}
+
+.popup-unit-info {
+    font-size: 10px;
+    opacity: 0.8;
 }

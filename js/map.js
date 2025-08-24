@@ -3,29 +3,86 @@ function resolveToGeoName(name, geoNames) {
     if (geoNames.has(name)) return name;
 
     const aliases = new Map([
-        ['United States', 'USA'],
-        ['United States of America', 'USA'],
-        ['Russia', 'Russian Federation'],
+        // USA variations - map from quiz data to GeoJSON
+        ['USA', 'United States of America'],
+        ['United States', 'United States of America'],
+        ['US', 'United States of America'],
+        ['America', 'United States of America'],
+        ['United States of America', 'United States of America'],
+        
+        // UK variations - map from quiz data to GeoJSON
+        ['England', 'United Kingdom'],
+        ['UK', 'United Kingdom'],
+        ['Great Britain', 'United Kingdom'],
+        ['United Kingdom', 'United Kingdom'],
+        ['Scotland', 'United Kingdom'],
+        ['Wales', 'United Kingdom'],
+        ['Northern Ireland', 'United Kingdom'],
+        ['United Kingdom of Great Britain and Northern Ireland', 'United Kingdom'],
+        ['United Kingdom (plus British Overseas Territories and Crown Dependencies)', 'United Kingdom'],
+        
+        // Russia variations
         ['Russian Federation', 'Russia'],
+        ['Russia', 'Russia'],
+        ['Russia/Soviet Union', 'Russia'],
+        
+        // Czech Republic
         ['Czech Republic', 'Czechia'],
-        ['Swaziland', 'Eswatini'],
-        ['Macedonia, The Former Yugoslav Republic of', 'North Macedonia'],
+        ['Czechia', 'Czechia'],
+        
+        // North Korea
+        ['North Korea', 'North Korea'],
+        ['Korea, Democratic People\'s Republic of', 'North Korea'],
+        
+        // South Korea
+        ['South Korea', 'South Korea'],
         ['Korea, Republic of', 'South Korea'],
-        ["Korea, Democratic People's Republic of", 'North Korea'],
+        
+        // Other country variations
+        ['Swaziland', 'Eswatini'],
+        ['Eswatini', 'Eswatini'],
+        ['Eswatini (Swaziland)', 'Eswatini'],
+        
+        ['Macedonia, The Former Yugoslav Republic of', 'North Macedonia'],
+        ['Macedonia', 'North Macedonia'],
+        ['North Macedonia', 'North Macedonia'],
+        
         ['Iran, Islamic Republic of', 'Iran'],
-        ["Lao People's Democratic Republic", 'Laos'],
+        ['Iran', 'Iran'],
+        
+        ['Lao People\'s Democratic Republic', 'Laos'],
+        ['Laos', 'Laos'],
+        
         ['Syrian Arab Republic', 'Syria'],
+        ['Syria', 'Syria'],
+        
         ['Tanzania, United Republic of', 'Tanzania'],
+        ['Tanzania', 'Tanzania'],
+        
         ['Venezuela, Bolivarian Republic of', 'Venezuela'],
+        ['Venezuela', 'Venezuela'],
+        
         ['Moldova, Republic of', 'Moldova'],
+        ['Moldova', 'Moldova'],
+        
         ['Viet Nam', 'Vietnam'],
+        ['Vietnam', 'Vietnam'],
+        
         ['Brunei Darussalam', 'Brunei'],
+        ['Brunei', 'Brunei'],
+        
         ['Holy See (Vatican City State)', 'Vatican'],
-        ['Micronesia, Federated States of', 'Micronesia'],
-        ['Taiwan, Province of China', 'Taiwan'],
-        // Microstates and islands
         ['Vatican City', 'Vatican'],
         ['Holy See', 'Vatican'],
+        ['Vatican', 'Vatican'],
+        
+        ['Micronesia, Federated States of', 'Micronesia'],
+        ['Micronesia', 'Micronesia'],
+        
+        ['Taiwan, Province of China', 'Taiwan'],
+        ['Taiwan', 'Taiwan'],
+        
+        // Microstates and islands
         ['San Marino', 'San Marino'],
         ['Liechtenstein', 'Liechtenstein'],
         ['Andorra', 'Andorra'],
@@ -33,134 +90,101 @@ function resolveToGeoName(name, geoNames) {
         ['Luxembourg', 'Luxembourg'],
         ['Monaco', 'Monaco'],
         ['Singapore', 'Singapore'],
-                 ['Macau', 'Macao'],
-         ['Macao', 'Macao'],
-         ['Hong Kong', 'Hong Kong'],
-         ['Hong Kong (China)', 'Hong Kong'],
-         ['Hong Kong (CN)', 'Hong Kong'],
-         ['Macau (China)', 'Macao'],
-         ['Macau (CN)', 'Macao'],
-         ['Hong Kong SAR', 'Hong Kong'],
-         ['Macau SAR', 'Macao'],
-         ['Hong Kong (Visible)', 'Hong Kong'],
-         ['Macau (Visible)', 'Macao'],
-         // Additional microstate variations
-         ['Brunei Darussalam', 'Brunei'],
-         ['Bahrain', 'Bahrain'],
-         ['Qatar', 'Qatar'],
-         ['Kuwait', 'Kuwait'],
-         ['UAE', 'United Arab Emirates'],
-         ['United Arab Emirates', 'United Arab Emirates'],
-         ['St. Kitts & Nevis', 'Saint Kitts and Nevis'],
-         ['St. Vincent & the Grenadines', 'Saint Vincent and the Grenadines'],
-         ['St. Lucia', 'Saint Lucia'],
-         ['Antigua & Barbuda', 'Antigua and Barbuda'],
-         ['Grenada', 'Grenada'],
-         ['Dominica', 'Dominica'],
-         ['Barbados', 'Barbados'],
-         ['Palau', 'Palau'],
-         ['Nauru', 'Nauru'],
-         ['Tuvalu', 'Tuvalu'],
-         ['Kiribati', 'Kiribati'],
-         ['Marshall Islands', 'Marshall Islands'],
-         ['Micronesia', 'Micronesia'],
-         ['Vanuatu', 'Vanuatu'],
-         ['Fiji', 'Fiji'],
-         ['Seychelles', 'Seychelles'],
-         ['Mauritius', 'Mauritius'],
-         ['Comoros', 'Comoros'],
-         ['Djibouti', 'Djibouti'],
-        // Additional variations
-        ['The Bahamas', 'Bahamas'],
-        ['Bahamas', 'Bahamas'],
-        ['Cape Verde', 'Cabo Verde'],
-        ['Cabo Verde', 'Cape Verde'],
-        ['East Timor', 'Timor-Leste'],
-        ['Timor-Leste', 'Timor-Leste'],
-        ['Eswatini', 'Eswatini'],
-        ['Swaziland', 'Eswatini'],
-        ['North Macedonia', 'North Macedonia'],
-        ['Macedonia', 'North Macedonia'],
-        ['Bosnia and Herzegovina', 'Bosnia and Herzegovina'],
-        ['Bosnia & Herzegovina', 'Bosnia and Herzegovina'],
-        ['Côte d\'Ivoire', 'Côte d\'Ivoire'],
-        ['Ivory Coast', 'Côte d\'Ivoire'],
-        ['Cote d\'Ivoire', 'Côte d\'Ivoire'],
-        ['Guinea-Bissau', 'Guinea-Bissau'],
-        ['Guinea Bissau', 'Guinea-Bissau'],
-        ['The Gambia', 'Gambia'],
-        ['Gambia', 'Gambia'],
-        ['Democratic Republic of the Congo', 'Democratic Republic of the Congo'],
-        ['DR Congo', 'Democratic Republic of the Congo'],
-        ['Congo, Democratic Republic of the', 'Democratic Republic of the Congo'],
-        ['Republic of the Congo', 'Republic of the Congo'],
-        ['Congo, Republic of the', 'Republic of the Congo'],
-        ['Congo', 'Republic of the Congo'],
+        
+        // Hong Kong and Macau variations
+        ['Macau', 'Macao'],
+        ['Macao', 'Macao'],
+        ['Hong Kong', 'Hong Kong'],
+        ['Hong Kong (China)', 'Hong Kong'],
+        ['Hong Kong (CN)', 'Hong Kong'],
+        ['Macau (China)', 'Macao'],
+        ['Macau (CN)', 'Macao'],
+        ['Hong Kong SAR', 'Hong Kong'],
+        ['Macau SAR', 'Macao'],
+        ['Hong Kong (Visible)', 'Hong Kong'],
+        ['Macau (Visible)', 'Macao'],
+        
+        // Additional microstate variations
+        ['Bahrain', 'Bahrain'],
+        ['Qatar', 'Qatar'],
+        ['Kuwait', 'Kuwait'],
+        ['UAE', 'United Arab Emirates'],
+        ['United Arab Emirates', 'United Arab Emirates'],
+        
+        // Caribbean microstates
         ['St. Kitts & Nevis', 'Saint Kitts and Nevis'],
         ['Saint Kitts and Nevis', 'Saint Kitts and Nevis'],
         ['St. Vincent & the Grenadines', 'Saint Vincent and the Grenadines'],
         ['Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines'],
         ['St. Lucia', 'Saint Lucia'],
         ['Saint Lucia', 'Saint Lucia'],
+        ['Antigua & Barbuda', 'Antigua and Barbuda'],
+        ['Antigua and Barbuda', 'Antigua and Barbuda'],
+        ['Grenada', 'Grenada'],
+        ['Dominica', 'Dominica'],
+        ['Barbados', 'Barbados'],
+        
+        // Pacific microstates
+        ['Palau', 'Palau'],
+        ['Nauru', 'Nauru'],
+        ['Tuvalu', 'Tuvalu'],
+        ['Kiribati', 'Kiribati'],
+        ['Marshall Islands', 'Marshall Islands'],
+        ['Vanuatu', 'Vanuatu'],
+        ['Fiji', 'Fiji'],
+        
+        // African microstates
+        ['Seychelles', 'Seychelles'],
+        ['Mauritius', 'Mauritius'],
+        ['Comoros', 'Comoros'],
+        ['Djibouti', 'Djibouti'],
+        
+        // Additional variations
+        ['The Bahamas', 'Bahamas'],
+        ['Bahamas', 'Bahamas'],
+        ['Cape Verde', 'Cape Verde'],
+        ['Cabo Verde', 'Cape Verde'],
+        ['East Timor', 'Timor-Leste'],
+        ['Timor-Leste', 'Timor-Leste'],
+        
+        ['Bosnia and Herzegovina', 'Bosnia and Herzegovina'],
+        ['Bosnia & Herzegovina', 'Bosnia and Herzegovina'],
+        
+        ['Côte d\'Ivoire', 'Côte d\'Ivoire'],
+        ['Ivory Coast', 'Côte d\'Ivoire'],
+        ['Cote d\'Ivoire', 'Côte d\'Ivoire'],
+        
+        ['Guinea-Bissau', 'Guinea-Bissau'],
+        ['Guinea Bissau', 'Guinea-Bissau'],
+        
+        ['The Gambia', 'Gambia'],
+        ['Gambia', 'Gambia'],
+        
+        ['Democratic Republic of the Congo', 'Democratic Republic of the Congo'],
+        ['DR Congo', 'Democratic Republic of the Congo'],
+        ['Congo, Democratic Republic of the', 'Democratic Republic of the Congo'],
+        
+        ['Republic of the Congo', 'Republic of the Congo'],
+        ['Congo, Republic of the', 'Republic of the Congo'],
+        ['Congo', 'Republic of the Congo'],
+        
         ['São Tomé and Príncipe', 'Sao Tome and Principe'],
         ['Sao Tome and Principe', 'Sao Tome and Principe'],
+        
         ['Palestine, State of', 'Palestine, State of'],
         ['Palestine', 'Palestine, State of'],
         ['West Bank Palestine (West Bank)', 'Palestine, State of'],
         ['Palestine (Gaza Strip)', 'Palestine, State of'],
+        
         ['Bolivia (Plurinational State of)', 'Bolivia'],
         ['Bolivia', 'Bolivia'],
-        ['Brunei', 'Brunei'],
-        ['Iran', 'Iran'],
-        ['Laos', 'Laos'],
-        ['Syria', 'Syria'],
-        ['Tanzania', 'Tanzania'],
-        ['Venezuela', 'Venezuela'],
-        ['Vietnam', 'Vietnam'],
-        ['Moldova', 'Moldova'],
+        
         ['Yugoslavia', 'Serbia'],
         ['Tibet', 'China'],
-        ['Russia/Soviet Union', 'Russian Federation'],
-        // United Kingdom variations
-        ['United Kingdom', 'England'],
-        ['UK', 'England'],
-        ['Great Britain', 'England'],
-        ['England', 'England'],
-        ['Scotland', 'England'],
-        ['Wales', 'England'],
-        ['Northern Ireland', 'England'],
-        ['United Kingdom of Great Britain and Northern Ireland', 'England'],
-        ['United Kingdom (plus British Overseas Territories and Crown Dependencies)', 'England'],
+        
         // France variations
         ['France', 'France'],
         ['France (including French overseas departments, collectivities, and territories)', 'France'],
-        // Czech Republic
-        ['Czech Republic', 'Czechia'],
-        ['Czechia', 'Czechia'],
-        // North Korea
-        ['North Korea', 'North Korea'],
-        ['Korea, Democratic People\'s Republic of', 'North Korea'],
-        // South Korea
-        ['South Korea', 'South Korea'],
-        ['Korea, Republic of', 'South Korea'],
-        // East Timor
-        ['East Timor', 'Timor-Leste'],
-        ['Timor-Leste', 'Timor-Leste'],
-        // Eswatini
-        ['Eswatini', 'Eswatini'],
-        ['Swaziland', 'Eswatini'],
-        ['Eswatini (Swaziland)', 'Eswatini'],
-        // Palestine
-        ['Palestine', 'Palestine, State of'],
-        ['Palestine, State of', 'Palestine, State of'],
-        ['West Bank Palestine (West Bank)', 'Palestine, State of'],
-        ['Palestine (Gaza Strip)', 'Palestine, State of'],
-        // Vatican City
-        ['Vatican City', 'Vatican'],
-        ['Holy See (Vatican City State)', 'Vatican'],
-        // São Tomé and Príncipe
-        ['São Tomé and Príncipe', 'Sao Tome and Principe'],
-        ['Sao Tome and Principe', 'Sao Tome and Principe'],
     ]);
 
     const alt = aliases.get(name);
@@ -176,6 +200,37 @@ function resolveToGeoName(name, geoNames) {
     
     // Try partial matching for microstates and islands
     const partialMatches = {
+        // USA variations
+        'united states': 'United States of America',
+        'usa': 'United States of America',
+        'us': 'United States of America',
+        'america': 'United States of America',
+        'united states of america': 'United States of America',
+        
+        // UK variations
+        'united kingdom': 'United Kingdom',
+        'uk': 'United Kingdom',
+        'great britain': 'United Kingdom',
+        'england': 'United Kingdom',
+        'scotland': 'United Kingdom',
+        'wales': 'United Kingdom',
+        'northern ireland': 'United Kingdom',
+        
+        // Russia variations
+        'russia': 'Russia',
+        'russian federation': 'Russia',
+        'soviet union': 'Russia',
+        
+        // Czech Republic
+        'czech republic': 'Czechia',
+        'czechia': 'Czechia',
+        
+        // Korea variations
+        'north korea': 'North Korea',
+        'south korea': 'South Korea',
+        'korea': 'South Korea',
+        
+        // Microstates and islands
         'monaco': 'Monaco',
         'vatican': 'Vatican',
         'san marino': 'San Marino',
@@ -184,39 +239,50 @@ function resolveToGeoName(name, geoNames) {
         'malta': 'Malta',
         'luxembourg': 'Luxembourg',
         'singapore': 'Singapore',
+        
+        // Hong Kong and Macau
         'macau': 'Macao',
         'macao': 'Macao',
-                 'hong kong': 'Hong Kong',
-         'bahamas': 'Bahamas',
-         // Additional microstate partial matches
-         'brunei': 'Brunei',
-         'bahrain': 'Bahrain',
-         'qatar': 'Qatar',
-         'kuwait': 'Kuwait',
-         'uae': 'United Arab Emirates',
-         'united arab emirates': 'United Arab Emirates',
-         'st kitts': 'Saint Kitts and Nevis',
-         'saint kitts': 'Saint Kitts and Nevis',
-         'st vincent': 'Saint Vincent and the Grenadines',
-         'saint vincent': 'Saint Vincent and the Grenadines',
-         'st lucia': 'Saint Lucia',
-         'saint lucia': 'Saint Lucia',
-         'antigua': 'Antigua and Barbuda',
-         'grenada': 'Grenada',
-         'dominica': 'Dominica',
-         'barbados': 'Barbados',
-         'palau': 'Palau',
-         'nauru': 'Nauru',
-         'tuvalu': 'Tuvalu',
-         'kiribati': 'Kiribati',
-         'marshall': 'Marshall Islands',
-         'micronesia': 'Micronesia',
-         'vanuatu': 'Vanuatu',
-         'fiji': 'Fiji',
-         'seychelles': 'Seychelles',
-         'mauritius': 'Mauritius',
-         'comoros': 'Comoros',
-         'djibouti': 'Djibouti',
+        'hong kong': 'Hong Kong',
+        
+        // Other microstates
+        'bahamas': 'Bahamas',
+        'brunei': 'Brunei',
+        'bahrain': 'Bahrain',
+        'qatar': 'Qatar',
+        'kuwait': 'Kuwait',
+        'uae': 'United Arab Emirates',
+        'united arab emirates': 'United Arab Emirates',
+        
+        // Caribbean microstates
+        'st kitts': 'Saint Kitts and Nevis',
+        'saint kitts': 'Saint Kitts and Nevis',
+        'st vincent': 'Saint Vincent and the Grenadines',
+        'saint vincent': 'Saint Vincent and the Grenadines',
+        'st lucia': 'Saint Lucia',
+        'saint lucia': 'Saint Lucia',
+        'antigua': 'Antigua and Barbuda',
+        'grenada': 'Grenada',
+        'dominica': 'Dominica',
+        'barbados': 'Barbados',
+        
+        // Pacific microstates
+        'palau': 'Palau',
+        'nauru': 'Nauru',
+        'tuvalu': 'Tuvalu',
+        'kiribati': 'Kiribati',
+        'marshall': 'Marshall Islands',
+        'micronesia': 'Micronesia',
+        'vanuatu': 'Vanuatu',
+        'fiji': 'Fiji',
+        
+        // African microstates
+        'seychelles': 'Seychelles',
+        'mauritius': 'Mauritius',
+        'comoros': 'Comoros',
+        'djibouti': 'Djibouti',
+        
+        // Other country variations
         'cape verde': 'Cape Verde',
         'cabo verde': 'Cape Verde',
         'east timor': 'Timor-Leste',
@@ -231,13 +297,9 @@ function resolveToGeoName(name, geoNames) {
         'guinea bissau': 'Guinea-Bissau',
         'gambia': 'Gambia',
         'congo': 'Republic of the Congo',
-        'st kitts': 'Saint Kitts and Nevis',
-        'st vincent': 'Saint Vincent and the Grenadines',
-        'st lucia': 'Saint Lucia',
         'sao tome': 'Sao Tome and Principe',
         'palestine': 'Palestine, State of',
         'bolivia': 'Bolivia',
-        'brunei': 'Brunei',
         'iran': 'Iran',
         'laos': 'Laos',
         'syria': 'Syria',
@@ -247,26 +309,7 @@ function resolveToGeoName(name, geoNames) {
         'moldova': 'Moldova',
         'yugoslavia': 'Serbia',
         'tibet': 'China',
-        'russia': 'Russian Federation',
-        'soviet union': 'Russian Federation',
-        'united kingdom': 'England',
-        'uk': 'England',
-        'great britain': 'England',
-        'england': 'England',
-        'scotland': 'England',
-        'wales': 'England',
-        'northern ireland': 'England',
-        'france': 'France',
-        'czech republic': 'Czechia',
-        'czechia': 'Czechia',
-        'north korea': 'North Korea',
-        'south korea': 'South Korea',
-        'korea': 'South Korea',
-        'united states': 'USA',
-        'usa': 'USA',
-        'us': 'USA',
-        'america': 'USA',
-        'united states of america': 'USA'
+        'france': 'France'
     };
     
     for (const [pattern, target] of Object.entries(partialMatches)) {
