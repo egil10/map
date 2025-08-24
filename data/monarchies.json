@@ -1,48 +1,180 @@
 {
   "title": "Countries with Monarchies",
-  "data": [
-    {"country": "Andorra", "monarchy_type": "Co-Prince", "role": "Ceremonial"},
-    {"country": "Antigua and Barbuda", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Australia", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Bahamas", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Bahrain", "monarchy_type": "King", "role": "Executive"},
-    {"country": "Belgium", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Belize", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Bhutan", "monarchy_type": "Druk Gyalpo", "role": "Executive"},
-    {"country": "Brunei", "monarchy_type": "Sultan", "role": "Absolute"},
-    {"country": "Cambodia", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Canada", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Denmark", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Eswatini", "monarchy_type": "King", "role": "Absolute"},
-    {"country": "Grenada", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Jamaica", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Japan", "monarchy_type": "Emperor", "role": "Ceremonial"},
-    {"country": "Jordan", "monarchy_type": "King", "role": "Executive"},
-    {"country": "Kuwait", "monarchy_type": "Emir", "role": "Executive"},
-    {"country": "Lesotho", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Liechtenstein", "monarchy_type": "Prince", "role": "Executive"},
-    {"country": "Luxembourg", "monarchy_type": "Grand Duke", "role": "Ceremonial"},
-    {"country": "Malaysia", "monarchy_type": "Yang di-Pertuan Agong", "role": "Ceremonial & Federal"},
-    {"country": "Monaco", "monarchy_type": "Prince", "role": "Executive"},
-    {"country": "Morocco", "monarchy_type": "King", "role": "Executive"},
-    {"country": "Netherlands", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "New Zealand", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Norway", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Oman", "monarchy_type": "Sultan", "role": "Absolute"},
-    {"country": "Papua New Guinea", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Qatar", "monarchy_type": "Emir", "role": "Executive"},
-    {"country": "Saint Kitts and Nevis", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Saint Lucia", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Saint Vincent and the Grenadines", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Saudi Arabia", "monarchy_type": "King", "role": "Absolute"},
-    {"country": "Solomon Islands", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Spain", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Sweden", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Thailand", "monarchy_type": "King", "role": "Ceremonial"},
-    {"country": "Tonga", "monarchy_type": "King", "role": "Executive"},
-    {"country": "Tuvalu", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "United Arab Emirates", "monarchy_type": "President", "role": "Executive & Federal"},
-    {"country": "United Kingdom", "monarchy_type": "King or Queen", "role": "Ceremonial"},
-    {"country": "Vatican City", "monarchy_type": "Pope", "role": "Absolute"}
-  ]
+  "description": "Countries that have monarchies as their form of government",
+  "unit": "monarchy type",
+  "source": "https://en.wikipedia.org/wiki/List_of_current_monarchies",
+  "data": {
+    "Andorra": {
+      "value": "Co-Prince",
+      "unit": "monarchy type"
+    },
+    "Antigua and Barbuda": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Australia": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Bahamas": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Bahrain": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Belgium": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Belize": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Bhutan": {
+      "value": "Druk Gyalpo",
+      "unit": "monarchy type"
+    },
+    "Brunei": {
+      "value": "Sultan",
+      "unit": "monarchy type"
+    },
+    "Cambodia": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Canada": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Denmark": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Eswatini": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Grenada": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Jamaica": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Japan": {
+      "value": "Emperor",
+      "unit": "monarchy type"
+    },
+    "Jordan": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Kuwait": {
+      "value": "Emir",
+      "unit": "monarchy type"
+    },
+    "Lesotho": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Liechtenstein": {
+      "value": "Prince",
+      "unit": "monarchy type"
+    },
+    "Luxembourg": {
+      "value": "Grand Duke",
+      "unit": "monarchy type"
+    },
+    "Malaysia": {
+      "value": "Yang di-Pertuan Agong",
+      "unit": "monarchy type"
+    },
+    "Monaco": {
+      "value": "Prince",
+      "unit": "monarchy type"
+    },
+    "Morocco": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Netherlands": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "New Zealand": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Norway": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Oman": {
+      "value": "Sultan",
+      "unit": "monarchy type"
+    },
+    "Papua New Guinea": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Qatar": {
+      "value": "Emir",
+      "unit": "monarchy type"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Saint Lucia": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Saudi Arabia": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Solomon Islands": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Spain": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Sweden": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Thailand": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Tonga": {
+      "value": "King",
+      "unit": "monarchy type"
+    },
+    "Tuvalu": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "United Arab Emirates": {
+      "value": "President",
+      "unit": "monarchy type"
+    },
+    "United Kingdom": {
+      "value": "King or Queen",
+      "unit": "monarchy type"
+    },
+    "Vatican City": {
+      "value": "Pope",
+      "unit": "monarchy type"
+    }
+  }
 }

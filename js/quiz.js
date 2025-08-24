@@ -783,48 +783,64 @@ class QuizGame {
             if (blueFlagQuiz) {
                 this.quizData.quizzes[blueFlagQuiz.id] = blueFlagQuiz;
                 console.log('🔵 Added Blue Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Blue Flag Countries quiz');
             }
             
             const redFlagQuiz = await this.convertRedFlagData();
             if (redFlagQuiz) {
                 this.quizData.quizzes[redFlagQuiz.id] = redFlagQuiz;
                 console.log('🔴 Added Red Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Red Flag Countries quiz');
             }
             
             const yellowFlagQuiz = await this.convertYellowFlagData();
             if (yellowFlagQuiz) {
                 this.quizData.quizzes[yellowFlagQuiz.id] = yellowFlagQuiz;
                 console.log('🟡 Added Yellow Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Yellow Flag Countries quiz');
             }
             
             const whiteFlagQuiz = await this.convertWhiteFlagData();
             if (whiteFlagQuiz) {
                 this.quizData.quizzes[whiteFlagQuiz.id] = whiteFlagQuiz;
                 console.log('⚪ Added White Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load White Flag Countries quiz');
             }
             
             const purpleFlagQuiz = await this.convertPurpleFlagData();
             if (purpleFlagQuiz) {
                 this.quizData.quizzes[purpleFlagQuiz.id] = purpleFlagQuiz;
                 console.log('🟣 Added Purple Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Purple Flag Countries quiz');
             }
             
             const greenFlagQuiz = await this.convertGreenFlagData();
             if (greenFlagQuiz) {
                 this.quizData.quizzes[greenFlagQuiz.id] = greenFlagQuiz;
                 console.log('🟢 Added Green Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Green Flag Countries quiz');
             }
             
             const blueWhiteFlagQuiz = await this.convertBlueWhiteFlagData();
             if (blueWhiteFlagQuiz) {
                 this.quizData.quizzes[blueWhiteFlagQuiz.id] = blueWhiteFlagQuiz;
                 console.log('🔵⚪ Added Blue and White Flag Countries quiz');
+            } else {
+                console.log('❌ Failed to load Blue and White Flag Countries quiz');
             }
             
             const noRedFlagQuiz = await this.convertNoRedFlagData();
             if (noRedFlagQuiz) {
                 this.quizData.quizzes[noRedFlagQuiz.id] = noRedFlagQuiz;
                 console.log('🚫🔴 Added Flags Without Red quiz');
+            } else {
+                console.log('❌ Failed to load Flags Without Red quiz');
             }
             
             // New datasets - History
@@ -832,6 +848,8 @@ class QuizGame {
             if (africanNeverColonizedQuiz) {
                 this.quizData.quizzes[africanNeverColonizedQuiz.id] = africanNeverColonizedQuiz;
                 console.log('🌍 Added African Countries Never Colonized quiz');
+            } else {
+                console.log('❌ Failed to load African Countries Never Colonized quiz');
             }
             
                     } catch (error) {
@@ -1876,13 +1894,13 @@ class QuizGame {
             const monarchyTypes = {};
 
             // Process data and collect monarchy types
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: item.monarchy_type,
-                    unit: 'monarchy type'
+                    value: countryData.value,
+                    unit: countryData.unit
                 };
-                monarchyTypes[item.monarchy_type] = (monarchyTypes[item.monarchy_type] || 0) + 1;
+                monarchyTypes[countryData.value] = (monarchyTypes[countryData.value] || 0) + 1;
             });
 
             // Create color scheme for monarchy types with contrasting colors
@@ -1934,13 +1952,13 @@ class QuizGame {
             const partySystems = {};
 
             // Process data and collect party systems
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: item.party_system,
-                    unit: 'party system'
+                    value: countryData.value,
+                    unit: countryData.unit
                 };
-                partySystems[item.party_system] = (partySystems[item.party_system] || 0) + 1;
+                partySystems[countryData.value] = (partySystems[countryData.value] || 0) + 1;
             });
 
             // Create color scheme for party systems with contrasting colors
@@ -7349,11 +7367,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Blue flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#3b82f6'
                 };
             });
@@ -7390,11 +7408,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Red flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#ef4444'
                 };
             });
@@ -7431,11 +7449,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Yellow flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#eab308'
                 };
             });
@@ -7472,11 +7490,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'White flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#f8fafc'
                 };
             });
@@ -7513,11 +7531,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Purple flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#a855f7'
                 };
             });
@@ -7554,11 +7572,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Green flag',
-                    unit: 'flag color',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag color',
                     color: '#22c55e'
                 };
             });
@@ -7595,11 +7613,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Blue and white flag',
-                    unit: 'flag colors',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag colors',
                     color: '#3b82f6'
                 };
             });
@@ -7636,11 +7654,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'No red flag',
-                    unit: 'flag colors',
+                    value: countryData.value,
+                    unit: countryData.unit || 'flag colors',
                     color: '#6b7280'
                 };
             });
@@ -7677,11 +7695,11 @@ class QuizGame {
             
             const countries = {};
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 countries[mappedCountryName] = {
-                    value: 'Never colonized',
-                    unit: 'colonial status',
+                    value: countryData.value,
+                    unit: countryData.unit || 'colonial status',
                     color: '#dc2626'
                 };
             });

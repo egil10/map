@@ -1,245 +1,668 @@
 {
   "title": "Country and Party System",
-  "data": [
-    {"country": "Abkhazia", "party_system": "Multi-party"},
-    {"country": "Afghanistan", "party_system": "Non-partisan"},
-    {"country": "Åland", "party_system": "Multi-party"},
-    {"country": "Albania", "party_system": "Multi-party"},
-    {"country": "Alderney", "party_system": "Non-partisan"},
-    {"country": "Algeria", "party_system": "Multi-party"},
-    {"country": "Andorra", "party_system": "Multi-party"},
-    {"country": "Angola", "party_system": "Dominant-party"},
-    {"country": "Anguilla", "party_system": "Two-party"},
-    {"country": "Antigua and Barbuda", "party_system": "Dominant-party"},
-    {"country": "Argentina", "party_system": "Multi-party"},
-    {"country": "Armenia", "party_system": "Multi-party"},
-    {"country": "Aruba", "party_system": "Multi-party"},
-    {"country": "Ascension", "party_system": "Non-partisan"},
-    {"country": "Australia", "party_system": "Multi-party"},
-    {"country": "Austria", "party_system": "Multi-party"},
-    {"country": "Azerbaijan", "party_system": "Dominant-party"},
-    {"country": "Bahamas", "party_system": "Two-party"},
-    {"country": "Bahrain", "party_system": "Dominant-party"},
-    {"country": "Bangladesh", "party_system": "Multi-party"},
-    {"country": "Barbados", "party_system": "Two-party"},
-    {"country": "Belarus", "party_system": "Dominant-party"},
-    {"country": "Belgium", "party_system": "Multi-party"},
-    {"country": "Belize", "party_system": "Two-party"},
-    {"country": "Benin", "party_system": "Multi-party"},
-    {"country": "Bermuda", "party_system": "Two-party"},
-    {"country": "Bhutan", "party_system": "Two-party"},
-    {"country": "Bolivia", "party_system": "Multi-party"},
-    {"country": "Bonaire", "party_system": "Multi-party"},
-    {"country": "Bosnia and Herzegovina", "party_system": "Multi-party"},
-    {"country": "Botswana", "party_system": "Multi-party"},
-    {"country": "Brazil", "party_system": "Multi-party"},
-    {"country": "Brunei", "party_system": "Non-partisan"},
-    {"country": "Bulgaria", "party_system": "Multi-party"},
-    {"country": "Burkina Faso", "party_system": "Military junta"},
-    {"country": "Burundi", "party_system": "Dominant-party"},
-    {"country": "Cambodia", "party_system": "Dominant-party"},
-    {"country": "Cameroon", "party_system": "Dominant-party"},
-    {"country": "Canada", "party_system": "Multi-party"},
-    {"country": "Cape Verde", "party_system": "Multi-party"},
-    {"country": "Cayman Islands", "party_system": "Multi-party"},
-    {"country": "Central African Republic", "party_system": "Dominant-party"},
-    {"country": "Chad", "party_system": "Dominant-party"},
-    {"country": "Chile", "party_system": "Multi-party"},
-    {"country": "China (PRC)", "party_system": "One-party"},
-    {"country": "Hong Kong", "party_system": "Dominant-party"},
-    {"country": "Macau", "party_system": "Dominant-party"},
-    {"country": "Colombia", "party_system": "Multi-party"},
-    {"country": "Comoros", "party_system": "Dominant-party"},
-    {"country": "Congo", "party_system": "Dominant-party"},
-    {"country": "DR Congo", "party_system": "Multi-party"},
-    {"country": "Cook Islands", "party_system": "Multi-party"},
-    {"country": "Costa Rica", "party_system": "Multi-party"},
-    {"country": "Croatia", "party_system": "Multi-party"},
-    {"country": "Cuba", "party_system": "One-party"},
-    {"country": "Curaçao", "party_system": "Multi-party"},
-    {"country": "Cyprus", "party_system": "Multi-party"},
-    {"country": "Czech Republic", "party_system": "Multi-party"},
-    {"country": "Denmark", "party_system": "Multi-party"},
-    {"country": "Djibouti", "party_system": "Dominant-party"},
-    {"country": "Dominica", "party_system": "Dominant-party"},
-    {"country": "Dominican Republic", "party_system": "Multi-party"},
-    {"country": "Timor-Leste", "party_system": "Multi-party"},
-    {"country": "Ecuador", "party_system": "Multi-party"},
-    {"country": "Egypt", "party_system": "Dominant-party"},
-    {"country": "El Salvador", "party_system": "Dominant-party"},
-    {"country": "Equatorial Guinea", "party_system": "Dominant-party"},
-    {"country": "Eritrea", "party_system": "One-party"},
-    {"country": "Estonia", "party_system": "Multi-party"},
-    {"country": "Eswatini", "party_system": "Non-partisan"},
-    {"country": "Ethiopia", "party_system": "Dominant-party"},
-    {"country": "European Union", "party_system": "Multi-party"},
-    {"country": "Falkland Islands", "party_system": "Non-partisan"},
-    {"country": "Faroe Islands", "party_system": "Multi-party"},
-    {"country": "Fiji", "party_system": "Multi-party"},
-    {"country": "Finland", "party_system": "Multi-party"},
-    {"country": "France", "party_system": "Multi-party"},
-    {"country": "French Guiana", "party_system": "Multi-party"},
-    {"country": "French Polynesia", "party_system": "Multi-party"},
-    {"country": "Gabon", "party_system": "Military junta"},
-    {"country": "Gambia", "party_system": "Multi-party"},
-    {"country": "Georgia", "party_system": "Dominant-party"},
-    {"country": "Germany", "party_system": "Multi-party"},
-    {"country": "Ghana", "party_system": "Two-party"},
-    {"country": "Gibraltar", "party_system": "Multi-party"},
-    {"country": "Greece", "party_system": "Multi-party"},
-    {"country": "Greenland", "party_system": "Multi-party"},
-    {"country": "Grenada", "party_system": "Two-party"},
-    {"country": "Guadeloupe", "party_system": "Multi-party"},
-    {"country": "Guatemala", "party_system": "Multi-party"},
-    {"country": "Guernsey", "party_system": "Multi-party"},
-    {"country": "Guinea", "party_system": "Military junta"},
-    {"country": "Guinea-Bissau", "party_system": "Multi-party"},
-    {"country": "Guyana", "party_system": "Multi-party"},
-    {"country": "Haiti", "party_system": "Multi-party"},
-    {"country": "Honduras", "party_system": "Multi-party"},
-    {"country": "Hungary", "party_system": "Dominant-party"},
-    {"country": "Iceland", "party_system": "Multi-party"},
-    {"country": "India", "party_system": "Multi-party"},
-    {"country": "Indonesia", "party_system": "Multi-party"},
-    {"country": "Iran", "party_system": "Two-party"},
-    {"country": "Iraq", "party_system": "Multi-party"},
-    {"country": "Ireland", "party_system": "Multi-party"},
-    {"country": "Isle of Man", "party_system": "Multi-party"},
-    {"country": "Israel", "party_system": "Multi-party"},
-    {"country": "Italy", "party_system": "Multi-party"},
-    {"country": "Ivory Coast", "party_system": "Dominant-party"},
-    {"country": "Jamaica", "party_system": "Two-party"},
-    {"country": "Japan", "party_system": "Multi-party"},
-    {"country": "Jersey", "party_system": "Multi-party"},
-    {"country": "Jordan", "party_system": "Dominant-party"},
-    {"country": "Kazakhstan", "party_system": "Dominant-party"},
-    {"country": "Kenya", "party_system": "Multi-party"},
-    {"country": "Kiribati", "party_system": "Two-party"},
-    {"country": "Korea (DPRK)", "party_system": "One-party"},
-    {"country": "Korea (ROK)", "party_system": "Multi-party"},
-    {"country": "Kuwait", "party_system": "Non-partisan"},
-    {"country": "Kyrgyzstan", "party_system": "Multi-party"},
-    {"country": "Kosovo", "party_system": "Multi-party"},
-    {"country": "Laos", "party_system": "One-party"},
-    {"country": "Latvia", "party_system": "Multi-party"},
-    {"country": "Lebanon", "party_system": "Multi-party"},
-    {"country": "Lesotho", "party_system": "Multi-party"},
-    {"country": "Liberia", "party_system": "Two-party"},
-    {"country": "Libya", "party_system": "Non-partisan"},
-    {"country": "Liechtenstein", "party_system": "Multi-party"},
-    {"country": "Lithuania", "party_system": "Multi-party"},
-    {"country": "Luxembourg", "party_system": "Multi-party"},
-    {"country": "Madagascar", "party_system": "Dominant-party"},
-    {"country": "Malawi", "party_system": "Multi-party"},
-    {"country": "Malaysia", "party_system": "Multi-party"},
-    {"country": "Maldives", "party_system": "Multi-party"},
-    {"country": "Mali", "party_system": "Military junta"},
-    {"country": "Malta", "party_system": "Two-party"},
-    {"country": "Marshall Islands", "party_system": "Two-party"},
-    {"country": "Mauritania", "party_system": "Multi-party"},
-    {"country": "Mauritius", "party_system": "Multi-party"},
-    {"country": "Mayotte", "party_system": "Multi-party"},
-    {"country": "Mexico", "party_system": "Multi-party"},
-    {"country": "Micronesia", "party_system": "Non-partisan"},
-    {"country": "Moldova", "party_system": "Multi-party"},
-    {"country": "Monaco", "party_system": "Multi-party"},
-    {"country": "Mongolia", "party_system": "Multi-party"},
-    {"country": "Montenegro", "party_system": "Multi-party"},
-    {"country": "Montserrat", "party_system": "Two-party"},
-    {"country": "Morocco", "party_system": "Multi-party"},
-    {"country": "Mozambique", "party_system": "Dominant-party"},
-    {"country": "Myanmar", "party_system": "Military junta"},
-    {"country": "Namibia", "party_system": "Dominant-party"},
-    {"country": "Nauru", "party_system": "Multi-party"},
-    {"country": "Nepal", "party_system": "Multi-party"},
-    {"country": "Netherlands", "party_system": "Multi-party"},
-    {"country": "New Caledonia", "party_system": "Multi-party"},
-    {"country": "New Zealand", "party_system": "Multi-party"},
-    {"country": "Nicaragua", "party_system": "Dominant-party"},
-    {"country": "Niger", "party_system": "Military junta"},
-    {"country": "Nigeria", "party_system": "Multi-party"},
-    {"country": "Niue", "party_system": "Non-partisan"},
-    {"country": "North Macedonia", "party_system": "Multi-party"},
-    {"country": "Northern Cyprus", "party_system": "Multi-party"},
-    {"country": "Norway", "party_system": "Multi-party"},
-    {"country": "Oman", "party_system": "Non-partisan"},
-    {"country": "Pakistan", "party_system": "Multi-party"},
-    {"country": "Palau", "party_system": "Non-partisan"},
-    {"country": "Palestine", "party_system": "Multi-party"},
-    {"country": "Panama", "party_system": "Multi-party"},
-    {"country": "Papua New Guinea", "party_system": "Multi-party"},
-    {"country": "Paraguay", "party_system": "Dominant-party"},
-    {"country": "Peru", "party_system": "Multi-party"},
-    {"country": "Philippines", "party_system": "Multi-party"},
-    {"country": "Pitcairn Islands", "party_system": "Non-partisan"},
-    {"country": "Poland", "party_system": "Multi-party"},
-    {"country": "Portugal", "party_system": "Multi-party"},
-    {"country": "Puerto Rico", "party_system": "Two-party"},
-    {"country": "Qatar", "party_system": "Non-partisan"},
-    {"country": "Romania", "party_system": "Multi-party"},
-    {"country": "Russia", "party_system": "Dominant-party"},
-    {"country": "Rwanda", "party_system": "Dominant-party"},
-    {"country": "Sahrawi Arab Democratic Republic", "party_system": "One-party"},
-    {"country": "Saint Helena", "party_system": "Non-partisan"},
-    {"country": "Saint Kitts and Nevis", "party_system": "Multi-party"},
-    {"country": "Saint Lucia", "party_system": "Two-party"},
-    {"country": "Saint Pierre and Miquelon", "party_system": "Two-party"},
-    {"country": "Saint Vincent and the Grenadines", "party_system": "Two-party"},
-    {"country": "Samoa", "party_system": "Two-party"},
-    {"country": "San Marino", "party_system": "Multi-party"},
-    {"country": "São Tomé and Príncipe", "party_system": "Multi-party"},
-    {"country": "Saudi Arabia", "party_system": "Non-partisan"},
-    {"country": "Senegal", "party_system": "Multi-party"},
-    {"country": "Serbia", "party_system": "Dominant-party"},
-    {"country": "Seychelles", "party_system": "Two-party"},
-    {"country": "Sierra Leone", "party_system": "Two-party"},
-    {"country": "Singapore", "party_system": "Dominant-party"},
-    {"country": "Sint Maarten", "party_system": "Multi-party"},
-    {"country": "Slovakia", "party_system": "Multi-party"},
-    {"country": "Slovenia", "party_system": "Multi-party"},
-    {"country": "Solomon Islands", "party_system": "Multi-party"},
-    {"country": "Somalia", "party_system": "Multi-party"},
-    {"country": "Somaliland", "party_system": "Multi-party"},
-    {"country": "South Africa", "party_system": "Multi-party"},
-    {"country": "South Ossetia", "party_system": "Multi-party"},
-    {"country": "South Sudan", "party_system": "Dominant-party"},
-    {"country": "Spain", "party_system": "Multi-party"},
-    {"country": "Sri Lanka", "party_system": "Multi-party"},
-    {"country": "Sudan", "party_system": "Military junta"},
-    {"country": "Suriname", "party_system": "Multi-party"},
-    {"country": "Sweden", "party_system": "Multi-party"},
-    {"country": "Switzerland", "party_system": "Multi-party"},
-    {"country": "Syria", "party_system": "Transitional government"},
-    {"country": "Taiwan", "party_system": "Multi-party"},
-    {"country": "Tajikistan", "party_system": "Dominant-party"},
-    {"country": "Tanzania", "party_system": "Dominant-party"},
-    {"country": "Thailand", "party_system": "Multi-party"},
-    {"country": "Togo", "party_system": "Dominant-party"},
-    {"country": "Tokelau", "party_system": "Non-partisan"},
-    {"country": "Tonga", "party_system": "Two-party"},
-    {"country": "Transnistria", "party_system": "Dominant-party"},
-    {"country": "Trinidad and Tobago", "party_system": "Two-party"},
-    {"country": "Tunisia", "party_system": "Dominant-party"},
-    {"country": "Turkey", "party_system": "Multi-party"},
-    {"country": "Turkmenistan", "party_system": "Dominant-party"},
-    {"country": "Turks and Caicos Islands", "party_system": "Two-party"},
-    {"country": "Tuvalu", "party_system": "Non-partisan"},
-    {"country": "Uganda", "party_system": "Dominant-party"},
-    {"country": "Ukraine", "party_system": "Multi-party"},
-    {"country": "United Arab Emirates", "party_system": "Non-partisan"},
-    {"country": "United Kingdom", "party_system": "Multi-party"},
-    {"country": "United States", "party_system": "Two-party"},
-    {"country": "Uruguay", "party_system": "Multi-party"},
-    {"country": "Uzbekistan", "party_system": "Dominant-party"},
-    {"country": "Vanuatu", "party_system": "Multi-party"},
-    {"country": "Vatican City", "party_system": "Non-partisan"},
-    {"country": "Venezuela", "party_system": "Dominant-party"},
-    {"country": "Vietnam", "party_system": "One-party"},
-    {"country": "British Virgin Islands", "party_system": "Multi-party"},
-    {"country": "U.S. Virgin Islands", "party_system": "Multi-party"},
-    {"country": "Wallis and Futuna", "party_system": "Non-partisan"},
-    {"country": "Yemen", "party_system": "Dominant-party"},
-    {"country": "Zambia", "party_system": "Multi-party"},
-    {"country": "Zimbabwe", "party_system": "Dominant-party"}
-  ]
+  "description": "Political party systems by country",
+  "unit": "party system",
+  "source": "https://en.wikipedia.org/wiki/List_of_political_parties_by_country",
+  "data": {
+    "Afghanistan": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Albania": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Algeria": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Andorra": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Angola": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Antigua and Barbuda": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Argentina": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Armenia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Australia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Austria": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Azerbaijan": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Bahamas": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Bahrain": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Bangladesh": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Barbados": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Belarus": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Belgium": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Belize": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Benin": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Bhutan": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Bolivia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Botswana": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Brazil": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Brunei": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Bulgaria": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Burkina Faso": {
+      "value": "Military junta",
+      "unit": "party system"
+    },
+    "Burundi": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Cambodia": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Cameroon": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Canada": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Central African Republic": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Chad": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Chile": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "China": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Colombia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Comoros": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Congo": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Costa Rica": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Croatia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Cuba": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Cyprus": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Czech Republic": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Denmark": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Djibouti": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Dominican Republic": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Ecuador": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Egypt": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "El Salvador": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Eritrea": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Estonia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Eswatini": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Ethiopia": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Finland": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "France": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Gabon": {
+      "value": "Military junta",
+      "unit": "party system"
+    },
+    "Gambia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Georgia": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Germany": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Ghana": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Greece": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Grenada": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Guatemala": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Guinea": {
+      "value": "Military junta",
+      "unit": "party system"
+    },
+    "Guinea-Bissau": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Guyana": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Haiti": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Honduras": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Hungary": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "India": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Indonesia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Iran": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Iraq": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Ireland": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Israel": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Italy": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Ivory Coast": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Jamaica": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Japan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Jordan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Kazakhstan": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Kenya": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Kuwait": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Kyrgyzstan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Laos": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Latvia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Lebanon": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Lesotho": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Liberia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Libya": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Lithuania": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Luxembourg": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Madagascar": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Malawi": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Malaysia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Mali": {
+      "value": "Military junta",
+      "unit": "party system"
+    },
+    "Mauritania": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Mauritius": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Mexico": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Moldova": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Mongolia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Montenegro": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Morocco": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Mozambique": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Myanmar": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Namibia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Nepal": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Netherlands": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "New Zealand": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Nicaragua": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Niger": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Nigeria": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "North Korea": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Norway": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Oman": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Pakistan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Panama": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Papua New Guinea": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Paraguay": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Peru": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Philippines": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Poland": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Portugal": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Qatar": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Romania": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Russia": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Rwanda": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Saudi Arabia": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "Senegal": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Serbia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Sierra Leone": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Slovakia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Slovenia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Somalia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "South Africa": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "South Korea": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "South Sudan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Spain": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Sri Lanka": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Sudan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Suriname": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Sweden": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Switzerland": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Syria": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Taiwan": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Tajikistan": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Tanzania": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Thailand": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Togo": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Tunisia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Turkey": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Turkmenistan": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Uganda": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Ukraine": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "United Arab Emirates": {
+      "value": "Non-partisan",
+      "unit": "party system"
+    },
+    "United Kingdom": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "United States": {
+      "value": "Two-party",
+      "unit": "party system"
+    },
+    "Uruguay": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Uzbekistan": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Venezuela": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    },
+    "Vietnam": {
+      "value": "One-party",
+      "unit": "party system"
+    },
+    "Yemen": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Zambia": {
+      "value": "Multi-party",
+      "unit": "party system"
+    },
+    "Zimbabwe": {
+      "value": "Dominant-party",
+      "unit": "party system"
+    }
+  }
 }
