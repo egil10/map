@@ -7809,29 +7809,13 @@ class QuizGame {
         const itemElement = document.createElement('div');
         itemElement.className = 'legend-item';
         
-        // Format value based on size
-        let formattedValue = this.formatValue(item.value, item.unit);
-        
+        // Just show country name and raw value in parentheses, no units or formatting
         itemElement.innerHTML = `
-            <div class="legend-color" style="background-color: ${item.color}"></div>
-            <div class="legend-country">${item.country}</div>
-            <div class="legend-value">${formattedValue}</div>
+            <span class="legend-country">${item.country}</span>
+            <span class="legend-value">(${item.value.toLocaleString()})</span>
         `;
         
         return itemElement;
-    }
-    
-    formatValue(value, unit) {
-        // Format large numbers with abbreviations
-        if (value >= 1000000000) {
-            return `${(value / 1000000000).toFixed(1)}B${unit ? ' ' + unit : ''}`;
-        } else if (value >= 1000000) {
-            return `${(value / 1000000).toFixed(1)}M${unit ? ' ' + unit : ''}`;
-        } else if (value >= 1000) {
-            return `${(value / 1000).toFixed(1)}K${unit ? ' ' + unit : ''}`;
-        } else {
-            return `${value.toLocaleString()}${unit ? ' ' + unit : ''}`;
-        }
     }
     
     hideLegend() {
