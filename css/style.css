@@ -758,51 +758,58 @@ body {
  }
  
  /* Legend Extremes (Top 3 / Bottom 3) */
- .legend-extremes {
-     margin-top: 12px;
-     padding-top: 12px;
-     border-top: 1px solid #e9ecef;
-     display: flex;
-     gap: 16px;
-     align-items: flex-start;
- }
- 
- .extremes-section {
-     flex: 1;
-     min-width: 0;
- }
- 
- .extremes-title {
-     font-size: 10px;
-     font-weight: 600;
-     color: #6c757d;
-     text-transform: uppercase;
-     letter-spacing: 0.3px;
-     margin-bottom: 4px;
-     text-align: center;
- }
- 
- .extremes-items {
-     display: flex;
-     flex-direction: column;
-     gap: 2px;
- }
- 
- .extreme-item {
-     font-size: 10px;
-     line-height: 1.2;
-     color: #495057;
-     text-align: center;
- }
- 
- .extreme-country {
-     font-weight: 500;
- }
- 
- .extreme-value {
-     font-weight: 400;
-     color: #6c757d;
- }
+.legend-extremes {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.extremes-section {
+    flex: 1;
+    min-width: 0;
+    max-width: 50%;
+}
+
+.extremes-title {
+    font-size: 9px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.extremes-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.extreme-item {
+    font-size: 9px;
+    line-height: 1.1;
+    color: #495057;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.extreme-country {
+    font-weight: 500;
+    display: inline;
+}
+
+.extreme-value {
+    font-weight: 400;
+    color: #6c757d;
+    display: inline;
+}
 
 /* Leaflet Attribution Styling */
 .leaflet-control-attribution {
@@ -992,17 +999,19 @@ body {
      
      /* Legend extremes - Mobile */
      .legend-extremes {
-         margin-top: 8px;
-         padding-top: 8px;
-         gap: 12px;
+         margin-top: 6px;
+         padding-top: 6px;
+         gap: 8px;
      }
      
      .extremes-title {
-         font-size: 9px;
+         font-size: 8px;
+         margin-bottom: 2px;
      }
      
      .extreme-item {
-         font-size: 9px;
+         font-size: 8px;
+         line-height: 1.0;
      }
     
     .gradient-bar {

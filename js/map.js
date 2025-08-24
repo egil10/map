@@ -613,9 +613,8 @@ class WorldMap {
                         <div class="extremes-title">Top 3</div>
                         <div class="extremes-items">
                             ${top3.map(item => `
-                                <div class="extreme-item">
-                                    <span class="extreme-country">${item.country}</span>
-                                    <span class="extreme-value">(${item.value.toLocaleString()})</span>
+                                <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
+                                    ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
                                 </div>
                             `).join('')}
                         </div>
@@ -624,9 +623,8 @@ class WorldMap {
                         <div class="extremes-title">Bottom 3</div>
                         <div class="extremes-items">
                             ${bottom3.map(item => `
-                                <div class="extreme-item">
-                                    <span class="extreme-country">${item.country}</span>
-                                    <span class="extreme-value">(${item.value.toLocaleString()})</span>
+                                <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
+                                    ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
                                 </div>
                             `).join('')}
                         </div>
