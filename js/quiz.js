@@ -708,12 +708,16 @@ class QuizGame {
             if (gdpPerWorkingHourQuiz) {
                 this.quizData.quizzes[gdpPerWorkingHourQuiz.id] = gdpPerWorkingHourQuiz;
                 console.log('💰 Added GDP Per Working Hour quiz');
+            } else {
+                console.log('❌ Failed to load GDP Per Working Hour quiz');
             }
             
             const wealthGiniQuiz = await this.convertWealthGiniData();
             if (wealthGiniQuiz) {
                 this.quizData.quizzes[wealthGiniQuiz.id] = wealthGiniQuiz;
                 console.log('📊 Added Wealth Gini Coefficient quiz');
+            } else {
+                console.log('❌ Failed to load Wealth Gini Coefficient quiz');
             }
             
             const medianWealthQuiz = await this.convertMedianWealthData();
@@ -830,9 +834,14 @@ class QuizGame {
                 console.log('🌍 Added African Countries Never Colonized quiz');
             }
             
-        } catch (error) {
-            console.error('❌ Error loading converted data:', error);
-        }
+                    } catch (error) {
+                console.error('❌ Error loading converted data:', error);
+            }
+            
+            // Log summary of loaded datasets
+            const totalLoaded = Object.keys(this.quizData.quizzes).length;
+            console.log(`📊 Dataset loading complete: ${totalLoaded} datasets loaded successfully`);
+            console.log('📋 Loaded dataset IDs:', Object.keys(this.quizData.quizzes).sort());
     }
     
     async convertLandAreaData() {
@@ -6787,7 +6796,7 @@ class QuizGame {
                 countries: countries
             };
         } catch (error) {
-            console.error('Error converting GDP per working hour data:', error);
+            console.error('❌ Error converting GDP per working hour data:', error);
             return null;
         }
     }
@@ -6841,7 +6850,7 @@ class QuizGame {
                 countries: countries
             };
         } catch (error) {
-            console.error('Error converting wealth gini data:', error);
+            console.error('❌ Error converting wealth gini data:', error);
             return null;
         }
     }
