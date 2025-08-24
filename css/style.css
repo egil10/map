@@ -1583,3 +1583,31 @@ body {
     }
 }
 
+/* Country hover effects */
+.country-hover {
+    filter: brightness(1.1) !important;
+    transition: filter 0.2s ease;
+}
+
+/* Popup styles to prevent map interference */
+.country-popup {
+    pointer-events: none !important;
+    z-index: 1000 !important;
+}
+
+.country-popup .leaflet-popup-content-wrapper {
+    pointer-events: auto !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.country-popup .leaflet-popup-tip {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.country-popup .leaflet-popup-close-button {
+    display: none !important;
+}
