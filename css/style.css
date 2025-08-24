@@ -564,6 +564,113 @@ body {
     color: #ffc107;
 }
 
+/* Quiz Legend */
+.quiz-legend {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.legend-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.legend-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.legend-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.legend-items {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.legend-country {
+    font-weight: 500;
+    color: #495057;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.legend-value {
+    font-weight: 600;
+    color: #212529;
+    font-size: 10px;
+}
+
+/* Mobile responsive legend */
+@media (max-width: 768px) {
+    .quiz-legend {
+        top: -140px;
+        min-width: 260px;
+        max-width: 320px;
+        padding: 10px;
+    }
+    
+    .legend-content {
+        gap: 12px;
+    }
+    
+    .legend-item {
+        font-size: 10px;
+        gap: 4px;
+    }
+    
+    .legend-color {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .legend-value {
+        font-size: 9px;
+    }
+}
+
 /* Leaflet Map Styles */
 .leaflet-container {
     background: #f8f9fa;

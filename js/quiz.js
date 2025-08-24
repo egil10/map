@@ -3836,6 +3836,9 @@ class QuizGame {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
+        // Update legend with current quiz data
+        this.updateLegend();
+        
         // Show the answer title in learn mode
         this.showAnswerTitle();
         
@@ -4026,6 +4029,9 @@ class QuizGame {
                 window.mapInstance.applyQuizConfiguration(this.currentQuiz);
             }
             
+            // Update legend with current quiz data
+            this.updateLegend();
+            
             // Show answer title in learn mode
             if (this.isLearnMode) {
                 this.showAnswerTitle();
@@ -4124,6 +4130,9 @@ class QuizGame {
         
         if (this.currentQuiz) {
             console.log('Started new quiz:', this.currentQuiz.title);
+            
+            // Update legend with current quiz data
+            this.updateLegend();
             
             // Mark quiz as ready on first successful start
             if (!this.isReady) {
@@ -4715,6 +4724,9 @@ class QuizGame {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = '';
         feedback.className = 'feedback';
+        
+        // Also hide legend when clearing feedback
+        this.hideLegend();
     }
     
     updateScoreDisplay() {
@@ -7726,6 +7738,106 @@ class QuizGame {
         } catch (error) {
             console.error('Error converting african never colonized data:', error);
             return null;
+        }
+    }
+    
+    // Legend functionality
+    updateLegend() {
+        if (!this.currentQuiz || !this.currentQuiz.countries) {
+            this.hideLegend();
+            return;
+        }
+        
+        // Get countries with numeric values for ranking
+        const countriesWithValues = [];
+        for (const [country, data] of Object.entries(this.currentQuiz.countries)) {
+            if (typeof data.value === 'number' && !isNaN(data.value)) {
+                countriesWithValues.push({
+                    country: country,
+                    value: data.value,
+                    unit: data.unit || '',
+                    color: data.color || '#cccccc'
+                });
+            }
+        }
+        
+        // Skip legend for non-numeric data (like categorical data)
+        if (countriesWithValues.length === 0) {
+            this.hideLegend();
+            return;
+        }
+        
+        // Sort by value (descending for top, ascending for bottom)
+        countriesWithValues.sort((a, b) => b.value - a.value);
+        
+        const top3 = countriesWithValues.slice(0, 3);
+        const bottom3 = countriesWithValues.slice(-3).reverse();
+        
+        this.displayLegend(top3, bottom3);
+    }
+    
+    displayLegend(top3, bottom3) {
+        const legendElement = document.getElementById('quizLegend');
+        const topItemsElement = document.getElementById('topLegendItems');
+        const bottomItemsElement = document.getElementById('bottomLegendItems');
+        
+        if (!legendElement || !topItemsElement || !bottomItemsElement) {
+            return;
+        }
+        
+        // Clear existing items
+        topItemsElement.innerHTML = '';
+        bottomItemsElement.innerHTML = '';
+        
+        // Add top 3 items
+        top3.forEach(item => {
+            const itemElement = this.createLegendItem(item);
+            topItemsElement.appendChild(itemElement);
+        });
+        
+        // Add bottom 3 items
+        bottom3.forEach(item => {
+            const itemElement = this.createLegendItem(item);
+            bottomItemsElement.appendChild(itemElement);
+        });
+        
+        // Show legend
+        legendElement.style.display = 'block';
+    }
+    
+    createLegendItem(item) {
+        const itemElement = document.createElement('div');
+        itemElement.className = 'legend-item';
+        
+        // Format value based on size
+        let formattedValue = this.formatValue(item.value, item.unit);
+        
+        itemElement.innerHTML = `
+            <div class="legend-color" style="background-color: ${item.color}"></div>
+            <div class="legend-country">${item.country}</div>
+            <div class="legend-value">${formattedValue}</div>
+        `;
+        
+        return itemElement;
+    }
+    
+    formatValue(value, unit) {
+        // Format large numbers with abbreviations
+        if (value >= 1000000000) {
+            return `${(value / 1000000000).toFixed(1)}B${unit ? ' ' + unit : ''}`;
+        } else if (value >= 1000000) {
+            return `${(value / 1000000).toFixed(1)}M${unit ? ' ' + unit : ''}`;
+        } else if (value >= 1000) {
+            return `${(value / 1000).toFixed(1)}K${unit ? ' ' + unit : ''}`;
+        } else {
+            return `${value.toLocaleString()}${unit ? ' ' + unit : ''}`;
+        }
+    }
+    
+    hideLegend() {
+        const legendElement = document.getElementById('quizLegend');
+        if (legendElement) {
+            legendElement.style.display = 'none';
         }
     }
 }
