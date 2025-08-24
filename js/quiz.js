@@ -4414,11 +4414,11 @@ class QuizGame {
             answerTitleText.style.color = '#1976d2';
         }
         
-        // Update input placeholder to restart (but keep it disabled like "Enter to continue")
+        // Update input placeholder to restart (enable input so Enter can restart)
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
         if (guessInput) {
-            guessInput.disabled = true; // Keep disabled like "Enter to continue" stages
+            guessInput.disabled = false; // Enable input so Enter can restart the quiz
             guessInput.value = '';
             guessInput.placeholder = 'Enter to restart';
             guessInput.focus();
@@ -4431,36 +4431,7 @@ class QuizGame {
         this.isQuizCompleted = true;
     }
     
-    restartQuiz() {
-        // Reset quiz state
-        this.isQuizCompleted = false;
-        this.isAnswerShown = false;
-        this.score = 0;
-        this.currentProgress = 0; // Reset progress counter
-        this.lastAnswerWasCorrect = undefined; // Reset answer tracking
-        
-        // Reset progress bar
-        this.resetProgressBar();
-        
-        // Hide answer title
-        this.hideAnswerTitle();
-        
-        // Reset button icon
-        this.transformToArrowIcon();
-        
-        // Update score display
-        this.updateScoreDisplay();
-        
-        // Start a new quiz
-        this.startNewQuiz();
-        
-        // Update input placeholder
-        const guessInput = document.getElementById('guessInput');
-        if (guessInput) {
-            guessInput.placeholder = 'What does this map show?';
-            guessInput.focus();
-        }
-    }
+
     
     showCompletionScreen(correctAnswers, totalQuestions) {
         // Clear any existing feedback
@@ -4541,9 +4512,12 @@ class QuizGame {
             completionScreen.remove();
         }
         
-        // Reset progress
+        // Reset all quiz state variables
+        this.isQuizCompleted = false;
+        this.isAnswerShown = false;
         this.currentProgress = 0;
         this.score = 0;
+        this.lastAnswerWasCorrect = undefined;
         
         // Reset progress bar
         this.resetProgressBar();
@@ -4551,13 +4525,24 @@ class QuizGame {
         // Clear feedback
         this.clearFeedback();
         
+        // Hide answer title
+        this.hideAnswerTitle();
+        
+        // Reset button icon
+        this.transformToArrowIcon();
+        
         // Re-enable input and button
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
-        guessInput.disabled = false;
-        submitButton.disabled = false;
-        guessInput.value = '';
-        guessInput.focus();
+        if (guessInput) {
+            guessInput.disabled = false;
+            guessInput.value = '';
+            guessInput.placeholder = 'What does this map show?';
+            guessInput.focus();
+        }
+        if (submitButton) {
+            submitButton.disabled = false;
+        }
         
         // Start new quiz
         this.startNewQuiz();
