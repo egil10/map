@@ -6581,29 +6581,11 @@ class QuizGame {
             
             // Copy to clipboard
             navigator.clipboard.writeText(tableData).then(() => {
-                // Change icon from copy to check for 2 seconds
+                // Change icon from copy to check for 1.2 seconds
                 const copyBtn = document.getElementById('copyData');
                 if (copyBtn) {
-                    const svg = copyBtn.querySelector('svg');
-                    if (svg) {
-                        // Store original icon content (copy icon)
-                        const originalIconContent = '<rect width="14" height="20" x="8" y="2" rx="2" ry="2"/><path d="m4 2 2-2h8a2 2 0 0 1 2 2v14h-2V2H6L4 4V2Z"/>';
-                        const originalDataLucide = 'copy';
-                        
-                        // Change to check icon
-                        svg.innerHTML = '<path d="m9 12 2 2 4-4"/>';
-                        svg.setAttribute('data-lucide', 'check');
-                        
-                        // Change color to green
-                        copyBtn.style.color = '#28a745';
-                        
-                        // Revert back after 2 seconds
-                        setTimeout(() => {
-                            svg.innerHTML = originalIconContent;
-                            svg.setAttribute('data-lucide', originalDataLucide);
-                            copyBtn.style.color = '';
-                        }, 2000);
-                    }
+                    this.setLucide(copyBtn, 'check');
+                    setTimeout(() => this.setLucide(copyBtn, 'copy'), 1200);
                 }
             }).catch(err => {
                 console.error('Failed to copy data:', err);
@@ -6614,6 +6596,16 @@ class QuizGame {
             console.error('Error copying data:', error);
             this.showFeedback('Error copying data', 'incorrect');
         }
+    }
+    
+    setLucide(btn, icon) {
+        if (!btn) return;
+        btn.replaceChildren();
+        const i = document.createElement('i');
+        i.setAttribute('data-lucide', icon);
+        i.setAttribute('aria-hidden', 'true');
+        btn.appendChild(i);
+        if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
     }
 }
 

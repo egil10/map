@@ -1,0 +1,940 @@
+{
+  "title": "Total Forest Area by Country",
+  "description": "Total forest area in square kilometers for each country, latest available data",
+  "unit": "km2",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_forest_area",
+  "data": {
+    "French Guiana": {
+      "value": 79960,
+      "unit": "km2"
+    },
+    "Suriname": {
+      "value": 151718,
+      "unit": "km2"
+    },
+    "Guyana": {
+      "value": 183969,
+      "unit": "km2"
+    },
+    "Micronesia": {
+      "value": 645,
+      "unit": "km2"
+    },
+    "Gabon": {
+      "value": 235068,
+      "unit": "km2"
+    },
+    "Palau": {
+      "value": 416,
+      "unit": "km2"
+    },
+    "Solomon Islands": {
+      "value": 25215,
+      "unit": "km2"
+    },
+    "Equatorial Guinea": {
+      "value": 24317,
+      "unit": "km2"
+    },
+    "American Samoa": {
+      "value": 171,
+      "unit": "km2"
+    },
+    "Papua New Guinea": {
+      "value": 357887,
+      "unit": "km2"
+    },
+    "Liberia": {
+      "value": 75569,
+      "unit": "km2"
+    },
+    "Pitcairn": {
+      "value": 35,
+      "unit": "km2"
+    },
+    "Finland": {
+      "value": 224090,
+      "unit": "km2"
+    },
+    "Seychelles": {
+      "value": 337,
+      "unit": "km2"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 285,
+      "unit": "km2"
+    },
+    "Niue": {
+      "value": 189,
+      "unit": "km2"
+    },
+    "Brunei": {
+      "value": 3800,
+      "unit": "km2"
+    },
+    "Laos": {
+      "value": 165265,
+      "unit": "km2"
+    },
+    "Bhutan": {
+      "value": 27290,
+      "unit": "km2"
+    },
+    "Guinea-Bissau": {
+      "value": 19631,
+      "unit": "km2"
+    },
+    "Sweden": {
+      "value": 279800,
+      "unit": "km2"
+    },
+    "Japan": {
+      "value": 249350,
+      "unit": "km2"
+    },
+    "Cook Islands": {
+      "value": 156,
+      "unit": "km2"
+    },
+    "South Korea": {
+      "value": 62670,
+      "unit": "km2"
+    },
+    "Congo": {
+      "value": 219160,
+      "unit": "km2"
+    },
+    "Dominica": {
+      "value": 479,
+      "unit": "km2"
+    },
+    "Fiji": {
+      "value": 11534,
+      "unit": "km2"
+    },
+    "Timor-Leste": {
+      "value": 9183,
+      "unit": "km2"
+    },
+    "Montenegro": {
+      "value": 8270,
+      "unit": "km2"
+    },
+    "Slovenia": {
+      "value": 12338,
+      "unit": "km2"
+    },
+    "Anguilla": {
+      "value": 55,
+      "unit": "km2"
+    },
+    "Costa Rica": {
+      "value": 30676,
+      "unit": "km2"
+    },
+    "Zambia": {
+      "value": 444376,
+      "unit": "km2"
+    },
+    "Brazil": {
+      "value": 4941960,
+      "unit": "km2"
+    },
+    "Malaysia": {
+      "value": 190137,
+      "unit": "km2"
+    },
+    "Samoa": {
+      "value": 1607,
+      "unit": "km2"
+    },
+    "US Virgin Islands": {
+      "value": 202,
+      "unit": "km2"
+    },
+    "Estonia": {
+      "value": 24384,
+      "unit": "km2"
+    },
+    "Panama": {
+      "value": 41910,
+      "unit": "km2"
+    },
+    "Honduras": {
+      "value": 63174,
+      "unit": "km2"
+    },
+    "Peru": {
+      "value": 719847,
+      "unit": "km2"
+    },
+    "Puerto Rico": {
+      "value": 4973,
+      "unit": "km2"
+    },
+    "Jamaica": {
+      "value": 6047,
+      "unit": "km2"
+    },
+    "Belize": {
+      "value": 12547,
+      "unit": "km2"
+    },
+    "Latvia": {
+      "value": 34185,
+      "unit": "km2"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 1239525,
+      "unit": "km2"
+    },
+    "Northern Mariana Islands": {
+      "value": 244,
+      "unit": "km2"
+    },
+    "Colombia": {
+      "value": 587433,
+      "unit": "km2"
+    },
+    "Sao Tome and Principe": {
+      "value": 507,
+      "unit": "km2"
+    },
+    "Cayman Islands": {
+      "value": 126,
+      "unit": "km2"
+    },
+    "Angola": {
+      "value": 654973,
+      "unit": "km2"
+    },
+    "Venezuela": {
+      "value": 461268,
+      "unit": "km2"
+    },
+    "Marshall Islands": {
+      "value": 94,
+      "unit": "km2"
+    },
+    "Grenada": {
+      "value": 177,
+      "unit": "km2"
+    },
+    "Guam": {
+      "value": 280,
+      "unit": "km2"
+    },
+    "Bahamas": {
+      "value": 5099,
+      "unit": "km2"
+    },
+    "Tanzania": {
+      "value": 448070,
+      "unit": "km2"
+    },
+    "Ecuador": {
+      "value": 123693,
+      "unit": "km2"
+    },
+    "Russia": {
+      "value": 8153116,
+      "unit": "km2"
+    },
+    "North Korea": {
+      "value": 59876,
+      "unit": "km2"
+    },
+    "Martinique": {
+      "value": 527,
+      "unit": "km2"
+    },
+    "Indonesia": {
+      "value": 909221,
+      "unit": "km2"
+    },
+    "Austria": {
+      "value": 38955,
+      "unit": "km2"
+    },
+    "Vietnam": {
+      "value": 147949,
+      "unit": "km2"
+    },
+    "Bolivia": {
+      "value": 504164,
+      "unit": "km2"
+    },
+    "Mozambique": {
+      "value": 362673,
+      "unit": "km2"
+    },
+    "New Caledonia": {
+      "value": 8378,
+      "unit": "km2"
+    },
+    "Zimbabwe": {
+      "value": 173524,
+      "unit": "km2"
+    },
+    "Dominican Republic": {
+      "value": 21603,
+      "unit": "km2"
+    },
+    "Guadeloupe": {
+      "value": 718,
+      "unit": "km2"
+    },
+    "Trinidad and Tobago": {
+      "value": 2274,
+      "unit": "km2"
+    },
+    "Cambodia": {
+      "value": 77570,
+      "unit": "km2"
+    },
+    "Belarus": {
+      "value": 87966,
+      "unit": "km2"
+    },
+    "French Polynesia": {
+      "value": 1495,
+      "unit": "km2"
+    },
+    "Myanmar": {
+      "value": 279645,
+      "unit": "km2"
+    },
+    "Cameroon": {
+      "value": 202285,
+      "unit": "km2"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 21879,
+      "unit": "km2"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 110,
+      "unit": "km2"
+    },
+    "Liechtenstein": {
+      "value": 67,
+      "unit": "km2"
+    },
+    "Wallis and Futuna Islands": {
+      "value": 58,
+      "unit": "km2"
+    },
+    "Nepal": {
+      "value": 59620,
+      "unit": "km2"
+    },
+    "Senegal": {
+      "value": 79882,
+      "unit": "km2"
+    },
+    "Georgia": {
+      "value": 28224,
+      "unit": "km2"
+    },
+    "Slovakia": {
+      "value": 19259,
+      "unit": "km2"
+    },
+    "North Macedonia": {
+      "value": 10015,
+      "unit": "km2"
+    },
+    "Réunion": {
+      "value": 994,
+      "unit": "km2"
+    },
+    "Canada": {
+      "value": 3468541,
+      "unit": "km2"
+    },
+    "Paraguay": {
+      "value": 155436,
+      "unit": "km2"
+    },
+    "Thailand": {
+      "value": 198010,
+      "unit": "km2"
+    },
+    "New Zealand": {
+      "value": 99319,
+      "unit": "km2"
+    },
+    "Mayotte": {
+      "value": 138,
+      "unit": "km2"
+    },
+    "Spain": {
+      "value": 185808,
+      "unit": "km2"
+    },
+    "Vanuatu": {
+      "value": 4423,
+      "unit": "km2"
+    },
+    "Portugal": {
+      "value": 33120,
+      "unit": "km2"
+    },
+    "Bulgaria": {
+      "value": 39190,
+      "unit": "km2"
+    },
+    "Central African Republic": {
+      "value": 222430,
+      "unit": "km2"
+    },
+    "Lithuania": {
+      "value": 22039,
+      "unit": "km2"
+    },
+    "Ghana": {
+      "value": 80002,
+      "unit": "km2"
+    },
+    "Croatia": {
+      "value": 19441,
+      "unit": "km2"
+    },
+    "Czech Republic": {
+      "value": 26807,
+      "unit": "km2"
+    },
+    "Sierra Leone": {
+      "value": 24954,
+      "unit": "km2"
+    },
+    "Luxembourg": {
+      "value": 887,
+      "unit": "km2"
+    },
+    "Sri Lanka": {
+      "value": 21067,
+      "unit": "km2"
+    },
+    "Saint Lucia": {
+      "value": 208,
+      "unit": "km2"
+    },
+    "Andorra": {
+      "value": 160,
+      "unit": "km2"
+    },
+    "United States": {
+      "value": 3097950,
+      "unit": "km2"
+    },
+    "Mexico": {
+      "value": 654365,
+      "unit": "km2"
+    },
+    "Norway": {
+      "value": 121956,
+      "unit": "km2"
+    },
+    "Tuvalu": {
+      "value": 10,
+      "unit": "km2"
+    },
+    "Italy": {
+      "value": 96738,
+      "unit": "km2"
+    },
+    "Guatemala": {
+      "value": 35046,
+      "unit": "km2"
+    },
+    "Germany": {
+      "value": 114190,
+      "unit": "km2"
+    },
+    "Serbia": {
+      "value": 27233,
+      "unit": "km2"
+    },
+    "Switzerland": {
+      "value": 12760,
+      "unit": "km2"
+    },
+    "France": {
+      "value": 174198,
+      "unit": "km2"
+    },
+    "Cuba": {
+      "value": 32420,
+      "unit": "km2"
+    },
+    "Poland": {
+      "value": 95070,
+      "unit": "km2"
+    },
+    "Greece": {
+      "value": 39018,
+      "unit": "km2"
+    },
+    "Romania": {
+      "value": 69291,
+      "unit": "km2"
+    },
+    "Turkey": {
+      "value": 225324,
+      "unit": "km2"
+    },
+    "Eswatini": {
+      "value": 5000,
+      "unit": "km2"
+    },
+    "Albania": {
+      "value": 7889,
+      "unit": "km2"
+    },
+    "El Salvador": {
+      "value": 5749,
+      "unit": "km2"
+    },
+    "Nicaragua": {
+      "value": 32075,
+      "unit": "km2"
+    },
+    "Botswana": {
+      "value": 150181,
+      "unit": "km2"
+    },
+    "Montserrat": {
+      "value": 25,
+      "unit": "km2"
+    },
+    "Guinea": {
+      "value": 61090,
+      "unit": "km2"
+    },
+    "Chile": {
+      "value": 184565,
+      "unit": "km2"
+    },
+    "Saint Martin": {
+      "value": 12,
+      "unit": "km2"
+    },
+    "India": {
+      "value": 726928,
+      "unit": "km2"
+    },
+    "Philippines": {
+      "value": 72584,
+      "unit": "km2"
+    },
+    "British Virgin Islands": {
+      "value": 36,
+      "unit": "km2"
+    },
+    "China": {
+      "value": 2237373,
+      "unit": "km2"
+    },
+    "Nigeria": {
+      "value": 213004,
+      "unit": "km2"
+    },
+    "Malawi": {
+      "value": 21577,
+      "unit": "km2"
+    },
+    "Gambia": {
+      "value": 2312,
+      "unit": "km2"
+    },
+    "Belgium": {
+      "value": 6893,
+      "unit": "km2"
+    },
+    "Hungary": {
+      "value": 20501,
+      "unit": "km2"
+    },
+    "Burkina Faso": {
+      "value": 61164,
+      "unit": "km2"
+    },
+    "Togo": {
+      "value": 12034,
+      "unit": "km2"
+    },
+    "Madagascar": {
+      "value": 124034,
+      "unit": "km2"
+    },
+    "Singapore": {
+      "value": 152,
+      "unit": "km2"
+    },
+    "Mauritius": {
+      "value": 389,
+      "unit": "km2"
+    },
+    "Cyprus": {
+      "value": 1725,
+      "unit": "km2"
+    },
+    "Bermuda": {
+      "value": 10,
+      "unit": "km2"
+    },
+    "Antigua and Barbuda": {
+      "value": 80,
+      "unit": "km2"
+    },
+    "Australia": {
+      "value": 1340051,
+      "unit": "km2"
+    },
+    "Comoros": {
+      "value": 320,
+      "unit": "km2"
+    },
+    "Ukraine": {
+      "value": 97020,
+      "unit": "km2"
+    },
+    "San Marino": {
+      "value": 10,
+      "unit": "km2"
+    },
+    "Denmark": {
+      "value": 6303,
+      "unit": "km2"
+    },
+    "Ethiopia": {
+      "value": 169225,
+      "unit": "km2"
+    },
+    "Barbados": {
+      "value": 63,
+      "unit": "km2"
+    },
+    "Bangladesh": {
+      "value": 18834,
+      "unit": "km2"
+    },
+    "Lebanon": {
+      "value": 1445,
+      "unit": "km2"
+    },
+    "South Africa": {
+      "value": 169773,
+      "unit": "km2"
+    },
+    "Azerbaijan": {
+      "value": 11548,
+      "unit": "km2"
+    },
+    "United Kingdom": {
+      "value": 32069,
+      "unit": "km2"
+    },
+    "Morocco": {
+      "value": 57634,
+      "unit": "km2"
+    },
+    "Tonga": {
+      "value": 90,
+      "unit": "km2"
+    },
+    "Haiti": {
+      "value": 3411,
+      "unit": "km2"
+    },
+    "Norfolk Island": {
+      "value": 5,
+      "unit": "km2"
+    },
+    "Uruguay": {
+      "value": 20730,
+      "unit": "km2"
+    },
+    "Moldova": {
+      "value": 3865,
+      "unit": "km2"
+    },
+    "Armenia": {
+      "value": 3281,
+      "unit": "km2"
+    },
+    "Cape Verde": {
+      "value": 463,
+      "unit": "km2"
+    },
+    "Ireland": {
+      "value": 7900,
+      "unit": "km2"
+    },
+    "South Sudan": {
+      "value": 71570,
+      "unit": "km2"
+    },
+    "Rwanda": {
+      "value": 2780,
+      "unit": "km2"
+    },
+    "Uganda": {
+      "value": 22554,
+      "unit": "km2"
+    },
+    "Turks and Caicos Islands": {
+      "value": 105,
+      "unit": "km2"
+    },
+    "Netherlands": {
+      "value": 3714,
+      "unit": "km2"
+    },
+    "Mali": {
+      "value": 132960,
+      "unit": "km2"
+    },
+    "Burundi": {
+      "value": 2796,
+      "unit": "km2"
+    },
+    "Sint Maarten": {
+      "value": 4,
+      "unit": "km2"
+    },
+    "Argentina": {
+      "value": 283552,
+      "unit": "km2"
+    },
+    "Sudan": {
+      "value": 180152,
+      "unit": "km2"
+    },
+    "Somalia": {
+      "value": 58265,
+      "unit": "km2"
+    },
+    "Mongolia": {
+      "value": 141706,
+      "unit": "km2"
+    },
+    "Turkmenistan": {
+      "value": 41270,
+      "unit": "km2"
+    },
+    "Eritrea": {
+      "value": 10489,
+      "unit": "km2"
+    },
+    "Saint Barthélemy": {
+      "value": 2,
+      "unit": "km2"
+    },
+    "Uzbekistan": {
+      "value": 37413,
+      "unit": "km2"
+    },
+    "Ivory Coast": {
+      "value": 26109,
+      "unit": "km2"
+    },
+    "Namibia": {
+      "value": 64969,
+      "unit": "km2"
+    },
+    "Kyrgyzstan": {
+      "value": 13519,
+      "unit": "km2"
+    },
+    "Iran": {
+      "value": 107758,
+      "unit": "km2"
+    },
+    "Israel": {
+      "value": 1400,
+      "unit": "km2"
+    },
+    "Kenya": {
+      "value": 36111,
+      "unit": "km2"
+    },
+    "Isle of Man": {
+      "value": 35,
+      "unit": "km2"
+    },
+    "Caribbean Netherlands": {
+      "value": 19,
+      "unit": "km2"
+    },
+    "Channel Islands": {
+      "value": 10,
+      "unit": "km2"
+    },
+    "Saint Pierre and Miquelon": {
+      "value": 12,
+      "unit": "km2"
+    },
+    "Saint Helena, Ascension and Tristan da Cunha": {
+      "value": 20,
+      "unit": "km2"
+    },
+    "Pakistan": {
+      "value": 36432,
+      "unit": "km2"
+    },
+    "Tunisia": {
+      "value": 7058,
+      "unit": "km2"
+    },
+    "United Arab Emirates": {
+      "value": 3173,
+      "unit": "km2"
+    },
+    "Chad": {
+      "value": 40914,
+      "unit": "km2"
+    },
+    "Tajikistan": {
+      "value": 4258,
+      "unit": "km2"
+    },
+    "Syria": {
+      "value": 5221,
+      "unit": "km2"
+    },
+    "Maldives": {
+      "value": 8,
+      "unit": "km2"
+    },
+    "Western Sahara": {
+      "value": 6650,
+      "unit": "km2"
+    },
+    "Aruba": {
+      "value": 4,
+      "unit": "km2"
+    },
+    "Iraq": {
+      "value": 8250,
+      "unit": "km2"
+    },
+    "Afghanistan": {
+      "value": 12084,
+      "unit": "km2"
+    },
+    "Palestine": {
+      "value": 101,
+      "unit": "km2"
+    },
+    "Kiribati": {
+      "value": 12,
+      "unit": "km2"
+    },
+    "Malta": {
+      "value": 5,
+      "unit": "km2"
+    },
+    "Kazakhstan": {
+      "value": 35132,
+      "unit": "km2"
+    },
+    "Lesotho": {
+      "value": 345,
+      "unit": "km2"
+    },
+    "Jordan": {
+      "value": 975,
+      "unit": "km2"
+    },
+    "Yemen": {
+      "value": 5490,
+      "unit": "km2"
+    },
+    "Bahrain": {
+      "value": 7,
+      "unit": "km2"
+    },
+    "Niger": {
+      "value": 10549,
+      "unit": "km2"
+    },
+    "Algeria": {
+      "value": 19681,
+      "unit": "km2"
+    },
+    "Iceland": {
+      "value": 527,
+      "unit": "km2"
+    },
+    "Saudi Arabia": {
+      "value": 9770,
+      "unit": "km2"
+    },
+    "Kuwait": {
+      "value": 63,
+      "unit": "km2"
+    },
+    "Mauritania": {
+      "value": 3019,
+      "unit": "km2"
+    },
+    "Djibouti": {
+      "value": 60,
+      "unit": "km2"
+    },
+    "Curaçao": {
+      "value": 1,
+      "unit": "km2"
+    },
+    "Libya": {
+      "value": 2170,
+      "unit": "km2"
+    },
+    "Faroe Islands": {
+      "value": 1,
+      "unit": "km2"
+    },
+    "Egypt": {
+      "value": 450,
+      "unit": "km2"
+    },
+    "Oman": {
+      "value": 24,
+      "unit": "km2"
+    },
+    "Greenland": {
+      "value": 2,
+      "unit": "km2"
+    },
+    "Falkland Islands": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Gibraltar": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Vatican City": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Monaco": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Nauru": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Qatar": {
+      "value": 0,
+      "unit": "km2"
+    },
+    "Tokelau": {
+      "value": 0,
+      "unit": "km2"
+    }
+  }
+}

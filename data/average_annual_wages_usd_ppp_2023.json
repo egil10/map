@@ -1,0 +1,144 @@
+{
+  "title": "Average Annual Wages by Country (USD PPP 2023)",
+  "description": "Development of average annual wages in USD adjusted for purchasing power parity (PPP) for 2024",
+  "unit": "USD",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_average_wage",
+  "data": {
+    "Luxembourg": {
+      "value": 94447,
+      "unit": "USD"
+    },
+    "Iceland": {
+      "value": 89947,
+      "unit": "USD"
+    },
+    "Switzerland": {
+      "value": 87468,
+      "unit": "USD"
+    },
+    "United States": {
+      "value": 82933,
+      "unit": "USD"
+    },
+    "Belgium": {
+      "value": 76109,
+      "unit": "USD"
+    },
+    "Austria": {
+      "value": 75767,
+      "unit": "USD"
+    },
+    "Netherlands": {
+      "value": 75370,
+      "unit": "USD"
+    },
+    "Norway": {
+      "value": 74864,
+      "unit": "USD"
+    },
+    "Denmark": {
+      "value": 74022,
+      "unit": "USD"
+    },
+    "Australia": {
+      "value": 70763,
+      "unit": "USD"
+    },
+    "Germany": {
+      "value": 69433,
+      "unit": "USD"
+    },
+    "Canada": {
+      "value": 69417,
+      "unit": "USD"
+    },
+    "United Kingdom": {
+      "value": 63691,
+      "unit": "USD"
+    },
+    "New Zealand": {
+      "value": 62437,
+      "unit": "USD"
+    },
+    "Slovenia": {
+      "value": 61776,
+      "unit": "USD"
+    },
+    "France": {
+      "value": 60608,
+      "unit": "USD"
+    },
+    "Ireland": {
+      "value": 60431,
+      "unit": "USD"
+    },
+    "Sweden": {
+      "value": 59058,
+      "unit": "USD"
+    },
+    "Finland": {
+      "value": 59597,
+      "unit": "USD"
+    },
+    "Israel": {
+      "value": 54736,
+      "unit": "USD"
+    },
+    "Spain": {
+      "value": 54564,
+      "unit": "USD"
+    },
+    "Lithuania": {
+      "value": 52898,
+      "unit": "USD"
+    },
+    "Italy": {
+      "value": 51019,
+      "unit": "USD"
+    },
+    "South Korea": {
+      "value": 50947,
+      "unit": "USD"
+    },
+    "Japan": {
+      "value": 49446,
+      "unit": "USD"
+    },
+    "Latvia": {
+      "value": 45567,
+      "unit": "USD"
+    },
+    "Poland": {
+      "value": 44211,
+      "unit": "USD"
+    },
+    "Portugal": {
+      "value": 40002,
+      "unit": "USD"
+    },
+    "Estonia": {
+      "value": 38975,
+      "unit": "USD"
+    },
+    "Czech Republic": {
+      "value": 38489,
+      "unit": "USD"
+    },
+    "Slovakia": {
+      "value": 36105,
+      "unit": "USD"
+    },
+    "Hungary": {
+      "value": 34996,
+      "unit": "USD"
+    },
+    "Greece": {
+      "value": 32257,
+      "unit": "USD"
+    },
+    "Mexico": {
+      "value": 20433,
+      "unit": "USD"
+    }
+  }
+}

@@ -1,0 +1,664 @@
+{
+  "title": "Median Wealth Per Adult by Country (USD, 2023)",
+  "description": "Median wealth per adult in US dollars adjusted for 2023, based on 2023 and 2024 publications",
+  "unit": "USD",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_wealth_per_adult",
+  "data": {
+    "Albania": {
+      "value": 17280,
+      "unit": "USD"
+    },
+    "Algeria": {
+      "value": 3226,
+      "unit": "USD"
+    },
+    "Angola": {
+      "value": 1716,
+      "unit": "USD"
+    },
+    "Antigua and Barbuda": {
+      "value": 8916,
+      "unit": "USD"
+    },
+    "Argentina": {
+      "value": 4354,
+      "unit": "USD"
+    },
+    "Armenia": {
+      "value": 14215,
+      "unit": "USD"
+    },
+    "Aruba": {
+      "value": 18428,
+      "unit": "USD"
+    },
+    "Australia": {
+      "value": 261805,
+      "unit": "USD"
+    },
+    "Austria": {
+      "value": 68492,
+      "unit": "USD"
+    },
+    "Azerbaijan": {
+      "value": 9209,
+      "unit": "USD"
+    },
+    "Bahamas": {
+      "value": 10885,
+      "unit": "USD"
+    },
+    "Bahrain": {
+      "value": 13904,
+      "unit": "USD"
+    },
+    "Bangladesh": {
+      "value": 3842,
+      "unit": "USD"
+    },
+    "Barbados": {
+      "value": 31436,
+      "unit": "USD"
+    },
+    "Belarus": {
+      "value": 18466,
+      "unit": "USD"
+    },
+    "Belgium": {
+      "value": 256185,
+      "unit": "USD"
+    },
+    "Belize": {
+      "value": 3928,
+      "unit": "USD"
+    },
+    "Benin": {
+      "value": 922,
+      "unit": "USD"
+    },
+    "Bolivia": {
+      "value": 4913,
+      "unit": "USD"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 16484,
+      "unit": "USD"
+    },
+    "Botswana": {
+      "value": 3591,
+      "unit": "USD"
+    },
+    "Brazil": {
+      "value": 5702,
+      "unit": "USD"
+    },
+    "Brunei": {
+      "value": 6983,
+      "unit": "USD"
+    },
+    "Bulgaria": {
+      "value": 22759,
+      "unit": "USD"
+    },
+    "Burkina Faso": {
+      "value": 563,
+      "unit": "USD"
+    },
+    "Burundi": {
+      "value": 453,
+      "unit": "USD"
+    },
+    "Cambodia": {
+      "value": 2185,
+      "unit": "USD"
+    },
+    "Cameroon": {
+      "value": 910,
+      "unit": "USD"
+    },
+    "Canada": {
+      "value": 142587,
+      "unit": "USD"
+    },
+    "Central African Republic": {
+      "value": 260,
+      "unit": "USD"
+    },
+    "Chad": {
+      "value": 483,
+      "unit": "USD"
+    },
+    "Chile": {
+      "value": 19544,
+      "unit": "USD"
+    },
+    "China": {
+      "value": 27273,
+      "unit": "USD"
+    },
+    "Colombia": {
+      "value": 4450,
+      "unit": "USD"
+    },
+    "Comoros": {
+      "value": 1256,
+      "unit": "USD"
+    },
+    "DR Congo": {
+      "value": 492,
+      "unit": "USD"
+    },
+    "Congo": {
+      "value": 380,
+      "unit": "USD"
+    },
+    "Costa Rica": {
+      "value": 19356,
+      "unit": "USD"
+    },
+    "Croatia": {
+      "value": 34837,
+      "unit": "USD"
+    },
+    "Cyprus": {
+      "value": 40957,
+      "unit": "USD"
+    },
+    "Czech Republic": {
+      "value": 23502,
+      "unit": "USD"
+    },
+    "Denmark": {
+      "value": 193669,
+      "unit": "USD"
+    },
+    "Djibouti": {
+      "value": 1285,
+      "unit": "USD"
+    },
+    "Dominica": {
+      "value": 13789,
+      "unit": "USD"
+    },
+    "Ecuador": {
+      "value": 7610,
+      "unit": "USD"
+    },
+    "Egypt": {
+      "value": 6656,
+      "unit": "USD"
+    },
+    "El Salvador": {
+      "value": 15049,
+      "unit": "USD"
+    },
+    "Equatorial Guinea": {
+      "value": 7501,
+      "unit": "USD"
+    },
+    "Eritrea": {
+      "value": 1431,
+      "unit": "USD"
+    },
+    "Estonia": {
+      "value": 39586,
+      "unit": "USD"
+    },
+    "Ethiopia": {
+      "value": 2124,
+      "unit": "USD"
+    },
+    "Fiji": {
+      "value": 5950,
+      "unit": "USD"
+    },
+    "Finland": {
+      "value": 87878,
+      "unit": "USD"
+    },
+    "France": {
+      "value": 140593,
+      "unit": "USD"
+    },
+    "Gabon": {
+      "value": 5487,
+      "unit": "USD"
+    },
+    "Gambia": {
+      "value": 735,
+      "unit": "USD"
+    },
+    "Georgia": {
+      "value": 9451,
+      "unit": "USD"
+    },
+    "Germany": {
+      "value": 66735,
+      "unit": "USD"
+    },
+    "Ghana": {
+      "value": 2622,
+      "unit": "USD"
+    },
+    "Greece": {
+      "value": 53501,
+      "unit": "USD"
+    },
+    "Grenada": {
+      "value": 19736,
+      "unit": "USD"
+    },
+    "Guinea": {
+      "value": 2060,
+      "unit": "USD"
+    },
+    "Guinea-Bissau": {
+      "value": 664,
+      "unit": "USD"
+    },
+    "Guyana": {
+      "value": 6896,
+      "unit": "USD"
+    },
+    "Haiti": {
+      "value": 207,
+      "unit": "USD"
+    },
+    "Hong Kong": {
+      "value": 206859,
+      "unit": "USD"
+    },
+    "Hungary": {
+      "value": 26416,
+      "unit": "USD"
+    },
+    "Iceland": {
+      "value": 413193,
+      "unit": "USD"
+    },
+    "India": {
+      "value": 3755,
+      "unit": "USD"
+    },
+    "Indonesia": {
+      "value": 4819,
+      "unit": "USD"
+    },
+    "Iran": {
+      "value": 17341,
+      "unit": "USD"
+    },
+    "Ireland": {
+      "value": 95459,
+      "unit": "USD"
+    },
+    "Israel": {
+      "value": 77604,
+      "unit": "USD"
+    },
+    "Italy": {
+      "value": 113754,
+      "unit": "USD"
+    },
+    "Jamaica": {
+      "value": 7529,
+      "unit": "USD"
+    },
+    "Japan": {
+      "value": 106999,
+      "unit": "USD"
+    },
+    "Jordan": {
+      "value": 14219,
+      "unit": "USD"
+    },
+    "Kazakhstan": {
+      "value": 25225,
+      "unit": "USD"
+    },
+    "Kenya": {
+      "value": 4356,
+      "unit": "USD"
+    },
+    "South Korea": {
+      "value": 95872,
+      "unit": "USD"
+    },
+    "Kuwait": {
+      "value": 41605,
+      "unit": "USD"
+    },
+    "Kyrgyzstan": {
+      "value": 3398,
+      "unit": "USD"
+    },
+    "Laos": {
+      "value": 1366,
+      "unit": "USD"
+    },
+    "Latvia": {
+      "value": 46899,
+      "unit": "USD"
+    },
+    "Lesotho": {
+      "value": 266,
+      "unit": "USD"
+    },
+    "Liberia": {
+      "value": 1977,
+      "unit": "USD"
+    },
+    "Libya": {
+      "value": 5223,
+      "unit": "USD"
+    },
+    "Lithuania": {
+      "value": 32385,
+      "unit": "USD"
+    },
+    "Luxembourg": {
+      "value": 372258,
+      "unit": "USD"
+    },
+    "Madagascar": {
+      "value": 658,
+      "unit": "USD"
+    },
+    "Malawi": {
+      "value": 620,
+      "unit": "USD"
+    },
+    "Malaysia": {
+      "value": 8523,
+      "unit": "USD"
+    },
+    "Maldives": {
+      "value": 7970,
+      "unit": "USD"
+    },
+    "Mali": {
+      "value": 863,
+      "unit": "USD"
+    },
+    "Malta": {
+      "value": 102451,
+      "unit": "USD"
+    },
+    "Mauritania": {
+      "value": 1125,
+      "unit": "USD"
+    },
+    "Mauritius": {
+      "value": 31103,
+      "unit": "USD"
+    },
+    "Mexico": {
+      "value": 18920,
+      "unit": "USD"
+    },
+    "Moldova": {
+      "value": 10131,
+      "unit": "USD"
+    },
+    "Mongolia": {
+      "value": 3003,
+      "unit": "USD"
+    },
+    "Montenegro": {
+      "value": 43438,
+      "unit": "USD"
+    },
+    "Morocco": {
+      "value": 3896,
+      "unit": "USD"
+    },
+    "Mozambique": {
+      "value": 570,
+      "unit": "USD"
+    },
+    "Myanmar": {
+      "value": 3636,
+      "unit": "USD"
+    },
+    "Namibia": {
+      "value": 4832,
+      "unit": "USD"
+    },
+    "Nepal": {
+      "value": 1685,
+      "unit": "USD"
+    },
+    "Netherlands": {
+      "value": 116948,
+      "unit": "USD"
+    },
+    "New Zealand": {
+      "value": 202525,
+      "unit": "USD"
+    },
+    "Nicaragua": {
+      "value": 5133,
+      "unit": "USD"
+    },
+    "Niger": {
+      "value": 599,
+      "unit": "USD"
+    },
+    "Nigeria": {
+      "value": 1507,
+      "unit": "USD"
+    },
+    "Norway": {
+      "value": 152233,
+      "unit": "USD"
+    },
+    "Oman": {
+      "value": 11377,
+      "unit": "USD"
+    },
+    "Pakistan": {
+      "value": 2076,
+      "unit": "USD"
+    },
+    "Panama": {
+      "value": 15724,
+      "unit": "USD"
+    },
+    "Papua New Guinea": {
+      "value": 1828,
+      "unit": "USD"
+    },
+    "Paraguay": {
+      "value": 4930,
+      "unit": "USD"
+    },
+    "Peru": {
+      "value": 7555,
+      "unit": "USD"
+    },
+    "Philippines": {
+      "value": 3155,
+      "unit": "USD"
+    },
+    "Poland": {
+      "value": 20263,
+      "unit": "USD"
+    },
+    "Portugal": {
+      "value": 70409,
+      "unit": "USD"
+    },
+    "Qatar": {
+      "value": 92789,
+      "unit": "USD"
+    },
+    "Romania": {
+      "value": 21545,
+      "unit": "USD"
+    },
+    "Russia": {
+      "value": 8595,
+      "unit": "USD"
+    },
+    "Rwanda": {
+      "value": 1711,
+      "unit": "USD"
+    },
+    "Samoa": {
+      "value": 4150,
+      "unit": "USD"
+    },
+    "São Tomé and Príncipe": {
+      "value": 1775,
+      "unit": "USD"
+    },
+    "Saudi Arabia": {
+      "value": 20701,
+      "unit": "USD"
+    },
+    "Senegal": {
+      "value": 1664,
+      "unit": "USD"
+    },
+    "Serbia": {
+      "value": 16462,
+      "unit": "USD"
+    },
+    "Seychelles": {
+      "value": 37787,
+      "unit": "USD"
+    },
+    "Sierra Leone": {
+      "value": 329,
+      "unit": "USD"
+    },
+    "Singapore": {
+      "value": 104959,
+      "unit": "USD"
+    },
+    "Slovakia": {
+      "value": 40703,
+      "unit": "USD"
+    },
+    "Slovenia": {
+      "value": 81195,
+      "unit": "USD"
+    },
+    "Solomon Islands": {
+      "value": 3429,
+      "unit": "USD"
+    },
+    "South Africa": {
+      "value": 5141,
+      "unit": "USD"
+    },
+    "Spain": {
+      "value": 111270,
+      "unit": "USD"
+    },
+    "Sri Lanka": {
+      "value": 8615,
+      "unit": "USD"
+    },
+    "Saint Lucia": {
+      "value": 12454,
+      "unit": "USD"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 7357,
+      "unit": "USD"
+    },
+    "Suriname": {
+      "value": 1444,
+      "unit": "USD"
+    },
+    "Sweden": {
+      "value": 82864,
+      "unit": "USD"
+    },
+    "Switzerland": {
+      "value": 171035,
+      "unit": "USD"
+    },
+    "Syria": {
+      "value": 680,
+      "unit": "USD"
+    },
+    "Taiwan": {
+      "value": 110521,
+      "unit": "USD"
+    },
+    "Tajikistan": {
+      "value": 1863,
+      "unit": "USD"
+    },
+    "Tanzania": {
+      "value": 2005,
+      "unit": "USD"
+    },
+    "Thailand": {
+      "value": 9602,
+      "unit": "USD"
+    },
+    "Togo": {
+      "value": 488,
+      "unit": "USD"
+    },
+    "Tonga": {
+      "value": 20960,
+      "unit": "USD"
+    },
+    "Trinidad and Tobago": {
+      "value": 20960,
+      "unit": "USD"
+    },
+    "Tunisia": {
+      "value": 7298,
+      "unit": "USD"
+    },
+    "Turkey": {
+      "value": 5488,
+      "unit": "USD"
+    },
+    "Uganda": {
+      "value": 798,
+      "unit": "USD"
+    },
+    "United Arab Emirates": {
+      "value": 31761,
+      "unit": "USD"
+    },
+    "United Kingdom": {
+      "value": 163515,
+      "unit": "USD"
+    },
+    "United States": {
+      "value": 112157,
+      "unit": "USD"
+    },
+    "Uruguay": {
+      "value": 33522,
+      "unit": "USD"
+    },
+    "Vanuatu": {
+      "value": 5276,
+      "unit": "USD"
+    },
+    "Venezuela": {
+      "value": 12955,
+      "unit": "USD"
+    },
+    "Vietnam": {
+      "value": 5309,
+      "unit": "USD"
+    },
+    "Yemen": {
+      "value": 1406,
+      "unit": "USD"
+    },
+    "Zambia": {
+      "value": 774,
+      "unit": "USD"
+    }
+  }
+}

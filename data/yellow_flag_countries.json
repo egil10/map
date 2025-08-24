@@ -1,0 +1,344 @@
+{
+  "title": "Countries with Yellow on Their Flags",
+  "description": "List of countries whose national flags contain the color yellow",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/118275/countries-with-yellow-colour-in-their-flags",
+  "data": {
+    "Andorra": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Angola": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Antigua and Barbuda": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Argentina": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Bahamas": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Barbados": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Belgium": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Benin": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Brunei": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Burkina Faso": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Cape Verde": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Chad": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "China": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Republic of Congo": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Democratic Republic of Congo": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Colombia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "East Timor": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Ecuador": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Egypt": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Eritrea": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Germany": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Ghana": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Grenada": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Guinea": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Guinea Bissau": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Jamaica": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Kazakhstan": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Kiribati": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Kosovo": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Kyrgyzstan": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Liechtenstein": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Lithuania": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Macedonia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Malaysia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Mauritius": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Mauritania": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Moldova": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Mongolia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Nauru": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Palau": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Papua New Guinea": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Philippines": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Portugal": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Romania": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Sao Tome and Principe": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Saint Lucia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Senegal": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Serbia": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Sri Lanka": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Suriname": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Swaziland": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Sweden": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Tanzania": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Tuvalu": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Ukraine": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Uruguay": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Vatican City": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Venezuela": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Vietnam": {
+      "value": "Yellow flag",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Yellow flag",
+      "unit": "status"
+    }
+  }
+}

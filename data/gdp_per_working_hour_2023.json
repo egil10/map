@@ -1,0 +1,732 @@
+{
+  "title": "GDP Per Working Hour by Country (2017 US$ PPP, 2023)",
+  "description": "GDP per working hour in 2017 US dollars adjusted for purchasing power parity (PPP) for 2023, according to the International Labour Organization",
+  "unit": "2017 US$ PPP",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_labour_productivity",
+  "data": {
+    "Luxembourg": {
+      "value": 146.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Ireland": {
+      "value": 142.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Norway": {
+      "value": 92.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Netherlands": {
+      "value": 79.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Denmark": {
+      "value": 78.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Switzerland": {
+      "value": 75.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Belgium": {
+      "value": 75.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Austria": {
+      "value": 74.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Singapore": {
+      "value": 73.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Sweden": {
+      "value": 70.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Guyana": {
+      "value": 69.9,
+      "unit": "2017 US$ PPP"
+    },
+    "United States": {
+      "value": 69.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Finland": {
+      "value": 68.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Germany": {
+      "value": 68.1,
+      "unit": "2017 US$ PPP"
+    },
+    "France": {
+      "value": 67.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Italy": {
+      "value": 61.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Macau": {
+      "value": 60.6,
+      "unit": "2017 US$ PPP"
+    },
+    "United Kingdom": {
+      "value": 59.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Australia": {
+      "value": 58.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Iceland": {
+      "value": 57.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Israel": {
+      "value": 57.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Taiwan": {
+      "value": 57.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Canada": {
+      "value": 56.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Spain": {
+      "value": 56.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Hong Kong": {
+      "value": 56.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Saudi Arabia": {
+      "value": 53.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Qatar": {
+      "value": 52.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Malta": {
+      "value": 50.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Puerto Rico": {
+      "value": 50.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Brunei": {
+      "value": 49.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Slovenia": {
+      "value": 48.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Lithuania": {
+      "value": 46.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Czech Republic": {
+      "value": 46.3,
+      "unit": "2017 US$ PPP"
+    },
+    "New Zealand": {
+      "value": 45.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Panama": {
+      "value": 44.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Croatia": {
+      "value": 44.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Bahrain": {
+      "value": 43.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Estonia": {
+      "value": 43.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Portugal": {
+      "value": 43.7,
+      "unit": "2017 US$ PPP"
+    },
+    "South Korea": {
+      "value": 42.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Greece": {
+      "value": 41.9,
+      "unit": "2017 US$ PPP"
+    },
+    "United Arab Emirates": {
+      "value": 41.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Japan": {
+      "value": 41.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Latvia": {
+      "value": 40.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Turkey": {
+      "value": 40.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Romania": {
+      "value": 38.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Kuwait": {
+      "value": 37.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Slovakia": {
+      "value": 36.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Poland": {
+      "value": 36.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Hungary": {
+      "value": 35.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Cyprus": {
+      "value": 34.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Bahamas": {
+      "value": 32.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Oman": {
+      "value": 31.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Kazakhstan": {
+      "value": 30.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Libya": {
+      "value": 29.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Uruguay": {
+      "value": 29.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Russia": {
+      "value": 29.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Chile": {
+      "value": 28.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Bulgaria": {
+      "value": 28.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Trinidad and Tobago": {
+      "value": 27.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Argentina": {
+      "value": 27.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Malaysia": {
+      "value": 25.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Montenegro": {
+      "value": 25.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Gabon": {
+      "value": 25.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Mauritius": {
+      "value": 25.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Iraq": {
+      "value": 25.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Costa Rica": {
+      "value": 25.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Iran": {
+      "value": 23.1,
+      "unit": "2017 US$ PPP"
+    },
+    "North Macedonia": {
+      "value": 22.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Turkmenistan": {
+      "value": 22.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Dominican Republic": {
+      "value": 21.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 21.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Georgia": {
+      "value": 21.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Botswana": {
+      "value": 20.8,
+      "unit": "2017 US$ PPP"
+    },
+    "South Africa": {
+      "value": 20.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Serbia": {
+      "value": 20.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Armenia": {
+      "value": 20.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Maldives": {
+      "value": 20.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Mexico": {
+      "value": 20.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Suriname": {
+      "value": 20.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Egypt": {
+      "value": 19.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Equatorial Guinea": {
+      "value": 19.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Belarus": {
+      "value": 19.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Djibouti": {
+      "value": 19.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Algeria": {
+      "value": 19.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Fiji": {
+      "value": 18.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Cuba": {
+      "value": 17.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Jordan": {
+      "value": 17.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 17.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Brazil": {
+      "value": 16.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Lebanon": {
+      "value": 16.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Barbados": {
+      "value": 16.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Albania": {
+      "value": 16.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Azerbaijan": {
+      "value": 16.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Tunisia": {
+      "value": 16.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Colombia": {
+      "value": 15.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Saint Lucia": {
+      "value": 15.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Eswatini": {
+      "value": 15.6,
+      "unit": "2017 US$ PPP"
+    },
+    "China": {
+      "value": 15.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Sri Lanka": {
+      "value": 14.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Thailand": {
+      "value": 14.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Namibia": {
+      "value": 14.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Paraguay": {
+      "value": 13.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Indonesia": {
+      "value": 13.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Mongolia": {
+      "value": 13.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Mauritania": {
+      "value": 12.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Morocco": {
+      "value": 12.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Peru": {
+      "value": 12.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Yemen": {
+      "value": 12.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Venezuela": {
+      "value": 11.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Ecuador": {
+      "value": 11.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Belize": {
+      "value": 11.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Guatemala": {
+      "value": 11.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Uzbekistan": {
+      "value": 11.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Tonga": {
+      "value": 10.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Philippines": {
+      "value": 10.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Vietnam": {
+      "value": 9.8,
+      "unit": "2017 US$ PPP"
+    },
+    "El Salvador": {
+      "value": 9.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Laos": {
+      "value": 9.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Cape Verde": {
+      "value": 9.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Jamaica": {
+      "value": 8.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Moldova": {
+      "value": 8.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Bolivia": {
+      "value": 8.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Tajikistan": {
+      "value": 8.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Angola": {
+      "value": 8.0,
+      "unit": "2017 US$ PPP"
+    },
+    "India": {
+      "value": 7.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Ghana": {
+      "value": 7.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Samoa": {
+      "value": 7.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Bhutan": {
+      "value": 7.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Nepal": {
+      "value": 7.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Western Sahara": {
+      "value": 7.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Kyrgyzstan": {
+      "value": 7.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Nicaragua": {
+      "value": 7.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Pakistan": {
+      "value": 6.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Timor-Leste": {
+      "value": 6.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Ivory Coast": {
+      "value": 6.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Honduras": {
+      "value": 6.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Nigeria": {
+      "value": 6.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Bangladesh": {
+      "value": 6.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Comoros": {
+      "value": 6.6,
+      "unit": "2017 US$ PPP"
+    },
+    "São Tomé and Príncipe": {
+      "value": 6.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Sudan": {
+      "value": 6.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Papua New Guinea": {
+      "value": 5.7,
+      "unit": "2017 US$ PPP"
+    },
+    "Senegal": {
+      "value": 5.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Syria": {
+      "value": 5.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Somalia": {
+      "value": 5.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Benin": {
+      "value": 4.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Kenya": {
+      "value": 4.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Rwanda": {
+      "value": 4.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Guinea": {
+      "value": 4.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Myanmar": {
+      "value": 4.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Vanuatu": {
+      "value": 4.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Zambia": {
+      "value": 4.6,
+      "unit": "2017 US$ PPP"
+    },
+    "Cameroon": {
+      "value": 4.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Republic of the Congo": {
+      "value": 4.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Cambodia": {
+      "value": 3.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Ethiopia": {
+      "value": 3.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Gambia": {
+      "value": 3.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Haiti": {
+      "value": 3.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Guinea-Bissau": {
+      "value": 3.2,
+      "unit": "2017 US$ PPP"
+    },
+    "South Sudan": {
+      "value": 3.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Uganda": {
+      "value": 3.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Zimbabwe": {
+      "value": 3.2,
+      "unit": "2017 US$ PPP"
+    },
+    "Afghanistan": {
+      "value": 3.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Togo": {
+      "value": 3.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Mali": {
+      "value": 2.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Burkina Faso": {
+      "value": 2.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Tanzania": {
+      "value": 2.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Lesotho": {
+      "value": 2.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Malawi": {
+      "value": 2.5,
+      "unit": "2017 US$ PPP"
+    },
+    "Solomon Islands": {
+      "value": 2.4,
+      "unit": "2017 US$ PPP"
+    },
+    "Sierra Leone": {
+      "value": 2.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Eritrea": {
+      "value": 2.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Mozambique": {
+      "value": 2.0,
+      "unit": "2017 US$ PPP"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 1.9,
+      "unit": "2017 US$ PPP"
+    },
+    "Madagascar": {
+      "value": 1.8,
+      "unit": "2017 US$ PPP"
+    },
+    "Niger": {
+      "value": 1.7,
+      "unit": "2017 US$ PPP"
+    },
+    "North Korea": {
+      "value": 1.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Liberia": {
+      "value": 1.3,
+      "unit": "2017 US$ PPP"
+    },
+    "Central African Republic": {
+      "value": 1.1,
+      "unit": "2017 US$ PPP"
+    },
+    "Burundi": {
+      "value": 0.8,
+      "unit": "2017 US$ PPP"
+    }
+  }
+}

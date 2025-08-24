@@ -1,0 +1,592 @@
+{
+  "title": "Countries with White on Their Flags",
+  "description": "List of countries whose national flags contain the color white",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/1784715/country-flags-with-white",
+  "data": {
+    "Afghanistan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Algeria": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Andorra": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Antigua and Barbuda": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Argentina": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Australia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Austria": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Azerbaijan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Bahrain": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Belize": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Bhutan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Botswana": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Brunei": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Bulgaria": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Cape Verde": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Cambodia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Chile": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Costa Rica": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Cote d'Ivoire": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Croatia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Cuba": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Cyprus": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Czech Republic": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Denmark": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Djibouti": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Dominican Republic": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Ecuador": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Egypt": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "El Salvador": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Equatorial Guinea": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Estonia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Eswatini": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Finland": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "France": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Gambia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Georgia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Greece": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Guatemala": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Haiti": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Honduras": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Hungary": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Iceland": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "India": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Indonesia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Iraq": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Israel": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Italy": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Japan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Jordan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Kenya": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Kiribati": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Kosovo": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Kuwait": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Laos": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Latvia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Lebanon": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Liberia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Libya": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Luxembourg": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Madagascar": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Malaysia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Maldives": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Malta": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Marshall Islands": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Mexico": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Micronesia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Monaco": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Myanmar": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Nauru": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Nepal": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Netherlands": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "New Zealand": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Nicaragua": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "North Korea": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Norway": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Oman": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Panama": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Papua New Guinea": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Paraguay": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Peru": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Philippines": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Poland": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Portugal": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Qatar": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Russia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Saint Lucia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Samoa": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Serbia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Sierra Leone": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Singapore": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Slovakia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Slovenia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Somalia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "South Korea": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "South Sudan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Sudan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Suriname": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Syria": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Taiwan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Tajikistan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Thailand": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Timor-Leste": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Tonga": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Trinidad and Tobago": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Tunisia": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Turkey": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Turkmenistan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Tuvalu": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "United Arab Emirates": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "United Kingdom": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "United States": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Uruguay": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Uzbekistan": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Vatican City": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Venezuela": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Yemen": {
+      "value": "White flag",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "White flag",
+      "unit": "status"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Countries with Purple on Their Flags",
+  "description": "List of countries whose national flags contain the color purple",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/2344700/country-flags-with-purple-on-them",
+  "data": {
+    "Dominica": {
+      "value": "Purple flag",
+      "unit": "status"
+    },
+    "El Salvador": {
+      "value": "Purple flag",
+      "unit": "status"
+    },
+    "Nicaragua": {
+      "value": "Purple flag",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "Purple flag",
+      "unit": "status"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "title": "Motor Vehicle Production by Country in 2024",
+  "description": "Total number of motor vehicles produced by country in 2024",
+  "unit": "vehicles",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_motor_vehicle_production",
+  "data": {
+    "China": {
+      "value": 31281592,
+      "unit": "vehicles"
+    },
+    "United States": {
+      "value": 10562188,
+      "unit": "vehicles"
+    },
+    "Japan": {
+      "value": 8234681,
+      "unit": "vehicles"
+    },
+    "India": {
+      "value": 6014691,
+      "unit": "vehicles"
+    },
+    "Mexico": {
+      "value": 4202642,
+      "unit": "vehicles"
+    },
+    "South Korea": {
+      "value": 4127252,
+      "unit": "vehicles"
+    },
+    "Germany": {
+      "value": 4069222,
+      "unit": "vehicles"
+    },
+    "Brazil": {
+      "value": 2549595,
+      "unit": "vehicles"
+    },
+    "Spain": {
+      "value": 2376504,
+      "unit": "vehicles"
+    },
+    "Thailand": {
+      "value": 1468997,
+      "unit": "vehicles"
+    },
+    "Czech Republic": {
+      "value": 1458892,
+      "unit": "vehicles"
+    },
+    "Iran": {
+      "value": 1365296,
+      "unit": "vehicles"
+    },
+    "Canada": {
+      "value": 1320420,
+      "unit": "vehicles"
+    },
+    "Indonesia": {
+      "value": 1196664,
+      "unit": "vehicles"
+    },
+    "Turkey": {
+      "value": 1077839,
+      "unit": "vehicles"
+    },
+    "Slovakia": {
+      "value": 993000,
+      "unit": "vehicles"
+    },
+    "Russia": {
+      "value": 982665,
+      "unit": "vehicles"
+    },
+    "France": {
+      "value": 910243,
+      "unit": "vehicles"
+    },
+    "United Kingdom": {
+      "value": 905233,
+      "unit": "vehicles"
+    },
+    "Malaysia": {
+      "value": 790347,
+      "unit": "vehicles"
+    },
+    "South Africa": {
+      "value": 599755,
+      "unit": "vehicles"
+    },
+    "Italy": {
+      "value": 591067,
+      "unit": "vehicles"
+    },
+    "Romania": {
+      "value": 560102,
+      "unit": "vehicles"
+    },
+    "Morocco": {
+      "value": 559645,
+      "unit": "vehicles"
+    },
+    "Poland": {
+      "value": 555346,
+      "unit": "vehicles"
+    },
+    "Argentina": {
+      "value": 506571,
+      "unit": "vehicles"
+    },
+    "Hungary": {
+      "value": 437045,
+      "unit": "vehicles"
+    },
+    "Uzbekistan": {
+      "value": 429364,
+      "unit": "vehicles"
+    },
+    "Portugal": {
+      "value": 332546,
+      "unit": "vehicles"
+    },
+    "Taiwan": {
+      "value": 275156,
+      "unit": "vehicles"
+    },
+    "Sweden": {
+      "value": 268487,
+      "unit": "vehicles"
+    },
+    "Belgium": {
+      "value": 240366,
+      "unit": "vehicles"
+    },
+    "Vietnam": {
+      "value": 175661,
+      "unit": "vehicles"
+    },
+    "Kazakhstan": {
+      "value": 144624,
+      "unit": "vehicles"
+    },
+    "Pakistan": {
+      "value": 128449,
+      "unit": "vehicles"
+    },
+    "Philippines": {
+      "value": 126571,
+      "unit": "vehicles"
+    },
+    "Austria": {
+      "value": 71785,
+      "unit": "vehicles"
+    },
+    "Slovenia": {
+      "value": 60903,
+      "unit": "vehicles"
+    },
+    "Algeria": {
+      "value": 30108,
+      "unit": "vehicles"
+    },
+    "Colombia": {
+      "value": 23778,
+      "unit": "vehicles"
+    },
+    "Azerbaijan": {
+      "value": 6695,
+      "unit": "vehicles"
+    },
+    "Myanmar": {
+      "value": 2711,
+      "unit": "vehicles"
+    },
+    "Ukraine": {
+      "value": 1993,
+      "unit": "vehicles"
+    },
+    "Serbia": {
+      "value": 186,
+      "unit": "vehicles"
+    },
+    "Bangladesh": {
+      "value": 24,
+      "unit": "vehicles"
+    }
+  }
+}

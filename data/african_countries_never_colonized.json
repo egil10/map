@@ -1,0 +1,16 @@
+{
+  "title": "African Countries Never Colonized",
+  "description": "List of African countries considered to have never been fully colonized by European powers, with nuanced historical context",
+  "unit": "status",
+  "source": "https://en.wikipedia.org/wiki/Scramble_for_Africa",
+  "data": {
+    "Ethiopia": {
+      "value": "Never fully colonized",
+      "unit": "status"
+    },
+    "Liberia": {
+      "value": "Never fully colonized",
+      "unit": "status"
+    }
+  }
+}

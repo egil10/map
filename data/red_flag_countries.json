@@ -1,0 +1,620 @@
+{
+  "title": "Countries with Red on Their Flags",
+  "description": "List of countries whose national flags contain the color red",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/1268774/countries-with-red-on-their-flag",
+  "data": {
+    "Afghanistan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Albania": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Algeria": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Andorra": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Angola": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Antigua and Barbuda": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Armenia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Australia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Austria": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Azerbaijan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Bahrain": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Bangladesh": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Belgium": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Belize": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Benin": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Bhutan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Bulgaria": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Burkina Faso": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Cambodia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Cape Verde": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Chad": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Chile": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "China": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Colombia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Costa Rica": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Croatia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Cuba": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Czechia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Denmark": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Djibouti": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Dominican Republic": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "East Timor": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Ecuador": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Egypt": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Equatorial Guinea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Eritrea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Eswatini": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "France": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Gambia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Georgia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Germany": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Ghana": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Grenada": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Guinea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Guinea-Bissau": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Haiti": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Hungary": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Iceland": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Indonesia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Iraq": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Italy": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Japan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Jordan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Kenya": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Kiribati": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Kuwait": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Kyrgyzstan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Laos": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Latvia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Lebanon": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Liberia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Libya": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Liechtenstein": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Lithuania": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Luxembourg": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Madagascar": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Malawi": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Malaysia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Maldives": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Malta": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mauritania": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mauritius": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mexico": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Moldova": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Monaco": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mongolia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Montenegro": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Morocco": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Myanmar": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Nepal": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Netherlands": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "New Zealand": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "North Korea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "North Macedonia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Norway": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Oman": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Panama": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Papua New Guinea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Paraguay": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Peru": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Philippines": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Poland": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Portugal": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Qatar": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Republic of the Congo": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Romania": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Russia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Samoa": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Sao Tome and Principe": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Senegal": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Serbia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Singapore": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Slovakia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Slovenia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "South Korea": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "South Sudan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Sri Lanka": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "St. Kitts and Nevis": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Sudan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Suriname": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Syria": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Taiwan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Tajikistan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Thailand": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Tonga": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Trinidad and Tobago": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Tunisia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Turkey": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Turkmenistan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Tuvalu": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "United Arab Emirates": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "United Kingdom": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "United States": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Uzbekistan": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Vatican City": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Venezuela": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Vietnam": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Yemen": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Zambia": {
+      "value": "Red flag",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Red flag",
+      "unit": "status"
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "title": "Marriage Rate Per 1,000 Population Per Year by Country",
+  "description": "Marriage rate per 1,000 population per year for each country, latest available data",
+  "unit": "per 1000",
+  "source": "https://en.wikipedia.org/wiki/Divorce_demography",
+  "data": {
+    "Albania": {
+      "value": 8.1,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Algeria": {
+      "value": 10.1,
+      "unit": "per 1000",
+      "year": 2013
+    },
+    "Australia": {
+      "value": 4.6,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Austria": {
+      "value": 5.3,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Azerbaijan": {
+      "value": 9.7,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Bahamas": {
+      "value": 6.1,
+      "unit": "per 1000",
+      "year": 2007
+    },
+    "Belarus": {
+      "value": 6.1,
+      "unit": "per 1000",
+      "year": 2023
+    },
+    "Belgium": {
+      "value": 3.9,
+      "unit": "per 1000",
+      "year": 2016
+    },
+    "Bermuda": {
+      "value": 10.6,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "Bosnia and Herzegovina": {
+      "value": 4.8,
+      "unit": "per 1000",
+      "year": 2012
+    },
+    "Brazil": {
+      "value": 6.6,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "Bulgaria": {
+      "value": 4.1,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Canada": {
+      "value": 4.4,
+      "unit": "per 1000",
+      "year": 2008
+    },
+    "Chile": {
+      "value": 3.3,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "China": {
+      "value": 7.2,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Colombia": {
+      "value": 2.3,
+      "unit": "per 1000",
+      "year": 2007
+    },
+    "Costa Rica": {
+      "value": 5.3,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Croatia": {
+      "value": 4.9,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Cuba": {
+      "value": 5.2,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Cyprus": {
+      "value": 6.8,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Czech Republic": {
+      "value": 5.1,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Denmark": {
+      "value": 5.6,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Dominican Republic": {
+      "value": 4.4,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Ecuador": {
+      "value": 5.6,
+      "unit": "per 1000",
+      "year": 2006
+    },
+    "Egypt": {
+      "value": 11.0,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "El Salvador": {
+      "value": 3.5,
+      "unit": "per 1000",
+      "year": 2006
+    },
+    "Estonia": {
+      "value": 5.0,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "European Union": {
+      "value": 4.4,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Finland": {
+      "value": 4.3,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "France": {
+      "value": 3.7,
+      "unit": "per 1000",
+      "year": 2016
+    },
+    "Georgia": {
+      "value": 6.9,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Germany": {
+      "value": 4.9,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Gibraltar": {
+      "value": 6.7,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Grenada": {
+      "value": 5.0,
+      "unit": "per 1000",
+      "year": 2001
+    },
+    "Greece": {
+      "value": 4.7,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Guatemala": {
+      "value": 3.8,
+      "unit": "per 1000",
+      "year": 2008
+    },
+    "Hungary": {
+      "value": 5.2,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Iceland": {
+      "value": 4.9,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "India": {
+      "value": 10.0,
+      "unit": "per 1000",
+      "year": null
+    },
+    "Iran": {
+      "value": 11.2,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Ireland": {
+      "value": 4.6,
+      "unit": "per 1000",
+      "year": 2017
+    },
+    "Israel": {
+      "value": 6.5,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "Italy": {
+      "value": 3.2,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Jamaica": {
+      "value": 7.5,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Japan": {
+      "value": 4.8,
+      "unit": "per 1000",
+      "year": 2019
+    },
+    "Jordan": {
+      "value": 6.7,
+      "unit": "per 1000",
+      "year": 2019
+    },
+    "Kazakhstan": {
+      "value": 7.3,
+      "unit": "per 1000",
+      "year": 2021
+    },
+    "Kuwait": {
+      "value": 5.2,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Kyrgyzstan": {
+      "value": 9.7,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Latvia": {
+      "value": 6.8,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Lebanon": {
+      "value": 9.5,
+      "unit": "per 1000",
+      "year": 2007
+    },
+    "Libya": {
+      "value": 10.8,
+      "unit": "per 1000",
+      "year": 2008
+    },
+    "Liechtenstein": {
+      "value": 5.0,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Lithuania": {
+      "value": 7.0,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Luxembourg": {
+      "value": 2.9,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Malaysia": {
+      "value": 6.4,
+      "unit": "per 1000",
+      "year": 2019
+    },
+    "Malta": {
+      "value": 5.8,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Mauritius": {
+      "value": 8.2,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Mexico": {
+      "value": 5.2,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "Moldova": {
+      "value": 7.3,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Mongolia": {
+      "value": 3.4,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Montenegro": {
+      "value": 5.3,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Netherlands": {
+      "value": 3.7,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "New Zealand": {
+      "value": 4.8,
+      "unit": "per 1000",
+      "year": 2008
+    },
+    "Nicaragua": {
+      "value": 4.5,
+      "unit": "per 1000",
+      "year": 2005
+    },
+    "North Macedonia": {
+      "value": 6.5,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Norway": {
+      "value": 4.3,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Panama": {
+      "value": 3.7,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Poland": {
+      "value": 5.1,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Portugal": {
+      "value": 1.8,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Qatar": {
+      "value": 3.3,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Romania": {
+      "value": 7.4,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Russia": {
+      "value": 5.3,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Saint Lucia": {
+      "value": 2.8,
+      "unit": "per 1000",
+      "year": 2004
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 5.8,
+      "unit": "per 1000",
+      "year": 2007
+    },
+    "San Marino": {
+      "value": 6.1,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Saudi Arabia": {
+      "value": 5.6,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Serbia": {
+      "value": 5.2,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Seychelles": {
+      "value": 17.4,
+      "unit": "per 1000",
+      "year": 2011
+    },
+    "Singapore": {
+      "value": 6.8,
+      "unit": "per 1000",
+      "year": 2015
+    },
+    "Slovakia": {
+      "value": 5.7,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Slovenia": {
+      "value": 3.5,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "South Africa": {
+      "value": 3.5,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "South Korea": {
+      "value": 4.7,
+      "unit": "per 1000",
+      "year": 2019
+    },
+    "Spain": {
+      "value": 1.9,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Suriname": {
+      "value": 4.2,
+      "unit": "per 1000",
+      "year": 2007
+    },
+    "Sweden": {
+      "value": 5.0,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Switzerland": {
+      "value": 4.8,
+      "unit": "per 1000",
+      "year": 2016
+    },
+    "Syria": {
+      "value": 10.6,
+      "unit": "per 1000",
+      "year": 2006
+    },
+    "Taiwan": {
+      "value": 5.7,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Tajikistan": {
+      "value": 13.5,
+      "unit": "per 1000",
+      "year": 2009
+    },
+    "Thailand": {
+      "value": 5.5,
+      "unit": "per 1000",
+      "year": 2005
+    },
+    "Tonga": {
+      "value": 7.1,
+      "unit": "per 1000",
+      "year": 2003
+    },
+    "Trinidad and Tobago": {
+      "value": 6.3,
+      "unit": "per 1000",
+      "year": 2005
+    },
+    "Turkey": {
+      "value": 6.8,
+      "unit": "per 1000",
+      "year": 2018
+    },
+    "Ukraine": {
+      "value": 4.06,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "United Arab Emirates": {
+      "value": 2.8,
+      "unit": "per 1000",
+      "year": 2005
+    },
+    "United Kingdom": {
+      "value": 4.4,
+      "unit": "per 1000",
+      "year": 2015
+    },
+    "United States": {
+      "value": 5.1,
+      "unit": "per 1000",
+      "year": 2020
+    },
+    "Uruguay": {
+      "value": 3.2,
+      "unit": "per 1000",
+      "year": 2010
+    },
+    "Uzbekistan": {
+      "value": 7.8,
+      "unit": "per 1000",
+      "year": 2006
+    },
+    "Venezuela": {
+      "value": 3.3,
+      "unit": "per 1000",
+      "year": 2006
+    },
+    "Vietnam": {
+      "value": 5.7,
+      "unit": "per 1000",
+      "year": 2015
+    }
+  }
+}

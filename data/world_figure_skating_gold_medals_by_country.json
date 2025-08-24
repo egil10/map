@@ -1,0 +1,136 @@
+{
+  "title": "World Figure Skating Championships Gold Medals by Country",
+  "description": "Total number of gold medals won in the World Figure Skating Championships by nation, cumulative",
+  "unit": "gold medals",
+  "source": "https://en.wikipedia.org/wiki/World_Figure_Skating_Championships_cumulative_medal_count",
+  "data": {
+    "United States": {
+      "value": 63,
+      "unit": "gold medals"
+    },
+    "Soviet Union": {
+      "value": 44,
+      "unit": "gold medals"
+    },
+    "Austria": {
+      "value": 36,
+      "unit": "gold medals"
+    },
+    "Canada": {
+      "value": 36,
+      "unit": "gold medals"
+    },
+    "Russia": {
+      "value": 33,
+      "unit": "gold medals"
+    },
+    "Great Britain": {
+      "value": 28,
+      "unit": "gold medals"
+    },
+    "Japan": {
+      "value": 18,
+      "unit": "gold medals"
+    },
+    "Germany": {
+      "value": 16,
+      "unit": "gold medals"
+    },
+    "France": {
+      "value": 16,
+      "unit": "gold medals"
+    },
+    "Sweden": {
+      "value": 15,
+      "unit": "gold medals"
+    },
+    "Hungary": {
+      "value": 13,
+      "unit": "gold medals"
+    },
+    "East Germany": {
+      "value": 12,
+      "unit": "gold medals"
+    },
+    "Norway": {
+      "value": 10,
+      "unit": "gold medals"
+    },
+    "Czechoslovakia": {
+      "value": 9,
+      "unit": "gold medals"
+    },
+    "China": {
+      "value": 8,
+      "unit": "gold medals"
+    },
+    "West Germany": {
+      "value": 6,
+      "unit": "gold medals"
+    },
+    "Switzerland": {
+      "value": 4,
+      "unit": "gold medals"
+    },
+    "Netherlands": {
+      "value": 4,
+      "unit": "gold medals"
+    },
+    "Finland": {
+      "value": 3,
+      "unit": "gold medals"
+    },
+    "Italy": {
+      "value": 3,
+      "unit": "gold medals"
+    },
+    "Figure Skating Federation of Russia": {
+      "value": 3,
+      "unit": "gold medals"
+    },
+    "CIS": {
+      "value": 3,
+      "unit": "gold medals"
+    },
+    "South Korea": {
+      "value": 2,
+      "unit": "gold medals"
+    },
+    "Belgium": {
+      "value": 2,
+      "unit": "gold medals"
+    },
+    "Bulgaria": {
+      "value": 2,
+      "unit": "gold medals"
+    },
+    "Spain": {
+      "value": 2,
+      "unit": "gold medals"
+    },
+    "Ukraine": {
+      "value": 1,
+      "unit": "gold medals"
+    },
+    "Czech Republic": {
+      "value": 1,
+      "unit": "gold medals"
+    },
+    "Kazakhstan": {
+      "value": 0,
+      "unit": "gold medals"
+    },
+    "Poland": {
+      "value": 0,
+      "unit": "gold medals"
+    },
+    "Israel": {
+      "value": 0,
+      "unit": "gold medals"
+    },
+    "Lithuania": {
+      "value": 0,
+      "unit": "gold medals"
+    }
+  }
+}

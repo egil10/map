@@ -1,0 +1,180 @@
+{
+  "title": "Countries with Flags Without Red",
+  "description": "List of countries whose national flags do not contain the color red, based on JetPunk quiz data",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/153615/country-flags-without-red",
+  "data": {
+    "Argentina": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Bahamas": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Barbados": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Bhutan": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Botswana": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Ivory Coast": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Cyprus": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Estonia": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Finland": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Greece": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Guatemala": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Honduras": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "India": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Israel": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Jamaica": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Kazakhstan": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Kosovo": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Marshall Islands": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Mauritania": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Micronesia": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Nauru": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Palau": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Qatar": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Saint Lucia": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Sierra Leone": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Somalia": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Sweden": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Tanzania": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Ukraine": {
+      "value": "No red",
+      "unit": "status"
+    },
+    "Uruguay": {
+      "value": "No red",
+      "unit": "status"
+    }
+  }
+}

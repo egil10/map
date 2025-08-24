@@ -1,0 +1,56 @@
+{
+  "title": "Countries with Blue and White Flags",
+  "description": "List of countries whose national flags contain only blue and white colors",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/33007/countries-with-blue-and-white-flags",
+  "data": {
+    "Finland": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Greece": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Israel": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Argentina": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Uruguay": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Honduras": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Micronesia": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Somalia": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "El Salvador": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Nicaragua": {
+      "value": "White and blue",
+      "unit": "status"
+    },
+    "Guatemala": {
+      "value": "White and blue",
+      "unit": "status"
+    }
+  }
+}

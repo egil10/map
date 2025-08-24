@@ -1,0 +1,392 @@
+{
+  "title": "Countries with Green on Their Flags",
+  "description": "List of countries whose national flags contain the color green",
+  "unit": "status",
+  "source": "https://www.jetpunk.com/user-quizzes/177789/countries-with-green-on-their-flags",
+  "data": {
+    "Afghanistan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Algeria": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Azerbaijan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Bangladesh": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Belize": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Benin": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Bulgaria": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Burkina Faso": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Republic of the Congo": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Costa Rica": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Cote d'Ivoire": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Cyprus": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Djibouti": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Dominican Republic": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Ecuador": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "El Salvador": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Equatorial Guinea": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Eritrea": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Gambia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Ghana": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Grenada": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Guatemala": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Guinea": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Guinea-Bissau": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Haiti": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Hungary": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "India": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Iraq": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Italy": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Jamaica": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Jordan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Kenya": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Kuwait": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Lebanon": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Libya": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Lithuania": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Madagascar": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Malawi": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Maldives": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Mauritania": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Mauritius": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Mexico": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Montenegro": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Morocco": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Myanmar": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Nicaragua": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Oman": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Paraguay": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Peru": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Portugal": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Sao Tome and Principe": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Senegal": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Sierra Leone": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "South Sudan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Sri Lanka": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Sudan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Suriname": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Syria": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Tajikistan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Tanzania": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Turkmenistan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "United Arab Emirates": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Uzbekistan": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Zambia": {
+      "value": "Green flag",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Green flag",
+      "unit": "status"
+    }
+  }
+}
