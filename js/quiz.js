@@ -703,6 +703,133 @@ class QuizGame {
                 console.log('💱 Added Currency Exchange Rate quiz');
             }
             
+            // New datasets - Economics & Wealth
+            const gdpPerWorkingHourQuiz = await this.convertGDPPerWorkingHourData();
+            if (gdpPerWorkingHourQuiz) {
+                this.quizData.quizzes[gdpPerWorkingHourQuiz.id] = gdpPerWorkingHourQuiz;
+                console.log('💰 Added GDP Per Working Hour quiz');
+            }
+            
+            const wealthGiniQuiz = await this.convertWealthGiniData();
+            if (wealthGiniQuiz) {
+                this.quizData.quizzes[wealthGiniQuiz.id] = wealthGiniQuiz;
+                console.log('📊 Added Wealth Gini Coefficient quiz');
+            }
+            
+            const medianWealthQuiz = await this.convertMedianWealthData();
+            if (medianWealthQuiz) {
+                this.quizData.quizzes[medianWealthQuiz.id] = medianWealthQuiz;
+                console.log('💰 Added Median Wealth quiz');
+            }
+            
+            const averageWagesQuiz = await this.convertAverageWagesData();
+            if (averageWagesQuiz) {
+                this.quizData.quizzes[averageWagesQuiz.id] = averageWagesQuiz;
+                console.log('💵 Added Average Annual Wages quiz');
+            }
+            
+            const corporateTaxQuiz = await this.convertCorporateTaxData();
+            if (corporateTaxQuiz) {
+                this.quizData.quizzes[corporateTaxQuiz.id] = corporateTaxQuiz;
+                console.log('🏢 Added Corporate Tax Rate quiz');
+            }
+            
+            // New datasets - Demographics & Social
+            const marriageRateQuiz = await this.convertMarriageRateData();
+            if (marriageRateQuiz) {
+                this.quizData.quizzes[marriageRateQuiz.id] = marriageRateQuiz;
+                console.log('💒 Added Marriage Rate quiz');
+            }
+            
+            // New datasets - Industry & Production
+            const motorVehicleProductionQuiz = await this.convertMotorVehicleProductionData();
+            if (motorVehicleProductionQuiz) {
+                this.quizData.quizzes[motorVehicleProductionQuiz.id] = motorVehicleProductionQuiz;
+                console.log('🚗 Added Motor Vehicle Production quiz');
+            }
+            
+            // New datasets - Environment
+            const forestAreaQuiz = await this.convertForestAreaData();
+            if (forestAreaQuiz) {
+                this.quizData.quizzes[forestAreaQuiz.id] = forestAreaQuiz;
+                console.log('🌲 Added Forest Area quiz');
+            }
+            
+            const forestAreaPercentageQuiz = await this.convertForestAreaPercentageData();
+            if (forestAreaPercentageQuiz) {
+                this.quizData.quizzes[forestAreaPercentageQuiz.id] = forestAreaPercentageQuiz;
+                console.log('🌲 Added Forest Area Percentage quiz');
+            }
+            
+            // New datasets - Sports
+            const olympicsHostedQuiz = await this.convertOlympicsHostedData();
+            if (olympicsHostedQuiz) {
+                this.quizData.quizzes[olympicsHostedQuiz.id] = olympicsHostedQuiz;
+                console.log('🏟️ Added Olympics Hosted quiz');
+            }
+            
+            const figureSkatingGoldQuiz = await this.convertFigureSkatingGoldData();
+            if (figureSkatingGoldQuiz) {
+                this.quizData.quizzes[figureSkatingGoldQuiz.id] = figureSkatingGoldQuiz;
+                console.log('⛸️ Added Figure Skating Gold Medals quiz');
+            }
+            
+            // New datasets - Flag Colors
+            const blueFlagQuiz = await this.convertBlueFlagData();
+            if (blueFlagQuiz) {
+                this.quizData.quizzes[blueFlagQuiz.id] = blueFlagQuiz;
+                console.log('🔵 Added Blue Flag Countries quiz');
+            }
+            
+            const redFlagQuiz = await this.convertRedFlagData();
+            if (redFlagQuiz) {
+                this.quizData.quizzes[redFlagQuiz.id] = redFlagQuiz;
+                console.log('🔴 Added Red Flag Countries quiz');
+            }
+            
+            const yellowFlagQuiz = await this.convertYellowFlagData();
+            if (yellowFlagQuiz) {
+                this.quizData.quizzes[yellowFlagQuiz.id] = yellowFlagQuiz;
+                console.log('🟡 Added Yellow Flag Countries quiz');
+            }
+            
+            const whiteFlagQuiz = await this.convertWhiteFlagData();
+            if (whiteFlagQuiz) {
+                this.quizData.quizzes[whiteFlagQuiz.id] = whiteFlagQuiz;
+                console.log('⚪ Added White Flag Countries quiz');
+            }
+            
+            const purpleFlagQuiz = await this.convertPurpleFlagData();
+            if (purpleFlagQuiz) {
+                this.quizData.quizzes[purpleFlagQuiz.id] = purpleFlagQuiz;
+                console.log('🟣 Added Purple Flag Countries quiz');
+            }
+            
+            const greenFlagQuiz = await this.convertGreenFlagData();
+            if (greenFlagQuiz) {
+                this.quizData.quizzes[greenFlagQuiz.id] = greenFlagQuiz;
+                console.log('🟢 Added Green Flag Countries quiz');
+            }
+            
+            const blueWhiteFlagQuiz = await this.convertBlueWhiteFlagData();
+            if (blueWhiteFlagQuiz) {
+                this.quizData.quizzes[blueWhiteFlagQuiz.id] = blueWhiteFlagQuiz;
+                console.log('🔵⚪ Added Blue and White Flag Countries quiz');
+            }
+            
+            const noRedFlagQuiz = await this.convertNoRedFlagData();
+            if (noRedFlagQuiz) {
+                this.quizData.quizzes[noRedFlagQuiz.id] = noRedFlagQuiz;
+                console.log('🚫🔴 Added Flags Without Red quiz');
+            }
+            
+            // New datasets - History
+            const africanNeverColonizedQuiz = await this.convertAfricanNeverColonizedData();
+            if (africanNeverColonizedQuiz) {
+                this.quizData.quizzes[africanNeverColonizedQuiz.id] = africanNeverColonizedQuiz;
+                console.log('🌍 Added African Countries Never Colonized quiz');
+            }
+            
         } catch (error) {
             console.error('❌ Error loading converted data:', error);
         }
@@ -6606,6 +6733,972 @@ class QuizGame {
         i.setAttribute('aria-hidden', 'true');
         btn.appendChild(i);
         if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
+    }
+    
+    // New conversion methods for additional datasets
+    
+    async convertGDPPerWorkingHourData() {
+        try {
+            const response = await fetch('data/gdp_per_working_hour_2023.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.gdp_per_working_hour_usd,
+                        unit: 'USD/hour'
+                    };
+                    values.push(item.gdp_per_working_hour_usd);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#dcfce7', '#15803d');
+            });
+            
+            return {
+                id: 'gdp_per_working_hour_2023',
+                title: 'GDP Per Working Hour 2023',
+                description: 'Gross Domestic Product per working hour',
+                category: 'economics',
+                tags: ['gdp per hour', 'productivity', 'economic efficiency', 'work output'],
+                answer_variations: [
+                    'gdp per working hour',
+                    'productivity per hour',
+                    'economic output per hour',
+                    'gdp per hour'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting GDP per working hour data:', error);
+            return null;
+        }
+    }
+    
+    async convertWealthGiniData() {
+        try {
+            const response = await fetch('data/wealth_gini_percent_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.wealth_gini_percent,
+                        unit: '%'
+                    };
+                    values.push(item.wealth_gini_percent);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fef3c7', '#d97706');
+            });
+            
+            return {
+                id: 'wealth_gini_percent_by_country',
+                title: 'Wealth Gini Coefficient',
+                description: 'Wealth inequality measured by Gini coefficient',
+                category: 'economics',
+                tags: ['wealth inequality', 'gini coefficient', 'wealth distribution', 'inequality'],
+                answer_variations: [
+                    'wealth gini coefficient',
+                    'wealth inequality',
+                    'gini coefficient',
+                    'wealth distribution'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting wealth gini data:', error);
+            return null;
+        }
+    }
+    
+    async convertMedianWealthData() {
+        try {
+            const response = await fetch('data/median_wealth_per_adult_2023.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.median_wealth_per_adult_usd,
+                        unit: 'USD'
+                    };
+                    values.push(item.median_wealth_per_adult_usd);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#dcfce7', '#15803d');
+            });
+            
+            return {
+                id: 'median_wealth_per_adult_2023',
+                title: 'Median Wealth per Adult 2023',
+                description: 'Median wealth per adult in USD',
+                category: 'economics',
+                tags: ['median wealth', 'wealth per adult', 'middle class wealth', 'wealth'],
+                answer_variations: [
+                    'median wealth per adult',
+                    'median wealth',
+                    'wealth per adult',
+                    'middle class wealth'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting median wealth data:', error);
+            return null;
+        }
+    }
+    
+    async convertAverageWagesData() {
+        try {
+            const response = await fetch('data/average_annual_wages_usd_ppp_2023.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.average_annual_wages_usd_ppp,
+                        unit: 'USD PPP'
+                    };
+                    values.push(item.average_annual_wages_usd_ppp);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#dcfce7', '#15803d');
+            });
+            
+            return {
+                id: 'average_annual_wages_usd_ppp_2023',
+                title: 'Average Annual Wages 2023',
+                description: 'Average annual wages in USD PPP',
+                category: 'economics',
+                tags: ['average wages', 'annual wages', 'income', 'salary', 'wages'],
+                answer_variations: [
+                    'average annual wages',
+                    'average wages',
+                    'annual wages',
+                    'income'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#dcfce7',
+                    maxColor: '#15803d',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting average wages data:', error);
+            return null;
+        }
+    }
+    
+    async convertCorporateTaxData() {
+        try {
+            const response = await fetch('data/corporate_tax_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.corporate_tax_rate_percent,
+                        unit: '%'
+                    };
+                    values.push(item.corporate_tax_rate_percent);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fef3c7', '#d97706');
+            });
+            
+            return {
+                id: 'corporate_tax_by_country',
+                title: 'Corporate Tax Rate',
+                description: 'Corporate tax rate by country',
+                category: 'economics',
+                tags: ['corporate tax', 'tax rate', 'business tax', 'corporate taxation'],
+                answer_variations: [
+                    'corporate tax rate',
+                    'corporate tax',
+                    'business tax',
+                    'tax rate'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting corporate tax data:', error);
+            return null;
+        }
+    }
+    
+    async convertMarriageRateData() {
+        try {
+            const response = await fetch('data/marriage_rate_per_1000_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.marriage_rate_per_1000,
+                        unit: 'per 1000'
+                    };
+                    values.push(item.marriage_rate_per_1000);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fdf4ff', '#9333ea');
+            });
+            
+            return {
+                id: 'marriage_rate_per_1000_by_country',
+                title: 'Marriage Rate',
+                description: 'Marriage rate per 1000 people',
+                category: 'demographics',
+                tags: ['marriage rate', 'marriages', 'demographics', 'social'],
+                answer_variations: [
+                    'marriage rate',
+                    'marriages per 1000',
+                    'marriage rate per 1000',
+                    'marriages'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fdf4ff',
+                    maxColor: '#9333ea',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting marriage rate data:', error);
+            return null;
+        }
+    }
+    
+    async convertMotorVehicleProductionData() {
+        try {
+            const response = await fetch('data/motor_vehicle_production_2024.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.motor_vehicle_production,
+                        unit: 'vehicles'
+                    };
+                    values.push(item.motor_vehicle_production);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f2f1', '#00695c');
+            });
+            
+            return {
+                id: 'motor_vehicle_production_2024',
+                title: 'Motor Vehicle Production 2024',
+                description: 'Motor vehicle production by country',
+                category: 'industry',
+                tags: ['motor vehicle production', 'car production', 'vehicle manufacturing', 'automotive'],
+                answer_variations: [
+                    'motor vehicle production',
+                    'car production',
+                    'vehicle production',
+                    'automotive production'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f2f1',
+                    maxColor: '#00695c',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting motor vehicle production data:', error);
+            return null;
+        }
+    }
+    
+    async convertForestAreaData() {
+        try {
+            const response = await fetch('data/forest_area_km2_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.forest_area_km2,
+                        unit: 'km²'
+                    };
+                    values.push(item.forest_area_km2);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'forest_area_km2_by_country',
+                title: 'Forest Area',
+                description: 'Total forest area in square kilometers',
+                category: 'environment',
+                tags: ['forest area', 'forests', 'environment', 'nature', 'trees'],
+                answer_variations: [
+                    'forest area',
+                    'forests',
+                    'forest coverage',
+                    'trees'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting forest area data:', error);
+            return null;
+        }
+    }
+    
+    async convertForestAreaPercentageData() {
+        try {
+            const response = await fetch('data/forest_area_percentage_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.forest_area_percentage,
+                        unit: '%'
+                    };
+                    values.push(item.forest_area_percentage);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'forest_area_percentage_by_country',
+                title: 'Forest Area Percentage',
+                description: 'Percentage of land area covered by forests',
+                category: 'environment',
+                tags: ['forest percentage', 'forest coverage', 'environment', 'nature'],
+                answer_variations: [
+                    'forest area percentage',
+                    'forest percentage',
+                    'forest coverage',
+                    'percentage of forests'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting forest area percentage data:', error);
+            return null;
+        }
+    }
+    
+    async convertOlympicsHostedData() {
+        try {
+            const response = await fetch('data/olympics_hosted_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.olympics_hosted,
+                        unit: 'times'
+                    };
+                    values.push(item.olympics_hosted);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#e65100');
+            });
+            
+            return {
+                id: 'olympics_hosted_by_country',
+                title: 'Olympics Hosted',
+                description: 'Number of times a country has hosted the Olympics',
+                category: 'sports',
+                tags: ['olympics hosted', 'olympic games', 'sports', 'hosting'],
+                answer_variations: [
+                    'olympics hosted',
+                    'olympic games hosted',
+                    'times hosted olympics',
+                    'olympic hosting'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting olympics hosted data:', error);
+            return null;
+        }
+    }
+    
+    async convertFigureSkatingGoldData() {
+        try {
+            const response = await fetch('data/world_figure_skating_gold_medals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.figure_skating_gold_medals,
+                        unit: 'medals'
+                    };
+                    values.push(item.figure_skating_gold_medals);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e3f2fd', '#1565c0');
+            });
+            
+            return {
+                id: 'world_figure_skating_gold_medals_by_country',
+                title: 'Figure Skating Gold Medals',
+                description: 'Number of world figure skating gold medals',
+                category: 'sports',
+                tags: ['figure skating', 'gold medals', 'sports', 'skating'],
+                answer_variations: [
+                    'figure skating gold medals',
+                    'figure skating medals',
+                    'skating gold medals',
+                    'figure skating'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e3f2fd',
+                    maxColor: '#1565c0',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting figure skating gold data:', error);
+            return null;
+        }
+    }
+    
+    // Flag color conversion methods
+    async convertBlueFlagData() {
+        try {
+            const response = await fetch('data/blue_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Blue flag',
+                    unit: 'flag color',
+                    color: '#3b82f6'
+                };
+            });
+            
+            return {
+                id: 'blue_flag_countries',
+                title: 'Countries with Blue Flags',
+                description: 'Countries whose flags contain blue',
+                category: 'culture',
+                tags: ['blue flags', 'flag colors', 'national flags', 'blue'],
+                answer_variations: [
+                    'blue flags',
+                    'flags with blue',
+                    'blue flag countries',
+                    'blue flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#3b82f6'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting blue flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertRedFlagData() {
+        try {
+            const response = await fetch('data/red_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Red flag',
+                    unit: 'flag color',
+                    color: '#ef4444'
+                };
+            });
+            
+            return {
+                id: 'red_flag_countries',
+                title: 'Countries with Red Flags',
+                description: 'Countries whose flags contain red',
+                category: 'culture',
+                tags: ['red flags', 'flag colors', 'national flags', 'red'],
+                answer_variations: [
+                    'red flags',
+                    'flags with red',
+                    'red flag countries',
+                    'red flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#ef4444'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting red flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertYellowFlagData() {
+        try {
+            const response = await fetch('data/yellow_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Yellow flag',
+                    unit: 'flag color',
+                    color: '#eab308'
+                };
+            });
+            
+            return {
+                id: 'yellow_flag_countries',
+                title: 'Countries with Yellow Flags',
+                description: 'Countries whose flags contain yellow',
+                category: 'culture',
+                tags: ['yellow flags', 'flag colors', 'national flags', 'yellow'],
+                answer_variations: [
+                    'yellow flags',
+                    'flags with yellow',
+                    'yellow flag countries',
+                    'yellow flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#eab308'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting yellow flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertWhiteFlagData() {
+        try {
+            const response = await fetch('data/white_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'White flag',
+                    unit: 'flag color',
+                    color: '#f8fafc'
+                };
+            });
+            
+            return {
+                id: 'white_flag_countries',
+                title: 'Countries with White Flags',
+                description: 'Countries whose flags contain white',
+                category: 'culture',
+                tags: ['white flags', 'flag colors', 'national flags', 'white'],
+                answer_variations: [
+                    'white flags',
+                    'flags with white',
+                    'white flag countries',
+                    'white flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#f8fafc'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting white flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertPurpleFlagData() {
+        try {
+            const response = await fetch('data/purple_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Purple flag',
+                    unit: 'flag color',
+                    color: '#a855f7'
+                };
+            });
+            
+            return {
+                id: 'purple_flag_countries',
+                title: 'Countries with Purple Flags',
+                description: 'Countries whose flags contain purple',
+                category: 'culture',
+                tags: ['purple flags', 'flag colors', 'national flags', 'purple'],
+                answer_variations: [
+                    'purple flags',
+                    'flags with purple',
+                    'purple flag countries',
+                    'purple flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#a855f7'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting purple flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertGreenFlagData() {
+        try {
+            const response = await fetch('data/green_flag_countries.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Green flag',
+                    unit: 'flag color',
+                    color: '#22c55e'
+                };
+            });
+            
+            return {
+                id: 'green_flag_countries',
+                title: 'Countries with Green Flags',
+                description: 'Countries whose flags contain green',
+                category: 'culture',
+                tags: ['green flags', 'flag colors', 'national flags', 'green'],
+                answer_variations: [
+                    'green flags',
+                    'flags with green',
+                    'green flag countries',
+                    'green flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#22c55e'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting green flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertBlueWhiteFlagData() {
+        try {
+            const response = await fetch('data/blue_and_white_flags.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Blue and white flag',
+                    unit: 'flag colors',
+                    color: '#3b82f6'
+                };
+            });
+            
+            return {
+                id: 'blue_and_white_flags',
+                title: 'Countries with Blue and White Flags',
+                description: 'Countries whose flags contain both blue and white',
+                category: 'culture',
+                tags: ['blue and white flags', 'flag colors', 'national flags'],
+                answer_variations: [
+                    'blue and white flags',
+                    'flags with blue and white',
+                    'blue and white flag countries',
+                    'blue and white flag'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#3b82f6'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting blue and white flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertNoRedFlagData() {
+        try {
+            const response = await fetch('data/flags_without_red.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'No red flag',
+                    unit: 'flag colors',
+                    color: '#6b7280'
+                };
+            });
+            
+            return {
+                id: 'flags_without_red',
+                title: 'Flags Without Red',
+                description: 'Countries whose flags do not contain red',
+                category: 'culture',
+                tags: ['flags without red', 'flag colors', 'national flags'],
+                answer_variations: [
+                    'flags without red',
+                    'no red flags',
+                    'flags without red color',
+                    'no red flag countries'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#6b7280'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting no red flag data:', error);
+            return null;
+        }
+    }
+    
+    async convertAfricanNeverColonizedData() {
+        try {
+            const response = await fetch('data/african_countries_never_colonized.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                countries[mappedCountryName] = {
+                    value: 'Never colonized',
+                    unit: 'colonial status',
+                    color: '#dc2626'
+                };
+            });
+            
+            return {
+                id: 'african_countries_never_colonized',
+                title: 'African Countries Never Colonized',
+                description: 'African countries that were never colonized',
+                category: 'history',
+                tags: ['never colonized', 'african history', 'colonialism', 'independence'],
+                answer_variations: [
+                    'african countries never colonized',
+                    'never colonized',
+                    'african independence',
+                    'never colonized countries'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#dc2626'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting african never colonized data:', error);
+            return null;
+        }
     }
 }
 
