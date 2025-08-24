@@ -1906,7 +1906,7 @@ class QuizGame {
             // Create color scheme for monarchy types with contrasting colors
             const monarchyTypeList = Object.keys(monarchyTypes);
             const colorScheme = this.getColorSchemeForCategory('politics', 'categorical');
-            const colors = colorScheme.colors;
+            const colors = colorScheme?.colors || ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'];
             
             monarchyTypeList.forEach((type, index) => {
                 const color = colors[index % colors.length];
@@ -1964,7 +1964,7 @@ class QuizGame {
             // Create color scheme for party systems with contrasting colors
             const partySystemList = Object.keys(partySystems);
             const colorScheme = this.getColorSchemeForCategory('politics', 'categorical');
-            const colors = colorScheme.colors;
+            const colors = colorScheme?.colors || ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'];
             
             partySystemList.forEach((system, index) => {
                 const color = colors[index % colors.length];
@@ -2460,13 +2460,13 @@ class QuizGame {
             const countries = {};
             const values = [];
             
-            data.data.forEach(item => {
-                const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+            Object.entries(data.data).forEach(([country, countryData]) => {
+                const mappedCountryName = this.countryMapper.mapCountryName(country);
                 if (mappedCountryName) {
-                    const value = item.usd_exchange_rate;
+                    const value = countryData.value;
                     countries[mappedCountryName] = {
                         value: value,
-                        unit: 'USD rate'
+                        unit: countryData.unit
                     };
                     values.push(value);
                 }
@@ -2730,7 +2730,7 @@ class QuizGame {
             // Create color scheme for currency types with contrasting colors
             const currencyTypeList = Object.keys(currencyTypes);
             const colorScheme = this.getColorSchemeForCategory('economics', 'categorical');
-            const colors = colorScheme.colors;
+            const colors = colorScheme?.colors || ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'];
             
             currencyTypeList.forEach((type, index) => {
                 const color = colors[index % colors.length];
