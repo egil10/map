@@ -588,7 +588,16 @@ class WorldMap {
         const roundedMinValue = this.roundValueForLegend(minValue, unit);
         const roundedMaxValue = this.roundValueForLegend(maxValue, unit);
         
-        // Create legend HTML
+        // Get top 3 and bottom 3 countries for legend
+        const countriesWithValues = Object.entries(quiz.countries)
+            .filter(([country, data]) => typeof data.value === 'number' && !isNaN(data.value))
+            .map(([country, data]) => ({ country, value: data.value }))
+            .sort((a, b) => b.value - a.value);
+        
+        const top3 = countriesWithValues.slice(0, 3);
+        const bottom3 = countriesWithValues.slice(-3).reverse();
+        
+        // Create legend HTML with top/bottom section
         const legendHtml = `
             <div class="legend">
                 <div class="legend-gradient">
@@ -598,6 +607,32 @@ class WorldMap {
                         <span class="max-label">${this.formatValue(roundedMaxValue, unit)}</span>
                     </div>
                 </div>
+                ${top3.length > 0 ? `
+                <div class="legend-extremes">
+                    <div class="extremes-section">
+                        <div class="extremes-title">Top 3</div>
+                        <div class="extremes-items">
+                            ${top3.map(item => `
+                                <div class="extreme-item">
+                                    <span class="extreme-country">${item.country}</span>
+                                    <span class="extreme-value">(${item.value.toLocaleString()})</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div class="extremes-section">
+                        <div class="extremes-title">Bottom 3</div>
+                        <div class="extremes-items">
+                            ${bottom3.map(item => `
+                                <div class="extreme-item">
+                                    <span class="extreme-country">${item.country}</span>
+                                    <span class="extreme-value">(${item.value.toLocaleString()})</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+                ` : ''}
             </div>
         `;
         

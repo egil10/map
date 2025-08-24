@@ -3836,8 +3836,7 @@ class QuizGame {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
-        // Update legend with current quiz data
-        this.updateLegend();
+
         
         // Show the answer title in learn mode
         this.showAnswerTitle();
@@ -4024,13 +4023,10 @@ class QuizGame {
             this.currentDatasetIndex = index;
             this.currentQuiz = this.datasetList[index];
             
-            // Apply quiz to map
-            if (window.mapInstance && this.currentQuiz) {
-                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
-            }
-            
-            // Update legend with current quiz data
-            this.updateLegend();
+                    // Apply quiz to map
+        if (window.mapInstance && this.currentQuiz) {
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+        }
             
             // Show answer title in learn mode
             if (this.isLearnMode) {
@@ -4130,9 +4126,6 @@ class QuizGame {
         
         if (this.currentQuiz) {
             console.log('Started new quiz:', this.currentQuiz.title);
-            
-            // Update legend with current quiz data
-            this.updateLegend();
             
             // Mark quiz as ready on first successful start
             if (!this.isReady) {
@@ -4724,9 +4717,6 @@ class QuizGame {
         const feedback = document.getElementById('guessFeedback');
         feedback.textContent = '';
         feedback.className = 'feedback';
-        
-        // Also hide legend when clearing feedback
-        this.hideLegend();
     }
     
     updateScoreDisplay() {
@@ -7741,89 +7731,7 @@ class QuizGame {
         }
     }
     
-    // Legend functionality
-    updateLegend() {
-        if (!this.currentQuiz || !this.currentQuiz.countries) {
-            this.hideLegend();
-            return;
-        }
-        
-        // Get countries with numeric values for ranking
-        const countriesWithValues = [];
-        for (const [country, data] of Object.entries(this.currentQuiz.countries)) {
-            if (typeof data.value === 'number' && !isNaN(data.value)) {
-                countriesWithValues.push({
-                    country: country,
-                    value: data.value,
-                    unit: data.unit || '',
-                    color: data.color || '#cccccc'
-                });
-            }
-        }
-        
-        // Skip legend for non-numeric data (like categorical data)
-        if (countriesWithValues.length === 0) {
-            this.hideLegend();
-            return;
-        }
-        
-        // Sort by value (descending for top, ascending for bottom)
-        countriesWithValues.sort((a, b) => b.value - a.value);
-        
-        const top3 = countriesWithValues.slice(0, 3);
-        const bottom3 = countriesWithValues.slice(-3).reverse();
-        
-        this.displayLegend(top3, bottom3);
-    }
-    
-    displayLegend(top3, bottom3) {
-        const legendElement = document.getElementById('quizLegend');
-        const topItemsElement = document.getElementById('topLegendItems');
-        const bottomItemsElement = document.getElementById('bottomLegendItems');
-        
-        if (!legendElement || !topItemsElement || !bottomItemsElement) {
-            return;
-        }
-        
-        // Clear existing items
-        topItemsElement.innerHTML = '';
-        bottomItemsElement.innerHTML = '';
-        
-        // Add top 3 items
-        top3.forEach(item => {
-            const itemElement = this.createLegendItem(item);
-            topItemsElement.appendChild(itemElement);
-        });
-        
-        // Add bottom 3 items
-        bottom3.forEach(item => {
-            const itemElement = this.createLegendItem(item);
-            bottomItemsElement.appendChild(itemElement);
-        });
-        
-        // Show legend
-        legendElement.style.display = 'block';
-    }
-    
-    createLegendItem(item) {
-        const itemElement = document.createElement('div');
-        itemElement.className = 'legend-item';
-        
-        // Just show country name and raw value in parentheses, no units or formatting
-        itemElement.innerHTML = `
-            <span class="legend-country">${item.country}</span>
-            <span class="legend-value">(${item.value.toLocaleString()})</span>
-        `;
-        
-        return itemElement;
-    }
-    
-    hideLegend() {
-        const legendElement = document.getElementById('quizLegend');
-        if (legendElement) {
-            legendElement.style.display = 'none';
-        }
-    }
+
 }
 
 // Initialize quiz game when script loads

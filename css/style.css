@@ -564,87 +564,7 @@ body {
     color: #ffc107;
 }
 
-/* Quiz Legend */
-.quiz-legend {
-    position: absolute;
-    top: -80px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(8px);
-    border: 1px solid #e9ecef;
-    border-radius: 6px;
-    padding: 8px 12px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-    z-index: 1001;
-    min-width: 200px;
-    max-width: 280px;
-}
 
-.legend-content {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-.legend-section {
-    flex: 1;
-    min-width: 0;
-}
-
-.legend-title {
-    font-size: 10px;
-    font-weight: 600;
-    color: #6c757d;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    margin-bottom: 4px;
-    text-align: center;
-}
-
-.legend-items {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.legend-item {
-    font-size: 10px;
-    line-height: 1.2;
-    color: #495057;
-    text-align: center;
-}
-
-.legend-country {
-    font-weight: 500;
-}
-
-.legend-value {
-    font-weight: 400;
-    color: #6c757d;
-}
-
-/* Mobile responsive legend */
-@media (max-width: 768px) {
-    .quiz-legend {
-        top: -90px;
-        min-width: 180px;
-        max-width: 240px;
-        padding: 6px 10px;
-    }
-    
-    .legend-content {
-        gap: 10px;
-    }
-    
-    .legend-item {
-        font-size: 9px;
-    }
-    
-    .legend-title {
-        font-size: 9px;
-    }
-}
 
 /* Leaflet Map Styles */
 .leaflet-container {
@@ -830,12 +750,59 @@ body {
     cursor: help;
 }
 
-.category-count {
-    font-size: 11px;
-    color: #6c757d;
-    text-align: center;
-    font-weight: 500;
-}
+ .category-count {
+     font-size: 11px;
+     color: #6c757d;
+     text-align: center;
+     font-weight: 500;
+ }
+ 
+ /* Legend Extremes (Top 3 / Bottom 3) */
+ .legend-extremes {
+     margin-top: 12px;
+     padding-top: 12px;
+     border-top: 1px solid #e9ecef;
+     display: flex;
+     gap: 16px;
+     align-items: flex-start;
+ }
+ 
+ .extremes-section {
+     flex: 1;
+     min-width: 0;
+ }
+ 
+ .extremes-title {
+     font-size: 10px;
+     font-weight: 600;
+     color: #6c757d;
+     text-transform: uppercase;
+     letter-spacing: 0.3px;
+     margin-bottom: 4px;
+     text-align: center;
+ }
+ 
+ .extremes-items {
+     display: flex;
+     flex-direction: column;
+     gap: 2px;
+ }
+ 
+ .extreme-item {
+     font-size: 10px;
+     line-height: 1.2;
+     color: #495057;
+     text-align: center;
+ }
+ 
+ .extreme-country {
+     font-weight: 500;
+ }
+ 
+ .extreme-value {
+     font-weight: 400;
+     color: #6c757d;
+ }
 
 /* Leaflet Attribution Styling */
 .leaflet-control-attribution {
@@ -1018,10 +985,25 @@ body {
         margin: 8px;
     }
     
-    .legend h4 {
-        font-size: 13px;
-        margin-bottom: 8px;
-    }
+         .legend h4 {
+         font-size: 13px;
+         margin-bottom: 8px;
+     }
+     
+     /* Legend extremes - Mobile */
+     .legend-extremes {
+         margin-top: 8px;
+         padding-top: 8px;
+         gap: 12px;
+     }
+     
+     .extremes-title {
+         font-size: 9px;
+     }
+     
+     .extreme-item {
+         font-size: 9px;
+     }
     
     .gradient-bar {
         height: 14px;
