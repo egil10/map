@@ -1,0 +1,620 @@
+{
+  "title": "FIDE Top Federations Open August 2025",
+  "description": "Average FIDE rating of top 10 chess players per country for August 2025",
+  "unit": "Elo rating",
+  "source": "https://ratings.fide.com/top_federations.phtml",
+  "data": {
+    "United States": {
+      "value": 2728,
+      "unit": "Elo rating"
+    },
+    "India": {
+      "value": 2725,
+      "unit": "Elo rating"
+    },
+    "China": {
+      "value": 2670,
+      "unit": "Elo rating"
+    },
+    "Russia": {
+      "value": 2651,
+      "unit": "Elo rating"
+    },
+    "Germany": {
+      "value": 2631,
+      "unit": "Elo rating"
+    },
+    "Ukraine": {
+      "value": 2630,
+      "unit": "Elo rating"
+    },
+    "France": {
+      "value": 2629,
+      "unit": "Elo rating"
+    },
+    "Azerbaijan": {
+      "value": 2623,
+      "unit": "Elo rating"
+    },
+    "Hungary": {
+      "value": 2622,
+      "unit": "Elo rating"
+    },
+    "Netherlands": {
+      "value": 2615,
+      "unit": "Elo rating"
+    },
+    "Spain": {
+      "value": 2614,
+      "unit": "Elo rating"
+    },
+    "Armenia": {
+      "value": 2603,
+      "unit": "Elo rating"
+    },
+    "Uzbekistan": {
+      "value": 2602,
+      "unit": "Elo rating"
+    },
+    "Norway": {
+      "value": 2593,
+      "unit": "Elo rating"
+    },
+    "United Kingdom": {
+      "value": 2592,
+      "unit": "Elo rating"
+    },
+    "Poland": {
+      "value": 2590,
+      "unit": "Elo rating"
+    },
+    "Israel": {
+      "value": 2586,
+      "unit": "Elo rating"
+    },
+    "Serbia": {
+      "value": 2569,
+      "unit": "Elo rating"
+    },
+    "Romania": {
+      "value": 2563,
+      "unit": "Elo rating"
+    },
+    "Iran": {
+      "value": 2559,
+      "unit": "Elo rating"
+    },
+    "Greece": {
+      "value": 2558,
+      "unit": "Elo rating"
+    },
+    "Slovenia": {
+      "value": 2553,
+      "unit": "Elo rating"
+    },
+    "Turkey": {
+      "value": 2551,
+      "unit": "Elo rating"
+    },
+    "Czech Republic": {
+      "value": 2550,
+      "unit": "Elo rating"
+    },
+    "Bulgaria": {
+      "value": 2543,
+      "unit": "Elo rating"
+    },
+    "Croatia": {
+      "value": 2543,
+      "unit": "Elo rating"
+    },
+    "Denmark": {
+      "value": 2537,
+      "unit": "Elo rating"
+    },
+    "Argentina": {
+      "value": 2522,
+      "unit": "Elo rating"
+    },
+    "Austria": {
+      "value": 2522,
+      "unit": "Elo rating"
+    },
+    "Georgia": {
+      "value": 2521,
+      "unit": "Elo rating"
+    },
+    "Brazil": {
+      "value": 2518,
+      "unit": "Elo rating"
+    },
+    "Sweden": {
+      "value": 2516,
+      "unit": "Elo rating"
+    },
+    "Italy": {
+      "value": 2514,
+      "unit": "Elo rating"
+    },
+    "Switzerland": {
+      "value": 2510,
+      "unit": "Elo rating"
+    },
+    "Kazakhstan": {
+      "value": 2509,
+      "unit": "Elo rating"
+    },
+    "Cuba": {
+      "value": 2506,
+      "unit": "Elo rating"
+    },
+    "Vietnam": {
+      "value": 2495,
+      "unit": "Elo rating"
+    },
+    "Slovakia": {
+      "value": 2482,
+      "unit": "Elo rating"
+    },
+    "Moldova": {
+      "value": 2479,
+      "unit": "Elo rating"
+    },
+    "Canada": {
+      "value": 2478,
+      "unit": "Elo rating"
+    },
+    "Lithuania": {
+      "value": 2471,
+      "unit": "Elo rating"
+    },
+    "Belgium": {
+      "value": 2462,
+      "unit": "Elo rating"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 2462,
+      "unit": "Elo rating"
+    },
+    "Australia": {
+      "value": 2460,
+      "unit": "Elo rating"
+    },
+    "Iceland": {
+      "value": 2458,
+      "unit": "Elo rating"
+    },
+    "Peru": {
+      "value": 2458,
+      "unit": "Elo rating"
+    },
+    "Montenegro": {
+      "value": 2457,
+      "unit": "Elo rating"
+    },
+    "Colombia": {
+      "value": 2454,
+      "unit": "Elo rating"
+    },
+    "Mexico": {
+      "value": 2451,
+      "unit": "Elo rating"
+    },
+    "Mongolia": {
+      "value": 2441,
+      "unit": "Elo rating"
+    },
+    "Egypt": {
+      "value": 2438,
+      "unit": "Elo rating"
+    },
+    "Finland": {
+      "value": 2434,
+      "unit": "Elo rating"
+    },
+    "Indonesia": {
+      "value": 2426,
+      "unit": "Elo rating"
+    },
+    "Latvia": {
+      "value": 2426,
+      "unit": "Elo rating"
+    },
+    "Philippines": {
+      "value": 2426,
+      "unit": "Elo rating"
+    },
+    "North Macedonia": {
+      "value": 2424,
+      "unit": "Elo rating"
+    },
+    "Belarus": {
+      "value": 2417,
+      "unit": "Elo rating"
+    },
+    "Chile": {
+      "value": 2412,
+      "unit": "Elo rating"
+    },
+    "Portugal": {
+      "value": 2412,
+      "unit": "Elo rating"
+    },
+    "Estonia": {
+      "value": 2386,
+      "unit": "Elo rating"
+    },
+    "Malaysia": {
+      "value": 2371,
+      "unit": "Elo rating"
+    },
+    "Venezuela": {
+      "value": 2370,
+      "unit": "Elo rating"
+    },
+    "Ireland": {
+      "value": 2368,
+      "unit": "Elo rating"
+    },
+    "Paraguay": {
+      "value": 2365,
+      "unit": "Elo rating"
+    },
+    "Singapore": {
+      "value": 2354,
+      "unit": "Elo rating"
+    },
+    "Uruguay": {
+      "value": 2325,
+      "unit": "Elo rating"
+    },
+    "Turkmenistan": {
+      "value": 2319,
+      "unit": "Elo rating"
+    },
+    "South Africa": {
+      "value": 2318,
+      "unit": "Elo rating"
+    },
+    "Kyrgyzstan": {
+      "value": 2314,
+      "unit": "Elo rating"
+    },
+    "Morocco": {
+      "value": 2313,
+      "unit": "Elo rating"
+    },
+    "Bangladesh": {
+      "value": 2300,
+      "unit": "Elo rating"
+    },
+    "Algeria": {
+      "value": 2296,
+      "unit": "Elo rating"
+    },
+    "Albania": {
+      "value": 2289,
+      "unit": "Elo rating"
+    },
+    "New Zealand": {
+      "value": 2283,
+      "unit": "Elo rating"
+    },
+    "Myanmar": {
+      "value": 2276,
+      "unit": "Elo rating"
+    },
+    "Zambia": {
+      "value": 2269,
+      "unit": "Elo rating"
+    },
+    "Japan": {
+      "value": 2268,
+      "unit": "Elo rating"
+    },
+    "Costa Rica": {
+      "value": 2266,
+      "unit": "Elo rating"
+    },
+    "Ecuador": {
+      "value": 2266,
+      "unit": "Elo rating"
+    },
+    "Kosovo": {
+      "value": 2264,
+      "unit": "Elo rating"
+    },
+    "Tunisia": {
+      "value": 2260,
+      "unit": "Elo rating"
+    },
+    "Bolivia": {
+      "value": 2259,
+      "unit": "Elo rating"
+    },
+    "Nigeria": {
+      "value": 2242,
+      "unit": "Elo rating"
+    },
+    "Dominican Republic": {
+      "value": 2239,
+      "unit": "Elo rating"
+    },
+    "United Arab Emirates": {
+      "value": 2234,
+      "unit": "Elo rating"
+    },
+    "Luxembourg": {
+      "value": 2225,
+      "unit": "Elo rating"
+    },
+    "Syria": {
+      "value": 2219,
+      "unit": "Elo rating"
+    },
+    "Tajikistan": {
+      "value": 2219,
+      "unit": "Elo rating"
+    },
+    "Iraq": {
+      "value": 2216,
+      "unit": "Elo rating"
+    },
+    "Panama": {
+      "value": 2211,
+      "unit": "Elo rating"
+    },
+    "Lebanon": {
+      "value": 2210,
+      "unit": "Elo rating"
+    },
+    "El Salvador": {
+      "value": 2195,
+      "unit": "Elo rating"
+    },
+    "Sri Lanka": {
+      "value": 2193,
+      "unit": "Elo rating"
+    },
+    "Jordan": {
+      "value": 2186,
+      "unit": "Elo rating"
+    },
+    "Angola": {
+      "value": 2173,
+      "unit": "Elo rating"
+    },
+    "Uganda": {
+      "value": 2173,
+      "unit": "Elo rating"
+    },
+    "South Korea": {
+      "value": 2172,
+      "unit": "Elo rating"
+    },
+    "Yemen": {
+      "value": 2168,
+      "unit": "Elo rating"
+    },
+    "Zimbabwe": {
+      "value": 2157,
+      "unit": "Elo rating"
+    },
+    "Madagascar": {
+      "value": 2149,
+      "unit": "Elo rating"
+    },
+    "Nicaragua": {
+      "value": 2149,
+      "unit": "Elo rating"
+    },
+    "Malta": {
+      "value": 2131,
+      "unit": "Elo rating"
+    },
+    "Guatemala": {
+      "value": 2126,
+      "unit": "Elo rating"
+    },
+    "Libya": {
+      "value": 2126,
+      "unit": "Elo rating"
+    },
+    "Taiwan": {
+      "value": 2114,
+      "unit": "Elo rating"
+    },
+    "Thailand": {
+      "value": 2113,
+      "unit": "Elo rating"
+    },
+    "Honduras": {
+      "value": 2092,
+      "unit": "Elo rating"
+    },
+    "Nepal": {
+      "value": 2089,
+      "unit": "Elo rating"
+    },
+    "Sudan": {
+      "value": 2079,
+      "unit": "Elo rating"
+    },
+    "Cyprus": {
+      "value": 2059,
+      "unit": "Elo rating"
+    },
+    "Pakistan": {
+      "value": 2056,
+      "unit": "Elo rating"
+    },
+    "South Sudan": {
+      "value": 2041,
+      "unit": "Elo rating"
+    },
+    "Botswana": {
+      "value": 2035,
+      "unit": "Elo rating"
+    },
+    "Ethiopia": {
+      "value": 2034,
+      "unit": "Elo rating"
+    },
+    "Malawi": {
+      "value": 2033,
+      "unit": "Elo rating"
+    },
+    "Kenya": {
+      "value": 2016,
+      "unit": "Elo rating"
+    },
+    "Mozambique": {
+      "value": 2013,
+      "unit": "Elo rating"
+    },
+    "Afghanistan": {
+      "value": 2010,
+      "unit": "Elo rating"
+    },
+    "Namibia": {
+      "value": 1972,
+      "unit": "Elo rating"
+    },
+    "Ivory Coast": {
+      "value": 1956,
+      "unit": "Elo rating"
+    },
+    "Saudi Arabia": {
+      "value": 1955,
+      "unit": "Elo rating"
+    },
+    "Mauritius": {
+      "value": 1948,
+      "unit": "Elo rating"
+    },
+    "Oman": {
+      "value": 1933,
+      "unit": "Elo rating"
+    },
+    "Cape Verde": {
+      "value": 1930,
+      "unit": "Elo rating"
+    },
+    "Liberia": {
+      "value": 1930,
+      "unit": "Elo rating"
+    },
+    "Somalia": {
+      "value": 1919,
+      "unit": "Elo rating"
+    },
+    "Mauritania": {
+      "value": 1917,
+      "unit": "Elo rating"
+    },
+    "Suriname": {
+      "value": 1910,
+      "unit": "Elo rating"
+    },
+    "Ghana": {
+      "value": 1864,
+      "unit": "Elo rating"
+    },
+    "Kuwait": {
+      "value": 1860,
+      "unit": "Elo rating"
+    },
+    "Senegal": {
+      "value": 1849,
+      "unit": "Elo rating"
+    },
+    "Guyana": {
+      "value": 1842,
+      "unit": "Elo rating"
+    },
+    "Cameroon": {
+      "value": 1830,
+      "unit": "Elo rating"
+    },
+    "Tanzania": {
+      "value": 1787,
+      "unit": "Elo rating"
+    },
+    "Qatar": {
+      "value": 1759,
+      "unit": "Elo rating"
+    },
+    "Sierra Leone": {
+      "value": 1756,
+      "unit": "Elo rating"
+    },
+    "Gabon": {
+      "value": 1733,
+      "unit": "Elo rating"
+    },
+    "Haiti": {
+      "value": 1726,
+      "unit": "Elo rating"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 1675,
+      "unit": "Elo rating"
+    },
+    "Papua New Guinea": {
+      "value": 1672,
+      "unit": "Elo rating"
+    },
+    "Equatorial Guinea": {
+      "value": 1641,
+      "unit": "Elo rating"
+    },
+    "Eritrea": {
+      "value": 1589,
+      "unit": "Elo rating"
+    },
+    "Djibouti": {
+      "value": 1584,
+      "unit": "Elo rating"
+    },
+    "Chad": {
+      "value": 1580,
+      "unit": "Elo rating"
+    },
+    "Laos": {
+      "value": 1580,
+      "unit": "Elo rating"
+    },
+    "Cambodia": {
+      "value": 1561,
+      "unit": "Elo rating"
+    },
+    "Belize": {
+      "value": 1560,
+      "unit": "Elo rating"
+    },
+    "Mali": {
+      "value": 1538,
+      "unit": "Elo rating"
+    },
+    "Burkina Faso": {
+      "value": 1487,
+      "unit": "Elo rating"
+    },
+    "Rwanda": {
+      "value": 1437,
+      "unit": "Elo rating"
+    },
+    "Niger": {
+      "value": 1423,
+      "unit": "Elo rating"
+    },
+    "Solomon Islands": {
+      "value": 1400,
+      "unit": "Elo rating"
+    },
+    "Tonga": {
+      "value": 1400,
+      "unit": "Elo rating"
+    }
+  }
+}

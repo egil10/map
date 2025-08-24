@@ -1,0 +1,783 @@
+{
+  "title": "Average Shoe Size by Country",
+  "description": "Average shoe size for men and women in US sizing",
+  "unit": "US size",
+  "source": "https://worldpopulationreview.com/country-rankings/shoe-size-by-country",
+  "data": {
+    "Germany": {
+      "value": 10.5,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Austria": {
+      "value": 10.5,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "United States": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Russia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Turkey": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "United Kingdom": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "France": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Spain": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Canada": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Ukraine": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Poland": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Uzbekistan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Kazakhstan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Romania": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Netherlands": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Belgium": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Tajikistan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Sweden": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Czech Republic": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Portugal": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Azerbaijan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Greece": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Hungary": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Israel": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Belarus": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Switzerland": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Turkmenistan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Kyrgyzstan": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Bulgaria": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Serbia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Denmark": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Finland": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Norway": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Slovakia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Ireland": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Croatia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Georgia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Mongolia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Uruguay": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Bosnia and Herzegovina": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Moldova": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Armenia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Lithuania": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Albania": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 7.0
+    },
+    "Slovenia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Latvia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "North Macedonia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Estonia": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Luxembourg": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Montenegro": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Iceland": {
+      "value": 10.0,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Nigeria": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Brazil": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Ethiopia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Egypt": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Democratic Republic of the Congo": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Iran": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Tanzania": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "South Africa": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Italy": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.5
+    },
+    "Kenya": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Sudan": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Uganda": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Algeria": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Iraq": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Argentina": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Afghanistan": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Yemen": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Angola": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Morocco": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Mozambique": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Ghana": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Peru": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Saudi Arabia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Madagascar": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Ivory Coast": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Cameroon": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Venezuela": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Niger": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Syria": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Mali": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Burkina Faso": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Malawi": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Zambia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Chad": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Chile": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Somalia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Senegal": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Guatemala": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Zimbabwe": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Guinea": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Benin": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Rwanda": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Burundi": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Bolivia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Tunisia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "South Sudan": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Jordan": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Dominican Republic": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "United Arab Emirates": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Honduras": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Cuba": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Togo": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Sierra Leone": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Libya": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Paraguay": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Nicaragua": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Republic of the Congo": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "El Salvador": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Lebanon": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Liberia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Central African Republic": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Oman": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Mauritania": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Costa Rica": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Kuwait": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Panama": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Qatar": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Namibia": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Jamaica": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Gabon": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Bahrain": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Cyprus": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Mauritius": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Guyana": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Suriname": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Malta": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Belize": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Bahamas": {
+      "value": 9.5,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "China": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Indonesia": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Pakistan": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Mexico": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Japan": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Philippines": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Vietnam": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Thailand": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Myanmar": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Colombia": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "South Korea": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Malaysia": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Nepal": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "North Korea": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Sri Lanka": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Taiwan": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Ecuador": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 6.0
+    },
+    "Cambodia": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Laos": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Singapore": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Timor-Leste": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Bhutan": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Maldives": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Brunei": {
+      "value": 9.0,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "Bangladesh": {
+      "value": 8.5,
+      "unit": "US size",
+      "women": 5.5
+    },
+    "India": {
+      "value": 8.0,
+      "unit": "US size",
+      "women": 5.0
+    }
+  }
+}

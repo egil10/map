@@ -1,0 +1,788 @@
+{
+  "title": "National Anthems by Country and Date Adopted",
+  "description": "National anthem adoption dates for UN member and observer states",
+  "unit": "year",
+  "source": "https://en.wikipedia.org/wiki/List_of_national_anthems",
+  "data": {
+    "Afghanistan": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Albania": {
+      "value": 1912,
+      "unit": "year"
+    },
+    "Algeria": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Andorra": {
+      "value": 1921,
+      "unit": "year"
+    },
+    "Angola": {
+      "value": 1975,
+      "unit": "year"
+    },
+    "Antigua and Barbuda": {
+      "value": 1967,
+      "unit": "year"
+    },
+    "Argentina": {
+      "value": 1813,
+      "unit": "year"
+    },
+    "Armenia": {
+      "value": 1918,
+      "unit": "year"
+    },
+    "Australia": {
+      "value": 1974,
+      "unit": "year"
+    },
+    "Austria": {
+      "value": 1946,
+      "unit": "year"
+    },
+    "Azerbaijan": {
+      "value": 1920,
+      "unit": "year"
+    },
+    "Bahamas": {
+      "value": 1973,
+      "unit": "year"
+    },
+    "Bahrain": {
+      "value": 1971,
+      "unit": "year"
+    },
+    "Bangladesh": {
+      "value": 1971,
+      "unit": "year"
+    },
+    "Barbados": {
+      "value": 1966,
+      "unit": "year"
+    },
+    "Belarus": {
+      "value": 1955,
+      "unit": "year"
+    },
+    "Belgium": {
+      "value": 1860,
+      "unit": "year"
+    },
+    "Belize": {
+      "value": 1981,
+      "unit": "year"
+    },
+    "Benin": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Bhutan": {
+      "value": 1953,
+      "unit": "year"
+    },
+    "Bolivia": {
+      "value": 1851,
+      "unit": "year"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Botswana": {
+      "value": 1966,
+      "unit": "year"
+    },
+    "Brazil": {
+      "value": 1890,
+      "unit": "year"
+    },
+    "Brunei": {
+      "value": 1984,
+      "unit": "year"
+    },
+    "Bulgaria": {
+      "value": 1989,
+      "unit": "year"
+    },
+    "Burkina Faso": {
+      "value": 1984,
+      "unit": "year"
+    },
+    "Burundi": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Cambodia": {
+      "value": 1941,
+      "unit": "year"
+    },
+    "Cameroon": {
+      "value": 1957,
+      "unit": "year"
+    },
+    "Canada": {
+      "value": 1980,
+      "unit": "year"
+    },
+    "Cape Verde": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Central African Republic": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Chad": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Chile": {
+      "value": 1828,
+      "unit": "year"
+    },
+    "China": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Colombia": {
+      "value": 1920,
+      "unit": "year"
+    },
+    "Comoros": {
+      "value": 1978,
+      "unit": "year"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Republic of the Congo": {
+      "value": 1959,
+      "unit": "year"
+    },
+    "Costa Rica": {
+      "value": 1852,
+      "unit": "year"
+    },
+    "Croatia": {
+      "value": 1972,
+      "unit": "year"
+    },
+    "Cuba": {
+      "value": 1902,
+      "unit": "year"
+    },
+    "Cyprus": {
+      "value": 1966,
+      "unit": "year"
+    },
+    "Czech Republic": {
+      "value": 1918,
+      "unit": "year"
+    },
+    "Denmark": {
+      "value": 1780,
+      "unit": "year"
+    },
+    "Djibouti": {
+      "value": 1977,
+      "unit": "year"
+    },
+    "Dominica": {
+      "value": 1978,
+      "unit": "year"
+    },
+    "Dominican Republic": {
+      "value": 1934,
+      "unit": "year"
+    },
+    "East Timor": {
+      "value": 1975,
+      "unit": "year"
+    },
+    "Ecuador": {
+      "value": 1948,
+      "unit": "year"
+    },
+    "Egypt": {
+      "value": 1923,
+      "unit": "year"
+    },
+    "El Salvador": {
+      "value": 1879,
+      "unit": "year"
+    },
+    "Equatorial Guinea": {
+      "value": 1968,
+      "unit": "year"
+    },
+    "Eritrea": {
+      "value": 1993,
+      "unit": "year"
+    },
+    "Estonia": {
+      "value": 1920,
+      "unit": "year"
+    },
+    "Eswatini": {
+      "value": 1968,
+      "unit": "year"
+    },
+    "Ethiopia": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "Fiji": {
+      "value": 1970,
+      "unit": "year"
+    },
+    "Finland": {
+      "value": 1917,
+      "unit": "year"
+    },
+    "France": {
+      "value": 1795,
+      "unit": "year"
+    },
+    "Gabon": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "The Gambia": {
+      "value": 1965,
+      "unit": "year"
+    },
+    "Georgia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 1922,
+      "unit": "year"
+    },
+    "Ghana": {
+      "value": 1957,
+      "unit": "year"
+    },
+    "Greece": {
+      "value": 1865,
+      "unit": "year"
+    },
+    "Grenada": {
+      "value": 1974,
+      "unit": "year"
+    },
+    "Guatemala": {
+      "value": 1897,
+      "unit": "year"
+    },
+    "Guinea": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Guinea-Bissau": {
+      "value": 1974,
+      "unit": "year"
+    },
+    "Guyana": {
+      "value": 1966,
+      "unit": "year"
+    },
+    "Haiti": {
+      "value": 1904,
+      "unit": "year"
+    },
+    "Honduras": {
+      "value": 1915,
+      "unit": "year"
+    },
+    "Hungary": {
+      "value": 1844,
+      "unit": "year"
+    },
+    "Iceland": {
+      "value": 1944,
+      "unit": "year"
+    },
+    "India": {
+      "value": 1950,
+      "unit": "year"
+    },
+    "Indonesia": {
+      "value": 1945,
+      "unit": "year"
+    },
+    "Iran": {
+      "value": 1990,
+      "unit": "year"
+    },
+    "Iraq": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Ireland": {
+      "value": 1926,
+      "unit": "year"
+    },
+    "Israel": {
+      "value": 1948,
+      "unit": "year"
+    },
+    "Italy": {
+      "value": 1946,
+      "unit": "year"
+    },
+    "Ivory Coast": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Jamaica": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Japan": {
+      "value": 1869,
+      "unit": "year"
+    },
+    "Jordan": {
+      "value": 1946,
+      "unit": "year"
+    },
+    "Kazakhstan": {
+      "value": 2006,
+      "unit": "year"
+    },
+    "Kenya": {
+      "value": 1963,
+      "unit": "year"
+    },
+    "Kiribati": {
+      "value": 1979,
+      "unit": "year"
+    },
+    "North Korea": {
+      "value": 1947,
+      "unit": "year"
+    },
+    "South Korea": {
+      "value": 1948,
+      "unit": "year"
+    },
+    "Kuwait": {
+      "value": 1978,
+      "unit": "year"
+    },
+    "Kyrgyzstan": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "Laos": {
+      "value": 1945,
+      "unit": "year"
+    },
+    "Latvia": {
+      "value": 1920,
+      "unit": "year"
+    },
+    "Lebanon": {
+      "value": 1927,
+      "unit": "year"
+    },
+    "Lesotho": {
+      "value": 1967,
+      "unit": "year"
+    },
+    "Liberia": {
+      "value": 1847,
+      "unit": "year"
+    },
+    "Libya": {
+      "value": 2011,
+      "unit": "year"
+    },
+    "Liechtenstein": {
+      "value": 1963,
+      "unit": "year"
+    },
+    "Lithuania": {
+      "value": 1919,
+      "unit": "year"
+    },
+    "Luxembourg": {
+      "value": 1895,
+      "unit": "year"
+    },
+    "Madagascar": {
+      "value": 1959,
+      "unit": "year"
+    },
+    "Malawi": {
+      "value": 1964,
+      "unit": "year"
+    },
+    "Malaysia": {
+      "value": 1957,
+      "unit": "year"
+    },
+    "Maldives": {
+      "value": 1972,
+      "unit": "year"
+    },
+    "Mali": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Malta": {
+      "value": 1964,
+      "unit": "year"
+    },
+    "Marshall Islands": {
+      "value": 1991,
+      "unit": "year"
+    },
+    "Mauritania": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "Mauritius": {
+      "value": 1968,
+      "unit": "year"
+    },
+    "Mexico": {
+      "value": 1943,
+      "unit": "year"
+    },
+    "Micronesia": {
+      "value": 1991,
+      "unit": "year"
+    },
+    "Moldova": {
+      "value": 1994,
+      "unit": "year"
+    },
+    "Monaco": {
+      "value": 1848,
+      "unit": "year"
+    },
+    "Mongolia": {
+      "value": 1950,
+      "unit": "year"
+    },
+    "Montenegro": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Morocco": {
+      "value": 1956,
+      "unit": "year"
+    },
+    "Mozambique": {
+      "value": 2002,
+      "unit": "year"
+    },
+    "Myanmar": {
+      "value": 1947,
+      "unit": "year"
+    },
+    "Namibia": {
+      "value": 1991,
+      "unit": "year"
+    },
+    "Nauru": {
+      "value": 1968,
+      "unit": "year"
+    },
+    "Nepal": {
+      "value": 2007,
+      "unit": "year"
+    },
+    "Netherlands": {
+      "value": 1932,
+      "unit": "year"
+    },
+    "New Zealand": {
+      "value": 1940,
+      "unit": "year"
+    },
+    "Nicaragua": {
+      "value": 1939,
+      "unit": "year"
+    },
+    "Niger": {
+      "value": 2023,
+      "unit": "year"
+    },
+    "Nigeria": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "North Macedonia": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "Norway": {
+      "value": 1864,
+      "unit": "year"
+    },
+    "Oman": {
+      "value": 1970,
+      "unit": "year"
+    },
+    "Pakistan": {
+      "value": 1954,
+      "unit": "year"
+    },
+    "Palau": {
+      "value": 1981,
+      "unit": "year"
+    },
+    "Palestine": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Panama": {
+      "value": 1906,
+      "unit": "year"
+    },
+    "Papua New Guinea": {
+      "value": 1975,
+      "unit": "year"
+    },
+    "Paraguay": {
+      "value": 1846,
+      "unit": "year"
+    },
+    "Peru": {
+      "value": 1821,
+      "unit": "year"
+    },
+    "Philippines": {
+      "value": 1898,
+      "unit": "year"
+    },
+    "Poland": {
+      "value": 1927,
+      "unit": "year"
+    },
+    "Portugal": {
+      "value": 1910,
+      "unit": "year"
+    },
+    "Qatar": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Romania": {
+      "value": 1990,
+      "unit": "year"
+    },
+    "Russia": {
+      "value": 2000,
+      "unit": "year"
+    },
+    "Rwanda": {
+      "value": 2002,
+      "unit": "year"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 1983,
+      "unit": "year"
+    },
+    "Saint Lucia": {
+      "value": 1979,
+      "unit": "year"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 1979,
+      "unit": "year"
+    },
+    "Samoa": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "San Marino": {
+      "value": 1894,
+      "unit": "year"
+    },
+    "São Tomé and Príncipe": {
+      "value": 1975,
+      "unit": "year"
+    },
+    "Saudi Arabia": {
+      "value": 1950,
+      "unit": "year"
+    },
+    "Senegal": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Serbia": {
+      "value": 1882,
+      "unit": "year"
+    },
+    "Seychelles": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Sierra Leone": {
+      "value": 1961,
+      "unit": "year"
+    },
+    "Singapore": {
+      "value": 1959,
+      "unit": "year"
+    },
+    "Slovakia": {
+      "value": 1993,
+      "unit": "year"
+    },
+    "Slovenia": {
+      "value": 1989,
+      "unit": "year"
+    },
+    "Solomon Islands": {
+      "value": 1978,
+      "unit": "year"
+    },
+    "Somalia": {
+      "value": 2012,
+      "unit": "year"
+    },
+    "South Africa": {
+      "value": 1997,
+      "unit": "year"
+    },
+    "South Sudan": {
+      "value": 2011,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 1770,
+      "unit": "year"
+    },
+    "Sri Lanka": {
+      "value": 1951,
+      "unit": "year"
+    },
+    "Sudan": {
+      "value": 1956,
+      "unit": "year"
+    },
+    "Suriname": {
+      "value": 1959,
+      "unit": "year"
+    },
+    "Sweden": {
+      "value": 1866,
+      "unit": "year"
+    },
+    "Switzerland": {
+      "value": 1961,
+      "unit": "year"
+    },
+    "Syria": {
+      "value": 1938,
+      "unit": "year"
+    },
+    "Tajikistan": {
+      "value": 1994,
+      "unit": "year"
+    },
+    "Tanzania": {
+      "value": 1961,
+      "unit": "year"
+    },
+    "Thailand": {
+      "value": 1932,
+      "unit": "year"
+    },
+    "Togo": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Tonga": {
+      "value": 1874,
+      "unit": "year"
+    },
+    "Trinidad and Tobago": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Tunisia": {
+      "value": 1957,
+      "unit": "year"
+    },
+    "Turkey": {
+      "value": 1921,
+      "unit": "year"
+    },
+    "Turkmenistan": {
+      "value": 1996,
+      "unit": "year"
+    },
+    "Tuvalu": {
+      "value": 1978,
+      "unit": "year"
+    },
+    "Uganda": {
+      "value": 1962,
+      "unit": "year"
+    },
+    "Ukraine": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "United Arab Emirates": {
+      "value": 1971,
+      "unit": "year"
+    },
+    "United Kingdom": {
+      "value": 1745,
+      "unit": "year"
+    },
+    "United States": {
+      "value": 1931,
+      "unit": "year"
+    },
+    "Uruguay": {
+      "value": 1833,
+      "unit": "year"
+    },
+    "Uzbekistan": {
+      "value": 1991,
+      "unit": "year"
+    },
+    "Vanuatu": {
+      "value": 1980,
+      "unit": "year"
+    },
+    "Vatican City": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Venezuela": {
+      "value": 1881,
+      "unit": "year"
+    },
+    "Vietnam": {
+      "value": 1976,
+      "unit": "year"
+    },
+    "Yemen": {
+      "value": 1990,
+      "unit": "year"
+    },
+    "Zambia": {
+      "value": 1973,
+      "unit": "year"
+    },
+    "Zimbabwe": {
+      "value": 1994,
+      "unit": "year"
+    }
+  }
+}

@@ -23,6 +23,36 @@ class QuizGame {
         this.init();
     }
     
+    // Color randomization methods to prevent memorization
+    getRandomColorScheme(type) {
+        const gradientSchemes = [
+            ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'], // Blue gradient
+            ['#fff5f5', '#fed7d7', '#f56565', '#c53030'], // Red gradient
+            ['#f0fff4', '#9ae6b4', '#48bb78', '#22543d'], // Green gradient
+            ['#faf5ff', '#d6bcfa', '#9f7aea', '#553c9a'], // Purple gradient
+            ['#fffaf0', '#fbd38d', '#ed8936', '#c05621'], // Orange gradient
+            ['#f0f9ff', '#7dd3fc', '#0ea5e9', '#1e40af'], // Sky blue gradient
+            ['#fdf2f8', '#f9a8d4', '#ec4899', '#be185d'], // Pink gradient
+            ['#fefce8', '#fde047', '#eab308', '#a16207'], // Yellow gradient
+            ['#f0fdf4', '#86efac', '#22c55e', '#15803d'], // Emerald gradient
+            ['#fef7ff', '#d8b4fe', '#a855f7', '#7c3aed']  // Violet gradient
+        ];
+        
+        const categoricalSchemes = [
+            ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#84cc16'],
+            ['#dc2626', '#059669', '#7c3aed', '#ea580c', '#0891b2', '#be185d', '#65a30d', '#9333ea'],
+            ['#16a34a', '#dc2626', '#7c3aed', '#ea580c', '#0891b2', '#be185d', '#65a30d', '#9333ea'],
+            ['#7c3aed', '#16a34a', '#dc2626', '#ea580c', '#0891b2', '#be185d', '#65a30d', '#9333ea'],
+            ['#ea580c', '#7c3aed', '#16a34a', '#dc2626', '#0891b2', '#be185d', '#65a30d', '#9333ea']
+        ];
+        
+        if (type === 'gradient') {
+            return gradientSchemes[Math.floor(Math.random() * gradientSchemes.length)];
+        } else {
+            return categoricalSchemes[Math.floor(Math.random() * categoricalSchemes.length)];
+        }
+    }
+    
     async init() {
         this.setupEventListeners();
         
@@ -852,6 +882,121 @@ class QuizGame {
                 console.log('❌ Failed to load African Countries Never Colonized quiz');
             }
             
+            // Convert new datasets - Animals & Wildlife
+            const horsePopulationQuiz = await this.convertHorsePopulationData();
+            if (horsePopulationQuiz) {
+                this.quizData.quizzes[horsePopulationQuiz.id] = horsePopulationQuiz;
+                console.log('🐎 Added Horse Population quiz');
+            }
+            
+            const sheepPopulationQuiz = await this.convertSheepPopulationData();
+            if (sheepPopulationQuiz) {
+                this.quizData.quizzes[sheepPopulationQuiz.id] = sheepPopulationQuiz;
+                console.log('🐑 Added Sheep Population quiz');
+            }
+            
+            const mammalsQuiz = await this.convertMammalsData();
+            if (mammalsQuiz) {
+                this.quizData.quizzes[mammalsQuiz.id] = mammalsQuiz;
+                console.log('🦁 Added Mammals quiz');
+            }
+            
+            const birdsQuiz = await this.convertBirdsData();
+            if (birdsQuiz) {
+                this.quizData.quizzes[birdsQuiz.id] = birdsQuiz;
+                console.log('🦅 Added Birds quiz');
+            }
+            
+            const fishQuiz = await this.convertFishData();
+            if (fishQuiz) {
+                this.quizData.quizzes[fishQuiz.id] = fishQuiz;
+                console.log('🐟 Added Fish quiz');
+            }
+            
+            const reptilesQuiz = await this.convertReptilesData();
+            if (reptilesQuiz) {
+                this.quizData.quizzes[reptilesQuiz.id] = reptilesQuiz;
+                console.log('🦎 Added Reptiles quiz');
+            }
+            
+            const amphibiansQuiz = await this.convertAmphibiansData();
+            if (amphibiansQuiz) {
+                this.quizData.quizzes[amphibiansQuiz.id] = amphibiansQuiz;
+                console.log('🐸 Added Amphibians quiz');
+            }
+            
+            // Convert new datasets - Environment & Natural Disasters
+            const earthquakesQuiz = await this.convertEarthquakesData();
+            if (earthquakesQuiz) {
+                this.quizData.quizzes[earthquakesQuiz.id] = earthquakesQuiz;
+                console.log('🌋 Added Earthquakes quiz');
+            }
+            
+            const strongestEarthquakesQuiz = await this.convertStrongestEarthquakesData();
+            if (strongestEarthquakesQuiz) {
+                this.quizData.quizzes[strongestEarthquakesQuiz.id] = strongestEarthquakesQuiz;
+                console.log('🌋 Added Strongest Earthquakes quiz');
+            }
+            
+            const holoceneVolcanoesQuiz = await this.convertHoloceneVolcanoesData();
+            if (holoceneVolcanoesQuiz) {
+                this.quizData.quizzes[holoceneVolcanoesQuiz.id] = holoceneVolcanoesQuiz;
+                console.log('🌋 Added Holocene Volcanoes quiz');
+            }
+            
+            const plantsQuiz = await this.convertPlantsData();
+            if (plantsQuiz) {
+                this.quizData.quizzes[plantsQuiz.id] = plantsQuiz;
+                console.log('🌿 Added Plants quiz');
+            }
+            
+            // Convert new datasets - Infrastructure & Transport
+            const waterwaysQuiz = await this.convertWaterwaysData();
+            if (waterwaysQuiz) {
+                this.quizData.quizzes[waterwaysQuiz.id] = waterwaysQuiz;
+                console.log('🚢 Added Waterways quiz');
+            }
+            
+            // Convert new datasets - Culture & Society
+            const nationalAnthemsQuiz = await this.convertNationalAnthemsData();
+            if (nationalAnthemsQuiz) {
+                this.quizData.quizzes[nationalAnthemsQuiz.id] = nationalAnthemsQuiz;
+                console.log('🎵 Added National Anthems quiz');
+            }
+            
+            const shoeSizeQuiz = await this.convertShoeSizeData();
+            if (shoeSizeQuiz) {
+                this.quizData.quizzes[shoeSizeQuiz.id] = shoeSizeQuiz;
+                console.log('👟 Added Shoe Size quiz');
+            }
+            
+            // Convert new datasets - Economics & Finance
+            const externalDebtQuiz = await this.convertExternalDebtData();
+            if (externalDebtQuiz) {
+                this.quizData.quizzes[externalDebtQuiz.id] = externalDebtQuiz;
+                console.log('💳 Added External Debt quiz');
+            }
+            
+            const externalDebtPercentGDPQuiz = await this.convertExternalDebtPercentGDPData();
+            if (externalDebtPercentGDPQuiz) {
+                this.quizData.quizzes[externalDebtPercentGDPQuiz.id] = externalDebtPercentGDPQuiz;
+                console.log('💳 Added External Debt % GDP quiz');
+            }
+            
+            // Convert new datasets - Sports & Games
+            const fideTopFederationsQuiz = await this.convertFIDETopFederationsData();
+            if (fideTopFederationsQuiz) {
+                this.quizData.quizzes[fideTopFederationsQuiz.id] = fideTopFederationsQuiz;
+                console.log('♟️ Added FIDE Top Federations quiz');
+            }
+            
+            // Convert new datasets - Landlocked Countries with Ocean Access
+            const landlockedNeighboursOceanAccessQuiz = await this.convertLandlockedNeighboursOceanAccessData();
+            if (landlockedNeighboursOceanAccessQuiz) {
+                this.quizData.quizzes[landlockedNeighboursOceanAccessQuiz.id] = landlockedNeighboursOceanAccessQuiz;
+                console.log('🏔️ Added Landlocked Countries with Ocean Access quiz');
+            }
+            
                     } catch (error) {
                 console.error('❌ Error loading converted data:', error);
             }
@@ -909,12 +1054,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values using enhanced color scheme
-            const colorScheme = this.getColorSchemeForCategory('geography', 'numeric');
+            // Apply colors based on values using random color scheme
+            const colorScheme = this.getRandomColorScheme('gradient');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme[0], colorScheme[colorScheme.length - 1]);
             });
             
             return {
@@ -934,9 +1079,7 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    colors: ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'],
-                    minColor: '#f0f8ff',
-                    maxColor: '#1e3a8a',
+                    colors: colorScheme,
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -971,12 +1114,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values using enhanced color scheme
-            const colorScheme = this.getColorSchemeForCategory('geography', 'numeric');
+            // Apply colors based on values using random color scheme
+            const colorScheme = this.getRandomColorScheme('gradient');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme[0], colorScheme[colorScheme.length - 1]);
             });
             
             return {
@@ -995,9 +1138,7 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    colors: ['#f0f8ff', '#87ceeb', '#4682b4', '#1e3a8a'],
-                    minColor: '#f0f8ff',
-                    maxColor: '#1e3a8a',
+                    colors: colorScheme,
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -1032,12 +1173,12 @@ class QuizGame {
             const maxValue = Math.max(...values);
             const minValue = Math.min(...values);
             
-            // Apply colors based on values using enhanced color scheme
-            const colorScheme = this.getColorSchemeForCategory('agriculture', 'numeric');
+            // Apply colors based on values using random color scheme
+            const colorScheme = this.getRandomColorScheme('gradient');
             Object.keys(countries).forEach(country => {
                 const value = countries[country].value;
                 const ratio = (value - minValue) / (maxValue - minValue);
-                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme[0], colorScheme[colorScheme.length - 1]);
             });
             
             return {
@@ -1056,9 +1197,7 @@ class QuizGame {
                 ],
                 colorScheme: {
                     type: 'gradient',
-                    colors: ['#fefce8', '#fef08a', '#eab308', '#a16207'],
-                    minColor: '#fefce8',
-                    maxColor: '#a16207',
+                    colors: colorScheme,
                     defaultColor: '#ffffff'
                 },
                 countries: countries
@@ -3337,11 +3476,15 @@ class QuizGame {
             enhancedRatio = 0.5 + Math.pow((ratio - 0.5) * 2, 1.5) * 0.5;
         }
         
-        // Support both old format (minColor, maxColor) and new format (colorScheme object)
+        // Support multiple formats: array, object, or two color strings
         let color1, color2;
         
-        if (typeof minColor === 'object' && minColor !== null) {
-            // New format: colorScheme object
+        if (Array.isArray(minColor)) {
+            // Array format: use first and last colors
+            color1 = minColor[0] || '#f8f9fa';
+            color2 = minColor[minColor.length - 1] || '#000000';
+        } else if (typeof minColor === 'object' && minColor !== null) {
+            // Object format: colorScheme object
             if (minColor.colors && minColor.colors.length > 2) {
                 return this.interpolateMultiColor(enhancedRatio, minColor.colors);
             }
@@ -6358,26 +6501,983 @@ class QuizGame {
     // Add placeholder methods for the remaining datasets
     // These can be implemented following the same pattern
     
-    async convertEnglishSpeakersTotalData() { /* Implementation similar to above */ return null; }
-    async convertEnglishSpeakingPopulationData() { /* Implementation similar to above */ return null; }
-    async convertOfficialLanguagesData() { /* Implementation similar to above */ return null; }
-    async convertLivingLanguagesData() { /* Implementation similar to above */ return null; }
-    async convertSpanishNativeSpeakersData() { /* Implementation similar to above */ return null; }
-    async convertGermanNativeSpeakersData() { /* Implementation similar to above */ return null; }
-    async convertChineseNativeSpeakersData() { /* Implementation similar to above */ return null; }
-    async convertAfrikaansDutchNativeSpeakersData() { /* Implementation similar to above */ return null; }
-    async convertFrenchOfficialLanguageData() { /* Implementation similar to above */ return null; }
-    async convertContainerPortTrafficData() { /* Implementation similar to above */ return null; }
-    async convertRoadNetworkSizeData() { /* Implementation similar to above */ return null; }
-    async convertHighSpeedRailData() { /* Implementation similar to above */ return null; }
-    async convertCocoaProductionData() { /* Implementation similar to above */ return null; }
-    async convertWheatProductionData() { /* Implementation similar to above */ return null; }
-    async convertSteelProductionData() { /* Implementation similar to above */ return null; }
-    async convertPopesData() { /* Implementation similar to above */ return null; }
-    async convertYearsColonizedData() { /* Implementation similar to above */ return null; }
-    async convertCommonwealthMembershipData() { /* Implementation similar to above */ return null; }
-    async convertTimeZonesData() { /* Implementation similar to above */ return null; }
-    async convertCountryByFirstLetterData() { /* Implementation similar to above */ return null; }
+    async convertEnglishSpeakersTotalData() {
+        try {
+            const response = await fetch('data/english_speakers_total_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.english_speakers_total,
+                        unit: 'speakers'
+                    };
+                    values.push(item.english_speakers_total);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'english_speakers_total',
+                title: 'English Speakers Total',
+                description: 'Countries colored by total number of English speakers',
+                category: 'language',
+                tags: ['english', 'language', 'speakers', 'total', 'population'],
+                answer_variations: ['english speakers total', 'total english speakers', 'english language speakers'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting english speakers total data:', error);
+            return null;
+        }
+    }
+    
+    async convertEnglishSpeakingPopulationData() {
+        try {
+            const response = await fetch('data/english_speaking_population_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.english_speaking_population,
+                        unit: 'people'
+                    };
+                    values.push(item.english_speaking_population);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'english_speaking_population',
+                title: 'English Speaking Population',
+                description: 'Countries colored by English speaking population',
+                category: 'language',
+                tags: ['english', 'language', 'population', 'speakers'],
+                answer_variations: ['english speaking population', 'english population', 'english speakers population'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting english speaking population data:', error);
+            return null;
+        }
+    }
+    
+    async convertOfficialLanguagesData() {
+        try {
+            const response = await fetch('data/official_languages_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.official_languages,
+                        unit: 'languages'
+                    };
+                    values.push(item.official_languages);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'official_languages',
+                title: 'Official Languages',
+                description: 'Countries colored by number of official languages',
+                category: 'language',
+                tags: ['official languages', 'language', 'languages', 'government'],
+                answer_variations: ['official languages', 'number of official languages', 'official language count'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting official languages data:', error);
+            return null;
+        }
+    }
+    
+    async convertLivingLanguagesData() {
+        try {
+            const response = await fetch('data/living_languages_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.living_languages,
+                        unit: 'languages'
+                    };
+                    values.push(item.living_languages);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'living_languages',
+                title: 'Living Languages',
+                description: 'Countries colored by number of living languages',
+                category: 'language',
+                tags: ['living languages', 'language', 'languages', 'indigenous'],
+                answer_variations: ['living languages', 'number of living languages', 'indigenous languages'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting living languages data:', error);
+            return null;
+        }
+    }
+    
+    async convertSpanishNativeSpeakersData() {
+        try {
+            const response = await fetch('data/spanish_native_speakers_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.spanish_native_speakers,
+                        unit: 'speakers'
+                    };
+                    values.push(item.spanish_native_speakers);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'spanish_native_speakers',
+                title: 'Spanish Native Speakers',
+                description: 'Countries colored by number of Spanish native speakers',
+                category: 'language',
+                tags: ['spanish', 'language', 'native speakers', 'hispanic'],
+                answer_variations: ['spanish native speakers', 'native spanish speakers', 'spanish speakers'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting spanish native speakers data:', error);
+            return null;
+        }
+    }
+    
+    async convertGermanNativeSpeakersData() {
+        try {
+            const response = await fetch('data/german_native_speakers_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.german_native_speakers,
+                        unit: 'speakers'
+                    };
+                    values.push(item.german_native_speakers);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'german_native_speakers',
+                title: 'German Native Speakers',
+                description: 'Countries colored by number of German native speakers',
+                category: 'language',
+                tags: ['german', 'language', 'native speakers', 'deutsch'],
+                answer_variations: ['german native speakers', 'native german speakers', 'german speakers'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting german native speakers data:', error);
+            return null;
+        }
+    }
+    
+    async convertChineseNativeSpeakersData() {
+        try {
+            const response = await fetch('data/chinese_native_speakers_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.chinese_native_speakers,
+                        unit: 'speakers'
+                    };
+                    values.push(item.chinese_native_speakers);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'chinese_native_speakers',
+                title: 'Chinese Native Speakers',
+                description: 'Countries colored by number of Chinese native speakers',
+                category: 'language',
+                tags: ['chinese', 'language', 'native speakers', 'mandarin'],
+                answer_variations: ['chinese native speakers', 'native chinese speakers', 'chinese speakers'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting chinese native speakers data:', error);
+            return null;
+        }
+    }
+    
+    async convertAfrikaansDutchNativeSpeakersData() {
+        try {
+            const response = await fetch('data/afrikaans_dutch_native_speakers_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.afrikaans_dutch_native_speakers,
+                        unit: 'speakers'
+                    };
+                    values.push(item.afrikaans_dutch_native_speakers);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'afrikaans_dutch_native_speakers',
+                title: 'Afrikaans/Dutch Native Speakers',
+                description: 'Countries colored by number of Afrikaans/Dutch native speakers',
+                category: 'language',
+                tags: ['afrikaans', 'dutch', 'language', 'native speakers'],
+                answer_variations: ['afrikaans dutch native speakers', 'afrikaans speakers', 'dutch speakers'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting afrikaans dutch native speakers data:', error);
+            return null;
+        }
+    }
+    
+    async convertFrenchOfficialLanguageData() {
+        try {
+            const response = await fetch('data/french_official_language_status_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.french_official_language_status === 'Official' ? 1 : 0,
+                        unit: 'status'
+                    };
+                    values.push(item.french_official_language_status === 'Official' ? 1 : 0);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('categorical');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                countries[country].color = value === 1 ? colorScheme[0] : colorScheme[1];
+            });
+            
+            return {
+                id: 'french_official_language',
+                title: 'French Official Language',
+                description: 'Countries colored by French official language status',
+                category: 'language',
+                tags: ['french', 'official language', 'language', 'francophone'],
+                answer_variations: ['french official language', 'french as official language', 'francophone countries'],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting french official language data:', error);
+            return null;
+        }
+    }
+    
+    async convertContainerPortTrafficData() {
+        try {
+            const response = await fetch('data/container_port_traffic_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.container_port_traffic,
+                        unit: 'TEU'
+                    };
+                    values.push(item.container_port_traffic);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'container_port_traffic',
+                title: 'Container Port Traffic',
+                description: 'Countries colored by container port traffic',
+                category: 'economy',
+                tags: ['container port', 'traffic', 'shipping', 'trade', 'ports'],
+                answer_variations: ['container port traffic', 'port traffic', 'shipping traffic'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting container port traffic data:', error);
+            return null;
+        }
+    }
+    
+    async convertRoadNetworkSizeData() {
+        try {
+            const response = await fetch('data/road_network_size_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.road_network_size,
+                        unit: 'km'
+                    };
+                    values.push(item.road_network_size);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'road_network_size',
+                title: 'Road Network Size',
+                description: 'Countries colored by road network size',
+                category: 'infrastructure',
+                tags: ['road network', 'roads', 'infrastructure', 'transportation'],
+                answer_variations: ['road network size', 'road length', 'road infrastructure'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting road network size data:', error);
+            return null;
+        }
+    }
+    
+    async convertHighSpeedRailData() {
+        try {
+            const response = await fetch('data/high_speed_rail_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.high_speed_rail,
+                        unit: 'km'
+                    };
+                    values.push(item.high_speed_rail);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'high_speed_rail',
+                title: 'High Speed Rail',
+                description: 'Countries colored by high speed rail length',
+                category: 'infrastructure',
+                tags: ['high speed rail', 'railway', 'infrastructure', 'transportation'],
+                answer_variations: ['high speed rail', 'high speed railway', 'bullet train'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting high speed rail data:', error);
+            return null;
+        }
+    }
+    
+    async convertCocoaProductionData() {
+        try {
+            const response = await fetch('data/cocoa_production_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.cocoa_production,
+                        unit: 'tons'
+                    };
+                    values.push(item.cocoa_production);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'cocoa_production',
+                title: 'Cocoa Production',
+                description: 'Countries colored by cocoa production',
+                category: 'agriculture',
+                tags: ['cocoa', 'production', 'agriculture', 'chocolate'],
+                answer_variations: ['cocoa production', 'chocolate production', 'cocoa farming'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting cocoa production data:', error);
+            return null;
+        }
+    }
+    
+    async convertWheatProductionData() {
+        try {
+            const response = await fetch('data/wheat_production_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.wheat_production,
+                        unit: 'tons'
+                    };
+                    values.push(item.wheat_production);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'wheat_production',
+                title: 'Wheat Production',
+                description: 'Countries colored by wheat production',
+                category: 'agriculture',
+                tags: ['wheat', 'production', 'agriculture', 'grain'],
+                answer_variations: ['wheat production', 'wheat farming', 'grain production'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting wheat production data:', error);
+            return null;
+        }
+    }
+    
+    async convertSteelProductionData() {
+        try {
+            const response = await fetch('data/steel_production_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.steel_production,
+                        unit: 'tons'
+                    };
+                    values.push(item.steel_production);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'steel_production',
+                title: 'Steel Production',
+                description: 'Countries colored by steel production',
+                category: 'industry',
+                tags: ['steel', 'production', 'industry', 'manufacturing'],
+                answer_variations: ['steel production', 'steel manufacturing', 'steel industry'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting steel production data:', error);
+            return null;
+        }
+    }
+    
+    async convertPopesData() {
+        try {
+            const response = await fetch('data/popes_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.popes,
+                        unit: 'popes'
+                    };
+                    values.push(item.popes);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'popes',
+                title: 'Popes by Country',
+                description: 'Countries colored by number of popes produced',
+                category: 'history',
+                tags: ['popes', 'vatican', 'catholic', 'history', 'religion'],
+                answer_variations: ['popes by country', 'number of popes', 'popes produced'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting popes data:', error);
+            return null;
+        }
+    }
+    
+    async convertYearsColonizedData() {
+        try {
+            const response = await fetch('data/years_colonized_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.years_colonized,
+                        unit: 'years'
+                    };
+                    values.push(item.years_colonized);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'years_colonized',
+                title: 'Years Colonized',
+                description: 'Countries colored by years under colonization',
+                category: 'history',
+                tags: ['colonization', 'history', 'colonial', 'empire'],
+                answer_variations: ['years colonized', 'colonization period', 'colonial years'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting years colonized data:', error);
+            return null;
+        }
+    }
+    
+    async convertCommonwealthMembershipData() {
+        try {
+            const response = await fetch('data/commonwealth_membership_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.commonwealth_membership === 'Member' ? 1 : 0,
+                        unit: 'status'
+                    };
+                    values.push(item.commonwealth_membership === 'Member' ? 1 : 0);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('categorical');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                countries[country].color = value === 1 ? colorScheme[0] : colorScheme[1];
+            });
+            
+            return {
+                id: 'commonwealth_membership',
+                title: 'Commonwealth Membership',
+                description: 'Countries colored by Commonwealth membership status',
+                category: 'politics',
+                tags: ['commonwealth', 'membership', 'british empire', 'politics'],
+                answer_variations: ['commonwealth membership', 'commonwealth member', 'commonwealth countries'],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting commonwealth membership data:', error);
+            return null;
+        }
+    }
+    
+    async convertTimeZonesData() {
+        try {
+            const response = await fetch('data/time_zones_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.time_zones,
+                        unit: 'zones'
+                    };
+                    values.push(item.time_zones);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'time_zones',
+                title: 'Time Zones',
+                description: 'Countries colored by number of time zones',
+                category: 'geography',
+                tags: ['time zones', 'time', 'geography', 'longitude'],
+                answer_variations: ['time zones', 'number of time zones', 'time zone count'],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting time zones data:', error);
+            return null;
+        }
+    }
+    
+    async convertCountryByFirstLetterData() {
+        try {
+            const response = await fetch('data/country_by_first_letter.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.country_by_first_letter,
+                        unit: 'letter'
+                    };
+                    values.push(item.country_by_first_letter);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('categorical');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const index = Math.floor((value.charCodeAt(0) - 65) % colorScheme.length);
+                countries[country].color = colorScheme[index];
+            });
+            
+            return {
+                id: 'country_by_first_letter',
+                title: 'Country by First Letter',
+                description: 'Countries colored by first letter of country name',
+                category: 'geography',
+                tags: ['alphabet', 'letters', 'country names', 'geography'],
+                answer_variations: ['country by first letter', 'first letter', 'alphabetical countries'],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting country by first letter data:', error);
+            return null;
+        }
+    }
     
     // New datasets
     async convertLandlockedCountriesData() {
@@ -7730,6 +8830,1044 @@ class QuizGame {
             return null;
         }
     }
+
+    // New dataset conversion methods
+    async convertHorsePopulationData() {
+        try {
+            const response = await fetch('data/horse_population_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.horse_population,
+                        unit: 'horses'
+                    };
+                    values.push(item.horse_population);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fef3c7', '#d97706');
+            });
+            
+            return {
+                id: 'horse_population',
+                title: 'Horse Population',
+                description: 'Countries colored by horse population',
+                category: 'agriculture',
+                tags: ['horses', 'horse population', 'livestock', 'animals', 'agriculture'],
+                answer_variations: [
+                    'horse population',
+                    'horses',
+                    'horse count',
+                    'livestock horses',
+                    'horse numbers'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting horse population data:', error);
+            return null;
+        }
+    }
+
+    async convertSheepPopulationData() {
+        try {
+            const response = await fetch('data/sheep_population_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.sheep_population,
+                        unit: 'sheep'
+                    };
+                    values.push(item.sheep_population);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f0f9ff', '#0369a1');
+            });
+            
+            return {
+                id: 'sheep_population',
+                title: 'Sheep Population',
+                description: 'Countries colored by sheep population',
+                category: 'agriculture',
+                tags: ['sheep', 'sheep population', 'livestock', 'animals', 'agriculture'],
+                answer_variations: [
+                    'sheep population',
+                    'sheep',
+                    'sheep count',
+                    'livestock sheep',
+                    'sheep numbers'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f0f9ff',
+                    maxColor: '#0369a1',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting sheep population data:', error);
+            return null;
+        }
+    }
+
+    async convertMammalsData() {
+        try {
+            const response = await fetch('data/mammals_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.mammal_species,
+                        unit: 'species'
+                    };
+                    values.push(item.mammal_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fef3c7', '#d97706');
+            });
+            
+            return {
+                id: 'mammals',
+                title: 'Mammal Species',
+                description: 'Countries colored by number of mammal species',
+                category: 'environment',
+                tags: ['mammals', 'mammal species', 'wildlife', 'biodiversity', 'animals'],
+                answer_variations: [
+                    'mammal species',
+                    'mammals',
+                    'mammal count',
+                    'wildlife mammals',
+                    'mammal biodiversity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fef3c7',
+                    maxColor: '#d97706',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting mammals data:', error);
+            return null;
+        }
+    }
+
+    async convertBirdsData() {
+        try {
+            const response = await fetch('data/birds_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.bird_species,
+                        unit: 'species'
+                    };
+                    values.push(item.bird_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f0f9ff', '#0369a1');
+            });
+            
+            return {
+                id: 'birds',
+                title: 'Bird Species',
+                description: 'Countries colored by number of bird species',
+                category: 'environment',
+                tags: ['birds', 'bird species', 'wildlife', 'biodiversity', 'animals'],
+                answer_variations: [
+                    'bird species',
+                    'birds',
+                    'bird count',
+                    'wildlife birds',
+                    'bird biodiversity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f0f9ff',
+                    maxColor: '#0369a1',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting birds data:', error);
+            return null;
+        }
+    }
+
+    async convertFishData() {
+        try {
+            const response = await fetch('data/fish_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.fish_species,
+                        unit: 'species'
+                    };
+                    values.push(item.fish_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f2fe', '#0277bd');
+            });
+            
+            return {
+                id: 'fish',
+                title: 'Fish Species',
+                description: 'Countries colored by number of fish species',
+                category: 'environment',
+                tags: ['fish', 'fish species', 'wildlife', 'biodiversity', 'animals'],
+                answer_variations: [
+                    'fish species',
+                    'fish',
+                    'fish count',
+                    'wildlife fish',
+                    'fish biodiversity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f2fe',
+                    maxColor: '#0277bd',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting fish data:', error);
+            return null;
+        }
+    }
+
+    async convertReptilesData() {
+        try {
+            const response = await fetch('data/reptiles_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.reptile_species,
+                        unit: 'species'
+                    };
+                    values.push(item.reptile_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f0f4c3', '#827717');
+            });
+            
+            return {
+                id: 'reptiles',
+                title: 'Reptile Species',
+                description: 'Countries colored by number of reptile species',
+                category: 'environment',
+                tags: ['reptiles', 'reptile species', 'wildlife', 'biodiversity', 'animals'],
+                answer_variations: [
+                    'reptile species',
+                    'reptiles',
+                    'reptile count',
+                    'wildlife reptiles',
+                    'reptile biodiversity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f0f4c3',
+                    maxColor: '#827717',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting reptiles data:', error);
+            return null;
+        }
+    }
+
+    async convertAmphibiansData() {
+        try {
+            const response = await fetch('data/amphibians_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.amphibian_species,
+                        unit: 'species'
+                    };
+                    values.push(item.amphibian_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'amphibians',
+                title: 'Amphibian Species',
+                description: 'Countries colored by number of amphibian species',
+                category: 'environment',
+                tags: ['amphibians', 'amphibian species', 'wildlife', 'biodiversity', 'animals'],
+                answer_variations: [
+                    'amphibian species',
+                    'amphibians',
+                    'amphibian count',
+                    'wildlife amphibians',
+                    'amphibian biodiversity'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting amphibians data:', error);
+            return null;
+        }
+    }
+
+    async convertEarthquakesData() {
+        try {
+            const response = await fetch('data/earthquakes_by_country_2024.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.earthquakes_count,
+                        unit: 'earthquakes'
+                    };
+                    values.push(item.earthquakes_count);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#e65100');
+            });
+            
+            return {
+                id: 'earthquakes_2024',
+                title: 'Earthquakes 2024',
+                description: 'Countries colored by number of earthquakes in 2024',
+                category: 'environment',
+                tags: ['earthquakes', 'natural disasters', 'seismic activity', 'geology'],
+                answer_variations: [
+                    'earthquakes',
+                    'earthquake count',
+                    'seismic activity',
+                    'natural disasters',
+                    'earthquake frequency'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting earthquakes data:', error);
+            return null;
+        }
+    }
+
+    async convertStrongestEarthquakesData() {
+        try {
+            const response = await fetch('data/strongest_earthquake_magnitude_by_country_2024.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.strongest_earthquake_magnitude,
+                        unit: 'magnitude'
+                    };
+                    values.push(item.strongest_earthquake_magnitude);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'strongest_earthquakes_2024',
+                title: 'Strongest Earthquakes 2024',
+                description: 'Countries colored by strongest earthquake magnitude in 2024',
+                category: 'environment',
+                tags: ['strongest earthquakes', 'earthquake magnitude', 'seismic activity', 'natural disasters'],
+                answer_variations: [
+                    'strongest earthquakes',
+                    'earthquake magnitude',
+                    'strongest earthquake',
+                    'seismic magnitude',
+                    'earthquake strength'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting strongest earthquakes data:', error);
+            return null;
+        }
+    }
+
+    async convertHoloceneVolcanoesData() {
+        try {
+            const response = await fetch('data/holocene_volcanoes_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.holocene_volcanoes,
+                        unit: 'volcanoes'
+                    };
+                    values.push(item.holocene_volcanoes);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#fff3e0', '#e65100');
+            });
+            
+            return {
+                id: 'holocene_volcanoes',
+                title: 'Holocene Volcanoes',
+                description: 'Countries colored by number of Holocene volcanoes',
+                category: 'environment',
+                tags: ['volcanoes', 'holocene volcanoes', 'volcanic activity', 'geology'],
+                answer_variations: [
+                    'holocene volcanoes',
+                    'volcanoes',
+                    'volcanic activity',
+                    'volcano count',
+                    'volcanic features'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#fff3e0',
+                    maxColor: '#e65100',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting holocene volcanoes data:', error);
+            return null;
+        }
+    }
+
+    async convertPlantsData() {
+        try {
+            const response = await fetch('data/plants_wcmc_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.plant_species,
+                        unit: 'species'
+                    };
+                    values.push(item.plant_species);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e8f5e8', '#2e7d32');
+            });
+            
+            return {
+                id: 'plants',
+                title: 'Plant Species',
+                description: 'Countries colored by number of plant species',
+                category: 'environment',
+                tags: ['plants', 'plant species', 'flora', 'biodiversity', 'vegetation'],
+                answer_variations: [
+                    'plant species',
+                    'plants',
+                    'plant count',
+                    'flora',
+                    'vegetation species'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e8f5e8',
+                    maxColor: '#2e7d32',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting plants data:', error);
+            return null;
+        }
+    }
+
+    async convertWaterwaysData() {
+        try {
+            const response = await fetch('data/waterways_length_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.waterways_length_km,
+                        unit: 'km'
+                    };
+                    values.push(item.waterways_length_km);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#e0f2fe', '#0277bd');
+            });
+            
+            return {
+                id: 'waterways',
+                title: 'Waterways Length',
+                description: 'Countries colored by length of navigable waterways',
+                category: 'infrastructure',
+                tags: ['waterways', 'navigable waterways', 'rivers', 'canals', 'transportation'],
+                answer_variations: [
+                    'waterways length',
+                    'navigable waterways',
+                    'waterway length',
+                    'rivers and canals',
+                    'water transportation'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#e0f2fe',
+                    maxColor: '#0277bd',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting waterways data:', error);
+            return null;
+        }
+    }
+
+    async convertNationalAnthemsData() {
+        try {
+            const response = await fetch('data/national_anthems_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const anthemTypes = {};
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.anthem_type,
+                        unit: 'anthem type'
+                    };
+                    anthemTypes[item.anthem_type] = (anthemTypes[item.anthem_type] || 0) + 1;
+                }
+            });
+            
+            const anthemTypeList = Object.keys(anthemTypes);
+            const colors = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'];
+            
+            anthemTypeList.forEach((type, index) => {
+                const color = colors[index % colors.length];
+                Object.keys(countries).forEach(country => {
+                    if (countries[country].value === type) {
+                        countries[country].color = color;
+                    }
+                });
+            });
+            
+            return {
+                id: 'national_anthems',
+                title: 'National Anthems',
+                description: 'Countries colored by type of national anthem',
+                category: 'culture',
+                tags: ['national anthems', 'anthems', 'music', 'culture', 'national symbols'],
+                answer_variations: [
+                    'national anthems',
+                    'anthems',
+                    'national anthem type',
+                    'anthem types',
+                    'national music'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: colors,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting national anthems data:', error);
+            return null;
+        }
+    }
+
+    async convertShoeSizeData() {
+        try {
+            const response = await fetch('data/shoe_size_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.average_shoe_size,
+                        unit: 'US size'
+                    };
+                    values.push(item.average_shoe_size);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f3e5f5', '#7b1fa2');
+            });
+            
+            return {
+                id: 'shoe_size',
+                title: 'Average Shoe Size',
+                description: 'Countries colored by average shoe size',
+                category: 'demographics',
+                tags: ['shoe size', 'footwear', 'average size', 'demographics', 'clothing'],
+                answer_variations: [
+                    'shoe size',
+                    'average shoe size',
+                    'footwear size',
+                    'shoe sizes',
+                    'foot size'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f3e5f5',
+                    maxColor: '#7b1fa2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting shoe size data:', error);
+            return null;
+        }
+    }
+
+    async convertExternalDebtData() {
+        try {
+            const response = await fetch('data/external_debt_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.external_debt_million_usd,
+                        unit: 'million USD'
+                    };
+                    values.push(item.external_debt_million_usd);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'external_debt',
+                title: 'External Debt',
+                description: 'Countries colored by external debt',
+                category: 'economics',
+                tags: ['external debt', 'debt', 'foreign debt', 'national debt', 'financial debt'],
+                answer_variations: [
+                    'external debt',
+                    'debt',
+                    'foreign debt',
+                    'national debt',
+                    'external debt amount'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting external debt data:', error);
+            return null;
+        }
+    }
+
+    async convertExternalDebtPercentGDPData() {
+        try {
+            const response = await fetch('data/external_debt_percent_gdp_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.external_debt_percent_gdp,
+                        unit: '%'
+                    };
+                    values.push(item.external_debt_percent_gdp);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#ffebee', '#c62828');
+            });
+            
+            return {
+                id: 'external_debt_percent_gdp',
+                title: 'External Debt % GDP',
+                description: 'Countries colored by external debt as percentage of GDP',
+                category: 'economics',
+                tags: ['external debt gdp', 'debt percentage', 'debt ratio', 'financial debt', 'debt burden'],
+                answer_variations: [
+                    'external debt gdp',
+                    'debt percentage',
+                    'debt ratio',
+                    'debt burden',
+                    'debt gdp ratio'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#ffebee',
+                    maxColor: '#c62828',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting external debt percent gdp data:', error);
+            return null;
+        }
+    }
+
+    async convertFIDETopFederationsData() {
+        try {
+            const response = await fetch('data/fide_top_federations_open_august_2025.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.average_rating,
+                        unit: 'rating'
+                    };
+                    values.push(item.average_rating);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, '#f3e5f5', '#7b1fa2');
+            });
+            
+            return {
+                id: 'fide_top_federations',
+                title: 'FIDE Top Federations',
+                description: 'Countries colored by FIDE chess federation average rating',
+                category: 'sports',
+                tags: ['chess', 'fide', 'chess rating', 'chess federations', 'chess players'],
+                answer_variations: [
+                    'chess rating',
+                    'fide rating',
+                    'chess federations',
+                    'chess players',
+                    'chess average rating'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    minColor: '#f3e5f5',
+                    maxColor: '#7b1fa2',
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting fide top federations data:', error);
+            return null;
+        }
+    }
+
+    async convertSexRatioData() {
+        try {
+            const response = await fetch('data/sex_ratio_by_country.json');
+            const data = await response.json();
+            
+            const countries = {};
+            const values = [];
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.sex_ratio_males_per_100_females,
+                        unit: 'males/100 females'
+                    };
+                    values.push(item.sex_ratio_males_per_100_females);
+                }
+            });
+            
+            const maxValue = Math.max(...values);
+            const minValue = Math.min(...values);
+            
+            const colorScheme = this.getRandomColorScheme('gradient');
+            Object.keys(countries).forEach(country => {
+                const value = countries[country].value;
+                const ratio = (value - minValue) / (maxValue - minValue);
+                countries[country].color = this.getColorForRatio(ratio, colorScheme);
+            });
+            
+            return {
+                id: 'sex_ratio',
+                title: 'Sex Ratio',
+                description: 'Countries colored by sex ratio (males per 100 females)',
+                category: 'demographics',
+                tags: ['sex ratio', 'gender ratio', 'male female ratio', 'demographics', 'population gender'],
+                answer_variations: [
+                    'sex ratio',
+                    'gender ratio',
+                    'male female ratio',
+                    'sex ratio demographics',
+                    'gender demographics'
+                ],
+                colorScheme: {
+                    type: 'gradient',
+                    colors: colorScheme,
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting sex ratio data:', error);
+            return null;
+        }
+    }
+
+    async convertLandlockedNeighboursOceanAccessData() {
+        try {
+            const response = await fetch('data/landlocked_countries_neighbours_with_ocean_access.json');
+            const data = await response.json();
+            
+            const countries = {};
+            
+            data.data.forEach(item => {
+                if (item.country !== 'World') {
+                    const mappedCountryName = this.countryMapper.mapCountryName(item.country);
+                    countries[mappedCountryName] = {
+                        value: item.has_ocean_access_via_neighbours,
+                        unit: 'ocean access',
+                        color: item.has_ocean_access_via_neighbours ? '#22c55e' : '#ef4444'
+                    };
+                }
+            });
+            
+            return {
+                id: 'landlocked_neighbours_ocean_access',
+                title: 'Landlocked Countries with Ocean Access',
+                description: 'Landlocked countries that have ocean access through neighbors',
+                category: 'geography',
+                tags: ['landlocked', 'ocean access', 'geography', 'neighbors', 'coastal access'],
+                answer_variations: [
+                    'landlocked with ocean access',
+                    'ocean access through neighbors',
+                    'landlocked ocean access',
+                    'coastal access through neighbors',
+                    'ocean access via neighbors'
+                ],
+                colorScheme: {
+                    type: 'categorical',
+                    colors: ['#22c55e', '#ef4444'],
+                    defaultColor: '#ffffff'
+                },
+                countries: countries
+            };
+        } catch (error) {
+            console.error('Error converting landlocked neighbours ocean access data:', error);
+            return null;
+        }
+    }
+
     
 
 }

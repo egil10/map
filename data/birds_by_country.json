@@ -1,0 +1,536 @@
+{
+  "title": "Bird Species by Country",
+  "description": "Number of bird species per country",
+  "unit": "count",
+  "source": "https://worldrainforests.com/03highest_biodiversity.htm",
+  "data": {
+    "Colombia": {
+      "value": 1917,
+      "unit": "count"
+    },
+    "Peru": {
+      "value": 1892,
+      "unit": "count"
+    },
+    "Brazil": {
+      "value": 1864,
+      "unit": "count"
+    },
+    "Indonesia": {
+      "value": 1791,
+      "unit": "count"
+    },
+    "Ecuador": {
+      "value": 1684,
+      "unit": "count"
+    },
+    "Venezuela": {
+      "value": 1420,
+      "unit": "count"
+    },
+    "China": {
+      "value": 1330,
+      "unit": "count"
+    },
+    "India": {
+      "value": 1271,
+      "unit": "count"
+    },
+    "Mexico": {
+      "value": 1137,
+      "unit": "count"
+    },
+    "Kenya": {
+      "value": 1127,
+      "unit": "count"
+    },
+    "Tanzania": {
+      "value": 1103,
+      "unit": "count"
+    },
+    "Myanmar": {
+      "value": 1090,
+      "unit": "count"
+    },
+    "United States": {
+      "value": 1036,
+      "unit": "count"
+    },
+    "Uganda": {
+      "value": 1036,
+      "unit": "count"
+    },
+    "Argentina": {
+      "value": 1041,
+      "unit": "count"
+    },
+    "Thailand": {
+      "value": 987,
+      "unit": "count"
+    },
+    "Panama": {
+      "value": 981,
+      "unit": "count"
+    },
+    "Angola": {
+      "value": 956,
+      "unit": "count"
+    },
+    "Sudan": {
+      "value": 955,
+      "unit": "count"
+    },
+    "Cameroon": {
+      "value": 951,
+      "unit": "count"
+    },
+    "Costa Rica": {
+      "value": 895,
+      "unit": "count"
+    },
+    "Nepal": {
+      "value": 870,
+      "unit": "count"
+    },
+    "Vietnam": {
+      "value": 866,
+      "unit": "count"
+    },
+    "Ethiopia": {
+      "value": 852,
+      "unit": "count"
+    },
+    "South Africa": {
+      "value": 832,
+      "unit": "count"
+    },
+    "Australia": {
+      "value": 833,
+      "unit": "count"
+    },
+    "South Sudan": {
+      "value": 820,
+      "unit": "count"
+    },
+    "Guyana": {
+      "value": 805,
+      "unit": "count"
+    },
+    "Malaysia": {
+      "value": 787,
+      "unit": "count"
+    },
+    "Papua New Guinea": {
+      "value": 780,
+      "unit": "count"
+    },
+    "Zambia": {
+      "value": 772,
+      "unit": "count"
+    },
+    "Ghana": {
+      "value": 741,
+      "unit": "count"
+    },
+    "Honduras": {
+      "value": 739,
+      "unit": "count"
+    },
+    "Central African Republic": {
+      "value": 737,
+      "unit": "count"
+    },
+    "Guatemala": {
+      "value": 742,
+      "unit": "count"
+    },
+    "Ivory Coast": {
+      "value": 723,
+      "unit": "count"
+    },
+    "French Guiana": {
+      "value": 721,
+      "unit": "count"
+    },
+    "Laos": {
+      "value": 721,
+      "unit": "count"
+    },
+    "Nicaragua": {
+      "value": 716,
+      "unit": "count"
+    },
+    "Suriname": {
+      "value": 711,
+      "unit": "count"
+    },
+    "Paraguay": {
+      "value": 707,
+      "unit": "count"
+    },
+    "Russia": {
+      "value": 712,
+      "unit": "count"
+    },
+    "Mozambique": {
+      "value": 717,
+      "unit": "count"
+    },
+    "Zimbabwe": {
+      "value": 666,
+      "unit": "count"
+    },
+    "Guinea": {
+      "value": 666,
+      "unit": "count"
+    },
+    "Bangladesh": {
+      "value": 663,
+      "unit": "count"
+    },
+    "Malawi": {
+      "value": 662,
+      "unit": "count"
+    },
+    "Gabon": {
+      "value": 659,
+      "unit": "count"
+    },
+    "Pakistan": {
+      "value": 658,
+      "unit": "count"
+    },
+    "Congo": {
+      "value": 656,
+      "unit": "count"
+    },
+    "Somalia": {
+      "value": 665,
+      "unit": "count"
+    },
+    "Sierra Leone": {
+      "value": 645,
+      "unit": "count"
+    },
+    "Namibia": {
+      "value": 646,
+      "unit": "count"
+    },
+    "Burundi": {
+      "value": 634,
+      "unit": "count"
+    },
+    "Senegal": {
+      "value": 631,
+      "unit": "count"
+    },
+    "Togo": {
+      "value": 631,
+      "unit": "count"
+    },
+    "Liberia": {
+      "value": 593,
+      "unit": "count"
+    },
+    "Benin": {
+      "value": 596,
+      "unit": "count"
+    },
+    "Belize": {
+      "value": 583,
+      "unit": "count"
+    },
+    "Botswana": {
+      "value": 581,
+      "unit": "count"
+    },
+    "Eritrea": {
+      "value": 570,
+      "unit": "count"
+    },
+    "United Kingdom": {
+      "value": 562,
+      "unit": "count"
+    },
+    "Chad": {
+      "value": 554,
+      "unit": "count"
+    },
+    "Gambia": {
+      "value": 554,
+      "unit": "count"
+    },
+    "Spain": {
+      "value": 550,
+      "unit": "count"
+    },
+    "France": {
+      "value": 522,
+      "unit": "count"
+    },
+    "El Salvador": {
+      "value": 522,
+      "unit": "count"
+    },
+    "Israel": {
+      "value": 526,
+      "unit": "count"
+    },
+    "Iran": {
+      "value": 527,
+      "unit": "count"
+    },
+    "Portugal": {
+      "value": 513,
+      "unit": "count"
+    },
+    "Afghanistan": {
+      "value": 507,
+      "unit": "count"
+    },
+    "Eswatini": {
+      "value": 505,
+      "unit": "count"
+    },
+    "Kazakhstan": {
+      "value": 494,
+      "unit": "count"
+    },
+    "Guinea-Bissau": {
+      "value": 490,
+      "unit": "count"
+    },
+    "Italy": {
+      "value": 484,
+      "unit": "count"
+    },
+    "Germany": {
+      "value": 484,
+      "unit": "count"
+    },
+    "Saudi Arabia": {
+      "value": 471,
+      "unit": "count"
+    },
+    "Brunei": {
+      "value": 468,
+      "unit": "count"
+    },
+    "Equatorial Guinea": {
+      "value": 466,
+      "unit": "count"
+    },
+    "Sweden": {
+      "value": 452,
+      "unit": "count"
+    },
+    "Uruguay": {
+      "value": 448,
+      "unit": "count"
+    },
+    "United Arab Emirates": {
+      "value": 448,
+      "unit": "count"
+    },
+    "Taiwan": {
+      "value": 446,
+      "unit": "count"
+    },
+    "Morocco": {
+      "value": 440,
+      "unit": "count"
+    },
+    "Singapore": {
+      "value": 440,
+      "unit": "count"
+    },
+    "Greece": {
+      "value": 433,
+      "unit": "count"
+    },
+    "South Korea": {
+      "value": 420,
+      "unit": "count"
+    },
+    "Yemen": {
+      "value": 421,
+      "unit": "count"
+    },
+    "Jordan": {
+      "value": 422,
+      "unit": "count"
+    },
+    "Bulgaria": {
+      "value": 405,
+      "unit": "count"
+    },
+    "Mongolia": {
+      "value": 404,
+      "unit": "count"
+    },
+    "Syria": {
+      "value": 395,
+      "unit": "count"
+    },
+    "Algeria": {
+      "value": 388,
+      "unit": "count"
+    },
+    "Serbia": {
+      "value": 381,
+      "unit": "count"
+    },
+    "Montenegro": {
+      "value": 381,
+      "unit": "count"
+    },
+    "Turkmenistan": {
+      "value": 378,
+      "unit": "count"
+    },
+    "Lebanon": {
+      "value": 374,
+      "unit": "count"
+    },
+    "Tunisia": {
+      "value": 370,
+      "unit": "count"
+    },
+    "Romania": {
+      "value": 364,
+      "unit": "count"
+    },
+    "North Korea": {
+      "value": 360,
+      "unit": "count"
+    },
+    "Azerbaijan": {
+      "value": 359,
+      "unit": "count"
+    },
+    "Kuwait": {
+      "value": 357,
+      "unit": "count"
+    },
+    "Cyprus": {
+      "value": 356,
+      "unit": "count"
+    },
+    "Puerto Rico": {
+      "value": 356,
+      "unit": "count"
+    },
+    "Tajikistan": {
+      "value": 357,
+      "unit": "count"
+    },
+    "Kyrgyzstan": {
+      "value": 353,
+      "unit": "count"
+    },
+    "Ukraine": {
+      "value": 352,
+      "unit": "count"
+    },
+    "Slovenia": {
+      "value": 352,
+      "unit": "count"
+    },
+    "Djibouti": {
+      "value": 342,
+      "unit": "count"
+    },
+    "North Macedonia": {
+      "value": 337,
+      "unit": "count"
+    },
+    "Hong Kong": {
+      "value": 336,
+      "unit": "count"
+    },
+    "Libya": {
+      "value": 331,
+      "unit": "count"
+    },
+    "Latvia": {
+      "value": 327,
+      "unit": "count"
+    },
+    "Bahamas": {
+      "value": 326,
+      "unit": "count"
+    },
+    "Albania": {
+      "value": 317,
+      "unit": "count"
+    },
+    "Belarus": {
+      "value": 312,
+      "unit": "count"
+    },
+    "Iceland": {
+      "value": 307,
+      "unit": "count"
+    },
+    "Armenia": {
+      "value": 307,
+      "unit": "count"
+    },
+    "Georgia": {
+      "value": 308,
+      "unit": "count"
+    },
+    "Jamaica": {
+      "value": 300,
+      "unit": "count"
+    },
+    "Philippines": {
+      "value": 647,
+      "unit": "count"
+    },
+    "Sri Lanka": {
+      "value": 479,
+      "unit": "count"
+    },
+    "Oman": {
+      "value": 480,
+      "unit": "count"
+    },
+    "Egypt": {
+      "value": 480,
+      "unit": "count"
+    },
+    "Trinidad and Tobago": {
+      "value": 454,
+      "unit": "count"
+    },
+    "Turkey": {
+      "value": 454,
+      "unit": "count"
+    },
+    "New Zealand": {
+      "value": 363,
+      "unit": "count"
+    },
+    "Iraq": {
+      "value": 410,
+      "unit": "count"
+    },
+    "Dominican Republic": {
+      "value": 291,
+      "unit": "count"
+    },
+    "Haiti": {
+      "value": 277,
+      "unit": "count"
+    },
+    "Solomon Islands": {
+      "value": 280,
+      "unit": "count"
+    },
+    "Madagascar": {
+      "value": 278,
+      "unit": "count"
+    }
+  }
+}

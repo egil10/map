@@ -1,0 +1,84 @@
+{
+  "title": "Holocene Volcanoes by Country",
+  "description": "Number of Holocene volcanoes per country",
+  "unit": "count",
+  "source": "https://volcano.si.edu/faq/index.cfm?question=countries",
+  "data": {
+    "United States": {
+      "value": 165,
+      "unit": "count"
+    },
+    "Japan": {
+      "value": 120,
+      "unit": "count"
+    },
+    "Russia": {
+      "value": 114,
+      "unit": "count"
+    },
+    "Indonesia": {
+      "value": 107,
+      "unit": "count"
+    },
+    "Chile": {
+      "value": 90,
+      "unit": "count"
+    },
+    "Ethiopia": {
+      "value": 50,
+      "unit": "count"
+    },
+    "Papua New Guinea": {
+      "value": 39,
+      "unit": "count"
+    },
+    "Ecuador": {
+      "value": 36,
+      "unit": "count"
+    },
+    "Mexico": {
+      "value": 35,
+      "unit": "count"
+    },
+    "Iceland": {
+      "value": 35,
+      "unit": "count"
+    },
+    "Argentina": {
+      "value": 32,
+      "unit": "count"
+    },
+    "Canada": {
+      "value": 24,
+      "unit": "count"
+    },
+    "New Zealand": {
+      "value": 23,
+      "unit": "count"
+    },
+    "Philippines": {
+      "value": 23,
+      "unit": "count"
+    },
+    "Tonga": {
+      "value": 21,
+      "unit": "count"
+    },
+    "Kenya": {
+      "value": 21,
+      "unit": "count"
+    },
+    "Guatemala": {
+      "value": 20,
+      "unit": "count"
+    },
+    "France": {
+      "value": 19,
+      "unit": "count"
+    },
+    "El Salvador": {
+      "value": 17,
+      "unit": "count"
+    }
+  }
+}

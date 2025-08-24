@@ -1,0 +1,316 @@
+{
+  "title": "Strongest Earthquake Magnitude by Country in 2024",
+  "description": "Strongest earthquake magnitude within 300 km of each country in 2024",
+  "unit": "magnitude",
+  "source": "https://earthquakelist.org/reports/top-100-countries-most-earthquakes/#2024",
+  "data": {
+    "Mexico": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Indonesia": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Japan": {
+      "value": 7.5,
+      "unit": "magnitude"
+    },
+    "Philippines": {
+      "value": 7.1,
+      "unit": "magnitude"
+    },
+    "Chile": {
+      "value": 7.4,
+      "unit": "magnitude"
+    },
+    "Guatemala": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Taiwan": {
+      "value": 7.4,
+      "unit": "magnitude"
+    },
+    "Papua New Guinea": {
+      "value": 6.9,
+      "unit": "magnitude"
+    },
+    "Peru": {
+      "value": 5.8,
+      "unit": "magnitude"
+    },
+    "China": {
+      "value": 7.0,
+      "unit": "magnitude"
+    },
+    "Argentina": {
+      "value": 7.4,
+      "unit": "magnitude"
+    },
+    "El Salvador": {
+      "value": 6.2,
+      "unit": "magnitude"
+    },
+    "Kyrgyzstan": {
+      "value": 7.0,
+      "unit": "magnitude"
+    },
+    "Afghanistan": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Tonga": {
+      "value": 6.9,
+      "unit": "magnitude"
+    },
+    "Tajikistan": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Russia": {
+      "value": 7.0,
+      "unit": "magnitude"
+    },
+    "Nicaragua": {
+      "value": 6.2,
+      "unit": "magnitude"
+    },
+    "Vanuatu": {
+      "value": 7.3,
+      "unit": "magnitude"
+    },
+    "Honduras": {
+      "value": 6.2,
+      "unit": "magnitude"
+    },
+    "Kazakhstan": {
+      "value": 7.0,
+      "unit": "magnitude"
+    },
+    "Pakistan": {
+      "value": 6.4,
+      "unit": "magnitude"
+    },
+    "Timor-Leste": {
+      "value": 6.1,
+      "unit": "magnitude"
+    },
+    "Costa Rica": {
+      "value": 6.2,
+      "unit": "magnitude"
+    },
+    "India": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "Turkey": {
+      "value": 6.0,
+      "unit": "magnitude"
+    },
+    "Greece": {
+      "value": 5.8,
+      "unit": "magnitude"
+    },
+    "Iran": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Fiji": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "Bolivia": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "United States": {
+      "value": 7.0,
+      "unit": "magnitude"
+    },
+    "Panama": {
+      "value": 5.8,
+      "unit": "magnitude"
+    },
+    "Uzbekistan": {
+      "value": 5.2,
+      "unit": "magnitude"
+    },
+    "Colombia": {
+      "value": 5.6,
+      "unit": "magnitude"
+    },
+    "Ethiopia": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "New Zealand": {
+      "value": 5.8,
+      "unit": "magnitude"
+    },
+    "Ecuador": {
+      "value": 5.5,
+      "unit": "magnitude"
+    },
+    "Samoa": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "Venezuela": {
+      "value": 6.0,
+      "unit": "magnitude"
+    },
+    "Myanmar": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "Solomon Islands": {
+      "value": 5.8,
+      "unit": "magnitude"
+    },
+    "Canada": {
+      "value": 5.7,
+      "unit": "magnitude"
+    },
+    "Iraq": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Dominican Republic": {
+      "value": 5.6,
+      "unit": "magnitude"
+    },
+    "Bangladesh": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Albania": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Italy": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Azerbaijan": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "North Macedonia": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Bulgaria": {
+      "value": 5.2,
+      "unit": "magnitude"
+    },
+    "Armenia": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Libya": {
+      "value": 5.3,
+      "unit": "magnitude"
+    },
+    "Georgia": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Brazil": {
+      "value": 6.6,
+      "unit": "magnitude"
+    },
+    "Nepal": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "Oman": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "Saudi Arabia": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Mongolia": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "United Arab Emirates": {
+      "value": 5.1,
+      "unit": "magnitude"
+    },
+    "Tanzania": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "Croatia": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Turkmenistan": {
+      "value": 4.8,
+      "unit": "magnitude"
+    },
+    "Kuwait": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Eritrea": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Cyprus": {
+      "value": 4.9,
+      "unit": "magnitude"
+    },
+    "Kosovo": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Qatar": {
+      "value": 5.1,
+      "unit": "magnitude"
+    },
+    "Malaysia": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "Montenegro": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Haiti": {
+      "value": 5.9,
+      "unit": "magnitude"
+    },
+    "Yemen": {
+      "value": 5.4,
+      "unit": "magnitude"
+    },
+    "Cuba": {
+      "value": 6.8,
+      "unit": "magnitude"
+    },
+    "Laos": {
+      "value": 5.1,
+      "unit": "magnitude"
+    },
+    "Vietnam": {
+      "value": 5.1,
+      "unit": "magnitude"
+    },
+    "Algeria": {
+      "value": 5.0,
+      "unit": "magnitude"
+    },
+    "Romania": {
+      "value": 5.2,
+      "unit": "magnitude"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 5.4,
+      "unit": "magnitude"
+    }
+  }
+}

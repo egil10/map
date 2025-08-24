@@ -1,0 +1,320 @@
+{
+  "title": "Significant Earthquakes by Country in 2024",
+  "description": "Number of significant earthquakes (magnitude 4.0+) within 300 km of each country in 2024",
+  "unit": "count",
+  "source": "https://earthquakelist.org/reports/top-100-countries-most-earthquakes/#2024",
+  "data": {
+    "Mexico": {
+      "value": 1969,
+      "unit": "count"
+    },
+    "Indonesia": {
+      "value": 1871,
+      "unit": "count"
+    },
+    "Japan": {
+      "value": 1563,
+      "unit": "count"
+    },
+    "Philippines": {
+      "value": 997,
+      "unit": "count"
+    },
+    "Chile": {
+      "value": 875,
+      "unit": "count"
+    },
+    "Guatemala": {
+      "value": 704,
+      "unit": "count"
+    },
+    "Taiwan": {
+      "value": 655,
+      "unit": "count"
+    },
+    "Papua New Guinea": {
+      "value": 637,
+      "unit": "count"
+    },
+    "Peru": {
+      "value": 624,
+      "unit": "count"
+    },
+    "China": {
+      "value": 591,
+      "unit": "count"
+    },
+    "Argentina": {
+      "value": 398,
+      "unit": "count"
+    },
+    "El Salvador": {
+      "value": 367,
+      "unit": "count"
+    },
+    "Kyrgyzstan": {
+      "value": 362,
+      "unit": "count"
+    },
+    "Afghanistan": {
+      "value": 313,
+      "unit": "count"
+    },
+    "Tonga": {
+      "value": 309,
+      "unit": "count"
+    },
+    "Tajikistan": {
+      "value": 309,
+      "unit": "count"
+    },
+    "Russia": {
+      "value": 292,
+      "unit": "count"
+    },
+    "Nicaragua": {
+      "value": 283,
+      "unit": "count"
+    },
+    "Vanuatu": {
+      "value": 273,
+      "unit": "count"
+    },
+    "Honduras": {
+      "value": 271,
+      "unit": "count"
+    },
+    "Kazakhstan": {
+      "value": 268,
+      "unit": "count"
+    },
+    "Pakistan": {
+      "value": 252,
+      "unit": "count"
+    },
+    "Timor-Leste": {
+      "value": 251,
+      "unit": "count"
+    },
+    "Costa Rica": {
+      "value": 241,
+      "unit": "count"
+    },
+    "India": {
+      "value": 207,
+      "unit": "count"
+    },
+    "Turkey": {
+      "value": 204,
+      "unit": "count"
+    },
+    "Greece": {
+      "value": 204,
+      "unit": "count"
+    },
+    "Iran": {
+      "value": 198,
+      "unit": "count"
+    },
+    "Fiji": {
+      "value": 196,
+      "unit": "count"
+    },
+    "Bolivia": {
+      "value": 190,
+      "unit": "count"
+    },
+    "United States": {
+      "value": 168,
+      "unit": "count"
+    },
+    "Panama": {
+      "value": 153,
+      "unit": "count"
+    },
+    "Uzbekistan": {
+      "value": 152,
+      "unit": "count"
+    },
+    "Colombia": {
+      "value": 137,
+      "unit": "count"
+    },
+    "Ethiopia": {
+      "value": 127,
+      "unit": "count"
+    },
+    "New Zealand": {
+      "value": 124,
+      "unit": "count"
+    },
+    "Ecuador": {
+      "value": 124,
+      "unit": "count"
+    },
+    "Samoa": {
+      "value": 112,
+      "unit": "count"
+    },
+    "Venezuela": {
+      "value": 105,
+      "unit": "count"
+    },
+    "Myanmar": {
+      "value": 89,
+      "unit": "count"
+    },
+    "Solomon Islands": {
+      "value": 64,
+      "unit": "count"
+    },
+    "Canada": {
+      "value": 63,
+      "unit": "count"
+    },
+    "Iraq": {
+      "value": 60,
+      "unit": "count"
+    },
+    "Dominican Republic": {
+      "value": 58,
+      "unit": "count"
+    },
+    "Bangladesh": {
+      "value": 57,
+      "unit": "count"
+    },
+    "Albania": {
+      "value": 56,
+      "unit": "count"
+    },
+    "Italy": {
+      "value": 55,
+      "unit": "count"
+    },
+    "Azerbaijan": {
+      "value": 54,
+      "unit": "count"
+    },
+    "North Macedonia": {
+      "value": 48,
+      "unit": "count"
+    },
+    "Bulgaria": {
+      "value": 44,
+      "unit": "count"
+    },
+    "Armenia": {
+      "value": 43,
+      "unit": "count"
+    },
+    "Libya": {
+      "value": 42,
+      "unit": "count"
+    },
+    "Georgia": {
+      "value": 42,
+      "unit": "count"
+    },
+    "Brazil": {
+      "value": 40,
+      "unit": "count"
+    },
+    "Nepal": {
+      "value": 38,
+      "unit": "count"
+    },
+    "Oman": {
+      "value": 37,
+      "unit": "count"
+    },
+    "Saudi Arabia": {
+      "value": 34,
+      "unit": "count"
+    },
+    "Mongolia": {
+      "value": 33,
+      "unit": "count"
+    },
+    "British Virgin Islands": {
+      "value": 31,
+      "unit": "count"
+    },
+    "United Arab Emirates": {
+      "value": 30,
+      "unit": "count"
+    },
+    "Tanzania": {
+      "value": 28,
+      "unit": "count"
+    },
+    "Croatia": {
+      "value": 26,
+      "unit": "count"
+    },
+    "Turkmenistan": {
+      "value": 26,
+      "unit": "count"
+    },
+    "Kuwait": {
+      "value": 24,
+      "unit": "count"
+    },
+    "Eritrea": {
+      "value": 23,
+      "unit": "count"
+    },
+    "Cyprus": {
+      "value": 23,
+      "unit": "count"
+    },
+    "Kosovo": {
+      "value": 22,
+      "unit": "count"
+    },
+    "Qatar": {
+      "value": 22,
+      "unit": "count"
+    },
+    "Malaysia": {
+      "value": 22,
+      "unit": "count"
+    },
+    "Montenegro": {
+      "value": 20,
+      "unit": "count"
+    },
+    "Haiti": {
+      "value": 19,
+      "unit": "count"
+    },
+    "Yemen": {
+      "value": 19,
+      "unit": "count"
+    },
+    "Cuba": {
+      "value": 18,
+      "unit": "count"
+    },
+    "Laos": {
+      "value": 18,
+      "unit": "count"
+    },
+    "Vietnam": {
+      "value": 18,
+      "unit": "count"
+    },
+    "Algeria": {
+      "value": 18,
+      "unit": "count"
+    },
+    "Romania": {
+      "value": 17,
+      "unit": "count"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 16,
+      "unit": "count"
+    }
+  }
+}
