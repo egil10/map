@@ -1,0 +1,906 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Comprehensive country mapping for GeoQuest - connects ISO codes, names, and synonyms",
+    "last_updated": "2024-01-01",
+    "sources": ["ISO 3166-1", "UN Statistics", "OWID", "World Bank", "CIA World Factbook"]
+  },
+  "countries": {
+    "AF": {
+      "iso2": "AF",
+      "iso3": "AFG",
+      "name": "Afghanistan",
+      "aliases": ["Islamic Republic of Afghanistan", "Afghan"],
+      "data_sources": {
+        "owid": "Afghanistan",
+        "world_bank": "Afghanistan",
+        "un": "Afghanistan",
+        "cia": "Afghanistan"
+      }
+    },
+    "AL": {
+      "iso2": "AL",
+      "iso3": "ALB",
+      "name": "Albania",
+      "aliases": ["Republic of Albania", "Shqipëria"],
+      "data_sources": {
+        "owid": "Albania",
+        "world_bank": "Albania",
+        "un": "Albania",
+        "cia": "Albania"
+      }
+    },
+    "DZ": {
+      "iso2": "DZ",
+      "iso3": "DZA",
+      "name": "Algeria",
+      "aliases": ["People's Democratic Republic of Algeria", "Algérie"],
+      "data_sources": {
+        "owid": "Algeria",
+        "world_bank": "Algeria",
+        "un": "Algeria",
+        "cia": "Algeria"
+      }
+    },
+    "AR": {
+      "iso2": "AR",
+      "iso3": "ARG",
+      "name": "Argentina",
+      "aliases": ["Argentine Republic", "República Argentina"],
+      "data_sources": {
+        "owid": "Argentina",
+        "world_bank": "Argentina",
+        "un": "Argentina",
+        "cia": "Argentina"
+      }
+    },
+    "AU": {
+      "iso2": "AU",
+      "iso3": "AUS",
+      "name": "Australia",
+      "aliases": ["Commonwealth of Australia"],
+      "data_sources": {
+        "owid": "Australia",
+        "world_bank": "Australia",
+        "un": "Australia",
+        "cia": "Australia"
+      }
+    },
+    "AT": {
+      "iso2": "AT",
+      "iso3": "AUT",
+      "name": "Austria",
+      "aliases": ["Republic of Austria", "Österreich"],
+      "data_sources": {
+        "owid": "Austria",
+        "world_bank": "Austria",
+        "un": "Austria",
+        "cia": "Austria"
+      }
+    },
+    "BD": {
+      "iso2": "BD",
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "aliases": ["People's Republic of Bangladesh", "বাংলাদেশ"],
+      "data_sources": {
+        "owid": "Bangladesh",
+        "world_bank": "Bangladesh",
+        "un": "Bangladesh",
+        "cia": "Bangladesh"
+      }
+    },
+    "BE": {
+      "iso2": "BE",
+      "iso3": "BEL",
+      "name": "Belgium",
+      "aliases": ["Kingdom of Belgium", "België", "Belgique"],
+      "data_sources": {
+        "owid": "Belgium",
+        "world_bank": "Belgium",
+        "un": "Belgium",
+        "cia": "Belgium"
+      }
+    },
+    "BR": {
+      "iso2": "BR",
+      "iso3": "BRA",
+      "name": "Brazil",
+      "aliases": ["Federative Republic of Brazil", "Brasil"],
+      "data_sources": {
+        "owid": "Brazil",
+        "world_bank": "Brazil",
+        "un": "Brazil",
+        "cia": "Brazil"
+      }
+    },
+    "BG": {
+      "iso2": "BG",
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "aliases": ["Republic of Bulgaria", "България"],
+      "data_sources": {
+        "owid": "Bulgaria",
+        "world_bank": "Bulgaria",
+        "un": "Bulgaria",
+        "cia": "Bulgaria"
+      }
+    },
+    "CA": {
+      "iso2": "CA",
+      "iso3": "CAN",
+      "name": "Canada",
+      "aliases": [],
+      "data_sources": {
+        "owid": "Canada",
+        "world_bank": "Canada",
+        "un": "Canada",
+        "cia": "Canada"
+      }
+    },
+    "CL": {
+      "iso2": "CL",
+      "iso3": "CHL",
+      "name": "Chile",
+      "aliases": ["Republic of Chile", "República de Chile"],
+      "data_sources": {
+        "owid": "Chile",
+        "world_bank": "Chile",
+        "un": "Chile",
+        "cia": "Chile"
+      }
+    },
+    "CN": {
+      "iso2": "CN",
+      "iso3": "CHN",
+      "name": "China",
+      "aliases": ["People's Republic of China", "PRC", "中华人民共和国", "China (mainland)"],
+      "data_sources": {
+        "owid": "China",
+        "world_bank": "China",
+        "un": "China",
+        "cia": "China"
+      }
+    },
+    "CO": {
+      "iso2": "CO",
+      "iso3": "COL",
+      "name": "Colombia",
+      "aliases": ["Republic of Colombia", "República de Colombia"],
+      "data_sources": {
+        "owid": "Colombia",
+        "world_bank": "Colombia",
+        "un": "Colombia",
+        "cia": "Colombia"
+      }
+    },
+    "CZ": {
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "name": "Czech Republic",
+      "aliases": ["Czechia", "Česká republika"],
+      "data_sources": {
+        "owid": "Czech Republic",
+        "world_bank": "Czech Republic",
+        "un": "Czech Republic",
+        "cia": "Czech Republic"
+      }
+    },
+    "DK": {
+      "iso2": "DK",
+      "iso3": "DNK",
+      "name": "Denmark",
+      "aliases": ["Kingdom of Denmark", "Danmark"],
+      "data_sources": {
+        "owid": "Denmark",
+        "world_bank": "Denmark",
+        "un": "Denmark",
+        "cia": "Denmark"
+      }
+    },
+    "EG": {
+      "iso2": "EG",
+      "iso3": "EGY",
+      "name": "Egypt",
+      "aliases": ["Arab Republic of Egypt", "مصر"],
+      "data_sources": {
+        "owid": "Egypt",
+        "world_bank": "Egypt",
+        "un": "Egypt",
+        "cia": "Egypt"
+      }
+    },
+    "FI": {
+      "iso2": "FI",
+      "iso3": "FIN",
+      "name": "Finland",
+      "aliases": ["Republic of Finland", "Suomi"],
+      "data_sources": {
+        "owid": "Finland",
+        "world_bank": "Finland",
+        "un": "Finland",
+        "cia": "Finland"
+      }
+    },
+    "FR": {
+      "iso2": "FR",
+      "iso3": "FRA",
+      "name": "France",
+      "aliases": ["French Republic", "République française"],
+      "data_sources": {
+        "owid": "France",
+        "world_bank": "France",
+        "un": "France",
+        "cia": "France"
+      }
+    },
+    "DE": {
+      "iso2": "DE",
+      "iso3": "DEU",
+      "name": "Germany",
+      "aliases": ["Federal Republic of Germany", "Deutschland"],
+      "data_sources": {
+        "owid": "Germany",
+        "world_bank": "Germany",
+        "un": "Germany",
+        "cia": "Germany"
+      }
+    },
+    "GH": {
+      "iso2": "GH",
+      "iso3": "GHA",
+      "name": "Ghana",
+      "aliases": ["Republic of Ghana"],
+      "data_sources": {
+        "owid": "Ghana",
+        "world_bank": "Ghana",
+        "un": "Ghana",
+        "cia": "Ghana"
+      }
+    },
+    "GR": {
+      "iso2": "GR",
+      "iso3": "GRC",
+      "name": "Greece",
+      "aliases": ["Hellenic Republic", "Ελλάδα"],
+      "data_sources": {
+        "owid": "Greece",
+        "world_bank": "Greece",
+        "un": "Greece",
+        "cia": "Greece"
+      }
+    },
+    "HU": {
+      "iso2": "HU",
+      "iso3": "HUN",
+      "name": "Hungary",
+      "aliases": ["Republic of Hungary", "Magyarország"],
+      "data_sources": {
+        "owid": "Hungary",
+        "world_bank": "Hungary",
+        "un": "Hungary",
+        "cia": "Hungary"
+      }
+    },
+    "IN": {
+      "iso2": "IN",
+      "iso3": "IND",
+      "name": "India",
+      "aliases": ["Republic of India", "भारत"],
+      "data_sources": {
+        "owid": "India",
+        "world_bank": "India",
+        "un": "India",
+        "cia": "India"
+      }
+    },
+    "ID": {
+      "iso2": "ID",
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "aliases": ["Republic of Indonesia"],
+      "data_sources": {
+        "owid": "Indonesia",
+        "world_bank": "Indonesia",
+        "un": "Indonesia",
+        "cia": "Indonesia"
+      }
+    },
+    "IR": {
+      "iso2": "IR",
+      "iso3": "IRN",
+      "name": "Iran",
+      "aliases": ["Islamic Republic of Iran", "Iran, Islamic Rep."],
+      "data_sources": {
+        "owid": "Iran",
+        "world_bank": "Iran, Islamic Rep.",
+        "un": "Iran",
+        "cia": "Iran"
+      }
+    },
+    "IQ": {
+      "iso2": "IQ",
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "aliases": ["Republic of Iraq", "العراق"],
+      "data_sources": {
+        "owid": "Iraq",
+        "world_bank": "Iraq",
+        "un": "Iraq",
+        "cia": "Iraq"
+      }
+    },
+    "IE": {
+      "iso2": "IE",
+      "iso3": "IRL",
+      "name": "Ireland",
+      "aliases": ["Republic of Ireland", "Éire"],
+      "data_sources": {
+        "owid": "Ireland",
+        "world_bank": "Ireland",
+        "un": "Ireland",
+        "cia": "Ireland"
+      }
+    },
+    "IL": {
+      "iso2": "IL",
+      "iso3": "ISR",
+      "name": "Israel",
+      "aliases": ["State of Israel", "ישראל"],
+      "data_sources": {
+        "owid": "Israel",
+        "world_bank": "Israel",
+        "un": "Israel",
+        "cia": "Israel"
+      }
+    },
+    "IT": {
+      "iso2": "IT",
+      "iso3": "ITA",
+      "name": "Italy",
+      "aliases": ["Italian Republic", "Repubblica Italiana"],
+      "data_sources": {
+        "owid": "Italy",
+        "world_bank": "Italy",
+        "un": "Italy",
+        "cia": "Italy"
+      }
+    },
+    "JP": {
+      "iso2": "JP",
+      "iso3": "JPN",
+      "name": "Japan",
+      "aliases": ["State of Japan", "日本"],
+      "data_sources": {
+        "owid": "Japan",
+        "world_bank": "Japan",
+        "un": "Japan",
+        "cia": "Japan"
+      }
+    },
+    "KE": {
+      "iso2": "KE",
+      "iso3": "KEN",
+      "name": "Kenya",
+      "aliases": ["Republic of Kenya"],
+      "data_sources": {
+        "owid": "Kenya",
+        "world_bank": "Kenya",
+        "un": "Kenya",
+        "cia": "Kenya"
+      }
+    },
+    "KR": {
+      "iso2": "KR",
+      "iso3": "KOR",
+      "name": "South Korea",
+      "aliases": ["Republic of Korea", "Korea, Rep.", "대한민국"],
+      "data_sources": {
+        "owid": "South Korea",
+        "world_bank": "Korea, Rep.",
+        "un": "Republic of Korea",
+        "cia": "South Korea"
+      }
+    },
+    "MY": {
+      "iso2": "MY",
+      "iso3": "MYS",
+      "name": "Malaysia",
+      "aliases": [],
+      "data_sources": {
+        "owid": "Malaysia",
+        "world_bank": "Malaysia",
+        "un": "Malaysia",
+        "cia": "Malaysia"
+      }
+    },
+    "MX": {
+      "iso2": "MX",
+      "iso3": "MEX",
+      "name": "Mexico",
+      "aliases": ["United Mexican States", "Estados Unidos Mexicanos"],
+      "data_sources": {
+        "owid": "Mexico",
+        "world_bank": "Mexico",
+        "un": "Mexico",
+        "cia": "Mexico"
+      }
+    },
+    "NL": {
+      "iso2": "NL",
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "aliases": ["Kingdom of the Netherlands", "Nederland"],
+      "data_sources": {
+        "owid": "Netherlands",
+        "world_bank": "Netherlands",
+        "un": "Netherlands",
+        "cia": "Netherlands"
+      }
+    },
+    "NZ": {
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "name": "New Zealand",
+      "aliases": [],
+      "data_sources": {
+        "owid": "New Zealand",
+        "world_bank": "New Zealand",
+        "un": "New Zealand",
+        "cia": "New Zealand"
+      }
+    },
+    "NG": {
+      "iso2": "NG",
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "aliases": ["Federal Republic of Nigeria"],
+      "data_sources": {
+        "owid": "Nigeria",
+        "world_bank": "Nigeria",
+        "un": "Nigeria",
+        "cia": "Nigeria"
+      }
+    },
+    "NO": {
+      "iso2": "NO",
+      "iso3": "NOR",
+      "name": "Norway",
+      "aliases": ["Kingdom of Norway", "Norge"],
+      "data_sources": {
+        "owid": "Norway",
+        "world_bank": "Norway",
+        "un": "Norway",
+        "cia": "Norway"
+      }
+    },
+    "PK": {
+      "iso2": "PK",
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "aliases": ["Islamic Republic of Pakistan", "پاکستان"],
+      "data_sources": {
+        "owid": "Pakistan",
+        "world_bank": "Pakistan",
+        "un": "Pakistan",
+        "cia": "Pakistan"
+      }
+    },
+    "PE": {
+      "iso2": "PE",
+      "iso3": "PER",
+      "name": "Peru",
+      "aliases": ["Republic of Peru", "República del Perú"],
+      "data_sources": {
+        "owid": "Peru",
+        "world_bank": "Peru",
+        "un": "Peru",
+        "cia": "Peru"
+      }
+    },
+    "PH": {
+      "iso2": "PH",
+      "iso3": "PHL",
+      "name": "Philippines",
+      "aliases": ["Republic of the Philippines", "Pilipinas"],
+      "data_sources": {
+        "owid": "Philippines",
+        "world_bank": "Philippines",
+        "un": "Philippines",
+        "cia": "Philippines"
+      }
+    },
+    "PL": {
+      "iso2": "PL",
+      "iso3": "POL",
+      "name": "Poland",
+      "aliases": ["Republic of Poland", "Polska"],
+      "data_sources": {
+        "owid": "Poland",
+        "world_bank": "Poland",
+        "un": "Poland",
+        "cia": "Poland"
+      }
+    },
+    "PT": {
+      "iso2": "PT",
+      "iso3": "PRT",
+      "name": "Portugal",
+      "aliases": ["Portuguese Republic", "República Portuguesa"],
+      "data_sources": {
+        "owid": "Portugal",
+        "world_bank": "Portugal",
+        "un": "Portugal",
+        "cia": "Portugal"
+      }
+    },
+    "RO": {
+      "iso2": "RO",
+      "iso3": "ROU",
+      "name": "Romania",
+      "aliases": ["România"],
+      "data_sources": {
+        "owid": "Romania",
+        "world_bank": "Romania",
+        "un": "Romania",
+        "cia": "Romania"
+      }
+    },
+    "RU": {
+      "iso2": "RU",
+      "iso3": "RUS",
+      "name": "Russia",
+      "aliases": ["Russian Federation", "Россия"],
+      "data_sources": {
+        "owid": "Russia",
+        "world_bank": "Russian Federation",
+        "un": "Russian Federation",
+        "cia": "Russia"
+      }
+    },
+    "SA": {
+      "iso2": "SA",
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "aliases": ["Kingdom of Saudi Arabia", "المملكة العربية السعودية"],
+      "data_sources": {
+        "owid": "Saudi Arabia",
+        "world_bank": "Saudi Arabia",
+        "un": "Saudi Arabia",
+        "cia": "Saudi Arabia"
+      }
+    },
+    "SG": {
+      "iso2": "SG",
+      "iso3": "SGP",
+      "name": "Singapore",
+      "aliases": ["Republic of Singapore"],
+      "data_sources": {
+        "owid": "Singapore",
+        "world_bank": "Singapore",
+        "un": "Singapore",
+        "cia": "Singapore"
+      }
+    },
+    "ZA": {
+      "iso2": "ZA",
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "aliases": ["Republic of South Africa"],
+      "data_sources": {
+        "owid": "South Africa",
+        "world_bank": "South Africa",
+        "un": "South Africa",
+        "cia": "South Africa"
+      }
+    },
+    "ES": {
+      "iso2": "ES",
+      "iso3": "ESP",
+      "name": "Spain",
+      "aliases": ["Kingdom of Spain", "Reino de España"],
+      "data_sources": {
+        "owid": "Spain",
+        "world_bank": "Spain",
+        "un": "Spain",
+        "cia": "Spain"
+      }
+    },
+    "SE": {
+      "iso2": "SE",
+      "iso3": "SWE",
+      "name": "Sweden",
+      "aliases": ["Kingdom of Sweden", "Sverige"],
+      "data_sources": {
+        "owid": "Sweden",
+        "world_bank": "Sweden",
+        "un": "Sweden",
+        "cia": "Sweden"
+      }
+    },
+    "CH": {
+      "iso2": "CH",
+      "iso3": "CHE",
+      "name": "Switzerland",
+      "aliases": ["Swiss Confederation", "Schweiz", "Suisse"],
+      "data_sources": {
+        "owid": "Switzerland",
+        "world_bank": "Switzerland",
+        "un": "Switzerland",
+        "cia": "Switzerland"
+      }
+    },
+    "TH": {
+      "iso2": "TH",
+      "iso3": "THA",
+      "name": "Thailand",
+      "aliases": ["Kingdom of Thailand", "ประเทศไทย"],
+      "data_sources": {
+        "owid": "Thailand",
+        "world_bank": "Thailand",
+        "un": "Thailand",
+        "cia": "Thailand"
+      }
+    },
+    "TR": {
+      "iso2": "TR",
+      "iso3": "TUR",
+      "name": "Turkey",
+      "aliases": ["Republic of Turkey", "Türkiye"],
+      "data_sources": {
+        "owid": "Turkey",
+        "world_bank": "Turkey",
+        "un": "Turkey",
+        "cia": "Turkey"
+      }
+    },
+    "UA": {
+      "iso2": "UA",
+      "iso3": "UKR",
+      "name": "Ukraine",
+      "aliases": ["Україна"],
+      "data_sources": {
+        "owid": "Ukraine",
+        "world_bank": "Ukraine",
+        "un": "Ukraine",
+        "cia": "Ukraine"
+      }
+    },
+    "AE": {
+      "iso2": "AE",
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "aliases": ["UAE", "الإمارات العربية المتحدة"],
+      "data_sources": {
+        "owid": "United Arab Emirates",
+        "world_bank": "United Arab Emirates",
+        "un": "United Arab Emirates",
+        "cia": "United Arab Emirates"
+      }
+    },
+    "GB": {
+      "iso2": "GB",
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "aliases": ["UK", "Great Britain", "Britain", "United Kingdom of Great Britain and Northern Ireland"],
+      "data_sources": {
+        "owid": "United Kingdom",
+        "world_bank": "United Kingdom",
+        "un": "United Kingdom",
+        "cia": "United Kingdom"
+      }
+    },
+    "US": {
+      "iso2": "US",
+      "iso3": "USA",
+      "name": "United States",
+      "aliases": ["USA", "United States of America", "America"],
+      "data_sources": {
+        "owid": "United States",
+        "world_bank": "United States",
+        "un": "United States",
+        "cia": "United States"
+      }
+    },
+    "UY": {
+      "iso2": "UY",
+      "iso3": "URY",
+      "name": "Uruguay",
+      "aliases": ["Oriental Republic of Uruguay", "República Oriental del Uruguay"],
+      "data_sources": {
+        "owid": "Uruguay",
+        "world_bank": "Uruguay",
+        "un": "Uruguay",
+        "cia": "Uruguay"
+      }
+    },
+    "VE": {
+      "iso2": "VE",
+      "iso3": "VEN",
+      "name": "Venezuela",
+      "aliases": ["Bolivarian Republic of Venezuela", "República Bolivariana de Venezuela"],
+      "data_sources": {
+        "owid": "Venezuela",
+        "world_bank": "Venezuela, RB",
+        "un": "Venezuela",
+        "cia": "Venezuela"
+      }
+    },
+    "VN": {
+      "iso2": "VN",
+      "iso3": "VNM",
+      "name": "Vietnam",
+      "aliases": ["Socialist Republic of Vietnam", "Việt Nam"],
+      "data_sources": {
+        "owid": "Vietnam",
+        "world_bank": "Vietnam",
+        "un": "Vietnam",
+        "cia": "Vietnam"
+      }
+    },
+    "CG": {
+      "iso2": "CG",
+      "iso3": "COG",
+      "name": "Republic of the Congo",
+      "aliases": ["Congo", "Congo, Republic of the", "Congo-Brazzaville"],
+      "data_sources": {
+        "owid": "Republic of the Congo",
+        "world_bank": "Congo, Rep.",
+        "un": "Republic of the Congo",
+        "cia": "Republic of the Congo"
+      }
+    },
+    "CD": {
+      "iso2": "CD",
+      "iso3": "COD",
+      "name": "Democratic Republic of the Congo",
+      "aliases": ["DR Congo", "DRC", "Congo, Democratic Republic of the", "Congo-Kinshasa"],
+      "data_sources": {
+        "owid": "Democratic Republic of the Congo",
+        "world_bank": "Congo, Dem. Rep.",
+        "un": "Democratic Republic of the Congo",
+        "cia": "Democratic Republic of the Congo"
+      }
+    }
+  },
+  "special_cases": {
+    "microstates": {
+      "AD": {
+        "iso2": "AD",
+        "iso3": "AND",
+        "name": "Andorra",
+        "aliases": ["Principality of Andorra", "Principat d'Andorra"],
+        "data_sources": {
+          "owid": "Andorra",
+          "world_bank": "Andorra",
+          "un": "Andorra",
+          "cia": "Andorra"
+        }
+      },
+      "LI": {
+        "iso2": "LI",
+        "iso3": "LIE",
+        "name": "Liechtenstein",
+        "aliases": ["Principality of Liechtenstein", "Fürstentum Liechtenstein"],
+        "data_sources": {
+          "owid": "Liechtenstein",
+          "world_bank": "Liechtenstein",
+          "un": "Liechtenstein",
+          "cia": "Liechtenstein"
+        }
+      },
+      "MC": {
+        "iso2": "MC",
+        "iso3": "MCO",
+        "name": "Monaco",
+        "aliases": ["Principality of Monaco", "Principauté de Monaco"],
+        "data_sources": {
+          "owid": "Monaco",
+          "world_bank": "Monaco",
+          "un": "Monaco",
+          "cia": "Monaco"
+        }
+      },
+      "SM": {
+        "iso2": "SM",
+        "iso3": "SMR",
+        "name": "San Marino",
+        "aliases": ["Republic of San Marino", "Repubblica di San Marino"],
+        "data_sources": {
+          "owid": "San Marino",
+          "world_bank": "San Marino",
+          "un": "San Marino",
+          "cia": "San Marino"
+        }
+      },
+      "VA": {
+        "iso2": "VA",
+        "iso3": "VAT",
+        "name": "Vatican City",
+        "aliases": ["Holy See", "Vatican City State", "Stato della Città del Vaticano"],
+        "data_sources": {
+          "owid": "Vatican",
+          "world_bank": "Holy See",
+          "un": "Holy See",
+          "cia": "Holy See"
+        }
+      }
+    },
+    "territories": {
+      "HK": {
+        "iso2": "HK",
+        "iso3": "HKG",
+        "name": "Hong Kong",
+        "aliases": ["Hong Kong SAR", "Hong Kong Special Administrative Region", "Hong Kong (CN)", "Hong Kong (China)", "香港"],
+        "data_sources": {
+          "owid": "Hong Kong",
+          "world_bank": "Hong Kong SAR, China",
+          "un": "Hong Kong",
+          "cia": "Hong Kong"
+        }
+      },
+      "MO": {
+        "iso2": "MO",
+        "iso3": "MAC",
+        "name": "Macau",
+        "aliases": ["Macao", "Macau SAR", "Macau Special Administrative Region", "Macau (CN)", "Macau (China)", "澳門"],
+        "data_sources": {
+          "owid": "Macao",
+          "world_bank": "Macao SAR, China",
+          "un": "Macao",
+          "cia": "Macau"
+        }
+      },
+      "TW": {
+        "iso2": "TW",
+        "iso3": "TWN",
+        "name": "Taiwan",
+        "aliases": ["Republic of China", "Taiwan, Province of China", "中華民國"],
+        "data_sources": {
+          "owid": "Taiwan",
+          "world_bank": "Taiwan, China",
+          "un": "Taiwan",
+          "cia": "Taiwan"
+        }
+      }
+    }
+  },
+  "common_aliases": {
+    "USA": "US",
+    "UK": "GB",
+    "UAE": "AE",
+    "South Korea": "KR",
+    "North Korea": "KP",
+    "Czech Republic": "CZ",
+    "Czechia": "CZ",
+    "Russia": "RU",
+    "Russian Federation": "RU",
+    "Iran": "IR",
+    "Islamic Republic of Iran": "IR",
+    "Venezuela": "VE",
+    "Bolivarian Republic of Venezuela": "VE",
+    "Vietnam": "VN",
+    "Socialist Republic of Vietnam": "VN",
+    "Turkey": "TR",
+    "Türkiye": "TR",
+    "Republic of Turkey": "TR",
+    "Hong Kong (CN)": "HK",
+    "Hong Kong (China)": "HK",
+    "Macau (CN)": "MO",
+    "Macau (China)": "MO",
+    "Macao": "MO",
+    "Macau": "MO",
+    "Korea, Rep.": "KR",
+    "Republic of Korea": "KR",
+    "Korea, Republic of": "KR",
+    "Korea, Democratic People's Republic of": "KP",
+    "Democratic People's Republic of Korea": "KP",
+    "Congo": "CG",
+    "Congo, Republic of the": "CG",
+    "Congo-Brazzaville": "CG",
+    "DR Congo": "CD",
+    "DRC": "CD",
+    "Congo, Democratic Republic of the": "CD",
+    "Congo-Kinshasa": "CD"
+  }
+}

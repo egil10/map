@@ -1,8 +1,13 @@
 // Country Name Mapping System
 // Maps country names from data files to Leaflet.js GeoJSON country names
+// Now uses comprehensive JSON mapping for better data source integration
 
 class CountryMapper {
     constructor() {
+        this.mappingData = null;
+        this.loadMappingData();
+        
+        // Fallback mappings for immediate use
         this.countryMappings = {
             // Major countries with multiple variations
                     "United States": "USA",
@@ -677,6 +682,17 @@ class CountryMapper {
         };
     }
     
+    // Load comprehensive mapping data
+    async loadMappingData() {
+        try {
+            const response = await fetch('data/country_mapping.json');
+            this.mappingData = await response.json();
+            console.log('Loaded comprehensive country mapping data');
+        } catch (error) {
+            console.warn('Failed to load comprehensive mapping, using fallback:', error);
+        }
+    }
+    
     // Cache for memoization
     _cache = new Map();
     
@@ -685,6 +701,15 @@ class CountryMapper {
         // Check cache first for O(1) lookup
         if (this._cache.has(dataCountryName)) {
             return this._cache.get(dataCountryName);
+        }
+        
+        // Try comprehensive mapping first if available
+        if (this.mappingData) {
+            const result = this.mapWithComprehensiveData(dataCountryName);
+            if (result) {
+                this._cache.set(dataCountryName, result);
+                return result;
+            }
         }
         
         // 1) Remove region qualifiers like " (Alaska)" / " (Asia)" / " (Hawaii)" etc.
@@ -884,6 +909,58 @@ class CountryMapper {
     // Get all mapped country names
     getMappedCountryNames() {
         return Object.values(this.countryMappings);
+    }
+    
+    // Use comprehensive mapping data
+    mapWithComprehensiveData(dataCountryName) {
+        if (!this.mappingData || !dataCountryName) return null;
+        
+        const normalizedInput = dataCountryName.trim();
+        
+        // Check common aliases first
+        if (this.mappingData.common_aliases && this.mappingData.common_aliases[normalizedInput]) {
+            const iso2 = this.mappingData.common_aliases[normalizedInput];
+            return this.mappingData.countries[iso2]?.name || null;
+        }
+        
+        // Search through all countries
+        for (const [iso2, country] of Object.entries(this.mappingData.countries)) {
+            // Check if input matches ISO codes
+            if (country.iso2 === normalizedInput || country.iso3 === normalizedInput) {
+                return country.name;
+            }
+            
+            // Check if input matches country name
+            if (country.name.toLowerCase() === normalizedInput.toLowerCase()) {
+                return country.name;
+            }
+            
+            // Check aliases
+            if (country.aliases && country.aliases.some(alias => 
+                alias.toLowerCase() === normalizedInput.toLowerCase())) {
+                return country.name;
+            }
+        }
+        
+        // Check special cases (microstates, territories)
+        for (const category of ['microstates', 'territories']) {
+            if (this.mappingData.special_cases && this.mappingData.special_cases[category]) {
+                for (const [iso2, country] of Object.entries(this.mappingData.special_cases[category])) {
+                    if (country.iso2 === normalizedInput || country.iso3 === normalizedInput) {
+                        return country.name;
+                    }
+                    if (country.name.toLowerCase() === normalizedInput.toLowerCase()) {
+                        return country.name;
+                    }
+                    if (country.aliases && country.aliases.some(alias => 
+                        alias.toLowerCase() === normalizedInput.toLowerCase())) {
+                        return country.name;
+                    }
+                }
+            }
+        }
+        
+        return null;
     }
     
     // Debug: Log all mappings

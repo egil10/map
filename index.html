@@ -27,6 +27,9 @@
     
     <!-- Lucide Icons -->
     <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Country Mapping Test (Development Only) -->
+    <script defer src="js/test_country_mapping.js"></script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -72,6 +75,19 @@
             <div id="answerTitle" class="answer-title" style="display: none;">
                 <h2 id="answerTitleText"></h2>
                 <p id="answerDescription"></p>
+            </div>
+            
+            <!-- New Top/Bottom 10 Legend (Right Side) -->
+            <div id="newLegend" class="new-legend">
+                <div class="legend-header">
+                    <h3>Top 10</h3>
+                </div>
+                <div id="top10List" class="legend-list top-list"></div>
+                <div class="legend-divider"></div>
+                <div class="legend-header">
+                    <h3>Bottom 10</h3>
+                </div>
+                <div id="bottom10List" class="legend-list bottom-list"></div>
             </div>
             
             <!-- Standardized Country Tooltip -->

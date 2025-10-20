@@ -1213,119 +1213,87 @@ class WorldMap {
     }
     
     createLegend(quiz) {
-        // Remove existing legend
-        if (this.legend) {
-            this.map.removeControl(this.legend);
-            this.legend = null;
-        }
-        
         // Validate quiz data
         if (!quiz || !quiz.countries || Object.keys(quiz.countries).length === 0) {
             console.warn('No valid quiz data for legend creation');
             return;
         }
         
-        // Handle categorical data
-        if (quiz.colorScheme?.type === 'categorical') {
-            this.createCategoricalLegend(quiz);
-            return;
-        }
-        
-        // Handle numeric data
-        const values = Object.values(quiz.countries).map(country => country.value);
-        
-        // Debug logging for legend creation
-        console.log('Legend creation - All values:', values.slice(0, 10), '... (showing first 10)');
-        console.log('Legend creation - Quiz countries count:', Object.keys(quiz.countries).length);
-        
-        // Filter out invalid values
-        const validValues = values.filter(value => 
-            value !== null && 
-            value !== undefined && 
-            !isNaN(value) && 
-            typeof value === 'number'
-        );
-        
-        console.log('Legend creation - Valid values count:', validValues.length);
-        console.log('Legend creation - Sample valid values:', validValues.slice(0, 5));
-        
-        if (validValues.length === 0) {
-            console.error('No valid numeric values found for legend');
-            console.error('All values were:', values);
-            return;
-        }
-        
-        const minValue = Math.min(...validValues);
-        const maxValue = Math.max(...validValues);
-        const unit = Object.values(quiz.countries)[0]?.unit || '';
-        
-        console.log('Legend values:', { minValue, maxValue, unit, totalValues: values.length, validValues: validValues.length });
-        
-        // Round the bounds to prevent spoilers
-        const roundedMinValue = this.roundValueForLegend(minValue, unit);
-        const roundedMaxValue = this.roundValueForLegend(maxValue, unit);
-        
-        // Get top 10 and bottom 10 countries for legend
+        // Get countries with values
         const countriesWithValues = Object.entries(quiz.countries)
             .filter(([country, data]) => typeof data.value === 'number' && !isNaN(data.value))
-            .map(([country, data]) => ({ country, value: data.value }))
+            .map(([country, data]) => ({ 
+                country, 
+                value: data.value, 
+                unit: data.unit || '' 
+            }))
             .sort((a, b) => b.value - a.value);
+        
+        if (countriesWithValues.length === 0) {
+            console.warn('No valid countries with values found');
+            return;
+        }
         
         const top10 = countriesWithValues.slice(0, 10);
         const bottom10 = countriesWithValues.slice(-10).reverse();
         
-        // Create legend HTML with top/bottom section
-        const legendHtml = `
-            <div class="legend">
-                <div class="legend-gradient">
-                    <div class="gradient-bar"></div>
-                    <div class="gradient-labels">
-                        <span class="min-label">${this.formatValue(roundedMinValue, unit)}</span>
-                        <span class="max-label">${this.formatValue(roundedMaxValue, unit)}</span>
-                    </div>
-                </div>
-                ${top10.length > 0 ? `
-                <div class="legend-extremes">
-                    <div class="extremes-section">
-                        <div class="extremes-title">Top 10</div>
-                        <div class="extremes-items">
-                            ${top10.map(item => `
-                                <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
-                                    ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                    <div class="extremes-section">
-                        <div class="extremes-title">Bottom 10</div>
-                        <div class="extremes-items">
-                            ${bottom10.map(item => `
-                                <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
-                                    ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                </div>
-                ` : ''}
-            </div>
-        `;
-        
-        // Create legend control
-        this.legend = L.control({ position: 'bottomleft' });
-        
-        this.legend.onAdd = function() {
-            const div = L.DomUtil.create('div', 'legend-control leaflet-control');
-            div.innerHTML = legendHtml;
-            return div;
-        };
-        
-        this.legend.addTo(this.map);
-        
-        // Update gradient colors
-        this.updateLegendGradient(quiz);
-        
-        console.log('Legend created successfully');
+        // Update new legend
+        this.updateNewLegend(top10, bottom10, countriesWithValues.length);
+    }
+
+    updateNewLegend(top10, bottom10, totalCountries) {
+        const top10List = document.getElementById('top10List');
+        const bottom10List = document.getElementById('bottom10List');
+
+        if (!top10List || !bottom10List) return;
+
+        // Clear existing content
+        top10List.innerHTML = '';
+        bottom10List.innerHTML = '';
+
+        // Add top 10 items
+        top10.forEach((country, index) => {
+            const item = document.createElement('div');
+            item.className = 'legend-item';
+            item.innerHTML = `
+                <span class="legend-country">${index + 1}. ${country.country}</span>
+                <span class="legend-value">${this.formatValue(country.value, country.unit)}</span>
+            `;
+            
+            // Add click handler to highlight country on map
+            item.addEventListener('click', () => {
+                this.highlightCountryByName(country.country);
+            });
+            
+            top10List.appendChild(item);
+        });
+
+        // Add bottom 10 items
+        bottom10.forEach((country, index) => {
+            const item = document.createElement('div');
+            item.className = 'legend-item';
+            item.innerHTML = `
+                <span class="legend-country">${totalCountries - 9 + index}. ${country.country}</span>
+                <span class="legend-value">${this.formatValue(country.value, country.unit)}</span>
+            `;
+            
+            // Add click handler to highlight country on map
+            item.addEventListener('click', () => {
+                this.highlightCountryByName(country.country);
+            });
+            
+            bottom10List.appendChild(item);
+        });
+    }
+
+    highlightCountryByName(countryName) {
+        // Find and highlight the country on the map
+        this.geoJsonLayer.eachLayer((layer) => {
+            if (layer.feature.properties.NAME === countryName || 
+                layer.feature.properties.NAME_LONG === countryName) {
+                this.highlightFeature({ target: layer });
+            }
+        });
     }
     
     createCategoricalLegend(quiz) {
