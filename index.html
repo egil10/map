@@ -11,8 +11,13 @@
     <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
     <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" crossorigin>
     
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -51,12 +56,22 @@
             <!-- Input Section -->
             <div class="input-section">
                 <div class="input-row">
-                    <!-- LEFT: toggle -->
+                    <!-- LEFT: game modes -->
                     <div class="input-left">
-                        <button id="modeToggle" class="mode-toggle-btn" title="Switch to Learn Mode">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="toggle-left" id="modeToggleIcon" class="lucide lucide-toggle-left"><circle cx="9" cy="12" r="3"></circle><rect width="20" height="14" x="2" y="5" rx="7"></rect></svg>
-                            <span id="modeToggleText">Play</span>
-                        </button>
+                        <div class="game-modes">
+                            <button id="learnMode" class="mode-btn active" title="Learn Mode">
+                                <i data-lucide="book-open"></i>
+                                <span>Learn</span>
+                            </button>
+                            <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
+                                <i data-lucide="list"></i>
+                                <span>Multiple</span>
+                            </button>
+                            <button id="writtenMode" class="mode-btn" title="Written Mode">
+                                <i data-lucide="edit-3"></i>
+                                <span>Written</span>
+                            </button>
+                        </div>
                     </div>
 
                     <!-- CENTER: perfectly centered stack (INPUT + PROGRESS) -->
@@ -91,18 +106,21 @@
                         </div>
                     </div>
 
-                    <!-- RIGHT: social + dataset -->
+                    <!-- RIGHT: controls + dataset -->
                     <div class="input-right">
-                        <div class="social-links">
-                            <a href="https://github.com/egil10/map" target="_blank" class="social-link" aria-label="GitHub">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="github" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                            </a>
-                            <a href="mailto:" class="social-link" aria-label="Email">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
-                            </a>
-                            <button id="copyData" class="social-link copy-btn" aria-label="Copy Data" title="Copy data to clipboard">
-                                <i data-lucide="copy" aria-hidden="true"></i>
+                        <div class="control-buttons">
+                            <button id="resetMapView" class="control-btn" title="Reset Map View">
+                                <i data-lucide="maximize-2"></i>
+                                <span>Reset</span>
                             </button>
+                            <button id="downloadData" class="control-btn" title="Download Data as CSV">
+                                <i data-lucide="download"></i>
+                                <span>Download</span>
+                            </button>
+                            <a href="https://github.com/egil10/map" target="_blank" class="control-btn" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </a>
                         </div>
                         <div class="dataset-counter" id="datasetCounter"><span id="datasetCount">105</span> datasets</div>
                     </div>
@@ -112,6 +130,16 @@
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
             
+            <!-- Color Bar Section -->
+            <div class="color-bar-section">
+                <div class="color-bar-container">
+                    <div class="color-bar-gradient" id="colorBarGradient"></div>
+                    <div class="color-bar-labels">
+                        <span class="color-bar-min" id="colorBarMin">Min</span>
+                        <span class="color-bar-max" id="colorBarMax">Max</span>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>

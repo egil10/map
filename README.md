@@ -2,6 +2,23 @@
 
 A vibrant, interactive geography quiz game where players guess what data is represented on colored world maps. Built with HTML, CSS, JavaScript, and Leaflet.js, featuring a Nintendo-inspired design with Lucide icons.
 
+## 🚀 Quick Start
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/map.git
+   cd map
+   ```
+
+2. **Open in browser**:
+   - Simply open `index.html` in any modern web browser
+   - Or serve with a local server for best experience
+
+3. **Start playing**:
+   - The game will automatically load and convert all data files
+   - Click on countries to see their data values
+   - Type your guesses and earn points!
+
 ## 🎮 Game Features
 
 ### Core Gameplay
@@ -87,6 +104,17 @@ A vibrant, interactive geography quiz game where players guess what data is repr
 - **N** - Start new quiz immediately
 - **ESC** - Clear country selection
 
+## 📚 Documentation
+
+Comprehensive documentation is available in the `docs/` folder:
+
+- **[User Manual](docs/user-manual.md)** - Complete user guide
+- **[Development Guide](docs/development.md)** - Setup and development workflow
+- **[API Reference](docs/api-reference.md)** - Complete API documentation
+- **[Architecture Overview](docs/architecture.md)** - Technical architecture
+- **[Data Format Guide](docs/data-format.md)** - How to create quiz data
+- **[Troubleshooting](docs/troubleshooting.md)** - Common issues and solutions
+
 ## 🏗️ Technical Architecture
 
 ### Frontend Technologies
@@ -120,24 +148,22 @@ The game uses a flexible JSON structure for quiz data and automatically converts
 }
 ```
 
-### File Structure
+### Project Structure
 ```
 map/
-├── index.html          # Main game interface
+├── index.html              # Main application entry point
 ├── css/
-│   └── style.css       # Vibrant game styling
+│   └── style.css          # Application styling
 ├── js/
-│   ├── map.js          # World map functionality
-│   ├── quiz.js         # Quiz game logic with data conversion
-│   └── app.js          # Main application controller
-├── data/
-│   ├── quiz_data.json  # Base quiz configurations
-│   ├── land_area.json  # Raw land area data
-│   ├── percent_water.json # Raw water percentage data
-│   ├── arable_land_per_person.json # Raw agricultural data
-│   ├── population_density.json # Raw population density data
-│   └── world_population_2025.json # Raw population data
-└── README.md           # This file
+│   ├── app.js             # Main application controller
+│   ├── map.js             # World map functionality
+│   ├── quiz.js            # Quiz game logic
+│   ├── data_converter.js  # Data conversion utilities
+│   └── country_mapping.js # Country name mapping system
+├── data/                   # Quiz data files (134 datasets)
+├── assets/                 # Static assets (favicon, etc.)
+├── docs/                   # Comprehensive documentation
+└── README.md              # Project overview
 ```
 
 ## 🚀 Getting Started

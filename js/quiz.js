@@ -19,6 +19,7 @@ class QuizGame {
         this.learnModeCurrentIndex = 0; // Current position in the sequence
         this.isQuizCompleted = false; // Track if quiz is completed
         this.lastAnswerWasCorrect = undefined; // Track the result of the last answer for progress bar
+        this.gameMode = 'learn'; // Current game mode
         
         this.init();
     }
@@ -4801,6 +4802,54 @@ class QuizGame {
                     }
                 }, 2000);
             });
+        }
+    }
+    
+    setGameMode(mode) {
+        this.gameMode = mode;
+        console.log(`🎮 Game mode set to: ${mode}`);
+    }
+    
+    updateColorBar() {
+        if (!this.currentQuiz) return;
+        
+        const colorBarGradient = document.getElementById('colorBarGradient');
+        const colorBarMin = document.getElementById('colorBarMin');
+        const colorBarMax = document.getElementById('colorBarMax');
+        
+        if (colorBarGradient && this.currentQuiz.colorScheme) {
+            const scheme = this.currentQuiz.colorScheme;
+            if (scheme.type === 'gradient' && scheme.colors) {
+                const colorStops = scheme.colors.map((color, index) => {
+                    const percentage = (index / (scheme.colors.length - 1)) * 100;
+                    return `${color} ${percentage}%`;
+                }).join(', ');
+                colorBarGradient.style.background = `linear-gradient(to right, ${colorStops})`;
+            } else if (scheme.minColor && scheme.maxColor) {
+                colorBarGradient.style.background = `linear-gradient(to right, ${scheme.minColor}, ${scheme.maxColor})`;
+            }
+        }
+        
+        if (colorBarMin && colorBarMax && this.currentQuiz.countries) {
+            const values = Object.values(this.currentQuiz.countries).map(c => c.value).filter(v => !isNaN(v));
+            if (values.length > 0) {
+                const minValue = Math.min(...values);
+                const maxValue = Math.max(...values);
+                const unit = Object.values(this.currentQuiz.countries)[0]?.unit || '';
+                
+                colorBarMin.textContent = this.formatValue(minValue, unit);
+                colorBarMax.textContent = this.formatValue(maxValue, unit);
+            }
+        }
+    }
+    
+    formatValue(value, unit) {
+        if (value >= 1000000) {
+            return (value / 1000000).toFixed(1) + 'M' + (unit ? ' ' + unit : '');
+        } else if (value >= 1000) {
+            return (value / 1000).toFixed(1) + 'K' + (unit ? ' ' + unit : '');
+        } else {
+            return value.toFixed(1) + (unit ? ' ' + unit : '');
         }
     }
     

@@ -374,8 +374,16 @@ class WorldMap {
         // Initialize the map centered on the world
         this.map = L.map('map').setView([20, 0], 2);
         
-                // Set map bounds for infinite repetition
+                // Set map bounds for game area only
         this.map.setMinZoom(1);
+        this.map.setMaxZoom(4);
+        
+        // Set bounds to show world with some repetition
+        const worldBounds = L.latLngBounds(
+            L.latLng(-60, -180), // Southwest corner
+            L.latLng(85, 180)    // Northeast corner
+        );
+        this.map.setMaxBounds(worldBounds);
         
         // Add a simple, clean tile layer (CartoDB Positron - clean and minimal)
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -1284,14 +1292,14 @@ class WorldMap {
         const roundedMinValue = this.roundValueForLegend(minValue, unit);
         const roundedMaxValue = this.roundValueForLegend(maxValue, unit);
         
-        // Get top 3 and bottom 3 countries for legend
+        // Get top 10 and bottom 10 countries for legend
         const countriesWithValues = Object.entries(quiz.countries)
             .filter(([country, data]) => typeof data.value === 'number' && !isNaN(data.value))
             .map(([country, data]) => ({ country, value: data.value }))
             .sort((a, b) => b.value - a.value);
         
-        const top3 = countriesWithValues.slice(0, 3);
-        const bottom3 = countriesWithValues.slice(-3).reverse();
+        const top10 = countriesWithValues.slice(0, 10);
+        const bottom10 = countriesWithValues.slice(-10).reverse();
         
         // Create legend HTML with top/bottom section
         const legendHtml = `
@@ -1303,12 +1311,12 @@ class WorldMap {
                         <span class="max-label">${this.formatValue(roundedMaxValue, unit)}</span>
                     </div>
                 </div>
-                ${top3.length > 0 ? `
+                ${top10.length > 0 ? `
                 <div class="legend-extremes">
                     <div class="extremes-section">
-                        <div class="extremes-title">Top 3</div>
+                        <div class="extremes-title">Top 10</div>
                         <div class="extremes-items">
-                            ${top3.map(item => `
+                            ${top10.map(item => `
                                 <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
                                     ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
                                 </div>
@@ -1316,9 +1324,9 @@ class WorldMap {
                         </div>
                     </div>
                     <div class="extremes-section">
-                        <div class="extremes-title">Bottom 3</div>
+                        <div class="extremes-title">Bottom 10</div>
                         <div class="extremes-items">
-                            ${bottom3.map(item => `
+                            ${bottom10.map(item => `
                                 <div class="extreme-item" title="${item.country} (${item.value.toLocaleString()})">
                                     ${item.country} <span class="extreme-value">(${item.value.toLocaleString()})</span>
                                 </div>
@@ -1540,11 +1548,20 @@ class WorldMap {
          this.map.closePopup();
      }
      
-     createSimpleWorldOutline() {
-         // Fallback: create a simple world outline if GeoJSON fails to load
-         console.log('Creating simple world outline as fallback');
-     }
- }
+    createSimpleWorldOutline() {
+        // Fallback: create a simple world outline if GeoJSON fails to load
+        console.log('Creating simple world outline as fallback');
+    }
+    
+    resetMapView() {
+        // Reset map to standard world view
+        if (this.map) {
+            this.map.setView([20, 0], 2);
+            this.map.invalidateSize();
+            console.log('🗺️ Map view reset to standard world view');
+        }
+    }
+}
 
 // Initialize map when script loads
 const worldMap = new WorldMap();
