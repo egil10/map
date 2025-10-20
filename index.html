@@ -69,24 +69,24 @@
             </div>
         </div>
         
+        <!-- Progress Circles (Top Right) -->
+        <div class="progress-circles">
+            <i data-lucide="circle" class="progress-circle current"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+            <i data-lucide="circle-dashed" class="progress-circle"></i>
+        </div>
+        
         <!-- Compact Game Interface -->
         <div class="game-interface">
             <!-- Main Input Row -->
             <div class="input-row">
-                <!-- Progress Circles (Left) -->
-                <div class="progress-circles">
-                    <i data-lucide="circle" class="progress-circle current"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    <i data-lucide="circle-dashed" class="progress-circle"></i>
-                </div>
-                
                 <!-- Input Container (Center) -->
                 <div class="input-container">
                     <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
@@ -97,14 +97,8 @@
                 
                 <!-- Control Buttons (Right) -->
                 <div class="control-buttons">
-                    <button id="learnMode" class="mode-btn active" title="Learn Mode">
-                        <i data-lucide="book-open"></i>
-                    </button>
-                    <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
-                        <i data-lucide="list"></i>
-                    </button>
-                    <button id="writtenMode" class="mode-btn" title="Written Mode">
-                        <i data-lucide="edit-3"></i>
+                    <button id="gameModeBtn" class="mode-btn" title="Select Game Mode">
+                        <i data-lucide="settings"></i>
                     </button>
                     <button id="downloadData" class="control-btn" title="Download Data as CSV">
                         <i data-lucide="download"></i>
@@ -113,6 +107,11 @@
                         <i data-lucide="github"></i>
                     </a>
                 </div>
+            </div>
+            
+            <!-- Dataset Counter -->
+            <div class="dataset-counter" id="datasetCounter">
+                <span id="datasetCount">105</span> datasets
             </div>
             
             <!-- Feedback -->

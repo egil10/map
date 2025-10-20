@@ -92,16 +92,66 @@ class App {
     }
     
     setupEventListeners() {
-        // Game mode buttons
-        document.getElementById('learnMode').addEventListener('click', () => this.setGameMode('learn'));
-        document.getElementById('multipleChoiceMode').addEventListener('click', () => this.setGameMode('multiple'));
-        document.getElementById('writtenMode').addEventListener('click', () => this.setGameMode('written'));
+        // Game mode button
+        document.getElementById('gameModeBtn').addEventListener('click', () => this.showGameModeMenu());
         
         // Control buttons
         document.getElementById('resetMapView').addEventListener('click', () => this.resetMapView());
         document.getElementById('downloadData').addEventListener('click', () => this.downloadData());
         
+        // Dataset counter click for browsing
+        document.getElementById('datasetCounter').addEventListener('click', () => this.showDatasetBrowser());
+        
         console.log('🎮 Event listeners setup complete');
+    }
+    
+    showGameModeMenu() {
+        // Create game mode selection menu
+        const menu = document.createElement('div');
+        menu.className = 'game-mode-menu';
+        menu.innerHTML = `
+            <div class="menu-content">
+                <h3>Select Game Mode</h3>
+                <button class="mode-option" data-mode="learn">
+                    <i data-lucide="book-open"></i>
+                    <span>Learn Mode</span>
+                </button>
+                <button class="mode-option" data-mode="play">
+                    <i data-lucide="play"></i>
+                    <span>Play Mode</span>
+                </button>
+                <button class="mode-option" data-mode="multiple">
+                    <i data-lucide="list"></i>
+                    <span>Multiple Choice</span>
+                </button>
+            </div>
+        `;
+        
+        document.body.appendChild(menu);
+        
+        // Add event listeners
+        menu.querySelectorAll('.mode-option').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const mode = e.currentTarget.dataset.mode;
+                this.setGameMode(mode);
+                document.body.removeChild(menu);
+            });
+        });
+        
+        // Close menu when clicking outside
+        menu.addEventListener('click', (e) => {
+            if (e.target === menu) {
+                document.body.removeChild(menu);
+            }
+        });
+    }
+    
+    showDatasetBrowser() {
+        // Show the dataset browser modal
+        const browser = document.getElementById('datasetBrowser');
+        if (browser) {
+            browser.style.display = 'flex';
+        }
     }
     
     setGameMode(mode) {

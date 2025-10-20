@@ -4816,15 +4816,17 @@ class QuizGame {
             guessInput.placeholder = 'What does this map show?';
             guessInput.disabled = false;
             submitButton.disabled = false;
+            this.isLearnMode = true;
+        } else if (mode === 'play') {
+            guessInput.placeholder = 'Type your answer here';
+            guessInput.disabled = false;
+            submitButton.disabled = false;
+            this.isLearnMode = false;
         } else if (mode === 'multiple') {
             guessInput.placeholder = 'Choose from multiple choice options';
             guessInput.disabled = true;
             submitButton.disabled = true;
             this.showMultipleChoice();
-        } else if (mode === 'written') {
-            guessInput.placeholder = 'Type your answer here';
-            guessInput.disabled = false;
-            submitButton.disabled = false;
         }
         
         console.log(`🎮 Game mode set to: ${mode}`);
