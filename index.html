@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>GeoQuest - World Map Quiz</title>
+    <title>GeoQuest</title>
     
     <!-- Performance optimizations -->
     <link rel="preload" href="css/style.css" as="style" />
@@ -32,81 +32,87 @@
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
         <div class="loading-content">
-            <div class="loading-spinner">
-                <i data-lucide="map" class="loading-icon"></i>
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <div class="logo-inner"></div>
+                </div>
             </div>
-            <p class="loading-text">Loading<span class="loading-dots">...</span></p>
+            <h1 class="loading-title">GeoQuest</h1>
+            <div class="loading-subtitle">World Map Quiz</div>
         </div>
     </div>
 
     <!-- Main Container -->
     <div class="app-container" style="display: none;">
-        <!-- Reset Button (Top Right) -->
-        <button id="resetMapView" class="reset-button" title="Reset Map View">
-            <i data-lucide="maximize-2"></i>
-        </button>
-        
-        <!-- Map Container -->
-        <div id="map" class="map-container"></div>
-        
-        <!-- Answer Title (hidden by default) -->
-        <div id="answerTitle" class="answer-title" style="display: none;">
-            <h2 id="answerTitleText"></h2>
-            <p id="answerDescription"></p>
-        </div>
-        
-        <!-- Standardized Country Tooltip -->
-        <div id="countryTooltip" class="country-tooltip" style="display: none;">
-            <div class="tooltip-content">
-                <h3 id="tooltipCountryName">Country Name</h3>
-                <div class="tooltip-value">
-                    <span id="tooltipValue">0</span>
-                    <span id="tooltipUnit">unit</span>
-                </div>
-                <div class="tooltip-context">
-                    <span id="tooltipQuizTitle">Quiz Title</span>
+        <!-- Map Area (80%) -->
+        <div class="map-area">
+            <!-- Reset Button (Top Right) -->
+            <button id="resetMapView" class="reset-button" title="Reset Map View">
+                <i data-lucide="maximize-2"></i>
+            </button>
+            
+            <!-- Progress Circles (Top Right) -->
+            <div class="progress-circles">
+                <i data-lucide="circle" class="progress-circle current"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                <i data-lucide="circle-dashed" class="progress-circle"></i>
+            </div>
+            
+            <!-- Map Container -->
+            <div id="map" class="map-container"></div>
+            
+            <!-- Answer Title (hidden by default) -->
+            <div id="answerTitle" class="answer-title" style="display: none;">
+                <h2 id="answerTitleText"></h2>
+                <p id="answerDescription"></p>
+            </div>
+            
+            <!-- Standardized Country Tooltip -->
+            <div id="countryTooltip" class="country-tooltip" style="display: none;">
+                <div class="tooltip-content">
+                    <h3 id="tooltipCountryName">Country Name</h3>
+                    <div class="tooltip-value">
+                        <span id="tooltipValue">0</span>
+                        <span id="tooltipUnit">unit</span>
+                    </div>
+                    <div class="tooltip-context">
+                        <span id="tooltipQuizTitle">Quiz Title</span>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <!-- Progress Circles (Top Right) -->
-        <div class="progress-circles">
-            <i data-lucide="circle" class="progress-circle current"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-            <i data-lucide="circle-dashed" class="progress-circle"></i>
-        </div>
-        
-        <!-- Compact Game Interface -->
-        <div class="game-interface">
-            <!-- Main Input Row -->
-            <div class="input-row">
-                <!-- Input Container (Center) -->
-                <div class="input-container">
-                    <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
-                    <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
-                        <i data-lucide="send"></i>
-                    </button>
-                </div>
-                
-                <!-- Control Buttons (Right) -->
-                <div class="control-buttons">
-                    <button id="gameModeBtn" class="mode-btn" title="Select Game Mode">
-                        <i data-lucide="settings"></i>
-                    </button>
-                    <button id="downloadData" class="control-btn" title="Download Data as CSV">
-                        <i data-lucide="download"></i>
-                    </button>
-                    <a href="https://github.com/egil10/map" target="_blank" class="control-btn" aria-label="GitHub">
-                        <i data-lucide="github"></i>
-                    </a>
-                </div>
+        <!-- Footer Area (20%) -->
+        <div class="footer-area">
+            <!-- Game Mode Button (Left) -->
+            <button id="gameModeBtn" class="game-mode-btn" title="Select Game Mode">
+                <i data-lucide="settings"></i>
+                <span>Mode</span>
+            </button>
+            
+            <!-- Input Container (Center) -->
+            <div class="input-container">
+                <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
+                <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+            
+            <!-- Control Buttons (Right) -->
+            <div class="control-buttons">
+                <button id="downloadData" class="control-btn" title="Download Data as CSV">
+                    <i data-lucide="download"></i>
+                </button>
+                <a href="https://github.com/egil10/map" target="_blank" class="control-btn" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
             </div>
             
             <!-- Dataset Counter -->
@@ -116,17 +122,17 @@
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
-        </div>
-        
-        <!-- Color Bar (Bottom of Page) -->
-        <div class="color-bar">
-            <div class="color-bar-gradient" id="colorBarGradient"></div>
-            <div class="color-bar-labels">
-                <span class="color-bar-min" id="colorBarMin">0</span>
-                <span class="color-bar-q1" id="colorBarQ1">Q1</span>
-                <span class="color-bar-mid" id="colorBarMid">Mid</span>
-                <span class="color-bar-q3" id="colorBarQ3">Q3</span>
-                <span class="color-bar-max" id="colorBarMax">100</span>
+            
+            <!-- Color Bar -->
+            <div class="color-bar">
+                <div class="color-bar-gradient" id="colorBarGradient"></div>
+                <div class="color-bar-labels">
+                    <span class="color-bar-min" id="colorBarMin">0</span>
+                    <span class="color-bar-q1" id="colorBarQ1">Q1</span>
+                    <span class="color-bar-mid" id="colorBarMid">Mid</span>
+                    <span class="color-bar-q3" id="colorBarQ3">Q3</span>
+                    <span class="color-bar-max" id="colorBarMax">100</span>
+                </div>
             </div>
         </div>
     </div>
