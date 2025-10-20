@@ -1,3 +1,5 @@
+/* ===== CLEAN REDESIGN ===== */
+
 /* Base Styles */
 * {
     margin: 0;
@@ -92,1917 +94,67 @@ body {
     pointer-events: none;
 }
 
-/* Mobile responsive loading screen */
-@media (max-width: 768px) {
-    .loading-text {
-        font-size: 14px;
-    }
-    
-    .loading-icon {
-        width: 24px;
-        height: 24px;
-    }
-}
-
 /* App Container */
 .app-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Map Container */
-.map-container {
-    flex: 1;
-    background: #f8f9fa;
-    min-height: 400px; /* Ensure minimum height */
-    position: relative; /* Ensure proper positioning */
-}
-
-/* Quiz Interface */
-.quiz-interface {
+/* Header */
+.app-header {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid #e9ecef;
-    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    height: 140px; /* Reduced since we removed footer */
-    position: relative;
-}
-
-:root{
-  --content-max: clamp(680px, 92vw, 1100px); /* total strip max width */
-  --input-max: clamp(420px, 52vw, 720px);    /* center column cap */
-  --control-h: 44px;
-  --control-radius: 999px;
-  --pad-x: 14px;
-  --inline-gap: 6px;
-  --inline-btn-w: 34px;
-}
-
-/* Center the whole quiz interface content if not already */
-.quiz-interface {
-  display: block;
-}
-
-.input-section{ max-width: var(--content-max); margin: 0 auto; width: 100%; }
-
-/* 3-column grid: LEFT | CENTER (auto) | RIGHT */
-.input-row{
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: start;
-  column-gap: 16px;
-}
-
-.input-left{ justify-self:start; display:flex; align-items:center; }
-.input-right{ justify-self:end; display:flex; align-items:center; gap:16px; }
-
-/* Center column is sized by its content (center-stack), which we cap */
-.center-stack{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: min(100%, var(--input-max));
-  justify-self: center;   /* center in the middle track */
-}
-
-/* Input with embedded controls */
-.input-with-embedded{
-  position: relative;
-  height: var(--control-h);
-  width: 100%;
-}
-
-/* The input itself gets extra padding to avoid overlap with inside buttons */
-.input-with-embedded .guess-input{
-  width: 100%;
-  height: 100%;
-  border-radius: var(--control-radius);
-  box-sizing: border-box;
-  line-height: calc(var(--control-h) - 2px);
-  /* right padding for send + right chevron + gaps */
-  padding-left: var(--pad-x);
-  padding-right: calc(var(--inline-btn-w) * 2 + var(--inline-gap) + var(--pad-x));
-  border: 1px solid #dee2e6;
-  font-size: 16px;
-  background: #ffffff;
-  color: #495057;
-  outline: none;
-  transition: border-color 0.2s ease;
-}
-
-/* Generic inline button inside the input */
-.input-with-embedded .inline-btn{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: var(--inline-btn-w);
-  height: var(--inline-btn-w);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-
-
-/* Right-side group sits inside on the far right */
-.input-with-embedded .inline-right-group{
-  position: absolute;
-  right: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  gap: var(--inline-gap);
-}
-
-.input-with-embedded .inline-right-group .inline-btn{
-  position: static;  /* group manages placement */
-  transform: none;
-}
-
-/* Specific roles (optional hooks for theming/hover) */
-.inline-send svg,
-.inline-right svg{ width: 20px; height: 20px; display:block; pointer-events:none; }
-
-/* Copy button styling */
-.copy-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-}
-
-.copy-btn:hover {
-    background: #f8f9fa;
-    color: #495057;
-}
-
-.copy-btn svg {
-    width: 22px;
-    height: 22px;
-    display: block;
-    transition: all 0.2s ease;
-}
-
-/* Focus/hover (tweak to your theme) */
-.input-with-embedded .inline-btn:focus-visible{ outline: 2px solid rgba(0,0,0,0.2); outline-offset: 2px; }
-.input-with-embedded .inline-btn:hover{ background: rgba(0,0,0,0.04); }
-
-/* Right meta visuals */
-.social-links{ display:flex; align-items:center; gap:12px; }
-.social-links .social-link svg{ width:22px; height:22px; display:block; }
-.dataset-counter{ font-weight:500; color:#444; white-space:nowrap; }
-
-/* Toggle styling */
-.mode-toggle-btn{ display:flex; align-items:center; gap:8px; height: var(--control-h); padding: 0 12px; border-radius: var(--control-radius); }
-
-.guess-input::placeholder {
-    color: #6c757d;
-}
-
-.guess-input:focus {
-    border-color: #007bff;
-}
-
-/* Answer Title */
-.answer-title {
-    position: fixed;
-    bottom: 160px; /* Position above the quiz interface */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 8px 12px;
-    background: rgba(40, 167, 69, 0.1);
-    border-radius: 8px;
-    border: 1px solid rgba(40, 167, 69, 0.2);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-    max-width: 600px;
-    width: 90%;
-    z-index: 999;
-    backdrop-filter: blur(4px);
-}
-
-.answer-title h2 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #28a745;
-    margin-bottom: 4px;
-}
-
-.answer-title p {
-    font-size: 12px;
-    color: #6c757d;
-    margin: 0;
-    line-height: 1.3;
-}
-
-/* Mode toggle button */
-.mode-toggle-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--control-h);
-  border-radius: var(--control-radius);
-  box-sizing: border-box;
-  background: none;
-  border: none;
-  color: #6c757d;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  padding: 0 12px;
-  gap: 8px;
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.mode-toggle-btn:hover {
-    background: #f8f9fa;
-    color: #007bff;
-}
-
-.input-with-embedded .inline-btn:hover {
-    background: #f8f9fa;
-    color: #007bff;
-}
-
-.input-with-embedded .inline-btn:active {
-    transform: scale(0.95);
-}
-
-.mode-toggle-btn svg { width: 20px; height: 20px; display: block; }
-
-/* Prevent accidental stacking on mid widths */
-.input-section {
-  width: 100%;
-}
-
-/* Optional: keep a nice wrap below very small widths */
-@media (max-width: 420px) {
-  .input-section .input-wrapper {
-    flex-wrap: wrap;
-    row-gap: 8px;
-  }
-  .input-section .mode-toggle-btn {
-    order: 1;
-  }
-  .input-section .guess-input {
-    order: 2;
-    flex-basis: 100%;
-  }
-  .input-section .input-arrow-btn,
-  .input-section .input-skip-btn {
-    order: 3; /* sit after input */
-  }
-}
-
-/* Responsive */
-@media (max-width: 900px){
-  .input-row{ grid-template-columns: 1fr; row-gap: 12px; }
-  .input-left{ justify-self: start; }
-  .center-stack{ justify-self: center; width: min(92vw, var(--input-max)); }
-  .input-right{ justify-self: stretch; justify-content: space-between; }
-}
-@media (max-width: 520px){
-  .input-right{ flex-direction: column; gap:8px; align-items:flex-start; }
-}
-
-/* Right meta cluster (same row) */
-.input-right .social-links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  position: static;
-}
-.input-right .social-links .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: #6c757d;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-}
-.input-right .social-links .social-link:hover {
-  background: #f8f9fa;
-  color: #495057;
-}
-.input-right .social-links .social-link svg { width: 22px; height: 22px; display: block; }
-.input-right .dataset-counter { 
-  font-weight: 500; 
-  color: #444; 
-  white-space: nowrap; 
-  position: static;
-  margin-bottom: 0;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-.input-right .dataset-counter:hover {
-  color: #007bff;
-}
-.input-right .dataset-counter #datasetCount {
-  font-weight: 600;
-  color: #495057;
-}
-
-/* Mode Toggle */
-.mode-toggle {
-    /* Removed absolute positioning for flexbox layout */
-}
-
-.mode-toggle-btn:hover {
-    background: #f8f9fa;
-    color: #007bff;
-}
-
-/* Legacy dataset counter (for backward compatibility) */
-.dataset-counter {
-    text-align: right;
-    font-size: 12px;
-    color: #6c757d;
-    margin-bottom: 8px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    position: absolute;
-    right: 20px;
-    top: 110px;
-    cursor: pointer;
-    transition: color 0.2s ease;
-}
-
-.dataset-counter:hover {
-    color: #007bff;
-}
-
-.dataset-counter #datasetCount {
-    font-weight: 600;
-    color: #495057;
-}
-
-/* Progress bar matches center width and is centered by container */
-.progress-bar{
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-  width: 100%;
-}
-.progress-bar .progress-circles{
-  display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center;
-}
-
-.progress-circle {
-    width: 16px;
-    height: 16px;
-    color: #6c757d;
-    transition: color 0.3s ease;
-}
-
-.progress-circle.current {
-    color: #007bff;
-}
-
-.progress-circle.correct {
-    color: #28a745;
-}
-
-.progress-circle.incorrect {
-    color: #dc3545;
-}
-
-/* Button Group */
-.button-group {
-    display: flex;
-    gap: 8px;
-}
-
-.btn {
-    background: transparent;
-    color: #6c757d;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 8px;
-    padding: 12px 16px;
-}
-
-.btn:hover {
-    background: #f8f9fa;
-    color: #495057;
-}
-
-.btn:active {
-    transform: scale(0.98);
-}
-
-.btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
-
-.btn-icon {
-    width: 48px;
-    height: 48px;
-    padding: 0;
-}
-
-.btn-icon i {
-    width: 24px;
-    height: 24px;
-    color: inherit;
-}
-
-.btn-icon svg {
-    width: 24px;
-    height: 24px;
-    color: inherit;
-}
-
-/* Icon Styling */
-.btn-icon svg path,
-.btn-icon svg line,
-.btn-icon svg polyline,
-.btn-icon svg circle,
-.btn-icon svg rect {
-    stroke: currentColor;
-    fill: none;
-}
-
-.btn-icon svg path[fill] {
-    fill: currentColor;
-}
-
-/* Feedback */
-.feedback {
-    text-align: center;
-    margin-top: 6px; /* Reduced spacing */
-    font-size: 16px;
-    font-weight: 500;
-    min-height: 20px; /* Reduced height */
-}
-
-.feedback.correct {
-    color: #28a745;
-}
-
-.feedback.incorrect {
-    color: #dc3545;
-}
-
-.feedback.hint {
-    color: #ffc107;
-}
-
-
-
-/* Leaflet Map Styles */
-.leaflet-container {
-    background: #f8f9fa;
-}
-
-.leaflet-popup-content-wrapper {
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e9ecef;
-}
-
-.leaflet-popup-content {
-    margin: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-}
-
-.leaflet-popup-tip {
-    background: #ffffff;
-    border: 1px solid #e9ecef;
-}
-
-/* Focus States */
-.btn:focus,
-.guess-input:focus {
-    outline: none;
-    border-color: #dee2e6;
-}
-
-/* Country Popup Styles */
-.country-popup .leaflet-popup-content-wrapper {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 8px 12px;
-    min-width: 120px;
-}
-
-.country-popup .leaflet-popup-content {
-    text-align: center;
-    min-width: 120px;
-    margin: 0;
-    padding: 0;
-}
-
-.country-popup .leaflet-popup-content h3 {
-    margin: 0 0 4px 0;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    line-height: 1.2;
-}
-
-.country-popup .leaflet-popup-content .popup-value {
-    margin: 0;
-    text-align: center;
-}
-
-.country-popup .leaflet-popup-content .value-number {
-    font-size: 13px;
-    font-weight: 600;
-    color: #007bff;
-    line-height: 1.2;
-}
-
-.country-popup .leaflet-popup-content .popup-context {
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px solid #e9ecef;
-}
-
-.country-popup .leaflet-popup-content .popup-quiz-info {
-    font-size: 11px;
-    color: #28a745;
-    margin-bottom: 4px;
-}
-
-.country-popup .leaflet-popup-content .popup-unit-info {
-    font-size: 10px;
-    color: #6c757d;
-    font-style: italic;
-}
-
-.country-popup .leaflet-popup-tip {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-top: none;
-    border-left: none;
-}
-
-/* Legend Styles */
-.legend-control {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1002;
-    min-width: 250px;
-    width: 250px;
-    height: auto;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    max-width: 250px;
-}
-
-.legend-control.leaflet-control {
-    z-index: 1002;
-}
-
-.leaflet-bottom.leaflet-right {
-    z-index: 1002;
-}
-
-.leaflet-bottom.leaflet-left {
-    z-index: 1002;
-}
-
-.legend h4 {
-    margin: 0 0 12px 0;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    text-align: center;
-}
-
-.legend-gradient {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.gradient-bar {
-    height: 20px;
-    border-radius: 10px;
-    border: 1px solid #e9ecef;
-    overflow: hidden;
-    width: 200px;
-    min-width: 200px;
-    max-width: 200px;
-    background: linear-gradient(to right, #f8f9fa, #6c757d);
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.gradient-labels {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: #6c757d;
-    font-weight: 500;
-}
-
-.min-label,
-.max-label {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 2px 6px;
-    border-radius: 4px;
-    backdrop-filter: blur(4px);
-}
-
-.legend-categorical {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.category-swatches {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
-    justify-content: center;
-    max-width: 100%;
-}
-
-.category-swatch {
-    width: 16px;
-    height: 16px;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: help;
-}
-
- .category-count {
-     font-size: 11px;
-     color: #6c757d;
-     text-align: center;
-     font-weight: 500;
- }
- 
- /* Legend Extremes (Top 3 / Bottom 3) */
-.legend-extremes {
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px solid #e9ecef;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-.extremes-section {
-    flex: 1;
-    min-width: 0;
-    max-width: 50%;
-}
-
-.extremes-title {
-    font-size: 9px;
-    font-weight: 600;
-    color: #6c757d;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    margin-bottom: 3px;
-    text-align: left;
-}
-
-.extremes-items {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-}
-
-.extreme-item {
-    font-size: 9px;
-    line-height: 1.1;
-    color: #495057;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-}
-
-.extreme-country {
-    font-weight: 500;
-    display: inline;
-}
-
-.extreme-value {
-    font-weight: 400;
-    color: #6c757d;
-    display: inline;
-}
-
-/* Leaflet Attribution Styling */
-.leaflet-control-attribution {
-    background: rgba(255, 255, 255, 0.9) !important;
-    backdrop-filter: blur(10px);
-    border-radius: 6px !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-    font-size: 11px !important;
-    padding: 4px 8px !important;
-    margin: 10px !important;
-}
-
-.leaflet-control-attribution a {
-    color: #6c757d !important;
-    text-decoration: none !important;
-}
-
-.leaflet-control-attribution a:hover {
-    color: #495057 !important;
-}
-
-.leaflet-attribution-flag {
-    opacity: 0.7;
-}
-
-/* Responsive Design - Mobile First Approach */
-@media (max-width: 1200px) {
-    .input-wrapper {
-        width: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Quiz Interface - Mobile Layout - Much more compact */
-    .quiz-interface {
-        height: 120px; /* Significantly reduced height */
-        padding: 12px 16px;
-        border-top: 2px solid #e9ecef;
-    }
-    
-    /* Input Section - Simplified mobile layout */
-    .input-section {
-        margin-bottom: 8px;
-    }
-    
-    /* Simplify the 3-column grid to a more mobile-friendly layout */
-    .input-row {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        align-items: stretch;
-    }
-    
-    /* Center stack takes full width on mobile */
-    .center-stack {
-        width: 100%;
-        max-width: none;
-    }
-    
-    /* Input with embedded controls - Mobile optimized */
-    .input-with-embedded {
-        height: 44px; /* Slightly smaller */
-    }
-    
-    .guess-input {
-        font-size: 16px; /* Prevent zoom on iOS */
-        border-radius: 22px; /* More rounded */
-        padding-left: 16px;
-        padding-right: 80px; /* Space for buttons */
-        border: 2px solid #e9ecef;
-        background: #ffffff;
-    }
-    
-    .guess-input:focus {
-        border-color: #007bff;
-        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
-    }
-    
-    /* Inline buttons - Mobile optimized */
-    .inline-btn {
-        width: 32px;
-        height: 32px;
-    }
-    
-    .inline-btn svg {
-        width: 16px;
-        height: 16px;
-    }
-    
-    .inline-right-group {
-        right: 8px;
-        gap: 4px;
-    }
-    
-    /* Progress bar - Mobile optimized */
-    .progress-bar {
-        margin-bottom: 8px;
-    }
-    
-    .progress-circles {
-        gap: 4px;
-        justify-content: center;
-    }
-    
-    .progress-circle {
-        width: 12px;
-        height: 12px;
-    }
-    
-    /* Feedback - Mobile optimized */
-    .feedback {
-        font-size: 14px;
-        margin-top: 6px;
-        padding: 0 8px;
-        text-align: center;
-    }
-    
-    /* Answer Title - Mobile repositioned */
-    .answer-title {
-        bottom: 140px; /* Adjust for new mobile footer height */
-        padding: 8px 12px;
-        border-radius: 12px;
-        width: 90%;
-        max-width: 400px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    }
-    
-    .answer-title h2 {
-        font-size: 15px;
-        margin-bottom: 2px;
-    }
-    
-    .answer-title p {
-        font-size: 12px;
-    }
-    
-    /* Mode Toggle - Mobile simplified */
-    .input-left {
-        order: 3; /* Move to bottom */
-        justify-content: center;
-        margin-top: 4px;
-    }
-    
-    .mode-toggle-btn {
-        padding: 6px 12px;
-        font-size: 12px;
-        gap: 6px;
-        border-radius: 16px;
-        background: #f8f9fa;
-        border: 1px solid #e9ecef;
-        color: #495057;
-    }
-    
-    .mode-toggle-btn:hover {
-        background: #e9ecef;
-    }
-    
-    .mode-toggle-btn svg {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .mode-toggle-btn span {
-        display: inline; /* Show text on mobile */
-        font-weight: 500;
-    }
-    
-    /* Right section - Mobile simplified */
-    .input-right {
-        order: 2; /* Move to middle */
-        justify-content: center;
-        margin-top: 4px;
-    }
-    
-    .social-links {
-        gap: 16px;
-    }
-    
-    .social-links .social-link svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .dataset-counter {
-        font-size: 12px;
-        color: #6c757d;
-        font-weight: 400;
-    }
-    
-    /* Dataset Browser - Mobile optimized */
-    .dataset-browser-content {
-        max-width: 95%;
-        max-height: 85vh;
-        margin: 20px;
-    }
-    
-    .dataset-browser-header {
-        padding: 20px;
-    }
-    
-    .dataset-browser-header h2 {
-        font-size: 20px;
-    }
-    
-    .dataset-browser-list {
-        padding: 16px 20px;
-        max-height: 60vh;
-    }
-    
-    .dataset-item {
-        padding: 12px 16px;
-        margin-bottom: 8px;
-        border-radius: 12px;
-    }
-    
-    .dataset-title {
-        font-size: 14px;
-    }
-    
-    .dataset-description {
-        font-size: 12px;
-    }
-    
-    .dataset-category {
-        font-size: 11px;
-    }
-    
-    /* Legend - Mobile positioning improved */
-    .legend-control {
-        position: fixed !important;
-        top: 16px !important;
-        right: 16px !important;
-        bottom: auto !important;
-        left: auto !important;
-        min-width: 180px;
-        width: 180px;
-        max-width: 180px;
-        height: auto;
-        min-height: 60px;
-        padding: 12px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        margin: 0;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    .legend h4 {
-        font-size: 12px;
-        margin-bottom: 6px;
-    }
-    
-    /* Legend extremes - Mobile */
-    .legend-extremes {
-        display: none; /* Hide on mobile to save space */
-    }
-    
-    /* Gradient labels - Mobile */
-    .gradient-labels {
-        font-size: 10px;
-    }
-    
-    /* Gradient bar - Mobile fixed width */
-    .gradient-bar {
-        width: 150px;
-        min-width: 150px;
-        max-width: 150px;
-    }
-    
-    /* Map container - Mobile optimized */
-    .map-container {
-        min-height: 300px;
-    }
-    
-    /* Popup content - Mobile optimized */
-    .popup-content h3 {
-        font-size: 14px;
-    }
-    
-    .popup-content .value-number {
-        font-size: 16px;
-    }
-    
-    .popup-context {
-        font-size: 11px;
-    }
-    
-    /* Loading screen - Mobile optimized */
-    .loading-text {
-        font-size: 14px;
-    }
-    
-    .loading-icon {
-        width: 28px;
-        height: 28px;
-    }
-    
-    /* Completion screen - Mobile optimized */
-    .completion-content {
-        padding: 24px 20px;
-        margin: 16px;
-        border-radius: 16px;
-    }
-    
-    .completion-content h2 {
-        font-size: 20px;
-    }
-    
-    .score-text {
-        font-size: 16px;
-        margin-bottom: 24px;
-    }
-    
-    .completion-buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .completion-btn {
-        padding: 12px 16px;
-        font-size: 14px;
-        justify-content: center;
-    }
-    
-    .completion-btn i {
-        width: 16px;
-        height: 16px;
-    }
-    
-    /* Additional mobile optimizations */
-    .copy-btn svg {
-        width: 18px;
-        height: 18px;
-    }
-    
-    /* Ensure touch targets are large enough */
-    .inline-btn,
-    .mode-toggle-btn,
-    .social-link,
-    .completion-btn {
-        min-height: 44px;
-        min-width: 44px;
-    }
-    
-    /* Improve scrolling on mobile */
-    .dataset-browser-list {
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    /* Prevent horizontal scroll */
-    body {
-        overflow-x: hidden;
-    }
-    
-    /* Better touch feedback */
-    .inline-btn:active,
-    .mode-toggle-btn:active,
-    .social-link:active {
-        transform: scale(0.95);
-    }
-}
-
-/* Extra small mobile devices (iPhone SE, etc.) */
-@media (max-width: 375px) {
-    .quiz-interface {
-        height: 110px;
-        padding: 10px 12px;
-    }
-    
-    .guess-input {
-        font-size: 16px;
-        padding-left: 12px;
-        padding-right: 70px;
-    }
-    
-    .inline-btn {
-        width: 28px;
-        height: 28px;
-    }
-    
-    .inline-btn svg {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .inline-right-group {
-        right: 6px;
-        gap: 3px;
-    }
-    
-    .progress-circle {
-        width: 10px;
-        height: 10px;
-    }
-    
-    .answer-title {
-        bottom: 130px;
-        width: 95%;
-        padding: 6px 10px;
-    }
-    
-    .answer-title h2 {
-        font-size: 14px;
-    }
-    
-    .answer-title p {
-        font-size: 11px;
-    }
-    
-    .mode-toggle-btn {
-        padding: 4px 8px;
-        font-size: 11px;
-        gap: 4px;
-    }
-    
-    .mode-toggle-btn svg {
-        width: 12px;
-        height: 12px;
-    }
-    
-    .social-links .social-link svg {
-        width: 18px;
-        height: 18px;
-    }
-    
-    .dataset-counter {
-        font-size: 11px;
-    }
-    
-    .legend-control {
-        top: 12px !important;
-        right: 12px !important;
-        min-width: 160px;
-        width: 160px;
-        max-width: 160px;
-        padding: 10px;
-    }
-    
-    .legend h4 {
-        font-size: 11px;
-    }
-    
-    .gradient-labels {
-        font-size: 9px;
-    }
-}
-
-/* Landscape mobile orientation */
-@media (max-width: 768px) and (orientation: landscape) {
-    .quiz-interface {
-        height: 100px;
-        padding: 8px 16px;
-    }
-    
-    .input-row {
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-    }
-    
-    .center-stack {
-        flex: 1;
-        max-width: 300px;
-    }
-    
-    .input-left {
-        order: 1;
-        margin-top: 0;
-    }
-    
-    .input-right {
-        order: 3;
-        margin-top: 0;
-    }
-    
-    .answer-title {
-        bottom: 120px;
-    }
-    
-    .legend-control {
-        top: 8px !important;
-        right: 8px !important;
-        min-width: 150px;
-        width: 150px;
-        max-width: 150px;
-        padding: 8px;
-    }
-}
-     .legend-extremes {
-         margin-top: 6px;
-         padding-top: 6px;
-         gap: 8px;
-     }
-     
-     .extremes-title {
-         font-size: 8px;
-         margin-bottom: 2px;
-     }
-     
-     .extreme-item {
-         font-size: 8px;
-         line-height: 1.0;
-     }
-    
-    .gradient-bar {
-        height: 14px;
-    }
-    
-    .gradient-labels {
-        font-size: 11px;
-    }
-    
-    .min-label,
-    .max-label {
-        padding: 1px 4px;
-        font-size: 10px;
-    }
-    
-    /* Popup adjustments for mobile */
-    .country-popup .leaflet-popup-content-wrapper {
-        min-width: 140px;
-        max-width: 200px;
-        padding: 10px 14px;
-    }
-    
-    .country-popup .leaflet-popup-content h3 {
-        font-size: 13px;
-        margin-bottom: 6px;
-    }
-    
-    .country-popup .leaflet-popup-content .value-number {
-        font-size: 12px;
-    }
-    
-    /* Leaflet attribution - Mobile friendly */
-    .leaflet-control-attribution {
-        font-size: 10px !important;
-        padding: 3px 6px !important;
-        margin: 8px !important;
-        border-radius: 8px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Extra small screens */
-    .quiz-interface {
-        height: 200px;
-        padding: 12px;
-    }
-    
-    .guess-input {
-        font-size: 16px;
-        padding: 16px;
-        border-radius: 16px;
-    }
-    
-    .btn-icon {
-        width: 52px;
-        height: 52px;
-        border-radius: 16px;
-    }
-    
-    .btn-icon i,
-    .btn-icon svg {
-        width: 24px;
-        height: 24px;
-    }
-    
-    .input-right .social-links .social-link {
-        width: 48px;
-        height: 48px;
-        border-radius: 16px;
-    }
-    
-    .input-right .social-links .social-link svg {
-        width: 22px;
-        height: 22px;
-    }
-    
-    .progress-circle {
-        width: 16px;
-        height: 16px;
-    }
-    
-    .legend-control {
-        min-width: 180px;
-        width: 180px;
-        max-width: 180px;
-        padding: 10px;
-        margin: 6px;
-    }
-    
-    .legend h4 {
-        font-size: 12px;
-    }
-    
-    .gradient-bar {
-        height: 12px;
-        width: 140px;
-        min-width: 140px;
-        max-width: 140px;
-    }
-    
-    .gradient-labels {
-        font-size: 10px;
-    }
-    
-    .min-label,
-    .max-label {
-        font-size: 9px;
-        padding: 1px 3px;
-    }
-    
-    .feedback {
-        font-size: 14px;
-        padding: 0 12px;
-    }
-}
-
-@media (max-width: 360px) {
-    /* Very small screens */
-    .quiz-interface {
-        height: 220px;
-        padding: 10px;
-    }
-    
-    .guess-input {
-        padding: 14px;
-    }
-    
-    .btn-icon {
-        width: 48px;
-        height: 48px;
-    }
-    
-    .input-right .social-links {
-        gap: 12px;
-    }
-    
-    .input-right .social-links .social-link {
-        width: 44px;
-        height: 44px;
-    }
-    
-    .legend-control {
-        min-width: 160px;
-        width: 160px;
-        max-width: 160px;
-        padding: 8px;
-        margin: 4px;
-    }
-    
-    .progress-circles {
-        gap: 4px;
-    }
-    
-    .progress-circle {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .gradient-bar {
-        width: 120px;
-        min-width: 120px;
-        max-width: 120px;
-    }
-}
-
-/* Landscape orientation adjustments */
-@media (max-height: 500px) and (orientation: landscape) {
-    .quiz-interface {
-        height: 140px;
-        padding: 12px;
-    }
-    
-    .input-section {
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-    }
-    
-    .input-wrapper {
-        width: 60%;
-        max-width: 400px;
-    }
-    
-    .guess-input {
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .input-right .social-links {
-        position: absolute;
-        right: 12px;
-        top: 12px;
-        margin: 0;
-    }
-    
-    .legend-control {
-        margin: 6px;
-    }
-    
-    .progress-bar {
-        margin-bottom: 8px;
-    }
-    
-    .feedback {
-        margin-top: 4px;
-    }
-}
-
-/* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .btn-icon,
-    .social-link {
-        border-width: 0.5px;
-    }
-    
-    .guess-input {
-        border-width: 0.5px;
-    }
-}
-
-/* Touch device optimizations */
-@media (hover: none) and (pointer: coarse) {
-    .btn-icon:hover,
-    .social-link:hover {
-        transform: none;
-    }
-    
-    .btn-icon:active,
-    .social-link:active {
-        transform: scale(0.95);
-    }
-    
-    .guess-input:focus {
-        border-color: #007bff;
-        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
-    }
-    
-    /* Prevent text selection on buttons */
-    .btn-icon,
-    .social-link {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-tap-highlight-color: transparent;
-    }
-    
-    /* Larger touch targets for mobile */
-    .btn-icon {
-        min-width: 44px;
-        min-height: 44px;
-    }
-    
-    .social-link {
-        min-width: 44px;
-        min-height: 44px;
-    }
-    
-    /* Improve map touch interactions */
-    .leaflet-container {
-        touch-action: manipulation;
-    }
-    
-    /* Prevent zoom on double tap */
-    .leaflet-container {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-}
-
-/* Dark mode support for mobile */
-@media (prefers-color-scheme: dark) {
-    .quiz-interface {
-        background: rgba(33, 37, 41, 0.95);
-        border-top-color: #495057;
-    }
-    
-    .guess-input {
-        background: #343a40;
-        border-color: #495057;
-        color: #f8f9fa;
-    }
-    
-    .guess-input::placeholder {
-        color: #adb5bd;
-    }
-    
-    .btn-icon {
-        background: #007bff;
-        color: white;
-    }
-    
-    .social-link {
-        background: #343a40;
-        border-color: #495057;
-        color: #adb5bd;
-    }
-    
-    .social-link:hover {
-        background: #495057;
-        color: #f8f9fa;
-    }
-    
-    .legend-control {
-        background: rgba(33, 37, 41, 0.95);
-        border-color: #495057;
-    }
-    
-    .legend h4 {
-        color: #f8f9fa;
-    }
-    
-    .gradient-labels {
-        color: #adb5bd;
-    }
-    
-    .min-label,
-    .max-label {
-        background: rgba(33, 37, 41, 0.8);
-        color: #f8f9fa;
-    }
-    
-    .feedback {
-        color: #f8f9fa;
-    }
-    
-    .progress-circle {
-        color: #adb5bd;
-    }
-    
-    .completion-screen {
-        color: #f8f9fa;
-    }
-    
-    .completion-content h2 {
-        color: #f8f9fa;
-    }
-    
-    .score-text {
-        color: #adb5bd;
-    }
-    
-    .completion-btn {
-        background: #343a40;
-        border-color: #495057;
-        color: #f8f9fa;
-    }
-    
-    .completion-btn:hover {
-        background: #495057;
-    }
-}
-
-/* Dataset Browser */
-.dataset-browser {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-    backdrop-filter: blur(4px);
-}
-
-.dataset-browser-content {
-    background: #ffffff;
-    border-radius: 16px;
-    max-width: 600px;
-    width: 90%;
-    max-height: 80vh;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.dataset-browser-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 24px;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.dataset-browser-header h2 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333333;
-    margin: 0;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 8px;
-    color: #6c757d;
-    transition: all 0.2s ease;
-}
-
-.close-btn:hover {
-    background: #f8f9fa;
-    color: #495057;
-}
-
-.close-btn i {
-    width: 20px;
-    height: 20px;
-}
-
-.dataset-browser-list {
     padding: 16px 24px;
-    max-height: 60vh;
-    overflow-y: auto;
 }
 
-.dataset-item {
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: #ffffff;
 }
-
-.dataset-item:hover {
-    border-color: #007bff;
-    background: #f8f9fa;
-}
-
-.dataset-item.active {
-    border-color: #007bff;
-    background: #e3f2fd;
-}
-
-.dataset-info {
-    flex: 1;
-}
-
-.dataset-title {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    margin-bottom: 4px;
-}
-
-.dataset-description {
-    font-size: 12px;
-    color: #6c757d;
-    line-height: 1.4;
-}
-
-.dataset-category {
-    font-size: 11px;
-    color: #007bff;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Completion Screen */
-.completion-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    backdrop-filter: blur(4px);
-}
-
-.completion-content {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 90%;
-}
-
-.completion-content h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333333;
-    margin-bottom: 8px;
-}
-
-.score-text {
-    font-size: 18px;
-    font-weight: 500;
-    color: #666666;
-    margin-bottom: 32px;
-}
-
-.completion-buttons {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-}
-
-.completion-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    border: 2px solid #e0e0e0;
-    background: #ffffff;
-    color: #333333;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    text-decoration: none;
-}
-
-.completion-btn:hover {
-    background: #f8f9fa;
-    border-color: #007bff;
-    color: #007bff;
-    transform: translateY(-1px);
-}
-
-.completion-btn:active {
-    transform: translateY(0);
-}
-
-.completion-btn i {
-    width: 16px;
-    height: 16px;
-}
-
-/* Mobile responsive completion screen */
-@media (max-width: 768px) {
-    .completion-content {
-        padding: 32px 24px;
-        margin: 20px;
-    }
-    
-    .completion-content h2 {
-        font-size: 20px;
-    }
-    
-    .score-text {
-        font-size: 16px;
-    }
-    
-    .completion-buttons {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .completion-btn {
-        padding: 14px 20px;
-        font-size: 16px;
-    }
-    
-    .completion-btn i {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-/* Country hover effects */
-.country-hover {
-    filter: brightness(1.1) !important;
-    transition: filter 0.2s ease;
-}
-
-/* Popup styles to prevent map interference */
-.country-popup {
-    pointer-events: none !important;
-    z-index: 1000 !important;
-}
-
-.country-popup .leaflet-popup-content-wrapper {
-    pointer-events: auto !important;
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    border-radius: 12px !important;
-    padding: 12px !important;
-}
-
-.country-popup .leaflet-popup-tip {
-    background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px) !important;
-}
-
-.country-popup .leaflet-popup-close-button {
-    display: none !important;
-}
-
-/* Popup content styling */
-.popup-content {
-    text-align: center;
-    min-width: 120px;
-}
-
-.popup-content h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333333;
-    margin-bottom: 6px;
-    line-height: 1.2;
-}
-
-.popup-content .value-number {
-    font-size: 18px;
-    font-weight: 700;
-    color: #007bff;
-    margin-bottom: 4px;
-}
-
-.popup-context {
-    font-size: 11px;
-    color: #6c757d;
-    line-height: 1.3;
-}
-
-.popup-quiz-info {
-    margin-bottom: 2px;
-}
-
-.popup-unit-info {
-    font-size: 10px;
-    opacity: 0.8;
-}
-
-/* ===== NEW IMPROVEMENTS ===== */
 
 /* Game Modes */
 .game-modes {
     display: flex;
     gap: 8px;
-    align-items: center;
 }
 
 .mode-btn {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    color: white;
+    color: #333;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
-    backdrop-filter: blur(10px);
 }
 
 .mode-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
 }
 
 .mode-btn.active {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
 }
 
 .mode-btn i {
@@ -2010,56 +162,214 @@ body {
     height: 16px;
 }
 
-/* Control Buttons */
-.control-buttons {
+/* Header Controls */
+.header-controls {
     display: flex;
     gap: 8px;
-    align-items: center;
 }
 
 .control-btn {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
+    color: #333;
     cursor: pointer;
     transition: all 0.2s ease;
-    backdrop-filter: blur(10px);
     text-decoration: none;
 }
 
 .control-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
 .control-btn i {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 
-/* Color Bar Section */
-.color-bar-section {
+/* Map Container */
+.map-container {
+    flex: 1;
+    margin-top: 80px; /* Account for header */
+    position: relative;
+}
+
+/* Answer Title */
+.answer-title {
     position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 20px 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    max-width: 600px;
+}
+
+.answer-title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.answer-title p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Game Interface */
+.game-interface {
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 16px 24px;
-    z-index: 999;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 24px;
 }
 
-.color-bar-container {
+/* Input Section */
+.input-section {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.guess-input {
+    flex: 1;
+    padding: 16px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    background: white;
+    transition: all 0.2s ease;
+}
+
+.guess-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: #007bff;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+.submit-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.submit-btn i {
+    width: 20px;
+    height: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.progress-circles {
+    display: flex;
+    gap: 8px;
+}
+
+.progress-circle {
+    width: 12px;
+    height: 12px;
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.progress-circle.current {
+    color: #007bff;
+}
+
+.progress-circle.completed {
+    color: #28a745;
+}
+
+/* Feedback */
+.feedback {
+    text-align: center;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 600px;
+    transition: all 0.3s ease;
+}
+
+.feedback.correct {
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.feedback.incorrect {
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+.feedback.hint {
+    background: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+/* Color Bar */
+.color-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 16px;
 }
 
 .color-bar-gradient {
@@ -2074,21 +384,21 @@ body {
     justify-content: space-between;
     font-size: 14px;
     font-weight: 500;
-    color: white;
+    color: #666;
 }
 
 /* Enhanced Legend */
 .legend {
     background: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(10px);
-    border-radius: 12px !important;
-    padding: 20px !important;
+    backdrop-filter: blur(20px);
+    border-radius: 16px !important;
+    padding: 24px !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     line-height: 1.5 !important;
-    max-width: 400px !important;
+    max-width: 500px !important;
 }
 
 .legend-gradient {
@@ -2118,7 +428,7 @@ body {
 
 .extremes-section {
     background: rgba(0, 0, 0, 0.02);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 16px;
 }
 
@@ -2142,7 +452,7 @@ body {
     align-items: center;
     padding: 8px 12px;
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 14px !important;
     font-weight: 500 !important;
     color: #333 !important;
@@ -2157,26 +467,6 @@ body {
 .extreme-value {
     font-weight: 600 !important;
     color: #666 !important;
-}
-
-/* Bigger Fonts Throughout */
-body {
-    font-size: 18px !important;
-}
-
-.guess-input {
-    font-size: 18px !important;
-    padding: 16px 20px !important;
-}
-
-.dataset-counter {
-    font-size: 16px !important;
-    font-weight: 600 !important;
-}
-
-.feedback {
-    font-size: 18px !important;
-    padding: 16px 20px !important;
 }
 
 /* Enhanced Map Controls */
@@ -2199,30 +489,154 @@ body {
     transform: scale(1.05) !important;
 }
 
+/* Dataset Browser Modal */
+.dataset-browser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dataset-browser-content {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dataset-browser-header {
+    padding: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataset-browser-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.dataset-browser-close {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.dataset-browser-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dataset-browser-close i {
+    width: 20px;
+    height: 20px;
+}
+
+.dataset-browser-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+}
+
+.dataset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.dataset-item {
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.dataset-item:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.dataset-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.dataset-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .game-modes {
+    .app-header {
+        padding: 12px 16px;
+    }
+    
+    .header-content {
         flex-direction: column;
-        gap: 6px;
+        gap: 12px;
+    }
+    
+    .game-modes {
+        width: 100%;
+        justify-content: center;
     }
     
     .mode-btn {
-        width: 100%;
+        flex: 1;
         justify-content: center;
         font-size: 13px;
-        padding: 6px 10px;
+        padding: 8px 12px;
     }
     
-    .control-buttons {
+    .header-controls {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .map-container {
+        margin-top: 120px;
+    }
+    
+    .game-interface {
+        padding: 16px;
+    }
+    
+    .input-container {
         flex-direction: column;
-        gap: 6px;
+        gap: 12px;
     }
     
-    .control-btn {
+    .submit-btn {
         width: 100%;
-        justify-content: center;
-        font-size: 13px;
-        padding: 6px 10px;
+        height: 48px;
     }
     
     .legend {
@@ -2235,15 +649,30 @@ body {
         gap: 16px;
     }
     
-    .color-bar-section {
-        padding: 12px 16px;
+    .dataset-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .mode-btn span {
+        display: none;
     }
     
-    .color-bar-gradient {
-        height: 20px;
+    .mode-btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        justify-content: center;
     }
     
-    .color-bar-labels {
-        font-size: 12px;
+    .control-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .control-btn i {
+        width: 16px;
+        height: 16px;
     }
 }

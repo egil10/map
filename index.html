@@ -41,6 +41,38 @@
 
     <!-- Main Container -->
     <div class="app-container" style="display: none;">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="game-modes">
+                    <button id="learnMode" class="mode-btn active" title="Learn Mode">
+                        <i data-lucide="book-open"></i>
+                        <span>Learn</span>
+                    </button>
+                    <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
+                        <i data-lucide="list"></i>
+                        <span>Multiple</span>
+                    </button>
+                    <button id="writtenMode" class="mode-btn" title="Written Mode">
+                        <i data-lucide="edit-3"></i>
+                        <span>Written</span>
+                    </button>
+                </div>
+                
+                <div class="header-controls">
+                    <button id="resetMapView" class="control-btn" title="Reset Map View">
+                        <i data-lucide="maximize-2"></i>
+                    </button>
+                    <button id="downloadData" class="control-btn" title="Download Data as CSV">
+                        <i data-lucide="download"></i>
+                    </button>
+                    <a href="https://github.com/egil10/map" target="_blank" class="control-btn" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
         <!-- Map Container -->
         <div id="map" class="map-container"></div>
         
@@ -50,97 +82,45 @@
             <p id="answerDescription"></p>
         </div>
         
-        <!-- Quiz Interface -->
-        <div class="quiz-interface">
-            
+        <!-- Main Game Interface -->
+        <div class="game-interface">
             <!-- Input Section -->
             <div class="input-section">
-                <div class="input-row">
-                    <!-- LEFT: game modes -->
-                    <div class="input-left">
-                        <div class="game-modes">
-                            <button id="learnMode" class="mode-btn active" title="Learn Mode">
-                                <i data-lucide="book-open"></i>
-                                <span>Learn</span>
-                            </button>
-                            <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
-                                <i data-lucide="list"></i>
-                                <span>Multiple</span>
-                            </button>
-                            <button id="writtenMode" class="mode-btn" title="Written Mode">
-                                <i data-lucide="edit-3"></i>
-                                <span>Written</span>
-                            </button>
-                        </div>
+                <div class="input-container">
+                    <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
+                    <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
+                        <i data-lucide="send"></i>
+                    </button>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-circles">
+                        <i data-lucide="circle" class="progress-circle current"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
+                        <i data-lucide="circle-dashed" class="progress-circle"></i>
                     </div>
-
-                    <!-- CENTER: perfectly centered stack (INPUT + PROGRESS) -->
-                    <div class="center-stack">
-                        <div class="input-with-embedded">
-                            <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
-
-                            <div class="inline-right-group">
-                                <button id="submitGuess" class="inline-btn inline-send" aria-label="Send" disabled>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
-                                </button>
-                                <button id="skipRight" class="inline-btn inline-right" aria-label="Next" style="display:none;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Progress bar directly under the input, same center width -->
-                        <div class="progress-bar">
-                            <div class="progress-circles">
-                                <i data-lucide="circle" class="progress-circle current"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT: controls + dataset -->
-                    <div class="input-right">
-                        <div class="control-buttons">
-                            <button id="resetMapView" class="control-btn" title="Reset Map View">
-                                <i data-lucide="maximize-2"></i>
-                                <span>Reset</span>
-                            </button>
-                            <button id="downloadData" class="control-btn" title="Download Data as CSV">
-                                <i data-lucide="download"></i>
-                                <span>Download</span>
-                            </button>
-                            <a href="https://github.com/egil10/map" target="_blank" class="control-btn" aria-label="GitHub">
-                                <i data-lucide="github"></i>
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                        <div class="dataset-counter" id="datasetCounter"><span id="datasetCount">105</span> datasets</div>
-                    </div>
-                </div><!-- /.input-row -->
-            </div><!-- /.input-section -->
+                </div>
+            </div>
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
             
-            <!-- Color Bar Section -->
-            <div class="color-bar-section">
-                <div class="color-bar-container">
-                    <div class="color-bar-gradient" id="colorBarGradient"></div>
-                    <div class="color-bar-labels">
-                        <span class="color-bar-min" id="colorBarMin">Min</span>
-                        <span class="color-bar-max" id="colorBarMax">Max</span>
-                    </div>
+            <!-- Color Bar -->
+            <div class="color-bar">
+                <div class="color-bar-gradient" id="colorBarGradient"></div>
+                <div class="color-bar-labels">
+                    <span class="color-bar-min" id="colorBarMin">Min</span>
+                    <span class="color-bar-max" id="colorBarMax">Max</span>
                 </div>
             </div>
-
         </div>
     </div>
 
