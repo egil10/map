@@ -4885,7 +4885,7 @@ class QuizGame {
                 <span>Previous</span>
             </button>
             <div class="learn-info">
-                <span>Learn Mode</span>
+                <span id="currentDatasetTitle">${this.currentQuiz ? this.currentQuiz.title : 'Loading...'}</span>
             </div>
             <button id="nextQuizBtn" class="nav-btn next-btn">
                 <i data-lucide="arrow-right"></i>
@@ -4906,6 +4906,7 @@ class QuizGame {
             nextBtn.addEventListener('click', () => {
                 console.log('🔄 Next button clicked');
                 this.nextQuestion();
+                this.updateLearnModeTitle();
             });
         }
         
@@ -4913,7 +4914,15 @@ class QuizGame {
             prevBtn.addEventListener('click', () => {
                 console.log('🔄 Previous button clicked');
                 this.previousQuestion();
+                this.updateLearnModeTitle();
             });
+        }
+    }
+    
+    updateLearnModeTitle() {
+        const titleElement = document.getElementById('currentDatasetTitle');
+        if (titleElement && this.currentQuiz) {
+            titleElement.textContent = this.currentQuiz.title;
         }
     }
     
@@ -4931,6 +4940,9 @@ class QuizGame {
         
         // Create options array with correct answer
         const options = [correctDataset, ...wrongDatasets.map(d => d.title)].sort(() => Math.random() - 0.5);
+        
+        console.log('🎯 Multiple choice options:', options);
+        console.log('🎯 Correct answer:', correctDataset);
         
         // Replace input container content with multiple choice
         const inputContainer = document.querySelector('.input-container');
@@ -4962,24 +4974,40 @@ class QuizGame {
         const correctAnswer = this.currentQuiz.title;
         const isCorrect = selectedAnswer === correctAnswer;
         
+        console.log('🎯 Multiple choice answer:', selectedAnswer);
+        console.log('🎯 Correct answer:', correctAnswer);
+        console.log('🎯 Is correct:', isCorrect);
+        
+        // Disable all buttons to prevent multiple clicks
+        document.querySelectorAll('.choice-btn').forEach(btn => {
+            btn.disabled = true;
+        });
+        
+        // Show visual feedback on buttons
+        document.querySelectorAll('.choice-btn').forEach(btn => {
+            const answer = btn.dataset.answer;
+            if (answer === correctAnswer) {
+                btn.classList.add('correct');
+            } else if (answer === selectedAnswer && !isCorrect) {
+                btn.classList.add('incorrect');
+            }
+        });
+        
         // Update progress
         this.updateProgress(isCorrect);
         
         // Show feedback
-        const feedback = document.getElementById('guessFeedback');
         if (isCorrect) {
-            feedback.innerHTML = `
-                <div class="feedback correct">
-                    ✅ Correct! The answer is ${correctAnswer}
-                </div>
-            `;
-            this.score++;
+            const emoji = this.getRandomSuccessEmoji();
+            this.showFeedback(
+                `${emoji} Correct! +${this.getPointsForAnswer()} points. The answer was: ${this.currentQuiz.title}`,
+                'correct'
+            );
         } else {
-            feedback.innerHTML = `
-                <div class="feedback incorrect">
-                    ❌ Incorrect. The correct answer is ${correctAnswer}
-                </div>
-            `;
+            this.showFeedback(
+                `❌ Wrong! The correct answer was: ${this.currentQuiz.title}`,
+                'incorrect'
+            );
         }
         
         // Move to next question after delay
