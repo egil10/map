@@ -4,7 +4,7 @@ class App {
         this.mapInstance = null;
         this.quizInstance = null;
         this.isReady = false;
-        this.currentMode = 'play'; // Default to written test mode
+        this.currentMode = 'learn'; // Default to learn mode
         this.init();
     }
     

@@ -4840,6 +4840,13 @@ class QuizGame {
             this.setupEventListeners();
             this.isLearnMode = false;
         } else if (mode === 'multiple') {
+            this.isLearnMode = false;
+            // Clear the input container first
+            inputContainer.innerHTML = '';
+            // Ensure we have a quiz before showing multiple choice
+            if (!this.currentQuiz) {
+                this.startNewQuiz();
+            }
             this.showMultipleChoice();
         }
         
@@ -4950,8 +4957,11 @@ class QuizGame {
     
     showMultipleChoice() {
         // Create multiple choice options - show dataset titles
+        console.log('🎯 showMultipleChoice called');
+        
         if (!this.currentQuiz) {
-            console.log('❌ No current quiz for multiple choice');
+            console.log('❌ No current quiz for multiple choice, starting new quiz');
+            this.startNewQuiz();
             return;
         }
         
