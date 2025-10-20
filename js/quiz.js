@@ -4815,14 +4815,33 @@ class QuizGame {
     setGameMode(mode) {
         this.gameMode = mode;
         
-        // Update UI based on mode
+        // Get UI elements
         const guessInput = document.getElementById('guessInput');
         const submitButton = document.getElementById('submitGuess');
+        const inputContainer = document.querySelector('.input-container');
+        const multipleChoiceContainer = document.getElementById('multipleChoiceContainer');
+        const learnModeContainer = document.getElementById('learnModeContainer');
+        
+        // Reset UI state
+        if (inputContainer) {
+            inputContainer.style.display = 'flex';
+        }
+        if (multipleChoiceContainer) {
+            multipleChoiceContainer.style.display = 'none';
+        }
+        if (learnModeContainer) {
+            learnModeContainer.style.display = 'none';
+        }
         
         if (mode === 'learn') {
-            guessInput.placeholder = 'What does this map show?';
-            guessInput.disabled = false;
-            submitButton.disabled = false;
+            // Hide input container and show learn mode controls
+            if (inputContainer) {
+                inputContainer.style.display = 'none';
+            }
+            if (learnModeContainer) {
+                learnModeContainer.style.display = 'block';
+            }
+            this.showLearnModeControls();
             this.isLearnMode = true;
         } else if (mode === 'play') {
             guessInput.placeholder = 'Type your answer here';
@@ -4830,9 +4849,13 @@ class QuizGame {
             submitButton.disabled = false;
             this.isLearnMode = false;
         } else if (mode === 'multiple') {
-            guessInput.placeholder = 'Choose from multiple choice options';
-            guessInput.disabled = true;
-            submitButton.disabled = true;
+            // Hide input container and show multiple choice
+            if (inputContainer) {
+                inputContainer.style.display = 'none';
+            }
+            if (multipleChoiceContainer) {
+                multipleChoiceContainer.style.display = 'block';
+            }
             this.showMultipleChoice();
         }
         
@@ -4840,6 +4863,44 @@ class QuizGame {
         this.updateColorBar();
         
         console.log(`🎮 Game mode set to: ${mode}`);
+    }
+    
+    showLearnModeControls() {
+        // Create learn mode controls
+        const footerArea = document.querySelector('.footer-area');
+        let learnModeContainer = document.getElementById('learnModeContainer');
+        
+        if (!learnModeContainer) {
+            learnModeContainer = document.createElement('div');
+            learnModeContainer.id = 'learnModeContainer';
+            learnModeContainer.className = 'learn-mode-container';
+            footerArea.insertBefore(learnModeContainer, document.querySelector('.input-container'));
+        }
+        
+        learnModeContainer.innerHTML = `
+            <div class="learn-mode-controls">
+                <button id="nextQuizBtn" class="next-btn">
+                    <i data-lucide="arrow-right"></i>
+                    <span>Next Quiz</span>
+                </button>
+                <div class="learn-info">
+                    <span>Learn Mode: Click Next to explore different datasets</span>
+                </div>
+            </div>
+        `;
+        
+        // Re-initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
+        // Add event listener to next button
+        const nextBtn = document.getElementById('nextQuizBtn');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                this.nextQuestion();
+            });
+        }
     }
     
     showMultipleChoice() {
@@ -4858,9 +4919,24 @@ class QuizGame {
         // Create options array with correct answer
         const options = [correctCountry, ...wrongAnswers].sort(() => Math.random() - 0.5);
         
-        // Create multiple choice UI
-        const feedback = document.getElementById('guessFeedback');
-        feedback.innerHTML = `
+        // Hide the input container and show multiple choice in its place
+        const inputContainer = document.querySelector('.input-container');
+        if (inputContainer) {
+            inputContainer.style.display = 'none';
+        }
+        
+        // Create multiple choice UI in the input container's place
+        const footerArea = document.querySelector('.footer-area');
+        let multipleChoiceContainer = document.getElementById('multipleChoiceContainer');
+        
+        if (!multipleChoiceContainer) {
+            multipleChoiceContainer = document.createElement('div');
+            multipleChoiceContainer.id = 'multipleChoiceContainer';
+            multipleChoiceContainer.className = 'multiple-choice-container';
+            footerArea.insertBefore(multipleChoiceContainer, inputContainer);
+        }
+        
+        multipleChoiceContainer.innerHTML = `
             <div class="multiple-choice">
                 <h3>Choose the correct answer:</h3>
                 <div class="choice-options">
