@@ -307,6 +307,8 @@ body {
     flex-direction: column;
     padding: 16px 20px;
     gap: 12px;
+    overflow: hidden;
+    min-height: 0;
 }
 
 /* Game Mode Button (Left) */
@@ -922,12 +924,12 @@ body {
 .learn-mode-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 16px;
     padding: 8px 0;
 }
 
-.next-btn {
+.nav-btn {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -943,11 +945,11 @@ body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.next-btn:hover {
+.nav-btn:hover {
     background: #333;
 }
 
-.next-btn i {
+.nav-btn i {
     width: 14px;
     height: 14px;
 }

@@ -4879,13 +4879,17 @@ class QuizGame {
         
         learnModeContainer.innerHTML = `
             <div class="learn-mode-controls">
-                <button id="nextQuizBtn" class="next-btn">
-                    <i data-lucide="arrow-right"></i>
-                    <span>Next Quiz</span>
+                <button id="prevQuizBtn" class="nav-btn prev-btn">
+                    <i data-lucide="arrow-left"></i>
+                    <span>Previous</span>
                 </button>
                 <div class="learn-info">
-                    <span>Learn Mode: Click Next to explore different datasets</span>
+                    <span>Learn Mode: Navigate through datasets</span>
                 </div>
+                <button id="nextQuizBtn" class="nav-btn next-btn">
+                    <i data-lucide="arrow-right"></i>
+                    <span>Next</span>
+                </button>
             </div>
         `;
         
@@ -4894,30 +4898,37 @@ class QuizGame {
             lucide.createIcons();
         }
         
-        // Add event listener to next button
+        // Add event listeners to navigation buttons
         const nextBtn = document.getElementById('nextQuizBtn');
+        const prevBtn = document.getElementById('prevQuizBtn');
+        
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 this.nextQuestion();
             });
         }
+        
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                this.previousQuestion();
+            });
+        }
     }
     
     showMultipleChoice() {
-        // Create multiple choice options
+        // Create multiple choice options - show dataset titles
         if (!this.currentQuiz) return;
         
-        const countries = Object.keys(this.currentQuiz.countries);
-        const correctCountry = this.currentQuiz.answer;
+        const correctDataset = this.currentQuiz.title;
         
-        // Get 3 random wrong answers
-        const wrongAnswers = countries
-            .filter(country => country !== correctCountry)
+        // Get 3 random wrong datasets from the dataset list
+        const wrongDatasets = this.datasetList
+            .filter(dataset => dataset.title !== correctDataset)
             .sort(() => Math.random() - 0.5)
             .slice(0, 3);
         
         // Create options array with correct answer
-        const options = [correctCountry, ...wrongAnswers].sort(() => Math.random() - 0.5);
+        const options = [correctDataset, ...wrongDatasets.map(d => d.title)].sort(() => Math.random() - 0.5);
         
         // Hide the input container and show multiple choice in its place
         const inputContainer = document.querySelector('.input-container');
@@ -4938,7 +4949,7 @@ class QuizGame {
         
         multipleChoiceContainer.innerHTML = `
             <div class="multiple-choice">
-                <h3>Choose the correct answer:</h3>
+                <h3>What dataset does this map show?</h3>
                 <div class="choice-options">
                     ${options.map((option, index) => `
                         <button class="choice-btn" data-answer="${option}">
@@ -4959,7 +4970,7 @@ class QuizGame {
     }
     
     handleMultipleChoiceAnswer(selectedAnswer) {
-        const correctAnswer = this.currentQuiz.answer;
+        const correctAnswer = this.currentQuiz.title;
         const isCorrect = selectedAnswer === correctAnswer;
         
         // Update progress
@@ -4986,6 +4997,16 @@ class QuizGame {
         setTimeout(() => {
             this.nextQuestion();
         }, 2000);
+    }
+    
+    previousQuestion() {
+        if (this.isLearnMode && this.learnModeCurrentIndex > 0) {
+            this.learnModeCurrentIndex--;
+            this.loadDataset(this.learnModeCurrentIndex);
+        } else if (this.currentDatasetIndex > 0) {
+            this.currentDatasetIndex--;
+            this.loadDataset(this.currentDatasetIndex);
+        }
     }
     
     updateColorBar() {
@@ -5059,12 +5080,12 @@ class QuizGame {
                     unit: unit
                 });
                 
-                // Update labels
-                if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, unit);
-                if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, unit);
-                if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, unit);
-                if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, unit);
-                if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, unit);
+                // Update labels (without units to avoid spoiling quiz)
+                if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, '');
+                if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, '');
+                if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, '');
+                if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, '');
+                if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, '');
                 
                 console.log('🎨 Updated color bar labels');
             } else {
