@@ -142,11 +142,12 @@ class App {
         const datasetCounter = document.getElementById('datasetCounter');
         if (datasetCounter) {
             if (mode === 'learn') {
+                datasetCounter.style.display = 'block';
                 datasetCounter.style.cursor = 'pointer';
                 datasetCounter.style.color = '#666';
             } else {
-                datasetCounter.style.cursor = 'default';
-                datasetCounter.style.color = '#ccc';
+                // Hide dataset counter in play and multiple choice modes
+                datasetCounter.style.display = 'none';
             }
         }
         

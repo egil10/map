@@ -4993,6 +4993,10 @@ class QuizGame {
                         </button>
                     `).join('')}
                 </div>
+                <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
+                    <i data-lucide="arrow-right"></i>
+                    <span>Next Question</span>
+                </button>
             </div>
         `;
         
@@ -5006,6 +5010,11 @@ class QuizGame {
         console.log('🎯 Actual buttons found in DOM:', actualButtons.length);
         console.log('🎯 Button elements:', actualButtons);
         
+        // Re-initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
         // Add event listeners to choice buttons
         document.querySelectorAll('.choice-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -5013,6 +5022,14 @@ class QuizGame {
                 this.handleMultipleChoiceAnswer(selectedAnswer);
             });
         });
+        
+        // Add event listener to next question button
+        const nextBtn = document.getElementById('nextQuestionBtn');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                this.nextQuestion();
+            });
+        }
     }
     
     handleMultipleChoiceAnswer(selectedAnswer) {
@@ -5055,23 +5072,18 @@ class QuizGame {
             );
         }
         
-        // Move to next question after delay
-        setTimeout(() => {
-            this.nextQuestion();
-        }, 2000);
+        // Show next question button instead of auto-advancing
+        const nextBtn = document.getElementById('nextQuestionBtn');
+        if (nextBtn) {
+            nextBtn.style.display = 'flex';
+        }
     }
     
     nextQuestion() {
         if (this.isLearnMode) {
-            // In learn mode, go to next dataset in sequence
-            if (this.learnModeCurrentIndex < this.learnModeSequence.length - 1) {
-                this.learnModeCurrentIndex++;
-                this.loadDataset(this.learnModeCurrentIndex);
-            } else {
-                // If at the end, go back to the beginning
-                this.learnModeCurrentIndex = 0;
-                this.loadDataset(this.learnModeCurrentIndex);
-            }
+            // In learn mode, go to next dataset in sequence (circular)
+            this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
+            this.loadDataset(this.learnModeCurrentIndex);
         } else {
             // In other modes, start a new random quiz
             this.startNewQuiz();
@@ -5080,15 +5092,9 @@ class QuizGame {
     
     previousQuestion() {
         if (this.isLearnMode) {
-            // In learn mode, go to previous dataset in sequence
-            if (this.learnModeCurrentIndex > 0) {
-                this.learnModeCurrentIndex--;
-                this.loadDataset(this.learnModeCurrentIndex);
-            } else {
-                // If at the beginning, go to the end
-                this.learnModeCurrentIndex = this.learnModeSequence.length - 1;
-                this.loadDataset(this.learnModeCurrentIndex);
-            }
+            // In learn mode, go to previous dataset in sequence (circular)
+            this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
+            this.loadDataset(this.learnModeCurrentIndex);
         } else {
             // In other modes, start a new random quiz
             this.startNewQuiz();
