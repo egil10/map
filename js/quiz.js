@@ -4815,47 +4815,33 @@ class QuizGame {
     setGameMode(mode) {
         this.gameMode = mode;
         
-        // Get UI elements
-        const guessInput = document.getElementById('guessInput');
-        const submitButton = document.getElementById('submitGuess');
-        const inputContainer = document.querySelector('.input-container');
-        const multipleChoiceContainer = document.getElementById('multipleChoiceContainer');
-        const learnModeContainer = document.getElementById('learnModeContainer');
+        // Reset game state when switching modes
+        this.resetGameState();
         
-        // Reset UI state
-        if (inputContainer) {
-            inputContainer.style.display = 'flex';
-        }
-        if (multipleChoiceContainer) {
-            multipleChoiceContainer.style.display = 'none';
-        }
-        if (learnModeContainer) {
-            learnModeContainer.style.display = 'none';
-        }
+        // Get UI elements
+        const inputContainer = document.querySelector('.input-container');
         
         if (mode === 'learn') {
-            // Hide input container and show learn mode controls
-            if (inputContainer) {
-                inputContainer.style.display = 'none';
-            }
-            if (learnModeContainer) {
-                learnModeContainer.style.display = 'block';
-            }
             this.showLearnModeControls();
             this.isLearnMode = true;
         } else if (mode === 'play') {
-            guessInput.placeholder = 'Type your answer here';
-            guessInput.disabled = false;
-            submitButton.disabled = false;
+            // Restore normal input container
+            inputContainer.innerHTML = `
+                <input type="text" id="guessInput" placeholder="Type your answer here" class="guess-input">
+                <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
+                    <i data-lucide="send"></i>
+                </button>
+            `;
+            
+            // Re-initialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+            
+            // Re-add event listeners
+            this.setupEventListeners();
             this.isLearnMode = false;
         } else if (mode === 'multiple') {
-            // Hide input container and show multiple choice
-            if (inputContainer) {
-                inputContainer.style.display = 'none';
-            }
-            if (multipleChoiceContainer) {
-                multipleChoiceContainer.style.display = 'block';
-            }
             this.showMultipleChoice();
         }
         
@@ -4865,32 +4851,44 @@ class QuizGame {
         console.log(`🎮 Game mode set to: ${mode}`);
     }
     
-    showLearnModeControls() {
-        // Create learn mode controls
-        const footerArea = document.querySelector('.footer-area');
-        let learnModeContainer = document.getElementById('learnModeContainer');
+    resetGameState() {
+        // Reset quiz state
+        this.score = 0;
+        this.streak = 0;
+        this.isAnswerShown = false;
+        this.isQuizCompleted = false;
         
-        if (!learnModeContainer) {
-            learnModeContainer = document.createElement('div');
-            learnModeContainer.id = 'learnModeContainer';
-            learnModeContainer.className = 'learn-mode-container';
-            footerArea.insertBefore(learnModeContainer, document.querySelector('.input-container'));
+        // Clear feedback
+        const feedback = document.getElementById('guessFeedback');
+        if (feedback) {
+            feedback.innerHTML = '';
+            feedback.className = 'feedback';
         }
         
-        learnModeContainer.innerHTML = `
-            <div class="learn-mode-controls">
-                <button id="prevQuizBtn" class="nav-btn prev-btn">
-                    <i data-lucide="arrow-left"></i>
-                    <span>Previous</span>
-                </button>
-                <div class="learn-info">
-                    <span>Learn Mode: Navigate through datasets</span>
-                </div>
-                <button id="nextQuizBtn" class="nav-btn next-btn">
-                    <i data-lucide="arrow-right"></i>
-                    <span>Next</span>
-                </button>
+        // Reset progress circles
+        this.updateProgressCircles();
+        
+        // Start a new quiz
+        this.startNewQuiz();
+    }
+    
+    showLearnModeControls() {
+        // Replace input container content with learn mode controls
+        const inputContainer = document.querySelector('.input-container');
+        if (!inputContainer) return;
+        
+        inputContainer.innerHTML = `
+            <button id="prevQuizBtn" class="nav-btn prev-btn">
+                <i data-lucide="arrow-left"></i>
+                <span>Previous</span>
+            </button>
+            <div class="learn-info">
+                <span>Learn Mode</span>
             </div>
+            <button id="nextQuizBtn" class="nav-btn next-btn">
+                <i data-lucide="arrow-right"></i>
+                <span>Next</span>
+            </button>
         `;
         
         // Re-initialize Lucide icons
@@ -4930,24 +4928,11 @@ class QuizGame {
         // Create options array with correct answer
         const options = [correctDataset, ...wrongDatasets.map(d => d.title)].sort(() => Math.random() - 0.5);
         
-        // Hide the input container and show multiple choice in its place
+        // Replace input container content with multiple choice
         const inputContainer = document.querySelector('.input-container');
-        if (inputContainer) {
-            inputContainer.style.display = 'none';
-        }
+        if (!inputContainer) return;
         
-        // Create multiple choice UI in the input container's place
-        const footerArea = document.querySelector('.footer-area');
-        let multipleChoiceContainer = document.getElementById('multipleChoiceContainer');
-        
-        if (!multipleChoiceContainer) {
-            multipleChoiceContainer = document.createElement('div');
-            multipleChoiceContainer.id = 'multipleChoiceContainer';
-            multipleChoiceContainer.className = 'multiple-choice-container';
-            footerArea.insertBefore(multipleChoiceContainer, inputContainer);
-        }
-        
-        multipleChoiceContainer.innerHTML = `
+        inputContainer.innerHTML = `
             <div class="multiple-choice">
                 <h3>What dataset does this map show?</h3>
                 <div class="choice-options">
