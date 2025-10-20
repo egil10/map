@@ -305,10 +305,11 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    padding: 16px 20px;
-    gap: 12px;
+    padding: 12px 20px 16px 20px;
+    gap: 8px;
     overflow: hidden;
     min-height: 0;
+    justify-content: space-between;
 }
 
 /* Game Mode Button (Left) */
@@ -348,6 +349,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
+    flex-shrink: 0;
 }
 
 .guess-input {
@@ -435,12 +437,13 @@ body {
 /* Dataset Counter */
 .dataset-counter {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     color: #666;
     font-family: 'Space Grotesk', sans-serif;
     cursor: pointer;
     transition: color 0.2s ease;
+    flex-shrink: 0;
 }
 
 .dataset-counter:hover {
@@ -450,13 +453,14 @@ body {
 /* Feedback */
 .feedback {
     text-align: center;
-    padding: 8px 12px;
+    padding: 6px 12px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     margin: 0 auto;
     max-width: 600px;
     transition: background 0.15s ease;
+    flex-shrink: 0;
 }
 
 .feedback.correct {
@@ -482,19 +486,20 @@ body {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
+    flex-shrink: 0;
 }
 
 .color-bar-gradient {
-    height: 16px;
-    border-radius: 8px;
-    margin-bottom: 6px;
+    height: 12px;
+    border-radius: 6px;
+    margin-bottom: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .color-bar-labels {
     display: flex;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     color: #666;
     font-family: 'Space Grotesk', sans-serif;
