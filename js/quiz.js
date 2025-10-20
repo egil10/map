@@ -4819,8 +4819,9 @@ class QuizGame {
         const inputContainer = document.querySelector('.input-container');
         
         if (mode === 'learn') {
-            this.showLearnModeControls();
             this.isLearnMode = true;
+            this.initializeLearnModeSequence();
+            this.showLearnModeControls();
         } else if (mode === 'play') {
             // Restore normal input container
             inputContainer.innerHTML = `
@@ -4872,6 +4873,27 @@ class QuizGame {
     // Method to reset game when user explicitly wants to start over
     restartGame() {
         this.resetGameState();
+    }
+    
+    initializeLearnModeSequence() {
+        // Initialize learn mode sequence if not already done
+        if (this.learnModeSequence.length === 0 && this.datasetList.length > 0) {
+            this.learnModeSequence = [...this.datasetList];
+            
+            // Fisher-Yates shuffle for better randomization
+            for (let i = this.learnModeSequence.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [this.learnModeSequence[i], this.learnModeSequence[j]] = [this.learnModeSequence[j], this.learnModeSequence[i]];
+            }
+            
+            // Reset current index
+            this.learnModeCurrentIndex = 0;
+        }
+        
+        // Load the first dataset in learn mode
+        if (this.learnModeSequence.length > 0) {
+            this.loadDataset(this.learnModeCurrentIndex);
+        }
     }
     
     showLearnModeControls() {
@@ -4928,7 +4950,15 @@ class QuizGame {
     
     showMultipleChoice() {
         // Create multiple choice options - show dataset titles
-        if (!this.currentQuiz) return;
+        if (!this.currentQuiz) {
+            console.log('❌ No current quiz for multiple choice');
+            return;
+        }
+        
+        if (!this.datasetList || this.datasetList.length < 4) {
+            console.log('❌ Not enough datasets for multiple choice:', this.datasetList?.length);
+            return;
+        }
         
         const correctDataset = this.currentQuiz.title;
         
@@ -4938,17 +4968,22 @@ class QuizGame {
             .sort(() => Math.random() - 0.5)
             .slice(0, 3);
         
+        console.log('🎯 Dataset list length:', this.datasetList.length);
+        console.log('🎯 Wrong datasets found:', wrongDatasets.length);
+        console.log('🎯 Wrong datasets:', wrongDatasets.map(d => d.title));
+        
         // Create options array with correct answer
         const options = [correctDataset, ...wrongDatasets.map(d => d.title)].sort(() => Math.random() - 0.5);
         
         console.log('🎯 Multiple choice options:', options);
         console.log('🎯 Correct answer:', correctDataset);
+        console.log('🎯 Total options:', options.length);
         
         // Replace input container content with multiple choice
         const inputContainer = document.querySelector('.input-container');
         if (!inputContainer) return;
         
-        inputContainer.innerHTML = `
+        const htmlContent = `
             <div class="multiple-choice">
                 <h3>What dataset does this map show?</h3>
                 <div class="choice-options">
@@ -4960,6 +4995,16 @@ class QuizGame {
                 </div>
             </div>
         `;
+        
+        console.log('🎯 Generated HTML:', htmlContent);
+        console.log('🎯 Number of buttons in HTML:', (htmlContent.match(/choice-btn/g) || []).length);
+        
+        inputContainer.innerHTML = htmlContent;
+        
+        // Debug: Check how many buttons were actually created
+        const actualButtons = document.querySelectorAll('.choice-btn');
+        console.log('🎯 Actual buttons found in DOM:', actualButtons.length);
+        console.log('🎯 Button elements:', actualButtons);
         
         // Add event listeners to choice buttons
         document.querySelectorAll('.choice-btn').forEach(btn => {
@@ -5016,13 +5061,37 @@ class QuizGame {
         }, 2000);
     }
     
+    nextQuestion() {
+        if (this.isLearnMode) {
+            // In learn mode, go to next dataset in sequence
+            if (this.learnModeCurrentIndex < this.learnModeSequence.length - 1) {
+                this.learnModeCurrentIndex++;
+                this.loadDataset(this.learnModeCurrentIndex);
+            } else {
+                // If at the end, go back to the beginning
+                this.learnModeCurrentIndex = 0;
+                this.loadDataset(this.learnModeCurrentIndex);
+            }
+        } else {
+            // In other modes, start a new random quiz
+            this.startNewQuiz();
+        }
+    }
+    
     previousQuestion() {
-        if (this.isLearnMode && this.learnModeCurrentIndex > 0) {
-            this.learnModeCurrentIndex--;
-            this.loadDataset(this.learnModeCurrentIndex);
-        } else if (this.currentDatasetIndex > 0) {
-            this.currentDatasetIndex--;
-            this.loadDataset(this.currentDatasetIndex);
+        if (this.isLearnMode) {
+            // In learn mode, go to previous dataset in sequence
+            if (this.learnModeCurrentIndex > 0) {
+                this.learnModeCurrentIndex--;
+                this.loadDataset(this.learnModeCurrentIndex);
+            } else {
+                // If at the beginning, go to the end
+                this.learnModeCurrentIndex = this.learnModeSequence.length - 1;
+                this.loadDataset(this.learnModeCurrentIndex);
+            }
+        } else {
+            // In other modes, start a new random quiz
+            this.startNewQuiz();
         }
     }
     
