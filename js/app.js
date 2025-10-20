@@ -4,7 +4,7 @@ class App {
         this.mapInstance = null;
         this.quizInstance = null;
         this.isReady = false;
-        this.currentMode = 'learn'; // Default to learn mode
+        this.currentMode = 'play'; // Default to written test mode
         this.init();
     }
     
@@ -92,77 +92,25 @@ class App {
     }
     
     setupEventListeners() {
-        // Game mode button
-        document.getElementById('gameModeBtn').addEventListener('click', () => this.showGameModeMenu());
+        // Game mode buttons
+        document.getElementById('learnModeBtn').addEventListener('click', () => this.setGameMode('learn'));
+        document.getElementById('playModeBtn').addEventListener('click', () => this.setGameMode('play'));
+        document.getElementById('multipleModeBtn').addEventListener('click', () => this.setGameMode('multiple'));
         
         // Control buttons
         document.getElementById('resetMapView').addEventListener('click', () => this.resetMapView());
         document.getElementById('downloadData').addEventListener('click', () => this.downloadData());
         
-        // Dataset counter click for browsing
-        document.getElementById('datasetCounter').addEventListener('click', () => this.showDatasetBrowser());
+        // Dataset counter click for browsing (only in learn mode)
+        document.getElementById('datasetCounter').addEventListener('click', () => {
+            if (this.currentMode === 'learn') {
+                this.showDatasetBrowser();
+            }
+        });
         
         console.log('🎮 Event listeners setup complete');
     }
     
-    showGameModeMenu() {
-        console.log('🎮 Opening game mode menu...');
-        
-        // Remove any existing menu
-        const existingMenu = document.querySelector('.game-mode-menu');
-        if (existingMenu) {
-            existingMenu.remove();
-        }
-        
-        // Create game mode selection menu
-        const menu = document.createElement('div');
-        menu.className = 'game-mode-menu';
-        menu.innerHTML = `
-            <div class="menu-content">
-                <h3>Select Game Mode</h3>
-                <button class="mode-option" data-mode="learn">
-                    <i data-lucide="book-open"></i>
-                    <span>Learn Mode</span>
-                </button>
-                <button class="mode-option" data-mode="play">
-                    <i data-lucide="play"></i>
-                    <span>Play Mode</span>
-                </button>
-                <button class="mode-option" data-mode="multiple">
-                    <i data-lucide="list"></i>
-                    <span>Multiple Choice</span>
-                </button>
-            </div>
-        `;
-        
-        document.body.appendChild(menu);
-        
-        // Re-initialize Lucide icons for the new menu
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-        
-        // Add event listeners
-        menu.querySelectorAll('.mode-option').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                const mode = e.currentTarget.dataset.mode;
-                console.log(`🎮 Selected mode: ${mode}`);
-                this.setGameMode(mode);
-                document.body.removeChild(menu);
-            });
-        });
-        
-        // Close menu when clicking outside
-        menu.addEventListener('click', (e) => {
-            if (e.target === menu) {
-                document.body.removeChild(menu);
-            }
-        });
-        
-        console.log('🎮 Game mode menu created');
-    }
     
     showDatasetBrowser() {
         // Show the dataset browser modal
@@ -180,13 +128,26 @@ class App {
             this.quizInstance.setGameMode(mode);
         }
         
-        // Update game mode button text to show current mode
-        const gameModeBtn = document.getElementById('gameModeBtn');
-        if (gameModeBtn) {
-            const modeText = mode === 'learn' ? 'Learn' : 
-                           mode === 'play' ? 'Play' : 
-                           mode === 'multiple' ? 'Multiple' : 'Mode';
-            gameModeBtn.querySelector('span').textContent = modeText;
+        // Update active button states
+        document.querySelectorAll('.game-mode-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        const activeBtn = document.querySelector(`[data-mode="${mode}"]`);
+        if (activeBtn) {
+            activeBtn.classList.add('active');
+        }
+        
+        // Update dataset counter appearance based on mode
+        const datasetCounter = document.getElementById('datasetCounter');
+        if (datasetCounter) {
+            if (mode === 'learn') {
+                datasetCounter.style.cursor = 'pointer';
+                datasetCounter.style.color = '#666';
+            } else {
+                datasetCounter.style.cursor = 'default';
+                datasetCounter.style.color = '#ccc';
+            }
         }
         
         console.log(`🎮 Game mode changed to: ${mode}`);

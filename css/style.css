@@ -238,7 +238,7 @@ body {
     line-height: 1.4;
 }
 
-/* Standardized Country Tooltip */
+/* Country Tooltip */
 .country-tooltip {
     position: absolute;
     top: 80px;
@@ -246,54 +246,38 @@ body {
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 1001;
-    min-width: 200px;
-    max-width: 300px;
-    transition: background 0.15s ease;
+    min-width: 150px;
+    max-width: 250px;
+    transition: all 0.15s ease;
 }
 
 .tooltip-content {
-    padding: 16px 20px;
+    padding: 12px 16px;
     text-align: center;
 }
 
 .tooltip-content h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #1a1a1a;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .tooltip-value {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
-    gap: 4px;
-    margin-bottom: 6px;
 }
 
-.tooltip-value span:first-child {
-    font-size: 20px;
+.tooltip-value span {
+    font-size: 16px;
     font-weight: 700;
     color: #007bff;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.tooltip-value span:last-child {
-    font-size: 12px;
-    font-weight: 500;
-    color: #666;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.tooltip-context {
-    font-size: 11px;
-    color: #999;
-    font-weight: 400;
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -312,33 +296,44 @@ body {
     justify-content: space-between;
 }
 
-/* Game Mode Button (Left) */
-.game-mode-btn {
+/* Game Mode Buttons (Left) */
+.game-mode-buttons {
     position: absolute;
     left: 20px;
     top: 16px;
     display: flex;
-    align-items: center;
     gap: 6px;
-    padding: 6px 10px;
+    z-index: 1000;
+}
+
+.game-mode-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 8px;
     background: #f5f5f5;
     border: 1px solid #e5e5e5;
     border-radius: 6px;
     color: #1a1a1a;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.15s ease;
-    z-index: 1000;
+    transition: all 0.15s ease;
 }
 
 .game-mode-btn:hover {
     background: #e5e5e5;
 }
 
+.game-mode-btn.active {
+    background: #1a1a1a;
+    color: white;
+    border-color: #1a1a1a;
+}
+
 .game-mode-btn i {
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 
 /* Input Container (Center) */

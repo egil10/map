@@ -55,18 +55,18 @@
             </button>
             
             <!-- Progress Circles (Top Right) -->
-            <div class="progress-circles">
-                <i data-lucide="circle" class="progress-circle current"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-                <i data-lucide="circle-dashed" class="progress-circle"></i>
-            </div>
+                            <div class="progress-circles">
+                                <i data-lucide="circle" class="progress-circle current"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                                <i data-lucide="circle-dashed" class="progress-circle"></i>
+                            </div>
             
             <!-- Map Container -->
             <div id="map" class="map-container"></div>
@@ -90,16 +90,12 @@
                 <div id="bottom10List" class="legend-list bottom-list"></div>
             </div>
             
-            <!-- Standardized Country Tooltip -->
+            <!-- Country Tooltip -->
             <div id="countryTooltip" class="country-tooltip" style="display: none;">
                 <div class="tooltip-content">
                     <h3 id="tooltipCountryName">Country Name</h3>
                     <div class="tooltip-value">
                         <span id="tooltipValue">0</span>
-                        <span id="tooltipUnit">unit</span>
-                    </div>
-                    <div class="tooltip-context">
-                        <span id="tooltipQuizTitle">Quiz Title</span>
                     </div>
                 </div>
             </div>
@@ -107,19 +103,29 @@
         
         <!-- Footer Area (20%) -->
         <div class="footer-area">
-            <!-- Game Mode Button (Left) -->
-            <button id="gameModeBtn" class="game-mode-btn" title="Select Game Mode">
-                <i data-lucide="settings"></i>
-                <span>Mode</span>
-            </button>
-            
+            <!-- Game Mode Buttons (Left) -->
+            <div class="game-mode-buttons">
+                <button id="learnModeBtn" class="game-mode-btn" data-mode="learn">
+                    <i data-lucide="book-open"></i>
+                    <span>Learn</span>
+                </button>
+                <button id="playModeBtn" class="game-mode-btn active" data-mode="play">
+                    <i data-lucide="edit"></i>
+                    <span>Written</span>
+                </button>
+                <button id="multipleModeBtn" class="game-mode-btn" data-mode="multiple">
+                    <i data-lucide="list"></i>
+                    <span>Multiple</span>
+                </button>
+            </div>
+
             <!-- Input Container (Center) -->
             <div class="input-container">
                 <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
                 <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
                     <i data-lucide="send"></i>
-                </button>
-            </div>
+                            </button>
+                        </div>
             
             <!-- Control Buttons (Right) -->
             <div class="control-buttons">
@@ -134,7 +140,7 @@
             <!-- Dataset Counter -->
             <div class="dataset-counter" id="datasetCounter">
                 <span id="datasetCount">105</span> datasets
-            </div>
+                    </div>
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>

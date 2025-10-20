@@ -1507,14 +1507,10 @@ class WorldMap {
         const tooltip = document.getElementById('countryTooltip');
         const countryNameEl = document.getElementById('tooltipCountryName');
         const tooltipValue = document.getElementById('tooltipValue');
-        const tooltipUnit = document.getElementById('tooltipUnit');
-        const tooltipQuizTitle = document.getElementById('tooltipQuizTitle');
         
-        if (tooltip && countryNameEl && tooltipValue && tooltipUnit && tooltipQuizTitle) {
+        if (tooltip && countryNameEl && tooltipValue) {
             countryNameEl.textContent = countryName;
-            tooltipValue.textContent = countryData.value.toLocaleString();
-            tooltipUnit.textContent = countryData.unit || '';
-            tooltipQuizTitle.textContent = this.currentQuiz?.title || '';
+            tooltipValue.textContent = this.formatValue(countryData.value, '');
             
             tooltip.style.display = 'block';
         }
@@ -1524,6 +1520,16 @@ class WorldMap {
         const tooltip = document.getElementById('countryTooltip');
         if (tooltip) {
             tooltip.style.display = 'none';
+        }
+    }
+    
+    formatValue(value, unit) {
+        if (value >= 1000000) {
+            return (value / 1000000).toFixed(1) + 'M';
+        } else if (value >= 1000) {
+            return (value / 1000).toFixed(1) + 'K';
+        } else {
+            return value.toFixed(1);
         }
     }
  }

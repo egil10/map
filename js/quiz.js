@@ -4815,9 +4815,6 @@ class QuizGame {
     setGameMode(mode) {
         this.gameMode = mode;
         
-        // Reset game state when switching modes
-        this.resetGameState();
-        
         // Get UI elements
         const inputContainer = document.querySelector('.input-container');
         
@@ -4872,6 +4869,11 @@ class QuizGame {
         this.startNewQuiz();
     }
     
+    // Method to reset game when user explicitly wants to start over
+    restartGame() {
+        this.resetGameState();
+    }
+    
     showLearnModeControls() {
         // Replace input container content with learn mode controls
         const inputContainer = document.querySelector('.input-container');
@@ -4902,12 +4904,14 @@ class QuizGame {
         
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
+                console.log('🔄 Next button clicked');
                 this.nextQuestion();
             });
         }
         
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
+                console.log('🔄 Previous button clicked');
                 this.previousQuestion();
             });
         }
