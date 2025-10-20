@@ -372,7 +372,7 @@ class WorldMap {
         });
         
         // Initialize the map centered on the world
-        this.map = L.map('map').setView([20, 0], 2);
+        this.map = L.map('map').setView([20, 0], 1.6);
         
                 // Set map bounds for game area only
         this.map.setMinZoom(1);
@@ -1497,7 +1497,7 @@ class WorldMap {
     resetMapView() {
         // Reset map to standard world view
         if (this.map) {
-            this.map.setView([20, 0], 2);
+            this.map.setView([20, 0], 1.6);
             this.map.invalidateSize();
             console.log('🗺️ Map view reset to standard world view');
         }
