@@ -106,6 +106,14 @@ class App {
     }
     
     showGameModeMenu() {
+        console.log('🎮 Opening game mode menu...');
+        
+        // Remove any existing menu
+        const existingMenu = document.querySelector('.game-mode-menu');
+        if (existingMenu) {
+            existingMenu.remove();
+        }
+        
         // Create game mode selection menu
         const menu = document.createElement('div');
         menu.className = 'game-mode-menu';
@@ -129,10 +137,18 @@ class App {
         
         document.body.appendChild(menu);
         
+        // Re-initialize Lucide icons for the new menu
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+        
         // Add event listeners
         menu.querySelectorAll('.mode-option').forEach(btn => {
             btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
                 const mode = e.currentTarget.dataset.mode;
+                console.log(`🎮 Selected mode: ${mode}`);
                 this.setGameMode(mode);
                 document.body.removeChild(menu);
             });
@@ -144,6 +160,8 @@ class App {
                 document.body.removeChild(menu);
             }
         });
+        
+        console.log('🎮 Game mode menu created');
     }
     
     showDatasetBrowser() {
@@ -157,13 +175,18 @@ class App {
     setGameMode(mode) {
         this.currentMode = mode;
         
-        // Update active button
-        document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById(mode + 'Mode').classList.add('active');
-        
         // Update quiz instance
         if (this.quizInstance) {
             this.quizInstance.setGameMode(mode);
+        }
+        
+        // Update game mode button text to show current mode
+        const gameModeBtn = document.getElementById('gameModeBtn');
+        if (gameModeBtn) {
+            const modeText = mode === 'learn' ? 'Learn' : 
+                           mode === 'play' ? 'Play' : 
+                           mode === 'multiple' ? 'Multiple' : 'Mode';
+            gameModeBtn.querySelector('span').textContent = modeText;
         }
         
         console.log(`🎮 Game mode changed to: ${mode}`);

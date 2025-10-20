@@ -3980,7 +3980,8 @@ class QuizGame {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
-
+        // Update color bar with new quiz data
+        this.updateColorBar();
         
         // Show the answer title in learn mode
         this.showAnswerTitle();
@@ -4171,6 +4172,9 @@ class QuizGame {
         if (window.mapInstance && this.currentQuiz) {
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
+        
+        // Update color bar with new quiz data
+        this.updateColorBar();
             
             // Show answer title in learn mode
             if (this.isLearnMode) {
@@ -4270,6 +4274,9 @@ class QuizGame {
         
         if (this.currentQuiz) {
             console.log('Started new quiz:', this.currentQuiz.title);
+            
+            // Update color bar with new quiz data
+            this.updateColorBar();
             
             // Mark quiz as ready on first successful start
             if (!this.isReady) {
@@ -4829,6 +4836,9 @@ class QuizGame {
             this.showMultipleChoice();
         }
         
+        // Update color bar when mode changes
+        this.updateColorBar();
+        
         console.log(`🎮 Game mode set to: ${mode}`);
     }
     
@@ -4903,7 +4913,12 @@ class QuizGame {
     }
     
     updateColorBar() {
-        if (!this.currentQuiz) return;
+        if (!this.currentQuiz) {
+            console.log('❌ updateColorBar: No current quiz');
+            return;
+        }
+        
+        console.log('🎨 updateColorBar: Updating color bar for quiz:', this.currentQuiz.title);
         
         const colorBarGradient = document.getElementById('colorBarGradient');
         const colorBarMin = document.getElementById('colorBarMin');
@@ -4912,21 +4927,38 @@ class QuizGame {
         const colorBarQ3 = document.getElementById('colorBarQ3');
         const colorBarMax = document.getElementById('colorBarMax');
         
+        console.log('🎨 Color bar elements found:', {
+            gradient: !!colorBarGradient,
+            min: !!colorBarMin,
+            q1: !!colorBarQ1,
+            mid: !!colorBarMid,
+            q3: !!colorBarQ3,
+            max: !!colorBarMax
+        });
+        
         if (colorBarGradient && this.currentQuiz.colorScheme) {
             const scheme = this.currentQuiz.colorScheme;
+            console.log('🎨 Color scheme:', scheme);
+            
             if (scheme.type === 'gradient' && scheme.colors) {
                 const colorStops = scheme.colors.map((color, index) => {
                     const percentage = (index / (scheme.colors.length - 1)) * 100;
                     return `${color} ${percentage}%`;
                 }).join(', ');
                 colorBarGradient.style.background = `linear-gradient(to right, ${colorStops})`;
+                console.log('🎨 Applied gradient colors:', colorStops);
             } else if (scheme.minColor && scheme.maxColor) {
                 colorBarGradient.style.background = `linear-gradient(to right, ${scheme.minColor}, ${scheme.maxColor})`;
+                console.log('🎨 Applied min/max colors:', scheme.minColor, scheme.maxColor);
             }
+        } else {
+            console.log('🎨 No color scheme or gradient element found');
         }
         
         if (this.currentQuiz.countries) {
             const values = Object.values(this.currentQuiz.countries).map(c => c.value).filter(v => !isNaN(v));
+            console.log('🎨 Found values:', values.length, 'countries with values');
+            
             if (values.length > 0) {
                 const sortedValues = values.sort((a, b) => a - b);
                 const unit = Object.values(this.currentQuiz.countries)[0]?.unit || '';
@@ -4942,13 +4974,28 @@ class QuizGame {
                 const midValue = sortedValues[midIndex];
                 const q3Value = sortedValues[q3Index];
                 
+                console.log('🎨 Calculated values:', {
+                    min: minValue,
+                    q1: q1Value,
+                    mid: midValue,
+                    q3: q3Value,
+                    max: maxValue,
+                    unit: unit
+                });
+                
                 // Update labels
                 if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, unit);
                 if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, unit);
                 if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, unit);
                 if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, unit);
                 if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, unit);
+                
+                console.log('🎨 Updated color bar labels');
+            } else {
+                console.log('🎨 No valid values found in countries');
             }
+        } else {
+            console.log('🎨 No countries data found');
         }
     }
     

@@ -794,25 +794,25 @@ class WorldMap {
             if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.NAME]) {
                 const countryData = this.currentQuiz.countries[layer.feature.properties.NAME];
                 this.updateCountryTooltip(layer.feature.properties.NAME, countryData);
-            }
+             }
          };
         
-        // Reset highlight function
-        const resetHighlight = (e) => {
-            const layer = e.target;
+                 // Reset highlight function
+         const resetHighlight = (e) => {
+             const layer = e.target;
             
             // Hide standardized tooltip
             this.hideCountryTooltip();
-            
-            // Explicitly reset to original quiz style
-            const originalStyle = this.getCountryStyle(layer.feature);
-            layer.setStyle(originalStyle);
-            
-            // Use DOM class instead of Leaflet class
-            if (layer.getElement()) {
-                layer.getElement().classList.remove('country-hover');
-            }
-        };
+             
+             // Explicitly reset to original quiz style
+             const originalStyle = this.getCountryStyle(layer.feature);
+             layer.setStyle(originalStyle);
+             
+             // Use DOM class instead of Leaflet class
+             if (layer.getElement()) {
+                 layer.getElement().classList.remove('country-hover');
+             }
+         };
         
                  // Click function (simplified - no popup)
          const onEachFeature = (feature, layer) => {
@@ -1489,10 +1489,10 @@ class WorldMap {
          this.map.closePopup();
      }
      
-    createSimpleWorldOutline() {
-        // Fallback: create a simple world outline if GeoJSON fails to load
-        console.log('Creating simple world outline as fallback');
-    }
+     createSimpleWorldOutline() {
+         // Fallback: create a simple world outline if GeoJSON fails to load
+         console.log('Creating simple world outline as fallback');
+     }
     
     resetMapView() {
         // Reset map to standard world view
@@ -1526,7 +1526,7 @@ class WorldMap {
             tooltip.style.display = 'none';
         }
     }
-}
+ }
 
 // Initialize map when script loads
 const worldMap = new WorldMap();
