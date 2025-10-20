@@ -4807,7 +4807,97 @@ class QuizGame {
     
     setGameMode(mode) {
         this.gameMode = mode;
+        
+        // Update UI based on mode
+        const guessInput = document.getElementById('guessInput');
+        const submitButton = document.getElementById('submitGuess');
+        
+        if (mode === 'learn') {
+            guessInput.placeholder = 'What does this map show?';
+            guessInput.disabled = false;
+            submitButton.disabled = false;
+        } else if (mode === 'multiple') {
+            guessInput.placeholder = 'Choose from multiple choice options';
+            guessInput.disabled = true;
+            submitButton.disabled = true;
+            this.showMultipleChoice();
+        } else if (mode === 'written') {
+            guessInput.placeholder = 'Type your answer here';
+            guessInput.disabled = false;
+            submitButton.disabled = false;
+        }
+        
         console.log(`🎮 Game mode set to: ${mode}`);
+    }
+    
+    showMultipleChoice() {
+        // Create multiple choice options
+        if (!this.currentQuiz) return;
+        
+        const countries = Object.keys(this.currentQuiz.countries);
+        const correctCountry = this.currentQuiz.answer;
+        
+        // Get 3 random wrong answers
+        const wrongAnswers = countries
+            .filter(country => country !== correctCountry)
+            .sort(() => Math.random() - 0.5)
+            .slice(0, 3);
+        
+        // Create options array with correct answer
+        const options = [correctCountry, ...wrongAnswers].sort(() => Math.random() - 0.5);
+        
+        // Create multiple choice UI
+        const feedback = document.getElementById('guessFeedback');
+        feedback.innerHTML = `
+            <div class="multiple-choice">
+                <h3>Choose the correct answer:</h3>
+                <div class="choice-options">
+                    ${options.map((option, index) => `
+                        <button class="choice-btn" data-answer="${option}">
+                            ${option}
+                        </button>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+        
+        // Add event listeners to choice buttons
+        document.querySelectorAll('.choice-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const selectedAnswer = e.target.dataset.answer;
+                this.handleMultipleChoiceAnswer(selectedAnswer);
+            });
+        });
+    }
+    
+    handleMultipleChoiceAnswer(selectedAnswer) {
+        const correctAnswer = this.currentQuiz.answer;
+        const isCorrect = selectedAnswer === correctAnswer;
+        
+        // Update progress
+        this.updateProgress(isCorrect);
+        
+        // Show feedback
+        const feedback = document.getElementById('guessFeedback');
+        if (isCorrect) {
+            feedback.innerHTML = `
+                <div class="feedback correct">
+                    ✅ Correct! The answer is ${correctAnswer}
+                </div>
+            `;
+            this.score++;
+        } else {
+            feedback.innerHTML = `
+                <div class="feedback incorrect">
+                    ❌ Incorrect. The correct answer is ${correctAnswer}
+                </div>
+            `;
+        }
+        
+        // Move to next question after delay
+        setTimeout(() => {
+            this.nextQuestion();
+        }, 2000);
     }
     
     updateColorBar() {
@@ -4815,6 +4905,9 @@ class QuizGame {
         
         const colorBarGradient = document.getElementById('colorBarGradient');
         const colorBarMin = document.getElementById('colorBarMin');
+        const colorBarQ1 = document.getElementById('colorBarQ1');
+        const colorBarMid = document.getElementById('colorBarMid');
+        const colorBarQ3 = document.getElementById('colorBarQ3');
         const colorBarMax = document.getElementById('colorBarMax');
         
         if (colorBarGradient && this.currentQuiz.colorScheme) {
@@ -4830,15 +4923,29 @@ class QuizGame {
             }
         }
         
-        if (colorBarMin && colorBarMax && this.currentQuiz.countries) {
+        if (this.currentQuiz.countries) {
             const values = Object.values(this.currentQuiz.countries).map(c => c.value).filter(v => !isNaN(v));
             if (values.length > 0) {
-                const minValue = Math.min(...values);
-                const maxValue = Math.max(...values);
+                const sortedValues = values.sort((a, b) => a - b);
                 const unit = Object.values(this.currentQuiz.countries)[0]?.unit || '';
                 
-                colorBarMin.textContent = this.formatValue(minValue, unit);
-                colorBarMax.textContent = this.formatValue(maxValue, unit);
+                // Calculate quartiles
+                const minValue = sortedValues[0];
+                const maxValue = sortedValues[sortedValues.length - 1];
+                const q1Index = Math.floor(sortedValues.length * 0.25);
+                const midIndex = Math.floor(sortedValues.length * 0.5);
+                const q3Index = Math.floor(sortedValues.length * 0.75);
+                
+                const q1Value = sortedValues[q1Index];
+                const midValue = sortedValues[midIndex];
+                const q3Value = sortedValues[q3Index];
+                
+                // Update labels
+                if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, unit);
+                if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, unit);
+                if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, unit);
+                if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, unit);
+                if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, unit);
             }
         }
     }

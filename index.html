@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
     <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" crossorigin>
     
-    <!-- Inter Font -->
+    <!-- Grotesk Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -41,25 +41,52 @@
 
     <!-- Main Container -->
     <div class="app-container" style="display: none;">
-        <!-- Header -->
-        <header class="app-header">
-            <div class="header-content">
-                <div class="game-modes">
-                    <button id="learnMode" class="mode-btn active" title="Learn Mode">
-                        <i data-lucide="book-open"></i>
-                        <span>Learn</span>
-                    </button>
-                    <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
-                        <i data-lucide="list"></i>
-                        <span>Multiple</span>
-                    </button>
-                    <button id="writtenMode" class="mode-btn" title="Written Mode">
-                        <i data-lucide="edit-3"></i>
-                        <span>Written</span>
+        <!-- Map Container -->
+        <div id="map" class="map-container"></div>
+        
+        <!-- Answer Title (hidden by default) -->
+        <div id="answerTitle" class="answer-title" style="display: none;">
+            <h2 id="answerTitleText"></h2>
+            <p id="answerDescription"></p>
+        </div>
+        
+        <!-- Compact Game Interface -->
+        <div class="game-interface">
+            <!-- Main Input Row -->
+            <div class="input-row">
+                <!-- Progress Circles (Left) -->
+                <div class="progress-circles">
+                    <i data-lucide="circle" class="progress-circle current"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                    <i data-lucide="circle-dashed" class="progress-circle"></i>
+                </div>
+                
+                <!-- Input Container (Center) -->
+                <div class="input-container">
+                    <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
+                    <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
+                        <i data-lucide="send"></i>
                     </button>
                 </div>
                 
-                <div class="header-controls">
+                <!-- Control Buttons (Right) -->
+                <div class="control-buttons">
+                    <button id="learnMode" class="mode-btn active" title="Learn Mode">
+                        <i data-lucide="book-open"></i>
+                    </button>
+                    <button id="multipleChoiceMode" class="mode-btn" title="Multiple Choice Mode">
+                        <i data-lucide="list"></i>
+                    </button>
+                    <button id="writtenMode" class="mode-btn" title="Written Mode">
+                        <i data-lucide="edit-3"></i>
+                    </button>
                     <button id="resetMapView" class="control-btn" title="Reset Map View">
                         <i data-lucide="maximize-2"></i>
                     </button>
@@ -71,44 +98,6 @@
                     </a>
                 </div>
             </div>
-        </header>
-
-        <!-- Map Container -->
-        <div id="map" class="map-container"></div>
-        
-        <!-- Answer Title (hidden by default) -->
-        <div id="answerTitle" class="answer-title" style="display: none;">
-            <h2 id="answerTitleText"></h2>
-            <p id="answerDescription"></p>
-        </div>
-        
-        <!-- Main Game Interface -->
-        <div class="game-interface">
-            <!-- Input Section -->
-            <div class="input-section">
-                <div class="input-container">
-                    <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
-                    <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
-                        <i data-lucide="send"></i>
-                    </button>
-                </div>
-                
-                <!-- Progress Bar -->
-                <div class="progress-bar">
-                    <div class="progress-circles">
-                        <i data-lucide="circle" class="progress-circle current"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                        <i data-lucide="circle-dashed" class="progress-circle"></i>
-                    </div>
-                </div>
-            </div>
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
@@ -117,8 +106,11 @@
             <div class="color-bar">
                 <div class="color-bar-gradient" id="colorBarGradient"></div>
                 <div class="color-bar-labels">
-                    <span class="color-bar-min" id="colorBarMin">Min</span>
-                    <span class="color-bar-max" id="colorBarMax">Max</span>
+                    <span class="color-bar-min" id="colorBarMin">0</span>
+                    <span class="color-bar-q1" id="colorBarQ1">Q1</span>
+                    <span class="color-bar-mid" id="colorBarMid">Mid</span>
+                    <span class="color-bar-q3" id="colorBarQ3">Q3</span>
+                    <span class="color-bar-max" id="colorBarMax">100</span>
                 </div>
             </div>
         </div>
