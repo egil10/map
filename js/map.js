@@ -790,56 +790,29 @@ class WorldMap {
                  layer.getElement().classList.add('country-hover');
              }
              
-             // Show popup on hover if quiz data exists - with delay to prevent interference
-             if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.name]) {
-                 const countryData = this.currentQuiz.countries[layer.feature.properties.name];
-                 const popupContent = this.createPopupContent(layer.feature.properties.name, countryData);
-                 
-                                   // Close all existing popups first
-                  this.closeAllPopups();
-                  
-                  // Small delay to ensure previous popup is fully closed
-                  this.popupTimeout = setTimeout(() => {
-                      // Get the center of the country for better popup positioning
-                      const bounds = layer.getBounds();
-                      const center = bounds.getCenter();
-                      
-                      // Create popup at the center of the country, not at a fixed point
-                      const popup = L.popup({
-                          className: 'country-popup',
-                          maxWidth: 200,
-                          closeButton: false,
-                          autoClose: false,
-                          keepInView: false, // Prevent automatic map movement
-                          autoPan: false, // Disable automatic panning
-                          autoPanPadding: [0, 0] // No padding for auto-pan
-                      })
-                      .setLatLng(center)
-                      .setContent(popupContent);
-                      
-                      popup.openOn(this.map);
-                      this.currentHoverPopup = popup;
-                      this.popupTimeout = null;
-                  }, 50); // Small delay to prevent race conditions
-             }
+            // Show standardized tooltip on hover if quiz data exists
+            if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.NAME]) {
+                const countryData = this.currentQuiz.countries[layer.feature.properties.NAME];
+                this.updateCountryTooltip(layer.feature.properties.NAME, countryData);
+            }
          };
         
-                 // Reset highlight function
-         const resetHighlight = (e) => {
-             const layer = e.target;
-             
-             // Explicitly reset to original quiz style
-             const originalStyle = this.getCountryStyle(layer.feature);
-             layer.setStyle(originalStyle);
-             
-             // Use DOM class instead of Leaflet class
-             if (layer.getElement()) {
-                 layer.getElement().classList.remove('country-hover');
-             }
-             
-                           // Close all popups on mouse out
-              this.closeAllPopups();
-         };
+        // Reset highlight function
+        const resetHighlight = (e) => {
+            const layer = e.target;
+            
+            // Hide standardized tooltip
+            this.hideCountryTooltip();
+            
+            // Explicitly reset to original quiz style
+            const originalStyle = this.getCountryStyle(layer.feature);
+            layer.setStyle(originalStyle);
+            
+            // Use DOM class instead of Leaflet class
+            if (layer.getElement()) {
+                layer.getElement().classList.remove('country-hover');
+            }
+        };
         
                  // Click function (simplified - no popup)
          const onEachFeature = (feature, layer) => {
@@ -1559,6 +1532,30 @@ class WorldMap {
             this.map.setView([20, 0], 2);
             this.map.invalidateSize();
             console.log('🗺️ Map view reset to standard world view');
+        }
+    }
+    
+    updateCountryTooltip(countryName, countryData) {
+        const tooltip = document.getElementById('countryTooltip');
+        const countryNameEl = document.getElementById('tooltipCountryName');
+        const tooltipValue = document.getElementById('tooltipValue');
+        const tooltipUnit = document.getElementById('tooltipUnit');
+        const tooltipQuizTitle = document.getElementById('tooltipQuizTitle');
+        
+        if (tooltip && countryNameEl && tooltipValue && tooltipUnit && tooltipQuizTitle) {
+            countryNameEl.textContent = countryName;
+            tooltipValue.textContent = countryData.value.toLocaleString();
+            tooltipUnit.textContent = countryData.unit || '';
+            tooltipQuizTitle.textContent = this.currentQuiz?.title || '';
+            
+            tooltip.style.display = 'block';
+        }
+    }
+    
+    hideCountryTooltip() {
+        const tooltip = document.getElementById('countryTooltip');
+        if (tooltip) {
+            tooltip.style.display = 'none';
         }
     }
 }

@@ -41,6 +41,11 @@
 
     <!-- Main Container -->
     <div class="app-container" style="display: none;">
+        <!-- Reset Button (Top Right) -->
+        <button id="resetMapView" class="reset-button" title="Reset Map View">
+            <i data-lucide="maximize-2"></i>
+        </button>
+        
         <!-- Map Container -->
         <div id="map" class="map-container"></div>
         
@@ -48,6 +53,20 @@
         <div id="answerTitle" class="answer-title" style="display: none;">
             <h2 id="answerTitleText"></h2>
             <p id="answerDescription"></p>
+        </div>
+        
+        <!-- Standardized Country Tooltip -->
+        <div id="countryTooltip" class="country-tooltip" style="display: none;">
+            <div class="tooltip-content">
+                <h3 id="tooltipCountryName">Country Name</h3>
+                <div class="tooltip-value">
+                    <span id="tooltipValue">0</span>
+                    <span id="tooltipUnit">unit</span>
+                </div>
+                <div class="tooltip-context">
+                    <span id="tooltipQuizTitle">Quiz Title</span>
+                </div>
+            </div>
         </div>
         
         <!-- Compact Game Interface -->
@@ -87,9 +106,6 @@
                     <button id="writtenMode" class="mode-btn" title="Written Mode">
                         <i data-lucide="edit-3"></i>
                     </button>
-                    <button id="resetMapView" class="control-btn" title="Reset Map View">
-                        <i data-lucide="maximize-2"></i>
-                    </button>
                     <button id="downloadData" class="control-btn" title="Download Data as CSV">
                         <i data-lucide="download"></i>
                     </button>
@@ -101,17 +117,17 @@
             
             <!-- Feedback -->
             <div id="guessFeedback" class="feedback"></div>
-            
-            <!-- Color Bar -->
-            <div class="color-bar">
-                <div class="color-bar-gradient" id="colorBarGradient"></div>
-                <div class="color-bar-labels">
-                    <span class="color-bar-min" id="colorBarMin">0</span>
-                    <span class="color-bar-q1" id="colorBarQ1">Q1</span>
-                    <span class="color-bar-mid" id="colorBarMid">Mid</span>
-                    <span class="color-bar-q3" id="colorBarQ3">Q3</span>
-                    <span class="color-bar-max" id="colorBarMax">100</span>
-                </div>
+        </div>
+        
+        <!-- Color Bar (Bottom of Page) -->
+        <div class="color-bar">
+            <div class="color-bar-gradient" id="colorBarGradient"></div>
+            <div class="color-bar-labels">
+                <span class="color-bar-min" id="colorBarMin">0</span>
+                <span class="color-bar-q1" id="colorBarQ1">Q1</span>
+                <span class="color-bar-mid" id="colorBarMid">Mid</span>
+                <span class="color-bar-q3" id="colorBarQ3">Q3</span>
+                <span class="color-bar-max" id="colorBarMax">100</span>
             </div>
         </div>
     </div>
