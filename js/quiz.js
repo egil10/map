@@ -995,8 +995,15 @@ class QuizGame {
     showGameCompletion() {
         console.log('Game completed!');
         
-        // Calculate score
-        const correctAnswers = this.currentProgress;
+        // Calculate actual score by counting green circles
+        const progressCircles = document.querySelectorAll('.progress-circle');
+        let correctAnswers = 0;
+        progressCircles.forEach(circle => {
+            if (circle.classList.contains('correct')) {
+                correctAnswers++;
+            }
+        });
+        
         const totalQuestions = 10;
         
         // Show completion screen in the map area
