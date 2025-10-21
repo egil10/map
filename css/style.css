@@ -189,28 +189,34 @@ body {
     top: 20px;
     right: 80px;
     display: flex;
-    gap: 8px;
+    gap: 6px;
     z-index: 1001;
 }
 
 .progress-circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #e5e5e5;
-    transition: background 0.2s ease;
+    stroke-width: 2.5;
+    fill: none;
+    transition: all 0.3s ease;
 }
 
-.progress-circle.current {
-    background: #666;
+.progress-circle.correct circle {
+    stroke: #16a34a; /* Tailwind green-600 */
+    fill: rgba(22, 163, 74, 0.15);
 }
 
-.progress-circle.completed {
-    background: #22c55e;
+.progress-circle.wrong circle {
+    stroke: #dc2626; /* Tailwind red-600 */
+    fill: rgba(220, 38, 38, 0.15);
 }
 
-.progress-circle.incorrect {
-    background: #ef4444;
+.progress-circle.empty circle {
+    stroke: #d1d5db; /* Tailwind gray-300 */
+    stroke-dasharray: 3 3;
+}
+
+.progress-circle:hover circle {
+    transform: scale(1.1);
+    stroke-width: 3;
 }
 
 /* Answer Title */

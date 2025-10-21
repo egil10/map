@@ -4596,9 +4596,8 @@ class QuizGame {
         if (this.currentProgress < circles.length) {
             // Update current circle with result
             const currentCircle = circles[this.currentProgress];
-            currentCircle.classList.remove('current');
-            currentCircle.classList.add(isCorrect ? 'correct' : 'incorrect');
-            currentCircle.setAttribute('data-lucide', 'circle');
+            currentCircle.classList.remove('empty', 'correct', 'wrong');
+            currentCircle.classList.add(isCorrect ? 'correct' : 'wrong');
             
             // Move to next circle
             this.currentProgress++;
@@ -4613,9 +4612,8 @@ class QuizGame {
             // Update next circle to current if available
             if (this.currentProgress < circles.length) {
                 const nextCircle = circles[this.currentProgress];
-                nextCircle.classList.remove('correct', 'incorrect');
-                nextCircle.classList.add('current');
-                nextCircle.setAttribute('data-lucide', 'circle');
+                nextCircle.classList.remove('correct', 'wrong');
+                nextCircle.classList.add('empty');
             }
             
             // Reinitialize Lucide icons
@@ -5153,10 +5151,11 @@ class QuizGame {
             );
         }
         
-        // Auto-advance after 2 seconds to show visual feedback
-        setTimeout(() => {
-            this.nextQuestion();
-        }, 2000);
+        // Show next question button instead of auto-advancing
+        const nextBtn = document.getElementById('nextQuestionBtn');
+        if (nextBtn) {
+            nextBtn.style.display = 'flex';
+        }
     }
     
     nextQuestion() {
