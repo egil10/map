@@ -4297,6 +4297,25 @@ class QuizGame {
         }
     }
     
+    loadLearnModeDataset() {
+        if (this.learnModeSequence.length > 0 && this.learnModeCurrentIndex >= 0 && this.learnModeCurrentIndex < this.learnModeSequence.length) {
+            this.currentQuiz = this.learnModeSequence[this.learnModeCurrentIndex];
+            
+            // Apply quiz to map
+            if (window.mapInstance && this.currentQuiz) {
+                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            }
+            
+            // Update color bar asynchronously to avoid blocking
+            requestAnimationFrame(() => {
+                this.updateColorBar();
+            });
+            
+            // Show answer title in learn mode
+            this.showAnswerTitle();
+        }
+    }
+    
     updateActiveDatasetInBrowser() {
         const items = document.querySelectorAll('.dataset-item');
         items.forEach((item, index) => {
@@ -5016,7 +5035,7 @@ class QuizGame {
         
         // Load the first dataset in learn mode
         if (this.learnModeSequence.length > 0) {
-            this.loadDataset(this.learnModeCurrentIndex);
+            this.loadLearnModeDataset();
         }
     }
     
@@ -5247,7 +5266,7 @@ class QuizGame {
         if (this.isLearnMode) {
             // In learn mode, go to next dataset in sequence (circular)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
-            this.loadDataset(this.learnModeCurrentIndex);
+            this.loadLearnModeDataset();
         } else {
             // In other modes, start a new random quiz
             this.startNewQuiz();
@@ -5258,7 +5277,7 @@ class QuizGame {
         if (this.isLearnMode) {
             // In learn mode, go to previous dataset in sequence (circular)
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex - 1 + this.learnModeSequence.length) % this.learnModeSequence.length;
-            this.loadDataset(this.learnModeCurrentIndex);
+            this.loadLearnModeDataset();
         } else {
             // In other modes, start a new random quiz
             this.startNewQuiz();
