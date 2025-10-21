@@ -50,9 +50,9 @@ class App {
     async waitForQuiz() {
         return new Promise((resolve) => {
             const checkQuiz = () => {
-                if (window.quizInstance && window.quizInstance.isReady) {
+                if (window.quizGame && window.quizGame.isReady) {
                     console.log('🎯 Quiz is ready');
-                    this.quizInstance = window.quizInstance;
+                    this.quizInstance = window.quizGame;
                     resolve();
                 } else {
                     console.log('⏳ Waiting for quiz...');

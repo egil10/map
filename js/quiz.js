@@ -33,6 +33,9 @@ class QuizGame {
         // Initialize learn mode
         this.initializeLearnModeSequence();
         
+        // Start with learn mode by default
+        this.setGameMode('learn');
+        
         this.isReady = true;
         console.log('🎯 Quiz Game ready!');
     }
@@ -150,9 +153,19 @@ class QuizGame {
             const randomIndex = Math.floor(Math.random() * this.datasetList.length);
             this.currentQuiz = this.datasetList[randomIndex];
             
+            // Apply quiz to map
+            if (window.mapInstance && this.currentQuiz) {
+                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            }
+            
+            // Update color bar
+            this.updateColorBar();
+            
             if (this.gameMode === 'multiple') {
+                this.hideAnswerTitle();
                 this.showMultipleChoice();
             } else {
+                this.hideAnswerTitle();
                 this.showPlayModeInput();
             }
         }
@@ -194,7 +207,7 @@ class QuizGame {
         if (!inputContainer) return;
         
         inputContainer.innerHTML = `
-            <input type="text" id="guessInput" placeholder="Type your answer here" class="guess-input">
+            <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
             <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
                 <i data-lucide="send"></i>
             </button>
@@ -202,6 +215,15 @@ class QuizGame {
         
         // Re-add event listeners
         this.setupEventListeners();
+        
+        // Clear any existing feedback
+        this.clearFeedback();
+        
+        // Focus input
+        const guessInput = document.getElementById('guessInput');
+        if (guessInput) {
+            guessInput.focus();
+        }
         
         // Update Lucide icons
         if (typeof lucide !== 'undefined') {
@@ -284,20 +306,22 @@ class QuizGame {
 
     handleSubmitGuess() {
         const guessInput = document.getElementById('guessInput');
+        const submitBtn = document.getElementById('submitGuess');
+        
         if (!guessInput || !guessInput.value.trim()) return;
         
         const userGuess = guessInput.value.trim();
         const isCorrect = this.checkAnswer(userGuess);
+        
+        // Disable input and button
+        guessInput.disabled = true;
+        if (submitBtn) submitBtn.disabled = true;
         
         // Update progress
         this.updateProgressBar(isCorrect);
         
         // Show feedback
         this.showFeedback(isCorrect);
-        
-        // Clear input
-        guessInput.value = '';
-        guessInput.disabled = true;
         
         // Auto-advance after 2 seconds
         setTimeout(() => {
@@ -327,6 +351,9 @@ class QuizGame {
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
             this.loadLearnModeDataset();
         } else {
+            // Reset progress for new quiz
+            this.currentProgress = 0;
+            this.resetProgressBar();
             this.startNewQuiz();
         }
     }
@@ -352,6 +379,9 @@ class QuizGame {
             
             // Update title
             this.updateLearnModeTitle();
+            
+            // Show answer title in learn mode
+            this.showAnswerTitle();
         }
     }
 
@@ -438,6 +468,29 @@ class QuizGame {
         const activeBtn = document.querySelector(`[data-mode="${this.gameMode}"]`);
         if (activeBtn) {
             activeBtn.classList.add('active');
+        }
+    }
+
+    showAnswerTitle() {
+        const answerTitle = document.getElementById('answerTitle');
+        if (answerTitle && this.currentQuiz) {
+            answerTitle.textContent = this.currentQuiz.title;
+            answerTitle.style.display = 'block';
+        }
+    }
+
+    hideAnswerTitle() {
+        const answerTitle = document.getElementById('answerTitle');
+        if (answerTitle) {
+            answerTitle.style.display = 'none';
+        }
+    }
+
+    clearFeedback() {
+        const feedbackElement = document.querySelector('.feedback');
+        if (feedbackElement) {
+            feedbackElement.textContent = '';
+            feedbackElement.className = 'feedback';
         }
     }
 }
