@@ -863,30 +863,6 @@ class WorldMap {
     getCountryStyle(feature) {
         const countryName = feature.properties.name;
         
-        // Debug logging for United States
-        if (countryName === 'United States of America' || countryName === 'United States') {
-            console.log('🇺🇸 Map styling - USA country:', countryName, {
-                hasQuiz: !!this.currentQuiz,
-                hasCountryData: !!(this.currentQuiz && this.currentQuiz.countries[countryName]),
-                countryData: this.currentQuiz ? this.currentQuiz.countries[countryName] : null,
-                allUSAKeys: this.currentQuiz ? Object.keys(this.currentQuiz.countries).filter(c => 
-                    c.toLowerCase().includes('united') || 
-                    c.toLowerCase().includes('america') || 
-                    c.toLowerCase().includes('usa')
-                ) : []
-            });
-        }
-        
-        // Debug: Log all available country names in the GeoJSON to see what we have
-        if (countryName && countryName.toLowerCase().includes('united')) {
-            console.log('GeoJSON country name containing "united":', countryName);
-        }
-        
-        // Debug: Also log America/USA variations
-        if (countryName && (countryName.toLowerCase().includes('america') || countryName.toLowerCase().includes('usa'))) {
-            console.log('GeoJSON country name containing "america" or "usa":', countryName);
-        }
-        
         // Default style - use white only for countries without data
         let style = {
             fillColor: '#ffffff', // White for countries without data
@@ -898,12 +874,14 @@ class WorldMap {
         // Apply quiz colors if available
         if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
             const countryData = this.currentQuiz.countries[countryName];
-            if (countryData.color) {
-                style.fillColor = countryData.color;
+            if (countryData && typeof countryData.value === 'number' && !isNaN(countryData.value)) {
+                // Calculate color based on value and color scheme
+                const color = this.getColorForValue(countryData.value, this.currentQuiz);
+                style.fillColor = color;
                 style.fillOpacity = 0.8;
-                console.log(`🎨 Map color applied for ${countryName}:`, countryData.color);
+                console.log(`🎨 Map color applied for ${countryName}:`, color, 'value:', countryData.value);
             } else {
-                console.warn(`🎨 No color found for ${countryName}:`, countryData);
+                console.warn(`🎨 Invalid data for ${countryName}:`, countryData);
             }
         } else {
             console.log(`🎨 No quiz data for ${countryName}`);

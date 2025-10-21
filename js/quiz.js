@@ -310,34 +310,6 @@ class QuizGame {
             hintBtn.addEventListener('click', () => this.showHint());
         }
 
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            // Only handle shortcuts when not typing in input
-            if (document.activeElement.tagName === 'INPUT') return;
-            
-            switch(e.key.toLowerCase()) {
-                case 'h':
-                    e.preventDefault();
-                    this.showHint();
-                    break;
-                case 's':
-                    e.preventDefault();
-                    this.skipQuiz();
-                    break;
-                case 'r':
-                    e.preventDefault();
-                    this.restartGame();
-                    break;
-                case 'n':
-                    e.preventDefault();
-                    this.nextQuestion();
-                    break;
-                case 'escape':
-                    e.preventDefault();
-                    this.clearCountrySelection();
-                    break;
-            }
-        });
     }
 
     setGameMode(mode) {
@@ -572,20 +544,19 @@ class QuizGame {
             btn.style.pointerEvents = 'none';
         });
         
-        // Visual feedback
+        // Visual feedback - show colors on buttons
         document.querySelectorAll('.choice-btn').forEach(btn => {
             if (btn.dataset.answer === this.currentQuiz.title) {
+                // Correct answer - always green
                 btn.classList.add('correct');
             } else if (btn.dataset.answer === selectedAnswer && !isCorrect) {
-                btn.classList.add('wrong');
+                // Wrong answer selected - red
+                btn.classList.add('incorrect');
             }
         });
         
         // Update progress
         this.updateProgressBar(isCorrect);
-        
-        // Show feedback
-        this.showFeedback(isCorrect);
         
         // Auto-advance after 2 seconds
         setTimeout(() => {
