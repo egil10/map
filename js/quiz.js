@@ -5167,17 +5167,18 @@ class QuizGame {
         
         const htmlContent = `
             <div class="multiple-choice">
-                <div class="choice-options">
-                    ${options.map((option, index) => `
-                        <button class="choice-btn" data-answer="${option}">
-                            ${option}
-                        </button>
-                    `).join('')}
+                <div class="choice-options-container">
+                    <div class="choice-options">
+                        ${options.map((option, index) => `
+                            <button class="choice-btn" data-answer="${option}">
+                                ${option}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
+                        <i data-lucide="arrow-right"></i>
+                    </button>
                 </div>
-                <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
-                    <i data-lucide="arrow-right"></i>
-                    <span>Next Question</span>
-                </button>
             </div>
         `;
         
@@ -5226,6 +5227,9 @@ class QuizGame {
         const nextBtn = document.getElementById('nextQuestionBtn');
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
+                // Hide the next button immediately
+                nextBtn.style.display = 'none';
+                // Load the next question
                 this.nextQuestion();
             });
         }
@@ -5257,19 +5261,7 @@ class QuizGame {
         // Update progress
         this.updateProgressBar(isCorrect);
         
-        // Show feedback
-        if (isCorrect) {
-            const emoji = this.getRandomSuccessEmoji();
-            this.showFeedback(
-                `${emoji} Correct! +${this.getPointsForAnswer()} points. The answer was: ${this.currentQuiz.title}`,
-                'correct'
-            );
-        } else {
-            this.showFeedback(
-                `❌ Wrong! The correct answer was: ${this.currentQuiz.title}`,
-                'incorrect'
-            );
-        }
+        // No additional feedback message - just visual button feedback
         
         // Show next question button instead of auto-advancing
         const nextBtn = document.getElementById('nextQuestionBtn');

@@ -1021,22 +1021,29 @@ body {
     width: 100%;
 }
 
+.choice-options-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
 .next-question-btn {
     display: none;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    padding: 6px 12px;
+    gap: 2px;
+    padding: 4px 6px;
     background: #1a1a1a;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     color: white;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.15s ease;
     font-family: 'Space Grotesk', sans-serif;
-    margin-top: 4px;
+    flex-shrink: 0;
 }
 
 .next-question-btn:hover {
@@ -1044,8 +1051,8 @@ body {
 }
 
 .next-question-btn i {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
 }
 
 .choice-btn {
