@@ -39,18 +39,236 @@ class QuizGame {
 
     async loadQuizData() {
         try {
-            const response = await fetch('data/quiz_data.json');
-            this.quizData = await response.json();
+            // Get list of all JSON files in data folder
+            const dataFiles = [
+                'academy_awards_best_international_feature_film_by_country.json',
+                'active_military_by_country.json',
+                'african_countries_never_colonized.json',
+                'afrikaans_dutch_native_speakers_by_country.json',
+                'age_of_consent_by_country.json',
+                'alcohol_consumption_per_capita_by_country.json',
+                'amphibians_by_country.json',
+                'arable_land_per_person.json',
+                'average_annual_wages_usd_ppp_2023.json',
+                'average_height_by_country.json',
+                'billionaires_by_country.json',
+                'birds_by_country.json',
+                'blood_types_by_country.json',
+                'blue_and_white_flags.json',
+                'blue_flag_countries.json',
+                'carbon_emissions_by_country.json',
+                'chinese_native_speakers_by_country.json',
+                'cocoa_production_by_country.json',
+                'coffee_consumption_per_capita_by_country.json',
+                'commonwealth_membership_by_country.json',
+                'container_port_traffic_by_country.json',
+                'corporate_tax_by_country.json',
+                'country_by_first_letter.json',
+                'country_exports_simplified.json',
+                'country_party_system.json',
+                'currencies_by_country.json',
+                'currency_exchange_rate_usd.json',
+                'distinct_land_neighbours_by_country.json',
+                'earthquakes_by_country_2024.json',
+                'english_primary_language_by_country.json',
+                'english_speakers_total_by_country.json',
+                'english_speaking_population_by_country.json',
+                'external_debt_by_country.json',
+                'external_debt_percent_gdp_by_country.json',
+                'female_average_height_by_country.json',
+                'fide_top_federations_open_august_2025.json',
+                'fifa_mens_world_ranking.json',
+                'firearms_per_100_by_country.json',
+                'fish_by_country.json',
+                'fixed_broadband_subscriptions_by_country.json',
+                'flags_without_red.json',
+                'food_energy_intake_by_country.json',
+                'forest_area_km2_by_country.json',
+                'forest_area_percentage_by_country.json',
+                'french_official_language_status_by_country.json',
+                'gdp_by_country_2025.json',
+                'gdp_per_working_hour_2023.json',
+                'german_native_speakers_by_country.json',
+                'gni_per_capita_2024.json',
+                'green_flag_countries.json',
+                'hdi_by_country_2023.json',
+                'highest_temperature_by_country.json',
+                'high_speed_rail_by_country.json',
+                'holocene_volcanoes_by_country.json',
+                'horse_population_by_country.json',
+                'imports_by_country.json',
+                'internet_speed_by_country.json',
+                'internet_usage_by_country.json',
+                'landlocked_countries.json',
+                'landlocked_countries_neighbours_with_ocean_access.json',
+                'land_area.json',
+                'latest_flag_adoption_by_country.json',
+                'leading_export_market_by_country.json',
+                'leading_import_source_by_country.json',
+                'living_languages_by_country.json',
+                'lower_house_seats_by_country.json',
+                'lowest_temperature_by_country.json',
+                'male_median_age_by_country.json',
+                'mammals_by_country.json',
+                'marriage_rate_per_1000_by_country.json',
+                'maximum_elevation_by_country.json',
+                'median_wealth_per_adult_2023.json',
+                'mobile_connection_speed_by_country.json',
+                'mobile_phone_numbers_by_country.json',
+                'monarchies.json',
+                'motor_vehicle_production_2024.json',
+                'national_anthems_by_country.json',
+                'national_capitals_by_country.json',
+                'national_capitals_population_by_country.json',
+                'national_capitals_population_percentage_by_country.json',
+                'nobel_laureates_by_country.json',
+                'nobel_literature_laureates_by_country.json',
+                'number_of_islands_by_country.json',
+                'official_languages_by_country.json',
+                'oil_production_by_country.json',
+                'olympics_hosted_by_country.json',
+                'percent_christian_by_country.json',
+                'percent_water.json',
+                'plants_wcmc_by_country.json',
+                'popes_by_country.json',
+                'population_density.json',
+                'population_per_lower_house_seat_by_country.json',
+                'purple_flag_countries.json',
+                'red_flag_countries.json',
+                'reptiles_by_country.json',
+                'road_network_size_by_country.json',
+                'sex_ratio_by_country.json',
+                'sheep_population_by_country.json',
+                'shoe_size_by_country.json',
+                'soccer_players_by_country.json',
+                'spanish_native_speakers_by_country.json',
+                'steel_production_by_country.json',
+                'stock_market_capitalization_by_country.json',
+                'strongest_earthquake_magnitude_by_country_2024.json',
+                'summer_olympic_bronze_medals_by_country.json',
+                'summer_olympic_gold_medals_by_country.json',
+                'summer_olympic_silver_medals_by_country.json',
+                'tea_consumption_per_capita_by_country.json',
+                'time_zones_by_country.json',
+                'top_goods_export_by_country.json',
+                'total_fertility_rate_2025.json',
+                'total_literacy_rate_by_country.json',
+                'total_naval_assets_by_country.json',
+                'traffic_related_death_rate_by_country.json',
+                'uefa_champions_league_runners_up_by_country.json',
+                'uefa_champions_league_winners_by_country.json',
+                'unesco_sites_by_country.json',
+                'usd_to_country_currencies.json',
+                'waterways_length_by_country.json',
+                'wealth_gini_percent_by_country.json',
+                'wheat_production_by_country.json',
+                'white_flag_countries.json',
+                'wine_consumption_per_capita_by_country.json',
+                'wine_production_by_country.json',
+                'winter_olympic_gold_medals_by_country.json',
+                'world_bank_income_group_by_country.json',
+                'world_cup_wins_by_country.json',
+                'world_figure_skating_gold_medals_by_country.json',
+                'world_population_2025.json',
+                'years_colonized_by_country.json',
+                'yellow_flag_countries.json'
+            ];
             
-            // Create dataset list
-            this.datasetList = Object.values(this.quizData.quizzes)
-                .sort((a, b) => a.title.localeCompare(b.title));
-                
-            console.log(`📊 Loaded ${this.datasetList.length} datasets`);
+            // Load all datasets
+            this.datasetList = [];
+            const loadPromises = dataFiles.map(async (filename) => {
+                try {
+                    const response = await fetch(`data/${filename}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        return this.convertToQuizFormat(data, filename);
+                    }
+                } catch (error) {
+                    console.warn(`⚠️ Failed to load ${filename}:`, error);
+                }
+                return null;
+            });
+            
+            const results = await Promise.all(loadPromises);
+            this.datasetList = results.filter(dataset => dataset !== null);
+            
+            console.log(`📊 Loaded ${this.datasetList.length} datasets from data folder`);
         } catch (error) {
             console.error('❌ Failed to load quiz data:', error);
-            this.quizData = { quizzes: {} };
+            this.datasetList = [];
         }
+    }
+    
+    convertToQuizFormat(data, filename) {
+        // Convert various data formats to quiz format
+        let title = data.title || filename.replace('.json', '').replace(/_/g, ' ');
+        let countries = {};
+        let tags = [];
+        let answerVariations = [];
+        
+        // Extract title and create tags
+        if (data.title) {
+            title = data.title;
+            // Create tags from title words
+            tags = title.toLowerCase().split(' ').filter(word => word.length > 3);
+        }
+        
+        // Create answer variations from title
+        answerVariations = [title.toLowerCase()];
+        if (data.title) {
+            const words = data.title.toLowerCase().split(' ');
+            answerVariations.push(...words.filter(word => word.length > 3));
+        }
+        
+        // Handle different data formats
+        if (data.data) {
+            if (Array.isArray(data.data)) {
+                // Array format
+                data.data.forEach(item => {
+                    if (item.country && item.value !== undefined) {
+                        countries[item.country] = {
+                            value: item.value,
+                            unit: item.unit || 'count'
+                        };
+                    }
+                });
+            } else {
+                // Object format - data is already in the correct structure
+                countries = data.data;
+            }
+        } else if (data.countries) {
+            countries = data.countries;
+        }
+        
+        // Generate random color scheme
+        const colorSchemes = [
+            { minColor: '#fff3e0', maxColor: '#e65100' },
+            { minColor: '#e8f5e8', maxColor: '#2e7d32' },
+            { minColor: '#e3f2fd', maxColor: '#1976d2' },
+            { minColor: '#fce4ec', maxColor: '#c2185b' },
+            { minColor: '#f3e5f5', maxColor: '#7b1fa2' },
+            { minColor: '#fff8e1', maxColor: '#f57c00' },
+            { minColor: '#e0f2f1', maxColor: '#00695c' },
+            { minColor: '#f1f8e9', maxColor: '#558b2f' }
+        ];
+        
+        const randomScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+        
+        return {
+            id: filename.replace('.json', ''),
+            title: title,
+            description: data.description || `Countries colored by ${title.toLowerCase()}`,
+            category: 'general',
+            tags: tags,
+            answer_variations: answerVariations,
+            colorScheme: {
+                type: 'gradient',
+                minColor: randomScheme.minColor,
+                maxColor: randomScheme.maxColor,
+                defaultColor: '#ffffff'
+            },
+            countries: countries
+        };
     }
 
     // Map will be handled by App.js
@@ -85,6 +303,41 @@ class QuizGame {
         if (submitBtn) {
             submitBtn.addEventListener('click', () => this.handleSubmitGuess());
         }
+
+        // Hint button
+        const hintBtn = document.getElementById('hintBtn');
+        if (hintBtn) {
+            hintBtn.addEventListener('click', () => this.showHint());
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Only handle shortcuts when not typing in input
+            if (document.activeElement.tagName === 'INPUT') return;
+            
+            switch(e.key.toLowerCase()) {
+                case 'h':
+                    e.preventDefault();
+                    this.showHint();
+                    break;
+                case 's':
+                    e.preventDefault();
+                    this.skipQuiz();
+                    break;
+                case 'r':
+                    e.preventDefault();
+                    this.restartGame();
+                    break;
+                case 'n':
+                    e.preventDefault();
+                    this.nextQuestion();
+                    break;
+                case 'escape':
+                    e.preventDefault();
+                    this.clearCountrySelection();
+                    break;
+            }
+        });
     }
 
     setGameMode(mode) {
@@ -383,11 +636,53 @@ class QuizGame {
         );
     }
 
-    showFeedback(isCorrect) {
+    getHint() {
+        if (!this.currentQuiz || !this.currentQuiz.tags || this.currentQuiz.tags.length === 0) {
+            return "No hints available for this quiz.";
+        }
+        
+        // Deduct 5 points for using hint
+        this.score = Math.max(0, this.score - 5);
+        
+        // Return random tag as hint
+        const randomTag = this.currentQuiz.tags[Math.floor(Math.random() * this.currentQuiz.tags.length)];
+        return `Hint: ${randomTag}`;
+    }
+
+    skipQuiz() {
+        console.log('⏭️ Skipping current quiz');
+        this.nextQuestion();
+    }
+
+    restartGame() {
+        console.log('🔄 Restarting game...');
+        this.resetGameState();
+        this.startNewQuiz();
+    }
+
+    showHint() {
+        if (!this.currentQuiz) return;
+        
+        const hint = this.getHint();
+        this.showFeedback(hint, 'hint');
+    }
+
+    clearCountrySelection() {
+        if (window.mapInstance && window.mapInstance.clearSelection) {
+            window.mapInstance.clearSelection();
+        }
+    }
+
+    showFeedback(isCorrect, type = 'answer') {
         const feedbackElement = document.querySelector('.feedback');
         if (feedbackElement) {
-            feedbackElement.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
-            feedbackElement.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+            if (type === 'hint') {
+                feedbackElement.textContent = isCorrect;
+                feedbackElement.className = 'feedback hint';
+            } else {
+                feedbackElement.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
+                feedbackElement.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+            }
         }
     }
 
@@ -561,27 +856,22 @@ class QuizGame {
                 <div class="completion-screen">
                     <h2>🎉 Game Complete!</h2>
                     <div class="score-display">
-                        <p>You got <strong>${correctAnswers}</strong> out of <strong>${totalQuestions}</strong> correct!</p>
-                        <p>Score: <strong>${Math.round((correctAnswers / totalQuestions) * 100)}%</strong></p>
-                    </div>
-                    <div class="completion-actions">
-                        <button id="playAgainBtn" class="play-again-btn">
-                            <i data-lucide="refresh-cw"></i>
-                            Play Again
-                        </button>
+                        <p>Score: <strong>${correctAnswers}/10</strong></p>
+                        <p>Press <strong>Enter</strong> to restart</p>
                     </div>
                 </div>
             `;
             
-            // Add event listener for play again
-            setTimeout(() => {
-                const playAgainBtn = document.getElementById('playAgainBtn');
-                if (playAgainBtn) {
-                    playAgainBtn.addEventListener('click', () => {
-                        this.restartGame();
-                    });
+            // Add Enter key listener for restart
+            const handleEnterRestart = (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    document.removeEventListener('keydown', handleEnterRestart);
+                    this.restartGame();
                 }
-            }, 100);
+            };
+            
+            document.addEventListener('keydown', handleEnterRestart);
             
             // Update Lucide icons
             if (typeof lucide !== 'undefined') {
