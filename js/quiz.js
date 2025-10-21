@@ -4327,6 +4327,11 @@ class QuizGame {
             guessInput.disabled = true;
             submitButton.style.display = 'none';
             guessInput.placeholder = 'Explore the data (click countries to see details)';
+        } else if (this.gameMode === 'multiple') {
+            // In multiple choice mode, show multiple choice options
+            this.hideAnswerTitle();
+            this.hideSkipButton();
+            this.showMultipleChoice();
         } else {
             // In play mode, hide answer and enable input
             this.hideAnswerTitle();
@@ -4707,7 +4712,7 @@ class QuizGame {
         if (this.currentProgress < circles.length) {
             // Update current circle with result
             const currentCircle = circles[this.currentProgress];
-            currentCircle.classList.remove('empty', 'correct', 'wrong');
+            currentCircle.classList.remove('current', 'empty', 'correct', 'wrong');
             currentCircle.classList.add(isCorrect ? 'correct' : 'wrong');
             
             // Move to next circle
@@ -4723,8 +4728,9 @@ class QuizGame {
             // Update next circle to current if available
             if (this.currentProgress < circles.length) {
                 const nextCircle = circles[this.currentProgress];
-                nextCircle.classList.remove('correct', 'wrong');
-                nextCircle.classList.add('empty');
+                nextCircle.classList.remove('correct', 'wrong', 'empty');
+                nextCircle.classList.add('current');
+                nextCircle.setAttribute('data-lucide', 'circle');
             }
             
             // Reinitialize Lucide icons
@@ -4740,12 +4746,13 @@ class QuizGame {
         
         circles.forEach((circle, index) => {
             // Remove all classes first
-            circle.classList.remove('current', 'correct', 'incorrect');
+            circle.classList.remove('current', 'correct', 'wrong', 'empty');
             
             if (index === 0) {
                 circle.classList.add('current');
                 circle.setAttribute('data-lucide', 'circle');
             } else {
+                circle.classList.add('empty');
                 circle.setAttribute('data-lucide', 'circle-dashed');
             }
         });
@@ -4980,7 +4987,7 @@ class QuizGame {
         }
         
         // Reset progress circles
-        this.resetProgressCircles();
+        this.resetProgressBar();
         
         // Start a new quiz
         this.startNewQuiz();
@@ -4991,14 +4998,6 @@ class QuizGame {
         this.resetGameState();
     }
     
-    resetProgressCircles() {
-        const circles = document.querySelectorAll('.progress-circle');
-        circles.forEach(circle => {
-            circle.classList.remove('correct', 'wrong', 'empty');
-            circle.classList.add('empty');
-        });
-        this.currentProgress = 0;
-    }
     
     initializeLearnModeSequence() {
         // Initialize learn mode sequence if not already done
@@ -5108,10 +5107,6 @@ class QuizGame {
                             <button class="choice-btn" data-answer="Area">Area</button>
                             <button class="choice-btn" data-answer="Oil Production">Oil Production</button>
                         </div>
-                        <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
-                            <i data-lucide="arrow-right"></i>
-                            <span>Next Question</span>
-                        </button>
                     </div>
                 `;
                 
@@ -5123,12 +5118,6 @@ class QuizGame {
                     });
                 });
                 
-                const nextBtn = document.getElementById('nextQuestionBtn');
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', () => {
-                        this.nextQuestion();
-                    });
-                }
                 
                 if (typeof lucide !== 'undefined') {
                     lucide.createIcons();
@@ -5175,9 +5164,6 @@ class QuizGame {
                             </button>
                         `).join('')}
                     </div>
-                    <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
-                        <i data-lucide="arrow-right"></i>
-                    </button>
                 </div>
             </div>
         `;
@@ -5223,16 +5209,6 @@ class QuizGame {
             });
         });
         
-        // Add event listener to next question button
-        const nextBtn = document.getElementById('nextQuestionBtn');
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                // Hide the next button immediately
-                nextBtn.style.display = 'none';
-                // Load the next question
-                this.nextQuestion();
-            });
-        }
     }
     
     handleMultipleChoiceAnswer(selectedAnswer) {
@@ -5261,13 +5237,10 @@ class QuizGame {
         // Update progress
         this.updateProgressBar(isCorrect);
         
-        // No additional feedback message - just visual button feedback
-        
-        // Show next question button instead of auto-advancing
-        const nextBtn = document.getElementById('nextQuestionBtn');
-        if (nextBtn) {
-            nextBtn.style.display = 'flex';
-        }
+        // Auto-advance to next question after 2 seconds
+        setTimeout(() => {
+            this.nextQuestion();
+        }, 2000);
     }
     
     nextQuestion() {
