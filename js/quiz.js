@@ -35,8 +35,17 @@ class QuizGame {
         this.isReady = true;
         console.log('🎯 Quiz Game ready!');
         
-        // Start with learn mode by default
-        this.setGameMode('learn');
+        // Check for stored game mode from previous session
+        const storedGameMode = localStorage.getItem('geoquest-game-mode');
+        if (storedGameMode && ['play', 'multiple', 'learn'].includes(storedGameMode)) {
+            console.log('🎯 Restoring game mode:', storedGameMode);
+            this.setGameMode(storedGameMode);
+            // Clear the stored mode after using it
+            localStorage.removeItem('geoquest-game-mode');
+        } else {
+            // Start with learn mode by default
+            this.setGameMode('learn');
+        }
     }
 
     async loadQuizData() {
@@ -1059,25 +1068,13 @@ class QuizGame {
     }
 
     restartGame() {
-        console.log('Restarting game...');
+        console.log('Restarting game with hard refresh...');
         
-        // Remove completion screen from map container
-        const existingCompletion = document.querySelector('.completion-screen');
-        if (existingCompletion) {
-            existingCompletion.remove();
-        }
+        // Store current game mode in localStorage to preserve it after refresh
+        localStorage.setItem('geoquest-game-mode', this.gameMode);
         
-        // Reset all game state
-        this.resetGameState();
-        
-        // Start new game based on current mode
-        if (this.gameMode === 'multiple') {
-            this.showMultipleChoice();
-        } else if (this.gameMode === 'play') {
-            this.showPlayModeInput();
-        } else {
-            this.startLearnMode();
-        }
+        // Hard refresh the page
+        location.reload();
     }
 
     skipQuiz() {
