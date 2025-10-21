@@ -162,6 +162,14 @@ map/
 - **Error Tracking**: Comprehensive error handling
 - **Performance Monitoring**: Timing and memory usage
 
+### Keyboard Shortcuts
+- **Enter**: Submit guess (Play Mode)
+- **H**: Show hint
+- **S**: Skip quiz
+- **R**: Restart game (reset score)
+- **N**: Start new quiz immediately
+- **ESC**: Clear country selection
+
 ## 🚀 Performance Optimization
 
 ### Loading Optimization

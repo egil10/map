@@ -335,6 +335,45 @@ class QuizGame {
             hintBtn.addEventListener('click', () => this.showHint());
         }
 
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' && e.key !== 'Enter' && e.key !== 'Escape') {
+                return; // Don't interfere with typing in input fields
+            }
+            
+            switch (e.key) {
+                case 'Enter':
+                    if (this.gameMode === 'play' && !this.isLearnMode) {
+                        e.preventDefault();
+                        this.handleSubmitGuess();
+                    }
+                    break;
+                case 'h':
+                case 'H':
+                    e.preventDefault();
+                    this.showHint();
+                    break;
+                case 's':
+                case 'S':
+                    e.preventDefault();
+                    this.skipQuiz();
+                    break;
+                case 'r':
+                case 'R':
+                    e.preventDefault();
+                    this.restartGame();
+                    break;
+                case 'n':
+                case 'N':
+                    e.preventDefault();
+                    this.startNewQuiz();
+                    break;
+                case 'Escape':
+                    e.preventDefault();
+                    this.clearCountrySelection();
+                    break;
+            }
+        });
     }
 
     setGameMode(mode) {
@@ -1020,6 +1059,26 @@ class QuizGame {
             this.showPlayModeInput();
         } else {
             this.startLearnMode();
+        }
+    }
+
+    skipQuiz() {
+        console.log('Skipping quiz...');
+        this.startNewQuiz();
+    }
+
+    clearCountrySelection() {
+        console.log('Clearing country selection...');
+        if (window.mapInstance && window.mapInstance.map) {
+            // Clear any selected countries on the map
+            window.mapInstance.map.eachLayer(layer => {
+                if (layer.setStyle) {
+                    layer.setStyle({
+                        weight: 1,
+                        color: '#cccccc'
+                    });
+                }
+            });
         }
     }
 }
