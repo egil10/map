@@ -148,14 +148,14 @@ body {
 
 /* Map Container */
 .map-container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
     position: relative;
 }
 
 /* Reset Button (Top Right) */
 .reset-button {
-    position: absolute;
+  position: absolute;
     top: 20px;
     right: 20px;
     width: 36px;
@@ -168,9 +168,9 @@ body {
     cursor: pointer;
     transition: background 0.15s ease;
     z-index: 1001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -197,44 +197,20 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #f0f0f0;
-    border: 2px solid #e5e5e5;
-    transition: all 0.3s ease;
-    position: relative;
+    background: #e5e5e5;
+    transition: background 0.2s ease;
 }
 
 .progress-circle.current {
-    background: #3b82f6;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-    animation: progressPulse 1.5s ease-in-out infinite;
+    background: #666;
 }
 
 .progress-circle.completed {
     background: #22c55e;
-    border-color: #22c55e;
-    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
 }
 
-.progress-circle.completed::after {
-    content: "✓";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 8px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-@keyframes progressPulse {
-    0%, 100% {
-        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-    }
-    50% {
-        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
-    }
+.progress-circle.incorrect {
+    background: #ef4444;
 }
 
 /* Answer Title */
@@ -310,6 +286,40 @@ body {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+/* Leaflet Hover Tooltip */
+.country-hover-tooltip {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #1a1a1a !important;
+    padding: 6px 8px !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+.country-hover-tooltip .leaflet-popup-content-wrapper {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+}
+
+.country-hover-tooltip .leaflet-popup-content {
+    margin: 0 !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+.country-hover-tooltip .leaflet-popup-tip {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
 /* Footer Area (20%) */
 .footer-area {
     flex: 0 0 20vh;
@@ -331,13 +341,14 @@ body {
     left: 20px;
     top: 16px;
     display: flex;
-    gap: 6px;
+    flex-direction: column;
+    gap: 4px;
     z-index: 1000;
 }
 
 .game-mode-btn {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
     gap: 4px;
     padding: 6px 8px;
     background: #f5f5f5;
@@ -345,8 +356,8 @@ body {
     border-radius: 6px;
     color: #1a1a1a;
     font-size: 11px;
-    font-weight: 500;
-    cursor: pointer;
+  font-weight: 500; 
+  cursor: pointer;
     transition: all 0.15s ease;
 }
 
@@ -395,9 +406,9 @@ body {
 }
 
 .submit-btn {
-    display: flex;
+  display: flex;
     align-items: center;
-    justify-content: center;
+  justify-content: center;
     width: 36px;
     height: 36px;
     background: #1a1a1a;
@@ -730,8 +741,8 @@ body {
     width: 100%;
     max-height: 80vh;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
 }
 
 .dataset-browser-header {
@@ -750,15 +761,15 @@ body {
 }
 
 .dataset-browser-close {
-    width: 32px;
-    height: 32px;
+        width: 32px;
+        height: 32px;
     background: #f5f5f5;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+        justify-content: center;
     transition: background 0.15s ease;
 }
 
@@ -767,19 +778,19 @@ body {
 }
 
 .dataset-browser-close i {
-    width: 14px;
-    height: 14px;
-}
-
+        width: 14px;
+        height: 14px;
+    }
+    
 .dataset-browser-body {
     flex: 1;
     overflow-y: auto;
-    padding: 20px;
-}
-
-.dataset-browser-list {
+        padding: 20px;
+    }
+    
+    .dataset-browser-list {
     overflow-y: auto;
-    max-height: 60vh;
+        max-height: 60vh;
     padding: 20px;
 }
 
@@ -790,7 +801,7 @@ body {
 }
 
 .dataset-item {
-    padding: 12px;
+        padding: 12px;
     border: 1px solid #e5e5e5;
     border-radius: 8px;
     cursor: pointer;
@@ -805,7 +816,7 @@ body {
 }
 
 .dataset-item h3 {
-    font-size: 14px;
+        font-size: 14px;
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 6px;
@@ -856,11 +867,11 @@ body {
         font-size: 10px !important;
     }
     
-    .legend-extremes {
+     .legend-extremes {
         grid-template-columns: 1fr;
-        gap: 8px;
-    }
-    
+         gap: 8px;
+     }
+     
     .dataset-grid {
         grid-template-columns: 1fr;
     }
@@ -877,7 +888,7 @@ body {
     backdrop-filter: blur(20px);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    padding: 16px;
+        padding: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     font-family: 'Space Grotesk', sans-serif;
@@ -889,7 +900,7 @@ body {
 }
 
 .legend-header h3 {
-    margin: 0;
+        margin: 0;
     font-size: 16px;
     font-weight: 700;
     color: #1a1a1a;
@@ -985,10 +996,10 @@ body {
     text-align: center;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
+        flex-direction: column;
+        gap: 8px;
+    }
+    
 .multiple-choice h3 {
     margin: 0;
     font-size: 11px;
@@ -999,8 +1010,8 @@ body {
 
 .choice-options {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6px;
     width: 100%;
 }
 
@@ -1051,6 +1062,18 @@ body {
 .choice-btn:disabled {
     cursor: not-allowed;
     opacity: 0.6;
+}
+
+.choice-btn.correct {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.choice-btn.incorrect {
+    background: #ef4444;
+    border-color: #ef4444;
+    color: white;
 }
 
 .choice-btn:hover {

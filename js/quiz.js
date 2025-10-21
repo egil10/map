@@ -4168,13 +4168,15 @@ class QuizGame {
             this.currentDatasetIndex = index;
             this.currentQuiz = this.datasetList[index];
             
-                    // Apply quiz to map
-        if (window.mapInstance && this.currentQuiz) {
-            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
-        }
-        
-        // Update color bar with new quiz data
-        this.updateColorBar();
+            // Apply quiz to map
+            if (window.mapInstance && this.currentQuiz) {
+                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            }
+            
+            // Update color bar asynchronously to avoid blocking
+            requestAnimationFrame(() => {
+                this.updateColorBar();
+            });
             
             // Show answer title in learn mode
             if (this.isLearnMode) {
@@ -4241,42 +4243,33 @@ class QuizGame {
             this.resetProgressBar();
         }
         
-        // Select random quiz with better randomization
+        // Select random quiz (optimized - no need for full shuffle)
         const quizIds = Object.keys(this.quizData.quizzes);
         if (quizIds.length === 0) {
             console.error('No quizzes available');
             return;
         }
         
-        // Use Fisher-Yates shuffle for better randomization
-        const shuffledQuizIds = [...quizIds];
-        for (let i = shuffledQuizIds.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledQuizIds[i], shuffledQuizIds[j]] = [shuffledQuizIds[j], shuffledQuizIds[i]];
-        }
-        
-        const randomQuizId = shuffledQuizIds[0];
+        // Simple random selection (much faster than Fisher-Yates)
+        const randomIndex = Math.floor(Math.random() * quizIds.length);
+        const randomQuizId = quizIds[randomIndex];
         this.currentQuiz = this.quizData.quizzes[randomQuizId];
         
         // Apply random color variations to the quiz
         this.applyRandomColorVariations();
         
-        // Apply quiz to map
+        // Apply quiz to map (optimized - minimal logging)
         if (window.mapInstance && this.currentQuiz) {
-            console.log('Applying quiz to map:', {
-                quizTitle: this.currentQuiz.title,
-                countriesCount: Object.keys(this.currentQuiz.countries).length,
-                sampleCountries: Object.keys(this.currentQuiz.countries).slice(0, 5),
-                hasUnitedStates: !!this.currentQuiz.countries['United States of America']
-            });
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
         if (this.currentQuiz) {
             console.log('Started new quiz:', this.currentQuiz.title);
             
-            // Update color bar with new quiz data
-            this.updateColorBar();
+            // Update color bar asynchronously to avoid blocking
+            requestAnimationFrame(() => {
+                this.updateColorBar();
+            });
             
             // Mark quiz as ready on first successful start
             if (!this.isReady) {
@@ -4820,9 +4813,13 @@ class QuizGame {
         
         if (mode === 'learn') {
             this.isLearnMode = true;
+            // Reset progress and start fresh
+            this.resetGameState();
             this.initializeLearnModeSequence();
             this.showLearnModeControls();
         } else if (mode === 'play') {
+            // Reset progress and start fresh
+            this.resetGameState();
             // Restore normal input container
             inputContainer.innerHTML = `
                 <input type="text" id="guessInput" placeholder="Type your answer here" class="guess-input">
@@ -4839,23 +4836,18 @@ class QuizGame {
             // Re-add event listeners
             this.setupEventListeners();
             this.isLearnMode = false;
+            // Start a new quiz
+            this.startNewQuiz();
         } else if (mode === 'multiple') {
             this.isLearnMode = false;
+            // Reset progress and start fresh
+            this.resetGameState();
             // Clear the input container first
             inputContainer.innerHTML = '';
-            // Ensure we have a quiz and datasets before showing multiple choice
-            if (!this.currentQuiz) {
-                this.startNewQuiz();
-            }
-            // Wait for datasets to be loaded
-            if (!this.datasetList || this.datasetList.length === 0) {
-                console.log('🎯 Loading datasets for multiple choice...');
-                this.loadDatasets().then(() => {
-                    this.showMultipleChoice();
-                });
-            } else {
-                this.showMultipleChoice();
-            }
+            // Start a new quiz
+            this.startNewQuiz();
+            // Show multiple choice directly
+            this.showMultipleChoice();
         }
         
         // Update color bar when mode changes
@@ -4976,9 +4968,9 @@ class QuizGame {
         if (!this.datasetList || this.datasetList.length < 4) {
             console.log('❌ Not enough datasets for multiple choice:', this.datasetList?.length);
             // Show a loading message and try to load datasets
-            const inputContainer = document.querySelector('.input-container');
-            if (inputContainer) {
-                inputContainer.innerHTML = `
+            const loadingContainer = document.querySelector('.input-container');
+            if (loadingContainer) {
+                loadingContainer.innerHTML = `
                     <div class="multiple-choice">
                         <h3>Loading datasets...</h3>
                         <p>Please wait while we load the datasets.</p>
@@ -4986,15 +4978,43 @@ class QuizGame {
                 `;
             }
             
-            // Try to load datasets if they're not loaded
-            if (!this.datasetList || this.datasetList.length === 0) {
-                console.log('🎯 Attempting to load datasets...');
-                this.loadDatasets().then(() => {
-                    console.log('🎯 Datasets loaded, retrying multiple choice');
-                    this.showMultipleChoice();
-                }).catch(() => {
-                    console.log('❌ Failed to load datasets');
+            // Create fallback options if no datasets
+            console.log('🎯 Creating fallback multiple choice options');
+            const fallbackContainer = document.querySelector('.input-container');
+            if (fallbackContainer) {
+                fallbackContainer.innerHTML = `
+                    <div class="multiple-choice">
+                        <div class="choice-options">
+                            <button class="choice-btn" data-answer="Population">Population</button>
+                            <button class="choice-btn" data-answer="GDP">GDP</button>
+                            <button class="choice-btn" data-answer="Area">Area</button>
+                            <button class="choice-btn" data-answer="Oil Production">Oil Production</button>
+                        </div>
+                        <button id="nextQuestionBtn" class="next-question-btn" style="display: none;">
+                            <i data-lucide="arrow-right"></i>
+                            <span>Next Question</span>
+                        </button>
+                    </div>
+                `;
+                
+                // Add event listeners
+                document.querySelectorAll('.choice-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const selectedAnswer = e.target.dataset.answer;
+                        this.handleMultipleChoiceAnswer(selectedAnswer);
+                    });
                 });
+                
+                const nextBtn = document.getElementById('nextQuestionBtn');
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        this.nextQuestion();
+                    });
+                }
+                
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
             }
             return;
         }
@@ -5029,7 +5049,6 @@ class QuizGame {
         
         const htmlContent = `
             <div class="multiple-choice">
-                <h3>What dataset does this map show?</h3>
                 <div class="choice-options">
                     ${options.map((option, index) => `
                         <button class="choice-btn" data-answer="${option}">
@@ -5056,7 +5075,6 @@ class QuizGame {
                 console.log('❌ No buttons created, showing fallback');
                 inputContainer.innerHTML = `
                     <div class="multiple-choice">
-                        <h3>Test Multiple Choice</h3>
                         <div class="choice-options">
                             <button class="choice-btn" data-answer="Option 1">Option 1</button>
                             <button class="choice-btn" data-answer="Option 2">Option 2</button>
@@ -5135,11 +5153,10 @@ class QuizGame {
             );
         }
         
-        // Show next question button instead of auto-advancing
-        const nextBtn = document.getElementById('nextQuestionBtn');
-        if (nextBtn) {
-            nextBtn.style.display = 'flex';
-        }
+        // Auto-advance after 2 seconds to show visual feedback
+        setTimeout(() => {
+            this.nextQuestion();
+        }, 2000);
     }
     
     nextQuestion() {
@@ -5170,7 +5187,7 @@ class QuizGame {
             return;
         }
         
-        console.log('🎨 updateColorBar: Updating color bar for quiz:', this.currentQuiz.title);
+        // Reduced logging for performance
         
         const colorBarGradient = document.getElementById('colorBarGradient');
         const colorBarMin = document.getElementById('colorBarMin');
@@ -5179,18 +5196,11 @@ class QuizGame {
         const colorBarQ3 = document.getElementById('colorBarQ3');
         const colorBarMax = document.getElementById('colorBarMax');
         
-        console.log('🎨 Color bar elements found:', {
-            gradient: !!colorBarGradient,
-            min: !!colorBarMin,
-            q1: !!colorBarQ1,
-            mid: !!colorBarMid,
-            q3: !!colorBarQ3,
-            max: !!colorBarMax
-        });
+        // Reduced logging for performance
         
         if (colorBarGradient && this.currentQuiz.colorScheme) {
             const scheme = this.currentQuiz.colorScheme;
-            console.log('🎨 Color scheme:', scheme);
+            // Reduced logging for performance
             
             if (scheme.type === 'gradient' && scheme.colors) {
                 const colorStops = scheme.colors.map((color, index) => {
@@ -5198,18 +5208,18 @@ class QuizGame {
                     return `${color} ${percentage}%`;
                 }).join(', ');
                 colorBarGradient.style.background = `linear-gradient(to right, ${colorStops})`;
-                console.log('🎨 Applied gradient colors:', colorStops);
+                // Reduced logging for performance
             } else if (scheme.minColor && scheme.maxColor) {
                 colorBarGradient.style.background = `linear-gradient(to right, ${scheme.minColor}, ${scheme.maxColor})`;
-                console.log('🎨 Applied min/max colors:', scheme.minColor, scheme.maxColor);
+                // Reduced logging for performance
             }
         } else {
-            console.log('🎨 No color scheme or gradient element found');
+            // Reduced logging for performance
         }
         
         if (this.currentQuiz.countries) {
             const values = Object.values(this.currentQuiz.countries).map(c => c.value).filter(v => !isNaN(v));
-            console.log('🎨 Found values:', values.length, 'countries with values');
+            // Reduced logging for performance
             
             if (values.length > 0) {
                 const sortedValues = values.sort((a, b) => a - b);
@@ -5226,14 +5236,7 @@ class QuizGame {
                 const midValue = sortedValues[midIndex];
                 const q3Value = sortedValues[q3Index];
                 
-                console.log('🎨 Calculated values:', {
-                    min: minValue,
-                    q1: q1Value,
-                    mid: midValue,
-                    q3: q3Value,
-                    max: maxValue,
-                    unit: unit
-                });
+                // Reduced logging for performance
                 
                 // Update labels (without units to avoid spoiling quiz)
                 if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, '');
@@ -5242,12 +5245,12 @@ class QuizGame {
                 if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, '');
                 if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, '');
                 
-                console.log('🎨 Updated color bar labels');
+                // Reduced logging for performance
             } else {
-                console.log('🎨 No valid values found in countries');
+                // Reduced logging for performance
             }
         } else {
-            console.log('🎨 No countries data found');
+            // Reduced logging for performance
         }
     }
     

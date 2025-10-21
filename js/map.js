@@ -794,6 +794,22 @@ class WorldMap {
             if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.NAME]) {
                 const countryData = this.currentQuiz.countries[layer.feature.properties.NAME];
                 this.updateCountryTooltip(layer.feature.properties.NAME, countryData);
+                
+                // Also show Leaflet tooltip with country name and value (no unit)
+                if (countryData && countryData.value !== undefined) {
+                    const formattedValue = this.formatValue(countryData.value, '');
+                    const tooltipContent = `<strong>${layer.feature.properties.NAME}</strong><br/>${formattedValue}`;
+                    
+                    this.currentHoverPopup = L.popup({
+                        closeButton: false,
+                        autoClose: false,
+                        closeOnClick: false,
+                        className: 'country-hover-tooltip'
+                    })
+                    .setLatLng(e.latlng)
+                    .setContent(tooltipContent)
+                    .openOn(this.map);
+                }
              }
          };
         
