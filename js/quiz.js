@@ -128,16 +128,22 @@ class QuizGame {
 
     startNewQuiz() {
         console.log(`🎯 Starting new quiz in ${this.gameMode} mode`);
+        console.log(`🎯 Available datasets: ${this.datasetList.length}`);
         
         if (this.datasetList.length > 0) {
             const randomIndex = Math.floor(Math.random() * this.datasetList.length);
             this.currentQuiz = this.datasetList[randomIndex];
             
             console.log(`🎯 Selected quiz: ${this.currentQuiz.title}`);
+            console.log(`🎯 Quiz data sample:`, Object.keys(this.currentQuiz.countries).slice(0, 5));
             
             // Apply quiz to map
             if (window.mapInstance && this.currentQuiz) {
+                console.log('🎯 Applying quiz configuration to map...');
                 window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+                console.log('🎯 Quiz configuration applied!');
+            } else {
+                console.log('❌ Map instance or current quiz not available');
             }
             
             // Update color bar
@@ -398,6 +404,7 @@ class QuizGame {
             
             // Clear feedback and start new quiz
             this.clearFeedback();
+            console.log(`🎯 Starting round ${this.currentProgress + 1} with new dataset...`);
             this.startNewQuiz();
         }
     }
