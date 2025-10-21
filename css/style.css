@@ -1,5 +1,58 @@
 /* ===== FIXED LAYOUT DESIGN ===== */
 
+/* Game Completion Screen */
+.completion-screen {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.completion-screen h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.score-display {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.score-display strong {
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.completion-actions {
+    margin-top: 30px;
+}
+
+.play-again-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.play-again-btn:hover {
+    background: #0056b3;
+}
+
+.play-again-btn i {
+    width: 16px;
+    height: 16px;
+}
+
 /* Base Styles */
 * {
     margin: 0;

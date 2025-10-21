@@ -21,23 +21,20 @@ class QuizGame {
     async init() {
         console.log('🎯 Quiz Game initializing...');
         
-        // Load quiz data
-        await this.loadQuizData();
-        
-        // Setup event listeners
+        // Setup event listeners first
         this.setupEventListeners();
         
-        // Wait for map
-        await this.waitForMap();
+        // Load quiz data
+        await this.loadQuizData();
         
         // Initialize learn mode
         this.initializeLearnModeSequence();
         
-        // Start with learn mode by default
-        this.setGameMode('learn');
-        
         this.isReady = true;
         console.log('🎯 Quiz Game ready!');
+        
+        // Start with learn mode by default
+        this.setGameMode('learn');
     }
 
     async loadQuizData() {
@@ -56,22 +53,7 @@ class QuizGame {
         }
     }
 
-    async waitForMap() {
-        let attempts = 0;
-        const maxAttempts = 100;
-        
-        while (!window.mapInstance && attempts < maxAttempts) {
-            await new Promise(resolve => setTimeout(resolve, 100));
-            attempts++;
-        }
-        
-        if (!window.mapInstance) {
-            console.error('❌ Map instance not available');
-            return false;
-        }
-        
-        return true;
-    }
+    // Map will be handled by App.js
 
     initializeLearnModeSequence() {
         if (this.learnModeSequence.length === 0 && this.datasetList.length > 0) {
@@ -87,13 +69,7 @@ class QuizGame {
 
     setupEventListeners() {
         // Game mode buttons
-        const learnBtn = document.getElementById('learnModeBtn');
-        const playBtn = document.getElementById('playModeBtn');
-        const multipleBtn = document.getElementById('multipleModeBtn');
-        
-        if (learnBtn) learnBtn.addEventListener('click', () => this.setGameMode('learn'));
-        if (playBtn) playBtn.addEventListener('click', () => this.setGameMode('play'));
-        if (multipleBtn) multipleBtn.addEventListener('click', () => this.setGameMode('multiple'));
+        // Mode toggle buttons are handled by App.js
         
         // Input handling
         const guessInput = document.getElementById('guessInput');
@@ -112,6 +88,7 @@ class QuizGame {
     }
 
     setGameMode(mode) {
+        console.log(`🎮 Setting game mode to: ${mode}`);
         this.gameMode = mode;
         this.isLearnMode = (mode === 'learn');
         
@@ -125,6 +102,7 @@ class QuizGame {
         if (this.isLearnMode) {
             this.startLearnMode();
         } else {
+            console.log(`🎮 Starting new quiz in ${mode} mode`);
             this.startNewQuiz();
         }
         
@@ -149,9 +127,13 @@ class QuizGame {
     }
 
     startNewQuiz() {
+        console.log(`🎯 Starting new quiz in ${this.gameMode} mode`);
+        
         if (this.datasetList.length > 0) {
             const randomIndex = Math.floor(Math.random() * this.datasetList.length);
             this.currentQuiz = this.datasetList[randomIndex];
+            
+            console.log(`🎯 Selected quiz: ${this.currentQuiz.title}`);
             
             // Apply quiz to map
             if (window.mapInstance && this.currentQuiz) {
@@ -162,12 +144,20 @@ class QuizGame {
             this.updateColorBar();
             
             if (this.gameMode === 'multiple') {
+                console.log('🎯 Showing multiple choice');
                 this.hideAnswerTitle();
                 this.showMultipleChoice();
+            } else if (this.gameMode === 'play') {
+                console.log('🎯 Showing play mode input');
+                this.hideAnswerTitle();
+                this.showPlayModeInput();
             } else {
+                console.log('🎯 Unknown game mode, defaulting to play mode');
                 this.hideAnswerTitle();
                 this.showPlayModeInput();
             }
+        } else {
+            console.log('❌ No datasets available');
         }
     }
 
@@ -189,12 +179,27 @@ class QuizGame {
             </button>
         `;
         
-        // Add event listeners
-        const nextBtn = document.getElementById('nextQuizBtn');
-        const prevBtn = document.getElementById('prevQuizBtn');
-        
-        if (nextBtn) nextBtn.addEventListener('click', () => this.nextQuestion());
-        if (prevBtn) prevBtn.addEventListener('click', () => this.previousQuestion());
+        // Add event listeners with delay
+        setTimeout(() => {
+            const nextBtn = document.getElementById('nextQuizBtn');
+            const prevBtn = document.getElementById('prevQuizBtn');
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('🎯 Next button clicked');
+                    this.nextQuestion();
+                });
+            }
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('🎯 Previous button clicked');
+                    this.previousQuestion();
+                });
+            }
+        }, 100);
         
         // Update Lucide icons
         if (typeof lucide !== 'undefined') {
@@ -213,17 +218,26 @@ class QuizGame {
             </button>
         `;
         
-        // Re-add event listeners
-        this.setupEventListeners();
-        
         // Clear any existing feedback
         this.clearFeedback();
         
-        // Focus input
-        const guessInput = document.getElementById('guessInput');
-        if (guessInput) {
-            guessInput.focus();
-        }
+        // Add event listeners with delay
+        setTimeout(() => {
+            const guessInput = document.getElementById('guessInput');
+            const submitBtn = document.getElementById('submitGuess');
+            
+            if (guessInput) {
+                guessInput.addEventListener('input', () => this.handleInputChange());
+                guessInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') this.handleSubmitGuess();
+                });
+                guessInput.focus();
+            }
+            
+            if (submitBtn) {
+                submitBtn.addEventListener('click', () => this.handleSubmitGuess());
+            }
+        }, 100);
         
         // Update Lucide icons
         if (typeof lucide !== 'undefined') {
@@ -232,7 +246,12 @@ class QuizGame {
     }
 
     showMultipleChoice() {
-        if (!this.currentQuiz) return;
+        if (!this.currentQuiz) {
+            console.log('❌ No current quiz for multiple choice');
+            return;
+        }
+        
+        console.log('🎯 Showing multiple choice for:', this.currentQuiz.title);
         
         const correctDataset = this.currentQuiz.title;
         const wrongDatasets = this.datasetList
@@ -242,6 +261,9 @@ class QuizGame {
         
         const options = [correctDataset, ...wrongDatasets.map(d => d.title)];
         const shuffledOptions = options.sort(() => Math.random() - 0.5);
+        
+        console.log('🎯 Multiple choice options:', shuffledOptions);
+        console.log('🎯 Correct answer:', correctDataset);
         
         const inputContainer = document.querySelector('.input-container');
         if (!inputContainer) return;
@@ -260,13 +282,18 @@ class QuizGame {
             </div>
         `;
         
-        // Add event listeners
-        document.querySelectorAll('.choice-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const selectedAnswer = e.target.dataset.answer;
-                this.handleMultipleChoiceAnswer(selectedAnswer);
+        // Add event listeners with proper error handling
+        setTimeout(() => {
+            document.querySelectorAll('.choice-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const selectedAnswer = e.target.dataset.answer;
+                    console.log('🎯 Multiple choice clicked:', selectedAnswer);
+                    this.handleMultipleChoiceAnswer(selectedAnswer);
+                });
             });
-        });
+        }, 100);
         
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
@@ -274,11 +301,20 @@ class QuizGame {
     }
 
     handleMultipleChoiceAnswer(selectedAnswer) {
+        console.log('🎯 Handling multiple choice answer:', selectedAnswer);
+        console.log('🎯 Correct answer:', this.currentQuiz.title);
+        
         const isCorrect = selectedAnswer === this.currentQuiz.title;
+        console.log('🎯 Is correct:', isCorrect);
+        
+        // Disable all buttons
+        document.querySelectorAll('.choice-btn').forEach(btn => {
+            btn.disabled = true;
+            btn.style.pointerEvents = 'none';
+        });
         
         // Visual feedback
         document.querySelectorAll('.choice-btn').forEach(btn => {
-            btn.disabled = true;
             if (btn.dataset.answer === this.currentQuiz.title) {
                 btn.classList.add('correct');
             } else if (btn.dataset.answer === selectedAnswer && !isCorrect) {
@@ -288,6 +324,9 @@ class QuizGame {
         
         // Update progress
         this.updateProgressBar(isCorrect);
+        
+        // Show feedback
+        this.showFeedback(isCorrect);
         
         // Auto-advance after 2 seconds
         setTimeout(() => {
@@ -351,9 +390,14 @@ class QuizGame {
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
             this.loadLearnModeDataset();
         } else {
-            // Reset progress for new quiz
-            this.currentProgress = 0;
-            this.resetProgressBar();
+            // Check if game is completed (10 rounds)
+            if (this.currentProgress >= 10) {
+                this.showGameCompletion();
+                return;
+            }
+            
+            // Clear feedback and start new quiz
+            this.clearFeedback();
             this.startNewQuiz();
         }
     }
@@ -413,7 +457,9 @@ class QuizGame {
     resetProgressBar() {
         const progressCircles = document.querySelectorAll('.progress-circle');
         progressCircles.forEach((circle, index) => {
-            circle.className = 'progress-circle';
+            // Remove all classes first
+            circle.classList.remove('current', 'empty', 'correct', 'wrong');
+            
             if (index === 0) {
                 circle.classList.add('current');
                 circle.setAttribute('data-lucide', 'circle');
@@ -491,6 +537,65 @@ class QuizGame {
         if (feedbackElement) {
             feedbackElement.textContent = '';
             feedbackElement.className = 'feedback';
+        }
+    }
+
+    showGameCompletion() {
+        console.log('🎉 Game completed!');
+        
+        // Calculate score
+        const correctAnswers = this.currentProgress;
+        const totalQuestions = 10;
+        
+        // Show completion screen
+        const inputContainer = document.querySelector('.input-container');
+        if (inputContainer) {
+            inputContainer.innerHTML = `
+                <div class="completion-screen">
+                    <h2>🎉 Game Complete!</h2>
+                    <div class="score-display">
+                        <p>You got <strong>${correctAnswers}</strong> out of <strong>${totalQuestions}</strong> correct!</p>
+                        <p>Score: <strong>${Math.round((correctAnswers / totalQuestions) * 100)}%</strong></p>
+                    </div>
+                    <div class="completion-actions">
+                        <button id="playAgainBtn" class="play-again-btn">
+                            <i data-lucide="refresh-cw"></i>
+                            Play Again
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            // Add event listener for play again
+            setTimeout(() => {
+                const playAgainBtn = document.getElementById('playAgainBtn');
+                if (playAgainBtn) {
+                    playAgainBtn.addEventListener('click', () => {
+                        this.restartGame();
+                    });
+                }
+            }, 100);
+            
+            // Update Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+    }
+
+    restartGame() {
+        console.log('🔄 Restarting game...');
+        
+        // Reset all game state
+        this.resetGameState();
+        
+        // Start new game based on current mode
+        if (this.gameMode === 'multiple') {
+            this.showMultipleChoice();
+        } else if (this.gameMode === 'play') {
+            this.showPlayModeInput();
+        } else {
+            this.startLearnMode();
         }
     }
 }

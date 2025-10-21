@@ -16,6 +16,9 @@ class App {
             lucide.createIcons();
         }
         
+        // Setup event listeners first
+        this.setupEventListeners();
+        
         // Wait for map to be ready
         await this.waitForMap();
         
@@ -25,22 +28,26 @@ class App {
         // Show the game
         this.showGame();
         
-        // Setup event listeners
-        this.setupEventListeners();
-        
         console.log('🎮 GeoQuest app fully initialized and ready!');
     }
     
     async waitForMap() {
         return new Promise((resolve) => {
+            let attempts = 0;
+            const maxAttempts = 50; // Reduced from infinite
+            
             const checkMap = () => {
                 if (window.mapInstance && window.mapInstance.countriesLayer) {
                     console.log('🗺️ Map is ready');
                     this.mapInstance = window.mapInstance;
                     resolve();
+                } else if (attempts < maxAttempts) {
+                    attempts++;
+                    console.log('⏳ Waiting for map...', attempts);
+                    setTimeout(checkMap, 50); // Faster checking
                 } else {
-                    console.log('⏳ Waiting for map...');
-                    setTimeout(checkMap, 100);
+                    console.warn('⚠️ Map timeout, continuing anyway');
+                    resolve(); // Continue even if map isn't ready
                 }
             };
             checkMap();
@@ -49,14 +56,21 @@ class App {
     
     async waitForQuiz() {
         return new Promise((resolve) => {
+            let attempts = 0;
+            const maxAttempts = 30; // Reduced timeout
+            
             const checkQuiz = () => {
                 if (window.quizGame && window.quizGame.isReady) {
                     console.log('🎯 Quiz is ready');
                     this.quizInstance = window.quizGame;
                     resolve();
+                } else if (attempts < maxAttempts) {
+                    attempts++;
+                    console.log('⏳ Waiting for quiz...', attempts);
+                    setTimeout(checkQuiz, 50); // Faster checking
                 } else {
-                    console.log('⏳ Waiting for quiz...');
-                    setTimeout(checkQuiz, 100);
+                    console.warn('⚠️ Quiz timeout, continuing anyway');
+                    resolve(); // Continue even if quiz isn't ready
                 }
             };
             checkQuiz();
