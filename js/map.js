@@ -901,7 +901,12 @@ class WorldMap {
             if (countryData.color) {
                 style.fillColor = countryData.color;
                 style.fillOpacity = 0.8;
+                console.log(`🎨 Map color applied for ${countryName}:`, countryData.color);
+            } else {
+                console.warn(`🎨 No color found for ${countryName}:`, countryData);
             }
+        } else {
+            console.log(`🎨 No quiz data for ${countryName}`);
         }
         
         return style;
@@ -1229,6 +1234,9 @@ class WorldMap {
     }
     
     createLegend(quiz) {
+        console.log('🎨 createLegend called for quiz:', quiz.title);
+        console.log('🎨 Quiz color scheme:', quiz.colorScheme);
+        
         // Validate quiz data
         if (!quiz || !quiz.countries || Object.keys(quiz.countries).length === 0) {
             console.warn('No valid quiz data for legend creation');
@@ -1241,9 +1249,13 @@ class WorldMap {
             .map(([country, data]) => ({ 
                 country, 
                 value: data.value, 
-                unit: data.unit || '' 
+                unit: data.unit || '',
+                color: data.color || '#ffffff'
             }))
             .sort((a, b) => b.value - a.value);
+        
+        console.log('🎨 Countries with values found:', countriesWithValues.length);
+        console.log('🎨 Sample countries:', countriesWithValues.slice(0, 3));
         
         if (countriesWithValues.length === 0) {
             console.warn('No valid countries with values found');
@@ -1255,6 +1267,9 @@ class WorldMap {
         
         // Update new legend
         this.updateNewLegend(top10, bottom10, countriesWithValues.length);
+        
+        // Update color bar gradient to match the quiz colors
+        this.updateLegendGradient(quiz);
     }
 
     updateNewLegend(top10, bottom10, totalCountries) {
@@ -1373,8 +1388,37 @@ class WorldMap {
     }
     
     updateLegendGradient(quiz) {
+        console.log('🎨 updateLegendGradient called for quiz:', quiz.title);
+        console.log('🎨 Quiz color scheme:', quiz.colorScheme);
+        
+        // Update the footer color bar gradient
+        const colorBarGradient = document.getElementById('colorBarGradient');
+        if (colorBarGradient && quiz.colorScheme) {
+            console.log('🎨 Updating footer color bar gradient');
+            // Use multi-color gradient if available, otherwise fall back to simple gradient
+            if (quiz.colorScheme.colors && quiz.colorScheme.colors.length > 2) {
+                const colorStops = quiz.colorScheme.colors.map((color, index) => {
+                    const percentage = (index / (quiz.colorScheme.colors.length - 1)) * 100;
+                    return `${color} ${percentage}%`;
+                }).join(', ');
+                const gradient = `linear-gradient(to right, ${colorStops})`;
+                colorBarGradient.style.background = gradient;
+                console.log('🎨 Applied multi-color gradient to footer:', gradient);
+            } else {
+                const minColor = quiz.colorScheme.minColor;
+                const maxColor = quiz.colorScheme.maxColor;
+                const gradient = `linear-gradient(to right, ${minColor}, ${maxColor})`;
+                colorBarGradient.style.background = gradient;
+                console.log('🎨 Applied simple gradient to footer:', gradient);
+            }
+        } else {
+            console.warn('🎨 No color bar gradient element found or no color scheme');
+        }
+        
+        // Also update any legacy gradient bars
         const gradientBar = document.querySelector('.gradient-bar');
         if (gradientBar && quiz.colorScheme) {
+            console.log('🎨 Updating legacy gradient bar');
             // Use multi-color gradient if available, otherwise fall back to simple gradient
             if (quiz.colorScheme.colors && quiz.colorScheme.colors.length > 2) {
                 const colorStops = quiz.colorScheme.colors.map((color, index) => {

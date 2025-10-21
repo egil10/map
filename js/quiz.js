@@ -5295,7 +5295,8 @@ class QuizGame {
             return;
         }
         
-        // Reduced logging for performance
+        console.log('🎨 updateColorBar called for quiz:', this.currentQuiz.title);
+        console.log('🎨 Color scheme:', this.currentQuiz.colorScheme);
         
         const colorBarGradient = document.getElementById('colorBarGradient');
         const colorBarMin = document.getElementById('colorBarMin');
@@ -5304,25 +5305,36 @@ class QuizGame {
         const colorBarQ3 = document.getElementById('colorBarQ3');
         const colorBarMax = document.getElementById('colorBarMax');
         
-        // Reduced logging for performance
+        console.log('🎨 Color bar elements found:', {
+            gradient: !!colorBarGradient,
+            min: !!colorBarMin,
+            q1: !!colorBarQ1,
+            mid: !!colorBarMid,
+            q3: !!colorBarQ3,
+            max: !!colorBarMax
+        });
         
         if (colorBarGradient && this.currentQuiz.colorScheme) {
             const scheme = this.currentQuiz.colorScheme;
-            // Reduced logging for performance
+            console.log('🎨 Applying color scheme:', scheme);
             
             if (scheme.type === 'gradient' && scheme.colors) {
                 const colorStops = scheme.colors.map((color, index) => {
                     const percentage = (index / (scheme.colors.length - 1)) * 100;
                     return `${color} ${percentage}%`;
                 }).join(', ');
-                colorBarGradient.style.background = `linear-gradient(to right, ${colorStops})`;
-                // Reduced logging for performance
+                const gradient = `linear-gradient(to right, ${colorStops})`;
+                colorBarGradient.style.background = gradient;
+                console.log('🎨 Applied multi-color gradient:', gradient);
             } else if (scheme.minColor && scheme.maxColor) {
-                colorBarGradient.style.background = `linear-gradient(to right, ${scheme.minColor}, ${scheme.maxColor})`;
-                // Reduced logging for performance
+                const gradient = `linear-gradient(to right, ${scheme.minColor}, ${scheme.maxColor})`;
+                colorBarGradient.style.background = gradient;
+                console.log('🎨 Applied simple gradient:', gradient);
+            } else {
+                console.warn('🎨 No valid color scheme found for gradient');
             }
         } else {
-            // Reduced logging for performance
+            console.warn('🎨 No color bar gradient element or color scheme found');
         }
         
         if (this.currentQuiz.countries) {
