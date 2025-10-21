@@ -5101,51 +5101,53 @@ class QuizGame {
             return;
         }
         
+        // Ensure datasetList is populated
         if (!this.datasetList || this.datasetList.length < 4) {
             console.log('❌ Not enough datasets for multiple choice:', this.datasetList?.length);
-            // Show a loading message and try to load datasets
-            const loadingContainer = document.querySelector('.input-container');
-            if (loadingContainer) {
-                loadingContainer.innerHTML = `
-                    <div class="multiple-choice">
-                        <h3>Loading datasets...</h3>
-                        <p>Please wait while we load the datasets.</p>
-                    </div>
-                `;
+            console.log('🎯 Attempting to populate datasetList from quizData...');
+            
+            // Try to populate datasetList from quizData if available
+            if (this.quizData && this.quizData.quizzes) {
+                this.datasetList = Object.values(this.quizData.quizzes)
+                    .sort((a, b) => a.title.localeCompare(b.title));
+                console.log('🎯 Populated datasetList from quizData:', this.datasetList.length);
             }
             
-            // Create fallback options if no datasets
-            console.log('🎯 Creating fallback multiple choice options');
-            const fallbackContainer = document.querySelector('.input-container');
-            if (fallbackContainer) {
-                fallbackContainer.innerHTML = `
-                    <div class="multiple-choice">
-                        <div class="choice-options">
-                            <button class="choice-btn" data-answer="Population">Population</button>
-                            <button class="choice-btn" data-answer="GDP">GDP</button>
-                            <button class="choice-btn" data-answer="Area">Area</button>
-                            <button class="choice-btn" data-answer="Oil Production">Oil Production</button>
+            // If still not enough datasets, create fallback options
+            if (!this.datasetList || this.datasetList.length < 4) {
+                console.log('🎯 Creating fallback multiple choice options');
+                const fallbackContainer = document.querySelector('.input-container');
+                if (fallbackContainer) {
+                    fallbackContainer.innerHTML = `
+                        <div class="multiple-choice">
+                            <div class="choice-options">
+                                <button class="choice-btn" data-answer="Population">Population</button>
+                                <button class="choice-btn" data-answer="GDP">GDP</button>
+                                <button class="choice-btn" data-answer="Area">Area</button>
+                                <button class="choice-btn" data-answer="Oil Production">Oil Production</button>
+                            </div>
                         </div>
-                    </div>
-                `;
-                
-                // Add event listeners
-                document.querySelectorAll('.choice-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        const selectedAnswer = e.target.dataset.answer;
-                        this.handleMultipleChoiceAnswer(selectedAnswer);
+                    `;
+                    
+                    // Add event listeners
+                    document.querySelectorAll('.choice-btn').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const selectedAnswer = e.target.dataset.answer;
+                            this.handleMultipleChoiceAnswer(selectedAnswer);
+                        });
                     });
-                });
-                
-                
-                if (typeof lucide !== 'undefined') {
-                    lucide.createIcons();
+                    
+                    if (typeof lucide !== 'undefined') {
+                        lucide.createIcons();
+                    }
                 }
+                return;
             }
-            return;
         }
         
         const correctDataset = this.currentQuiz.title;
+        console.log('🎯 Correct dataset:', correctDataset);
+        console.log('🎯 Available datasets:', this.datasetList.length);
         
         // Get 3 random wrong datasets from the dataset list
         const wrongDatasets = this.datasetList
@@ -5153,16 +5155,18 @@ class QuizGame {
             .sort(() => Math.random() - 0.5)
             .slice(0, 3);
         
-        console.log('🎯 Dataset list length:', this.datasetList.length);
         console.log('🎯 Wrong datasets found:', wrongDatasets.length);
         console.log('🎯 Wrong datasets:', wrongDatasets.map(d => d.title));
         
-        // Create options array with correct answer
-        const options = [correctDataset, ...wrongDatasets.map(d => d.title)].sort(() => Math.random() - 0.5);
+        // Create options array with correct answer and 3 random wrong answers
+        const options = [correctDataset, ...wrongDatasets.map(d => d.title)];
         
-        console.log('🎯 Multiple choice options:', options);
+        // Shuffle the options so correct answer is in random position
+        const shuffledOptions = options.sort(() => Math.random() - 0.5);
+        
+        console.log('🎯 Multiple choice options (shuffled):', shuffledOptions);
         console.log('🎯 Correct answer:', correctDataset);
-        console.log('🎯 Total options:', options.length);
+        console.log('🎯 Total options:', shuffledOptions.length);
         
         // Replace input container content with multiple choice
         const inputContainer = document.querySelector('.input-container');
@@ -5177,7 +5181,7 @@ class QuizGame {
             <div class="multiple-choice">
                 <div class="choice-options-container">
                     <div class="choice-options">
-                        ${options.map((option, index) => `
+                        ${shuffledOptions.map((option, index) => `
                             <button class="choice-btn" data-answer="${option}">
                                 ${option}
                             </button>
@@ -5189,6 +5193,7 @@ class QuizGame {
         
         console.log('🎯 Generated HTML:', htmlContent);
         console.log('🎯 Number of buttons in HTML:', (htmlContent.match(/choice-btn/g) || []).length);
+        console.log('🎯 Final shuffled options:', shuffledOptions);
         
         inputContainer.innerHTML = htmlContent;
         
