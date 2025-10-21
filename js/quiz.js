@@ -57,12 +57,14 @@ class QuizGame {
     async init() {
         this.setupEventListeners();
         
-        // Wait for map to be ready before loading quiz data
+        // Load quiz data first
+        await this.loadAllQuizData();
+        this.updateModeToggle(); // Initialize mode toggle
+        
+        // Wait for map to be ready before starting quiz
         const mapReady = await this.waitForMap();
         if (mapReady) {
-            // Load quiz data after map is ready (lazy loading)
-            await this.loadAllQuizData();
-            this.updateModeToggle(); // Initialize mode toggle
+            console.log('🗺️ Map ready, starting quiz');
             this.startNewQuiz();
         } else {
             console.error('❌ Failed to initialize map, retrying in 2 seconds...');
@@ -108,8 +110,7 @@ class QuizGame {
             this.quizData = await response.json();
             console.log('🎮 Base quiz data loaded:', Object.keys(this.quizData.quizzes).length, 'quizzes');
             
-            // Start the quiz immediately with base data
-            this.startNewQuiz();
+            // Quiz will be started when map is ready
             
             // Now convert and add all the new data files (in background)
             this.loadConvertedData().then(() => {
@@ -1000,10 +1001,6 @@ class QuizGame {
             if (landlockedNeighboursOceanAccessQuiz) {
                 this.quizData.quizzes[landlockedNeighboursOceanAccessQuiz.id] = landlockedNeighboursOceanAccessQuiz;
                 console.log('🏔️ Added Landlocked Countries with Ocean Access quiz');
-            }
-            
-                    } catch (error) {
-                console.error('❌ Error loading converted data:', error);
             }
             
             // Log summary of loaded datasets
@@ -4335,16 +4332,18 @@ class QuizGame {
             this.hideAnswerTitle();
             this.hideSkipButton();
             
-            // Reset input and button for play mode
+            // Reset input and button for play mode (only if they exist)
             const guessInput = document.getElementById('guessInput');
             const submitButton = document.getElementById('submitGuess');
             
-            guessInput.disabled = false;
-            submitButton.style.display = 'flex';
-            submitButton.disabled = true; // Will be enabled when user types
-            guessInput.value = '';
-            guessInput.placeholder = 'What does this map show?';
-            guessInput.focus();
+            if (guessInput && submitButton) {
+                guessInput.disabled = false;
+                submitButton.style.display = 'flex';
+                submitButton.disabled = true; // Will be enabled when user types
+                guessInput.value = '';
+                guessInput.placeholder = 'What does this map show?';
+                guessInput.focus();
+            }
             
             // Ensure skip buttons are hidden in play mode
             this.hideSkipButton();
@@ -4981,7 +4980,7 @@ class QuizGame {
         }
         
         // Reset progress circles
-        this.updateProgressCircles();
+        this.resetProgressCircles();
         
         // Start a new quiz
         this.startNewQuiz();
@@ -4990,6 +4989,15 @@ class QuizGame {
     // Method to reset game when user explicitly wants to start over
     restartGame() {
         this.resetGameState();
+    }
+    
+    resetProgressCircles() {
+        const circles = document.querySelectorAll('.progress-circle');
+        circles.forEach(circle => {
+            circle.classList.remove('correct', 'wrong', 'empty');
+            circle.classList.add('empty');
+        });
+        this.currentProgress = 0;
     }
     
     initializeLearnModeSequence() {
@@ -5247,7 +5255,7 @@ class QuizGame {
         });
         
         // Update progress
-        this.updateProgress(isCorrect);
+        this.updateProgressBar(isCorrect);
         
         // Show feedback
         if (isCorrect) {
