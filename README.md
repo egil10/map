@@ -18,7 +18,6 @@ GeoQuest is an educational web application that combines interactive world maps 
 - **Enter**: Submit guess
 - **H**: Show hint
 - **S**: Skip quiz
-- **R**: Restart game (reset score)
 - **N**: Start new quiz immediately
 - **ESC**: Clear country selection
 

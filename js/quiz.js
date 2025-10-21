@@ -358,11 +358,6 @@ class QuizGame {
                     e.preventDefault();
                     this.skipQuiz();
                     break;
-                case 'r':
-                case 'R':
-                    e.preventDefault();
-                    this.restartGame();
-                    break;
                 case 'n':
                 case 'N':
                     e.preventDefault();

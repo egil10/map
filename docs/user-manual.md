@@ -49,7 +49,6 @@ GeoQuest is an interactive world map quiz game where you guess what data is repr
 - **Enter**: Submit your guess
 - **H**: Show hint
 - **S**: Skip current quiz
-- **R**: Restart game (reset score)
 - **N**: Start new quiz immediately
 - **ESC**: Clear country selection
 
