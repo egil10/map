@@ -1151,11 +1151,10 @@ body {
 
 .choice-options {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    grid-template-rows: 1fr 1fr; /* 2 rows */
-    gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns in one row */
+    gap: 4px; /* Minimal gap */
     width: 100%;
-    max-width: 1000px; /* Increased from 800px */
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -1194,31 +1193,31 @@ body {
 }
 
 .choice-btn {
-    padding: 20px 24px;
+    padding: 6px 8px;
     background: #ffffff;
-    border: 2px solid #e1e5e9;
-    border-radius: 12px;
+    border: 1px solid #e1e5e9;
+    border-radius: 6px;
     color: #1a1a1a;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s ease;
     font-family: 'Space Grotesk', sans-serif;
-    text-align: left;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: unset;
-    min-height: 100px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 32px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    line-height: 1.5;
+    justify-content: center;
+    line-height: 1.2;
     width: 100%;
     text-indent: 0;
     word-wrap: break-word;
     hyphens: auto;
     position: relative;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .choice-btn:disabled {
@@ -1241,28 +1240,26 @@ body {
 .choice-btn:hover {
     background: #f8fafc;
     border-color: #3b82f6;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
     z-index: 10;
     position: relative;
 }
 
 .choice-btn.correct {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: #22c55e;
     border-color: #16a34a;
     color: white;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
-    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(34, 197, 94, 0.3);
 }
 
 .choice-btn.incorrect {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
+    background: #ef4444;
     border-color: #dc2626;
     color: white;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
-    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.3);
 }
 
 /* Modern button focus state */
