@@ -4843,11 +4843,19 @@ class QuizGame {
             this.isLearnMode = false;
             // Clear the input container first
             inputContainer.innerHTML = '';
-            // Ensure we have a quiz before showing multiple choice
+            // Ensure we have a quiz and datasets before showing multiple choice
             if (!this.currentQuiz) {
                 this.startNewQuiz();
             }
-            this.showMultipleChoice();
+            // Wait for datasets to be loaded
+            if (!this.datasetList || this.datasetList.length === 0) {
+                console.log('🎯 Loading datasets for multiple choice...');
+                this.loadDatasets().then(() => {
+                    this.showMultipleChoice();
+                });
+            } else {
+                this.showMultipleChoice();
+            }
         }
         
         // Update color bar when mode changes
@@ -4967,6 +4975,27 @@ class QuizGame {
         
         if (!this.datasetList || this.datasetList.length < 4) {
             console.log('❌ Not enough datasets for multiple choice:', this.datasetList?.length);
+            // Show a loading message and try to load datasets
+            const inputContainer = document.querySelector('.input-container');
+            if (inputContainer) {
+                inputContainer.innerHTML = `
+                    <div class="multiple-choice">
+                        <h3>Loading datasets...</h3>
+                        <p>Please wait while we load the datasets.</p>
+                    </div>
+                `;
+            }
+            
+            // Try to load datasets if they're not loaded
+            if (!this.datasetList || this.datasetList.length === 0) {
+                console.log('🎯 Attempting to load datasets...');
+                this.loadDatasets().then(() => {
+                    console.log('🎯 Datasets loaded, retrying multiple choice');
+                    this.showMultipleChoice();
+                }).catch(() => {
+                    console.log('❌ Failed to load datasets');
+                });
+            }
             return;
         }
         
@@ -4991,7 +5020,12 @@ class QuizGame {
         
         // Replace input container content with multiple choice
         const inputContainer = document.querySelector('.input-container');
-        if (!inputContainer) return;
+        if (!inputContainer) {
+            console.log('❌ Input container not found!');
+            return;
+        }
+        
+        console.log('🎯 Input container found, proceeding with HTML generation');
         
         const htmlContent = `
             <div class="multiple-choice">
@@ -5014,6 +5048,25 @@ class QuizGame {
         console.log('🎯 Number of buttons in HTML:', (htmlContent.match(/choice-btn/g) || []).length);
         
         inputContainer.innerHTML = htmlContent;
+        
+        // Force a simple test if no buttons are created
+        setTimeout(() => {
+            const testButtons = document.querySelectorAll('.choice-btn');
+            if (testButtons.length === 0) {
+                console.log('❌ No buttons created, showing fallback');
+                inputContainer.innerHTML = `
+                    <div class="multiple-choice">
+                        <h3>Test Multiple Choice</h3>
+                        <div class="choice-options">
+                            <button class="choice-btn" data-answer="Option 1">Option 1</button>
+                            <button class="choice-btn" data-answer="Option 2">Option 2</button>
+                            <button class="choice-btn" data-answer="Option 3">Option 3</button>
+                            <button class="choice-btn" data-answer="Option 4">Option 4</button>
+                        </div>
+                    </div>
+                `;
+            }
+        }, 100);
         
         // Debug: Check how many buttons were actually created
         const actualButtons = document.querySelectorAll('.choice-btn');
