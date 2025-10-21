@@ -121,11 +121,15 @@ class App {
     }
     
     setGameMode(mode) {
+        console.log('🎮 Setting game mode to:', mode);
         this.currentMode = mode;
         
         // Update quiz instance
         if (this.quizInstance) {
+            console.log('🎮 Quiz instance found, calling setGameMode');
             this.quizInstance.setGameMode(mode);
+        } else {
+            console.log('❌ No quiz instance found!');
         }
         
         // Update active button states

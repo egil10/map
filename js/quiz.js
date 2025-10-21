@@ -108,13 +108,17 @@ class QuizGame {
             this.quizData = await response.json();
             console.log('🎮 Base quiz data loaded:', Object.keys(this.quizData.quizzes).length, 'quizzes');
             
-            // Now convert and add all the new data files
-            await this.loadConvertedData();
+            // Start the quiz immediately with base data
+            this.startNewQuiz();
             
-            console.log('🎮 Total quizzes available:', Object.keys(this.quizData.quizzes).length, 'quizzes');
-            
-            // Update dataset counter
-            this.updateDatasetCounter();
+            // Now convert and add all the new data files (in background)
+            this.loadConvertedData().then(() => {
+                console.log('🎮 Total quizzes available:', Object.keys(this.quizData.quizzes).length, 'quizzes');
+                this.updateDatasetCounter();
+            }).catch(error => {
+                console.log('⚠️ Some datasets failed to load, but continuing with base data');
+                this.updateDatasetCounter();
+            });
         } catch (error) {
             console.error('❌ Error loading quiz data:', error);
             this.quizData = { quizzes: {} };
@@ -1006,6 +1010,9 @@ class QuizGame {
             const totalLoaded = Object.keys(this.quizData.quizzes).length;
             console.log(`📊 Dataset loading complete: ${totalLoaded} datasets loaded successfully`);
             console.log('📋 Loaded dataset IDs:', Object.keys(this.quizData.quizzes).sort());
+        } catch (error) {
+            console.error('❌ Error in loadConvertedData:', error);
+        }
     }
     
     async convertLandAreaData() {
@@ -1017,6 +1024,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'Earth' && item.country !== 'Antarctica') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1100,6 +1112,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'Earth') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1159,6 +1176,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1218,6 +1240,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1278,6 +1305,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1339,6 +1371,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1400,6 +1437,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 const mappedCountryName = this.countryMapper.mapCountryName(item.country);
                 countries[mappedCountryName] = {
@@ -1459,6 +1501,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1520,6 +1567,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1578,6 +1630,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1635,6 +1692,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1692,6 +1754,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1749,6 +1816,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1806,6 +1878,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1863,6 +1940,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1920,6 +2002,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -1977,6 +2064,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -2150,6 +2242,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 const mappedCountryName = this.countryMapper.mapCountryName(item.country);
                 console.log(`Mapping: "${item.country}" -> "${mappedCountryName}"`);
@@ -2207,6 +2304,11 @@ class QuizGame {
             const values = [];
 
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 const mappedCountryName = this.countryMapper.mapCountryName(item.country);
                 countries[mappedCountryName] = {
@@ -2551,6 +2653,11 @@ class QuizGame {
             
             const countries = {};
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 const mappedCountryName = this.countryMapper.mapCountryName(item.country);
                 if (mappedCountryName) {
@@ -2659,6 +2766,11 @@ class QuizGame {
             const values = [];
             
             // Process data and collect values for color scaling
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -6968,6 +7080,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7016,6 +7133,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7066,6 +7188,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7114,6 +7241,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7164,6 +7296,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7212,6 +7349,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7262,6 +7404,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7310,6 +7457,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7360,6 +7512,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7407,6 +7564,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7457,6 +7619,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7505,6 +7672,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7555,6 +7727,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7603,6 +7780,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7653,6 +7835,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7701,6 +7888,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7751,6 +7943,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7800,6 +7997,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -7847,6 +8049,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -7896,6 +8103,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9299,6 +9511,16 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Horse population data format not supported, skipping...');
+                return null;
+            }
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9353,6 +9575,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9409,6 +9636,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9463,6 +9695,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9519,6 +9756,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9573,6 +9815,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9629,6 +9876,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9683,6 +9935,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9739,6 +9996,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9793,6 +10055,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -9849,6 +10116,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9904,6 +10176,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -9958,6 +10235,11 @@ class QuizGame {
             
             const countries = {};
             const anthemTypes = {};
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -10016,6 +10298,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -10070,6 +10357,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -10126,6 +10418,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -10180,6 +10477,11 @@ class QuizGame {
             
             const countries = {};
             const values = [];
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
@@ -10236,6 +10538,11 @@ class QuizGame {
             const countries = {};
             const values = [];
             
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
+            
             data.data.forEach(item => {
                 if (item.country !== 'World') {
                     const mappedCountryName = this.countryMapper.mapCountryName(item.country);
@@ -10289,6 +10596,11 @@ class QuizGame {
             const data = await response.json();
             
             const countries = {};
+            
+            if (!data.data || !Array.isArray(data.data)) {
+                console.log('⚠️ Data format not supported, skipping...');
+                return null;
+            }
             
             data.data.forEach(item => {
                 if (item.country !== 'World') {
