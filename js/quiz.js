@@ -14,6 +14,8 @@ class QuizGame {
         this.datasetList = [];
         this.isReady = false;
         this.lastAnswerWasCorrect = undefined;
+        this.waitingForNext = false;
+        this.nextQuestionListener = null;
         
         this.init();
     }
@@ -189,10 +191,11 @@ class QuizGame {
                 return null;
             });
             
-            const results = await Promise.all(loadPromises);
-            this.datasetList = results.filter(dataset => dataset !== null);
-            
-            console.log(`📊 Loaded ${this.datasetList.length} datasets from data folder`);
+                const results = await Promise.all(loadPromises);
+                this.datasetList = results.filter(dataset => dataset !== null);
+                
+                console.log(`📊 Loaded ${this.datasetList.length} valid datasets from data folder`);
+                console.log(`⚠️ Skipped ${dataFiles.length - this.datasetList.length} invalid/empty datasets`);
         } catch (error) {
             console.error('❌ Failed to load quiz data:', error);
             this.datasetList = [];
@@ -240,6 +243,28 @@ class QuizGame {
             countries = data.countries;
         }
         
+        // Validate that we have actual country data
+        if (!countries || Object.keys(countries).length === 0) {
+            console.warn(`⚠️ No country data found in ${filename}`);
+            return null; // Skip this dataset
+        }
+        
+        // Check if we have valid numeric values
+        const validCountries = Object.entries(countries).filter(([country, data]) => {
+            return data && typeof data.value === 'number' && !isNaN(data.value) && data.value !== null;
+        });
+        
+        if (validCountries.length === 0) {
+            console.warn(`⚠️ No valid numeric values found in ${filename}`);
+            return null; // Skip this dataset
+        }
+        
+        // Only include countries with valid data
+        const validCountriesObj = {};
+        validCountries.forEach(([country, data]) => {
+            validCountriesObj[country] = data;
+        });
+        
         // Generate random color scheme
         const colorSchemes = [
             { minColor: '#fff3e0', maxColor: '#e65100' },
@@ -267,7 +292,7 @@ class QuizGame {
                 maxColor: randomScheme.maxColor,
                 defaultColor: '#ffffff'
             },
-            countries: countries
+            countries: validCountriesObj
         };
     }
 
@@ -357,7 +382,22 @@ class QuizGame {
         
         if (this.datasetList.length > 0) {
             const randomIndex = Math.floor(Math.random() * this.datasetList.length);
-            this.currentQuiz = this.datasetList[randomIndex];
+            const selectedQuiz = this.datasetList[randomIndex];
+            
+            // Validate dataset has valid data
+            if (!selectedQuiz || !selectedQuiz.countries || Object.keys(selectedQuiz.countries).length === 0) {
+                console.warn('⚠️ Selected invalid dataset, trying another one...');
+                // Remove invalid dataset and try again
+                this.datasetList.splice(randomIndex, 1);
+                if (this.datasetList.length > 0) {
+                    return this.startNewQuiz(); // Try again with remaining datasets
+                } else {
+                    console.error('❌ No valid datasets available');
+                    return;
+                }
+            }
+            
+            this.currentQuiz = selectedQuiz;
             
             console.log(`🎯 Selected quiz: ${this.currentQuiz.title}`);
             console.log(`🎯 Quiz data sample:`, Object.keys(this.currentQuiz.countries).slice(0, 5));
@@ -449,8 +489,9 @@ class QuizGame {
             </button>
         `;
         
-        // Clear any existing feedback
+        // Clear any existing feedback and hide answer title
         this.clearFeedback();
+        this.hideAnswerTitle();
         
         // Add event listeners with delay
         setTimeout(() => {
@@ -558,7 +599,7 @@ class QuizGame {
         // Update progress
         this.updateProgressBar(isCorrect);
         
-        // Auto-advance after 2 seconds
+        // Auto-advance after 2 seconds for multiple choice
         setTimeout(() => {
             this.nextQuestion();
         }, 2000);
@@ -589,13 +630,31 @@ class QuizGame {
         // Update progress
         this.updateProgressBar(isCorrect);
         
-        // Show feedback
-        this.showFeedback(isCorrect);
+        // Show the correct answer as feedback (like in learn mode)
+        this.showAnswerTitle();
         
-        // Auto-advance after 2 seconds
-        setTimeout(() => {
-            this.nextQuestion();
-        }, 2000);
+        // Wait for Enter key press to advance instead of auto-advance
+        this.waitingForNext = true;
+        this.setupNextQuestionListener();
+    }
+
+    setupNextQuestionListener() {
+        // Remove existing listener if any
+        if (this.nextQuestionListener) {
+            document.removeEventListener('keydown', this.nextQuestionListener);
+        }
+        
+        // Add new listener for Enter key
+        this.nextQuestionListener = (e) => {
+            if (e.key === 'Enter' && this.waitingForNext) {
+                e.preventDefault();
+                this.waitingForNext = false;
+                document.removeEventListener('keydown', this.nextQuestionListener);
+                this.nextQuestion();
+            }
+        };
+        
+        document.addEventListener('keydown', this.nextQuestionListener);
     }
 
     checkAnswer(userGuess) {
@@ -658,6 +717,13 @@ class QuizGame {
     }
 
     nextQuestion() {
+        // Clean up next question listener
+        if (this.nextQuestionListener) {
+            document.removeEventListener('keydown', this.nextQuestionListener);
+            this.nextQuestionListener = null;
+        }
+        this.waitingForNext = false;
+        
         if (this.isLearnMode) {
             this.learnModeCurrentIndex = (this.learnModeCurrentIndex + 1) % this.learnModeSequence.length;
             this.loadLearnModeDataset();
@@ -670,6 +736,8 @@ class QuizGame {
             
             // Clear feedback and start new quiz
             this.clearFeedback();
+            this.hideAnswerTitle();
+            this.resetInput();
             console.log(`🎯 Starting round ${this.currentProgress + 1} with new dataset...`);
             this.startNewQuiz();
         }
@@ -684,7 +752,22 @@ class QuizGame {
 
     loadLearnModeDataset() {
         if (this.learnModeSequence.length > 0 && this.learnModeCurrentIndex >= 0 && this.learnModeCurrentIndex < this.learnModeSequence.length) {
-            this.currentQuiz = this.learnModeSequence[this.learnModeCurrentIndex];
+            const currentDataset = this.learnModeSequence[this.learnModeCurrentIndex];
+            
+            // Validate dataset has valid data
+            if (!currentDataset || !currentDataset.countries || Object.keys(currentDataset.countries).length === 0) {
+                console.warn('⚠️ Skipping invalid dataset in learn mode:', currentDataset?.title || 'Unknown');
+                this.learnModeCurrentIndex++;
+                if (this.learnModeCurrentIndex >= this.learnModeSequence.length) {
+                    this.learnModeCurrentIndex = 0;
+                }
+                return this.loadLearnModeDataset(); // Try next dataset
+            }
+            
+            this.currentQuiz = currentDataset;
+            
+            console.log('📚 Learn mode dataset loaded:', currentDataset.title);
+            console.log(`📊 Dataset has ${Object.keys(currentDataset.countries).length} countries with data`);
             
             // Apply quiz to map
             if (window.mapInstance && this.currentQuiz) {
@@ -852,6 +935,21 @@ class QuizGame {
         }
     }
 
+    resetInput() {
+        const guessInput = document.getElementById('guessInput');
+        const submitBtn = document.getElementById('submitGuess');
+        
+        if (guessInput) {
+            guessInput.value = '';
+            guessInput.disabled = false;
+            guessInput.focus();
+        }
+        
+        if (submitBtn) {
+            submitBtn.disabled = true;
+        }
+    }
+
     clearFeedback() {
         const feedbackElement = document.querySelector('.feedback');
         if (feedbackElement) {
@@ -861,7 +959,7 @@ class QuizGame {
     }
 
     showGameCompletion() {
-        console.log('🎉 Game completed!');
+        console.log('Game completed!');
         
         // Calculate score
         const correctAnswers = this.currentProgress;
@@ -872,13 +970,24 @@ class QuizGame {
         if (inputContainer) {
             inputContainer.innerHTML = `
                 <div class="completion-screen">
-                    <h2>🎉 Game Complete!</h2>
+                    <h2>Game Complete</h2>
                     <div class="score-display">
                         <p>Score: <strong>${correctAnswers}/10</strong></p>
-                        <p>Press <strong>Enter</strong> to restart</p>
+                    </div>
+                    <div class="completion-actions">
+                        <button class="play-again-btn" id="restartGameBtn">
+                            <i data-lucide="refresh-cw"></i>
+                            Play Again
+                        </button>
                     </div>
                 </div>
             `;
+            
+            // Add event listeners for restart
+            const restartBtn = document.getElementById('restartGameBtn');
+            if (restartBtn) {
+                restartBtn.addEventListener('click', () => this.restartGame());
+            }
             
             // Add Enter key listener for restart
             const handleEnterRestart = (e) => {
@@ -899,7 +1008,7 @@ class QuizGame {
     }
 
     restartGame() {
-        console.log('🔄 Restarting game...');
+        console.log('Restarting game...');
         
         // Reset all game state
         this.resetGameState();
