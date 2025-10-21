@@ -1004,23 +1004,33 @@ class QuizGame {
         const correctAnswers = this.currentProgress;
         const totalQuestions = 10;
         
-        // Show completion screen
-        const inputContainer = document.querySelector('.input-container');
-        if (inputContainer) {
-            inputContainer.innerHTML = `
-                <div class="completion-screen">
-                    <h2>Game Complete</h2>
-                    <div class="score-display">
-                        <p>Score: <strong>${correctAnswers}/10</strong></p>
-                    </div>
-                    <div class="completion-actions">
-                        <button class="play-again-btn" id="restartGameBtn">
-                            <i data-lucide="refresh-cw"></i>
-                            Play Again
-                        </button>
-                    </div>
+        // Show completion screen in the map area
+        const mapContainer = document.querySelector('.map-container');
+        if (mapContainer) {
+            // Remove any existing completion screen
+            const existingCompletion = document.querySelector('.completion-screen');
+            if (existingCompletion) {
+                existingCompletion.remove();
+            }
+            
+            // Create completion screen
+            const completionScreen = document.createElement('div');
+            completionScreen.className = 'completion-screen';
+            completionScreen.innerHTML = `
+                <h2>Game Complete</h2>
+                <div class="score-display">
+                    <p>Score: <strong>${correctAnswers}/10</strong></p>
+                </div>
+                <div class="completion-actions">
+                    <button class="play-again-btn" id="restartGameBtn">
+                        <i data-lucide="refresh-cw"></i>
+                        Play Again
+                    </button>
                 </div>
             `;
+            
+            // Add to map container
+            mapContainer.appendChild(completionScreen);
             
             // Add event listeners for restart
             const restartBtn = document.getElementById('restartGameBtn');
@@ -1048,6 +1058,12 @@ class QuizGame {
 
     restartGame() {
         console.log('Restarting game...');
+        
+        // Remove completion screen from map container
+        const existingCompletion = document.querySelector('.completion-screen');
+        if (existingCompletion) {
+            existingCompletion.remove();
+        }
         
         // Reset all game state
         this.resetGameState();

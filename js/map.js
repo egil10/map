@@ -1551,13 +1551,21 @@ class WorldMap {
             tooltipValue.textContent = this.formatValue(countryData.value, '');
             
             tooltip.style.display = 'block';
+            // Add show class for smooth animation
+            setTimeout(() => {
+                tooltip.classList.add('show');
+            }, 10);
         }
     }
     
     hideCountryTooltip() {
         const tooltip = document.getElementById('countryTooltip');
         if (tooltip) {
-            tooltip.style.display = 'none';
+            tooltip.classList.remove('show');
+            // Wait for animation to complete before hiding
+            setTimeout(() => {
+                tooltip.style.display = 'none';
+            }, 300);
         }
     }
     
