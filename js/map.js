@@ -342,6 +342,7 @@ class WorldMap {
          this.selectedCountry = null;
          this.countriesData = null;
          this.currentQuiz = null;
+         this.currentGameMode = 'play'; // Track current game mode (play or learn)
          this.legend = null;
          this.currentHoverPopup = null; // Track current hover popup at class level
          this.popupTimeout = null; // Track popup timeout
@@ -933,8 +934,9 @@ class WorldMap {
         return style;
     }
     
-    applyQuizConfiguration(quiz) {
+    applyQuizConfiguration(quiz, gameMode = 'play') {
         this.currentQuiz = quiz;
+        this.currentGameMode = gameMode;
         
         // Normalize country names to match GeoJSON names
         const geoNames = new Set(this.countriesData.features.map(f => f.properties.name));
@@ -1493,21 +1495,36 @@ class WorldMap {
         // Sort categories alphabetically
         const sortedCategories = Object.keys(categorized).sort();
         
+        // Check if we're in play mode (hide category names to avoid spoilers)
+        const isPlayMode = this.currentGameMode === 'play';
+        
         // Display countries grouped by category
-        sortedCategories.forEach(category => {
+        sortedCategories.forEach((category, index) => {
             const countries = categorized[category];
             const color = countries[0].color;
             
             // Create category header
             const header = document.createElement('div');
             header.className = 'legend-category-header';
-            header.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 8px; padding: 8px; background: ${color}20; border-left: 4px solid ${color}; margin-bottom: 4px;">
-                    <div style="width: 12px; height: 12px; background: ${color}; border-radius: 2px;"></div>
-                    <strong>${category}</strong>
-                    <span style="margin-left: auto; color: #666;">(${countries.length})</span>
-                </div>
-            `;
+            
+            // In play mode, only show color and count (no category name to avoid spoilers)
+            // In learn mode, show category name
+            if (isPlayMode) {
+                header.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 8px; padding: 8px; background: ${color}20; border-left: 4px solid ${color}; margin-bottom: 4px;">
+                        <div style="width: 16px; height: 16px; background: ${color}; border-radius: 2px;"></div>
+                        <span style="margin-left: auto; color: #666;">(${countries.length} countries)</span>
+                    </div>
+                `;
+            } else {
+                header.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 8px; padding: 8px; background: ${color}20; border-left: 4px solid ${color}; margin-bottom: 4px;">
+                        <div style="width: 12px; height: 12px; background: ${color}; border-radius: 2px;"></div>
+                        <strong>${category}</strong>
+                        <span style="margin-left: auto; color: #666;">(${countries.length})</span>
+                    </div>
+                `;
+            }
             rankingsList.appendChild(header);
             
             // Add countries in this category
@@ -1528,7 +1545,7 @@ class WorldMap {
             });
         });
         
-        console.log('🏷️ Categorical rankings updated with', sortedCategories.length, 'categories');
+        console.log('🏷️ Categorical rankings updated with', sortedCategories.length, 'categories', isPlayMode ? '(play mode - hiding category names)' : '(learn mode - showing category names)');
     }
     
     updateCategoricalColorBar(quiz) {

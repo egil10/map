@@ -681,7 +681,7 @@ class QuizGame {
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
             console.log('🎯 Applying quiz configuration to map...');
-            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz, this.gameMode);
             console.log('🎯 Quiz configuration applied!');
         } else {
             console.log('❌ Map instance or current quiz not available');
@@ -1044,7 +1044,7 @@ class QuizGame {
             
             // Apply quiz to map
             if (window.mapInstance && this.currentQuiz) {
-                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+                window.mapInstance.applyQuizConfiguration(this.currentQuiz, this.gameMode);
             }
             
             // Update color bar
@@ -1395,7 +1395,7 @@ class QuizGame {
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
             console.log('🗺️ Applying quiz configuration to map');
-            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz, this.gameMode);
         }
         
         // Update color bar
