@@ -35,6 +35,9 @@ class QuizGame {
         this.isReady = true;
         console.log('🎯 Quiz Game ready!');
         
+        // Wait a bit for DOM and app to be fully ready
+        await new Promise(resolve => setTimeout(resolve, 100));
+        
         // Check for stored game mode from previous session
         const storedGameMode = localStorage.getItem('geoquest-game-mode');
         if (storedGameMode && ['multiple', 'learn'].includes(storedGameMode)) {
@@ -509,12 +512,25 @@ class QuizGame {
 
 
     showMultipleChoice() {
+        console.log('🎯 showMultipleChoice called');
+        
         if (!this.currentQuiz) {
-            console.log('❌ No current quiz for multiple choice');
+            console.error('❌ No current quiz for multiple choice');
+            return;
+        }
+        
+        if (this.datasetList.length < 4) {
+            console.error('❌ Not enough datasets for multiple choice (need at least 4)');
             return;
         }
         
         console.log('🎯 Showing multiple choice for:', this.currentQuiz.title);
+        
+        const inputContainer = document.querySelector('.input-container');
+        if (!inputContainer) {
+            console.error('❌ Input container not found!');
+            return;
+        }
         
         const correctDataset = this.currentQuiz.title;
         const wrongDatasets = this.datasetList
@@ -522,14 +538,16 @@ class QuizGame {
             .sort(() => Math.random() - 0.5)
             .slice(0, 3);
         
+        if (wrongDatasets.length < 3) {
+            console.error('❌ Not enough wrong options for multiple choice');
+            return;
+        }
+        
         const options = [correctDataset, ...wrongDatasets.map(d => d.title)];
         const shuffledOptions = options.sort(() => Math.random() - 0.5);
         
         console.log('🎯 Multiple choice options:', shuffledOptions);
         console.log('🎯 Correct answer:', correctDataset);
-        
-        const inputContainer = document.querySelector('.input-container');
-        if (!inputContainer) return;
         
         inputContainer.innerHTML = `
             <div class="multiple-choice">
@@ -545,9 +563,13 @@ class QuizGame {
             </div>
         `;
         
+        console.log('🎯 Multiple choice HTML created');
+        
         // Add event listeners with proper error handling
         setTimeout(() => {
-            document.querySelectorAll('.choice-btn').forEach(btn => {
+            const buttons = document.querySelectorAll('.choice-btn');
+            console.log('🎯 Found', buttons.length, 'choice buttons');
+            buttons.forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
