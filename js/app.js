@@ -122,22 +122,14 @@ class App {
         
         // Dataset counter click for browsing (only in learn mode)
         document.getElementById('datasetCounter').addEventListener('click', () => {
-            if (this.currentMode === 'learn') {
-                this.showDatasetBrowser();
+            if (this.currentMode === 'learn' && this.quizInstance) {
+                this.quizInstance.openDatasetBrowser();
             }
         });
         
         console.log('🎮 Event listeners setup complete');
     }
     
-    
-    showDatasetBrowser() {
-        // Show the dataset browser modal
-        const browser = document.getElementById('datasetBrowser');
-        if (browser) {
-            browser.style.display = 'flex';
-        }
-    }
     
     setGameMode(mode) {
         console.log('🎮 Setting game mode to:', mode);

@@ -208,6 +208,9 @@ class QuizGame {
                 
                 console.log(`📊 Loaded ${this.datasetList.length} valid datasets from data folder`);
                 console.log(`⚠️ Skipped ${dataFiles.length - this.datasetList.length} invalid/empty datasets`);
+                
+                // Update the dataset counter display
+                this.updateDatasetCounter();
         } catch (error) {
             console.error('❌ Failed to load quiz data:', error);
             this.datasetList = [];
@@ -345,6 +348,22 @@ class QuizGame {
         const hintBtn = document.getElementById('hintBtn');
         if (hintBtn) {
             hintBtn.addEventListener('click', () => this.showHint());
+        }
+
+        // Dataset browser close button
+        const closeBrowserBtn = document.getElementById('closeDatasetBrowser');
+        if (closeBrowserBtn) {
+            closeBrowserBtn.addEventListener('click', () => this.closeDatasetBrowser());
+        }
+        
+        // Close dataset browser when clicking outside
+        const datasetBrowser = document.getElementById('datasetBrowser');
+        if (datasetBrowser) {
+            datasetBrowser.addEventListener('click', (e) => {
+                if (e.target === datasetBrowser) {
+                    this.closeDatasetBrowser();
+                }
+            });
         }
 
         // Keyboard shortcuts
@@ -1070,6 +1089,80 @@ class QuizGame {
                     });
                 }
             });
+        }
+    }
+
+    openDatasetBrowser() {
+        this.populateDatasetList();
+        const browser = document.getElementById('datasetBrowser');
+        if (browser) {
+            browser.style.display = 'flex';
+        }
+    }
+    
+    closeDatasetBrowser() {
+        const browser = document.getElementById('datasetBrowser');
+        if (browser) {
+            browser.style.display = 'none';
+        }
+    }
+    
+    populateDatasetList() {
+        const listContainer = document.getElementById('datasetBrowserList');
+        if (!listContainer || !this.datasetList || this.datasetList.length === 0) return;
+        
+        // Sort datasets alphabetically
+        const sortedDatasets = [...this.datasetList].sort((a, b) => a.title.localeCompare(b.title));
+        
+        listContainer.innerHTML = '';
+        
+        sortedDatasets.forEach((dataset, index) => {
+            const datasetItem = document.createElement('div');
+            datasetItem.className = 'dataset-item';
+            datasetItem.innerHTML = `
+                <h3>${dataset.title}</h3>
+                <p>${dataset.description || ''}</p>
+            `;
+            
+            // Highlight current dataset
+            if (this.currentQuiz && this.currentQuiz.id === dataset.id) {
+                datasetItem.classList.add('active');
+            }
+            
+            datasetItem.addEventListener('click', () => {
+                this.loadSpecificDataset(dataset);
+                this.closeDatasetBrowser();
+            });
+            
+            listContainer.appendChild(datasetItem);
+        });
+    }
+    
+    loadSpecificDataset(dataset) {
+        if (!dataset) return;
+        
+        this.currentQuiz = dataset;
+        
+        // Apply quiz to map
+        if (window.mapInstance && this.currentQuiz) {
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+        }
+        
+        // Update color bar
+        this.updateColorBar();
+        
+        // Show answer title in learn mode
+        if (this.isLearnMode) {
+            this.showAnswerTitle();
+        }
+    }
+
+    updateDatasetCounter() {
+        const datasetCountElement = document.getElementById('datasetCount');
+        if (datasetCountElement && this.datasetList) {
+            const totalQuizzes = this.datasetList.length;
+            datasetCountElement.textContent = totalQuizzes;
+            console.log('📊 Updated dataset counter to:', totalQuizzes, 'datasets');
         }
     }
 }

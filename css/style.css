@@ -619,9 +619,23 @@ body {
     height: 14px;
 }
 
-/* Dataset Counter - Hidden */
+/* Dataset Counter */
 .dataset-counter {
-    display: none;
+    position: absolute;
+    left: 20px;
+    top: 56px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #666;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    z-index: 1000;
+    display: none; /* Hidden by default, shown in learn mode via JS */
+}
+
+.dataset-counter:hover {
+    color: #1a1a1a;
 }
 
 /* Feedback */
@@ -985,6 +999,11 @@ body {
         padding: 6px 8px;
     }
     
+    .dataset-counter {
+        left: 16px;
+        top: 48px;
+        font-size: 9px;
+    }
     
     .control-buttons {
         right: 16px;
