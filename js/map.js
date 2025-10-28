@@ -345,6 +345,8 @@ class WorldMap {
          this.legend = null;
          this.currentHoverPopup = null; // Track current hover popup at class level
          this.popupTimeout = null; // Track popup timeout
+         this.rankingsSortAscending = false; // Rankings sort direction (false = high to low, true = low to high)
+         this.allCountriesData = null; // Store all countries data for sorting
          
          this.init();
      }
@@ -416,6 +418,35 @@ class WorldMap {
         
         // Make map instance globally available
         window.mapInstance = this;
+        
+        // Setup rankings sort toggle
+        this.setupRankingsSortToggle();
+    }
+    
+    setupRankingsSortToggle() {
+        const sortToggle = document.getElementById('sortToggle');
+        if (sortToggle) {
+            sortToggle.addEventListener('click', () => {
+                this.rankingsSortAscending = !this.rankingsSortAscending;
+                
+                // Update icon
+                const icon = sortToggle.querySelector('i');
+                if (icon) {
+                    icon.setAttribute('data-lucide', this.rankingsSortAscending ? 'arrow-down-z-a' : 'arrow-down-a-z');
+                    // Reinitialize lucide icons
+                    if (window.lucide) {
+                        window.lucide.createIcons();
+                    }
+                }
+                
+                // Re-render rankings with new sort order
+                if (this.allCountriesData) {
+                    this.updateRankingsDisplay(this.allCountriesData);
+                }
+                
+                console.log('🔄 Rankings sort toggled:', this.rankingsSortAscending ? 'Low to High' : 'High to Low');
+            });
+        }
     }
     
     // Notify that map is ready for quiz data
@@ -1240,32 +1271,40 @@ class WorldMap {
             return;
         }
         
-        const top10 = countriesWithValues.slice(0, 10);
-        const bottom10 = countriesWithValues.slice(-10);
+        // Store all countries data for sorting
+        this.allCountriesData = countriesWithValues;
         
-        // Update new legend
-        this.updateNewLegend(top10, bottom10, countriesWithValues.length);
+        // Update rankings display
+        this.updateRankingsDisplay(countriesWithValues);
         
         // Update color bar gradient to match the quiz colors
         this.updateLegendGradient(quiz);
     }
 
-    updateNewLegend(top10, bottom10, totalCountries) {
-        const top10List = document.getElementById('top10List');
-        const bottom10List = document.getElementById('bottom10List');
+    updateRankingsDisplay(countriesWithValues) {
+        const rankingsList = document.getElementById('rankingsList');
+        if (!rankingsList) return;
 
-        if (!top10List || !bottom10List) return;
+        // Sort countries based on current sort direction
+        const sortedCountries = this.rankingsSortAscending 
+            ? [...countriesWithValues].reverse() // Low to high
+            : countriesWithValues; // High to low (already sorted)
 
         // Clear existing content
-        top10List.innerHTML = '';
-        bottom10List.innerHTML = '';
+        rankingsList.innerHTML = '';
 
-        // Add top 10 items
-        top10.forEach((country, index) => {
+        // Add all countries
+        sortedCountries.forEach((country, index) => {
             const item = document.createElement('div');
             item.className = 'legend-item';
+            
+            // Calculate rank (1-based)
+            const rank = this.rankingsSortAscending 
+                ? sortedCountries.length - index // Reverse rank for low to high
+                : index + 1; // Normal rank for high to low
+            
             item.innerHTML = `
-                <span class="legend-country">${index + 1}. ${country.country}</span>
+                <span class="legend-country">${rank}. ${country.country}</span>
                 <span class="legend-value">${this.formatValue(country.value, country.unit)}</span>
             `;
             
@@ -1274,25 +1313,10 @@ class WorldMap {
                 this.highlightCountryByName(country.country);
             });
             
-            top10List.appendChild(item);
+            rankingsList.appendChild(item);
         });
-
-        // Add bottom 10 items
-        bottom10.forEach((country, index) => {
-            const item = document.createElement('div');
-            item.className = 'legend-item';
-            item.innerHTML = `
-                <span class="legend-country">${totalCountries - 9 + index}. ${country.country}</span>
-                <span class="legend-value">${this.formatValue(country.value, country.unit)}</span>
-            `;
-            
-            // Add click handler to highlight country on map
-            item.addEventListener('click', () => {
-                this.highlightCountryByName(country.country);
-            });
-            
-            bottom10List.appendChild(item);
-        });
+        
+        console.log('🏆 Rankings updated with', sortedCountries.length, 'countries, sort:', this.rankingsSortAscending ? 'Low to High' : 'High to Low');
     }
 
     highlightCountryByName(countryName) {

@@ -170,7 +170,7 @@ class App {
         const datasetCounter = document.getElementById('datasetCounter');
         if (datasetCounter) {
             if (mode === 'learn') {
-                datasetCounter.style.display = 'block';
+                datasetCounter.style.display = 'flex';
                 datasetCounter.style.cursor = 'pointer';
                 datasetCounter.style.color = '#666';
             } else {
