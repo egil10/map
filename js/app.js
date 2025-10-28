@@ -93,6 +93,12 @@ class App {
             appContainer.style.display = 'flex';
         }
         
+        // Set initial active state for legend toggle button (legend is visible by default)
+        const toggleLegendBtn = document.getElementById('toggleLegend');
+        if (toggleLegendBtn) {
+            toggleLegendBtn.classList.add('active');
+        }
+        
         // Force map refresh after showing the app to ensure proper rendering
         setTimeout(() => {
             if (this.mapInstance && this.mapInstance.map && typeof this.mapInstance.map.invalidateSize === 'function') {
@@ -118,6 +124,7 @@ class App {
         
         // Control buttons
         document.getElementById('resetMapView').addEventListener('click', () => this.resetMapView());
+        document.getElementById('toggleLegend').addEventListener('click', () => this.toggleLegend());
         document.getElementById('downloadData').addEventListener('click', () => this.downloadData());
         
         // Dataset counter click for browsing (only in learn mode)
@@ -178,6 +185,25 @@ class App {
     resetMapView() {
         if (this.mapInstance && this.mapInstance.resetMapView) {
             this.mapInstance.resetMapView();
+        }
+    }
+    
+    toggleLegend() {
+        const legend = document.getElementById('newLegend');
+        const toggleBtn = document.getElementById('toggleLegend');
+        
+        if (legend && toggleBtn) {
+            const isVisible = legend.style.display !== 'none';
+            legend.style.display = isVisible ? 'none' : 'block';
+            
+            // Toggle active class on button
+            if (isVisible) {
+                toggleBtn.classList.remove('active');
+            } else {
+                toggleBtn.classList.add('active');
+            }
+            
+            console.log('🔢 Legend toggled:', !isVisible ? 'visible' : 'hidden');
         }
     }
     
