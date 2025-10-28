@@ -1140,10 +1140,12 @@ body {
 .multiple-choice {
     text-align: center;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+    flex-direction: column;
+    gap: 8px;
+}
     
 .multiple-choice h3 {
     margin: 0;
@@ -1158,7 +1160,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns in one row */
     gap: 2px; /* Minimal gap for compact design */
     width: 100%;
-    max-width: 100%;
     margin: 0 auto;
     padding: 0; /* Remove padding to match color bar exactly */
 }

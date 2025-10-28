@@ -4,7 +4,7 @@ class App {
         this.mapInstance = null;
         this.quizInstance = null;
         this.isReady = false;
-        this.currentMode = 'learn'; // Default to learn mode
+        this.currentMode = 'multiple'; // Default to multiple choice mode
         this.init();
     }
     

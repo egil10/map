@@ -8,7 +8,7 @@ class QuizGame {
         this.currentProgress = 0;
         this.isQuizCompleted = false;
         this.isLearnMode = false;
-        this.gameMode = 'learn';
+        this.gameMode = 'multiple';
         this.learnModeSequence = [];
         this.learnModeCurrentIndex = 0;
         this.datasetList = [];
@@ -43,8 +43,8 @@ class QuizGame {
             // Clear the stored mode after using it
             localStorage.removeItem('geoquest-game-mode');
         } else {
-            // Start with learn mode by default
-            this.setGameMode('learn');
+            // Start with multiple choice mode by default
+            this.setGameMode('multiple');
         }
     }
 

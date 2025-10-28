@@ -124,12 +124,12 @@
         <!-- Footer Area (20%) -->
         <div class="footer-area">
             <!-- Game Mode Toggle (Left) -->
-            <button id="gameModeToggle" class="game-mode-toggle" data-mode="learn">
-                <div class="toggle-option active" data-mode="learn">
+            <button id="gameModeToggle" class="game-mode-toggle" data-mode="multiple">
+                <div class="toggle-option" data-mode="learn">
                     <i data-lucide="book-open"></i>
                     <span>Learn</span>
                 </div>
-                <div class="toggle-option" data-mode="multiple">
+                <div class="toggle-option active" data-mode="multiple">
                     <i data-lucide="list"></i>
                     <span>Multiple</span>
                 </div>
@@ -137,13 +137,7 @@
 
             <!-- Input Container (Center) -->
             <div class="input-container">
-                <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
-                <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
-                    <i data-lucide="send"></i>
-                </button>
-                <button id="hintBtn" class="hint-btn" aria-label="Get Hint" title="Get Hint (H)">
-                    <i data-lucide="lightbulb"></i>
-                </button>
+                <!-- Content will be dynamically populated based on game mode -->
             </div>
             
             <!-- Control Buttons (Right) -->
