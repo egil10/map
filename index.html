@@ -124,14 +124,14 @@
         <!-- Footer Area (20%) -->
         <div class="footer-area">
             <!-- Game Mode Toggle (Left) -->
-            <button id="gameModeToggle" class="game-mode-toggle" data-mode="multiple">
+            <button id="gameModeToggle" class="game-mode-toggle" data-mode="play">
                 <div class="toggle-option" data-mode="learn">
                     <i data-lucide="book-open"></i>
                     <span>Learn</span>
                 </div>
-                <div class="toggle-option active" data-mode="multiple">
+                <div class="toggle-option active" data-mode="play">
                     <i data-lucide="list"></i>
-                    <span>Multiple</span>
+                    <span>Play</span>
                 </div>
             </button>
 
@@ -151,12 +151,12 @@
             </div>
             
             <!-- Dataset Counter -->
-            <div class="dataset-counter" id="datasetCounter">
+            <div class="dataset-counter" id="datasetCounter" style="display: none;">
                 <span id="datasetCount">105</span> datasets
-                    </div>
+            </div>
             
             <!-- Feedback -->
-            <div id="guessFeedback" class="feedback"></div>
+            <div id="guessFeedback" class="feedback" style="display: none;"></div>
             
             <!-- Color Bar -->
             <div class="color-bar">

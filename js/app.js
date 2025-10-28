@@ -4,7 +4,7 @@ class App {
         this.mapInstance = null;
         this.quizInstance = null;
         this.isReady = false;
-        this.currentMode = 'multiple'; // Default to multiple choice mode
+        this.currentMode = 'play'; // Default to play mode
         this.init();
     }
     
@@ -110,8 +110,8 @@ class App {
         const gameModeToggle = document.getElementById('gameModeToggle');
         if (gameModeToggle) {
             gameModeToggle.addEventListener('click', () => {
-                // Toggle between learn and multiple modes
-                const newMode = this.currentMode === 'learn' ? 'multiple' : 'learn';
+                // Toggle between learn and play modes
+                const newMode = this.currentMode === 'learn' ? 'play' : 'learn';
                 this.setGameMode(newMode);
             });
         }
@@ -175,7 +175,7 @@ class App {
                 datasetCounter.style.cursor = 'pointer';
                 datasetCounter.style.color = '#666';
             } else {
-                // Hide dataset counter in multiple choice mode
+                // Hide dataset counter in play mode
                 datasetCounter.style.display = 'none';
             }
         }

@@ -8,7 +8,7 @@ class QuizGame {
         this.currentProgress = 0;
         this.isQuizCompleted = false;
         this.isLearnMode = false;
-        this.gameMode = 'multiple';
+        this.gameMode = 'play';
         this.learnModeSequence = [];
         this.learnModeCurrentIndex = 0;
         this.datasetList = [];
@@ -40,14 +40,14 @@ class QuizGame {
         
         // Check for stored game mode from previous session
         const storedGameMode = localStorage.getItem('geoquest-game-mode');
-        if (storedGameMode && ['multiple', 'learn'].includes(storedGameMode)) {
+        if (storedGameMode && ['play', 'learn'].includes(storedGameMode)) {
             console.log('🎯 Restoring game mode:', storedGameMode);
             this.setGameMode(storedGameMode);
             // Clear the stored mode after using it
             localStorage.removeItem('geoquest-game-mode');
         } else {
-            // Start with multiple choice mode by default
-            this.setGameMode('multiple');
+            // Start with play mode by default
+            this.setGameMode('play');
         }
     }
 
@@ -454,8 +454,8 @@ class QuizGame {
             // Update color bar
             this.updateColorBar();
             
-            if (this.gameMode === 'multiple') {
-                console.log('🎯 Showing multiple choice');
+            if (this.gameMode === 'play') {
+                console.log('🎯 Showing play mode (multiple choice)');
                 this.hideAnswerTitle();
                 this.showMultipleChoice();
             }
