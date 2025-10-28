@@ -166,16 +166,23 @@ class App {
             gameModeToggle.setAttribute('data-mode', mode);
         }
         
-        // Update dataset counter appearance based on mode
+        // Update dataset counter and source attribution based on mode
         const datasetCounter = document.getElementById('datasetCounter');
-        if (datasetCounter) {
+        const sourceAttribution = document.getElementById('sourceAttribution');
+        
+        if (datasetCounter && sourceAttribution) {
             if (mode === 'learn') {
+                // Show dataset counter in learn mode
                 datasetCounter.style.display = 'flex';
                 datasetCounter.style.cursor = 'pointer';
                 datasetCounter.style.color = '#666';
+                // Hide source attribution
+                sourceAttribution.style.display = 'none';
             } else {
                 // Hide dataset counter in play mode
                 datasetCounter.style.display = 'none';
+                // Show source attribution in play mode
+                this.updateSourceAttribution();
             }
         }
         
@@ -185,6 +192,42 @@ class App {
     resetMapView() {
         if (this.mapInstance && this.mapInstance.resetMapView) {
             this.mapInstance.resetMapView();
+        }
+    }
+    
+    updateSourceAttribution() {
+        const sourceAttribution = document.getElementById('sourceAttribution');
+        const sourceLink = document.getElementById('sourceLink');
+        
+        if (!sourceAttribution || !sourceLink) return;
+        
+        // Get current quiz data
+        const currentQuiz = this.quizInstance?.currentQuiz;
+        
+        if (currentQuiz && currentQuiz.source) {
+            // Show source attribution with link
+            sourceLink.href = currentQuiz.source;
+            sourceLink.textContent = this.formatSourceUrl(currentQuiz.source);
+            sourceAttribution.style.display = 'flex';
+        } else {
+            // Hide if no source available
+            sourceAttribution.style.display = 'none';
+        }
+    }
+    
+    formatSourceUrl(url) {
+        try {
+            const urlObj = new URL(url);
+            // Get domain without www
+            let domain = urlObj.hostname.replace('www.', '');
+            // Truncate if too long
+            if (domain.length > 30) {
+                domain = domain.substring(0, 27) + '...';
+            }
+            return domain;
+        } catch (e) {
+            // If URL parsing fails, return truncated string
+            return url.length > 30 ? url.substring(0, 27) + '...' : url;
         }
     }
     
@@ -246,5 +289,5 @@ class App {
 
 // Initialize app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new App();
+    window.app = new App();
 });

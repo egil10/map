@@ -486,6 +486,11 @@ class QuizGame {
         // Update color bar
         this.updateColorBar();
         
+        // Update source attribution in play mode
+        if (window.app && window.app.updateSourceAttribution) {
+            window.app.updateSourceAttribution();
+        }
+        
         if (this.gameMode === 'play') {
             console.log('🎯 Showing play mode (multiple choice)');
             this.hideAnswerTitle();
