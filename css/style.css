@@ -447,45 +447,46 @@ body {
     justify-content: space-between;
 }
 
-/* Game Mode Buttons (Left) */
-.game-mode-buttons {
+/* Game Mode Toggle (Left) */
+.game-mode-toggle {
     position: absolute;
     left: 20px;
     top: 16px;
     display: flex;
-    flex-direction: column;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 4px;
     gap: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
     z-index: 1000;
 }
 
-.game-mode-btn {
-  display: flex;
-  align-items: center;
+.game-mode-toggle:hover {
+    border-color: #d0d0d0;
+}
+
+.toggle-option {
+    display: flex;
+    align-items: center;
     gap: 4px;
-    padding: 6px 8px;
-    background: #f5f5f5;
-    border: 1px solid #e5e5e5;
+    padding: 6px 10px;
     border-radius: 6px;
-    color: #1a1a1a;
+    color: #666;
     font-size: 11px;
-  font-weight: 500; 
-  cursor: pointer;
+    font-weight: 500;
     transition: all 0.15s ease;
 }
 
-.game-mode-btn:hover {
-    background: #e5e5e5;
-}
-
-.game-mode-btn.active {
-    background: #1a1a1a;
-    color: white;
-    border-color: #1a1a1a;
-}
-
-.game-mode-btn i {
+.toggle-option i {
     width: 12px;
     height: 12px;
+}
+
+.toggle-option.active {
+    background: #1a1a1a;
+    color: white;
 }
 
 /* Input Container (Center) */
@@ -976,11 +977,14 @@ body {
         padding: 12px 16px;
     }
     
-    .game-mode-btn {
+    .game-mode-toggle {
         left: 16px;
         top: 12px;
-        font-size: 12px;
-        padding: 6px 10px;
+    }
+    
+    .toggle-option {
+        font-size: 10px;
+        padding: 6px 8px;
     }
     
     .control-buttons {
@@ -1164,6 +1168,8 @@ body {
     align-items: center;
     gap: 8px;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .next-question-btn {

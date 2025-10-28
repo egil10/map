@@ -37,7 +37,7 @@ class QuizGame {
         
         // Check for stored game mode from previous session
         const storedGameMode = localStorage.getItem('geoquest-game-mode');
-        if (storedGameMode && ['play', 'multiple', 'learn'].includes(storedGameMode)) {
+        if (storedGameMode && ['multiple', 'learn'].includes(storedGameMode)) {
             console.log('🎯 Restoring game mode:', storedGameMode);
             this.setGameMode(storedGameMode);
             // Clear the stored mode after using it
@@ -346,17 +346,11 @@ class QuizGame {
 
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
-            if (e.target.tagName === 'INPUT' && e.key !== 'Enter' && e.key !== 'Escape') {
+            if (e.target.tagName === 'INPUT' && e.key !== 'Escape') {
                 return; // Don't interfere with typing in input fields
             }
             
             switch (e.key) {
-                case 'Enter':
-                    if (this.gameMode === 'play' && !this.isLearnMode) {
-                        e.preventDefault();
-                        this.handleSubmitGuess();
-                    }
-                    break;
                 case 'h':
                 case 'H':
                     e.preventDefault();
@@ -461,14 +455,6 @@ class QuizGame {
                 console.log('🎯 Showing multiple choice');
                 this.hideAnswerTitle();
                 this.showMultipleChoice();
-            } else if (this.gameMode === 'play') {
-                console.log('🎯 Showing play mode input');
-                this.hideAnswerTitle();
-                this.showPlayModeInput();
-            } else {
-                console.log('🎯 Unknown game mode, defaulting to play mode');
-                this.hideAnswerTitle();
-                this.showPlayModeInput();
             }
         } else {
             console.log('❌ No datasets available');
@@ -521,44 +507,6 @@ class QuizGame {
         }
     }
 
-    showPlayModeInput() {
-        const inputContainer = document.querySelector('.input-container');
-        if (!inputContainer) return;
-        
-        inputContainer.innerHTML = `
-            <input type="text" id="guessInput" placeholder="What does this map show?" class="guess-input">
-            <button id="submitGuess" class="submit-btn" aria-label="Send" disabled>
-                <i data-lucide="send"></i>
-            </button>
-        `;
-        
-        // Clear any existing feedback and hide answer title
-        this.clearFeedback();
-        this.hideAnswerTitle();
-        
-        // Add event listeners with delay
-        setTimeout(() => {
-            const guessInput = document.getElementById('guessInput');
-            const submitBtn = document.getElementById('submitGuess');
-            
-            if (guessInput) {
-                guessInput.addEventListener('input', () => this.handleInputChange());
-                guessInput.addEventListener('keypress', (e) => {
-                    if (e.key === 'Enter') this.handleSubmitGuess();
-                });
-                guessInput.focus();
-            }
-            
-            if (submitBtn) {
-                submitBtn.addEventListener('click', () => this.handleSubmitGuess());
-            }
-        }, 100);
-        
-        // Update Lucide icons
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
-    }
 
     showMultipleChoice() {
         if (!this.currentQuiz) {
@@ -952,14 +900,20 @@ class QuizGame {
     }
 
     updateModeToggle() {
-        // Update active button states
-        document.querySelectorAll('.game-mode-btn').forEach(btn => {
-            btn.classList.remove('active');
+        // Update toggle option states
+        document.querySelectorAll('.toggle-option').forEach(option => {
+            option.classList.remove('active');
         });
         
-        const activeBtn = document.querySelector(`[data-mode="${this.gameMode}"]`);
-        if (activeBtn) {
-            activeBtn.classList.add('active');
+        const activeOption = document.querySelector(`.toggle-option[data-mode="${this.gameMode}"]`);
+        if (activeOption) {
+            activeOption.classList.add('active');
+        }
+        
+        // Update toggle button data-mode attribute
+        const gameModeToggle = document.getElementById('gameModeToggle');
+        if (gameModeToggle) {
+            gameModeToggle.setAttribute('data-mode', this.gameMode);
         }
     }
 

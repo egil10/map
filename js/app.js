@@ -106,10 +106,15 @@ class App {
     }
     
     setupEventListeners() {
-        // Game mode buttons
-        document.getElementById('learnModeBtn').addEventListener('click', () => this.setGameMode('learn'));
-        document.getElementById('playModeBtn').addEventListener('click', () => this.setGameMode('play'));
-        document.getElementById('multipleModeBtn').addEventListener('click', () => this.setGameMode('multiple'));
+        // Game mode toggle button
+        const gameModeToggle = document.getElementById('gameModeToggle');
+        if (gameModeToggle) {
+            gameModeToggle.addEventListener('click', () => {
+                // Toggle between learn and multiple modes
+                const newMode = this.currentMode === 'learn' ? 'multiple' : 'learn';
+                this.setGameMode(newMode);
+            });
+        }
         
         // Control buttons
         document.getElementById('resetMapView').addEventListener('click', () => this.resetMapView());
@@ -146,14 +151,20 @@ class App {
             console.log('❌ No quiz instance found!');
         }
         
-        // Update active button states
-        document.querySelectorAll('.game-mode-btn').forEach(btn => {
-            btn.classList.remove('active');
+        // Update toggle button states
+        document.querySelectorAll('.toggle-option').forEach(option => {
+            option.classList.remove('active');
         });
         
-        const activeBtn = document.querySelector(`[data-mode="${mode}"]`);
-        if (activeBtn) {
-            activeBtn.classList.add('active');
+        const activeOption = document.querySelector(`.toggle-option[data-mode="${mode}"]`);
+        if (activeOption) {
+            activeOption.classList.add('active');
+        }
+        
+        // Update toggle button data-mode attribute
+        const gameModeToggle = document.getElementById('gameModeToggle');
+        if (gameModeToggle) {
+            gameModeToggle.setAttribute('data-mode', mode);
         }
         
         // Update dataset counter appearance based on mode
@@ -164,7 +175,7 @@ class App {
                 datasetCounter.style.cursor = 'pointer';
                 datasetCounter.style.color = '#666';
             } else {
-                // Hide dataset counter in play and multiple choice modes
+                // Hide dataset counter in multiple choice mode
                 datasetCounter.style.display = 'none';
             }
         }

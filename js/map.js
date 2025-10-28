@@ -1241,7 +1241,7 @@ class WorldMap {
         }
         
         const top10 = countriesWithValues.slice(0, 10);
-        const bottom10 = countriesWithValues.slice(-10).reverse();
+        const bottom10 = countriesWithValues.slice(-10);
         
         // Update new legend
         this.updateNewLegend(top10, bottom10, countriesWithValues.length);
