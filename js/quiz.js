@@ -23,6 +23,9 @@ class QuizGame {
     async init() {
         console.log('🎯 Quiz Game initializing...');
         
+        // Show loading state immediately
+        this.showLoadingMessage();
+        
         // Setup event listeners first
         this.setupEventListeners();
         
@@ -34,6 +37,7 @@ class QuizGame {
         
         this.isReady = true;
         console.log('🎯 Quiz Game ready!');
+        console.log('🎯 Total datasets loaded:', this.datasetList.length);
         
         // Wait a bit for DOM and app to be fully ready
         await new Promise(resolve => setTimeout(resolve, 100));
@@ -47,6 +51,7 @@ class QuizGame {
             localStorage.removeItem('geoquest-game-mode');
         } else {
             // Start with play mode by default
+            console.log('🎯 Setting default game mode to play');
             this.setGameMode('play');
         }
     }
@@ -430,6 +435,8 @@ class QuizGame {
     startLearnMode() {
         if (this.learnModeSequence.length > 0) {
             this.currentQuiz = this.learnModeSequence[this.learnModeCurrentIndex];
+            // Hide answer title at top of map (we show it in footer instead)
+            this.hideAnswerTitle();
             this.showLearnModeControls();
             this.loadLearnModeDataset();
         }
@@ -439,47 +446,61 @@ class QuizGame {
         console.log(`🎯 Starting new quiz in ${this.gameMode} mode`);
         console.log(`🎯 Available datasets: ${this.datasetList.length}`);
         
-        if (this.datasetList.length > 0) {
-            const randomIndex = Math.floor(Math.random() * this.datasetList.length);
-            const selectedQuiz = this.datasetList[randomIndex];
-            
-            // Validate dataset has valid data
-            if (!selectedQuiz || !selectedQuiz.countries || Object.keys(selectedQuiz.countries).length === 0) {
-                console.warn('⚠️ Selected invalid dataset, trying another one...');
-                // Remove invalid dataset and try again
-                this.datasetList.splice(randomIndex, 1);
-                if (this.datasetList.length > 0) {
-                    return this.startNewQuiz(); // Try again with remaining datasets
-                } else {
-                    console.error('❌ No valid datasets available');
-                    return;
-                }
-            }
-            
-            this.currentQuiz = selectedQuiz;
-            
-            console.log(`🎯 Selected quiz: ${this.currentQuiz.title}`);
-            console.log(`🎯 Quiz data sample:`, Object.keys(this.currentQuiz.countries).slice(0, 5));
-            
-            // Apply quiz to map
-            if (window.mapInstance && this.currentQuiz) {
-                console.log('🎯 Applying quiz configuration to map...');
-                window.mapInstance.applyQuizConfiguration(this.currentQuiz);
-                console.log('🎯 Quiz configuration applied!');
+        if (this.datasetList.length === 0) {
+            console.error('❌ No datasets available, showing loading message');
+            this.showLoadingMessage();
+            return;
+        }
+        
+        const randomIndex = Math.floor(Math.random() * this.datasetList.length);
+        const selectedQuiz = this.datasetList[randomIndex];
+        
+        // Validate dataset has valid data
+        if (!selectedQuiz || !selectedQuiz.countries || Object.keys(selectedQuiz.countries).length === 0) {
+            console.warn('⚠️ Selected invalid dataset, trying another one...');
+            // Remove invalid dataset and try again
+            this.datasetList.splice(randomIndex, 1);
+            if (this.datasetList.length > 0) {
+                return this.startNewQuiz(); // Try again with remaining datasets
             } else {
-                console.log('❌ Map instance or current quiz not available');
+                console.error('❌ No valid datasets available');
+                this.showLoadingMessage();
+                return;
             }
-            
-            // Update color bar
-            this.updateColorBar();
-            
-            if (this.gameMode === 'play') {
-                console.log('🎯 Showing play mode (multiple choice)');
-                this.hideAnswerTitle();
-                this.showMultipleChoice();
-            }
+        }
+        
+        this.currentQuiz = selectedQuiz;
+        
+        console.log(`🎯 Selected quiz: ${this.currentQuiz.title}`);
+        console.log(`🎯 Quiz data sample:`, Object.keys(this.currentQuiz.countries).slice(0, 5));
+        
+        // Apply quiz to map
+        if (window.mapInstance && this.currentQuiz) {
+            console.log('🎯 Applying quiz configuration to map...');
+            window.mapInstance.applyQuizConfiguration(this.currentQuiz);
+            console.log('🎯 Quiz configuration applied!');
         } else {
-            console.log('❌ No datasets available');
+            console.log('❌ Map instance or current quiz not available');
+        }
+        
+        // Update color bar
+        this.updateColorBar();
+        
+        if (this.gameMode === 'play') {
+            console.log('🎯 Showing play mode (multiple choice)');
+            this.hideAnswerTitle();
+            this.showMultipleChoice();
+        }
+    }
+    
+    showLoadingMessage() {
+        const inputContainer = document.querySelector('.input-container');
+        if (inputContainer) {
+            inputContainer.innerHTML = `
+                <div style="text-align: center; padding: 20px; color: #666;">
+                    <p>Loading datasets...</p>
+                </div>
+            `;
         }
     }
 
@@ -809,11 +830,8 @@ class QuizGame {
             // Update color bar
             this.updateColorBar();
             
-            // Update title
+            // Update title in footer (we don't show the top answer title anymore)
             this.updateLearnModeTitle();
-            
-            // Show answer title in learn mode
-            this.showAnswerTitle();
         }
     }
 
@@ -1141,20 +1159,41 @@ class QuizGame {
     loadSpecificDataset(dataset) {
         if (!dataset) return;
         
+        console.log('📚 Loading specific dataset:', dataset.title);
+        
         this.currentQuiz = dataset;
+        
+        // If in learn mode, update the sequence index to match this dataset
+        if (this.isLearnMode && this.learnModeSequence.length > 0) {
+            const datasetIndex = this.learnModeSequence.findIndex(d => d.id === dataset.id);
+            if (datasetIndex !== -1) {
+                this.learnModeCurrentIndex = datasetIndex;
+                console.log('📚 Updated learn mode index to:', datasetIndex);
+            }
+        }
         
         // Apply quiz to map
         if (window.mapInstance && this.currentQuiz) {
+            console.log('🗺️ Applying quiz configuration to map');
             window.mapInstance.applyQuizConfiguration(this.currentQuiz);
         }
         
         // Update color bar
         this.updateColorBar();
         
-        // Show answer title in learn mode
+        // Update title in footer for learn mode
         if (this.isLearnMode) {
-            this.showAnswerTitle();
+            this.updateLearnModeTitle();
+            console.log('📚 Updated learn mode title');
         }
+        
+        // Force a small delay to ensure map updates are complete
+        setTimeout(() => {
+            if (window.mapInstance && window.mapInstance.map) {
+                window.mapInstance.map.invalidateSize();
+                console.log('🗺️ Map refreshed after dataset load');
+            }
+        }, 100);
     }
 
     updateDatasetCounter() {
