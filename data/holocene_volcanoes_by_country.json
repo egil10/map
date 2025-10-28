@@ -1,84 +1,85 @@
 {
   "title": "Holocene Volcanoes by Country",
-  "description": "Number of Holocene volcanoes per country",
-  "unit": "count",
-  "source": "https://volcano.si.edu/faq/index.cfm?question=countries",
+  "description": "Number of volcanoes with eruptions during the Holocene epoch (past 11,700 years) by country",
+  "unit": "volcanoes",
+  "source": "https://volcano.si.edu/",
   "data": {
-    "United States": {
-      "value": 165,
-      "unit": "count"
-    },
-    "Japan": {
-      "value": 120,
-      "unit": "count"
-    },
-    "Russia": {
-      "value": 114,
-      "unit": "count"
-    },
-    "Indonesia": {
-      "value": 107,
-      "unit": "count"
-    },
-    "Chile": {
-      "value": 90,
-      "unit": "count"
-    },
-    "Ethiopia": {
-      "value": 50,
-      "unit": "count"
-    },
-    "Papua New Guinea": {
-      "value": 39,
-      "unit": "count"
-    },
-    "Ecuador": {
-      "value": 36,
-      "unit": "count"
-    },
-    "Mexico": {
-      "value": 35,
-      "unit": "count"
-    },
-    "Iceland": {
-      "value": 35,
-      "unit": "count"
-    },
-    "Argentina": {
-      "value": 32,
-      "unit": "count"
-    },
-    "Canada": {
-      "value": 24,
-      "unit": "count"
-    },
-    "New Zealand": {
-      "value": 23,
-      "unit": "count"
-    },
-    "Philippines": {
-      "value": 23,
-      "unit": "count"
-    },
-    "Tonga": {
-      "value": 21,
-      "unit": "count"
-    },
-    "Kenya": {
-      "value": 21,
-      "unit": "count"
-    },
-    "Guatemala": {
-      "value": 20,
-      "unit": "count"
-    },
-    "France": {
-      "value": 19,
-      "unit": "count"
-    },
-    "El Salvador": {
-      "value": 17,
-      "unit": "count"
-    }
+    "Algeria": { "value": 3, "unit": "volcanoes" },
+    "Antarctica": { "value": 19, "unit": "volcanoes" },
+    "Argentina": { "value": 32, "unit": "volcanoes" },
+    "Armenia": { "value": 5, "unit": "volcanoes" },
+    "Australia": { "value": 4, "unit": "volcanoes" },
+    "Azerbaijan": { "value": 2, "unit": "volcanoes" },
+    "Bolivia": { "value": 7, "unit": "volcanoes" },
+    "Myanmar": { "value": 1, "unit": "volcanoes" },
+    "Cape Verde": { "value": 2, "unit": "volcanoes" },
+    "Cameroon": { "value": 3, "unit": "volcanoes" },
+    "Canada": { "value": 24, "unit": "volcanoes" },
+    "Chad": { "value": 4, "unit": "volcanoes" },
+    "Chile": { "value": 90, "unit": "volcanoes" },
+    "China": { "value": 10, "unit": "volcanoes" },
+    "Colombia": { "value": 14, "unit": "volcanoes" },
+    "Costa Rica": { "value": 10, "unit": "volcanoes" },
+    "Djibouti": { "value": 4, "unit": "volcanoes" },
+    "Dominica": { "value": 5, "unit": "volcanoes" },
+    "Democratic Republic of the Congo": { "value": 4, "unit": "volcanoes" },
+    "Ecuador": { "value": 36, "unit": "volcanoes" },
+    "El Salvador": { "value": 17, "unit": "volcanoes" },
+    "Equatorial Guinea": { "value": 1, "unit": "volcanoes" },
+    "Eritrea": { "value": 8, "unit": "volcanoes" },
+    "Ethiopia": { "value": 50, "unit": "volcanoes" },
+    "Fiji": { "value": 2, "unit": "volcanoes" },
+    "France": { "value": 20, "unit": "volcanoes" },
+    "Georgia": { "value": 2, "unit": "volcanoes" },
+    "Germany": { "value": 1, "unit": "volcanoes" },
+    "Greece": { "value": 5, "unit": "volcanoes" },
+    "Grenada": { "value": 2, "unit": "volcanoes" },
+    "Guatemala": { "value": 20, "unit": "volcanoes" },
+    "Honduras": { "value": 3, "unit": "volcanoes" },
+    "Iceland": { "value": 35, "unit": "volcanoes" },
+    "India": { "value": 2, "unit": "volcanoes" },
+    "Indonesia": { "value": 101, "unit": "volcanoes" },
+    "Iran": { "value": 1, "unit": "volcanoes" },
+    "Italy": { "value": 13, "unit": "volcanoes" },
+    "Japan": { "value": 118, "unit": "volcanoes" },
+    "Jordan": { "value": 1, "unit": "volcanoes" },
+    "Kenya": { "value": 21, "unit": "volcanoes" },
+    "Mexico": { "value": 35, "unit": "volcanoes" },
+    "Mongolia": { "value": 3, "unit": "volcanoes" },
+    "Netherlands": { "value": 2, "unit": "volcanoes" },
+    "New Zealand": { "value": 23, "unit": "volcanoes" },
+    "Nicaragua": { "value": 13, "unit": "volcanoes" },
+    "Niger": { "value": 1, "unit": "volcanoes" },
+    "North Korea": { "value": 2, "unit": "volcanoes" },
+    "Norway": { "value": 2, "unit": "volcanoes" },
+    "Panama": { "value": 1, "unit": "volcanoes" },
+    "Papua New Guinea": { "value": 39, "unit": "volcanoes" },
+    "Peru": { "value": 13, "unit": "volcanoes" },
+    "Philippines": { "value": 23, "unit": "volcanoes" },
+    "Portugal": { "value": 13, "unit": "volcanoes" },
+    "Russia": { "value": 107, "unit": "volcanoes" },
+    "Rwanda": { "value": 3, "unit": "volcanoes" },
+    "Saint Kitts and Nevis": { "value": 2, "unit": "volcanoes" },
+    "Saint Lucia": { "value": 1, "unit": "volcanoes" },
+    "Saint Vincent and the Grenadines": { "value": 1, "unit": "volcanoes" },
+    "Samoa": { "value": 2, "unit": "volcanoes" },
+    "Saudi Arabia": { "value": 8, "unit": "volcanoes" },
+    "Solomon Islands": { "value": 7, "unit": "volcanoes" },
+    "South Africa": { "value": 2, "unit": "volcanoes" },
+    "South Korea": { "value": 3, "unit": "volcanoes" },
+    "Spain": { "value": 8, "unit": "volcanoes" },
+    "Sudan": { "value": 4, "unit": "volcanoes" },
+    "Syria": { "value": 1, "unit": "volcanoes" },
+    "Taiwan": { "value": 2, "unit": "volcanoes" },
+    "Tanzania": { "value": 6, "unit": "volcanoes" },
+    "Tonga": { "value": 21, "unit": "volcanoes" },
+    "Turkey": { "value": 7, "unit": "volcanoes" },
+    "Uganda": { "value": 7, "unit": "volcanoes" },
+    "Comoros": { "value": 2, "unit": "volcanoes" },
+    "United Kingdom": { "value": 14, "unit": "volcanoes" },
+    "United States": { "value": 165, "unit": "volcanoes" },
+    "Vanuatu": { "value": 14, "unit": "volcanoes" },
+    "Vietnam": { "value": 2, "unit": "volcanoes" },
+    "Yemen": { "value": 10, "unit": "volcanoes" }
   }
 }
