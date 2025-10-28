@@ -1,0 +1,934 @@
+{
+    "title": "Cattle Population by Country",
+    "description": "Total cattle population by country in 2025",
+    "unit": "cattle",
+    "source": "https://worldpopulationreview.com/country-rankings/cattle-population-by-country",
+    "data": {
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 238600000,
+            "unit": "cattle"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 194500000,
+            "unit": "cattle"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 88800000,
+            "unit": "cattle"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": 73600000,
+            "unit": "cattle"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 70900000,
+            "unit": "cattle"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 55500000,
+            "unit": "cattle"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 54200000,
+            "unit": "cattle"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 37900000,
+            "unit": "cattle"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 37600000,
+            "unit": "cattle"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 36600000,
+            "unit": "cattle"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 30700000,
+            "unit": "cattle"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 29900000,
+            "unit": "cattle"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 29200000,
+            "unit": "cattle"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 24900000,
+            "unit": "cattle"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 21900000,
+            "unit": "cattle"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 20900000,
+            "unit": "cattle"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 18800000,
+            "unit": "cattle"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 17500000,
+            "unit": "cattle"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 17100000,
+            "unit": "cattle"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 16800000,
+            "unit": "cattle"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 16500000,
+            "unit": "cattle"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 16400000,
+            "unit": "cattle"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 15200000,
+            "unit": "cattle"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 14100000,
+            "unit": "cattle"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 14100000,
+            "unit": "cattle"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 13600000,
+            "unit": "cattle"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 13500000,
+            "unit": "cattle"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 12200000,
+            "unit": "cattle"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 11900000,
+            "unit": "cattle"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 11300000,
+            "unit": "cattle"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 11100000,
+            "unit": "cattle"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 10800000,
+            "unit": "cattle"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 10800000,
+            "unit": "cattle"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 10100000,
+            "unit": "cattle"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 9600000,
+            "unit": "cattle"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 9500000,
+            "unit": "cattle"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 8800000,
+            "unit": "cattle"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 7500000,
+            "unit": "cattle"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 6600000,
+            "unit": "cattle"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 6500000,
+            "unit": "cattle"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 6300000,
+            "unit": "cattle"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 6300000,
+            "unit": "cattle"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 6300000,
+            "unit": "cattle"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 6000000,
+            "unit": "cattle"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 6000000,
+            "unit": "cattle"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 5900000,
+            "unit": "cattle"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 5800000,
+            "unit": "cattle"
+        },
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 5600000,
+            "unit": "cattle"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 5600000,
+            "unit": "cattle"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 5500000,
+            "unit": "cattle"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 5400000,
+            "unit": "cattle"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 5200000,
+            "unit": "cattle"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 4800000,
+            "unit": "cattle"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 4800000,
+            "unit": "cattle"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 4600000,
+            "unit": "cattle"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 4600000,
+            "unit": "cattle"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 4500000,
+            "unit": "cattle"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 4200000,
+            "unit": "cattle"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 4200000,
+            "unit": "cattle"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 4000000,
+            "unit": "cattle"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 4000000,
+            "unit": "cattle"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 3800000,
+            "unit": "cattle"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 3700000,
+            "unit": "cattle"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 3700000,
+            "unit": "cattle"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 3600000,
+            "unit": "cattle"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 3400000,
+            "unit": "cattle"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 3100000,
+            "unit": "cattle"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 3100000,
+            "unit": "cattle"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 3000000,
+            "unit": "cattle"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 2900000,
+            "unit": "cattle"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 2900000,
+            "unit": "cattle"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 2600000,
+            "unit": "cattle"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 2600000,
+            "unit": "cattle"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 2600000,
+            "unit": "cattle"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 2500000,
+            "unit": "cattle"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 2500000,
+            "unit": "cattle"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 2500000,
+            "unit": "cattle"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 2400000,
+            "unit": "cattle"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 2400000,
+            "unit": "cattle"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 2300000,
+            "unit": "cattle"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 2300000,
+            "unit": "cattle"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 2200000,
+            "unit": "cattle"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 2200000,
+            "unit": "cattle"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 2200000,
+            "unit": "cattle"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 2100000,
+            "unit": "cattle"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 2100000,
+            "unit": "cattle"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 2000000,
+            "unit": "cattle"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 1900000,
+            "unit": "cattle"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 1900000,
+            "unit": "cattle"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 1800000,
+            "unit": "cattle"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": 1800000,
+            "unit": "cattle"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 1800000,
+            "unit": "cattle"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 1800000,
+            "unit": "cattle"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 1800000,
+            "unit": "cattle"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 1600000,
+            "unit": "cattle"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 1500000,
+            "unit": "cattle"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 1500000,
+            "unit": "cattle"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 1500000,
+            "unit": "cattle"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 1400000,
+            "unit": "cattle"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 1400000,
+            "unit": "cattle"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 1400000,
+            "unit": "cattle"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 1400000,
+            "unit": "cattle"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": 1200000,
+            "unit": "cattle"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": 1100000,
+            "unit": "cattle"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 1000000,
+            "unit": "cattle"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 875600,
+            "unit": "cattle"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 869700,
+            "unit": "cattle"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 853700,
+            "unit": "cattle"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 841400,
+            "unit": "cattle"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 798600,
+            "unit": "cattle"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 746100,
+            "unit": "cattle"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 738900,
+            "unit": "cattle"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 726200,
+            "unit": "cattle"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 725400,
+            "unit": "cattle"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": 667100,
+            "unit": "cattle"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 645600,
+            "unit": "cattle"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 623500,
+            "unit": "cattle"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 622400,
+            "unit": "cattle"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 583800,
+            "unit": "cattle"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 580100,
+            "unit": "cattle"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 574300,
+            "unit": "cattle"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 573400,
+            "unit": "cattle"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 513100,
+            "unit": "cattle"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 501900,
+            "unit": "cattle"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 469000,
+            "unit": "cattle"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 456100,
+            "unit": "cattle"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 439000,
+            "unit": "cattle"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 429700,
+            "unit": "cattle"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 415000,
+            "unit": "cattle"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 404400,
+            "unit": "cattle"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 368100,
+            "unit": "cattle"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 330100,
+            "unit": "cattle"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 327800,
+            "unit": "cattle"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 310800,
+            "unit": "cattle"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 278900,
+            "unit": "cattle"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 263400,
+            "unit": "cattle"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": 241400,
+            "unit": "cattle"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 241400,
+            "unit": "cattle"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": 222600,
+            "unit": "cattle"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 211300,
+            "unit": "cattle"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 183600,
+            "unit": "cattle"
+        },
+        "Taiwan": {
+            "Country Name": "Taiwan",
+            "value": 157200,
+            "unit": "cattle"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 151500,
+            "unit": "cattle"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 148700,
+            "unit": "cattle"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 121800,
+            "unit": "cattle"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 109900,
+            "unit": "cattle"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 102500,
+            "unit": "cattle"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 102500,
+            "unit": "cattle"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 101000,
+            "unit": "cattle"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": 91800,
+            "unit": "cattle"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 91600,
+            "unit": "cattle"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 87000,
+            "unit": "cattle"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 82300,
+            "unit": "cattle"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 79300,
+            "unit": "cattle"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 78700,
+            "unit": "cattle"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 69300,
+            "unit": "cattle"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": 51400,
+            "unit": "cattle"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 44900,
+            "unit": "cattle"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": 44600,
+            "unit": "cattle"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 44000,
+            "unit": "cattle"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 40100,
+            "unit": "cattle"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 39800,
+            "unit": "cattle"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 36000,
+            "unit": "cattle"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 33500,
+            "unit": "cattle"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 31900,
+            "unit": "cattle"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 29700,
+            "unit": "cattle"
+        },
+        "Micronesia": {
+            "Country Name": "Micronesia",
+            "value": 17900,
+            "unit": "cattle"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 15400,
+            "unit": "cattle"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 14200,
+            "unit": "cattle"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 14000,
+            "unit": "cattle"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": 12200,
+            "unit": "cattle"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 10700,
+            "unit": "cattle"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 10500,
+            "unit": "cattle"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 7000,
+            "unit": "cattle"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 6700,
+            "unit": "cattle"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 5500,
+            "unit": "cattle"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 3800,
+            "unit": "cattle"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 3400,
+            "unit": "cattle"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 2200,
+            "unit": "cattle"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": 1700,
+            "unit": "cattle"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 1500,
+            "unit": "cattle"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 776,
+            "unit": "cattle"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 501,
+            "unit": "cattle"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 314,
+            "unit": "cattle"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 178,
+            "unit": "cattle"
+        }
+    }
+}
+

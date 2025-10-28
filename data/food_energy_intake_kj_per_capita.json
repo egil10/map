@@ -1,0 +1,854 @@
+{
+    "title": "Food Energy Intake Per Capita (kJ/day)",
+    "description": "Average daily caloric food supply per capita in kilojoules (2018, includes food waste)",
+    "unit": "kJ/day",
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_food_energy_intake",
+    "data": {
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 16250,
+            "unit": "kJ/day"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 15820,
+            "unit": "kJ/day"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 15770,
+            "unit": "kJ/day"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 15530,
+            "unit": "kJ/day"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 15460,
+            "unit": "kJ/day"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 15290,
+            "unit": "kJ/day"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 14980,
+            "unit": "kJ/day"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 14920,
+            "unit": "kJ/day"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 14870,
+            "unit": "kJ/day"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 14800,
+            "unit": "kJ/day"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 14760,
+            "unit": "kJ/day"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 14660,
+            "unit": "kJ/day"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 14650,
+            "unit": "kJ/day"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 15000,
+            "unit": "kJ/day"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 14600,
+            "unit": "kJ/day"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 14520,
+            "unit": "kJ/day"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 14500,
+            "unit": "kJ/day"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 14400,
+            "unit": "kJ/day"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 14300,
+            "unit": "kJ/day"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 14300,
+            "unit": "kJ/day"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 14280,
+            "unit": "kJ/day"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 14270,
+            "unit": "kJ/day"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 14230,
+            "unit": "kJ/day"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 14190,
+            "unit": "kJ/day"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 14150,
+            "unit": "kJ/day"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 14100,
+            "unit": "kJ/day"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 14100,
+            "unit": "kJ/day"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 14030,
+            "unit": "kJ/day"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 14000,
+            "unit": "kJ/day"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 13990,
+            "unit": "kJ/day"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 13990,
+            "unit": "kJ/day"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 13990,
+            "unit": "kJ/day"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 13900,
+            "unit": "kJ/day"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 13900,
+            "unit": "kJ/day"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 13870,
+            "unit": "kJ/day"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 13870,
+            "unit": "kJ/day"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 13840,
+            "unit": "kJ/day"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 13840,
+            "unit": "kJ/day"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 13840,
+            "unit": "kJ/day"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 13810,
+            "unit": "kJ/day"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 13790,
+            "unit": "kJ/day"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 13770,
+            "unit": "kJ/day"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 13710,
+            "unit": "kJ/day"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 13700,
+            "unit": "kJ/day"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 13590,
+            "unit": "kJ/day"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 13510,
+            "unit": "kJ/day"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": 13410,
+            "unit": "kJ/day"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 13400,
+            "unit": "kJ/day"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 13350,
+            "unit": "kJ/day"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 13350,
+            "unit": "kJ/day"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 13320,
+            "unit": "kJ/day"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 13210,
+            "unit": "kJ/day"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 13180,
+            "unit": "kJ/day"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 13030,
+            "unit": "kJ/day"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 12980,
+            "unit": "kJ/day"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 12920,
+            "unit": "kJ/day"
+        },
+        "Kiribati": {
+            "Country Name": "Kiribati",
+            "value": 12880,
+            "unit": "kJ/day"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 12860,
+            "unit": "kJ/day"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 12850,
+            "unit": "kJ/day"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 12830,
+            "unit": "kJ/day"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 12770,
+            "unit": "kJ/day"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 12700,
+            "unit": "kJ/day"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 12700,
+            "unit": "kJ/day"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 12670,
+            "unit": "kJ/day"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 12670,
+            "unit": "kJ/day"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 12660,
+            "unit": "kJ/day"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 12630,
+            "unit": "kJ/day"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 12600,
+            "unit": "kJ/day"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 12540,
+            "unit": "kJ/day"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 12510,
+            "unit": "kJ/day"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 12490,
+            "unit": "kJ/day"
+        },
+        "Taiwan": {
+            "Country Name": "Taiwan",
+            "value": 12480,
+            "unit": "kJ/day"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 12420,
+            "unit": "kJ/day"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 12370,
+            "unit": "kJ/day"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 12350,
+            "unit": "kJ/day"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 12300,
+            "unit": "kJ/day"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 12190,
+            "unit": "kJ/day"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 12130,
+            "unit": "kJ/day"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 12100,
+            "unit": "kJ/day"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 12070,
+            "unit": "kJ/day"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 12040,
+            "unit": "kJ/day"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 12020,
+            "unit": "kJ/day"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 12010,
+            "unit": "kJ/day"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 11950,
+            "unit": "kJ/day"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 11940,
+            "unit": "kJ/day"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 11930,
+            "unit": "kJ/day"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 11900,
+            "unit": "kJ/day"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 11860,
+            "unit": "kJ/day"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 11800,
+            "unit": "kJ/day"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 11830,
+            "unit": "kJ/day"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 11730,
+            "unit": "kJ/day"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 11680,
+            "unit": "kJ/day"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 11640,
+            "unit": "kJ/day"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 11620,
+            "unit": "kJ/day"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 11610,
+            "unit": "kJ/day"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 11610,
+            "unit": "kJ/day"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 11590,
+            "unit": "kJ/day"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 11580,
+            "unit": "kJ/day"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 11540,
+            "unit": "kJ/day"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 11530,
+            "unit": "kJ/day"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 11490,
+            "unit": "kJ/day"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 11450,
+            "unit": "kJ/day"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": 11450,
+            "unit": "kJ/day"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 11430,
+            "unit": "kJ/day"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 11430,
+            "unit": "kJ/day"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 11420,
+            "unit": "kJ/day"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 11320,
+            "unit": "kJ/day"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 11290,
+            "unit": "kJ/day"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 11280,
+            "unit": "kJ/day"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 11270,
+            "unit": "kJ/day"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 11180,
+            "unit": "kJ/day"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 11180,
+            "unit": "kJ/day"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 11140,
+            "unit": "kJ/day"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 11110,
+            "unit": "kJ/day"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 11020,
+            "unit": "kJ/day"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 10950,
+            "unit": "kJ/day"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 10910,
+            "unit": "kJ/day"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 10910,
+            "unit": "kJ/day"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 10900,
+            "unit": "kJ/day"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 10880,
+            "unit": "kJ/day"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 10800,
+            "unit": "kJ/day"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": 10800,
+            "unit": "kJ/day"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 10790,
+            "unit": "kJ/day"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 10790,
+            "unit": "kJ/day"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 10760,
+            "unit": "kJ/day"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 10720,
+            "unit": "kJ/day"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 10670,
+            "unit": "kJ/day"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 10650,
+            "unit": "kJ/day"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 10630,
+            "unit": "kJ/day"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 10600,
+            "unit": "kJ/day"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 10600,
+            "unit": "kJ/day"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 10430,
+            "unit": "kJ/day"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 10400,
+            "unit": "kJ/day"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 10330,
+            "unit": "kJ/day"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 10230,
+            "unit": "kJ/day"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 10230,
+            "unit": "kJ/day"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 10220,
+            "unit": "kJ/day"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 10150,
+            "unit": "kJ/day"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 10100,
+            "unit": "kJ/day"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 10090,
+            "unit": "kJ/day"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 10050,
+            "unit": "kJ/day"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 10010,
+            "unit": "kJ/day"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 9980,
+            "unit": "kJ/day"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 9970,
+            "unit": "kJ/day"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 9930,
+            "unit": "kJ/day"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": 9910,
+            "unit": "kJ/day"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 9800,
+            "unit": "kJ/day"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 9780,
+            "unit": "kJ/day"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 9720,
+            "unit": "kJ/day"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": 9570,
+            "unit": "kJ/day"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 9560,
+            "unit": "kJ/day"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": 9350,
+            "unit": "kJ/day"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 9330,
+            "unit": "kJ/day"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 9190,
+            "unit": "kJ/day"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 9150,
+            "unit": "kJ/day"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 9070,
+            "unit": "kJ/day"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 9010,
+            "unit": "kJ/day"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 8870,
+            "unit": "kJ/day"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 8900,
+            "unit": "kJ/day"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 8850,
+            "unit": "kJ/day"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 8820,
+            "unit": "kJ/day"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 8800,
+            "unit": "kJ/day"
+        },
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 8500,
+            "unit": "kJ/day"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 8450,
+            "unit": "kJ/day"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 8380,
+            "unit": "kJ/day"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 8290,
+            "unit": "kJ/day"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 8110,
+            "unit": "kJ/day"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 7980,
+            "unit": "kJ/day"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 7470,
+            "unit": "kJ/day"
+        }
+    }
+}
+

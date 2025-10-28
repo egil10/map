@@ -1,0 +1,924 @@
+{
+    "title": "Average Annual Precipitation (mm)",
+    "description": "Average annual precipitation by country in millimeters per year",
+    "unit": "mm/year",
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_average_annual_precipitation",
+    "data": {
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 3240,
+            "unit": "mm/year"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 3200,
+            "unit": "mm/year"
+        },
+        "Tuvalu": {
+            "Country Name": "Tuvalu",
+            "value": 3200,
+            "unit": "mm/year"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": 3142,
+            "unit": "mm/year"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 3028,
+            "unit": "mm/year"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 2928,
+            "unit": "mm/year"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 2926,
+            "unit": "mm/year"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 2880,
+            "unit": "mm/year"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 2875,
+            "unit": "mm/year"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 2722,
+            "unit": "mm/year"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 2702,
+            "unit": "mm/year"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": 2700,
+            "unit": "mm/year"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 2666,
+            "unit": "mm/year"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 2592,
+            "unit": "mm/year"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": 2526,
+            "unit": "mm/year"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 2497,
+            "unit": "mm/year"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 2391,
+            "unit": "mm/year"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 2387,
+            "unit": "mm/year"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 2350,
+            "unit": "mm/year"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 2348,
+            "unit": "mm/year"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 2331,
+            "unit": "mm/year"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 2330,
+            "unit": "mm/year"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 2301,
+            "unit": "mm/year"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 2280,
+            "unit": "mm/year"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 2274,
+            "unit": "mm/year"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": 2200,
+            "unit": "mm/year"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 2200,
+            "unit": "mm/year"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 2156,
+            "unit": "mm/year"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 2091,
+            "unit": "mm/year"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 2083,
+            "unit": "mm/year"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 2051,
+            "unit": "mm/year"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 2044,
+            "unit": "mm/year"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 2041,
+            "unit": "mm/year"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 2000,
+            "unit": "mm/year"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 1996,
+            "unit": "mm/year"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 1976,
+            "unit": "mm/year"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": 1972,
+            "unit": "mm/year"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 1940,
+            "unit": "mm/year"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 1904,
+            "unit": "mm/year"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 1834,
+            "unit": "mm/year"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 1831,
+            "unit": "mm/year"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 1821,
+            "unit": "mm/year"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 1784,
+            "unit": "mm/year"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 1761,
+            "unit": "mm/year"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 1738,
+            "unit": "mm/year"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 1732,
+            "unit": "mm/year"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": 1712,
+            "unit": "mm/year"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 1705,
+            "unit": "mm/year"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 1668,
+            "unit": "mm/year"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 1651,
+            "unit": "mm/year"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 1646,
+            "unit": "mm/year"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 1622,
+            "unit": "mm/year"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 1604,
+            "unit": "mm/year"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 1583,
+            "unit": "mm/year"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 1577,
+            "unit": "mm/year"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": 1543,
+            "unit": "mm/year"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 1537,
+            "unit": "mm/year"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 1522,
+            "unit": "mm/year"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 1513,
+            "unit": "mm/year"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": 1500,
+            "unit": "mm/year"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 1500,
+            "unit": "mm/year"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 1485,
+            "unit": "mm/year"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 1440,
+            "unit": "mm/year"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": 1427,
+            "unit": "mm/year"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 1422,
+            "unit": "mm/year"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 1414,
+            "unit": "mm/year"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 1410,
+            "unit": "mm/year"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 1348,
+            "unit": "mm/year"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 1343,
+            "unit": "mm/year"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 1335,
+            "unit": "mm/year"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 1300,
+            "unit": "mm/year"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 1292,
+            "unit": "mm/year"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": 1274,
+            "unit": "mm/year"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 1274,
+            "unit": "mm/year"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 1220,
+            "unit": "mm/year"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 1212,
+            "unit": "mm/year"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 1187,
+            "unit": "mm/year"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 1181,
+            "unit": "mm/year"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 1180,
+            "unit": "mm/year"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 1168,
+            "unit": "mm/year"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 1162,
+            "unit": "mm/year"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 1150,
+            "unit": "mm/year"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 1146,
+            "unit": "mm/year"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 1130,
+            "unit": "mm/year"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 1118,
+            "unit": "mm/year"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 1113,
+            "unit": "mm/year"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 1110,
+            "unit": "mm/year"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 1083,
+            "unit": "mm/year"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 1071,
+            "unit": "mm/year"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 1054,
+            "unit": "mm/year"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 1039,
+            "unit": "mm/year"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 1032,
+            "unit": "mm/year"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 1030,
+            "unit": "mm/year"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 1028,
+            "unit": "mm/year"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 1026,
+            "unit": "mm/year"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 1020,
+            "unit": "mm/year"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 1010,
+            "unit": "mm/year"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 934,
+            "unit": "mm/year"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": 900,
+            "unit": "mm/year"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 900,
+            "unit": "mm/year"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 867,
+            "unit": "mm/year"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 854,
+            "unit": "mm/year"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 848,
+            "unit": "mm/year"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 847,
+            "unit": "mm/year"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 836,
+            "unit": "mm/year"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 832,
+            "unit": "mm/year"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 824,
+            "unit": "mm/year"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 788,
+            "unit": "mm/year"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 788,
+            "unit": "mm/year"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 778,
+            "unit": "mm/year"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 758,
+            "unit": "mm/year"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 748,
+            "unit": "mm/year"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 715,
+            "unit": "mm/year"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 703,
+            "unit": "mm/year"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 700,
+            "unit": "mm/year"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 691,
+            "unit": "mm/year"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 686,
+            "unit": "mm/year"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 677,
+            "unit": "mm/year"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 667,
+            "unit": "mm/year"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 661,
+            "unit": "mm/year"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 657,
+            "unit": "mm/year"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 656,
+            "unit": "mm/year"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 652,
+            "unit": "mm/year"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": 645,
+            "unit": "mm/year"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 637,
+            "unit": "mm/year"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 636,
+            "unit": "mm/year"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 630,
+            "unit": "mm/year"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 626,
+            "unit": "mm/year"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 624,
+            "unit": "mm/year"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 619,
+            "unit": "mm/year"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 618,
+            "unit": "mm/year"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 608,
+            "unit": "mm/year"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 600,
+            "unit": "mm/year"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 593,
+            "unit": "mm/year"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 591,
+            "unit": "mm/year"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 589,
+            "unit": "mm/year"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 565,
+            "unit": "mm/year"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 562,
+            "unit": "mm/year"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 560,
+            "unit": "mm/year"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 537,
+            "unit": "mm/year"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 536,
+            "unit": "mm/year"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 534,
+            "unit": "mm/year"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 533,
+            "unit": "mm/year"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 498,
+            "unit": "mm/year"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 495,
+            "unit": "mm/year"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 494,
+            "unit": "mm/year"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 460,
+            "unit": "mm/year"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 450,
+            "unit": "mm/year"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 447,
+            "unit": "mm/year"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 435,
+            "unit": "mm/year"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 416,
+            "unit": "mm/year"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": 402,
+            "unit": "mm/year"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 384,
+            "unit": "mm/year"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 346,
+            "unit": "mm/year"
+        },
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 327,
+            "unit": "mm/year"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 322,
+            "unit": "mm/year"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 285,
+            "unit": "mm/year"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 282,
+            "unit": "mm/year"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 282,
+            "unit": "mm/year"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 252,
+            "unit": "mm/year"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 250,
+            "unit": "mm/year"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 250,
+            "unit": "mm/year"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 241,
+            "unit": "mm/year"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 228,
+            "unit": "mm/year"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 228,
+            "unit": "mm/year"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 220,
+            "unit": "mm/year"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 216,
+            "unit": "mm/year"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 207,
+            "unit": "mm/year"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 206,
+            "unit": "mm/year"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 167,
+            "unit": "mm/year"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 161,
+            "unit": "mm/year"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 151,
+            "unit": "mm/year"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 125,
+            "unit": "mm/year"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 121,
+            "unit": "mm/year"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 111,
+            "unit": "mm/year"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 92,
+            "unit": "mm/year"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 89,
+            "unit": "mm/year"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 83,
+            "unit": "mm/year"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 78,
+            "unit": "mm/year"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 74,
+            "unit": "mm/year"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 59,
+            "unit": "mm/year"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 56,
+            "unit": "mm/year"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 18,
+            "unit": "mm/year"
+        }
+    }
+}
+

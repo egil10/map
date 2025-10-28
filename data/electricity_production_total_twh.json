@@ -1,0 +1,939 @@
+{
+    "title": "Total Electricity Production (TWh)",
+    "description": "Total electricity production by country in terawatt-hours (2023-2024)",
+    "unit": "TWh",
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_electricity_production",
+    "data": {
+        "China": {
+            "Country Name": "China",
+            "value": 10073,
+            "unit": "TWh"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 4387,
+            "unit": "TWh"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 2058,
+            "unit": "TWh"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 1221,
+            "unit": "TWh"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 1022,
+            "unit": "TWh"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 745,
+            "unit": "TWh"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 633,
+            "unit": "TWh"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 618,
+            "unit": "TWh"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 518,
+            "unit": "TWh"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 497,
+            "unit": "TWh"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 423,
+            "unit": "TWh"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 383,
+            "unit": "TWh"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 355,
+            "unit": "TWh"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 351,
+            "unit": "TWh"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 320,
+            "unit": "TWh"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 286,
+            "unit": "TWh"
+        },
+        "Taiwan": {
+            "Country Name": "Taiwan",
+            "value": 282,
+            "unit": "TWh"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 279,
+            "unit": "TWh"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 276,
+            "unit": "TWh"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 273,
+            "unit": "TWh"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 261,
+            "unit": "TWh"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 234,
+            "unit": "TWh"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 220,
+            "unit": "TWh"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 190,
+            "unit": "TWh"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 188,
+            "unit": "TWh"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 171,
+            "unit": "TWh"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 166,
+            "unit": "TWh"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 165,
+            "unit": "TWh"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 164,
+            "unit": "TWh"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 153,
+            "unit": "TWh"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 150,
+            "unit": "TWh"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 146,
+            "unit": "TWh"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 120,
+            "unit": "TWh"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 113,
+            "unit": "TWh"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 113,
+            "unit": "TWh"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 112,
+            "unit": "TWh"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 106,
+            "unit": "TWh"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 96,
+            "unit": "TWh"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 90,
+            "unit": "TWh"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 88,
+            "unit": "TWh"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 86,
+            "unit": "TWh"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 83,
+            "unit": "TWh"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 82,
+            "unit": "TWh"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 81,
+            "unit": "TWh"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 76,
+            "unit": "TWh"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 76,
+            "unit": "TWh"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 74,
+            "unit": "TWh"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 70,
+            "unit": "TWh"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 68,
+            "unit": "TWh"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 60,
+            "unit": "TWh"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 57,
+            "unit": "TWh"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 57,
+            "unit": "TWh"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 55,
+            "unit": "TWh"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 52,
+            "unit": "TWh"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 49,
+            "unit": "TWh"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 46,
+            "unit": "TWh"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 45,
+            "unit": "TWh"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 44,
+            "unit": "TWh"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 44,
+            "unit": "TWh"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 44,
+            "unit": "TWh"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 43,
+            "unit": "TWh"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 42,
+            "unit": "TWh"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 40,
+            "unit": "TWh"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 38,
+            "unit": "TWh"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 36,
+            "unit": "TWh"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 36,
+            "unit": "TWh"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 35,
+            "unit": "TWh"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 34,
+            "unit": "TWh"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 34,
+            "unit": "TWh"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 34,
+            "unit": "TWh"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 31,
+            "unit": "TWh"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 30,
+            "unit": "TWh"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 29,
+            "unit": "TWh"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 27,
+            "unit": "TWh"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 26,
+            "unit": "TWh"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 25,
+            "unit": "TWh"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 24,
+            "unit": "TWh"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 23,
+            "unit": "TWh"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 22,
+            "unit": "TWh"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 21,
+            "unit": "TWh"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 20,
+            "unit": "TWh"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 20,
+            "unit": "TWh"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 20,
+            "unit": "TWh"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 19,
+            "unit": "TWh"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 18,
+            "unit": "TWh"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 18,
+            "unit": "TWh"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 17,
+            "unit": "TWh"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 17,
+            "unit": "TWh"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 17,
+            "unit": "TWh"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": 16,
+            "unit": "TWh"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 16,
+            "unit": "TWh"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 15,
+            "unit": "TWh"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 14,
+            "unit": "TWh"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 14,
+            "unit": "TWh"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 14,
+            "unit": "TWh"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 13,
+            "unit": "TWh"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 13,
+            "unit": "TWh"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 13,
+            "unit": "TWh"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 13,
+            "unit": "TWh"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 12,
+            "unit": "TWh"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 12,
+            "unit": "TWh"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 12,
+            "unit": "TWh"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": 11,
+            "unit": "TWh"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 11,
+            "unit": "TWh"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 11,
+            "unit": "TWh"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 11,
+            "unit": "TWh"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 10,
+            "unit": "TWh"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 9,
+            "unit": "TWh"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 9,
+            "unit": "TWh"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 8,
+            "unit": "TWh"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 8,
+            "unit": "TWh"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 8,
+            "unit": "TWh"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 8,
+            "unit": "TWh"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 7,
+            "unit": "TWh"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 6,
+            "unit": "TWh"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 6,
+            "unit": "TWh"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 6,
+            "unit": "TWh"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 6,
+            "unit": "TWh"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 6,
+            "unit": "TWh"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 5,
+            "unit": "TWh"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 4,
+            "unit": "TWh"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 4,
+            "unit": "TWh"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 4,
+            "unit": "TWh"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 4,
+            "unit": "TWh"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 4,
+            "unit": "TWh"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 3,
+            "unit": "TWh"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 3,
+            "unit": "TWh"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 3,
+            "unit": "TWh"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 3,
+            "unit": "TWh"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 3,
+            "unit": "TWh"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 2,
+            "unit": "TWh"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 1,
+            "unit": "TWh"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 0.9,
+            "unit": "TWh"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": 0.8,
+            "unit": "TWh"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 0.8,
+            "unit": "TWh"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 0.6,
+            "unit": "TWh"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 0.6,
+            "unit": "TWh"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 0.6,
+            "unit": "TWh"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 0.5,
+            "unit": "TWh"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": 0.5,
+            "unit": "TWh"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 0.5,
+            "unit": "TWh"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 0.5,
+            "unit": "TWh"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 0.4,
+            "unit": "TWh"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 0.2,
+            "unit": "TWh"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": 0.2,
+            "unit": "TWh"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": 0.2,
+            "unit": "TWh"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 0.2,
+            "unit": "TWh"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 0.1,
+            "unit": "TWh"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 0.09,
+            "unit": "TWh"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 0.08,
+            "unit": "TWh"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 0.08,
+            "unit": "TWh"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": 0.07,
+            "unit": "TWh"
+        },
+        "Kiribati": {
+            "Country Name": "Kiribati",
+            "value": 0.04,
+            "unit": "TWh"
+        },
+        "Nauru": {
+            "Country Name": "Nauru",
+            "value": 0.04,
+            "unit": "TWh"
+        }
+    }
+}
+

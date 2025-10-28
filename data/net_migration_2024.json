@@ -1,0 +1,979 @@
+{
+    "title": "Net Migration 2024",
+    "description": "Net total of migrants (immigrants minus emigrants) in 2024",
+    "unit": "people",
+    "source": "https://data.worldbank.org/indicator/SM.POP.NETM",
+    "data": {
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": -44089,
+            "unit": "people"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": -2629,
+            "unit": "people"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": -24472,
+            "unit": "people"
+        },
+        "Andorra": {
+            "Country Name": "Andorra",
+            "value": 988,
+            "unit": "people"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 278439,
+            "unit": "people"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 3454,
+            "unit": "people"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": -29966,
+            "unit": "people"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 9,
+            "unit": "people"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 138510,
+            "unit": "people"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 8813,
+            "unit": "people"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 10864,
+            "unit": "people"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": -27074,
+            "unit": "people"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 36243,
+            "unit": "people"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": -7725,
+            "unit": "people"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": -25807,
+            "unit": "people"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": -473362,
+            "unit": "people"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 524,
+            "unit": "people"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 22699,
+            "unit": "people"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 1018,
+            "unit": "people"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": -4497,
+            "unit": "people"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": -3119,
+            "unit": "people"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 490,
+            "unit": "people"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": -3000,
+            "unit": "people"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": -225510,
+            "unit": "people"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": -70,
+            "unit": "people"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 0,
+            "unit": "people"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": -277,
+            "unit": "people"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": -5778,
+            "unit": "people"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": -15357,
+            "unit": "people"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 368599,
+            "unit": "people"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 40099,
+            "unit": "people"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 58316,
+            "unit": "people"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": -318992,
+            "unit": "people"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 7838,
+            "unit": "people"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": -13892,
+            "unit": "people"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": -26968,
+            "unit": "people"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": -2491,
+            "unit": "people"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 141643,
+            "unit": "people"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": -2051,
+            "unit": "people"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": -1209,
+            "unit": "people"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 967,
+            "unit": "people"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": -22356,
+            "unit": "people"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 8138,
+            "unit": "people"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": -86169,
+            "unit": "people"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 36954,
+            "unit": "people"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": -11,
+            "unit": "people"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": -200,
+            "unit": "people"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 25639,
+            "unit": "people"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": -34806,
+            "unit": "people"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": -31240,
+            "unit": "people"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": -19704,
+            "unit": "people"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 123884,
+            "unit": "people"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": -12696,
+            "unit": "people"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 111674,
+            "unit": "people"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": -7742,
+            "unit": "people"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 30069,
+            "unit": "people"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 26894,
+            "unit": "people"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": -3278,
+            "unit": "people"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 90527,
+            "unit": "people"
+        },
+        "Micronesia": {
+            "Country Name": "Micronesia",
+            "value": -1104,
+            "unit": "people"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 1105,
+            "unit": "people"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 417114,
+            "unit": "people"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 1745,
+            "unit": "people"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": -13114,
+            "unit": "people"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": -12024,
+            "unit": "people"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": -2989,
+            "unit": "people"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": -1712,
+            "unit": "people"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 3891,
+            "unit": "people"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": -122772,
+            "unit": "people"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": -192,
+            "unit": "people"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": -7725,
+            "unit": "people"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": -5407,
+            "unit": "people"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": -4821,
+            "unit": "people"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": -5186,
+            "unit": "people"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": -31747,
+            "unit": "people"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 16223,
+            "unit": "people"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": -38469,
+            "unit": "people"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": -630830,
+            "unit": "people"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 39059,
+            "unit": "people"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 190156,
+            "unit": "people"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": -17735,
+            "unit": "people"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 3543,
+            "unit": "people"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 10612,
+            "unit": "people"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 95246,
+            "unit": "people"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": -10506,
+            "unit": "people"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": -156369,
+            "unit": "people"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 153357,
+            "unit": "people"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": -7368,
+            "unit": "people"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": -19781,
+            "unit": "people"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 3645,
+            "unit": "people"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": -32960,
+            "unit": "people"
+        },
+        "Kiribati": {
+            "Country Name": "Kiribati",
+            "value": -471,
+            "unit": "people"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": -7,
+            "unit": "people"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 75963,
+            "unit": "people"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 61624,
+            "unit": "people"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": -10284,
+            "unit": "people"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": -17267,
+            "unit": "people"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": -7779,
+            "unit": "people"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 3448,
+            "unit": "people"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": -7,
+            "unit": "people"
+        },
+        "Liechtenstein": {
+            "Country Name": "Liechtenstein",
+            "value": 206,
+            "unit": "people"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": -27245,
+            "unit": "people"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": -5107,
+            "unit": "people"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 2617,
+            "unit": "people"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 5677,
+            "unit": "people"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": -2225,
+            "unit": "people"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": -46802,
+            "unit": "people"
+        },
+        "Monaco": {
+            "Country Name": "Monaco",
+            "value": 110,
+            "unit": "people"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": -27088,
+            "unit": "people"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": -1795,
+            "unit": "people"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": -2421,
+            "unit": "people"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": -104581,
+            "unit": "people"
+        },
+        "Marshall Islands": {
+            "Country Name": "Marshall Islands",
+            "value": -1765,
+            "unit": "people"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": -5728,
+            "unit": "people"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": -46880,
+            "unit": "people"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 6323,
+            "unit": "people"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": -37979,
+            "unit": "people"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": -1686,
+            "unit": "people"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 83,
+            "unit": "people"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": -38940,
+            "unit": "people"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": -2185,
+            "unit": "people"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": -2787,
+            "unit": "people"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": -1507,
+            "unit": "people"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 174770,
+            "unit": "people"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 4211,
+            "unit": "people"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": -4041,
+            "unit": "people"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": -35202,
+            "unit": "people"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": -8189,
+            "unit": "people"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 121628,
+            "unit": "people"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 44356,
+            "unit": "people"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": -401282,
+            "unit": "people"
+        },
+        "Nauru": {
+            "Country Name": "Nauru",
+            "value": -121,
+            "unit": "people"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 18766,
+            "unit": "people"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 154219,
+            "unit": "people"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": -1401173,
+            "unit": "people"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 6706,
+            "unit": "people"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 18406,
+            "unit": "people"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": -160373,
+            "unit": "people"
+        },
+        "Palau": {
+            "Country Name": "Palau",
+            "value": -14,
+            "unit": "people"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": -707,
+            "unit": "people"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": -238062,
+            "unit": "people"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": -2473,
+            "unit": "people"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 20648,
+            "unit": "people"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": -12451,
+            "unit": "people"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": -23145,
+            "unit": "people"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 46105,
+            "unit": "people"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": -28466,
+            "unit": "people"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": -178042,
+            "unit": "people"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": -15582,
+            "unit": "people"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 122170,
+            "unit": "people"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": -544257,
+            "unit": "people"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": -10307,
+            "unit": "people"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 20011,
+            "unit": "people"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 1610,
+            "unit": "people"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": -11000,
+            "unit": "people"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": -23102,
+            "unit": "people"
+        },
+        "San Marino": {
+            "Country Name": "San Marino",
+            "value": 37,
+            "unit": "people"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 26859,
+            "unit": "people"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": -8132,
+            "unit": "people"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 15374,
+            "unit": "people"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": -604,
+            "unit": "people"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": -1166,
+            "unit": "people"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": -21027,
+            "unit": "people"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 3319,
+            "unit": "people"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 50115,
+            "unit": "people"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": -6754,
+            "unit": "people"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 1747,
+            "unit": "people"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 546494,
+            "unit": "people"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 204040,
+            "unit": "people"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": -14014,
+            "unit": "people"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 23321,
+            "unit": "people"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": -21236,
+            "unit": "people"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 14646,
+            "unit": "people"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": -2552,
+            "unit": "people"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": -2149,
+            "unit": "people"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 1334,
+            "unit": "people"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": -15221,
+            "unit": "people"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": -275952,
+            "unit": "people"
+        },
+        "Tuvalu": {
+            "Country Name": "Tuvalu",
+            "value": -280,
+            "unit": "people"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": -29865,
+            "unit": "people"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": -117924,
+            "unit": "people"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 1146012,
+            "unit": "people"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": -1348,
+            "unit": "people"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 1286132,
+            "unit": "people"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": -7066,
+            "unit": "people"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": -737,
+            "unit": "people"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": -105297,
+            "unit": "people"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": -59645,
+            "unit": "people"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": -43,
+            "unit": "people"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": -2754,
+            "unit": "people"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": -10482,
+            "unit": "people"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 166972,
+            "unit": "people"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 7381,
+            "unit": "people"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": -60528,
+            "unit": "people"
+        }
+    }
+}
+

@@ -1,0 +1,924 @@
+{
+    "title": "Energy Consumption Per Capita (kWh)",
+    "description": "Total energy consumption per capita in kilowatt-hours per year (2021-2022)",
+    "unit": "kWh/year",
+    "source": "https://en.wikipedia.org/wiki/List_of_countries_by_energy_consumption_per_capita",
+    "data": {
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 677,
+            "unit": "kWh/year"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 14100,
+            "unit": "kWh/year"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 15252,
+            "unit": "kWh/year"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 2791,
+            "unit": "kWh/year"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 29464,
+            "unit": "kWh/year"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 21994,
+            "unit": "kWh/year"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 17685,
+            "unit": "kWh/year"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 63459,
+            "unit": "kWh/year"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 42685,
+            "unit": "kWh/year"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 18748,
+            "unit": "kWh/year"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 35448,
+            "unit": "kWh/year"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 161111,
+            "unit": "kWh/year"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 2912,
+            "unit": "kWh/year"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 23026,
+            "unit": "kWh/year"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 31133,
+            "unit": "kWh/year"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 58396,
+            "unit": "kWh/year"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 7438,
+            "unit": "kWh/year"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 2485,
+            "unit": "kWh/year"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": 27785,
+            "unit": "kWh/year"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 7062,
+            "unit": "kWh/year"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 23013,
+            "unit": "kWh/year"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 9385,
+            "unit": "kWh/year"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 17300,
+            "unit": "kWh/year"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 103268,
+            "unit": "kWh/year"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 34176,
+            "unit": "kWh/year"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 905,
+            "unit": "kWh/year"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": 294,
+            "unit": "kWh/year"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 4035,
+            "unit": "kWh/year"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 1594,
+            "unit": "kWh/year"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 102160,
+            "unit": "kWh/year"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 7249,
+            "unit": "kWh/year"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 286,
+            "unit": "kWh/year"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 25343,
+            "unit": "kWh/year"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": 31051,
+            "unit": "kWh/year"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 11747,
+            "unit": "kWh/year"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": 1634,
+            "unit": "kWh/year"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": 411,
+            "unit": "kWh/year"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 2348,
+            "unit": "kWh/year"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 11958,
+            "unit": "kWh/year"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 2371,
+            "unit": "kWh/year"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 23468,
+            "unit": "kWh/year"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 9230,
+            "unit": "kWh/year"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 25360,
+            "unit": "kWh/year"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 44242,
+            "unit": "kWh/year"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 32198,
+            "unit": "kWh/year"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 2785,
+            "unit": "kWh/year"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 10548,
+            "unit": "kWh/year"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 9988,
+            "unit": "kWh/year"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 12150,
+            "unit": "kWh/year"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 9960,
+            "unit": "kWh/year"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 7076,
+            "unit": "kWh/year"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 12399,
+            "unit": "kWh/year"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 914,
+            "unit": "kWh/year"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 46505,
+            "unit": "kWh/year"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 5981,
+            "unit": "kWh/year"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 872,
+            "unit": "kWh/year"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 9223,
+            "unit": "kWh/year"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 58966,
+            "unit": "kWh/year"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 36052,
+            "unit": "kWh/year"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 8010,
+            "unit": "kWh/year"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 931,
+            "unit": "kWh/year"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 20835,
+            "unit": "kWh/year"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 40977,
+            "unit": "kWh/year"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 3483,
+            "unit": "kWh/year"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 30410,
+            "unit": "kWh/year"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 9432,
+            "unit": "kWh/year"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 5712,
+            "unit": "kWh/year"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 1282,
+            "unit": "kWh/year"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 677,
+            "unit": "kWh/year"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 13690,
+            "unit": "kWh/year"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 1031,
+            "unit": "kWh/year"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 5087,
+            "unit": "kWh/year"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 26660,
+            "unit": "kWh/year"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 165871,
+            "unit": "kWh/year"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 7143,
+            "unit": "kWh/year"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 9854,
+            "unit": "kWh/year"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 38133,
+            "unit": "kWh/year"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 14392,
+            "unit": "kWh/year"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 37761,
+            "unit": "kWh/year"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 33643,
+            "unit": "kWh/year"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 28910,
+            "unit": "kWh/year"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 12236,
+            "unit": "kWh/year"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 39985,
+            "unit": "kWh/year"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 9183,
+            "unit": "kWh/year"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 44702,
+            "unit": "kWh/year"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 1953,
+            "unit": "kWh/year"
+        },
+        "Kiribati": {
+            "Country Name": "Kiribati",
+            "value": 2447,
+            "unit": "kWh/year"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 3834,
+            "unit": "kWh/year"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 68126,
+            "unit": "kWh/year"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 103883,
+            "unit": "kWh/year"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 9275,
+            "unit": "kWh/year"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 18847,
+            "unit": "kWh/year"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 21436,
+            "unit": "kWh/year"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 18832,
+            "unit": "kWh/year"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 2133,
+            "unit": "kWh/year"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 1065,
+            "unit": "kWh/year"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 28270,
+            "unit": "kWh/year"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 23151,
+            "unit": "kWh/year"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 60334,
+            "unit": "kWh/year"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 508,
+            "unit": "kWh/year"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 465,
+            "unit": "kWh/year"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 39587,
+            "unit": "kWh/year"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": 17669,
+            "unit": "kWh/year"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 1169,
+            "unit": "kWh/year"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 74324,
+            "unit": "kWh/year"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 3989,
+            "unit": "kWh/year"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 19725,
+            "unit": "kWh/year"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 19009,
+            "unit": "kWh/year"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 16006,
+            "unit": "kWh/year"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 22408,
+            "unit": "kWh/year"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 18940,
+            "unit": "kWh/year"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 6855,
+            "unit": "kWh/year"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 2241,
+            "unit": "kWh/year"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 3065,
+            "unit": "kWh/year"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 8748,
+            "unit": "kWh/year"
+        },
+        "Nauru": {
+            "Country Name": "Nauru",
+            "value": 21610,
+            "unit": "kWh/year"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 1608,
+            "unit": "kWh/year"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 56001,
+            "unit": "kWh/year"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 44939,
+            "unit": "kWh/year"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 4265,
+            "unit": "kWh/year"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 410,
+            "unit": "kWh/year"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 2548,
+            "unit": "kWh/year"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 13875,
+            "unit": "kWh/year"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 96926,
+            "unit": "kWh/year"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 90751,
+            "unit": "kWh/year"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 4243,
+            "unit": "kWh/year"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": 3999,
+            "unit": "kWh/year"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 27067,
+            "unit": "kWh/year"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": 2123,
+            "unit": "kWh/year"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 15782,
+            "unit": "kWh/year"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 9835,
+            "unit": "kWh/year"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 5067,
+            "unit": "kWh/year"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 30065,
+            "unit": "kWh/year"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 25094,
+            "unit": "kWh/year"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 194222,
+            "unit": "kWh/year"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 18347,
+            "unit": "kWh/year"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 55459,
+            "unit": "kWh/year"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 471,
+            "unit": "kWh/year"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 13600,
+            "unit": "kWh/year"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 8245,
+            "unit": "kWh/year"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 7302,
+            "unit": "kWh/year"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 3310,
+            "unit": "kWh/year"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 87707,
+            "unit": "kWh/year"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 2505,
+            "unit": "kWh/year"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 27641,
+            "unit": "kWh/year"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 45934,
+            "unit": "kWh/year"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 147085,
+            "unit": "kWh/year"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 33888,
+            "unit": "kWh/year"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 34391,
+            "unit": "kWh/year"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 1892,
+            "unit": "kWh/year"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 217,
+            "unit": "kWh/year"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 22351,
+            "unit": "kWh/year"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 732,
+            "unit": "kWh/year"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 33615,
+            "unit": "kWh/year"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": 4348,
+            "unit": "kWh/year"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 2317,
+            "unit": "kWh/year"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 20285,
+            "unit": "kWh/year"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 59927,
+            "unit": "kWh/year"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 33351,
+            "unit": "kWh/year"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 5507,
+            "unit": "kWh/year"
+        },
+        "Taiwan": {
+            "Country Name": "Taiwan",
+            "value": 55607,
+            "unit": "kWh/year"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 7675,
+            "unit": "kWh/year"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 907,
+            "unit": "kWh/year"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 19617,
+            "unit": "kWh/year"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 1116,
+            "unit": "kWh/year"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": 6699,
+            "unit": "kWh/year"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 107269,
+            "unit": "kWh/year"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 9524,
+            "unit": "kWh/year"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 22824,
+            "unit": "kWh/year"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 71367,
+            "unit": "kWh/year"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 767,
+            "unit": "kWh/year"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 16309,
+            "unit": "kWh/year"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 148577,
+            "unit": "kWh/year"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 30098,
+            "unit": "kWh/year"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 78754,
+            "unit": "kWh/year"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 18317,
+            "unit": "kWh/year"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 16930,
+            "unit": "kWh/year"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 2957,
+            "unit": "kWh/year"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 21683,
+            "unit": "kWh/year"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 12983,
+            "unit": "kWh/year"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 1080,
+            "unit": "kWh/year"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 3419,
+            "unit": "kWh/year"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 2635,
+            "unit": "kWh/year"
+        }
+    }
+}
+

@@ -1,0 +1,169 @@
+{
+    "title": "Cost of Insulin by Country",
+    "description": "Average cost of insulin per country in 2025",
+    "unit": "USD",
+    "source": "https://worldpopulationreview.com/country-rankings/cost-of-insulin-by-country",
+    "data": {
+        "United States": {
+            "Country Name": "United States",
+            "value": 98.70,
+            "unit": "USD"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 21.48,
+            "unit": "USD"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 16.48,
+            "unit": "USD"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 14.40,
+            "unit": "USD"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 12.36,
+            "unit": "USD"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 12.00,
+            "unit": "USD"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 11.00,
+            "unit": "USD"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 10.15,
+            "unit": "USD"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 10.03,
+            "unit": "USD"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 9.98,
+            "unit": "USD"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 9.85,
+            "unit": "USD"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 9.61,
+            "unit": "USD"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 9.08,
+            "unit": "USD"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 9.04,
+            "unit": "USD"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 8.94,
+            "unit": "USD"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 8.89,
+            "unit": "USD"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 8.65,
+            "unit": "USD"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 8.39,
+            "unit": "USD"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 8.30,
+            "unit": "USD"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 8.18,
+            "unit": "USD"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 8.03,
+            "unit": "USD"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 7.92,
+            "unit": "USD"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 7.89,
+            "unit": "USD"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 7.79,
+            "unit": "USD"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 7.71,
+            "unit": "USD"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 7.52,
+            "unit": "USD"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 7.43,
+            "unit": "USD"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 6.94,
+            "unit": "USD"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 6.91,
+            "unit": "USD"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 6.14,
+            "unit": "USD"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 5.28,
+            "unit": "USD"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 2.64,
+            "unit": "USD"
+        }
+    }
+}
+

@@ -1,0 +1,979 @@
+{
+    "title": "Female Population Percentage 2024",
+    "description": "Percentage of the population that is female in 2024",
+    "unit": "percent",
+    "source": "https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS",
+    "data": {
+        "Afghanistan": {
+            "Country Name": "Afghanistan",
+            "value": 49.51,
+            "unit": "percent"
+        },
+        "Angola": {
+            "Country Name": "Angola",
+            "value": 50.52,
+            "unit": "percent"
+        },
+        "Albania": {
+            "Country Name": "Albania",
+            "value": 50.57,
+            "unit": "percent"
+        },
+        "Andorra": {
+            "Country Name": "Andorra",
+            "value": 48.88,
+            "unit": "percent"
+        },
+        "United Arab Emirates": {
+            "Country Name": "United Arab Emirates",
+            "value": 36.10,
+            "unit": "percent"
+        },
+        "Argentina": {
+            "Country Name": "Argentina",
+            "value": 50.37,
+            "unit": "percent"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 53.57,
+            "unit": "percent"
+        },
+        "Antigua and Barbuda": {
+            "Country Name": "Antigua and Barbuda",
+            "value": 52.40,
+            "unit": "percent"
+        },
+        "Australia": {
+            "Country Name": "Australia",
+            "value": 50.38,
+            "unit": "percent"
+        },
+        "Austria": {
+            "Country Name": "Austria",
+            "value": 50.77,
+            "unit": "percent"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 50.98,
+            "unit": "percent"
+        },
+        "Burundi": {
+            "Country Name": "Burundi",
+            "value": 50.32,
+            "unit": "percent"
+        },
+        "Belgium": {
+            "Country Name": "Belgium",
+            "value": 50.69,
+            "unit": "percent"
+        },
+        "Benin": {
+            "Country Name": "Benin",
+            "value": 49.85,
+            "unit": "percent"
+        },
+        "Burkina Faso": {
+            "Country Name": "Burkina Faso",
+            "value": 50.19,
+            "unit": "percent"
+        },
+        "Bangladesh": {
+            "Country Name": "Bangladesh",
+            "value": 50.83,
+            "unit": "percent"
+        },
+        "Bulgaria": {
+            "Country Name": "Bulgaria",
+            "value": 51.61,
+            "unit": "percent"
+        },
+        "Bahrain": {
+            "Country Name": "Bahrain",
+            "value": 37.96,
+            "unit": "percent"
+        },
+        "Bahamas": {
+            "Country Name": "Bahamas",
+            "value": 52.25,
+            "unit": "percent"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 52.41,
+            "unit": "percent"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 53.40,
+            "unit": "percent"
+        },
+        "Belize": {
+            "Country Name": "Belize",
+            "value": 49.54,
+            "unit": "percent"
+        },
+        "Bolivia": {
+            "Country Name": "Bolivia",
+            "value": 49.90,
+            "unit": "percent"
+        },
+        "Brazil": {
+            "Country Name": "Brazil",
+            "value": 50.80,
+            "unit": "percent"
+        },
+        "Barbados": {
+            "Country Name": "Barbados",
+            "value": 52.06,
+            "unit": "percent"
+        },
+        "Brunei": {
+            "Country Name": "Brunei",
+            "value": 46.90,
+            "unit": "percent"
+        },
+        "Bhutan": {
+            "Country Name": "Bhutan",
+            "value": 46.55,
+            "unit": "percent"
+        },
+        "Botswana": {
+            "Country Name": "Botswana",
+            "value": 50.16,
+            "unit": "percent"
+        },
+        "Central African Republic": {
+            "Country Name": "Central African Republic",
+            "value": 52.01,
+            "unit": "percent"
+        },
+        "Canada": {
+            "Country Name": "Canada",
+            "value": 50.34,
+            "unit": "percent"
+        },
+        "Switzerland": {
+            "Country Name": "Switzerland",
+            "value": 50.32,
+            "unit": "percent"
+        },
+        "Chile": {
+            "Country Name": "Chile",
+            "value": 50.30,
+            "unit": "percent"
+        },
+        "China": {
+            "Country Name": "China",
+            "value": 49.06,
+            "unit": "percent"
+        },
+        "Ivory Coast": {
+            "Country Name": "Ivory Coast",
+            "value": 49.12,
+            "unit": "percent"
+        },
+        "Cameroon": {
+            "Country Name": "Cameroon",
+            "value": 50.16,
+            "unit": "percent"
+        },
+        "Democratic Republic of the Congo": {
+            "Country Name": "Democratic Republic of the Congo",
+            "value": 50.39,
+            "unit": "percent"
+        },
+        "Congo": {
+            "Country Name": "Congo",
+            "value": 50.01,
+            "unit": "percent"
+        },
+        "Colombia": {
+            "Country Name": "Colombia",
+            "value": 50.66,
+            "unit": "percent"
+        },
+        "Comoros": {
+            "Country Name": "Comoros",
+            "value": 49.71,
+            "unit": "percent"
+        },
+        "Cape Verde": {
+            "Country Name": "Cape Verde",
+            "value": 49.14,
+            "unit": "percent"
+        },
+        "Costa Rica": {
+            "Country Name": "Costa Rica",
+            "value": 50.59,
+            "unit": "percent"
+        },
+        "Cuba": {
+            "Country Name": "Cuba",
+            "value": 50.66,
+            "unit": "percent"
+        },
+        "Cyprus": {
+            "Country Name": "Cyprus",
+            "value": 49.62,
+            "unit": "percent"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 50.69,
+            "unit": "percent"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 50.62,
+            "unit": "percent"
+        },
+        "Djibouti": {
+            "Country Name": "Djibouti",
+            "value": 50.43,
+            "unit": "percent"
+        },
+        "Dominica": {
+            "Country Name": "Dominica",
+            "value": 50.00,
+            "unit": "percent"
+        },
+        "Denmark": {
+            "Country Name": "Denmark",
+            "value": 50.29,
+            "unit": "percent"
+        },
+        "Dominican Republic": {
+            "Country Name": "Dominican Republic",
+            "value": 50.29,
+            "unit": "percent"
+        },
+        "Algeria": {
+            "Country Name": "Algeria",
+            "value": 49.00,
+            "unit": "percent"
+        },
+        "Ecuador": {
+            "Country Name": "Ecuador",
+            "value": 50.15,
+            "unit": "percent"
+        },
+        "Egypt": {
+            "Country Name": "Egypt",
+            "value": 49.51,
+            "unit": "percent"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 50.63,
+            "unit": "percent"
+        },
+        "Spain": {
+            "Country Name": "Spain",
+            "value": 50.90,
+            "unit": "percent"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 52.45,
+            "unit": "percent"
+        },
+        "Ethiopia": {
+            "Country Name": "Ethiopia",
+            "value": 49.90,
+            "unit": "percent"
+        },
+        "Finland": {
+            "Country Name": "Finland",
+            "value": 50.57,
+            "unit": "percent"
+        },
+        "Fiji": {
+            "Country Name": "Fiji",
+            "value": 50.37,
+            "unit": "percent"
+        },
+        "France": {
+            "Country Name": "France",
+            "value": 51.52,
+            "unit": "percent"
+        },
+        "Micronesia": {
+            "Country Name": "Micronesia",
+            "value": 50.32,
+            "unit": "percent"
+        },
+        "Gabon": {
+            "Country Name": "Gabon",
+            "value": 49.24,
+            "unit": "percent"
+        },
+        "United Kingdom": {
+            "Country Name": "United Kingdom",
+            "value": 50.76,
+            "unit": "percent"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 53.39,
+            "unit": "percent"
+        },
+        "Ghana": {
+            "Country Name": "Ghana",
+            "value": 50.06,
+            "unit": "percent"
+        },
+        "Guinea": {
+            "Country Name": "Guinea",
+            "value": 50.52,
+            "unit": "percent"
+        },
+        "Gambia": {
+            "Country Name": "Gambia",
+            "value": 50.21,
+            "unit": "percent"
+        },
+        "Guinea-Bissau": {
+            "Country Name": "Guinea-Bissau",
+            "value": 50.58,
+            "unit": "percent"
+        },
+        "Equatorial Guinea": {
+            "Country Name": "Equatorial Guinea",
+            "value": 47.28,
+            "unit": "percent"
+        },
+        "Greece": {
+            "Country Name": "Greece",
+            "value": 51.56,
+            "unit": "percent"
+        },
+        "Grenada": {
+            "Country Name": "Grenada",
+            "value": 49.87,
+            "unit": "percent"
+        },
+        "Guatemala": {
+            "Country Name": "Guatemala",
+            "value": 50.40,
+            "unit": "percent"
+        },
+        "Guyana": {
+            "Country Name": "Guyana",
+            "value": 51.32,
+            "unit": "percent"
+        },
+        "Honduras": {
+            "Country Name": "Honduras",
+            "value": 49.66,
+            "unit": "percent"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 51.76,
+            "unit": "percent"
+        },
+        "Haiti": {
+            "Country Name": "Haiti",
+            "value": 50.52,
+            "unit": "percent"
+        },
+        "Hungary": {
+            "Country Name": "Hungary",
+            "value": 51.98,
+            "unit": "percent"
+        },
+        "Indonesia": {
+            "Country Name": "Indonesia",
+            "value": 49.77,
+            "unit": "percent"
+        },
+        "India": {
+            "Country Name": "India",
+            "value": 48.42,
+            "unit": "percent"
+        },
+        "Ireland": {
+            "Country Name": "Ireland",
+            "value": 50.50,
+            "unit": "percent"
+        },
+        "Iran": {
+            "Country Name": "Iran",
+            "value": 49.18,
+            "unit": "percent"
+        },
+        "Iraq": {
+            "Country Name": "Iraq",
+            "value": 49.80,
+            "unit": "percent"
+        },
+        "Iceland": {
+            "Country Name": "Iceland",
+            "value": 48.80,
+            "unit": "percent"
+        },
+        "Israel": {
+            "Country Name": "Israel",
+            "value": 50.21,
+            "unit": "percent"
+        },
+        "Italy": {
+            "Country Name": "Italy",
+            "value": 51.13,
+            "unit": "percent"
+        },
+        "Jamaica": {
+            "Country Name": "Jamaica",
+            "value": 50.55,
+            "unit": "percent"
+        },
+        "Jordan": {
+            "Country Name": "Jordan",
+            "value": 48.43,
+            "unit": "percent"
+        },
+        "Japan": {
+            "Country Name": "Japan",
+            "value": 51.22,
+            "unit": "percent"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 51.29,
+            "unit": "percent"
+        },
+        "Kenya": {
+            "Country Name": "Kenya",
+            "value": 50.28,
+            "unit": "percent"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 50.57,
+            "unit": "percent"
+        },
+        "Cambodia": {
+            "Country Name": "Cambodia",
+            "value": 51.00,
+            "unit": "percent"
+        },
+        "Kiribati": {
+            "Country Name": "Kiribati",
+            "value": 51.47,
+            "unit": "percent"
+        },
+        "Saint Kitts and Nevis": {
+            "Country Name": "Saint Kitts and Nevis",
+            "value": 52.13,
+            "unit": "percent"
+        },
+        "South Korea": {
+            "Country Name": "South Korea",
+            "value": 50.09,
+            "unit": "percent"
+        },
+        "Kuwait": {
+            "Country Name": "Kuwait",
+            "value": 38.89,
+            "unit": "percent"
+        },
+        "Laos": {
+            "Country Name": "Laos",
+            "value": 49.75,
+            "unit": "percent"
+        },
+        "Lebanon": {
+            "Country Name": "Lebanon",
+            "value": 51.37,
+            "unit": "percent"
+        },
+        "Liberia": {
+            "Country Name": "Liberia",
+            "value": 50.08,
+            "unit": "percent"
+        },
+        "Libya": {
+            "Country Name": "Libya",
+            "value": 49.15,
+            "unit": "percent"
+        },
+        "Saint Lucia": {
+            "Country Name": "Saint Lucia",
+            "value": 50.63,
+            "unit": "percent"
+        },
+        "Liechtenstein": {
+            "Country Name": "Liechtenstein",
+            "value": 50.32,
+            "unit": "percent"
+        },
+        "Sri Lanka": {
+            "Country Name": "Sri Lanka",
+            "value": 51.62,
+            "unit": "percent"
+        },
+        "Lesotho": {
+            "Country Name": "Lesotho",
+            "value": 51.28,
+            "unit": "percent"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 52.80,
+            "unit": "percent"
+        },
+        "Luxembourg": {
+            "Country Name": "Luxembourg",
+            "value": 49.67,
+            "unit": "percent"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 53.64,
+            "unit": "percent"
+        },
+        "Morocco": {
+            "Country Name": "Morocco",
+            "value": 49.58,
+            "unit": "percent"
+        },
+        "Monaco": {
+            "Country Name": "Monaco",
+            "value": 51.08,
+            "unit": "percent"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 53.99,
+            "unit": "percent"
+        },
+        "Madagascar": {
+            "Country Name": "Madagascar",
+            "value": 49.84,
+            "unit": "percent"
+        },
+        "Maldives": {
+            "Country Name": "Maldives",
+            "value": 38.08,
+            "unit": "percent"
+        },
+        "Mexico": {
+            "Country Name": "Mexico",
+            "value": 51.51,
+            "unit": "percent"
+        },
+        "Marshall Islands": {
+            "Country Name": "Marshall Islands",
+            "value": 48.77,
+            "unit": "percent"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 51.35,
+            "unit": "percent"
+        },
+        "Mali": {
+            "Country Name": "Mali",
+            "value": 49.54,
+            "unit": "percent"
+        },
+        "Malta": {
+            "Country Name": "Malta",
+            "value": 48.10,
+            "unit": "percent"
+        },
+        "Myanmar": {
+            "Country Name": "Myanmar",
+            "value": 50.22,
+            "unit": "percent"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 51.87,
+            "unit": "percent"
+        },
+        "Mongolia": {
+            "Country Name": "Mongolia",
+            "value": 50.14,
+            "unit": "percent"
+        },
+        "Mozambique": {
+            "Country Name": "Mozambique",
+            "value": 51.48,
+            "unit": "percent"
+        },
+        "Mauritania": {
+            "Country Name": "Mauritania",
+            "value": 50.95,
+            "unit": "percent"
+        },
+        "Mauritius": {
+            "Country Name": "Mauritius",
+            "value": 50.08,
+            "unit": "percent"
+        },
+        "Malawi": {
+            "Country Name": "Malawi",
+            "value": 51.20,
+            "unit": "percent"
+        },
+        "Malaysia": {
+            "Country Name": "Malaysia",
+            "value": 47.64,
+            "unit": "percent"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 51.16,
+            "unit": "percent"
+        },
+        "Niger": {
+            "Country Name": "Niger",
+            "value": 49.23,
+            "unit": "percent"
+        },
+        "Nigeria": {
+            "Country Name": "Nigeria",
+            "value": 49.43,
+            "unit": "percent"
+        },
+        "Nicaragua": {
+            "Country Name": "Nicaragua",
+            "value": 50.81,
+            "unit": "percent"
+        },
+        "Netherlands": {
+            "Country Name": "Netherlands",
+            "value": 50.32,
+            "unit": "percent"
+        },
+        "Norway": {
+            "Country Name": "Norway",
+            "value": 49.60,
+            "unit": "percent"
+        },
+        "Nepal": {
+            "Country Name": "Nepal",
+            "value": 52.11,
+            "unit": "percent"
+        },
+        "Nauru": {
+            "Country Name": "Nauru",
+            "value": 49.09,
+            "unit": "percent"
+        },
+        "New Zealand": {
+            "Country Name": "New Zealand",
+            "value": 50.31,
+            "unit": "percent"
+        },
+        "Oman": {
+            "Country Name": "Oman",
+            "value": 37.79,
+            "unit": "percent"
+        },
+        "Pakistan": {
+            "Country Name": "Pakistan",
+            "value": 49.28,
+            "unit": "percent"
+        },
+        "Panama": {
+            "Country Name": "Panama",
+            "value": 50.00,
+            "unit": "percent"
+        },
+        "Peru": {
+            "Country Name": "Peru",
+            "value": 50.27,
+            "unit": "percent"
+        },
+        "Philippines": {
+            "Country Name": "Philippines",
+            "value": 50.12,
+            "unit": "percent"
+        },
+        "Palau": {
+            "Country Name": "Palau",
+            "value": 46.14,
+            "unit": "percent"
+        },
+        "Papua New Guinea": {
+            "Country Name": "Papua New Guinea",
+            "value": 48.57,
+            "unit": "percent"
+        },
+        "Poland": {
+            "Country Name": "Poland",
+            "value": 51.55,
+            "unit": "percent"
+        },
+        "North Korea": {
+            "Country Name": "North Korea",
+            "value": 50.53,
+            "unit": "percent"
+        },
+        "Portugal": {
+            "Country Name": "Portugal",
+            "value": 52.37,
+            "unit": "percent"
+        },
+        "Paraguay": {
+            "Country Name": "Paraguay",
+            "value": 49.86,
+            "unit": "percent"
+        },
+        "Palestine": {
+            "Country Name": "Palestine",
+            "value": 50.36,
+            "unit": "percent"
+        },
+        "Qatar": {
+            "Country Name": "Qatar",
+            "value": 28.72,
+            "unit": "percent"
+        },
+        "Romania": {
+            "Country Name": "Romania",
+            "value": 51.57,
+            "unit": "percent"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 53.59,
+            "unit": "percent"
+        },
+        "Rwanda": {
+            "Country Name": "Rwanda",
+            "value": 51.22,
+            "unit": "percent"
+        },
+        "Saudi Arabia": {
+            "Country Name": "Saudi Arabia",
+            "value": 39.46,
+            "unit": "percent"
+        },
+        "Sudan": {
+            "Country Name": "Sudan",
+            "value": 50.42,
+            "unit": "percent"
+        },
+        "Senegal": {
+            "Country Name": "Senegal",
+            "value": 49.17,
+            "unit": "percent"
+        },
+        "Singapore": {
+            "Country Name": "Singapore",
+            "value": 48.33,
+            "unit": "percent"
+        },
+        "Solomon Islands": {
+            "Country Name": "Solomon Islands",
+            "value": 48.87,
+            "unit": "percent"
+        },
+        "Sierra Leone": {
+            "Country Name": "Sierra Leone",
+            "value": 50.13,
+            "unit": "percent"
+        },
+        "El Salvador": {
+            "Country Name": "El Salvador",
+            "value": 52.50,
+            "unit": "percent"
+        },
+        "San Marino": {
+            "Country Name": "San Marino",
+            "value": 50.83,
+            "unit": "percent"
+        },
+        "Somalia": {
+            "Country Name": "Somalia",
+            "value": 49.90,
+            "unit": "percent"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 52.56,
+            "unit": "percent"
+        },
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 50.82,
+            "unit": "percent"
+        },
+        "Sao Tome and Principe": {
+            "Country Name": "Sao Tome and Principe",
+            "value": 50.29,
+            "unit": "percent"
+        },
+        "Suriname": {
+            "Country Name": "Suriname",
+            "value": 50.05,
+            "unit": "percent"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 51.18,
+            "unit": "percent"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 49.75,
+            "unit": "percent"
+        },
+        "Sweden": {
+            "Country Name": "Sweden",
+            "value": 49.63,
+            "unit": "percent"
+        },
+        "Eswatini": {
+            "Country Name": "Eswatini",
+            "value": 50.90,
+            "unit": "percent"
+        },
+        "Seychelles": {
+            "Country Name": "Seychelles",
+            "value": 44.84,
+            "unit": "percent"
+        },
+        "Syria": {
+            "Country Name": "Syria",
+            "value": 49.98,
+            "unit": "percent"
+        },
+        "Chad": {
+            "Country Name": "Chad",
+            "value": 49.84,
+            "unit": "percent"
+        },
+        "Togo": {
+            "Country Name": "Togo",
+            "value": 49.67,
+            "unit": "percent"
+        },
+        "Thailand": {
+            "Country Name": "Thailand",
+            "value": 51.31,
+            "unit": "percent"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 50.86,
+            "unit": "percent"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 50.92,
+            "unit": "percent"
+        },
+        "Timor-Leste": {
+            "Country Name": "Timor-Leste",
+            "value": 49.59,
+            "unit": "percent"
+        },
+        "Tonga": {
+            "Country Name": "Tonga",
+            "value": 52.76,
+            "unit": "percent"
+        },
+        "Trinidad and Tobago": {
+            "Country Name": "Trinidad and Tobago",
+            "value": 50.57,
+            "unit": "percent"
+        },
+        "Tunisia": {
+            "Country Name": "Tunisia",
+            "value": 50.57,
+            "unit": "percent"
+        },
+        "Turkey": {
+            "Country Name": "Turkey",
+            "value": 50.09,
+            "unit": "percent"
+        },
+        "Tuvalu": {
+            "Country Name": "Tuvalu",
+            "value": 48.83,
+            "unit": "percent"
+        },
+        "Tanzania": {
+            "Country Name": "Tanzania",
+            "value": 50.43,
+            "unit": "percent"
+        },
+        "Uganda": {
+            "Country Name": "Uganda",
+            "value": 50.40,
+            "unit": "percent"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 53.52,
+            "unit": "percent"
+        },
+        "Uruguay": {
+            "Country Name": "Uruguay",
+            "value": 51.50,
+            "unit": "percent"
+        },
+        "United States": {
+            "Country Name": "United States",
+            "value": 49.76,
+            "unit": "percent"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 49.55,
+            "unit": "percent"
+        },
+        "Saint Vincent and the Grenadines": {
+            "Country Name": "Saint Vincent and the Grenadines",
+            "value": 49.08,
+            "unit": "percent"
+        },
+        "Venezuela": {
+            "Country Name": "Venezuela",
+            "value": 50.59,
+            "unit": "percent"
+        },
+        "Vietnam": {
+            "Country Name": "Vietnam",
+            "value": 51.02,
+            "unit": "percent"
+        },
+        "Vanuatu": {
+            "Country Name": "Vanuatu",
+            "value": 49.52,
+            "unit": "percent"
+        },
+        "Samoa": {
+            "Country Name": "Samoa",
+            "value": 49.64,
+            "unit": "percent"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 49.34,
+            "unit": "percent"
+        },
+        "South Africa": {
+            "Country Name": "South Africa",
+            "value": 51.33,
+            "unit": "percent"
+        },
+        "Zambia": {
+            "Country Name": "Zambia",
+            "value": 50.50,
+            "unit": "percent"
+        },
+        "Zimbabwe": {
+            "Country Name": "Zimbabwe",
+            "value": 52.33,
+            "unit": "percent"
+        }
+    }
+}
+
