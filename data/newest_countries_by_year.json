@@ -1,0 +1,164 @@
+{
+    "title": "Newest Countries by Year of Independence",
+    "description": "Year of independence or formation for the world's newest countries since 1945",
+    "unit": "year",
+    "source": "https://worldpopulationreview.com/country-rankings/newest-countries",
+    "data": {
+        "South Sudan": {
+            "Country Name": "South Sudan",
+            "value": 2011,
+            "unit": "year"
+        },
+        "Montenegro": {
+            "Country Name": "Montenegro",
+            "value": 2006,
+            "unit": "year"
+        },
+        "Serbia": {
+            "Country Name": "Serbia",
+            "value": 2000,
+            "unit": "year"
+        },
+        "Palau": {
+            "Country Name": "Palau",
+            "value": 1994,
+            "unit": "year"
+        },
+        "Czech Republic": {
+            "Country Name": "Czech Republic",
+            "value": 1993,
+            "unit": "year"
+        },
+        "Slovakia": {
+            "Country Name": "Slovakia",
+            "value": 1993,
+            "unit": "year"
+        },
+        "Eritrea": {
+            "Country Name": "Eritrea",
+            "value": 1993,
+            "unit": "year"
+        },
+        "North Macedonia": {
+            "Country Name": "North Macedonia",
+            "value": 1993,
+            "unit": "year"
+        },
+        "Uzbekistan": {
+            "Country Name": "Uzbekistan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Kazakhstan": {
+            "Country Name": "Kazakhstan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Tajikistan": {
+            "Country Name": "Tajikistan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Azerbaijan": {
+            "Country Name": "Azerbaijan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Turkmenistan": {
+            "Country Name": "Turkmenistan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Kyrgyzstan": {
+            "Country Name": "Kyrgyzstan",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Croatia": {
+            "Country Name": "Croatia",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Georgia": {
+            "Country Name": "Georgia",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Bosnia and Herzegovina": {
+            "Country Name": "Bosnia and Herzegovina",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Moldova": {
+            "Country Name": "Moldova",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Armenia": {
+            "Country Name": "Armenia",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Slovenia": {
+            "Country Name": "Slovenia",
+            "value": 1992,
+            "unit": "year"
+        },
+        "Russia": {
+            "Country Name": "Russia",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Belarus": {
+            "Country Name": "Belarus",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Lithuania": {
+            "Country Name": "Lithuania",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Latvia": {
+            "Country Name": "Latvia",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Estonia": {
+            "Country Name": "Estonia",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Micronesia": {
+            "Country Name": "Micronesia",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Marshall Islands": {
+            "Country Name": "Marshall Islands",
+            "value": 1991,
+            "unit": "year"
+        },
+        "Germany": {
+            "Country Name": "Germany",
+            "value": 1990,
+            "unit": "year"
+        },
+        "Yemen": {
+            "Country Name": "Yemen",
+            "value": 1990,
+            "unit": "year"
+        },
+        "Namibia": {
+            "Country Name": "Namibia",
+            "value": 1990,
+            "unit": "year"
+        },
+        "Ukraine": {
+            "Country Name": "Ukraine",
+            "value": 1945,
+            "unit": "year"
+        }
+    }
+}
+

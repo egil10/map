@@ -62,12 +62,16 @@ class QuizGame {
             const dataFiles = [
                 'academy_awards_best_international_feature_film_by_country.json',
                 'active_military_by_country.json',
+                'active_volcanoes_since_1800_by_country.json',
+                'active_volcanoes_since_1960_by_country.json',
                 'african_countries_never_colonized.json',
                 'afrikaans_dutch_native_speakers_by_country.json',
                 'age_of_consent_by_country.json',
                 'alcohol_consumption_per_capita_by_country.json',
                 'amphibians_by_country.json',
                 'arable_land_per_person.json',
+                'average_annual_precipitation_inches.json',
+                'average_annual_precipitation_mm.json',
                 'average_annual_wages_usd_ppp_2023.json',
                 'average_height_by_country.json',
                 'billionaires_by_country.json',
@@ -76,12 +80,14 @@ class QuizGame {
                 'blue_and_white_flags.json',
                 'blue_flag_countries.json',
                 'carbon_emissions_by_country.json',
+                'cattle_population_by_country.json',
                 'chinese_native_speakers_by_country.json',
                 'cocoa_production_by_country.json',
                 'coffee_consumption_per_capita_by_country.json',
                 'commonwealth_membership_by_country.json',
                 'container_port_traffic_by_country.json',
                 'corporate_tax_by_country.json',
+                'countries_by_continent.json',
                 'country_by_first_letter.json',
                 'country_exports_simplified.json',
                 'country_party_system.json',
@@ -89,12 +95,15 @@ class QuizGame {
                 'currency_exchange_rate_usd.json',
                 'distinct_land_neighbours_by_country.json',
                 'earthquakes_by_country_2024.json',
+                'electricity_production_total_twh.json',
+                'energy_consumption_per_capita_kwh.json',
                 'english_primary_language_by_country.json',
                 'english_speakers_total_by_country.json',
                 'english_speaking_population_by_country.json',
                 'external_debt_by_country.json',
                 'external_debt_percent_gdp_by_country.json',
                 'female_average_height_by_country.json',
+                'female_population_percentage_2024.json',
                 'fide_top_federations_open_august_2025.json',
                 'fifa_mens_world_ranking.json',
                 'firearms_per_100_by_country.json',
@@ -102,6 +111,7 @@ class QuizGame {
                 'fixed_broadband_subscriptions_by_country.json',
                 'flags_without_red.json',
                 'food_energy_intake_by_country.json',
+                'food_energy_intake_kj_per_capita.json',
                 'forest_area_km2_by_country.json',
                 'forest_area_percentage_by_country.json',
                 'french_official_language_status_by_country.json',
@@ -116,6 +126,8 @@ class QuizGame {
                 'holocene_volcanoes_by_country.json',
                 'horse_population_by_country.json',
                 'imports_by_country.json',
+                'insulin_cost_by_country.json',
+                'international_migrant_stock_2024.json',
                 'internet_speed_by_country.json',
                 'internet_usage_by_country.json',
                 'landlocked_countries.json',
@@ -128,6 +140,7 @@ class QuizGame {
                 'lower_house_seats_by_country.json',
                 'lowest_temperature_by_country.json',
                 'male_median_age_by_country.json',
+                'male_population_percentage_2024.json',
                 'mammals_by_country.json',
                 'marriage_rate_per_1000_by_country.json',
                 'maximum_elevation_by_country.json',
@@ -140,9 +153,12 @@ class QuizGame {
                 'national_capitals_by_country.json',
                 'national_capitals_population_by_country.json',
                 'national_capitals_population_percentage_by_country.json',
+                'net_migration_2024.json',
+                'newest_countries_by_year.json',
                 'nobel_laureates_by_country.json',
                 'nobel_literature_laureates_by_country.json',
                 'number_of_islands_by_country.json',
+                'oecd_hours_latest.json',
                 'official_languages_by_country.json',
                 'oil_production_by_country.json',
                 'olympics_hosted_by_country.json',
@@ -152,6 +168,7 @@ class QuizGame {
                 'popes_by_country.json',
                 'population_density.json',
                 'population_per_lower_house_seat_by_country.json',
+                'public_libraries_by_country.json',
                 'purple_flag_countries.json',
                 'red_flag_countries.json',
                 'reptiles_by_country.json',
@@ -186,9 +203,11 @@ class QuizGame {
                 'wine_production_by_country.json',
                 'winter_olympic_gold_medals_by_country.json',
                 'world_bank_income_group_by_country.json',
+                'world_bank_population_2024.json',
                 'world_cup_wins_by_country.json',
                 'world_figure_skating_gold_medals_by_country.json',
                 'world_population_2025.json',
+                'world_population_by_country.json',
                 'years_colonized_by_country.json',
                 'yellow_flag_countries.json'
             ];
@@ -246,20 +265,91 @@ class QuizGame {
         // Handle different data formats
         if (data.data) {
             if (Array.isArray(data.data)) {
-                // Array format
+                // Array format (e.g., average_height_by_country.json)
+                // Example: {"country": "Netherlands", "average_height_cm": 177.1}
                 data.data.forEach(item => {
-                    if (item.country && item.value !== undefined) {
-                        countries[item.country] = {
-                            value: item.value,
-                            unit: item.unit || 'count'
-                        };
+                    if (item.country) {
+                        let value = item.value;
+                        let unit = item.unit || data.unit || 'count';
+                        
+                        // If 'value' doesn't exist, find the first numeric or string property that's not 'country'
+                        if (value === undefined) {
+                            const keys = Object.keys(item).filter(k => 
+                                k !== 'country' && 
+                                k !== 'Country Name' && 
+                                k !== 'Country' &&
+                                item[k] !== null &&
+                                item[k] !== undefined
+                            );
+                            
+                            if (keys.length > 0) {
+                                const dataKey = keys[0];
+                                value = item[dataKey];
+                                
+                                // Use the key name as unit if no unit specified in item or root
+                                if (!item.unit && !data.unit) {
+                                    unit = dataKey
+                                        .replace(/_/g, ' ')
+                                        .replace(/([a-z])([A-Z])/g, '$1 $2')
+                                        .toLowerCase();
+                                }
+                            }
+                        }
+                        
+                        if (value !== undefined && value !== null) {
+                            countries[item.country] = {
+                                value: value,
+                                unit: unit,
+                                'Country Name': item['Country Name'] || item.country
+                            };
+                        }
                     }
                 });
-            } else {
-                // Object format - data is already in the correct structure
-                countries = data.data;
+            } else if (typeof data.data === 'object') {
+                // Object format - can be simple key-value or nested structure
+                Object.entries(data.data).forEach(([country, countryData]) => {
+                    if (countryData === null || countryData === undefined) {
+                        return; // Skip null/undefined entries
+                    }
+                    
+                    // If countryData is a simple primitive (number or string), convert it
+                    if (typeof countryData === 'number' || typeof countryData === 'string') {
+                        countries[country] = {
+                            value: countryData,
+                            unit: data.unit || 'count',
+                            'Country Name': country
+                        };
+                    } else if (typeof countryData === 'object') {
+                        // If it's already an object with nested structure, use it
+                        // Ensure it has a 'value' property or extract the first numeric/string property
+                        if (countryData.value !== undefined) {
+                            countries[country] = {
+                                ...countryData,
+                                'Country Name': countryData['Country Name'] || country
+                            };
+                        } else {
+                            // Try to find a value property in the object
+                            const keys = Object.keys(countryData).filter(k => 
+                                k !== 'Country Name' && 
+                                k !== 'country' &&
+                                countryData[k] !== null &&
+                                countryData[k] !== undefined
+                            );
+                            
+                            if (keys.length > 0) {
+                                const dataKey = keys[0];
+                                countries[country] = {
+                                    value: countryData[dataKey],
+                                    unit: countryData.unit || data.unit || dataKey.replace(/_/g, ' '),
+                                    'Country Name': countryData['Country Name'] || country
+                                };
+                            }
+                        }
+                    }
+                });
             }
         } else if (data.countries) {
+            // Legacy format: data.countries instead of data.data
             countries = data.countries;
         }
         
@@ -269,13 +359,23 @@ class QuizGame {
             return null; // Skip this dataset
         }
         
-        // Check if we have valid numeric values
+        // Check if we have valid values (numeric OR categorical/string)
         const validCountries = Object.entries(countries).filter(([country, data]) => {
-            return data && typeof data.value === 'number' && !isNaN(data.value) && data.value !== null;
+            // Accept if data has a value that is either:
+            // 1. A valid number
+            // 2. A non-empty string (for categorical data)
+            if (!data || data.value === undefined || data.value === null) {
+                return false;
+            }
+            
+            const isValidNumber = typeof data.value === 'number' && !isNaN(data.value);
+            const isValidString = typeof data.value === 'string' && data.value.trim().length > 0;
+            
+            return isValidNumber || isValidString;
         });
         
         if (validCountries.length === 0) {
-            console.warn(`⚠️ No valid numeric values found in ${filename}`);
+            console.warn(`⚠️ No valid values (numeric or categorical) found in ${filename}`);
             return null; // Skip this dataset
         }
         
@@ -306,6 +406,7 @@ class QuizGame {
             category: 'general',
             tags: tags,
             answer_variations: answerVariations,
+            source: data.source || null,
             colorScheme: {
                 type: 'gradient',
                 minColor: randomScheme.minColor,
