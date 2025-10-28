@@ -1,0 +1,45 @@
+{
+  "title": "Nuclear Warheads by Country",
+  "description": "Total number of nuclear warheads by country (states with nuclear weapons)",
+  "unit": "warheads",
+  "source": "https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons",
+  "data": {
+    "Russia": {
+      "value": 4309,
+      "unit": "warheads"
+    },
+    "United States": {
+      "value": 3700,
+      "unit": "warheads"
+    },
+    "China": {
+      "value": 600,
+      "unit": "warheads"
+    },
+    "France": {
+      "value": 290,
+      "unit": "warheads"
+    },
+    "United Kingdom": {
+      "value": 225,
+      "unit": "warheads"
+    },
+    "India": {
+      "value": 180,
+      "unit": "warheads"
+    },
+    "Pakistan": {
+      "value": 170,
+      "unit": "warheads"
+    },
+    "Israel": {
+      "value": 90,
+      "unit": "warheads"
+    },
+    "North Korea": {
+      "value": 50,
+      "unit": "warheads"
+    }
+  }
+}
+

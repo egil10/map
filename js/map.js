@@ -905,12 +905,24 @@ class WorldMap {
         // Apply quiz colors if available
         if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
             const countryData = this.currentQuiz.countries[countryName];
-            if (countryData && typeof countryData.value === 'number' && !isNaN(countryData.value)) {
-                // Calculate color based on value and color scheme
-                const color = this.getColorForValue(countryData.value, this.currentQuiz);
-                style.fillColor = color;
-                style.fillOpacity = 0.8;
-                console.log(`🎨 Map color applied for ${countryName}:`, color, 'value:', countryData.value);
+            
+            // Check if we have valid data (numeric OR categorical)
+            if (countryData && countryData.value !== null && countryData.value !== undefined) {
+                // For categorical data, use the assigned color
+                if (this.currentQuiz.colorScheme?.type === 'categorical' && countryData.color) {
+                    style.fillColor = countryData.color;
+                    style.fillOpacity = 0.8;
+                    console.log(`🎨 Categorical color applied for ${countryName}:`, countryData.color, 'value:', countryData.value);
+                }
+                // For numeric data, calculate gradient color
+                else if (typeof countryData.value === 'number' && !isNaN(countryData.value)) {
+                    const color = this.getColorForValue(countryData.value, this.currentQuiz);
+                    style.fillColor = color;
+                    style.fillOpacity = 0.8;
+                    console.log(`🎨 Gradient color applied for ${countryName}:`, color, 'value:', countryData.value);
+                } else {
+                    console.warn(`🎨 Unhandled data type for ${countryName}:`, countryData);
+                }
             } else {
                 console.warn(`🎨 Invalid data for ${countryName}:`, countryData);
             }
@@ -1252,7 +1264,32 @@ class WorldMap {
             return;
         }
         
-        // Get countries with values
+        // Check if this is categorical data
+        if (quiz.colorScheme?.type === 'categorical') {
+            console.log('🎨 Categorical data detected, using categorical legend');
+            
+            // Get all countries with their categories
+            const countriesWithCategories = Object.entries(quiz.countries)
+                .map(([country, data]) => ({ 
+                    country, 
+                    value: data.value, 
+                    unit: data.unit || '',
+                    color: data.color || '#ffffff'
+                }));
+            
+            // Store all countries data
+            this.allCountriesData = countriesWithCategories;
+            
+            // Update rankings display for categorical data
+            this.updateCategoricalRankingsDisplay(countriesWithCategories);
+            
+            // Update color bar to show categories
+            this.updateCategoricalColorBar(quiz);
+            
+            return;
+        }
+        
+        // Handle numeric data (gradient)
         const countriesWithValues = Object.entries(quiz.countries)
             .filter(([country, data]) => typeof data.value === 'number' && !isNaN(data.value))
             .map(([country, data]) => ({ 
@@ -1434,6 +1471,89 @@ class WorldMap {
                 gradientBar.style.background = `linear-gradient(to right, ${minColor}, ${maxColor})`;
             }
         }
+    }
+    
+    updateCategoricalRankingsDisplay(countriesWithCategories) {
+        const rankingsList = document.getElementById('rankingsList');
+        if (!rankingsList) return;
+        
+        // Group countries by category
+        const categorized = {};
+        countriesWithCategories.forEach(country => {
+            const category = country.value;
+            if (!categorized[category]) {
+                categorized[category] = [];
+            }
+            categorized[category].push(country);
+        });
+        
+        // Clear existing content
+        rankingsList.innerHTML = '';
+        
+        // Sort categories alphabetically
+        const sortedCategories = Object.keys(categorized).sort();
+        
+        // Display countries grouped by category
+        sortedCategories.forEach(category => {
+            const countries = categorized[category];
+            const color = countries[0].color;
+            
+            // Create category header
+            const header = document.createElement('div');
+            header.className = 'legend-category-header';
+            header.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 8px; padding: 8px; background: ${color}20; border-left: 4px solid ${color}; margin-bottom: 4px;">
+                    <div style="width: 12px; height: 12px; background: ${color}; border-radius: 2px;"></div>
+                    <strong>${category}</strong>
+                    <span style="margin-left: auto; color: #666;">(${countries.length})</span>
+                </div>
+            `;
+            rankingsList.appendChild(header);
+            
+            // Add countries in this category
+            countries.forEach(country => {
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.style.paddingLeft = '24px';
+                item.innerHTML = `
+                    <span class="legend-country">${country.country}</span>
+                `;
+                
+                // Add click handler to highlight country on map
+                item.addEventListener('click', () => {
+                    this.highlightCountryByName(country.country);
+                });
+                
+                rankingsList.appendChild(item);
+            });
+        });
+        
+        console.log('🏷️ Categorical rankings updated with', sortedCategories.length, 'categories');
+    }
+    
+    updateCategoricalColorBar(quiz) {
+        const colorBarGradient = document.getElementById('colorBarGradient');
+        if (!colorBarGradient || !quiz.colorScheme || !quiz.colorScheme.categories) {
+            return;
+        }
+        
+        // Get categories and their colors
+        const categories = Object.entries(quiz.colorScheme.categories);
+        
+        // Limit to first 10 categories for display
+        const displayCategories = categories.slice(0, 10);
+        
+        // Create color segments for the bar
+        const colorStops = displayCategories.map(([ category, color], index) => {
+            const startPercent = (index / displayCategories.length) * 100;
+            const endPercent = ((index + 1) / displayCategories.length) * 100;
+            return `${color} ${startPercent}%, ${color} ${endPercent}%`;
+        }).join(', ');
+        
+        const gradient = `linear-gradient(to right, ${colorStops})`;
+        colorBarGradient.style.background = gradient;
+        
+        console.log('🎨 Applied categorical color bar with', displayCategories.length, 'categories');
     }
     
     clearLegend() {

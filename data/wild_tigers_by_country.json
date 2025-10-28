@@ -1,0 +1,61 @@
+{
+  "title": "Wild Tiger Population by Country",
+  "description": "Number of wild tigers remaining in each country (2022)",
+  "unit": "wild tigers",
+  "source": "https://a-z-animals.com/animals/tiger/tiger-facts/tiger-population-by-country/",
+  "data": [
+    {
+      "country": "India",
+      "value": 2967
+    },
+    {
+      "country": "Russia",
+      "value": 510
+    },
+    {
+      "country": "Indonesia",
+      "value": 450
+    },
+    {
+      "country": "Nepal",
+      "value": 355
+    },
+    {
+      "country": "Thailand",
+      "value": 189
+    },
+    {
+      "country": "Malaysia",
+      "value": 150
+    },
+    {
+      "country": "Bangladesh",
+      "value": 106
+    },
+    {
+      "country": "Bhutan",
+      "value": 103
+    },
+    {
+      "country": "China",
+      "value": 50
+    },
+    {
+      "country": "Myanmar",
+      "value": 22
+    },
+    {
+      "country": "Vietnam",
+      "value": 5
+    },
+    {
+      "country": "Laos",
+      "value": 2
+    },
+    {
+      "country": "Cambodia",
+      "value": 0
+    }
+  ]
+}
+

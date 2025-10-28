@@ -1,0 +1,45 @@
+{
+  "title": "Male Astronauts by Country",
+  "description": "Total number of male space travelers by nationality (as of April 2025)",
+  "unit": "astronauts",
+  "source": "https://en.wikipedia.org/wiki/List_of_space_travelers_by_nationality",
+  "data": {
+    "United States": {
+      "value": 319,
+      "unit": "astronauts"
+    },
+    "Soviet Union": {
+      "value": 70,
+      "unit": "astronauts"
+    },
+    "Russia": {
+      "value": 52,
+      "unit": "astronauts"
+    },
+    "China": {
+      "value": 21,
+      "unit": "astronauts"
+    },
+    "Japan": {
+      "value": 13,
+      "unit": "astronauts"
+    },
+    "Germany": {
+      "value": 12,
+      "unit": "astronauts"
+    },
+    "France": {
+      "value": 9,
+      "unit": "astronauts"
+    },
+    "Canada": {
+      "value": 9,
+      "unit": "astronauts"
+    },
+    "Italy": {
+      "value": 8,
+      "unit": "astronauts"
+    }
+  }
+}
+

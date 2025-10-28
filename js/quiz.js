@@ -35,12 +35,29 @@ class QuizGame {
         // Initialize learn mode
         this.initializeLearnModeSequence();
         
-        this.isReady = true;
         console.log('🎯 Quiz Game ready!');
         console.log('🎯 Total datasets loaded:', this.datasetList.length);
         
-        // Wait a bit for DOM and app to be fully ready
-        await new Promise(resolve => setTimeout(resolve, 100));
+        // Check if we have enough datasets
+        if (this.datasetList.length < 4) {
+            console.error('❌ Not enough datasets loaded! Need at least 4, got:', this.datasetList.length);
+            const inputContainer = document.querySelector('.input-container');
+            if (inputContainer) {
+                inputContainer.innerHTML = `
+                    <div style="text-align: center; padding: 20px; color: #e74c3c;">
+                        <p><strong>Error:</strong> Not enough datasets loaded</p>
+                        <p>Only ${this.datasetList.length} of 169 datasets loaded successfully.</p>
+                        <p>Please refresh the page.</p>
+                    </div>
+                `;
+            }
+            return;
+        }
+        
+        // Wait a bit longer for DOM and app to be fully ready
+        await new Promise(resolve => setTimeout(resolve, 300));
+        
+        this.isReady = true;
         
         // Check for stored game mode from previous session
         const storedGameMode = localStorage.getItem('geoquest-game-mode');
@@ -73,6 +90,8 @@ class QuizGame {
                 'average_annual_precipitation_inches.json',
                 'average_annual_precipitation_mm.json',
                 'average_annual_wages_usd_ppp_2023.json',
+                'average_elevation_feet.json',
+                'average_elevation_meters.json',
                 'average_height_by_country.json',
                 'billionaires_by_country.json',
                 'birds_by_country.json',
@@ -95,6 +114,7 @@ class QuizGame {
                 'currency_exchange_rate_usd.json',
                 'distinct_land_neighbours_by_country.json',
                 'earthquakes_by_country_2024.json',
+                'elephant_population_by_country.json',
                 'electricity_production_total_twh.json',
                 'energy_consumption_per_capita_kwh.json',
                 'english_primary_language_by_country.json',
@@ -102,7 +122,9 @@ class QuizGame {
                 'english_speaking_population_by_country.json',
                 'external_debt_by_country.json',
                 'external_debt_percent_gdp_by_country.json',
+                'female_astronauts_by_country.json',
                 'female_average_height_by_country.json',
+                'female_population_2025.json',
                 'female_population_percentage_2024.json',
                 'fide_top_federations_open_august_2025.json',
                 'fifa_mens_world_ranking.json',
@@ -136,14 +158,20 @@ class QuizGame {
                 'latest_flag_adoption_by_country.json',
                 'leading_export_market_by_country.json',
                 'leading_import_source_by_country.json',
+                'left_handed_population_by_country.json',
                 'living_languages_by_country.json',
                 'lower_house_seats_by_country.json',
                 'lowest_temperature_by_country.json',
+                'male_astronauts_by_country.json',
                 'male_median_age_by_country.json',
+                'male_minus_female_population_2025.json',
+                'male_population_2025.json',
                 'male_population_percentage_2024.json',
                 'mammals_by_country.json',
                 'marriage_rate_per_1000_by_country.json',
                 'maximum_elevation_by_country.json',
+                'mcdonalds_outlets_by_country.json',
+                'minimum_elevation_by_country.json',
                 'median_wealth_per_adult_2023.json',
                 'mobile_connection_speed_by_country.json',
                 'mobile_phone_numbers_by_country.json',
@@ -157,6 +185,7 @@ class QuizGame {
                 'newest_countries_by_year.json',
                 'nobel_laureates_by_country.json',
                 'nobel_literature_laureates_by_country.json',
+                'nuclear_warheads_by_country.json',
                 'number_of_islands_by_country.json',
                 'oecd_hours_latest.json',
                 'official_languages_by_country.json',
@@ -173,6 +202,8 @@ class QuizGame {
                 'red_flag_countries.json',
                 'reptiles_by_country.json',
                 'road_network_size_by_country.json',
+                'scientific_publications_per_million_2020.json',
+                'scientific_publications_total_2020.json',
                 'sex_ratio_by_country.json',
                 'sheep_population_by_country.json',
                 'shoe_size_by_country.json',
@@ -199,6 +230,7 @@ class QuizGame {
                 'wealth_gini_percent_by_country.json',
                 'wheat_production_by_country.json',
                 'white_flag_countries.json',
+                'wild_tigers_by_country.json',
                 'wine_consumption_per_capita_by_country.json',
                 'wine_production_by_country.json',
                 'winter_olympic_gold_medals_by_country.json',
@@ -376,7 +408,14 @@ class QuizGame {
         
         if (validCountries.length === 0) {
             console.warn(`⚠️ No valid values (numeric or categorical) found in ${filename}`);
+            console.warn(`   Sample data:`, Object.entries(countries).slice(0, 3));
             return null; // Skip this dataset
+        }
+        
+        console.log(`✅ ${filename}: ${validCountries.length} valid countries`);
+        
+        if (validCountries.length < 10) {
+            console.warn(`⚠️ ${filename} has very few countries (${validCountries.length}), might affect quiz quality`);
         }
         
         // Only include countries with valid data
@@ -385,19 +424,66 @@ class QuizGame {
             validCountriesObj[country] = data;
         });
         
-        // Generate random color scheme
-        const colorSchemes = [
-            { minColor: '#fff3e0', maxColor: '#e65100' },
-            { minColor: '#e8f5e8', maxColor: '#2e7d32' },
-            { minColor: '#e3f2fd', maxColor: '#1976d2' },
-            { minColor: '#fce4ec', maxColor: '#c2185b' },
-            { minColor: '#f3e5f5', maxColor: '#7b1fa2' },
-            { minColor: '#fff8e1', maxColor: '#f57c00' },
-            { minColor: '#e0f2f1', maxColor: '#00695c' },
-            { minColor: '#f1f8e9', maxColor: '#558b2f' }
-        ];
+        // Detect if data is categorical (all string values) or numeric
+        const allValues = validCountries.map(([, data]) => data.value);
+        const isCategorical = allValues.every(val => typeof val === 'string');
         
-        const randomScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+        let colorScheme;
+        
+        if (isCategorical) {
+            // For categorical data, assign distinct colors to each category
+            const uniqueCategories = [...new Set(allValues)];
+            
+            // Predefined color palette for categories
+            const categoryColors = [
+                '#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6',
+                '#1abc9c', '#e67e22', '#34495e', '#95a5a6', '#d35400',
+                '#c0392b', '#8e44ad', '#27ae60', '#2980b9', '#f1c40f',
+                '#16a085', '#e84393', '#00b894', '#6c5ce7', '#fdcb6e'
+            ];
+            
+            // Create color mapping for categories
+            const categoryColorMap = {};
+            uniqueCategories.forEach((category, index) => {
+                categoryColorMap[category] = categoryColors[index % categoryColors.length];
+            });
+            
+            // Assign colors to each country based on its category
+            Object.entries(validCountriesObj).forEach(([country, data]) => {
+                data.color = categoryColorMap[data.value];
+            });
+            
+            colorScheme = {
+                type: 'categorical',
+                categories: categoryColorMap,
+                defaultColor: '#ffffff'
+            };
+            
+            console.log(`🎨 Categorical dataset detected: ${filename} with ${uniqueCategories.length} categories`);
+        } else {
+            // For numeric data, use gradient color scheme
+            const colorSchemes = [
+                { minColor: '#fff3e0', maxColor: '#e65100' },
+                { minColor: '#e8f5e8', maxColor: '#2e7d32' },
+                { minColor: '#e3f2fd', maxColor: '#1976d2' },
+                { minColor: '#fce4ec', maxColor: '#c2185b' },
+                { minColor: '#f3e5f5', maxColor: '#7b1fa2' },
+                { minColor: '#fff8e1', maxColor: '#f57c00' },
+                { minColor: '#e0f2f1', maxColor: '#00695c' },
+                { minColor: '#f1f8e9', maxColor: '#558b2f' }
+            ];
+            
+            const randomScheme = colorSchemes[Math.floor(Math.random() * colorSchemes.length)];
+            
+            colorScheme = {
+                type: 'gradient',
+                minColor: randomScheme.minColor,
+                maxColor: randomScheme.maxColor,
+                defaultColor: '#ffffff'
+            };
+            
+            console.log(`🎨 Numeric dataset detected: ${filename} using gradient colors`);
+        }
         
         return {
             id: filename.replace('.json', ''),
@@ -407,12 +493,7 @@ class QuizGame {
             tags: tags,
             answer_variations: answerVariations,
             source: data.source || null,
-            colorScheme: {
-                type: 'gradient',
-                minColor: randomScheme.minColor,
-                maxColor: randomScheme.maxColor,
-                defaultColor: '#ffffff'
-            },
+            colorScheme: colorScheme,
             countries: validCountriesObj
         };
     }
@@ -546,10 +627,32 @@ class QuizGame {
     startNewQuiz() {
         console.log(`🎯 Starting new quiz in ${this.gameMode} mode`);
         console.log(`🎯 Available datasets: ${this.datasetList.length}`);
+        console.log(`🎯 Is ready: ${this.isReady}`);
+        
+        // If not ready yet, wait for initialization to complete
+        if (!this.isReady) {
+            console.log('⏳ Quiz not ready yet, waiting...');
+            setTimeout(() => this.startNewQuiz(), 500);
+            return;
+        }
         
         if (this.datasetList.length === 0) {
             console.error('❌ No datasets available, showing loading message');
             this.showLoadingMessage();
+            return;
+        }
+        
+        if (this.datasetList.length < 4) {
+            console.error('❌ Not enough datasets for quiz (need at least 4)');
+            const inputContainer = document.querySelector('.input-container');
+            if (inputContainer) {
+                inputContainer.innerHTML = `
+                    <div style="text-align: center; padding: 20px; color: #e74c3c;">
+                        <p><strong>Error:</strong> Not enough datasets for quiz</p>
+                        <p>Need at least 4 datasets, only ${this.datasetList.length} available.</p>
+                    </div>
+                `;
+            }
             return;
         }
         
@@ -662,11 +765,22 @@ class QuizGame {
         
         if (!this.currentQuiz) {
             console.error('❌ No current quiz for multiple choice');
+            this.showLoadingMessage();
             return;
         }
         
         if (this.datasetList.length < 4) {
-            console.error('❌ Not enough datasets for multiple choice (need at least 4)');
+            console.error('❌ Not enough datasets for multiple choice (need at least 4), got:', this.datasetList.length);
+            console.error('❌ This should not happen if init() completed successfully');
+            const inputContainer = document.querySelector('.input-container');
+            if (inputContainer) {
+                inputContainer.innerHTML = `
+                    <div style="text-align: center; padding: 20px; color: #e74c3c;">
+                        <p><strong>Error:</strong> Cannot show multiple choice</p>
+                        <p>Only ${this.datasetList.length} datasets available (need 4+)</p>
+                    </div>
+                `;
+            }
             return;
         }
         

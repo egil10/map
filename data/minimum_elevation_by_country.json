@@ -1,0 +1,797 @@
+{
+  "title": "Minimum Elevation by Country",
+  "description": "Lowest point elevation for each country in meters (sea level = 0)",
+  "unit": "meters",
+  "source": "https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country",
+  "data": {
+    "Afghanistan": {
+      "value": 258,
+      "unit": "meters"
+    },
+    "Albania": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Algeria": {
+      "value": -40,
+      "unit": "meters"
+    },
+    "Andorra": {
+      "value": 840,
+      "unit": "meters"
+    },
+    "Angola": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Antigua and Barbuda": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Argentina": {
+      "value": -105,
+      "unit": "meters"
+    },
+    "Armenia": {
+      "value": 375,
+      "unit": "meters"
+    },
+    "Australia": {
+      "value": -15,
+      "unit": "meters"
+    },
+    "Austria": {
+      "value": 115,
+      "unit": "meters"
+    },
+    "Azerbaijan": {
+      "value": -28,
+      "unit": "meters"
+    },
+    "Bahamas": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Bahrain": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Bangladesh": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Barbados": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Belarus": {
+      "value": 90,
+      "unit": "meters"
+    },
+    "Belgium": {
+      "value": -4,
+      "unit": "meters"
+    },
+    "Belize": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Benin": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Bhutan": {
+      "value": 97,
+      "unit": "meters"
+    },
+    "Bolivia": {
+      "value": 90,
+      "unit": "meters"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Botswana": {
+      "value": 513,
+      "unit": "meters"
+    },
+    "Brazil": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Brunei": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Bulgaria": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Burkina Faso": {
+      "value": 200,
+      "unit": "meters"
+    },
+    "Burundi": {
+      "value": 772,
+      "unit": "meters"
+    },
+    "Cambodia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Cameroon": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Canada": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Cape Verde": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Central African Republic": {
+      "value": 335,
+      "unit": "meters"
+    },
+    "Chad": {
+      "value": 160,
+      "unit": "meters"
+    },
+    "Chile": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "China": {
+      "value": -154,
+      "unit": "meters"
+    },
+    "Colombia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Comoros": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Congo": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Costa Rica": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Ivory Coast": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Croatia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Cuba": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Cyprus": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Czech Republic": {
+      "value": 115,
+      "unit": "meters"
+    },
+    "Denmark": {
+      "value": -7,
+      "unit": "meters"
+    },
+    "Djibouti": {
+      "value": -155,
+      "unit": "meters"
+    },
+    "Dominica": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Dominican Republic": {
+      "value": -45,
+      "unit": "meters"
+    },
+    "Ecuador": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Egypt": {
+      "value": -133,
+      "unit": "meters"
+    },
+    "El Salvador": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Equatorial Guinea": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Eritrea": {
+      "value": -75,
+      "unit": "meters"
+    },
+    "Estonia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Eswatini": {
+      "value": 21,
+      "unit": "meters"
+    },
+    "Ethiopia": {
+      "value": -125,
+      "unit": "meters"
+    },
+    "Fiji": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Finland": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "France": {
+      "value": -10,
+      "unit": "meters"
+    },
+    "Gabon": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Gambia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Georgia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Germany": {
+      "value": -4,
+      "unit": "meters"
+    },
+    "Ghana": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Greece": {
+      "value": -6,
+      "unit": "meters"
+    },
+    "Grenada": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Guatemala": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Guinea": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Guinea-Bissau": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Guyana": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Haiti": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Honduras": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Hong Kong": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Hungary": {
+      "value": 76,
+      "unit": "meters"
+    },
+    "Iceland": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "India": {
+      "value": -3,
+      "unit": "meters"
+    },
+    "Indonesia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Iran": {
+      "value": -28,
+      "unit": "meters"
+    },
+    "Iraq": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Ireland": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Israel": {
+      "value": -440,
+      "unit": "meters"
+    },
+    "Italy": {
+      "value": -3,
+      "unit": "meters"
+    },
+    "Jamaica": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Japan": {
+      "value": -4,
+      "unit": "meters"
+    },
+    "Jordan": {
+      "value": -440,
+      "unit": "meters"
+    },
+    "Kazakhstan": {
+      "value": -134,
+      "unit": "meters"
+    },
+    "Kenya": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Kiribati": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "North Korea": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "South Korea": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Kosovo": {
+      "value": 297,
+      "unit": "meters"
+    },
+    "Kuwait": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Kyrgyzstan": {
+      "value": 435,
+      "unit": "meters"
+    },
+    "Laos": {
+      "value": 70,
+      "unit": "meters"
+    },
+    "Latvia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Lebanon": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Lesotho": {
+      "value": 1400,
+      "unit": "meters"
+    },
+    "Liberia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Libya": {
+      "value": -47,
+      "unit": "meters"
+    },
+    "Liechtenstein": {
+      "value": 430,
+      "unit": "meters"
+    },
+    "Lithuania": {
+      "value": -5,
+      "unit": "meters"
+    },
+    "Luxembourg": {
+      "value": 133,
+      "unit": "meters"
+    },
+    "North Macedonia": {
+      "value": 50,
+      "unit": "meters"
+    },
+    "Madagascar": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Malawi": {
+      "value": 37,
+      "unit": "meters"
+    },
+    "Malaysia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Maldives": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Mali": {
+      "value": 23,
+      "unit": "meters"
+    },
+    "Malta": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Marshall Islands": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Mauritania": {
+      "value": -5,
+      "unit": "meters"
+    },
+    "Mauritius": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Mexico": {
+      "value": -10,
+      "unit": "meters"
+    },
+    "Micronesia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Moldova": {
+      "value": 2,
+      "unit": "meters"
+    },
+    "Monaco": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Mongolia": {
+      "value": 560,
+      "unit": "meters"
+    },
+    "Montenegro": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Morocco": {
+      "value": -55,
+      "unit": "meters"
+    },
+    "Mozambique": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Myanmar": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Namibia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Nauru": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Nepal": {
+      "value": 59,
+      "unit": "meters"
+    },
+    "Netherlands": {
+      "value": -7,
+      "unit": "meters"
+    },
+    "New Zealand": {
+      "value": -2,
+      "unit": "meters"
+    },
+    "Nicaragua": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Niger": {
+      "value": 200,
+      "unit": "meters"
+    },
+    "Nigeria": {
+      "value": -0.2,
+      "unit": "meters"
+    },
+    "Norway": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Oman": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Pakistan": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Palau": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Palestine": {
+      "value": -440,
+      "unit": "meters"
+    },
+    "Panama": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Papua New Guinea": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Paraguay": {
+      "value": 46,
+      "unit": "meters"
+    },
+    "Peru": {
+      "value": -34,
+      "unit": "meters"
+    },
+    "Philippines": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Poland": {
+      "value": -2,
+      "unit": "meters"
+    },
+    "Portugal": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Qatar": {
+      "value": -6,
+      "unit": "meters"
+    },
+    "Romania": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Russia": {
+      "value": -28,
+      "unit": "meters"
+    },
+    "Rwanda": {
+      "value": 950,
+      "unit": "meters"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Saint Lucia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Samoa": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "San Marino": {
+      "value": 55,
+      "unit": "meters"
+    },
+    "Sao Tome and Principe": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Saudi Arabia": {
+      "value": -17,
+      "unit": "meters"
+    },
+    "Senegal": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Serbia": {
+      "value": 28,
+      "unit": "meters"
+    },
+    "Seychelles": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Sierra Leone": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Singapore": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Slovakia": {
+      "value": 94,
+      "unit": "meters"
+    },
+    "Slovenia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Solomon Islands": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Somalia": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "South Africa": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "South Sudan": {
+      "value": 350,
+      "unit": "meters"
+    },
+    "Spain": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Sri Lanka": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Sudan": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Suriname": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Sweden": {
+      "value": -2,
+      "unit": "meters"
+    },
+    "Switzerland": {
+      "value": 193,
+      "unit": "meters"
+    },
+    "Syria": {
+      "value": -214,
+      "unit": "meters"
+    },
+    "Taiwan": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Tajikistan": {
+      "value": 300,
+      "unit": "meters"
+    },
+    "Tanzania": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Thailand": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Timor-Leste": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Togo": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Tonga": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Trinidad and Tobago": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Tunisia": {
+      "value": -17,
+      "unit": "meters"
+    },
+    "Turkey": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Turkmenistan": {
+      "value": -81,
+      "unit": "meters"
+    },
+    "Tuvalu": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Uganda": {
+      "value": 621,
+      "unit": "meters"
+    },
+    "Ukraine": {
+      "value": -5,
+      "unit": "meters"
+    },
+    "United Arab Emirates": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "United Kingdom": {
+      "value": -3,
+      "unit": "meters"
+    },
+    "United States": {
+      "value": -85.5,
+      "unit": "meters"
+    },
+    "Uruguay": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Uzbekistan": {
+      "value": -12,
+      "unit": "meters"
+    },
+    "Vanuatu": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Venezuela": {
+      "value": -12,
+      "unit": "meters"
+    },
+    "Vietnam": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Yemen": {
+      "value": 0,
+      "unit": "meters"
+    },
+    "Zambia": {
+      "value": 329,
+      "unit": "meters"
+    },
+    "Zimbabwe": {
+      "value": 162,
+      "unit": "meters"
+    }
+  }
+}
+

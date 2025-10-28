@@ -1,0 +1,209 @@
+{
+  "title": "Elephant Population by Country",
+  "description": "Total elephant population (African and Asian) by country",
+  "unit": "elephants",
+  "source": "https://worldpopulationreview.com/country-rankings/elephant-population-by-country",
+  "data": [
+    {
+      "country": "Botswana",
+      "value": 131909
+    },
+    {
+      "country": "Gabon",
+      "value": 95000
+    },
+    {
+      "country": "Zimbabwe",
+      "value": 65028
+    },
+    {
+      "country": "Tanzania",
+      "value": 60000
+    },
+    {
+      "country": "Kenya",
+      "value": 36280
+    },
+    {
+      "country": "South Africa",
+      "value": 31324
+    },
+    {
+      "country": "India",
+      "value": 27312
+    },
+    {
+      "country": "Zambia",
+      "value": 21758
+    },
+    {
+      "country": "Namibia",
+      "value": 21090
+    },
+    {
+      "country": "Mozambique",
+      "value": 10884
+    },
+    {
+      "country": "Uganda",
+      "value": 7975
+    },
+    {
+      "country": "Sri Lanka",
+      "value": 7500
+    },
+    {
+      "country": "Cameroon",
+      "value": 6830
+    },
+    {
+      "country": "Burkina Faso",
+      "value": 6000
+    },
+    {
+      "country": "Congo",
+      "value": 6057
+    },
+    {
+      "country": "Angola",
+      "value": 5983
+    },
+    {
+      "country": "Thailand",
+      "value": 3783
+    },
+    {
+      "country": "Benin",
+      "value": 2984
+    },
+    {
+      "country": "Myanmar",
+      "value": 2000
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "value": 1794
+    },
+    {
+      "country": "Indonesia",
+      "value": 1700
+    },
+    {
+      "country": "Malaysia",
+      "value": 1500
+    },
+    {
+      "country": "Ethiopia",
+      "value": 1017
+    },
+    {
+      "country": "Ghana",
+      "value": 994
+    },
+    {
+      "country": "Equatorial Guinea",
+      "value": 884
+    },
+    {
+      "country": "Chad",
+      "value": 794
+    },
+    {
+      "country": "Central African Republic",
+      "value": 702
+    },
+    {
+      "country": "Bhutan",
+      "value": 678
+    },
+    {
+      "country": "Niger",
+      "value": 492
+    },
+    {
+      "country": "Liberia",
+      "value": 450
+    },
+    {
+      "country": "Cambodia",
+      "value": 400
+    },
+    {
+      "country": "Laos",
+      "value": 400
+    },
+    {
+      "country": "Nigeria",
+      "value": 400
+    },
+    {
+      "country": "South Sudan",
+      "value": 300
+    },
+    {
+      "country": "China",
+      "value": 300
+    },
+    {
+      "country": "Mali",
+      "value": 253
+    },
+    {
+      "country": "Nepal",
+      "value": 250
+    },
+    {
+      "country": "Ivory Coast",
+      "value": 225
+    },
+    {
+      "country": "Bangladesh",
+      "value": 200
+    },
+    {
+      "country": "Malawi",
+      "value": 120
+    },
+    {
+      "country": "Guinea",
+      "value": 100
+    },
+    {
+      "country": "Rwanda",
+      "value": 88
+    },
+    {
+      "country": "Vietnam",
+      "value": 80
+    },
+    {
+      "country": "Eritrea",
+      "value": 50
+    },
+    {
+      "country": "Eswatini",
+      "value": 45
+    },
+    {
+      "country": "Guinea-Bissau",
+      "value": 40
+    },
+    {
+      "country": "Sudan",
+      "value": 3
+    },
+    {
+      "country": "Togo",
+      "value": 3
+    },
+    {
+      "country": "Senegal",
+      "value": 1
+    },
+    {
+      "country": "Sierra Leone",
+      "value": 1
+    }
+  ]
+}
+

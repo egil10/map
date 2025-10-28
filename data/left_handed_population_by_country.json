@@ -1,0 +1,109 @@
+{
+  "title": "Left-Handed Population by Country",
+  "description": "Percentage of population that is left-handed by country",
+  "unit": "percent",
+  "source": "https://x.com/stats_feed/status/1859248625001353418",
+  "data": {
+    "Netherlands": {
+      "value": 13.23,
+      "unit": "percent"
+    },
+    "United States": {
+      "value": 13.10,
+      "unit": "percent"
+    },
+    "Belgium": {
+      "value": 13.10,
+      "unit": "percent"
+    },
+    "Canada": {
+      "value": 12.80,
+      "unit": "percent"
+    },
+    "United Kingdom": {
+      "value": 12.24,
+      "unit": "percent"
+    },
+    "Ireland": {
+      "value": 11.65,
+      "unit": "percent"
+    },
+    "Switzerland": {
+      "value": 11.61,
+      "unit": "percent"
+    },
+    "France": {
+      "value": 11.15,
+      "unit": "percent"
+    },
+    "Denmark": {
+      "value": 11.00,
+      "unit": "percent"
+    },
+    "Italy": {
+      "value": 10.51,
+      "unit": "percent"
+    },
+    "Sweden": {
+      "value": 10.42,
+      "unit": "percent"
+    },
+    "Norway": {
+      "value": 10.19,
+      "unit": "percent"
+    },
+    "Germany": {
+      "value": 9.83,
+      "unit": "percent"
+    },
+    "Spain": {
+      "value": 9.63,
+      "unit": "percent"
+    },
+    "Turkey": {
+      "value": 9.19,
+      "unit": "percent"
+    },
+    "Finland": {
+      "value": 9.1,
+      "unit": "percent"
+    },
+    "Poland": {
+      "value": 8.6,
+      "unit": "percent"
+    },
+    "Greece": {
+      "value": 8.29,
+      "unit": "percent"
+    },
+    "Russia": {
+      "value": 6.09,
+      "unit": "percent"
+    },
+    "India": {
+      "value": 5.20,
+      "unit": "percent"
+    },
+    "Taiwan": {
+      "value": 5.0,
+      "unit": "percent"
+    },
+    "Japan": {
+      "value": 4.70,
+      "unit": "percent"
+    },
+    "China": {
+      "value": 3.50,
+      "unit": "percent"
+    },
+    "Mexico": {
+      "value": 2.50,
+      "unit": "percent"
+    },
+    "South Korea": {
+      "value": 2.0,
+      "unit": "percent"
+    }
+  }
+}
+

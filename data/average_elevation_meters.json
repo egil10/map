@@ -1,0 +1,677 @@
+{
+  "title": "Average Elevation by Country (Meters)",
+  "description": "Mean elevation above sea level for each country in meters",
+  "unit": "meters",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_by_average_elevation",
+  "data": {
+    "Bhutan": {
+      "value": 3280,
+      "unit": "meters"
+    },
+    "Nepal": {
+      "value": 3265,
+      "unit": "meters"
+    },
+    "Tajikistan": {
+      "value": 3186,
+      "unit": "meters"
+    },
+    "Kyrgyzstan": {
+      "value": 2988,
+      "unit": "meters"
+    },
+    "Lesotho": {
+      "value": 2161,
+      "unit": "meters"
+    },
+    "Andorra": {
+      "value": 1996,
+      "unit": "meters"
+    },
+    "Afghanistan": {
+      "value": 1884,
+      "unit": "meters"
+    },
+    "Chile": {
+      "value": 1871,
+      "unit": "meters"
+    },
+    "China": {
+      "value": 1840,
+      "unit": "meters"
+    },
+    "Armenia": {
+      "value": 1792,
+      "unit": "meters"
+    },
+    "Rwanda": {
+      "value": 1598,
+      "unit": "meters"
+    },
+    "Mongolia": {
+      "value": 1580,
+      "unit": "meters"
+    },
+    "Peru": {
+      "value": 1555,
+      "unit": "meters"
+    },
+    "Burundi": {
+      "value": 1504,
+      "unit": "meters"
+    },
+    "Georgia": {
+      "value": 1432,
+      "unit": "meters"
+    },
+    "Switzerland": {
+      "value": 1350,
+      "unit": "meters"
+    },
+    "Ethiopia": {
+      "value": 1330,
+      "unit": "meters"
+    },
+    "Iran": {
+      "value": 1305,
+      "unit": "meters"
+    },
+    "Lebanon": {
+      "value": 1250,
+      "unit": "meters"
+    },
+    "Bolivia": {
+      "value": 1192,
+      "unit": "meters"
+    },
+    "Taiwan": {
+      "value": 1150,
+      "unit": "meters"
+    },
+    "Turkey": {
+      "value": 1141,
+      "unit": "meters"
+    },
+    "Namibia": {
+      "value": 1141,
+      "unit": "meters"
+    },
+    "Zambia": {
+      "value": 1138,
+      "unit": "meters"
+    },
+    "Ecuador": {
+      "value": 1117,
+      "unit": "meters"
+    },
+    "Angola": {
+      "value": 1112,
+      "unit": "meters"
+    },
+    "Mexico": {
+      "value": 1111,
+      "unit": "meters"
+    },
+    "Uganda": {
+      "value": 1100,
+      "unit": "meters"
+    },
+    "Montenegro": {
+      "value": 1086,
+      "unit": "meters"
+    },
+    "South Africa": {
+      "value": 1034,
+      "unit": "meters"
+    },
+    "Tanzania": {
+      "value": 1018,
+      "unit": "meters"
+    },
+    "Botswana": {
+      "value": 1013,
+      "unit": "meters"
+    },
+    "Yemen": {
+      "value": 999,
+      "unit": "meters"
+    },
+    "Zimbabwe": {
+      "value": 961,
+      "unit": "meters"
+    },
+    "Austria": {
+      "value": 910,
+      "unit": "meters"
+    },
+    "Morocco": {
+      "value": 909,
+      "unit": "meters"
+    },
+    "Pakistan": {
+      "value": 900,
+      "unit": "meters"
+    },
+    "Eritrea": {
+      "value": 853,
+      "unit": "meters"
+    },
+    "Jordan": {
+      "value": 812,
+      "unit": "meters"
+    },
+    "Kosovo": {
+      "value": 810,
+      "unit": "meters"
+    },
+    "Algeria": {
+      "value": 800,
+      "unit": "meters"
+    },
+    "Malawi": {
+      "value": 779,
+      "unit": "meters"
+    },
+    "Kenya": {
+      "value": 762,
+      "unit": "meters"
+    },
+    "United States": {
+      "value": 760,
+      "unit": "meters"
+    },
+    "Guatemala": {
+      "value": 759,
+      "unit": "meters"
+    },
+    "Costa Rica": {
+      "value": 746,
+      "unit": "meters"
+    },
+    "North Macedonia": {
+      "value": 741,
+      "unit": "meters"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 726,
+      "unit": "meters"
+    },
+    "Laos": {
+      "value": 710,
+      "unit": "meters"
+    },
+    "Albania": {
+      "value": 708,
+      "unit": "meters"
+    },
+    "Myanmar": {
+      "value": 702,
+      "unit": "meters"
+    },
+    "Honduras": {
+      "value": 684,
+      "unit": "meters"
+    },
+    "Papua New Guinea": {
+      "value": 667,
+      "unit": "meters"
+    },
+    "Cameroon": {
+      "value": 667,
+      "unit": "meters"
+    },
+    "Saudi Arabia": {
+      "value": 665,
+      "unit": "meters"
+    },
+    "Spain": {
+      "value": 660,
+      "unit": "meters"
+    },
+    "Central African Republic": {
+      "value": 635,
+      "unit": "meters"
+    },
+    "India": {
+      "value": 621,
+      "unit": "meters"
+    },
+    "Madagascar": {
+      "value": 615,
+      "unit": "meters"
+    },
+    "Russia": {
+      "value": 600,
+      "unit": "meters"
+    },
+    "Argentina": {
+      "value": 595,
+      "unit": "meters"
+    },
+    "Colombia": {
+      "value": 593,
+      "unit": "meters"
+    },
+    "Equatorial Guinea": {
+      "value": 577,
+      "unit": "meters"
+    },
+    "Sudan": {
+      "value": 568,
+      "unit": "meters"
+    },
+    "Iceland": {
+      "value": 557,
+      "unit": "meters"
+    },
+    "Chad": {
+      "value": 543,
+      "unit": "meters"
+    },
+    "Italy": {
+      "value": 538,
+      "unit": "meters"
+    },
+    "Syria": {
+      "value": 514,
+      "unit": "meters"
+    },
+    "Israel": {
+      "value": 508,
+      "unit": "meters"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 500,
+      "unit": "meters"
+    },
+    "Greece": {
+      "value": 498,
+      "unit": "meters"
+    },
+    "Slovenia": {
+      "value": 492,
+      "unit": "meters"
+    },
+    "Canada": {
+      "value": 487,
+      "unit": "meters"
+    },
+    "Brunei": {
+      "value": 478,
+      "unit": "meters"
+    },
+    "Niger": {
+      "value": 474,
+      "unit": "meters"
+    },
+    "Guinea": {
+      "value": 472,
+      "unit": "meters"
+    },
+    "Bulgaria": {
+      "value": 472,
+      "unit": "meters"
+    },
+    "Haiti": {
+      "value": 470,
+      "unit": "meters"
+    },
+    "Norway": {
+      "value": 460,
+      "unit": "meters"
+    },
+    "Slovakia": {
+      "value": 458,
+      "unit": "meters"
+    },
+    "Venezuela": {
+      "value": 450,
+      "unit": "meters"
+    },
+    "Uzbekistan": {
+      "value": 450,
+      "unit": "meters"
+    },
+    "Serbia": {
+      "value": 442,
+      "unit": "meters"
+    },
+    "Philippines": {
+      "value": 442,
+      "unit": "meters"
+    },
+    "El Salvador": {
+      "value": 442,
+      "unit": "meters"
+    },
+    "North Korea": {
+      "value": 440,
+      "unit": "meters"
+    },
+    "Japan": {
+      "value": 438,
+      "unit": "meters"
+    },
+    "Congo": {
+      "value": 430,
+      "unit": "meters"
+    },
+    "Djibouti": {
+      "value": 430,
+      "unit": "meters"
+    },
+    "Czech Republic": {
+      "value": 430,
+      "unit": "meters"
+    },
+    "Dominican Republic": {
+      "value": 424,
+      "unit": "meters"
+    },
+    "Libya": {
+      "value": 423,
+      "unit": "meters"
+    },
+    "Malaysia": {
+      "value": 419,
+      "unit": "meters"
+    },
+    "Romania": {
+      "value": 414,
+      "unit": "meters"
+    },
+    "Somalia": {
+      "value": 410,
+      "unit": "meters"
+    },
+    "Vietnam": {
+      "value": 398,
+      "unit": "meters"
+    },
+    "New Zealand": {
+      "value": 388,
+      "unit": "meters"
+    },
+    "Kazakhstan": {
+      "value": 387,
+      "unit": "meters"
+    },
+    "Azerbaijan": {
+      "value": 384,
+      "unit": "meters"
+    },
+    "Nigeria": {
+      "value": 380,
+      "unit": "meters"
+    },
+    "Gabon": {
+      "value": 377,
+      "unit": "meters"
+    },
+    "France": {
+      "value": 375,
+      "unit": "meters"
+    },
+    "Portugal": {
+      "value": 372,
+      "unit": "meters"
+    },
+    "Indonesia": {
+      "value": 367,
+      "unit": "meters"
+    },
+    "Panama": {
+      "value": 360,
+      "unit": "meters"
+    },
+    "Mozambique": {
+      "value": 345,
+      "unit": "meters"
+    },
+    "Mali": {
+      "value": 343,
+      "unit": "meters"
+    },
+    "Jamaica": {
+      "value": 340,
+      "unit": "meters"
+    },
+    "Croatia": {
+      "value": 331,
+      "unit": "meters"
+    },
+    "Australia": {
+      "value": 330,
+      "unit": "meters"
+    },
+    "Luxembourg": {
+      "value": 325,
+      "unit": "meters"
+    },
+    "Egypt": {
+      "value": 321,
+      "unit": "meters"
+    },
+    "Sweden": {
+      "value": 320,
+      "unit": "meters"
+    },
+    "Brazil": {
+      "value": 320,
+      "unit": "meters"
+    },
+    "Iraq": {
+      "value": 312,
+      "unit": "meters"
+    },
+    "Oman": {
+      "value": 310,
+      "unit": "meters"
+    },
+    "Eswatini": {
+      "value": 305,
+      "unit": "meters"
+    },
+    "Nicaragua": {
+      "value": 298,
+      "unit": "meters"
+    },
+    "Burkina Faso": {
+      "value": 297,
+      "unit": "meters"
+    },
+    "Thailand": {
+      "value": 287,
+      "unit": "meters"
+    },
+    "South Korea": {
+      "value": 282,
+      "unit": "meters"
+    },
+    "Sierra Leone": {
+      "value": 279,
+      "unit": "meters"
+    },
+    "Mauritania": {
+      "value": 276,
+      "unit": "meters"
+    },
+    "Benin": {
+      "value": 273,
+      "unit": "meters"
+    },
+    "Germany": {
+      "value": 263,
+      "unit": "meters"
+    },
+    "Ivory Coast": {
+      "value": 250,
+      "unit": "meters"
+    },
+    "Tunisia": {
+      "value": 246,
+      "unit": "meters"
+    },
+    "Suriname": {
+      "value": 246,
+      "unit": "meters"
+    },
+    "Liberia": {
+      "value": 243,
+      "unit": "meters"
+    },
+    "Togo": {
+      "value": 236,
+      "unit": "meters"
+    },
+    "Turkmenistan": {
+      "value": 230,
+      "unit": "meters"
+    },
+    "Sri Lanka": {
+      "value": 228,
+      "unit": "meters"
+    },
+    "Guyana": {
+      "value": 207,
+      "unit": "meters"
+    },
+    "Ghana": {
+      "value": 190,
+      "unit": "meters"
+    },
+    "Belgium": {
+      "value": 181,
+      "unit": "meters"
+    },
+    "Paraguay": {
+      "value": 178,
+      "unit": "meters"
+    },
+    "Ukraine": {
+      "value": 175,
+      "unit": "meters"
+    },
+    "Poland": {
+      "value": 173,
+      "unit": "meters"
+    },
+    "Belize": {
+      "value": 173,
+      "unit": "meters"
+    },
+    "Finland": {
+      "value": 164,
+      "unit": "meters"
+    },
+    "United Kingdom": {
+      "value": 162,
+      "unit": "meters"
+    },
+    "Belarus": {
+      "value": 160,
+      "unit": "meters"
+    },
+    "United Arab Emirates": {
+      "value": 149,
+      "unit": "meters"
+    },
+    "Hungary": {
+      "value": 143,
+      "unit": "meters"
+    },
+    "Moldova": {
+      "value": 139,
+      "unit": "meters"
+    },
+    "Cambodia": {
+      "value": 126,
+      "unit": "meters"
+    },
+    "Ireland": {
+      "value": 118,
+      "unit": "meters"
+    },
+    "Lithuania": {
+      "value": 110,
+      "unit": "meters"
+    },
+    "Uruguay": {
+      "value": 109,
+      "unit": "meters"
+    },
+    "Kuwait": {
+      "value": 108,
+      "unit": "meters"
+    },
+    "Cuba": {
+      "value": 108,
+      "unit": "meters"
+    },
+    "Cyprus": {
+      "value": 91,
+      "unit": "meters"
+    },
+    "Latvia": {
+      "value": 87,
+      "unit": "meters"
+    },
+    "Bangladesh": {
+      "value": 85,
+      "unit": "meters"
+    },
+    "Trinidad and Tobago": {
+      "value": 83,
+      "unit": "meters"
+    },
+    "Guinea-Bissau": {
+      "value": 70,
+      "unit": "meters"
+    },
+    "Senegal": {
+      "value": 69,
+      "unit": "meters"
+    },
+    "Estonia": {
+      "value": 61,
+      "unit": "meters"
+    },
+    "Gambia": {
+      "value": 34,
+      "unit": "meters"
+    },
+    "Denmark": {
+      "value": 34,
+      "unit": "meters"
+    },
+    "Netherlands": {
+      "value": 30,
+      "unit": "meters"
+    },
+    "Qatar": {
+      "value": 28,
+      "unit": "meters"
+    },
+    "Singapore": {
+      "value": 15,
+      "unit": "meters"
+    },
+    "Marshall Islands": {
+      "value": 2,
+      "unit": "meters"
+    },
+    "Kiribati": {
+      "value": 2,
+      "unit": "meters"
+    },
+    "Tuvalu": {
+      "value": 1.8,
+      "unit": "meters"
+    },
+    "Maldives": {
+      "value": 1.5,
+      "unit": "meters"
+    }
+  }
+}
+

@@ -1,0 +1,45 @@
+{
+  "title": "Female Astronauts by Country",
+  "description": "Total number of female space travelers by nationality (as of April 2025)",
+  "unit": "astronauts",
+  "source": "https://en.wikipedia.org/wiki/List_of_space_travelers_by_nationality",
+  "data": {
+    "United States": {
+      "value": 60,
+      "unit": "astronauts"
+    },
+    "Russia": {
+      "value": 4,
+      "unit": "astronauts"
+    },
+    "China": {
+      "value": 3,
+      "unit": "astronauts"
+    },
+    "Soviet Union": {
+      "value": 2,
+      "unit": "astronauts"
+    },
+    "Japan": {
+      "value": 2,
+      "unit": "astronauts"
+    },
+    "Canada": {
+      "value": 2,
+      "unit": "astronauts"
+    },
+    "Germany": {
+      "value": 1,
+      "unit": "astronauts"
+    },
+    "France": {
+      "value": 1,
+      "unit": "astronauts"
+    },
+    "Italy": {
+      "value": 1,
+      "unit": "astronauts"
+    }
+  }
+}
+
