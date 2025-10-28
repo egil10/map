@@ -1,0 +1,160 @@
+{
+  "title": "Average Annual Hours Actually Worked Per Worker",
+  "description": "Latest available year of average annual hours actually worked per worker, OECD dataset (as of 2024)",
+  "unit": "hours",
+  "source": "https://stats.oecd.org/Index.aspx?DataSetCode=SAE",
+  "data": {
+    "Sweden": {
+      "value": 1430.986,
+      "unit": "Hours per year per person"
+    },
+    "United States": {
+      "value": 1795.906,
+      "unit": "Hours per year per person"
+    },
+    "Finland": {
+      "value": 1509.116,
+      "unit": "Hours per year per person"
+    },
+    "Australia": {
+      "value": 1627,
+      "unit": "Hours per year per person"
+    },
+    "Austria": {
+      "value": 1432.239,
+      "unit": "Hours per year per person"
+    },
+    "Belgium": {
+      "value": 1593.244,
+      "unit": "Hours per year per person"
+    },
+    "Canada": {
+      "value": 1697,
+      "unit": "Hours per year per person"
+    },
+    "Chile": {
+      "value": 1919,
+      "unit": "Hours per year per person"
+    },
+    "Colombia": {
+      "value": 2252.462,
+      "unit": "Hours per year per person"
+    },
+    "Costa Rica": {
+      "value": 2149,
+      "unit": "Hours per year per person"
+    },
+    "Czechia": {
+      "value": 1770.708,
+      "unit": "Hours per year per person"
+    },
+    "Denmark": {
+      "value": 1378.748,
+      "unit": "Hours per year per person"
+    },
+    "Estonia": {
+      "value": 1611.124,
+      "unit": "Hours per year per person"
+    },
+    "France": {
+      "value": 1490.729,
+      "unit": "Hours per year per person"
+    },
+    "Germany": {
+      "value": 1331.451,
+      "unit": "Hours per year per person"
+    },
+    "Greece": {
+      "value": 1898.22,
+      "unit": "Hours per year per person"
+    },
+    "Hungary": {
+      "value": 1674.274,
+      "unit": "Hours per year per person"
+    },
+    "Iceland": {
+      "value": 1434.11,
+      "unit": "Hours per year per person"
+    },
+    "Ireland": {
+      "value": 1621.7,
+      "unit": "Hours per year per person"
+    },
+    "Israel": {
+      "value": 1877.038,
+      "unit": "Hours per year per person"
+    },
+    "Italy": {
+      "value": 1709.15,
+      "unit": "Hours per year per person"
+    },
+    "Japan": {
+      "value": 1617.381,
+      "unit": "Hours per year per person"
+    },
+    "South Korea": {
+      "value": 1865,
+      "unit": "Hours per year per person"
+    },
+    "Latvia": {
+      "value": 1636.665,
+      "unit": "Hours per year per person"
+    },
+    "Lithuania": {
+      "value": 1659.65,
+      "unit": "Hours per year per person"
+    },
+    "Luxembourg": {
+      "value": 1468,
+      "unit": "Hours per year per person"
+    },
+    "Mexico": {
+      "value": 2193.358,
+      "unit": "Hours per year per person"
+    },
+    "Netherlands": {
+      "value": 1445.043,
+      "unit": "Hours per year per person"
+    },
+    "New Zealand": {
+      "value": 1741,
+      "unit": "Hours per year per person"
+    },
+    "Norway": {
+      "value": 1407,
+      "unit": "Hours per year per person"
+    },
+    "Poland": {
+      "value": 1785.142,
+      "unit": "Hours per year per person"
+    },
+    "Portugal": {
+      "value": 1715.776,
+      "unit": "Hours per year per person"
+    },
+    "Slovakia": {
+      "value": 1624,
+      "unit": "Hours per year per person"
+    },
+    "Slovenia": {
+      "value": 1602,
+      "unit": "Hours per year per person"
+    },
+    "Spain": {
+      "value": 1633.531,
+      "unit": "Hours per year per person"
+    },
+    "Switzerland": {
+      "value": 1531.708,
+      "unit": "Hours per year per person"
+    },
+    "Turkey": {
+      "value": 1732.088,
+      "unit": "Hours per year per person"
+    },
+    "United Kingdom": {
+      "value": 1511.653,
+      "unit": "Hours per year per person"
+    }
+  }
+}
