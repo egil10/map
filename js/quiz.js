@@ -17,6 +17,11 @@ class QuizGame {
         this.waitingForNext = false;
         this.nextQuestionListener = null;
         
+        // Track quiz history
+        this.quizHistory = [];
+        this.lastGuess = null;
+        this.lastCorrectAnswer = null;
+        
         this.init();
     }
     
@@ -665,6 +670,9 @@ class QuizGame {
         this.currentProgress = 0;
         this.isQuizCompleted = false;
         this.lastAnswerWasCorrect = undefined;
+        this.quizHistory = [];
+        this.lastGuess = null;
+        this.lastCorrectAnswer = null;
         this.resetProgressBar();
     }
 
@@ -907,6 +915,20 @@ class QuizGame {
         const isCorrect = selectedAnswer === this.currentQuiz.title;
         console.log('🎯 Is correct:', isCorrect);
         
+        // Store guess and correct answer
+        this.lastGuess = selectedAnswer;
+        this.lastCorrectAnswer = this.currentQuiz ? this.currentQuiz.title : 'Unknown';
+        
+        // Track quiz history
+        if (this.currentQuiz) {
+            this.quizHistory.push({
+                map: this.currentQuiz.title,
+                guess: selectedAnswer,
+                correct: isCorrect,
+                correctAnswer: this.currentQuiz.title
+            });
+        }
+        
         // Disable all buttons
         document.querySelectorAll('.choice-btn').forEach(btn => {
             btn.disabled = true;
@@ -950,6 +972,20 @@ class QuizGame {
         
         const userGuess = guessInput.value.trim();
         const isCorrect = this.checkAnswer(userGuess);
+        
+        // Store guess and correct answer
+        this.lastGuess = userGuess;
+        this.lastCorrectAnswer = this.currentQuiz ? this.currentQuiz.title : 'Unknown';
+        
+        // Track quiz history
+        if (this.currentQuiz) {
+            this.quizHistory.push({
+                map: this.currentQuiz.title,
+                guess: userGuess,
+                correct: isCorrect,
+                correctAnswer: this.currentQuiz.title
+            });
+        }
         
         // Disable input and button
         guessInput.disabled = true;
@@ -1315,6 +1351,14 @@ class QuizGame {
         });
         
         const totalQuestions = 10;
+        const wrongAnswers = totalQuestions - correctAnswers;
+        
+        // Count unique maps played
+        const uniqueMaps = new Set(this.quizHistory.map(item => item.map));
+        const mapsPlayed = uniqueMaps.size;
+        
+        // Get last question info
+        const lastQuestion = this.quizHistory[this.quizHistory.length - 1] || null;
         
         // Show completion screen in the map area
         const mapContainer = document.querySelector('.map-container');
@@ -1325,20 +1369,52 @@ class QuizGame {
                 existingCompletion.remove();
             }
             
-            // Create completion screen
+            // Create completion screen with enhanced info
             const completionScreen = document.createElement('div');
             completionScreen.className = 'completion-screen';
             completionScreen.innerHTML = `
-                <h2>Game Complete</h2>
+                <h2>Game Complete!</h2>
                 <div class="score-display">
-                    <p>Score: <strong>${correctAnswers}/10</strong></p>
+                    <div class="score-main">
+                        <strong>${correctAnswers}/10</strong>
+                    </div>
+                    <div class="score-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Correct:</span>
+                            <span class="stat-value correct-stat">${correctAnswers}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Wrong:</span>
+                            <span class="stat-value wrong-stat">${wrongAnswers}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Maps played:</span>
+                            <span class="stat-value">${mapsPlayed}</span>
+                        </div>
+                    </div>
                 </div>
+                ${lastQuestion ? `
+                <div class="last-question-info">
+                    <div class="last-question-label">Last Question:</div>
+                    <div class="last-question-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Your guess:</span>
+                            <span class="detail-value guess-value">${lastQuestion.guess}</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Correct answer:</span>
+                            <span class="detail-value correct-value">${lastQuestion.correctAnswer}</span>
+                        </div>
+                    </div>
+                </div>
+                ` : ''}
                 <div class="completion-actions">
                     <button class="play-again-btn" id="restartGameBtn">
                         <i data-lucide="refresh-cw"></i>
                         Play Again
                     </button>
                 </div>
+                <div class="completion-hint">Press Enter to restart</div>
             `;
             
             // Add to map container
