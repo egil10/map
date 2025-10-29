@@ -1060,26 +1060,27 @@ body {
 }
 
 .dataset-browser-close {
-        width: 32px;
-        height: 32px;
+    width: 32px;
+    height: 32px;
     background: #f5f5f5;
-    border: none;
+    border: 1px solid #e5e5e5;
     border-radius: 6px;
     cursor: pointer;
     display: flex;
     align-items: center;
-        justify-content: center;
-    transition: background 0.15s ease;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+    color: #666;
 }
 
 .dataset-browser-close:hover {
-    background: #e5e5e5;
+    opacity: 0.9;
 }
 
 .dataset-browser-close i {
-        width: 14px;
-        height: 14px;
-    }
+    width: 14px;
+    height: 14px;
+}
     
 .dataset-browser-body {
     flex: 1;
