@@ -1357,64 +1357,70 @@ class QuizGame {
         const uniqueMaps = new Set(this.quizHistory.map(item => item.map));
         const mapsPlayed = uniqueMaps.size;
         
-        // Get last question info
-        const lastQuestion = this.quizHistory[this.quizHistory.length - 1] || null;
+        // Separate correct and wrong answers
+        const correctItems = this.quizHistory.filter(item => item.correct);
+        const wrongItems = this.quizHistory.filter(item => !item.correct);
+        
+        // Create backdrop overlay first
+        const backdrop = document.createElement('div');
+        backdrop.className = 'completion-backdrop';
         
         // Show completion screen in the map area
         const mapContainer = document.querySelector('.map-container');
         if (mapContainer) {
-            // Remove any existing completion screen
+            // Remove any existing completion screen and backdrop
             const existingCompletion = document.querySelector('.completion-screen');
-            if (existingCompletion) {
-                existingCompletion.remove();
-            }
+            const existingBackdrop = document.querySelector('.completion-backdrop');
+            if (existingCompletion) existingCompletion.remove();
+            if (existingBackdrop) existingBackdrop.remove();
+            
+            // Add backdrop
+            mapContainer.appendChild(backdrop);
             
             // Create completion screen with enhanced info
             const completionScreen = document.createElement('div');
             completionScreen.className = 'completion-screen';
             completionScreen.innerHTML = `
-                <h2>Game Complete!</h2>
-                <div class="score-display">
-                    <div class="score-main">
-                        <strong>${correctAnswers}/10</strong>
-                    </div>
-                    <div class="score-stats">
-                        <div class="stat-item">
-                            <span class="stat-label">Correct:</span>
-                            <span class="stat-value correct-stat">${correctAnswers}</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Wrong:</span>
-                            <span class="stat-value wrong-stat">${wrongAnswers}</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Maps played:</span>
-                            <span class="stat-value">${mapsPlayed}</span>
-                        </div>
-                    </div>
+                <div class="completion-header">
+                    <h2>${correctAnswers}/10</h2>
                 </div>
-                ${lastQuestion ? `
-                <div class="last-question-info">
-                    <div class="last-question-label">Last Question:</div>
-                    <div class="last-question-details">
-                        <div class="detail-row">
-                            <span class="detail-label">Your guess:</span>
-                            <span class="detail-value guess-value">${lastQuestion.guess}</span>
+                <div class="answers-grid">
+                    ${correctItems.length > 0 ? `
+                    <div class="answers-section correct-section">
+                        <div class="section-header">
+                            <span class="section-label">Correct (${correctItems.length})</span>
                         </div>
-                        <div class="detail-row">
-                            <span class="detail-label">Correct answer:</span>
-                            <span class="detail-value correct-value">${lastQuestion.correctAnswer}</span>
+                        <div class="answers-list">
+                            ${correctItems.map(item => `
+                                <div class="answer-item correct-item">
+                                    <span class="answer-text">${item.correctAnswer}</span>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
+                    ` : ''}
+                    ${wrongItems.length > 0 ? `
+                    <div class="answers-section wrong-section">
+                        <div class="section-header">
+                            <span class="section-label">Wrong (${wrongItems.length})</span>
+                        </div>
+                        <div class="answers-list">
+                            ${wrongItems.map(item => `
+                                <div class="answer-item wrong-item">
+                                    <span class="answer-guess">${item.guess}</span>
+                                    <span class="answer-separator">→</span>
+                                    <span class="answer-correct">${item.correctAnswer}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    ` : ''}
                 </div>
-                ` : ''}
                 <div class="completion-actions">
                     <button class="play-again-btn" id="restartGameBtn">
-                        <i data-lucide="refresh-cw"></i>
                         Play Again
                     </button>
                 </div>
-                <div class="completion-hint">Press Enter to restart</div>
             `;
             
             // Add to map container
