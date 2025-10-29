@@ -1,0 +1,693 @@
+{
+  "title": "Average Learning Outcomes by Country",
+  "description": "Average learning outcomes correspond to harmonized test scores across standardized, psychometrically-robust international and regional student achievement tests according to Our World in Data (2020).",
+  "unit": "score",
+  "source": "https://ourworldindata.org/grapher/average-harmonized-learning-outcome-scores",
+  "data": {
+    "Afghanistan": {
+      "value": 354.76,
+      "unit": "score"
+    },
+    "Albania": {
+      "value": 434.13,
+      "unit": "score"
+    },
+    "Algeria": {
+      "value": 374.09,
+      "unit": "score"
+    },
+    "Angola": {
+      "value": 325.97,
+      "unit": "score"
+    },
+    "Antigua and Barbuda": {
+      "value": 407.00,
+      "unit": "score"
+    },
+    "Argentina": {
+      "value": 408.17,
+      "unit": "score"
+    },
+    "Armenia": {
+      "value": 442.97,
+      "unit": "score"
+    },
+    "Australia": {
+      "value": 515.69,
+      "unit": "score"
+    },
+    "Austria": {
+      "value": 507.64,
+      "unit": "score"
+    },
+    "Azerbaijan": {
+      "value": 415.95,
+      "unit": "score"
+    },
+    "Bahrain": {
+      "value": 451.71,
+      "unit": "score"
+    },
+    "Bangladesh": {
+      "value": 368.32,
+      "unit": "score"
+    },
+    "Belarus": {
+      "value": 488.14,
+      "unit": "score"
+    },
+    "Belgium": {
+      "value": 516.81,
+      "unit": "score"
+    },
+    "Benin": {
+      "value": 383.92,
+      "unit": "score"
+    },
+    "Bhutan": {
+      "value": 386.74,
+      "unit": "score"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 416.13,
+      "unit": "score"
+    },
+    "Botswana": {
+      "value": 391.32,
+      "unit": "score"
+    },
+    "Brazil": {
+      "value": 413.24,
+      "unit": "score"
+    },
+    "Brunei": {
+      "value": 437.52,
+      "unit": "score"
+    },
+    "Bulgaria": {
+      "value": 441.09,
+      "unit": "score"
+    },
+    "Burkina Faso": {
+      "value": 403.65,
+      "unit": "score"
+    },
+    "Burundi": {
+      "value": 422.75,
+      "unit": "score"
+    },
+    "Cambodia": {
+      "value": 451.89,
+      "unit": "score"
+    },
+    "Cameroon": {
+      "value": 378.87,
+      "unit": "score"
+    },
+    "Canada": {
+      "value": 534.00,
+      "unit": "score"
+    },
+    "Central African Republic": {
+      "value": 368.73,
+      "unit": "score"
+    },
+    "Chad": {
+      "value": 333.11,
+      "unit": "score"
+    },
+    "Chile": {
+      "value": 452.22,
+      "unit": "score"
+    },
+    "China": {
+      "value": 441.00,
+      "unit": "score"
+    },
+    "Colombia": {
+      "value": 419.03,
+      "unit": "score"
+    },
+    "Comoros": {
+      "value": 392.23,
+      "unit": "score"
+    },
+    "Republic of the Congo": {
+      "value": 370.61,
+      "unit": "score"
+    },
+    "Costa Rica": {
+      "value": 428.56,
+      "unit": "score"
+    },
+    "Côte d'Ivoire": {
+      "value": 373.23,
+      "unit": "score"
+    },
+    "Croatia": {
+      "value": 487.58,
+      "unit": "score"
+    },
+    "Cyprus": {
+      "value": 502.16,
+      "unit": "score"
+    },
+    "Czech Republic": {
+      "value": 512.22,
+      "unit": "score"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 310.20,
+      "unit": "score"
+    },
+    "Denmark": {
+      "value": 517.88,
+      "unit": "score"
+    },
+    "Dominica": {
+      "value": 403.78,
+      "unit": "score"
+    },
+    "Dominican Republic": {
+      "value": 345.22,
+      "unit": "score"
+    },
+    "Timor-Leste": {
+      "value": 371.44,
+      "unit": "score"
+    },
+    "Ecuador": {
+      "value": 420.15,
+      "unit": "score"
+    },
+    "Egypt": {
+      "value": 355.99,
+      "unit": "score"
+    },
+    "El Salvador": {
+      "value": 435.92,
+      "unit": "score"
+    },
+    "Estonia": {
+      "value": 543.21,
+      "unit": "score"
+    },
+    "Eswatini": {
+      "value": 440.30,
+      "unit": "score"
+    },
+    "Ethiopia": {
+      "value": 348.20,
+      "unit": "score"
+    },
+    "Fiji": {
+      "value": 383.34,
+      "unit": "score"
+    },
+    "Finland": {
+      "value": 533.71,
+      "unit": "score"
+    },
+    "France": {
+      "value": 510.26,
+      "unit": "score"
+    },
+    "Gabon": {
+      "value": 456.13,
+      "unit": "score"
+    },
+    "Gambia": {
+      "value": 352.90,
+      "unit": "score"
+    },
+    "Georgia": {
+      "value": 399.77,
+      "unit": "score"
+    },
+    "Germany": {
+      "value": 517.28,
+      "unit": "score"
+    },
+    "Ghana": {
+      "value": 307.28,
+      "unit": "score"
+    },
+    "Greece": {
+      "value": 468.64,
+      "unit": "score"
+    },
+    "Grenada": {
+      "value": 394.75,
+      "unit": "score"
+    },
+    "Guatemala": {
+      "value": 405.26,
+      "unit": "score"
+    },
+    "Guinea": {
+      "value": 408.25,
+      "unit": "score"
+    },
+    "Guyana": {
+      "value": 346.37,
+      "unit": "score"
+    },
+    "Haiti": {
+      "value": 337.82,
+      "unit": "score"
+    },
+    "Honduras": {
+      "value": 399.75,
+      "unit": "score"
+    },
+    "Hong Kong": {
+      "value": 548.63,
+      "unit": "score"
+    },
+    "Hungary": {
+      "value": 495.48,
+      "unit": "score"
+    },
+    "Iceland": {
+      "value": 497.68,
+      "unit": "score"
+    },
+    "India": {
+      "value": 399.00,
+      "unit": "score"
+    },
+    "Indonesia": {
+      "value": 394.92,
+      "unit": "score"
+    },
+    "Iran": {
+      "value": 432.11,
+      "unit": "score"
+    },
+    "Iraq": {
+      "value": 363.43,
+      "unit": "score"
+    },
+    "Ireland": {
+      "value": 521.33,
+      "unit": "score"
+    },
+    "Israel": {
+      "value": 480.75,
+      "unit": "score"
+    },
+    "Italy": {
+      "value": 492.99,
+      "unit": "score"
+    },
+    "Jamaica": {
+      "value": 387.13,
+      "unit": "score"
+    },
+    "Japan": {
+      "value": 537.72,
+      "unit": "score"
+    },
+    "Jordan": {
+      "value": 429.95,
+      "unit": "score"
+    },
+    "Kazakhstan": {
+      "value": 416.15,
+      "unit": "score"
+    },
+    "Kenya": {
+      "value": 454.96,
+      "unit": "score"
+    },
+    "Kiribati": {
+      "value": 411.48,
+      "unit": "score"
+    },
+    "Kuwait": {
+      "value": 383.40,
+      "unit": "score"
+    },
+    "Kyrgyzstan": {
+      "value": 420.09,
+      "unit": "score"
+    },
+    "Laos": {
+      "value": 368.14,
+      "unit": "score"
+    },
+    "Latvia": {
+      "value": 503.87,
+      "unit": "score"
+    },
+    "Lebanon": {
+      "value": 389.89,
+      "unit": "score"
+    },
+    "Lesotho": {
+      "value": 392.91,
+      "unit": "score"
+    },
+    "Liberia": {
+      "value": 331.75,
+      "unit": "score"
+    },
+    "Lithuania": {
+      "value": 495.89,
+      "unit": "score"
+    },
+    "Luxembourg": {
+      "value": 492.85,
+      "unit": "score"
+    },
+    "Macao": {
+      "value": 560.61,
+      "unit": "score"
+    },
+    "Madagascar": {
+      "value": 350.77,
+      "unit": "score"
+    },
+    "Malawi": {
+      "value": 359.48,
+      "unit": "score"
+    },
+    "Malaysia": {
+      "value": 445.68,
+      "unit": "score"
+    },
+    "Mali": {
+      "value": 307.36,
+      "unit": "score"
+    },
+    "Malta": {
+      "value": 474.44,
+      "unit": "score"
+    },
+    "Mauritania": {
+      "value": 342.09,
+      "unit": "score"
+    },
+    "Mauritius": {
+      "value": 472.77,
+      "unit": "score"
+    },
+    "Mexico": {
+      "value": 430.07,
+      "unit": "score"
+    },
+    "Moldova": {
+      "value": 438.62,
+      "unit": "score"
+    },
+    "Mongolia": {
+      "value": 434.62,
+      "unit": "score"
+    },
+    "Montenegro": {
+      "value": 436.13,
+      "unit": "score"
+    },
+    "Morocco": {
+      "value": 380.41,
+      "unit": "score"
+    },
+    "Mozambique": {
+      "value": 368.24,
+      "unit": "score"
+    },
+    "Myanmar": {
+      "value": 424.63,
+      "unit": "score"
+    },
+    "Namibia": {
+      "value": 406.66,
+      "unit": "score"
+    },
+    "Nauru": {
+      "value": 346.63,
+      "unit": "score"
+    },
+    "Nepal": {
+      "value": 368.56,
+      "unit": "score"
+    },
+    "Netherlands": {
+      "value": 519.63,
+      "unit": "score"
+    },
+    "New Zealand": {
+      "value": 519.75,
+      "unit": "score"
+    },
+    "Nicaragua": {
+      "value": 391.99,
+      "unit": "score"
+    },
+    "Niger": {
+      "value": 304.92,
+      "unit": "score"
+    },
+    "Nigeria": {
+      "value": 309.02,
+      "unit": "score"
+    },
+    "North Macedonia": {
+      "value": 413.62,
+      "unit": "score"
+    },
+    "Norway": {
+      "value": 513.59,
+      "unit": "score"
+    },
+    "Oman": {
+      "value": 423.51,
+      "unit": "score"
+    },
+    "Pakistan": {
+      "value": 338.66,
+      "unit": "score"
+    },
+    "Palau": {
+      "value": 463.21,
+      "unit": "score"
+    },
+    "Palestine": {
+      "value": 412.32,
+      "unit": "score"
+    },
+    "Panama": {
+      "value": 376.86,
+      "unit": "score"
+    },
+    "Papua New Guinea": {
+      "value": 363.32,
+      "unit": "score"
+    },
+    "Paraguay": {
+      "value": 385.54,
+      "unit": "score"
+    },
+    "Peru": {
+      "value": 415.03,
+      "unit": "score"
+    },
+    "Philippines": {
+      "value": 361.65,
+      "unit": "score"
+    },
+    "Poland": {
+      "value": 530.09,
+      "unit": "score"
+    },
+    "Portugal": {
+      "value": 508.51,
+      "unit": "score"
+    },
+    "Qatar": {
+      "value": 427.48,
+      "unit": "score"
+    },
+    "Romania": {
+      "value": 442.16,
+      "unit": "score"
+    },
+    "Russia": {
+      "value": 497.55,
+      "unit": "score"
+    },
+    "Rwanda": {
+      "value": 358.08,
+      "unit": "score"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 409.07,
+      "unit": "score"
+    },
+    "Saint Lucia": {
+      "value": 417.76,
+      "unit": "score"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 391.39,
+      "unit": "score"
+    },
+    "Samoa": {
+      "value": 369.91,
+      "unit": "score"
+    },
+    "Saudi Arabia": {
+      "value": 398.97,
+      "unit": "score"
+    },
+    "Senegal": {
+      "value": 412.45,
+      "unit": "score"
+    },
+    "Serbia": {
+      "value": 457.45,
+      "unit": "score"
+    },
+    "Seychelles": {
+      "value": 463.38,
+      "unit": "score"
+    },
+    "Sierra Leone": {
+      "value": 315.88,
+      "unit": "score"
+    },
+    "Singapore": {
+      "value": 575.27,
+      "unit": "score"
+    },
+    "Slovakia": {
+      "value": 485.35,
+      "unit": "score"
+    },
+    "Slovenia": {
+      "value": 520.81,
+      "unit": "score"
+    },
+    "Solomon Islands": {
+      "value": 350.52,
+      "unit": "score"
+    },
+    "South Africa": {
+      "value": 342.76,
+      "unit": "score"
+    },
+    "South Korea": {
+      "value": 537.21,
+      "unit": "score"
+    },
+    "South Sudan": {
+      "value": 335.59,
+      "unit": "score"
+    },
+    "Spain": {
+      "value": 506.62,
+      "unit": "score"
+    },
+    "Sri Lanka": {
+      "value": 400.00,
+      "unit": "score"
+    },
+    "Sudan": {
+      "value": 379.63,
+      "unit": "score"
+    },
+    "Sweden": {
+      "value": 519.36,
+      "unit": "score"
+    },
+    "Switzerland": {
+      "value": 515.14,
+      "unit": "score"
+    },
+    "Tajikistan": {
+      "value": 390.57,
+      "unit": "score"
+    },
+    "Tanzania": {
+      "value": 388.48,
+      "unit": "score"
+    },
+    "Thailand": {
+      "value": 426.60,
+      "unit": "score"
+    },
+    "Togo": {
+      "value": 383.72,
+      "unit": "score"
+    },
+    "Tonga": {
+      "value": 385.96,
+      "unit": "score"
+    },
+    "Trinidad and Tobago": {
+      "value": 458.29,
+      "unit": "score"
+    },
+    "Tunisia": {
+      "value": 384.08,
+      "unit": "score"
+    },
+    "Turkey": {
+      "value": 477.96,
+      "unit": "score"
+    },
+    "Tuvalu": {
+      "value": 346.50,
+      "unit": "score"
+    },
+    "Uganda": {
+      "value": 397.16,
+      "unit": "score"
+    },
+    "Ukraine": {
+      "value": 478.17,
+      "unit": "score"
+    },
+    "United Arab Emirates": {
+      "value": 448.04,
+      "unit": "score"
+    },
+    "United Kingdom": {
+      "value": 520.36,
+      "unit": "score"
+    },
+    "United States": {
+      "value": 511.80,
+      "unit": "score"
+    },
+    "Uruguay": {
+      "value": 437.70,
+      "unit": "score"
+    },
+    "Uzbekistan": {
+      "value": 474.08,
+      "unit": "score"
+    },
+    "Vanuatu": {
+      "value": 347.69,
+      "unit": "score"
+    },
+    "Vietnam": {
+      "value": 519.10,
+      "unit": "score"
+    },
+    "Yemen": {
+      "value": 321.33,
+      "unit": "score"
+    },
+    "Zambia": {
+      "value": 358.14,
+      "unit": "score"
+    },
+    "Zimbabwe": {
+      "value": 396.14,
+      "unit": "score"
+    }
+  }
+}
+

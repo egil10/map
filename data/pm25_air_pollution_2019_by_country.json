@@ -1,0 +1,745 @@
+{
+  "title": "PM2.5 Air Pollution Exposure by Country",
+  "description": "Population-weighted average level of exposure to concentrations of suspended particles measuring less than 2.5 microns in diameter (PM2.5) according to Our World in Data (2019). Exposure is measured in micrograms of PM2.5 per cubic meter (µg/m³).",
+  "unit": "µg/m³",
+  "source": "https://ourworldindata.org/grapher/pm25-air-pollution",
+  "data": {
+    "Afghanistan": {
+      "value": 62.49,
+      "unit": "µg/m³"
+    },
+    "Albania": {
+      "value": 16.28,
+      "unit": "µg/m³"
+    },
+    "Algeria": {
+      "value": 22.68,
+      "unit": "µg/m³"
+    },
+    "Andorra": {
+      "value": 8.52,
+      "unit": "µg/m³"
+    },
+    "Angola": {
+      "value": 27.16,
+      "unit": "µg/m³"
+    },
+    "Antigua and Barbuda": {
+      "value": 8.30,
+      "unit": "µg/m³"
+    },
+    "Argentina": {
+      "value": 12.04,
+      "unit": "µg/m³"
+    },
+    "Armenia": {
+      "value": 34.13,
+      "unit": "µg/m³"
+    },
+    "Australia": {
+      "value": 8.93,
+      "unit": "µg/m³"
+    },
+    "Austria": {
+      "value": 11.51,
+      "unit": "µg/m³"
+    },
+    "Azerbaijan": {
+      "value": 24.64,
+      "unit": "µg/m³"
+    },
+    "Bahamas": {
+      "value": 5.20,
+      "unit": "µg/m³"
+    },
+    "Bahrain": {
+      "value": 51.82,
+      "unit": "µg/m³"
+    },
+    "Bangladesh": {
+      "value": 45.99,
+      "unit": "µg/m³"
+    },
+    "Barbados": {
+      "value": 9.79,
+      "unit": "µg/m³"
+    },
+    "Belarus": {
+      "value": 15.48,
+      "unit": "µg/m³"
+    },
+    "Belgium": {
+      "value": 11.26,
+      "unit": "µg/m³"
+    },
+    "Belize": {
+      "value": 10.51,
+      "unit": "µg/m³"
+    },
+    "Benin": {
+      "value": 31.51,
+      "unit": "µg/m³"
+    },
+    "Bhutan": {
+      "value": 26.10,
+      "unit": "µg/m³"
+    },
+    "Bolivia": {
+      "value": 25.23,
+      "unit": "µg/m³"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 26.19,
+      "unit": "µg/m³"
+    },
+    "Botswana": {
+      "value": 12.82,
+      "unit": "µg/m³"
+    },
+    "Brazil": {
+      "value": 10.94,
+      "unit": "µg/m³"
+    },
+    "Brunei": {
+      "value": 6.86,
+      "unit": "µg/m³"
+    },
+    "Bulgaria": {
+      "value": 17.29,
+      "unit": "µg/m³"
+    },
+    "Burkina Faso": {
+      "value": 40.74,
+      "unit": "µg/m³"
+    },
+    "Burundi": {
+      "value": 28.00,
+      "unit": "µg/m³"
+    },
+    "Cambodia": {
+      "value": 17.80,
+      "unit": "µg/m³"
+    },
+    "Cameroon": {
+      "value": 56.37,
+      "unit": "µg/m³"
+    },
+    "Canada": {
+      "value": 6.39,
+      "unit": "µg/m³"
+    },
+    "Cape Verde": {
+      "value": 31.08,
+      "unit": "µg/m³"
+    },
+    "Central African Republic": {
+      "value": 27.20,
+      "unit": "µg/m³"
+    },
+    "Chad": {
+      "value": 41.15,
+      "unit": "µg/m³"
+    },
+    "Chile": {
+      "value": 20.49,
+      "unit": "µg/m³"
+    },
+    "China": {
+      "value": 38.15,
+      "unit": "µg/m³"
+    },
+    "Colombia": {
+      "value": 14.04,
+      "unit": "µg/m³"
+    },
+    "Comoros": {
+      "value": 14.37,
+      "unit": "µg/m³"
+    },
+    "Republic of the Congo": {
+      "value": 29.48,
+      "unit": "µg/m³"
+    },
+    "Costa Rica": {
+      "value": 14.70,
+      "unit": "µg/m³"
+    },
+    "Côte d'Ivoire": {
+      "value": 40.41,
+      "unit": "µg/m³"
+    },
+    "Croatia": {
+      "value": 15.29,
+      "unit": "µg/m³"
+    },
+    "Cuba": {
+      "value": 13.32,
+      "unit": "µg/m³"
+    },
+    "Cyprus": {
+      "value": 14.52,
+      "unit": "µg/m³"
+    },
+    "Czech Republic": {
+      "value": 14.34,
+      "unit": "µg/m³"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 31.58,
+      "unit": "µg/m³"
+    },
+    "Denmark": {
+      "value": 9.66,
+      "unit": "µg/m³"
+    },
+    "Djibouti": {
+      "value": 19.98,
+      "unit": "µg/m³"
+    },
+    "Dominica": {
+      "value": 8.22,
+      "unit": "µg/m³"
+    },
+    "Dominican Republic": {
+      "value": 7.59,
+      "unit": "µg/m³"
+    },
+    "Timor-Leste": {
+      "value": 20.47,
+      "unit": "µg/m³"
+    },
+    "Ecuador": {
+      "value": 16.55,
+      "unit": "µg/m³"
+    },
+    "Egypt": {
+      "value": 63.16,
+      "unit": "µg/m³"
+    },
+    "El Salvador": {
+      "value": 22.15,
+      "unit": "µg/m³"
+    },
+    "Equatorial Guinea": {
+      "value": 25.67,
+      "unit": "µg/m³"
+    },
+    "Eritrea": {
+      "value": 22.74,
+      "unit": "µg/m³"
+    },
+    "Estonia": {
+      "value": 6.35,
+      "unit": "µg/m³"
+    },
+    "Eswatini": {
+      "value": 15.07,
+      "unit": "µg/m³"
+    },
+    "Ethiopia": {
+      "value": 21.80,
+      "unit": "µg/m³"
+    },
+    "Fiji": {
+      "value": 7.36,
+      "unit": "µg/m³"
+    },
+    "Finland": {
+      "value": 5.47,
+      "unit": "µg/m³"
+    },
+    "France": {
+      "value": 10.46,
+      "unit": "µg/m³"
+    },
+    "Gabon": {
+      "value": 26.29,
+      "unit": "µg/m³"
+    },
+    "Gambia": {
+      "value": 39.10,
+      "unit": "µg/m³"
+    },
+    "Georgia": {
+      "value": 19.06,
+      "unit": "µg/m³"
+    },
+    "Germany": {
+      "value": 10.73,
+      "unit": "µg/m³"
+    },
+    "Ghana": {
+      "value": 46.04,
+      "unit": "µg/m³"
+    },
+    "Greece": {
+      "value": 14.62,
+      "unit": "µg/m³"
+    },
+    "Grenada": {
+      "value": 10.08,
+      "unit": "µg/m³"
+    },
+    "Guatemala": {
+      "value": 20.75,
+      "unit": "µg/m³"
+    },
+    "Guinea": {
+      "value": 37.57,
+      "unit": "µg/m³"
+    },
+    "Guinea-Bissau": {
+      "value": 34.85,
+      "unit": "µg/m³"
+    },
+    "Guyana": {
+      "value": 11.11,
+      "unit": "µg/m³"
+    },
+    "Haiti": {
+      "value": 9.69,
+      "unit": "µg/m³"
+    },
+    "Honduras": {
+      "value": 18.93,
+      "unit": "µg/m³"
+    },
+    "Hungary": {
+      "value": 14.24,
+      "unit": "µg/m³"
+    },
+    "Iceland": {
+      "value": 5.79,
+      "unit": "µg/m³"
+    },
+    "India": {
+      "value": 50.17,
+      "unit": "µg/m³"
+    },
+    "Indonesia": {
+      "value": 19.34,
+      "unit": "µg/m³"
+    },
+    "Iran": {
+      "value": 31.62,
+      "unit": "µg/m³"
+    },
+    "Iraq": {
+      "value": 39.29,
+      "unit": "µg/m³"
+    },
+    "Ireland": {
+      "value": 8.20,
+      "unit": "µg/m³"
+    },
+    "Israel": {
+      "value": 19.47,
+      "unit": "µg/m³"
+    },
+    "Italy": {
+      "value": 14.22,
+      "unit": "µg/m³"
+    },
+    "Jamaica": {
+      "value": 14.83,
+      "unit": "µg/m³"
+    },
+    "Japan": {
+      "value": 10.84,
+      "unit": "µg/m³"
+    },
+    "Jordan": {
+      "value": 25.87,
+      "unit": "µg/m³"
+    },
+    "Kazakhstan": {
+      "value": 26.50,
+      "unit": "µg/m³"
+    },
+    "Kenya": {
+      "value": 12.52,
+      "unit": "µg/m³"
+    },
+    "Kyrgyzstan": {
+      "value": 37.58,
+      "unit": "µg/m³"
+    },
+    "Kuwait": {
+      "value": 64.08,
+      "unit": "µg/m³"
+    },
+    "Laos": {
+      "value": 21.15,
+      "unit": "µg/m³"
+    },
+    "Latvia": {
+      "value": 12.02,
+      "unit": "µg/m³"
+    },
+    "Lebanon": {
+      "value": 24.23,
+      "unit": "µg/m³"
+    },
+    "Lesotho": {
+      "value": 17.60,
+      "unit": "µg/m³"
+    },
+    "Liberia": {
+      "value": 35.80,
+      "unit": "µg/m³"
+    },
+    "Libya": {
+      "value": 29.84,
+      "unit": "µg/m³"
+    },
+    "Lithuania": {
+      "value": 10.37,
+      "unit": "µg/m³"
+    },
+    "Luxembourg": {
+      "value": 8.89,
+      "unit": "µg/m³"
+    },
+    "Madagascar": {
+      "value": 16.02,
+      "unit": "µg/m³"
+    },
+    "Malawi": {
+      "value": 18.57,
+      "unit": "µg/m³"
+    },
+    "Malaysia": {
+      "value": 21.52,
+      "unit": "µg/m³"
+    },
+    "Maldives": {
+      "value": 13.00,
+      "unit": "µg/m³"
+    },
+    "Mali": {
+      "value": 38.55,
+      "unit": "µg/m³"
+    },
+    "Malta": {
+      "value": 12.93,
+      "unit": "µg/m³"
+    },
+    "Mauritania": {
+      "value": 41.98,
+      "unit": "µg/m³"
+    },
+    "Mauritius": {
+      "value": 10.48,
+      "unit": "µg/m³"
+    },
+    "Mexico": {
+      "value": 17.83,
+      "unit": "µg/m³"
+    },
+    "Moldova": {
+      "value": 12.37,
+      "unit": "µg/m³"
+    },
+    "Monaco": {
+      "value": 9.21,
+      "unit": "µg/m³"
+    },
+    "Mongolia": {
+      "value": 41.30,
+      "unit": "µg/m³"
+    },
+    "Montenegro": {
+      "value": 19.30,
+      "unit": "µg/m³"
+    },
+    "Morocco": {
+      "value": 13.44,
+      "unit": "µg/m³"
+    },
+    "Mozambique": {
+      "value": 16.45,
+      "unit": "µg/m³"
+    },
+    "Myanmar": {
+      "value": 27.16,
+      "unit": "µg/m³"
+    },
+    "Namibia": {
+      "value": 11.81,
+      "unit": "µg/m³"
+    },
+    "Nepal": {
+      "value": 36.43,
+      "unit": "µg/m³"
+    },
+    "Netherlands": {
+      "value": 10.74,
+      "unit": "µg/m³"
+    },
+    "New Zealand": {
+      "value": 8.61,
+      "unit": "µg/m³"
+    },
+    "Nicaragua": {
+      "value": 16.00,
+      "unit": "µg/m³"
+    },
+    "Niger": {
+      "value": 50.15,
+      "unit": "µg/m³"
+    },
+    "Nigeria": {
+      "value": 55.64,
+      "unit": "µg/m³"
+    },
+    "North Korea": {
+      "value": 41.46,
+      "unit": "µg/m³"
+    },
+    "North Macedonia": {
+      "value": 25.17,
+      "unit": "µg/m³"
+    },
+    "Norway": {
+      "value": 6.30,
+      "unit": "µg/m³"
+    },
+    "Oman": {
+      "value": 34.88,
+      "unit": "µg/m³"
+    },
+    "Pakistan": {
+      "value": 50.13,
+      "unit": "µg/m³"
+    },
+    "Palestine": {
+      "value": 30.82,
+      "unit": "µg/m³"
+    },
+    "Panama": {
+      "value": 11.78,
+      "unit": "µg/m³"
+    },
+    "Papua New Guinea": {
+      "value": 8.89,
+      "unit": "µg/m³"
+    },
+    "Paraguay": {
+      "value": 12.31,
+      "unit": "µg/m³"
+    },
+    "Peru": {
+      "value": 29.07,
+      "unit": "µg/m³"
+    },
+    "Philippines": {
+      "value": 22.45,
+      "unit": "µg/m³"
+    },
+    "Poland": {
+      "value": 18.83,
+      "unit": "µg/m³"
+    },
+    "Portugal": {
+      "value": 7.34,
+      "unit": "µg/m³"
+    },
+    "Qatar": {
+      "value": 59.04,
+      "unit": "µg/m³"
+    },
+    "Romania": {
+      "value": 13.30,
+      "unit": "µg/m³"
+    },
+    "Russia": {
+      "value": 8.88,
+      "unit": "µg/m³"
+    },
+    "Rwanda": {
+      "value": 35.66,
+      "unit": "µg/m³"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 8.05,
+      "unit": "µg/m³"
+    },
+    "Saint Lucia": {
+      "value": 8.98,
+      "unit": "µg/m³"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 9.41,
+      "unit": "µg/m³"
+    },
+    "Samoa": {
+      "value": 7.78,
+      "unit": "µg/m³"
+    },
+    "São Tomé and Príncipe": {
+      "value": 33.75,
+      "unit": "µg/m³"
+    },
+    "Saudi Arabia": {
+      "value": 57.16,
+      "unit": "µg/m³"
+    },
+    "Senegal": {
+      "value": 38.21,
+      "unit": "µg/m³"
+    },
+    "Serbia": {
+      "value": 21.74,
+      "unit": "µg/m³"
+    },
+    "Seychelles": {
+      "value": 16.96,
+      "unit": "µg/m³"
+    },
+    "Sierra Leone": {
+      "value": 39.42,
+      "unit": "µg/m³"
+    },
+    "Singapore": {
+      "value": 13.33,
+      "unit": "µg/m³"
+    },
+    "Slovakia": {
+      "value": 15.89,
+      "unit": "µg/m³"
+    },
+    "Slovenia": {
+      "value": 14.08,
+      "unit": "µg/m³"
+    },
+    "Somalia": {
+      "value": 14.28,
+      "unit": "µg/m³"
+    },
+    "South Africa": {
+      "value": 19.75,
+      "unit": "µg/m³"
+    },
+    "South Korea": {
+      "value": 24.04,
+      "unit": "µg/m³"
+    },
+    "South Sudan": {
+      "value": 20.18,
+      "unit": "µg/m³"
+    },
+    "Spain": {
+      "value": 9.34,
+      "unit": "µg/m³"
+    },
+    "Sri Lanka": {
+      "value": 23.88,
+      "unit": "µg/m³"
+    },
+    "Sudan": {
+      "value": 21.43,
+      "unit": "µg/m³"
+    },
+    "Suriname": {
+      "value": 12.17,
+      "unit": "µg/m³"
+    },
+    "Sweden": {
+      "value": 5.96,
+      "unit": "µg/m³"
+    },
+    "Switzerland": {
+      "value": 8.97,
+      "unit": "µg/m³"
+    },
+    "Syria": {
+      "value": 25.14,
+      "unit": "µg/m³"
+    },
+    "Tajikistan": {
+      "value": 53.65,
+      "unit": "µg/m³"
+    },
+    "Tanzania": {
+      "value": 15.36,
+      "unit": "µg/m³"
+    },
+    "Thailand": {
+      "value": 24.64,
+      "unit": "µg/m³"
+    },
+    "Togo": {
+      "value": 35.66,
+      "unit": "µg/m³"
+    },
+    "Trinidad and Tobago": {
+      "value": 10.26,
+      "unit": "µg/m³"
+    },
+    "Tunisia": {
+      "value": 26.52,
+      "unit": "µg/m³"
+    },
+    "Turkey": {
+      "value": 23.25,
+      "unit": "µg/m³"
+    },
+    "Turkmenistan": {
+      "value": 26.41,
+      "unit": "µg/m³"
+    },
+    "Uganda": {
+      "value": 31.31,
+      "unit": "µg/m³"
+    },
+    "Ukraine": {
+      "value": 13.51,
+      "unit": "µg/m³"
+    },
+    "United Arab Emirates": {
+      "value": 41.75,
+      "unit": "µg/m³"
+    },
+    "United Kingdom": {
+      "value": 9.52,
+      "unit": "µg/m³"
+    },
+    "United States": {
+      "value": 7.18,
+      "unit": "µg/m³"
+    },
+    "Uruguay": {
+      "value": 8.48,
+      "unit": "µg/m³"
+    },
+    "Uzbekistan": {
+      "value": 40.98,
+      "unit": "µg/m³"
+    },
+    "Vanuatu": {
+      "value": 8.42,
+      "unit": "µg/m³"
+    },
+    "Venezuela": {
+      "value": 16.21,
+      "unit": "µg/m³"
+    },
+    "Vietnam": {
+      "value": 20.89,
+      "unit": "µg/m³"
+    },
+    "Yemen": {
+      "value": 41.61,
+      "unit": "µg/m³"
+    },
+    "Zambia": {
+      "value": 16.90,
+      "unit": "µg/m³"
+    },
+    "Zimbabwe": {
+      "value": 13.08,
+      "unit": "µg/m³"
+    }
+  }
+}
+

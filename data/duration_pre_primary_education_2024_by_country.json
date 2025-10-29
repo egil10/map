@@ -1,0 +1,205 @@
+{
+  "title": "Duration of Pre-Primary Education by Country",
+  "description": "The average number of years that a child is expected to spend in pre-primary education, defined by country's official educational regulations or laws according to Our World in Data (2024).",
+  "unit": "years",
+  "source": "https://ourworldindata.org/grapher/duration-of-pre-primary-education",
+  "data": {
+    "Albania": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Algeria": {
+      "value": 1,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Bahamas": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Belize": {
+      "value": 2,
+      "unit": "years"
+    },
+    "British Virgin Islands": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Cameroon": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Curaçao": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Dominica": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Ecuador": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Egypt": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Finland": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Gambia": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Grenada": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Guatemala": {
+      "value": 3,
+      "unit": "years"
+    },
+    "India": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Japan": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Kazakhstan": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Kiribati": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Kyrgyzstan": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Luxembourg": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Mauritius": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Micronesia (country)": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Moldova": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Monaco": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Mongolia": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Netherlands": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Samoa": {
+      "value": 2,
+      "unit": "years"
+    },
+    "San Marino": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Sierra Leone": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Solomon Islands": {
+      "value": 3,
+      "unit": "years"
+    },
+    "South Sudan": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Suriname": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Switzerland": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Syria": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Tajikistan": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Tanzania": {
+      "value": 1,
+      "unit": "years"
+    },
+    "Thailand": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Tokelau": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Tonga": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Trinidad and Tobago": {
+      "value": 2,
+      "unit": "years"
+    },
+    "Turkmenistan": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Tuvalu": {
+      "value": 3,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Uruguay": {
+      "value": 3,
+      "unit": "years"
+    },
+    "Uzbekistan": {
+      "value": 4,
+      "unit": "years"
+    },
+    "Venezuela": {
+      "value": 3,
+      "unit": "years"
+    }
+  }
+}
+

@@ -1,0 +1,169 @@
+{
+  "title": "Deaths in Intrastate Conflicts by Country",
+  "description": "Deaths of combatants and civilians due to fighting in intrastate conflicts that were ongoing in 2024 according to Our World in Data",
+  "unit": "deaths",
+  "source": "https://ourworldindata.org/grapher/deaths-in-intrastate-conflicts",
+  "data": {
+    "Afghanistan": {
+      "value": 218,
+      "unit": "deaths"
+    },
+    "Angola": {
+      "value": 25,
+      "unit": "deaths"
+    },
+    "Bangladesh": {
+      "value": 2,
+      "unit": "deaths"
+    },
+    "Benin": {
+      "value": 77,
+      "unit": "deaths"
+    },
+    "Burkina Faso": {
+      "value": 2199,
+      "unit": "deaths"
+    },
+    "Burundi": {
+      "value": 19,
+      "unit": "deaths"
+    },
+    "Cameroon": {
+      "value": 231,
+      "unit": "deaths"
+    },
+    "Central African Republic": {
+      "value": 177,
+      "unit": "deaths"
+    },
+    "Chad": {
+      "value": 69,
+      "unit": "deaths"
+    },
+    "Colombia": {
+      "value": 225,
+      "unit": "deaths"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 1138,
+      "unit": "deaths"
+    },
+    "Ethiopia": {
+      "value": 2824,
+      "unit": "deaths"
+    },
+    "Haiti": {
+      "value": 193,
+      "unit": "deaths"
+    },
+    "India": {
+      "value": 436,
+      "unit": "deaths"
+    },
+    "Indonesia": {
+      "value": 57,
+      "unit": "deaths"
+    },
+    "Iran": {
+      "value": 119,
+      "unit": "deaths"
+    },
+    "Iraq": {
+      "value": 392,
+      "unit": "deaths"
+    },
+    "Israel": {
+      "value": 59,
+      "unit": "deaths"
+    },
+    "Kenya": {
+      "value": 66,
+      "unit": "deaths"
+    },
+    "Lebanon": {
+      "value": 4335,
+      "unit": "deaths"
+    },
+    "Libya": {
+      "value": 2,
+      "unit": "deaths"
+    },
+    "Mali": {
+      "value": 1008,
+      "unit": "deaths"
+    },
+    "Mauritania": {
+      "value": 3,
+      "unit": "deaths"
+    },
+    "Mozambique": {
+      "value": 151,
+      "unit": "deaths"
+    },
+    "Myanmar": {
+      "value": 2332,
+      "unit": "deaths"
+    },
+    "Niger": {
+      "value": 952,
+      "unit": "deaths"
+    },
+    "Nigeria": {
+      "value": 1486,
+      "unit": "deaths"
+    },
+    "Pakistan": {
+      "value": 1516,
+      "unit": "deaths"
+    },
+    "Palestine": {
+      "value": 21358,
+      "unit": "deaths"
+    },
+    "Philippines": {
+      "value": 176,
+      "unit": "deaths"
+    },
+    "Russia": {
+      "value": 81,
+      "unit": "deaths"
+    },
+    "Rwanda": {
+      "value": 1,
+      "unit": "deaths"
+    },
+    "Somalia": {
+      "value": 2284,
+      "unit": "deaths"
+    },
+    "South Sudan": {
+      "value": 2,
+      "unit": "deaths"
+    },
+    "Sudan": {
+      "value": 4680,
+      "unit": "deaths"
+    },
+    "Syria": {
+      "value": 2212,
+      "unit": "deaths"
+    },
+    "Thailand": {
+      "value": 35,
+      "unit": "deaths"
+    },
+    "Togo": {
+      "value": 46,
+      "unit": "deaths"
+    },
+    "Turkey": {
+      "value": 34,
+      "unit": "deaths"
+    },
+    "Yemen": {
+      "value": 806,
+      "unit": "deaths"
+    }
+  }
+}
+

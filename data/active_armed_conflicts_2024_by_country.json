@@ -1,0 +1,205 @@
+{
+  "title": "Countries with Active Armed Conflicts",
+  "description": "Countries where armed conflicts took place in 2024 according to Our World in Data",
+  "unit": "conflict status",
+  "source": "https://ourworldindata.org/grapher/locations-of-ongoing-armed-conflicts",
+  "data": {
+    "Afghanistan": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Angola": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Bangladesh": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Benin": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Brazil": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Burkina Faso": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Burundi": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Cameroon": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Central African Republic": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Chad": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Colombia": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Republic of the Congo": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Ecuador": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Ethiopia": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Germany": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Guatemala": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Haiti": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "India": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Indonesia": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Iran": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Iraq": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Israel": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Jordan": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Kenya": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Lebanon": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Libya": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Mali": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Mauritania": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Mexico": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Mozambique": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Myanmar": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Niger": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Nigeria": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Pakistan": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Palestine": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Papua New Guinea": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Philippines": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Russia": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Rwanda": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Somalia": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "South Sudan": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Sudan": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Syria": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Thailand": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Togo": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Turkey": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Ukraine": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    },
+    "Yemen": {
+      "value": "Active Conflict",
+      "unit": "conflict status"
+    }
+  }
+}
+

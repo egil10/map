@@ -1,0 +1,165 @@
+{
+  "title": "Death Rate in Ongoing Conflicts by Country",
+  "description": "Death rate in ongoing conflicts per 100,000 people according to Our World in Data (2024). Includes deaths of combatants and civilians due to fighting in armed conflicts that were ongoing that year.",
+  "unit": "deaths per 100,000",
+  "source": "https://ourworldindata.org/grapher/death-rate-in-armed-conflicts",
+  "data": {
+    "Afghanistan": {
+      "value": 0.8,
+      "unit": "deaths per 100,000"
+    },
+    "Angola": {
+      "value": 0.1,
+      "unit": "deaths per 100,000"
+    },
+    "Bangladesh": {
+      "value": 0.2,
+      "unit": "deaths per 100,000"
+    },
+    "Benin": {
+      "value": 0.6,
+      "unit": "deaths per 100,000"
+    },
+    "Brazil": {
+      "value": 0.7,
+      "unit": "deaths per 100,000"
+    },
+    "Burkina Faso": {
+      "value": 18.1,
+      "unit": "deaths per 100,000"
+    },
+    "Burundi": {
+      "value": 0.5,
+      "unit": "deaths per 100,000"
+    },
+    "Cameroon": {
+      "value": 1.3,
+      "unit": "deaths per 100,000"
+    },
+    "Central African Republic": {
+      "value": 8.8,
+      "unit": "deaths per 100,000"
+    },
+    "Chad": {
+      "value": 1.0,
+      "unit": "deaths per 100,000"
+    },
+    "Colombia": {
+      "value": 1.1,
+      "unit": "deaths per 100,000"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 4.6,
+      "unit": "deaths per 100,000"
+    },
+    "Ecuador": {
+      "value": 1.4,
+      "unit": "deaths per 100,000"
+    },
+    "Ethiopia": {
+      "value": 3.1,
+      "unit": "deaths per 100,000"
+    },
+    "Guatemala": {
+      "value": 0.1,
+      "unit": "deaths per 100,000"
+    },
+    "Haiti": {
+      "value": 10.7,
+      "unit": "deaths per 100,000"
+    },
+    "Iran": {
+      "value": 0.2,
+      "unit": "deaths per 100,000"
+    },
+    "Iraq": {
+      "value": 0.9,
+      "unit": "deaths per 100,000"
+    },
+    "Israel": {
+      "value": 0.6,
+      "unit": "deaths per 100,000"
+    },
+    "Kenya": {
+      "value": 0.2,
+      "unit": "deaths per 100,000"
+    },
+    "Lebanon": {
+      "value": 74.7,
+      "unit": "deaths per 100,000"
+    },
+    "Mali": {
+      "value": 7.7,
+      "unit": "deaths per 100,000"
+    },
+    "Mexico": {
+      "value": 8.4,
+      "unit": "deaths per 100,000"
+    },
+    "Mauritania": {
+      "value": 0.1,
+      "unit": "deaths per 100,000"
+    },
+    "Myanmar": {
+      "value": 5.2,
+      "unit": "deaths per 100,000"
+    },
+    "Niger": {
+      "value": 4.5,
+      "unit": "deaths per 100,000"
+    },
+    "Nigeria": {
+      "value": 1.3,
+      "unit": "deaths per 100,000"
+    },
+    "Pakistan": {
+      "value": 0.7,
+      "unit": "deaths per 100,000"
+    },
+    "Palestine": {
+      "value": 389.4,
+      "unit": "deaths per 100,000"
+    },
+    "Papua New Guinea": {
+      "value": 1.2,
+      "unit": "deaths per 100,000"
+    },
+    "Philippines": {
+      "value": 0.2,
+      "unit": "deaths per 100,000"
+    },
+    "Republic of the Congo": {
+      "value": 4.7,
+      "unit": "deaths per 100,000"
+    },
+    "Russia": {
+      "value": 5.4,
+      "unit": "deaths per 100,000"
+    },
+    "Somalia": {
+      "value": 13.0,
+      "unit": "deaths per 100,000"
+    },
+    "South Sudan": {
+      "value": 5.3,
+      "unit": "deaths per 100,000"
+    },
+    "Sudan": {
+      "value": 13.9,
+      "unit": "deaths per 100,000"
+    },
+    "Syria": {
+      "value": 14.5,
+      "unit": "deaths per 100,000"
+    },
+    "Togo": {
+      "value": 0.7,
+      "unit": "deaths per 100,000"
+    },
+    "Ukraine": {
+      "value": 179.9,
+      "unit": "deaths per 100,000"
+    }
+  }
+}
+

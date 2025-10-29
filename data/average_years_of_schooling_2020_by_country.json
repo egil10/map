@@ -1,0 +1,585 @@
+{
+  "title": "Average Years of Schooling by Country",
+  "description": "Average years of formal education for individuals aged 15-64 according to Our World in Data (2020).",
+  "unit": "years",
+  "source": "https://ourworldindata.org/grapher/mean-years-of-schooling-long-run",
+  "data": {
+    "Afghanistan": {
+      "value": 5.7,
+      "unit": "years"
+    },
+    "Albania": {
+      "value": 10.3,
+      "unit": "years"
+    },
+    "Algeria": {
+      "value": 8.2,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 9.9,
+      "unit": "years"
+    },
+    "Armenia": {
+      "value": 10.5,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 12.9,
+      "unit": "years"
+    },
+    "Austria": {
+      "value": 10.4,
+      "unit": "years"
+    },
+    "Bahrain": {
+      "value": 8.2,
+      "unit": "years"
+    },
+    "Bangladesh": {
+      "value": 7.2,
+      "unit": "years"
+    },
+    "Barbados": {
+      "value": 9.7,
+      "unit": "years"
+    },
+    "Belgium": {
+      "value": 11.6,
+      "unit": "years"
+    },
+    "Belize": {
+      "value": 10.7,
+      "unit": "years"
+    },
+    "Benin": {
+      "value": 6.3,
+      "unit": "years"
+    },
+    "Bolivia": {
+      "value": 9.1,
+      "unit": "years"
+    },
+    "Botswana": {
+      "value": 10.6,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 8.0,
+      "unit": "years"
+    },
+    "Brunei": {
+      "value": 9.3,
+      "unit": "years"
+    },
+    "Bulgaria": {
+      "value": 10.8,
+      "unit": "years"
+    },
+    "Burundi": {
+      "value": 5.0,
+      "unit": "years"
+    },
+    "Cambodia": {
+      "value": 5.8,
+      "unit": "years"
+    },
+    "Cameroon": {
+      "value": 7.4,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 12.9,
+      "unit": "years"
+    },
+    "Central African Republic": {
+      "value": 4.6,
+      "unit": "years"
+    },
+    "Chile": {
+      "value": 10.7,
+      "unit": "years"
+    },
+    "China": {
+      "value": 9.0,
+      "unit": "years"
+    },
+    "Colombia": {
+      "value": 10.2,
+      "unit": "years"
+    },
+    "Republic of the Congo": {
+      "value": 6.7,
+      "unit": "years"
+    },
+    "Costa Rica": {
+      "value": 9.1,
+      "unit": "years"
+    },
+    "Côte d'Ivoire": {
+      "value": 6.0,
+      "unit": "years"
+    },
+    "Croatia": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Cuba": {
+      "value": 11.6,
+      "unit": "years"
+    },
+    "Cyprus": {
+      "value": 12.4,
+      "unit": "years"
+    },
+    "Czech Republic": {
+      "value": 12.9,
+      "unit": "years"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 4.8,
+      "unit": "years"
+    },
+    "Denmark": {
+      "value": 11.7,
+      "unit": "years"
+    },
+    "Dominican Republic": {
+      "value": 9.0,
+      "unit": "years"
+    },
+    "Ecuador": {
+      "value": 9.1,
+      "unit": "years"
+    },
+    "Egypt": {
+      "value": 8.0,
+      "unit": "years"
+    },
+    "El Salvador": {
+      "value": 8.1,
+      "unit": "years"
+    },
+    "Estonia": {
+      "value": 12.3,
+      "unit": "years"
+    },
+    "Eswatini": {
+      "value": 6.5,
+      "unit": "years"
+    },
+    "Fiji": {
+      "value": 11.5,
+      "unit": "years"
+    },
+    "Finland": {
+      "value": 11.1,
+      "unit": "years"
+    },
+    "France": {
+      "value": 11.9,
+      "unit": "years"
+    },
+    "Gabon": {
+      "value": 10.2,
+      "unit": "years"
+    },
+    "Gambia": {
+      "value": 4.9,
+      "unit": "years"
+    },
+    "Germany": {
+      "value": 13.1,
+      "unit": "years"
+    },
+    "Ghana": {
+      "value": 8.4,
+      "unit": "years"
+    },
+    "Greece": {
+      "value": 11.9,
+      "unit": "years"
+    },
+    "Guatemala": {
+      "value": 6.3,
+      "unit": "years"
+    },
+    "Guyana": {
+      "value": 8.5,
+      "unit": "years"
+    },
+    "Haiti": {
+      "value": 6.0,
+      "unit": "years"
+    },
+    "Honduras": {
+      "value": 7.5,
+      "unit": "years"
+    },
+    "Hong Kong": {
+      "value": 12.8,
+      "unit": "years"
+    },
+    "Hungary": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Iceland": {
+      "value": 13.5,
+      "unit": "years"
+    },
+    "India": {
+      "value": 7.8,
+      "unit": "years"
+    },
+    "Indonesia": {
+      "value": 9.1,
+      "unit": "years"
+    },
+    "Iran": {
+      "value": 9.8,
+      "unit": "years"
+    },
+    "Iraq": {
+      "value": 8.3,
+      "unit": "years"
+    },
+    "Ireland": {
+      "value": 13.7,
+      "unit": "years"
+    },
+    "Israel": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 11.5,
+      "unit": "years"
+    },
+    "Jamaica": {
+      "value": 10.1,
+      "unit": "years"
+    },
+    "Japan": {
+      "value": 12.8,
+      "unit": "years"
+    },
+    "Jordan": {
+      "value": 10.8,
+      "unit": "years"
+    },
+    "Kazakhstan": {
+      "value": 11.8,
+      "unit": "years"
+    },
+    "Kenya": {
+      "value": 6.7,
+      "unit": "years"
+    },
+    "Kuwait": {
+      "value": 6.6,
+      "unit": "years"
+    },
+    "Kyrgyzstan": {
+      "value": 11.2,
+      "unit": "years"
+    },
+    "Laos": {
+      "value": 6.0,
+      "unit": "years"
+    },
+    "Latvia": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Lesotho": {
+      "value": 6.9,
+      "unit": "years"
+    },
+    "Liberia": {
+      "value": 5.8,
+      "unit": "years"
+    },
+    "Libya": {
+      "value": 9.6,
+      "unit": "years"
+    },
+    "Lithuania": {
+      "value": 12.5,
+      "unit": "years"
+    },
+    "Luxembourg": {
+      "value": 11.5,
+      "unit": "years"
+    },
+    "Macao": {
+      "value": 11.0,
+      "unit": "years"
+    },
+    "Malawi": {
+      "value": 5.4,
+      "unit": "years"
+    },
+    "Malaysia": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Maldives": {
+      "value": 8.1,
+      "unit": "years"
+    },
+    "Mali": {
+      "value": 3.5,
+      "unit": "years"
+    },
+    "Malta": {
+      "value": 12.1,
+      "unit": "years"
+    },
+    "Mauritania": {
+      "value": 5.5,
+      "unit": "years"
+    },
+    "Mauritius": {
+      "value": 10.4,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 10.2,
+      "unit": "years"
+    },
+    "Moldova": {
+      "value": 10.8,
+      "unit": "years"
+    },
+    "Mongolia": {
+      "value": 10.0,
+      "unit": "years"
+    },
+    "Morocco": {
+      "value": 6.8,
+      "unit": "years"
+    },
+    "Mozambique": {
+      "value": 4.2,
+      "unit": "years"
+    },
+    "Myanmar": {
+      "value": 6.5,
+      "unit": "years"
+    },
+    "Namibia": {
+      "value": 6.9,
+      "unit": "years"
+    },
+    "Nepal": {
+      "value": 6.2,
+      "unit": "years"
+    },
+    "Netherlands": {
+      "value": 11.8,
+      "unit": "years"
+    },
+    "New Zealand": {
+      "value": 10.8,
+      "unit": "years"
+    },
+    "Nicaragua": {
+      "value": 7.8,
+      "unit": "years"
+    },
+    "Niger": {
+      "value": 3.0,
+      "unit": "years"
+    },
+    "Norway": {
+      "value": 12.1,
+      "unit": "years"
+    },
+    "Pakistan": {
+      "value": 6.4,
+      "unit": "years"
+    },
+    "Panama": {
+      "value": 10.4,
+      "unit": "years"
+    },
+    "Papua New Guinea": {
+      "value": 4.8,
+      "unit": "years"
+    },
+    "Paraguay": {
+      "value": 8.8,
+      "unit": "years"
+    },
+    "Peru": {
+      "value": 10.0,
+      "unit": "years"
+    },
+    "Philippines": {
+      "value": 9.4,
+      "unit": "years"
+    },
+    "Poland": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Portugal": {
+      "value": 9.6,
+      "unit": "years"
+    },
+    "Qatar": {
+      "value": 8.5,
+      "unit": "years"
+    },
+    "Romania": {
+      "value": 11.3,
+      "unit": "years"
+    },
+    "Russia": {
+      "value": 11.6,
+      "unit": "years"
+    },
+    "Rwanda": {
+      "value": 5.2,
+      "unit": "years"
+    },
+    "Saudi Arabia": {
+      "value": 9.9,
+      "unit": "years"
+    },
+    "Senegal": {
+      "value": 4.4,
+      "unit": "years"
+    },
+    "Serbia": {
+      "value": 11.7,
+      "unit": "years"
+    },
+    "Sierra Leone": {
+      "value": 5.0,
+      "unit": "years"
+    },
+    "Singapore": {
+      "value": 13.1,
+      "unit": "years"
+    },
+    "Slovakia": {
+      "value": 13.1,
+      "unit": "years"
+    },
+    "Slovenia": {
+      "value": 12.1,
+      "unit": "years"
+    },
+    "South Africa": {
+      "value": 10.5,
+      "unit": "years"
+    },
+    "South Korea": {
+      "value": 13.7,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 11.5,
+      "unit": "years"
+    },
+    "Sri Lanka": {
+      "value": 10.3,
+      "unit": "years"
+    },
+    "Sudan": {
+      "value": 4.4,
+      "unit": "years"
+    },
+    "Sweden": {
+      "value": 11.9,
+      "unit": "years"
+    },
+    "Switzerland": {
+      "value": 13.0,
+      "unit": "years"
+    },
+    "Syria": {
+      "value": 7.9,
+      "unit": "years"
+    },
+    "Tajikistan": {
+      "value": 10.1,
+      "unit": "years"
+    },
+    "Tanzania": {
+      "value": 6.9,
+      "unit": "years"
+    },
+    "Thailand": {
+      "value": 9.3,
+      "unit": "years"
+    },
+    "Togo": {
+      "value": 7.7,
+      "unit": "years"
+    },
+    "Tonga": {
+      "value": 11.4,
+      "unit": "years"
+    },
+    "Trinidad and Tobago": {
+      "value": 11.3,
+      "unit": "years"
+    },
+    "Tunisia": {
+      "value": 9.3,
+      "unit": "years"
+    },
+    "Turkey": {
+      "value": 8.5,
+      "unit": "years"
+    },
+    "Uganda": {
+      "value": 6.7,
+      "unit": "years"
+    },
+    "Ukraine": {
+      "value": 10.8,
+      "unit": "years"
+    },
+    "United Arab Emirates": {
+      "value": 9.6,
+      "unit": "years"
+    },
+    "United Kingdom": {
+      "value": 12.9,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 13.3,
+      "unit": "years"
+    },
+    "Uruguay": {
+      "value": 8.8,
+      "unit": "years"
+    },
+    "Venezuela": {
+      "value": 9.3,
+      "unit": "years"
+    },
+    "Vietnam": {
+      "value": 8.3,
+      "unit": "years"
+    },
+    "Yemen": {
+      "value": 5.6,
+      "unit": "years"
+    },
+    "Zambia": {
+      "value": 8.4,
+      "unit": "years"
+    },
+    "Zimbabwe": {
+      "value": 8.3,
+      "unit": "years"
+    }
+  }
+}
+

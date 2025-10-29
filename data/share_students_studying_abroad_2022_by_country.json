@@ -1,0 +1,445 @@
+{
+  "title": "Share of Students Studying Abroad by Country",
+  "description": "Percentage of a country's tertiary level students studying abroad as international students according to Our World in Data (2022). International students are those that move from their home countries for education, identified based on their past education, residence, or distinct immigration regulations.",
+  "unit": "percent",
+  "source": "https://ourworldindata.org/grapher/share-of-students-studying-abroad",
+  "data": {
+    "Albania": {
+      "value": 12.0,
+      "unit": "percent"
+    },
+    "Algeria": {
+      "value": 2.3,
+      "unit": "percent"
+    },
+    "Andorra": {
+      "value": 112.8,
+      "unit": "percent"
+    },
+    "Argentina": {
+      "value": 0.3,
+      "unit": "percent"
+    },
+    "Armenia": {
+      "value": 5.7,
+      "unit": "percent"
+    },
+    "Australia": {
+      "value": 0.8,
+      "unit": "percent"
+    },
+    "Austria": {
+      "value": 6.0,
+      "unit": "percent"
+    },
+    "Azerbaijan": {
+      "value": 18.6,
+      "unit": "percent"
+    },
+    "Bahrain": {
+      "value": 9.1,
+      "unit": "percent"
+    },
+    "Bangladesh": {
+      "value": 1.7,
+      "unit": "percent"
+    },
+    "Belarus": {
+      "value": 8.1,
+      "unit": "percent"
+    },
+    "Belgium": {
+      "value": 3.2,
+      "unit": "percent"
+    },
+    "Belize": {
+      "value": 9.9,
+      "unit": "percent"
+    },
+    "Benin": {
+      "value": 7.9,
+      "unit": "percent"
+    },
+    "Bhutan": {
+      "value": 39.1,
+      "unit": "percent"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 19.2,
+      "unit": "percent"
+    },
+    "Botswana": {
+      "value": 4.6,
+      "unit": "percent"
+    },
+    "Brazil": {
+      "value": 0.9,
+      "unit": "percent"
+    },
+    "Bulgaria": {
+      "value": 8.9,
+      "unit": "percent"
+    },
+    "Burkina Faso": {
+      "value": 4.1,
+      "unit": "percent"
+    },
+    "Cambodia": {
+      "value": 3.6,
+      "unit": "percent"
+    },
+    "Cameroon": {
+      "value": 7.9,
+      "unit": "percent"
+    },
+    "Canada": {
+      "value": 2.9,
+      "unit": "percent"
+    },
+    "Chile": {
+      "value": 1.6,
+      "unit": "percent"
+    },
+    "China": {
+      "value": 1.8,
+      "unit": "percent"
+    },
+    "Colombia": {
+      "value": 2.5,
+      "unit": "percent"
+    },
+    "Côte d'Ivoire": {
+      "value": 6.5,
+      "unit": "percent"
+    },
+    "Croatia": {
+      "value": 6.2,
+      "unit": "percent"
+    },
+    "Cyprus": {
+      "value": 48.3,
+      "unit": "percent"
+    },
+    "Czech Republic": {
+      "value": 3.5,
+      "unit": "percent"
+    },
+    "Denmark": {
+      "value": 1.9,
+      "unit": "percent"
+    },
+    "Dominican Republic": {
+      "value": 1.0,
+      "unit": "percent"
+    },
+    "Ecuador": {
+      "value": 3.3,
+      "unit": "percent"
+    },
+    "Egypt": {
+      "value": 2.0,
+      "unit": "percent"
+    },
+    "El Salvador": {
+      "value": 2.6,
+      "unit": "percent"
+    },
+    "Estonia": {
+      "value": 8.0,
+      "unit": "percent"
+    },
+    "Finland": {
+      "value": 3.0,
+      "unit": "percent"
+    },
+    "France": {
+      "value": 3.9,
+      "unit": "percent"
+    },
+    "Georgia": {
+      "value": 5.4,
+      "unit": "percent"
+    },
+    "Germany": {
+      "value": 3.8,
+      "unit": "percent"
+    },
+    "Ghana": {
+      "value": 3.5,
+      "unit": "percent"
+    },
+    "Greece": {
+      "value": 4.4,
+      "unit": "percent"
+    },
+    "Hong Kong": {
+      "value": 13.1,
+      "unit": "percent"
+    },
+    "Hungary": {
+      "value": 4.7,
+      "unit": "percent"
+    },
+    "Iceland": {
+      "value": 12.2,
+      "unit": "percent"
+    },
+    "India": {
+      "value": 1.5,
+      "unit": "percent"
+    },
+    "Indonesia": {
+      "value": 0.7,
+      "unit": "percent"
+    },
+    "Iran": {
+      "value": 2.6,
+      "unit": "percent"
+    },
+    "Ireland": {
+      "value": 6.9,
+      "unit": "percent"
+    },
+    "Israel": {
+      "value": 4.6,
+      "unit": "percent"
+    },
+    "Italy": {
+      "value": 4.0,
+      "unit": "percent"
+    },
+    "Japan": {
+      "value": 0.8,
+      "unit": "percent"
+    },
+    "Jordan": {
+      "value": 9.1,
+      "unit": "percent"
+    },
+    "Kyrgyzstan": {
+      "value": 6.1,
+      "unit": "percent"
+    },
+    "Latvia": {
+      "value": 6.5,
+      "unit": "percent"
+    },
+    "Lebanon": {
+      "value": 10.0,
+      "unit": "percent"
+    },
+    "Lithuania": {
+      "value": 7.9,
+      "unit": "percent"
+    },
+    "Luxembourg": {
+      "value": 172.5,
+      "unit": "percent"
+    },
+    "Macao": {
+      "value": 5.3,
+      "unit": "percent"
+    },
+    "Madagascar": {
+      "value": 3.0,
+      "unit": "percent"
+    },
+    "Malaysia": {
+      "value": 4.3,
+      "unit": "percent"
+    },
+    "Malta": {
+      "value": 6.0,
+      "unit": "percent"
+    },
+    "Mauritius": {
+      "value": 14.1,
+      "unit": "percent"
+    },
+    "Mexico": {
+      "value": 0.7,
+      "unit": "percent"
+    },
+    "Moldova": {
+      "value": 23.9,
+      "unit": "percent"
+    },
+    "Monaco": {
+      "value": 45.1,
+      "unit": "percent"
+    },
+    "Mongolia": {
+      "value": 10.7,
+      "unit": "percent"
+    },
+    "Montenegro": {
+      "value": 24.1,
+      "unit": "percent"
+    },
+    "Morocco": {
+      "value": 5.5,
+      "unit": "percent"
+    },
+    "Namibia": {
+      "value": 5.3,
+      "unit": "percent"
+    },
+    "Nepal": {
+      "value": 20.6,
+      "unit": "percent"
+    },
+    "New Zealand": {
+      "value": 1.9,
+      "unit": "percent"
+    },
+    "North Macedonia": {
+      "value": 10.1,
+      "unit": "percent"
+    },
+    "Norway": {
+      "value": 4.8,
+      "unit": "percent"
+    },
+    "Pakistan": {
+      "value": 3.5,
+      "unit": "percent"
+    },
+    "Palestine": {
+      "value": 13.9,
+      "unit": "percent"
+    },
+    "Panama": {
+      "value": 2.7,
+      "unit": "percent"
+    },
+    "Poland": {
+      "value": 1.8,
+      "unit": "percent"
+    },
+    "Portugal": {
+      "value": 4.3,
+      "unit": "percent"
+    },
+    "Qatar": {
+      "value": 14.9,
+      "unit": "percent"
+    },
+    "Romania": {
+      "value": 5.7,
+      "unit": "percent"
+    },
+    "Russia": {
+      "value": 1.6,
+      "unit": "percent"
+    },
+    "Rwanda": {
+      "value": 7.2,
+      "unit": "percent"
+    },
+    "Saint Lucia": {
+      "value": 33.5,
+      "unit": "percent"
+    },
+    "Samoa": {
+      "value": 31.2,
+      "unit": "percent"
+    },
+    "San Marino": {
+      "value": 53.1,
+      "unit": "percent"
+    },
+    "Saudi Arabia": {
+      "value": 2.8,
+      "unit": "percent"
+    },
+    "Senegal": {
+      "value": 6.9,
+      "unit": "percent"
+    },
+    "Serbia": {
+      "value": 6.0,
+      "unit": "percent"
+    },
+    "Seychelles": {
+      "value": 54.5,
+      "unit": "percent"
+    },
+    "Slovakia": {
+      "value": 21.6,
+      "unit": "percent"
+    },
+    "Slovenia": {
+      "value": 3.7,
+      "unit": "percent"
+    },
+    "South Africa": {
+      "value": 1.0,
+      "unit": "percent"
+    },
+    "South Korea": {
+      "value": 3.1,
+      "unit": "percent"
+    },
+    "Spain": {
+      "value": 2.2,
+      "unit": "percent"
+    },
+    "Sri Lanka": {
+      "value": 7.8,
+      "unit": "percent"
+    },
+    "Suriname": {
+      "value": 31.7,
+      "unit": "percent"
+    },
+    "Sweden": {
+      "value": 2.9,
+      "unit": "percent"
+    },
+    "Switzerland": {
+      "value": 5.7,
+      "unit": "percent"
+    },
+    "Tanzania": {
+      "value": 2.6,
+      "unit": "percent"
+    },
+    "Thailand": {
+      "value": 1.5,
+      "unit": "percent"
+    },
+    "Tunisia": {
+      "value": 9.1,
+      "unit": "percent"
+    },
+    "Turkey": {
+      "value": 0.7,
+      "unit": "percent"
+    },
+    "Turkmenistan": {
+      "value": 68.7,
+      "unit": "percent"
+    },
+    "Turks and Caicos Islands": {
+      "value": 38.7,
+      "unit": "percent"
+    },
+    "United Kingdom": {
+      "value": 1.3,
+      "unit": "percent"
+    },
+    "United States": {
+      "value": 0.6,
+      "unit": "percent"
+    },
+    "Uruguay": {
+      "value": 3.1,
+      "unit": "percent"
+    },
+    "Vietnam": {
+      "value": 4.6,
+      "unit": "percent"
+    }
+  }
+}
+

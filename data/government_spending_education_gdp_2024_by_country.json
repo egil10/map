@@ -1,0 +1,753 @@
+{
+  "title": "Government Spending on Education as Share of GDP by Country",
+  "description": "Total annual general government spending on all levels of education, expressed as a percentage of GDP according to Our World in Data (2024).",
+  "unit": "percent of GDP",
+  "source": "https://ourworldindata.org/grapher/total-government-expenditure-on-education-gdp",
+  "data": {
+    "Afghanistan": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Albania": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Algeria": {
+      "value": 5.6,
+      "unit": "percent of GDP"
+    },
+    "Andorra": {
+      "value": 1.9,
+      "unit": "percent of GDP"
+    },
+    "Angola": {
+      "value": 2.5,
+      "unit": "percent of GDP"
+    },
+    "Antigua and Barbuda": {
+      "value": 3.1,
+      "unit": "percent of GDP"
+    },
+    "Argentina": {
+      "value": 4.8,
+      "unit": "percent of GDP"
+    },
+    "Armenia": {
+      "value": 2.4,
+      "unit": "percent of GDP"
+    },
+    "Aruba": {
+      "value": 3.6,
+      "unit": "percent of GDP"
+    },
+    "Australia": {
+      "value": 5.2,
+      "unit": "percent of GDP"
+    },
+    "Austria": {
+      "value": 4.8,
+      "unit": "percent of GDP"
+    },
+    "Azerbaijan": {
+      "value": 3.6,
+      "unit": "percent of GDP"
+    },
+    "Bahamas": {
+      "value": 2.8,
+      "unit": "percent of GDP"
+    },
+    "Bahrain": {
+      "value": 2.0,
+      "unit": "percent of GDP"
+    },
+    "Bangladesh": {
+      "value": 2.0,
+      "unit": "percent of GDP"
+    },
+    "Barbados": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Belarus": {
+      "value": 5.0,
+      "unit": "percent of GDP"
+    },
+    "Belgium": {
+      "value": 6.4,
+      "unit": "percent of GDP"
+    },
+    "Belize": {
+      "value": 4.6,
+      "unit": "percent of GDP"
+    },
+    "Benin": {
+      "value": 3.7,
+      "unit": "percent of GDP"
+    },
+    "Bhutan": {
+      "value": 5.8,
+      "unit": "percent of GDP"
+    },
+    "Bolivia": {
+      "value": 8.3,
+      "unit": "percent of GDP"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 3.0,
+      "unit": "percent of GDP"
+    },
+    "Botswana": {
+      "value": 8.1,
+      "unit": "percent of GDP"
+    },
+    "Brazil": {
+      "value": 5.5,
+      "unit": "percent of GDP"
+    },
+    "Brunei": {
+      "value": 4.4,
+      "unit": "percent of GDP"
+    },
+    "Bulgaria": {
+      "value": 3.9,
+      "unit": "percent of GDP"
+    },
+    "Burkina Faso": {
+      "value": 5.3,
+      "unit": "percent of GDP"
+    },
+    "Burundi": {
+      "value": 4.4,
+      "unit": "percent of GDP"
+    },
+    "Cambodia": {
+      "value": 3.0,
+      "unit": "percent of GDP"
+    },
+    "Cameroon": {
+      "value": 2.8,
+      "unit": "percent of GDP"
+    },
+    "Canada": {
+      "value": 4.5,
+      "unit": "percent of GDP"
+    },
+    "Cape Verde": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Central African Republic": {
+      "value": 1.8,
+      "unit": "percent of GDP"
+    },
+    "Chad": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Chile": {
+      "value": 5.0,
+      "unit": "percent of GDP"
+    },
+    "China": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Colombia": {
+      "value": 5.3,
+      "unit": "percent of GDP"
+    },
+    "Comoros": {
+      "value": 2.3,
+      "unit": "percent of GDP"
+    },
+    "Republic of the Congo": {
+      "value": 3.3,
+      "unit": "percent of GDP"
+    },
+    "Costa Rica": {
+      "value": 6.2,
+      "unit": "percent of GDP"
+    },
+    "Côte d'Ivoire": {
+      "value": 3.4,
+      "unit": "percent of GDP"
+    },
+    "Croatia": {
+      "value": 4.8,
+      "unit": "percent of GDP"
+    },
+    "Cuba": {
+      "value": 8.4,
+      "unit": "percent of GDP"
+    },
+    "Cyprus": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "Czech Republic": {
+      "value": 4.7,
+      "unit": "percent of GDP"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 2.8,
+      "unit": "percent of GDP"
+    },
+    "Denmark": {
+      "value": 5.3,
+      "unit": "percent of GDP"
+    },
+    "Djibouti": {
+      "value": 3.8,
+      "unit": "percent of GDP"
+    },
+    "Dominica": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Dominican Republic": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Timor-Leste": {
+      "value": 3.0,
+      "unit": "percent of GDP"
+    },
+    "Ecuador": {
+      "value": 3.9,
+      "unit": "percent of GDP"
+    },
+    "Egypt": {
+      "value": 3.9,
+      "unit": "percent of GDP"
+    },
+    "El Salvador": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Estonia": {
+      "value": 5.7,
+      "unit": "percent of GDP"
+    },
+    "Eswatini": {
+      "value": 6.0,
+      "unit": "percent of GDP"
+    },
+    "Ethiopia": {
+      "value": 2.3,
+      "unit": "percent of GDP"
+    },
+    "Fiji": {
+      "value": 4.2,
+      "unit": "percent of GDP"
+    },
+    "Finland": {
+      "value": 6.5,
+      "unit": "percent of GDP"
+    },
+    "France": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Gabon": {
+      "value": 2.3,
+      "unit": "percent of GDP"
+    },
+    "Gambia": {
+      "value": 2.7,
+      "unit": "percent of GDP"
+    },
+    "Georgia": {
+      "value": 3.7,
+      "unit": "percent of GDP"
+    },
+    "Germany": {
+      "value": 4.5,
+      "unit": "percent of GDP"
+    },
+    "Ghana": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Greece": {
+      "value": 3.8,
+      "unit": "percent of GDP"
+    },
+    "Grenada": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "Guatemala": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Guinea": {
+      "value": 1.7,
+      "unit": "percent of GDP"
+    },
+    "Guyana": {
+      "value": 4.5,
+      "unit": "percent of GDP"
+    },
+    "Haiti": {
+      "value": 1.1,
+      "unit": "percent of GDP"
+    },
+    "Honduras": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Hong Kong": {
+      "value": 3.8,
+      "unit": "percent of GDP"
+    },
+    "Hungary": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "Iceland": {
+      "value": 6.7,
+      "unit": "percent of GDP"
+    },
+    "India": {
+      "value": 4.1,
+      "unit": "percent of GDP"
+    },
+    "Indonesia": {
+      "value": 1.3,
+      "unit": "percent of GDP"
+    },
+    "Iran": {
+      "value": 2.8,
+      "unit": "percent of GDP"
+    },
+    "Ireland": {
+      "value": 3.0,
+      "unit": "percent of GDP"
+    },
+    "Israel": {
+      "value": 6.5,
+      "unit": "percent of GDP"
+    },
+    "Italy": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Jamaica": {
+      "value": 5.7,
+      "unit": "percent of GDP"
+    },
+    "Japan": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Jordan": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Kazakhstan": {
+      "value": 4.9,
+      "unit": "percent of GDP"
+    },
+    "Kenya": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Kiribati": {
+      "value": 16.4,
+      "unit": "percent of GDP"
+    },
+    "Kuwait": {
+      "value": 5.0,
+      "unit": "percent of GDP"
+    },
+    "Kyrgyzstan": {
+      "value": 6.8,
+      "unit": "percent of GDP"
+    },
+    "Laos": {
+      "value": 1.2,
+      "unit": "percent of GDP"
+    },
+    "Latvia": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Lebanon": {
+      "value": 2.4,
+      "unit": "percent of GDP"
+    },
+    "Lesotho": {
+      "value": 6.6,
+      "unit": "percent of GDP"
+    },
+    "Liberia": {
+      "value": 2.3,
+      "unit": "percent of GDP"
+    },
+    "Lithuania": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Luxembourg": {
+      "value": 4.7,
+      "unit": "percent of GDP"
+    },
+    "Macao": {
+      "value": 3.7,
+      "unit": "percent of GDP"
+    },
+    "Madagascar": {
+      "value": 3.0,
+      "unit": "percent of GDP"
+    },
+    "Malawi": {
+      "value": 3.3,
+      "unit": "percent of GDP"
+    },
+    "Malaysia": {
+      "value": 3.6,
+      "unit": "percent of GDP"
+    },
+    "Maldives": {
+      "value": 5.2,
+      "unit": "percent of GDP"
+    },
+    "Mali": {
+      "value": 4.2,
+      "unit": "percent of GDP"
+    },
+    "Malta": {
+      "value": 4.8,
+      "unit": "percent of GDP"
+    },
+    "Marshall Islands": {
+      "value": 7.5,
+      "unit": "percent of GDP"
+    },
+    "Mauritania": {
+      "value": 4.8,
+      "unit": "percent of GDP"
+    },
+    "Mauritius": {
+      "value": 3.3,
+      "unit": "percent of GDP"
+    },
+    "Mexico": {
+      "value": 4.2,
+      "unit": "percent of GDP"
+    },
+    "Micronesia (country)": {
+      "value": 11.6,
+      "unit": "percent of GDP"
+    },
+    "Moldova": {
+      "value": 6.6,
+      "unit": "percent of GDP"
+    },
+    "Monaco": {
+      "value": 1.2,
+      "unit": "percent of GDP"
+    },
+    "Mongolia": {
+      "value": 3.7,
+      "unit": "percent of GDP"
+    },
+    "Montserrat": {
+      "value": 7.2,
+      "unit": "percent of GDP"
+    },
+    "Morocco": {
+      "value": 6.0,
+      "unit": "percent of GDP"
+    },
+    "Mozambique": {
+      "value": 6.0,
+      "unit": "percent of GDP"
+    },
+    "Myanmar": {
+      "value": 2.0,
+      "unit": "percent of GDP"
+    },
+    "Namibia": {
+      "value": 9.4,
+      "unit": "percent of GDP"
+    },
+    "Nauru": {
+      "value": 5.6,
+      "unit": "percent of GDP"
+    },
+    "Nepal": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Netherlands": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "New Zealand": {
+      "value": 5.2,
+      "unit": "percent of GDP"
+    },
+    "Nicaragua": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Niger": {
+      "value": 4.1,
+      "unit": "percent of GDP"
+    },
+    "Nigeria": {
+      "value": 0.3,
+      "unit": "percent of GDP"
+    },
+    "Norway": {
+      "value": 4.0,
+      "unit": "percent of GDP"
+    },
+    "Oman": {
+      "value": 4.2,
+      "unit": "percent of GDP"
+    },
+    "Pakistan": {
+      "value": 1.9,
+      "unit": "percent of GDP"
+    },
+    "Palau": {
+      "value": 3.5,
+      "unit": "percent of GDP"
+    },
+    "Palestine": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Panama": {
+      "value": 3.9,
+      "unit": "percent of GDP"
+    },
+    "Papua New Guinea": {
+      "value": 1.4,
+      "unit": "percent of GDP"
+    },
+    "Paraguay": {
+      "value": 3.4,
+      "unit": "percent of GDP"
+    },
+    "Peru": {
+      "value": 4.2,
+      "unit": "percent of GDP"
+    },
+    "Philippines": {
+      "value": 3.6,
+      "unit": "percent of GDP"
+    },
+    "Poland": {
+      "value": 4.6,
+      "unit": "percent of GDP"
+    },
+    "Portugal": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Puerto Rico": {
+      "value": 6.1,
+      "unit": "percent of GDP"
+    },
+    "Qatar": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Romania": {
+      "value": 3.3,
+      "unit": "percent of GDP"
+    },
+    "Russia": {
+      "value": 4.1,
+      "unit": "percent of GDP"
+    },
+    "Rwanda": {
+      "value": 4.7,
+      "unit": "percent of GDP"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 3.5,
+      "unit": "percent of GDP"
+    },
+    "Saint Lucia": {
+      "value": 2.7,
+      "unit": "percent of GDP"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 6.5,
+      "unit": "percent of GDP"
+    },
+    "Samoa": {
+      "value": 5.5,
+      "unit": "percent of GDP"
+    },
+    "San Marino": {
+      "value": 3.4,
+      "unit": "percent of GDP"
+    },
+    "São Tomé and Príncipe": {
+      "value": 5.0,
+      "unit": "percent of GDP"
+    },
+    "Saudi Arabia": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "Senegal": {
+      "value": 6.2,
+      "unit": "percent of GDP"
+    },
+    "Serbia": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Seychelles": {
+      "value": 4.5,
+      "unit": "percent of GDP"
+    },
+    "Sierra Leone": {
+      "value": 8.5,
+      "unit": "percent of GDP"
+    },
+    "Singapore": {
+      "value": 2.2,
+      "unit": "percent of GDP"
+    },
+    "Slovakia": {
+      "value": 4.5,
+      "unit": "percent of GDP"
+    },
+    "Slovenia": {
+      "value": 5.7,
+      "unit": "percent of GDP"
+    },
+    "Solomon Islands": {
+      "value": 8.3,
+      "unit": "percent of GDP"
+    },
+    "Somalia": {
+      "value": 0.3,
+      "unit": "percent of GDP"
+    },
+    "South Africa": {
+      "value": 6.7,
+      "unit": "percent of GDP"
+    },
+    "South Korea": {
+      "value": 4.9,
+      "unit": "percent of GDP"
+    },
+    "South Sudan": {
+      "value": 1.6,
+      "unit": "percent of GDP"
+    },
+    "Spain": {
+      "value": 4.3,
+      "unit": "percent of GDP"
+    },
+    "Sri Lanka": {
+      "value": 1.8,
+      "unit": "percent of GDP"
+    },
+    "Suriname": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Sweden": {
+      "value": 7.1,
+      "unit": "percent of GDP"
+    },
+    "Switzerland": {
+      "value": 5.1,
+      "unit": "percent of GDP"
+    },
+    "Tajikistan": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Tanzania": {
+      "value": 3.2,
+      "unit": "percent of GDP"
+    },
+    "Thailand": {
+      "value": 2.5,
+      "unit": "percent of GDP"
+    },
+    "Togo": {
+      "value": 4.1,
+      "unit": "percent of GDP"
+    },
+    "Tonga": {
+      "value": 5.3,
+      "unit": "percent of GDP"
+    },
+    "Trinidad and Tobago": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Tunisia": {
+      "value": 6.7,
+      "unit": "percent of GDP"
+    },
+    "Turkey": {
+      "value": 3.1,
+      "unit": "percent of GDP"
+    },
+    "Turkmenistan": {
+      "value": 2.7,
+      "unit": "percent of GDP"
+    },
+    "Tuvalu": {
+      "value": 15.8,
+      "unit": "percent of GDP"
+    },
+    "Uganda": {
+      "value": 2.6,
+      "unit": "percent of GDP"
+    },
+    "Ukraine": {
+      "value": 5.9,
+      "unit": "percent of GDP"
+    },
+    "United Arab Emirates": {
+      "value": 3.9,
+      "unit": "percent of GDP"
+    },
+    "United Kingdom": {
+      "value": 4.9,
+      "unit": "percent of GDP"
+    },
+    "United States": {
+      "value": 5.4,
+      "unit": "percent of GDP"
+    },
+    "Uruguay": {
+      "value": 3.6,
+      "unit": "percent of GDP"
+    },
+    "Uzbekistan": {
+      "value": 5.5,
+      "unit": "percent of GDP"
+    },
+    "Vanuatu": {
+      "value": 10.6,
+      "unit": "percent of GDP"
+    },
+    "Vietnam": {
+      "value": 2.9,
+      "unit": "percent of GDP"
+    },
+    "Zambia": {
+      "value": 4.1,
+      "unit": "percent of GDP"
+    },
+    "Zimbabwe": {
+      "value": 0.4,
+      "unit": "percent of GDP"
+    }
+  }
+}
+

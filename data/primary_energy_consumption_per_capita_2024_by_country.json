@@ -1,0 +1,325 @@
+{
+  "title": "Primary Energy Consumption per Capita by Country",
+  "description": "Primary energy consumption per capita measured in kilowatt-hours per person according to Our World in Data (2024). Energy refers to primary energy using the substitution method.",
+  "unit": "kilowatt-hours per person",
+  "source": "https://ourworldindata.org/explorers/energy",
+  "data": {
+    "Algeria": {
+      "value": 16237,
+      "unit": "kilowatt-hours per person"
+    },
+    "Argentina": {
+      "value": 21514,
+      "unit": "kilowatt-hours per person"
+    },
+    "Australia": {
+      "value": 62595,
+      "unit": "kilowatt-hours per person"
+    },
+    "Austria": {
+      "value": 45208,
+      "unit": "kilowatt-hours per person"
+    },
+    "Azerbaijan": {
+      "value": 20137,
+      "unit": "kilowatt-hours per person"
+    },
+    "Bangladesh": {
+      "value": 3048,
+      "unit": "kilowatt-hours per person"
+    },
+    "Belarus": {
+      "value": 34633,
+      "unit": "kilowatt-hours per person"
+    },
+    "Belgium": {
+      "value": 54871,
+      "unit": "kilowatt-hours per person"
+    },
+    "Brazil": {
+      "value": 18486,
+      "unit": "kilowatt-hours per person"
+    },
+    "Bulgaria": {
+      "value": 28382,
+      "unit": "kilowatt-hours per person"
+    },
+    "Canada": {
+      "value": 97785,
+      "unit": "kilowatt-hours per person"
+    },
+    "Chile": {
+      "value": 26245,
+      "unit": "kilowatt-hours per person"
+    },
+    "China": {
+      "value": 34514,
+      "unit": "kilowatt-hours per person"
+    },
+    "Colombia": {
+      "value": 11645,
+      "unit": "kilowatt-hours per person"
+    },
+    "Croatia": {
+      "value": 26615,
+      "unit": "kilowatt-hours per person"
+    },
+    "Cyprus": {
+      "value": 24551,
+      "unit": "kilowatt-hours per person"
+    },
+    "Czech Republic": {
+      "value": 36590,
+      "unit": "kilowatt-hours per person"
+    },
+    "Denmark": {
+      "value": 32832,
+      "unit": "kilowatt-hours per person"
+    },
+    "Ecuador": {
+      "value": 12722,
+      "unit": "kilowatt-hours per person"
+    },
+    "Egypt": {
+      "value": 9661,
+      "unit": "kilowatt-hours per person"
+    },
+    "Estonia": {
+      "value": 40986,
+      "unit": "kilowatt-hours per person"
+    },
+    "Finland": {
+      "value": 59565,
+      "unit": "kilowatt-hours per person"
+    },
+    "France": {
+      "value": 37866,
+      "unit": "kilowatt-hours per person"
+    },
+    "Germany": {
+      "value": 37793,
+      "unit": "kilowatt-hours per person"
+    },
+    "Greece": {
+      "value": 31966,
+      "unit": "kilowatt-hours per person"
+    },
+    "Hong Kong": {
+      "value": 36809,
+      "unit": "kilowatt-hours per person"
+    },
+    "Hungary": {
+      "value": 26952,
+      "unit": "kilowatt-hours per person"
+    },
+    "Iceland": {
+      "value": 159676,
+      "unit": "kilowatt-hours per person"
+    },
+    "India": {
+      "value": 7813,
+      "unit": "kilowatt-hours per person"
+    },
+    "Indonesia": {
+      "value": 10529,
+      "unit": "kilowatt-hours per person"
+    },
+    "Iran": {
+      "value": 39204,
+      "unit": "kilowatt-hours per person"
+    },
+    "Iraq": {
+      "value": 16002,
+      "unit": "kilowatt-hours per person"
+    },
+    "Ireland": {
+      "value": 34594,
+      "unit": "kilowatt-hours per person"
+    },
+    "Israel": {
+      "value": 29591,
+      "unit": "kilowatt-hours per person"
+    },
+    "Italy": {
+      "value": 28585,
+      "unit": "kilowatt-hours per person"
+    },
+    "Japan": {
+      "value": 38745,
+      "unit": "kilowatt-hours per person"
+    },
+    "Kazakhstan": {
+      "value": 41865,
+      "unit": "kilowatt-hours per person"
+    },
+    "Kuwait": {
+      "value": 106399,
+      "unit": "kilowatt-hours per person"
+    },
+    "Latvia": {
+      "value": 20722,
+      "unit": "kilowatt-hours per person"
+    },
+    "Lithuania": {
+      "value": 25660,
+      "unit": "kilowatt-hours per person"
+    },
+    "Luxembourg": {
+      "value": 59048,
+      "unit": "kilowatt-hours per person"
+    },
+    "Malaysia": {
+      "value": 38866,
+      "unit": "kilowatt-hours per person"
+    },
+    "Mexico": {
+      "value": 17654,
+      "unit": "kilowatt-hours per person"
+    },
+    "Morocco": {
+      "value": 7257,
+      "unit": "kilowatt-hours per person"
+    },
+    "Netherlands": {
+      "value": 50824,
+      "unit": "kilowatt-hours per person"
+    },
+    "New Zealand": {
+      "value": 44712,
+      "unit": "kilowatt-hours per person"
+    },
+    "North Macedonia": {
+      "value": 16220,
+      "unit": "kilowatt-hours per person"
+    },
+    "Norway": {
+      "value": 99634,
+      "unit": "kilowatt-hours per person"
+    },
+    "Oman": {
+      "value": 84611,
+      "unit": "kilowatt-hours per person"
+    },
+    "Pakistan": {
+      "value": 3536,
+      "unit": "kilowatt-hours per person"
+    },
+    "Peru": {
+      "value": 10941,
+      "unit": "kilowatt-hours per person"
+    },
+    "Philippines": {
+      "value": 5633,
+      "unit": "kilowatt-hours per person"
+    },
+    "Poland": {
+      "value": 29206,
+      "unit": "kilowatt-hours per person"
+    },
+    "Portugal": {
+      "value": 25922,
+      "unit": "kilowatt-hours per person"
+    },
+    "Qatar": {
+      "value": 214520,
+      "unit": "kilowatt-hours per person"
+    },
+    "Romania": {
+      "value": 18694,
+      "unit": "kilowatt-hours per person"
+    },
+    "Russia": {
+      "value": 62485,
+      "unit": "kilowatt-hours per person"
+    },
+    "Saudi Arabia": {
+      "value": 96883,
+      "unit": "kilowatt-hours per person"
+    },
+    "Singapore": {
+      "value": 180701,
+      "unit": "kilowatt-hours per person"
+    },
+    "Slovakia": {
+      "value": 32883,
+      "unit": "kilowatt-hours per person"
+    },
+    "Slovenia": {
+      "value": 37361,
+      "unit": "kilowatt-hours per person"
+    },
+    "South Africa": {
+      "value": 21287,
+      "unit": "kilowatt-hours per person"
+    },
+    "South Korea": {
+      "value": 69922,
+      "unit": "kilowatt-hours per person"
+    },
+    "Spain": {
+      "value": 33902,
+      "unit": "kilowatt-hours per person"
+    },
+    "Sri Lanka": {
+      "value": 4819,
+      "unit": "kilowatt-hours per person"
+    },
+    "Sweden": {
+      "value": 57510,
+      "unit": "kilowatt-hours per person"
+    },
+    "Switzerland": {
+      "value": 38026,
+      "unit": "kilowatt-hours per person"
+    },
+    "Taiwan": {
+      "value": 54013,
+      "unit": "kilowatt-hours per person"
+    },
+    "Thailand": {
+      "value": 19825,
+      "unit": "kilowatt-hours per person"
+    },
+    "Trinidad and Tobago": {
+      "value": 105988,
+      "unit": "kilowatt-hours per person"
+    },
+    "Turkey": {
+      "value": 23928,
+      "unit": "kilowatt-hours per person"
+    },
+    "Turkmenistan": {
+      "value": 49525,
+      "unit": "kilowatt-hours per person"
+    },
+    "Ukraine": {
+      "value": 15876,
+      "unit": "kilowatt-hours per person"
+    },
+    "United Arab Emirates": {
+      "value": 138026,
+      "unit": "kilowatt-hours per person"
+    },
+    "United Kingdom": {
+      "value": 28016,
+      "unit": "kilowatt-hours per person"
+    },
+    "United States": {
+      "value": 76800,
+      "unit": "kilowatt-hours per person"
+    },
+    "Uzbekistan": {
+      "value": 19129,
+      "unit": "kilowatt-hours per person"
+    },
+    "Venezuela": {
+      "value": 24592,
+      "unit": "kilowatt-hours per person"
+    },
+    "Vietnam": {
+      "value": 14618,
+      "unit": "kilowatt-hours per person"
+    }
+  }
+}
+

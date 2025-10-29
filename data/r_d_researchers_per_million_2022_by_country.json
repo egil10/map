@@ -1,0 +1,349 @@
+{
+  "title": "Number of R&D Researchers per Million People by Country",
+  "description": "Professionals engaged in conceiving or creating new knowledge, products, processes, methods, or systems. Number of R&D researchers per million people according to Our World in Data (2022).",
+  "unit": "researchers per million people",
+  "source": "https://ourworldindata.org/grapher/researchers-in-rd-per-million-people",
+  "data": {
+    "Argentina": {
+      "value": 1296,
+      "unit": "researchers per million people"
+    },
+    "Armenia": {
+      "value": 1187,
+      "unit": "researchers per million people"
+    },
+    "Australia": {
+      "value": 3354,
+      "unit": "researchers per million people"
+    },
+    "Austria": {
+      "value": 6659,
+      "unit": "researchers per million people"
+    },
+    "Azerbaijan": {
+      "value": 1702,
+      "unit": "researchers per million people"
+    },
+    "Belarus": {
+      "value": 1434,
+      "unit": "researchers per million people"
+    },
+    "Belgium": {
+      "value": 6983,
+      "unit": "researchers per million people"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 540,
+      "unit": "researchers per million people"
+    },
+    "Brunei": {
+      "value": 506,
+      "unit": "researchers per million people"
+    },
+    "Bulgaria": {
+      "value": 2557,
+      "unit": "researchers per million people"
+    },
+    "Canada": {
+      "value": 3056,
+      "unit": "researchers per million people"
+    },
+    "China": {
+      "value": 1849,
+      "unit": "researchers per million people"
+    },
+    "Republic of the Congo": {
+      "value": 127,
+      "unit": "researchers per million people"
+    },
+    "Costa Rica": {
+      "value": 462,
+      "unit": "researchers per million people"
+    },
+    "Croatia": {
+      "value": 2534,
+      "unit": "researchers per million people"
+    },
+    "Cuba": {
+      "value": 2079,
+      "unit": "researchers per million people"
+    },
+    "Cyprus": {
+      "value": 1728,
+      "unit": "researchers per million people"
+    },
+    "Czech Republic": {
+      "value": 4697,
+      "unit": "researchers per million people"
+    },
+    "Denmark": {
+      "value": 8736,
+      "unit": "researchers per million people"
+    },
+    "Dominican Republic": {
+      "value": 20,
+      "unit": "researchers per million people"
+    },
+    "Ecuador": {
+      "value": 84,
+      "unit": "researchers per million people"
+    },
+    "Egypt": {
+      "value": 829,
+      "unit": "researchers per million people"
+    },
+    "El Salvador": {
+      "value": 58,
+      "unit": "researchers per million people"
+    },
+    "Estonia": {
+      "value": 4655,
+      "unit": "researchers per million people"
+    },
+    "Finland": {
+      "value": 8073,
+      "unit": "researchers per million people"
+    },
+    "France": {
+      "value": 5182,
+      "unit": "researchers per million people"
+    },
+    "Georgia": {
+      "value": 1809,
+      "unit": "researchers per million people"
+    },
+    "Germany": {
+      "value": 5787,
+      "unit": "researchers per million people"
+    },
+    "Greece": {
+      "value": 4927,
+      "unit": "researchers per million people"
+    },
+    "Hong Kong": {
+      "value": 4815,
+      "unit": "researchers per million people"
+    },
+    "Hungary": {
+      "value": 4725,
+      "unit": "researchers per million people"
+    },
+    "Iceland": {
+      "value": 6864,
+      "unit": "researchers per million people"
+    },
+    "India": {
+      "value": 154,
+      "unit": "researchers per million people"
+    },
+    "Ireland": {
+      "value": 5512,
+      "unit": "researchers per million people"
+    },
+    "Italy": {
+      "value": 2796,
+      "unit": "researchers per million people"
+    },
+    "Japan": {
+      "value": 5630,
+      "unit": "researchers per million people"
+    },
+    "Kazakhstan": {
+      "value": 662,
+      "unit": "researchers per million people"
+    },
+    "Kenya": {
+      "value": 169,
+      "unit": "researchers per million people"
+    },
+    "Kuwait": {
+      "value": 176,
+      "unit": "researchers per million people"
+    },
+    "Latvia": {
+      "value": 2270,
+      "unit": "researchers per million people"
+    },
+    "Lithuania": {
+      "value": 4154,
+      "unit": "researchers per million people"
+    },
+    "Luxembourg": {
+      "value": 4879,
+      "unit": "researchers per million people"
+    },
+    "Macao": {
+      "value": 3498,
+      "unit": "researchers per million people"
+    },
+    "Malaysia": {
+      "value": 92,
+      "unit": "researchers per million people"
+    },
+    "Malta": {
+      "value": 2428,
+      "unit": "researchers per million people"
+    },
+    "Mauritius": {
+      "value": 579,
+      "unit": "researchers per million people"
+    },
+    "Mexico": {
+      "value": 274,
+      "unit": "researchers per million people"
+    },
+    "Moldova": {
+      "value": 768,
+      "unit": "researchers per million people"
+    },
+    "Mongolia": {
+      "value": 535,
+      "unit": "researchers per million people"
+    },
+    "Myanmar": {
+      "value": 26,
+      "unit": "researchers per million people"
+    },
+    "Namibia": {
+      "value": 225,
+      "unit": "researchers per million people"
+    },
+    "Netherlands": {
+      "value": 6319,
+      "unit": "researchers per million people"
+    },
+    "North Macedonia": {
+      "value": 731,
+      "unit": "researchers per million people"
+    },
+    "Norway": {
+      "value": 7395,
+      "unit": "researchers per million people"
+    },
+    "Oman": {
+      "value": 383,
+      "unit": "researchers per million people"
+    },
+    "Panama": {
+      "value": 142,
+      "unit": "researchers per million people"
+    },
+    "Paraguay": {
+      "value": 133,
+      "unit": "researchers per million people"
+    },
+    "Poland": {
+      "value": 3721,
+      "unit": "researchers per million people"
+    },
+    "Portugal": {
+      "value": 5687,
+      "unit": "researchers per million people"
+    },
+    "Romania": {
+      "value": 999,
+      "unit": "researchers per million people"
+    },
+    "Russia": {
+      "value": 2684,
+      "unit": "researchers per million people"
+    },
+    "Saudi Arabia": {
+      "value": 958,
+      "unit": "researchers per million people"
+    },
+    "Serbia": {
+      "value": 2350,
+      "unit": "researchers per million people"
+    },
+    "Singapore": {
+      "value": 2532,
+      "unit": "researchers per million people"
+    },
+    "Slovakia": {
+      "value": 3387,
+      "unit": "researchers per million people"
+    },
+    "Slovenia": {
+      "value": 5370,
+      "unit": "researchers per million people"
+    },
+    "South Africa": {
+      "value": 444,
+      "unit": "researchers per million people"
+    },
+    "South Korea": {
+      "value": 9435,
+      "unit": "researchers per million people"
+    },
+    "Spain": {
+      "value": 3387,
+      "unit": "researchers per million people"
+    },
+    "Sri Lanka": {
+      "value": 94,
+      "unit": "researchers per million people"
+    },
+    "Sweden": {
+      "value": 8624,
+      "unit": "researchers per million people"
+    },
+    "Switzerland": {
+      "value": 3130,
+      "unit": "researchers per million people"
+    },
+    "Syria": {
+      "value": 140,
+      "unit": "researchers per million people"
+    },
+    "Thailand": {
+      "value": 1863,
+      "unit": "researchers per million people"
+    },
+    "Togo": {
+      "value": 43,
+      "unit": "researchers per million people"
+    },
+    "Trinidad and Tobago": {
+      "value": 493,
+      "unit": "researchers per million people"
+    },
+    "Tunisia": {
+      "value": 1704,
+      "unit": "researchers per million people"
+    },
+    "Turkey": {
+      "value": 2479,
+      "unit": "researchers per million people"
+    },
+    "Ukraine": {
+      "value": 586,
+      "unit": "researchers per million people"
+    },
+    "United Kingdom": {
+      "value": 2486,
+      "unit": "researchers per million people"
+    },
+    "United States": {
+      "value": 3127,
+      "unit": "researchers per million people"
+    },
+    "Uruguay": {
+      "value": 880,
+      "unit": "researchers per million people"
+    },
+    "Uzbekistan": {
+      "value": 544,
+      "unit": "researchers per million people"
+    },
+    "Venezuela": {
+      "value": 350,
+      "unit": "researchers per million people"
+    },
+    "Zambia": {
+      "value": 50,
+      "unit": "researchers per million people"
+    }
+  }
+}
+

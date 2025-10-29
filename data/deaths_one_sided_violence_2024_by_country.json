@@ -1,0 +1,157 @@
+{
+  "title": "Deaths from One-Sided Violence by Country",
+  "description": "Deaths of civilians from one-sided violence that was ongoing in 2024 according to Our World in Data",
+  "unit": "deaths",
+  "source": "https://ourworldindata.org/grapher/deaths-from-one-sided-violence",
+  "data": {
+    "Afghanistan": {
+      "value": 90,
+      "unit": "deaths"
+    },
+    "Benin": {
+      "value": 6,
+      "unit": "deaths"
+    },
+    "Brazil": {
+      "value": 55,
+      "unit": "deaths"
+    },
+    "Burkina Faso": {
+      "value": 2034,
+      "unit": "deaths"
+    },
+    "Burundi": {
+      "value": 51,
+      "unit": "deaths"
+    },
+    "Cameroon": {
+      "value": 132,
+      "unit": "deaths"
+    },
+    "Central African Republic": {
+      "value": 257,
+      "unit": "deaths"
+    },
+    "Chad": {
+      "value": 16,
+      "unit": "deaths"
+    },
+    "Colombia": {
+      "value": 182,
+      "unit": "deaths"
+    },
+    "Republic of the Congo": {
+      "value": 300,
+      "unit": "deaths"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 3594,
+      "unit": "deaths"
+    },
+    "Ethiopia": {
+      "value": 1027,
+      "unit": "deaths"
+    },
+    "Germany": {
+      "value": 3,
+      "unit": "deaths"
+    },
+    "Guatemala": {
+      "value": 25,
+      "unit": "deaths"
+    },
+    "Haiti": {
+      "value": 905,
+      "unit": "deaths"
+    },
+    "India": {
+      "value": 55,
+      "unit": "deaths"
+    },
+    "Iran": {
+      "value": 94,
+      "unit": "deaths"
+    },
+    "Iraq": {
+      "value": 8,
+      "unit": "deaths"
+    },
+    "Israel": {
+      "value": 1,
+      "unit": "deaths"
+    },
+    "Kenya": {
+      "value": 8,
+      "unit": "deaths"
+    },
+    "Mali": {
+      "value": 619,
+      "unit": "deaths"
+    },
+    "Mexico": {
+      "value": 96,
+      "unit": "deaths"
+    },
+    "Mozambique": {
+      "value": 326,
+      "unit": "deaths"
+    },
+    "Myanmar": {
+      "value": 527,
+      "unit": "deaths"
+    },
+    "Niger": {
+      "value": 229,
+      "unit": "deaths"
+    },
+    "Nigeria": {
+      "value": 381,
+      "unit": "deaths"
+    },
+    "Pakistan": {
+      "value": 90,
+      "unit": "deaths"
+    },
+    "Palestine": {
+      "value": 40,
+      "unit": "deaths"
+    },
+    "Papua New Guinea": {
+      "value": 26,
+      "unit": "deaths"
+    },
+    "Russia": {
+      "value": 146,
+      "unit": "deaths"
+    },
+    "Somalia": {
+      "value": 84,
+      "unit": "deaths"
+    },
+    "South Sudan": {
+      "value": 39,
+      "unit": "deaths"
+    },
+    "Sudan": {
+      "value": 2316,
+      "unit": "deaths"
+    },
+    "Syria": {
+      "value": 125,
+      "unit": "deaths"
+    },
+    "Togo": {
+      "value": 22,
+      "unit": "deaths"
+    },
+    "Turkey": {
+      "value": 1,
+      "unit": "deaths"
+    },
+    "Ukraine": {
+      "value": 17,
+      "unit": "deaths"
+    }
+  }
+}
+
