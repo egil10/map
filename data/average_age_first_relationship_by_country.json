@@ -1,0 +1,209 @@
+{
+  "title": "Average Age of First Relationships by Country",
+  "description": "Average age at which people have their first relationship by country",
+  "unit": "years",
+  "source": "https://x.com/stats_feed/status/1961716145095917821",
+  "data": {
+    "Sweden": {
+      "value": 14.5,
+      "unit": "years"
+    },
+    "Norway": {
+      "value": 15.0,
+      "unit": "years"
+    },
+    "Germany": {
+      "value": 15.2,
+      "unit": "years"
+    },
+    "Denmark": {
+      "value": 15.3,
+      "unit": "years"
+    },
+    "France": {
+      "value": 15.4,
+      "unit": "years"
+    },
+    "Netherlands": {
+      "value": 15.5,
+      "unit": "years"
+    },
+    "United Kingdom": {
+      "value": 15.6,
+      "unit": "years"
+    },
+    "Finland": {
+      "value": 15.7,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 16.0,
+      "unit": "years"
+    },
+    "Ireland": {
+      "value": 16.1,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 16.2,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 16.3,
+      "unit": "years"
+    },
+    "New Zealand": {
+      "value": 16.4,
+      "unit": "years"
+    },
+    "Belgium": {
+      "value": 16.5,
+      "unit": "years"
+    },
+    "Switzerland": {
+      "value": 16.6,
+      "unit": "years"
+    },
+    "Austria": {
+      "value": 16.7,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 16.8,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 17.0,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 17.1,
+      "unit": "years"
+    },
+    "Portugal": {
+      "value": 17.2,
+      "unit": "years"
+    },
+    "Czech Republic": {
+      "value": 17.3,
+      "unit": "years"
+    },
+    "Poland": {
+      "value": 17.4,
+      "unit": "years"
+    },
+    "Japan": {
+      "value": 17.5,
+      "unit": "years"
+    },
+    "Hungary": {
+      "value": 17.6,
+      "unit": "years"
+    },
+    "Greece": {
+      "value": 17.7,
+      "unit": "years"
+    },
+    "Russia": {
+      "value": 17.8,
+      "unit": "years"
+    },
+    "Slovakia": {
+      "value": 17.9,
+      "unit": "years"
+    },
+    "South Korea": {
+      "value": 18.0,
+      "unit": "years"
+    },
+    "Romania": {
+      "value": 18.1,
+      "unit": "years"
+    },
+    "Ukraine": {
+      "value": 18.3,
+      "unit": "years"
+    },
+    "Bulgaria": {
+      "value": 18.4,
+      "unit": "years"
+    },
+    "India": {
+      "value": 18.5,
+      "unit": "years"
+    },
+    "Chile": {
+      "value": 18.6,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 18.8,
+      "unit": "years"
+    },
+    "Colombia": {
+      "value": 18.9,
+      "unit": "years"
+    },
+    "South Africa": {
+      "value": 19.0,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 19.2,
+      "unit": "years"
+    },
+    "Philippines": {
+      "value": 19.4,
+      "unit": "years"
+    },
+    "Turkey": {
+      "value": 19.5,
+      "unit": "years"
+    },
+    "Malaysia": {
+      "value": 19.7,
+      "unit": "years"
+    },
+    "Indonesia": {
+      "value": 19.8,
+      "unit": "years"
+    },
+    "Singapore": {
+      "value": 19.9,
+      "unit": "years"
+    },
+    "Vietnam": {
+      "value": 20.1,
+      "unit": "years"
+    },
+    "Pakistan": {
+      "value": 20.5,
+      "unit": "years"
+    },
+    "Bangladesh": {
+      "value": 20.6,
+      "unit": "years"
+    },
+    "Saudi Arabia": {
+      "value": 21.0,
+      "unit": "years"
+    },
+    "Egypt": {
+      "value": 21.2,
+      "unit": "years"
+    },
+    "United Arab Emirates": {
+      "value": 21.5,
+      "unit": "years"
+    },
+    "Iran": {
+      "value": 21.7,
+      "unit": "years"
+    },
+    "Iraq": {
+      "value": 22.0,
+      "unit": "years"
+    }
+  }
+}
+

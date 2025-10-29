@@ -1,0 +1,125 @@
+{
+  "title": "Percentage of People Who Would Fight for Their Country",
+  "description": "Percentage of people who would fight for their country according to 2015 WIN/Gallup International global survey",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1959344643272753300",
+  "data": {
+    "Pakistan": {
+      "value": 89,
+      "unit": "percentage"
+    },
+    "Vietnam": {
+      "value": 89,
+      "unit": "percentage"
+    },
+    "Bangladesh": {
+      "value": 86,
+      "unit": "percentage"
+    },
+    "Afghanistan": {
+      "value": 76,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 75,
+      "unit": "percentage"
+    },
+    "Finland": {
+      "value": 74,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 73,
+      "unit": "percentage"
+    },
+    "China": {
+      "value": 71,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 70,
+      "unit": "percentage"
+    },
+    "Ukraine": {
+      "value": 62,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 59,
+      "unit": "percentage"
+    },
+    "Mexico": {
+      "value": 56,
+      "unit": "percentage"
+    },
+    "Sweden": {
+      "value": 55,
+      "unit": "percentage"
+    },
+    "Nigeria": {
+      "value": 50,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 48,
+      "unit": "percentage"
+    },
+    "Poland": {
+      "value": 47,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 44,
+      "unit": "percentage"
+    },
+    "Argentina": {
+      "value": 43,
+      "unit": "percentage"
+    },
+    "Denmark": {
+      "value": 37,
+      "unit": "percentage"
+    },
+    "Canada": {
+      "value": 30,
+      "unit": "percentage"
+    },
+    "Australia": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 27,
+      "unit": "percentage"
+    },
+    "Czech Republic": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 21,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 20,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 18,
+      "unit": "percentage"
+    },
+    "Netherlands": {
+      "value": 15,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": 11,
+      "unit": "percentage"
+    }
+  }
+}
+

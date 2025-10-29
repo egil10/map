@@ -1,0 +1,157 @@
+{
+  "title": "Most Common Word by Country in Wikipedia Article",
+  "description": "The most common word appearing in each country's Wikipedia article",
+  "unit": "word",
+  "source": "https://x.com/stats_feed/status/1690740831257305088",
+  "data": {
+    "South Korea": {
+      "value": "North",
+      "unit": "word"
+    },
+    "North Korea": {
+      "value": "South",
+      "unit": "word"
+    },
+    "United Kingdom": {
+      "value": "Ireland",
+      "unit": "word"
+    },
+    "Ireland": {
+      "value": "State",
+      "unit": "word"
+    },
+    "Morocco": {
+      "value": "Sahara",
+      "unit": "word"
+    },
+    "Russia": {
+      "value": "Soviet",
+      "unit": "word"
+    },
+    "United States": {
+      "value": "War",
+      "unit": "word"
+    },
+    "Australia": {
+      "value": "New",
+      "unit": "word"
+    },
+    "Canada": {
+      "value": "Quebec",
+      "unit": "word"
+    },
+    "Mexico": {
+      "value": "Indigenous",
+      "unit": "word"
+    },
+    "India": {
+      "value": "South",
+      "unit": "word"
+    },
+    "Turkey": {
+      "value": "Ottoman",
+      "unit": "word"
+    },
+    "South Africa": {
+      "value": "Cape",
+      "unit": "word"
+    },
+    "Libya": {
+      "value": "Gaddafi",
+      "unit": "word"
+    },
+    "Nepal": {
+      "value": "India",
+      "unit": "word"
+    },
+    "Bangladesh": {
+      "value": "Bengal",
+      "unit": "word"
+    },
+    "Myanmar": {
+      "value": "Military",
+      "unit": "word"
+    },
+    "Ukraine": {
+      "value": "Soviet",
+      "unit": "word"
+    },
+    "Saudi Arabia": {
+      "value": "King",
+      "unit": "word"
+    },
+    "Iran": {
+      "value": "Persian",
+      "unit": "word"
+    },
+    "Spain": {
+      "value": "War",
+      "unit": "word"
+    },
+    "France": {
+      "value": "World",
+      "unit": "word"
+    },
+    "Belgium": {
+      "value": "French",
+      "unit": "word"
+    },
+    "Greenland": {
+      "value": "Denmark",
+      "unit": "word"
+    },
+    "Denmark": {
+      "value": "Islands",
+      "unit": "word"
+    },
+    "Germany": {
+      "value": "World",
+      "unit": "word"
+    },
+    "Austria": {
+      "value": "German",
+      "unit": "word"
+    },
+    "Italy": {
+      "value": "World",
+      "unit": "word"
+    },
+    "Azerbaijan": {
+      "value": "Baku",
+      "unit": "word"
+    },
+    "Georgia": {
+      "value": "Russian",
+      "unit": "word"
+    },
+    "Kazakhstan": {
+      "value": "Soviet",
+      "unit": "word"
+    },
+    "Mongolia": {
+      "value": "Population",
+      "unit": "word"
+    },
+    "Niger": {
+      "value": "Military",
+      "unit": "word"
+    },
+    "Nigeria": {
+      "value": "Africa",
+      "unit": "word"
+    },
+    "Brazil": {
+      "value": "Portuguese",
+      "unit": "word"
+    },
+    "Venezuela": {
+      "value": "Oil",
+      "unit": "word"
+    },
+    "Argentina": {
+      "value": "Buenos Aires",
+      "unit": "word"
+    }
+  }
+}
+

@@ -1,0 +1,209 @@
+{
+  "title": "Average Hours of Sleep per Night by Country",
+  "description": "Average hours of sleep per night by country",
+  "unit": "hours",
+  "source": "https://x.com/stats_feed/status/1964803613991018821",
+  "data": {
+    "Netherlands": {
+      "value": 8.1,
+      "unit": "hours"
+    },
+    "Finland": {
+      "value": 8.0,
+      "unit": "hours"
+    },
+    "Australia": {
+      "value": 7.9,
+      "unit": "hours"
+    },
+    "France": {
+      "value": 7.9,
+      "unit": "hours"
+    },
+    "New Zealand": {
+      "value": 7.8,
+      "unit": "hours"
+    },
+    "United Kingdom": {
+      "value": 7.8,
+      "unit": "hours"
+    },
+    "Canada": {
+      "value": 7.7,
+      "unit": "hours"
+    },
+    "Denmark": {
+      "value": 7.7,
+      "unit": "hours"
+    },
+    "United States": {
+      "value": 7.6,
+      "unit": "hours"
+    },
+    "Germany": {
+      "value": 7.6,
+      "unit": "hours"
+    },
+    "Sweden": {
+      "value": 7.6,
+      "unit": "hours"
+    },
+    "Italy": {
+      "value": 7.5,
+      "unit": "hours"
+    },
+    "Belgium": {
+      "value": 7.5,
+      "unit": "hours"
+    },
+    "Spain": {
+      "value": 7.4,
+      "unit": "hours"
+    },
+    "Japan": {
+      "value": 7.4,
+      "unit": "hours"
+    },
+    "South Korea": {
+      "value": 7.4,
+      "unit": "hours"
+    },
+    "Brazil": {
+      "value": 7.3,
+      "unit": "hours"
+    },
+    "Russia": {
+      "value": 7.3,
+      "unit": "hours"
+    },
+    "Mexico": {
+      "value": 7.2,
+      "unit": "hours"
+    },
+    "India": {
+      "value": 7.1,
+      "unit": "hours"
+    },
+    "China": {
+      "value": 7.1,
+      "unit": "hours"
+    },
+    "South Africa": {
+      "value": 7.0,
+      "unit": "hours"
+    },
+    "Argentina": {
+      "value": 6.9,
+      "unit": "hours"
+    },
+    "Indonesia": {
+      "value": 6.9,
+      "unit": "hours"
+    },
+    "Philippines": {
+      "value": 6.8,
+      "unit": "hours"
+    },
+    "Thailand": {
+      "value": 6.8,
+      "unit": "hours"
+    },
+    "Turkey": {
+      "value": 6.8,
+      "unit": "hours"
+    },
+    "Singapore": {
+      "value": 6.7,
+      "unit": "hours"
+    },
+    "Vietnam": {
+      "value": 6.7,
+      "unit": "hours"
+    },
+    "United Arab Emirates": {
+      "value": 6.6,
+      "unit": "hours"
+    },
+    "Saudi Arabia": {
+      "value": 6.5,
+      "unit": "hours"
+    },
+    "Israel": {
+      "value": 6.5,
+      "unit": "hours"
+    },
+    "Iran": {
+      "value": 6.4,
+      "unit": "hours"
+    },
+    "Pakistan": {
+      "value": 6.4,
+      "unit": "hours"
+    },
+    "Bangladesh": {
+      "value": 6.3,
+      "unit": "hours"
+    },
+    "Malaysia": {
+      "value": 6.3,
+      "unit": "hours"
+    },
+    "Kenya": {
+      "value": 6.2,
+      "unit": "hours"
+    },
+    "Nigeria": {
+      "value": 6.2,
+      "unit": "hours"
+    },
+    "Colombia": {
+      "value": 6.1,
+      "unit": "hours"
+    },
+    "Peru": {
+      "value": 6.0,
+      "unit": "hours"
+    },
+    "Venezuela": {
+      "value": 5.9,
+      "unit": "hours"
+    },
+    "Egypt": {
+      "value": 5.8,
+      "unit": "hours"
+    },
+    "Lebanon": {
+      "value": 5.7,
+      "unit": "hours"
+    },
+    "Syria": {
+      "value": 5.6,
+      "unit": "hours"
+    },
+    "Iraq": {
+      "value": 5.5,
+      "unit": "hours"
+    },
+    "Libya": {
+      "value": 5.4,
+      "unit": "hours"
+    },
+    "Afghanistan": {
+      "value": 5.3,
+      "unit": "hours"
+    },
+    "Yemen": {
+      "value": 5.2,
+      "unit": "hours"
+    },
+    "Somalia": {
+      "value": 5.1,
+      "unit": "hours"
+    },
+    "Sudan": {
+      "value": 5.0,
+      "unit": "hours"
+    }
+  }
+}
+

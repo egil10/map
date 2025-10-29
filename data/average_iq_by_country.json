@@ -1,0 +1,209 @@
+{
+  "title": "Average IQ by Country",
+  "description": "Average IQ score by country based on International IQ Test data from 1,352,763 people worldwide (2024)",
+  "unit": "IQ score",
+  "source": "https://x.com/stats_feed/status/1961433883225751809",
+  "data": {
+    "China": {
+      "value": 107.19,
+      "unit": "IQ score"
+    },
+    "South Korea": {
+      "value": 106.43,
+      "unit": "IQ score"
+    },
+    "Japan": {
+      "value": 106.4,
+      "unit": "IQ score"
+    },
+    "Iran": {
+      "value": 106.3,
+      "unit": "IQ score"
+    },
+    "Singapore": {
+      "value": 105.14,
+      "unit": "IQ score"
+    },
+    "Russia": {
+      "value": 103.16,
+      "unit": "IQ score"
+    },
+    "Mongolia": {
+      "value": 102.86,
+      "unit": "IQ score"
+    },
+    "Armenia": {
+      "value": 102.58,
+      "unit": "IQ score"
+    },
+    "Australia": {
+      "value": 102.57,
+      "unit": "IQ score"
+    },
+    "Spain": {
+      "value": 102.3,
+      "unit": "IQ score"
+    },
+    "New Zealand": {
+      "value": 102.08,
+      "unit": "IQ score"
+    },
+    "Sri Lanka": {
+      "value": 102.02,
+      "unit": "IQ score"
+    },
+    "Slovenia": {
+      "value": 101.96,
+      "unit": "IQ score"
+    },
+    "Canada": {
+      "value": 101.65,
+      "unit": "IQ score"
+    },
+    "Thailand": {
+      "value": 101.52,
+      "unit": "IQ score"
+    },
+    "Belarus": {
+      "value": 101.47,
+      "unit": "IQ score"
+    },
+    "France": {
+      "value": 101.42,
+      "unit": "IQ score"
+    },
+    "Serbia": {
+      "value": 100.86,
+      "unit": "IQ score"
+    },
+    "Italy": {
+      "value": 100.84,
+      "unit": "IQ score"
+    },
+    "Switzerland": {
+      "value": 100.75,
+      "unit": "IQ score"
+    },
+    "Georgia": {
+      "value": 100.59,
+      "unit": "IQ score"
+    },
+    "Malaysia": {
+      "value": 100.48,
+      "unit": "IQ score"
+    },
+    "Finland": {
+      "value": 100.3,
+      "unit": "IQ score"
+    },
+    "Vietnam": {
+      "value": 100.12,
+      "unit": "IQ score"
+    },
+    "Belgium": {
+      "value": 100.11,
+      "unit": "IQ score"
+    },
+    "Greece": {
+      "value": 100.07,
+      "unit": "IQ score"
+    },
+    "Luxembourg": {
+      "value": 100,
+      "unit": "IQ score"
+    },
+    "Iceland": {
+      "value": 99.99,
+      "unit": "IQ score"
+    },
+    "Slovakia": {
+      "value": 99.76,
+      "unit": "IQ score"
+    },
+    "United States": {
+      "value": 99.74,
+      "unit": "IQ score"
+    },
+    "Czech Republic": {
+      "value": 99.73,
+      "unit": "IQ score"
+    },
+    "Netherlands": {
+      "value": 99.72,
+      "unit": "IQ score"
+    },
+    "United Kingdom": {
+      "value": 99.68,
+      "unit": "IQ score"
+    },
+    "Austria": {
+      "value": 99.65,
+      "unit": "IQ score"
+    },
+    "Germany": {
+      "value": 99.64,
+      "unit": "IQ score"
+    },
+    "Hungary": {
+      "value": 99.46,
+      "unit": "IQ score"
+    },
+    "Lebanon": {
+      "value": 99.39,
+      "unit": "IQ score"
+    },
+    "Estonia": {
+      "value": 99.39,
+      "unit": "IQ score"
+    },
+    "Peru": {
+      "value": 99.37,
+      "unit": "IQ score"
+    },
+    "Poland": {
+      "value": 99.35,
+      "unit": "IQ score"
+    },
+    "Portugal": {
+      "value": 99.34,
+      "unit": "IQ score"
+    },
+    "Malta": {
+      "value": 99.19,
+      "unit": "IQ score"
+    },
+    "Croatia": {
+      "value": 99.17,
+      "unit": "IQ score"
+    },
+    "India": {
+      "value": 99.08,
+      "unit": "IQ score"
+    },
+    "Israel": {
+      "value": 99.07,
+      "unit": "IQ score"
+    },
+    "Turkey": {
+      "value": 99.07,
+      "unit": "IQ score"
+    },
+    "Latvia": {
+      "value": 98.84,
+      "unit": "IQ score"
+    },
+    "Azerbaijan": {
+      "value": 98.71,
+      "unit": "IQ score"
+    },
+    "Lithuania": {
+      "value": 98.67,
+      "unit": "IQ score"
+    },
+    "Montenegro": {
+      "value": 98.65,
+      "unit": "IQ score"
+    }
+  }
+}
+

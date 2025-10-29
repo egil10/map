@@ -1,0 +1,165 @@
+{
+  "title": "Tobacco Use Percentage of Male Adults by Country",
+  "description": "The percentage of the male population ages 15 years and over who currently use any tobacco product (smoked and/or smokeless tobacco) on a daily or non-daily basis. Tobacco products include cigarettes, pipes, cigars, cigarillos, waterpipes (hookah, shisha), bidis, kretek, heated tobacco products, and all forms of smokeless (oral and nasal) tobacco. Tobacco products exclude e-cigarettes (which do not contain tobacco).",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1786358233537433873",
+  "data": {
+    "Indonesia": {
+      "value": 71,
+      "unit": "percentage"
+    },
+    "Myanmar": {
+      "value": 69,
+      "unit": "percentage"
+    },
+    "Jordan": {
+      "value": 57,
+      "unit": "percentage"
+    },
+    "Georgia": {
+      "value": 56,
+      "unit": "percentage"
+    },
+    "Bangladesh": {
+      "value": 52,
+      "unit": "percentage"
+    },
+    "Mongolia": {
+      "value": 52,
+      "unit": "percentage"
+    },
+    "Latvia": {
+      "value": 50,
+      "unit": "percentage"
+    },
+    "China": {
+      "value": 49,
+      "unit": "percentage"
+    },
+    "Egypt": {
+      "value": 48,
+      "unit": "percentage"
+    },
+    "Cyprus": {
+      "value": 47,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 42,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 41,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 41,
+      "unit": "percentage"
+    },
+    "Greece": {
+      "value": 37,
+      "unit": "percentage"
+    },
+    "Romania": {
+      "value": 36,
+      "unit": "percentage"
+    },
+    "South Korea": {
+      "value": 36,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 35,
+      "unit": "percentage"
+    },
+    "South Africa": {
+      "value": 34,
+      "unit": "percentage"
+    },
+    "Pakistan": {
+      "value": 33,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": 30,
+      "unit": "percentage"
+    },
+    "Argentina": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 28,
+      "unit": "percentage"
+    },
+    "Austria": {
+      "value": 28,
+      "unit": "percentage"
+    },
+    "Finland": {
+      "value": 27,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 27,
+      "unit": "percentage"
+    },
+    "Saudi Arabia": {
+      "value": 27,
+      "unit": "percentage"
+    },
+    "Netherlands": {
+      "value": 24,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 24,
+      "unit": "percentage"
+    },
+    "Ireland": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "Mexico": {
+      "value": 20,
+      "unit": "percentage"
+    },
+    "Denmark": {
+      "value": 18,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 17,
+      "unit": "percentage"
+    },
+    "Norway": {
+      "value": 17,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 16,
+      "unit": "percentage"
+    },
+    "Australia": {
+      "value": 16,
+      "unit": "percentage"
+    },
+    "Canada": {
+      "value": 15,
+      "unit": "percentage"
+    },
+    "Iceland": {
+      "value": 12,
+      "unit": "percentage"
+    },
+    "Nigeria": {
+      "value": 7,
+      "unit": "percentage"
+    }
+  }
+}
+

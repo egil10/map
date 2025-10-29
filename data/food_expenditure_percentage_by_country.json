@@ -1,0 +1,149 @@
+{
+  "title": "Expenditure on Food as Percentage of Household Expenditures by Country",
+  "description": "Percentage of household expenditures spent on food according to CIA",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1928813724799803604",
+  "data": {
+    "Nigeria": {
+      "value": 59.3,
+      "unit": "percentage"
+    },
+    "Bangladesh": {
+      "value": 52.8,
+      "unit": "percentage"
+    },
+    "Ukraine": {
+      "value": 41.7,
+      "unit": "percentage"
+    },
+    "Ethiopia": {
+      "value": 37.9,
+      "unit": "percentage"
+    },
+    "Pakistan": {
+      "value": 37.8,
+      "unit": "percentage"
+    },
+    "Egypt": {
+      "value": 36.9,
+      "unit": "percentage"
+    },
+    "Vietnam": {
+      "value": 34.9,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 33.5,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 29.9,
+      "unit": "percentage"
+    },
+    "Sri Lanka": {
+      "value": 27.1,
+      "unit": "percentage"
+    },
+    "El Salvador": {
+      "value": 26.7,
+      "unit": "percentage"
+    },
+    "Mexico": {
+      "value": 25.7,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 25.3,
+      "unit": "percentage"
+    },
+    "Romania": {
+      "value": 25.1,
+      "unit": "percentage"
+    },
+    "Serbia": {
+      "value": 24.1,
+      "unit": "percentage"
+    },
+    "Argentina": {
+      "value": 23.1,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 22.8,
+      "unit": "percentage"
+    },
+    "China": {
+      "value": 21.2,
+      "unit": "percentage"
+    },
+    "Bulgaria": {
+      "value": 20.7,
+      "unit": "percentage"
+    },
+    "Saudi Arabia": {
+      "value": 20.5,
+      "unit": "percentage"
+    },
+    "Poland": {
+      "value": 18.6,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 16.2,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": 15.8,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 14.7,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 12.9,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 12.6,
+      "unit": "percentage"
+    },
+    "South Korea": {
+      "value": 12.3,
+      "unit": "percentage"
+    },
+    "United Arab Emirates": {
+      "value": 12.2,
+      "unit": "percentage"
+    },
+    "Norway": {
+      "value": 11.7,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 11.6,
+      "unit": "percentage"
+    },
+    "Australia": {
+      "value": 9.9,
+      "unit": "percentage"
+    },
+    "Canada": {
+      "value": 9.7,
+      "unit": "percentage"
+    },
+    "Switzerland": {
+      "value": 9.0,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 8.7,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 6.8,
+      "unit": "percentage"
+    }
+  }
+}
+

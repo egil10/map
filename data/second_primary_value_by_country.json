@@ -1,0 +1,385 @@
+{
+  "title": "Second Most Primary Value by Country",
+  "description": "Each country's second most primary value (family is first in most countries, except Indonesia where religion is first) according to World Values Survey",
+  "unit": "value",
+  "source": "https://x.com/stats_feed/status/1936021691093664231",
+  "data": {
+    "Albania": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Andorra": {
+      "value": "Leisure",
+      "unit": "value"
+    },
+    "Argentina": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Armenia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Australia": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Austria": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Azerbaijan": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Bangladesh": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Belarus": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Bolivia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Brazil": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Bulgaria": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Canada": {
+      "value": "Leisure",
+      "unit": "value"
+    },
+    "Chile": {
+      "value": "Leisure",
+      "unit": "value"
+    },
+    "China": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Colombia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Croatia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Cyprus": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Czech Republic": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Denmark": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Ecuador": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Egypt": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Estonia": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Ethiopia": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Finland": {
+      "value": "Leisure",
+      "unit": "value"
+    },
+    "France": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Georgia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Germany": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Ghana": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Greece": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Guatemala": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Haiti": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Hong Kong": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Hungary": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Iceland": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "India": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Indonesia": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Iran": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Iraq": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Italy": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Japan": {
+      "value": "Leisure",
+      "unit": "value"
+    },
+    "Jordan": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Kazakhstan": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Kuwait": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Kyrgyzstan": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Lebanon": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Libya": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Lithuania": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Macao": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Malaysia": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Mexico": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Montenegro": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Morocco": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Myanmar": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Netherlands": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "New Zealand": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Nicaragua": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Nigeria": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "North Macedonia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Norway": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Pakistan": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Peru": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Philippines": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Poland": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Portugal": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Puerto Rico": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Qatar": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Romania": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Russia": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Rwanda": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Serbia": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Singapore": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Slovakia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Slovenia": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "South Africa": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "South Korea": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Spain": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Sweden": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Switzerland": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Taiwan": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Tajikistan": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Thailand": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Trinidad and Tobago": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Tunisia": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Turkey": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Ukraine": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "United Kingdom": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "United States": {
+      "value": "Friends",
+      "unit": "value"
+    },
+    "Uruguay": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Uzbekistan": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Vietnam": {
+      "value": "Work",
+      "unit": "value"
+    },
+    "Yemen": {
+      "value": "Religion",
+      "unit": "value"
+    },
+    "Zimbabwe": {
+      "value": "Work",
+      "unit": "value"
+    }
+  }
+}
+

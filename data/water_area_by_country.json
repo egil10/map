@@ -1,0 +1,217 @@
+{
+  "title": "Water Area by Country",
+  "description": "Total water area in square kilometers, including lakes, reservoirs, and rivers within international boundaries",
+  "unit": "square km",
+  "source": "https://x.com/stats_feed/status/1957211084479472056",
+  "data": {
+    "Canada": {
+      "value": 891163,
+      "unit": "square km"
+    },
+    "Russia": {
+      "value": 719836,
+      "unit": "square km"
+    },
+    "United States": {
+      "value": 685924,
+      "unit": "square km"
+    },
+    "India": {
+      "value": 314073,
+      "unit": "square km"
+    },
+    "China": {
+      "value": 270550,
+      "unit": "square km"
+    },
+    "Iran": {
+      "value": 116600,
+      "unit": "square km"
+    },
+    "Colombia": {
+      "value": 100210,
+      "unit": "square km"
+    },
+    "Indonesia": {
+      "value": 93000,
+      "unit": "square km"
+    },
+    "Australia": {
+      "value": 58459,
+      "unit": "square km"
+    },
+    "Brazil": {
+      "value": 55352,
+      "unit": "square km"
+    },
+    "Argentina": {
+      "value": 43710,
+      "unit": "square km"
+    },
+    "Sweden": {
+      "value": 40152,
+      "unit": "square km"
+    },
+    "Finland": {
+      "value": 34330,
+      "unit": "square km"
+    },
+    "Venezuela": {
+      "value": 30000,
+      "unit": "square km"
+    },
+    "Pakistan": {
+      "value": 25223,
+      "unit": "square km"
+    },
+    "Kazakhstan": {
+      "value": 25200,
+      "unit": "square km"
+    },
+    "Ukraine": {
+      "value": 24250,
+      "unit": "square km"
+    },
+    "Uzbekistan": {
+      "value": 22000,
+      "unit": "square km"
+    },
+    "Vietnam": {
+      "value": 21140,
+      "unit": "square km"
+    },
+    "Mexico": {
+      "value": 20430,
+      "unit": "square km"
+    },
+    "Norway": {
+      "value": 19520,
+      "unit": "square km"
+    },
+    "Bangladesh": {
+      "value": 14252,
+      "unit": "square km"
+    },
+    "Turkey": {
+      "value": 13930,
+      "unit": "square km"
+    },
+    "Japan": {
+      "value": 13430,
+      "unit": "square km"
+    },
+    "Nigeria": {
+      "value": 13000,
+      "unit": "square km"
+    },
+    "Kenya": {
+      "value": 11227,
+      "unit": "square km"
+    },
+    "Ghana": {
+      "value": 11000,
+      "unit": "square km"
+    },
+    "Somalia": {
+      "value": 10320,
+      "unit": "square km"
+    },
+    "Germany": {
+      "value": 8350,
+      "unit": "square km"
+    },
+    "Kyrgyzstan": {
+      "value": 8150,
+      "unit": "square km"
+    },
+    "Italy": {
+      "value": 7200,
+      "unit": "square km"
+    },
+    "Spain": {
+      "value": 6390,
+      "unit": "square km"
+    },
+    "Egypt": {
+      "value": 6000,
+      "unit": "square km"
+    },
+    "South Africa": {
+      "value": 4620,
+      "unit": "square km"
+    },
+    "New Zealand": {
+      "value": 4395,
+      "unit": "square km"
+    },
+    "Zimbabwe": {
+      "value": 3910,
+      "unit": "square km"
+    },
+    "Nepal": {
+      "value": 3830,
+      "unit": "square km"
+    },
+    "Taiwan": {
+      "value": 3720,
+      "unit": "square km"
+    },
+    "Thailand": {
+      "value": 2230,
+      "unit": "square km"
+    },
+    "Philippines": {
+      "value": 1830,
+      "unit": "square km"
+    },
+    "United Kingdom": {
+      "value": 1680,
+      "unit": "square km"
+    },
+    "Syria": {
+      "value": 1550,
+      "unit": "square km"
+    },
+    "Ireland": {
+      "value": 1390,
+      "unit": "square km"
+    },
+    "Switzerland": {
+      "value": 1280,
+      "unit": "square km"
+    },
+    "Poland": {
+      "value": 791,
+      "unit": "square km"
+    },
+    "Israel": {
+      "value": 440,
+      "unit": "square km"
+    },
+    "South Korea": {
+      "value": 301,
+      "unit": "square km"
+    },
+    "Palestine": {
+      "value": 220,
+      "unit": "square km"
+    },
+    "Slovenia": {
+      "value": 120,
+      "unit": "square km"
+    },
+    "Singapore": {
+      "value": 10,
+      "unit": "square km"
+    },
+    "North Korea": {
+      "value": 2,
+      "unit": "square km"
+    },
+    "Saudi Arabia": {
+      "value": 0,
+      "unit": "square km"
+    }
+  }
+}
+

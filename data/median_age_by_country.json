@@ -1,0 +1,121 @@
+{
+  "title": "Median Age by Country",
+  "description": "Median age of the population by country in 2024",
+  "unit": "years",
+  "source": "https://x.com/stats_feed/status/1981408794123833542",
+  "data": {
+    "Japan": {
+      "value": 50,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 48,
+      "unit": "years"
+    },
+    "Germany": {
+      "value": 47,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 47,
+      "unit": "years"
+    },
+    "South Korea": {
+      "value": 46,
+      "unit": "years"
+    },
+    "Ukraine": {
+      "value": 45,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 43,
+      "unit": "years"
+    },
+    "France": {
+      "value": 43,
+      "unit": "years"
+    },
+    "Poland": {
+      "value": 43,
+      "unit": "years"
+    },
+    "Russia": {
+      "value": 42,
+      "unit": "years"
+    },
+    "United Kingdom": {
+      "value": 41,
+      "unit": "years"
+    },
+    "Ireland": {
+      "value": 40,
+      "unit": "years"
+    },
+    "China": {
+      "value": 40,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 39,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 38,
+      "unit": "years"
+    },
+    "United Arab Emirates": {
+      "value": 36,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 35,
+      "unit": "years"
+    },
+    "Turkey": {
+      "value": 34,
+      "unit": "years"
+    },
+    "Kazakhstan": {
+      "value": 32,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 31,
+      "unit": "years"
+    },
+    "El Salvador": {
+      "value": 30,
+      "unit": "years"
+    },
+    "Bangladesh": {
+      "value": 30,
+      "unit": "years"
+    },
+    "India": {
+      "value": 30,
+      "unit": "years"
+    },
+    "Pakistan": {
+      "value": 23,
+      "unit": "years"
+    },
+    "Ethiopia": {
+      "value": 20,
+      "unit": "years"
+    },
+    "Nigeria": {
+      "value": 19,
+      "unit": "years"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 17,
+      "unit": "years"
+    },
+    "Niger": {
+      "value": 15,
+      "unit": "years"
+    }
+  }
+}
+

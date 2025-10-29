@@ -1,0 +1,181 @@
+{
+  "title": "Average Cinema Ticket Price by Country",
+  "description": "Average price of a cinema ticket in USD by country",
+  "unit": "USD",
+  "source": "https://x.com/stats_feed/status/1696953576805789893",
+  "data": {
+    "Switzerland": {
+      "value": 22.70,
+      "unit": "USD"
+    },
+    "Denmark": {
+      "value": 17.50,
+      "unit": "USD"
+    },
+    "Saudi Arabia": {
+      "value": 17.33,
+      "unit": "USD"
+    },
+    "Finland": {
+      "value": 16.30,
+      "unit": "USD"
+    },
+    "Norway": {
+      "value": 14.17,
+      "unit": "USD"
+    },
+    "Iceland": {
+      "value": 14.15,
+      "unit": "USD"
+    },
+    "Sweden": {
+      "value": 13.78,
+      "unit": "USD"
+    },
+    "Germany": {
+      "value": 13.04,
+      "unit": "USD"
+    },
+    "Austria": {
+      "value": 13.04,
+      "unit": "USD"
+    },
+    "Luxembourg": {
+      "value": 13.04,
+      "unit": "USD"
+    },
+    "Netherlands": {
+      "value": 13.04,
+      "unit": "USD"
+    },
+    "Ireland": {
+      "value": 13.04,
+      "unit": "USD"
+    },
+    "Australia": {
+      "value": 12.94,
+      "unit": "USD"
+    },
+    "United Kingdom": {
+      "value": 12.63,
+      "unit": "USD"
+    },
+    "United States": {
+      "value": 12.50,
+      "unit": "USD"
+    },
+    "Japan": {
+      "value": 12.32,
+      "unit": "USD"
+    },
+    "United Arab Emirates": {
+      "value": 12.25,
+      "unit": "USD"
+    },
+    "France": {
+      "value": 11.96,
+      "unit": "USD"
+    },
+    "Singapore": {
+      "value": 11.09,
+      "unit": "USD"
+    },
+    "Canada": {
+      "value": 11.06,
+      "unit": "USD"
+    },
+    "South Korea": {
+      "value": 9.83,
+      "unit": "USD"
+    },
+    "Italy": {
+      "value": 9.78,
+      "unit": "USD"
+    },
+    "Czech Republic": {
+      "value": 9.02,
+      "unit": "USD"
+    },
+    "Spain": {
+      "value": 8.70,
+      "unit": "USD"
+    },
+    "Portugal": {
+      "value": 7.61,
+      "unit": "USD"
+    },
+    "Brazil": {
+      "value": 7.05,
+      "unit": "USD"
+    },
+    "China": {
+      "value": 6.86,
+      "unit": "USD"
+    },
+    "Chile": {
+      "value": 5.82,
+      "unit": "USD"
+    },
+    "Kenya": {
+      "value": 5.51,
+      "unit": "USD"
+    },
+    "South Africa": {
+      "value": 5.40,
+      "unit": "USD"
+    },
+    "Venezuela": {
+      "value": 5.00,
+      "unit": "USD"
+    },
+    "Mexico": {
+      "value": 4.76,
+      "unit": "USD"
+    },
+    "Argentina": {
+      "value": 4.39,
+      "unit": "USD"
+    },
+    "Russia": {
+      "value": 4.19,
+      "unit": "USD"
+    },
+    "Vietnam": {
+      "value": 4.14,
+      "unit": "USD"
+    },
+    "Ukraine": {
+      "value": 4.06,
+      "unit": "USD"
+    },
+    "Colombia": {
+      "value": 3.90,
+      "unit": "USD"
+    },
+    "India": {
+      "value": 3.63,
+      "unit": "USD"
+    },
+    "Turkey": {
+      "value": 3.40,
+      "unit": "USD"
+    },
+    "Egypt": {
+      "value": 3.39,
+      "unit": "USD"
+    },
+    "Pakistan": {
+      "value": 3.31,
+      "unit": "USD"
+    },
+    "Indonesia": {
+      "value": 3.28,
+      "unit": "USD"
+    },
+    "Iran": {
+      "value": 1.50,
+      "unit": "USD"
+    }
+  }
+}
+

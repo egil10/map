@@ -1,0 +1,209 @@
+{
+  "title": "Most Common Nationalities Among Current U.S. Immigrants",
+  "description": "Number of immigrants from each country currently living in the United States according to The Migration Policy Institute's tabulation from U.S. Census Bureau (2022)",
+  "unit": "people",
+  "source": "https://x.com/stats_feed/status/1774171712969396398",
+  "data": {
+    "Mexico": {
+      "value": 10678502,
+      "unit": "people"
+    },
+    "India": {
+      "value": 2839618,
+      "unit": "people"
+    },
+    "China": {
+      "value": 2217894,
+      "unit": "people"
+    },
+    "Philippines": {
+      "value": 1982333,
+      "unit": "people"
+    },
+    "El Salvador": {
+      "value": 1407622,
+      "unit": "people"
+    },
+    "Vietnam": {
+      "value": 1331192,
+      "unit": "people"
+    },
+    "Cuba": {
+      "value": 1312510,
+      "unit": "people"
+    },
+    "Dominican Republic": {
+      "value": 1279900,
+      "unit": "people"
+    },
+    "Guatemala": {
+      "value": 1148543,
+      "unit": "people"
+    },
+    "South Korea": {
+      "value": 1045100,
+      "unit": "people"
+    },
+    "Colombia": {
+      "value": 928053,
+      "unit": "people"
+    },
+    "Honduras": {
+      "value": 843774,
+      "unit": "people"
+    },
+    "Canada": {
+      "value": 821322,
+      "unit": "people"
+    },
+    "Jamaica": {
+      "value": 804775,
+      "unit": "people"
+    },
+    "Haiti": {
+      "value": 730780,
+      "unit": "people"
+    },
+    "United Kingdom": {
+      "value": 676652,
+      "unit": "people"
+    },
+    "Venezuela": {
+      "value": 667664,
+      "unit": "people"
+    },
+    "Brazil": {
+      "value": 618525,
+      "unit": "people"
+    },
+    "Germany": {
+      "value": 537484,
+      "unit": "people"
+    },
+    "Ecuador": {
+      "value": 518287,
+      "unit": "people"
+    },
+    "Peru": {
+      "value": 471988,
+      "unit": "people"
+    },
+    "Nigeria": {
+      "value": 448405,
+      "unit": "people"
+    },
+    "Ukraine": {
+      "value": 427163,
+      "unit": "people"
+    },
+    "Iran": {
+      "value": 407283,
+      "unit": "people"
+    },
+    "Pakistan": {
+      "value": 399086,
+      "unit": "people"
+    },
+    "Russia": {
+      "value": 398123,
+      "unit": "people"
+    },
+    "Taiwan": {
+      "value": 377949,
+      "unit": "people"
+    },
+    "Poland": {
+      "value": 374056,
+      "unit": "people"
+    },
+    "Nicaragua": {
+      "value": 330096,
+      "unit": "people"
+    },
+    "Japan": {
+      "value": 295280,
+      "unit": "people"
+    },
+    "Italy": {
+      "value": 294936,
+      "unit": "people"
+    },
+    "Bangladesh": {
+      "value": 294277,
+      "unit": "people"
+    },
+    "Ethiopia": {
+      "value": 293083,
+      "unit": "people"
+    },
+    "Guyana": {
+      "value": 286951,
+      "unit": "people"
+    },
+    "Thailand": {
+      "value": 263120,
+      "unit": "people"
+    },
+    "Hong Kong": {
+      "value": 237129,
+      "unit": "people"
+    },
+    "Trinidad and Tobago": {
+      "value": 235705,
+      "unit": "people"
+    },
+    "Egypt": {
+      "value": 229204,
+      "unit": "people"
+    },
+    "Iraq": {
+      "value": 222806,
+      "unit": "people"
+    },
+    "Ghana": {
+      "value": 215333,
+      "unit": "people"
+    },
+    "Argentina": {
+      "value": 196427,
+      "unit": "people"
+    },
+    "Afghanistan": {
+      "value": 194742,
+      "unit": "people"
+    },
+    "Nepal": {
+      "value": 191213,
+      "unit": "people"
+    },
+    "France": {
+      "value": 182467,
+      "unit": "people"
+    },
+    "Kenya": {
+      "value": 168915,
+      "unit": "people"
+    },
+    "Laos": {
+      "value": 168284,
+      "unit": "people"
+    },
+    "Portugal": {
+      "value": 159626,
+      "unit": "people"
+    },
+    "Myanmar": {
+      "value": 159254,
+      "unit": "people"
+    },
+    "Cambodia": {
+      "value": 158899,
+      "unit": "people"
+    },
+    "Romania": {
+      "value": 157973,
+      "unit": "people"
+    }
+  }
+}
+

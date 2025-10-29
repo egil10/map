@@ -1,0 +1,197 @@
+{
+  "title": "Number of Public Holidays Annually by Country",
+  "description": "Minimum number of public holidays annually by country, excluding non-regular special holidays",
+  "unit": "holidays",
+  "source": "https://x.com/stats_feed/status/1940440336481784215",
+  "data": {
+    "Nepal": {
+      "value": 35,
+      "unit": "holidays"
+    },
+    "Iran": {
+      "value": 26,
+      "unit": "holidays"
+    },
+    "Sri Lanka": {
+      "value": 25,
+      "unit": "holidays"
+    },
+    "Bangladesh": {
+      "value": 22,
+      "unit": "holidays"
+    },
+    "India": {
+      "value": 21,
+      "unit": "holidays"
+    },
+    "Cambodia": {
+      "value": 21,
+      "unit": "holidays"
+    },
+    "Chile": {
+      "value": 20,
+      "unit": "holidays"
+    },
+    "Lebanon": {
+      "value": 19,
+      "unit": "holidays"
+    },
+    "Colombia": {
+      "value": 18,
+      "unit": "holidays"
+    },
+    "Philippines": {
+      "value": 18,
+      "unit": "holidays"
+    },
+    "Argentina": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Indonesia": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Iceland": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Japan": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Kazakhstan": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Thailand": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Taiwan": {
+      "value": 16,
+      "unit": "holidays"
+    },
+    "Pakistan": {
+      "value": 15,
+      "unit": "holidays"
+    },
+    "Russia": {
+      "value": 14,
+      "unit": "holidays"
+    },
+    "South Korea": {
+      "value": 14,
+      "unit": "holidays"
+    },
+    "Turkey": {
+      "value": 14,
+      "unit": "holidays"
+    },
+    "Venezuela": {
+      "value": 14,
+      "unit": "holidays"
+    },
+    "Austria": {
+      "value": 13,
+      "unit": "holidays"
+    },
+    "Czech Republic": {
+      "value": 13,
+      "unit": "holidays"
+    },
+    "Finland": {
+      "value": 13,
+      "unit": "holidays"
+    },
+    "Poland": {
+      "value": 13,
+      "unit": "holidays"
+    },
+    "China": {
+      "value": 13,
+      "unit": "holidays"
+    },
+    "Egypt": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Spain": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Norway": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Italy": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Sweden": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "South Africa": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Estonia": {
+      "value": 12,
+      "unit": "holidays"
+    },
+    "Ukraine": {
+      "value": 11,
+      "unit": "holidays"
+    },
+    "France": {
+      "value": 11,
+      "unit": "holidays"
+    },
+    "Germany": {
+      "value": 10,
+      "unit": "holidays"
+    },
+    "Canada": {
+      "value": 10,
+      "unit": "holidays"
+    },
+    "Belgium": {
+      "value": 10,
+      "unit": "holidays"
+    },
+    "Ireland": {
+      "value": 10,
+      "unit": "holidays"
+    },
+    "Denmark": {
+      "value": 10,
+      "unit": "holidays"
+    },
+    "Australia": {
+      "value": 9,
+      "unit": "holidays"
+    },
+    "Brazil": {
+      "value": 9,
+      "unit": "holidays"
+    },
+    "United Kingdom": {
+      "value": 8,
+      "unit": "holidays"
+    },
+    "Mexico": {
+      "value": 8,
+      "unit": "holidays"
+    },
+    "Netherlands": {
+      "value": 7,
+      "unit": "holidays"
+    },
+    "United States": {
+      "value": 6,
+      "unit": "holidays"
+    }
+  }
+}
+

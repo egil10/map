@@ -1,0 +1,209 @@
+{
+  "title": "Percentage of Population with a College Degree by Country",
+  "description": "Percentage of the population with a college degree (tertiary education) by country",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1965508508327002304",
+  "data": {
+    "Canada": {
+      "value": 62,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": 60,
+      "unit": "percentage"
+    },
+    "South Korea": {
+      "value": 59,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 58,
+      "unit": "percentage"
+    },
+    "Israel": {
+      "value": 57,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 56,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 55,
+      "unit": "percentage"
+    },
+    "Norway": {
+      "value": 53,
+      "unit": "percentage"
+    },
+    "Australia": {
+      "value": 52,
+      "unit": "percentage"
+    },
+    "Finland": {
+      "value": 50,
+      "unit": "percentage"
+    },
+    "Sweden": {
+      "value": 49,
+      "unit": "percentage"
+    },
+    "Netherlands": {
+      "value": 48,
+      "unit": "percentage"
+    },
+    "Denmark": {
+      "value": 47,
+      "unit": "percentage"
+    },
+    "New Zealand": {
+      "value": 46,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 45,
+      "unit": "percentage"
+    },
+    "Switzerland": {
+      "value": 44,
+      "unit": "percentage"
+    },
+    "Iceland": {
+      "value": 43,
+      "unit": "percentage"
+    },
+    "Ireland": {
+      "value": 42,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 41,
+      "unit": "percentage"
+    },
+    "Belgium": {
+      "value": 40,
+      "unit": "percentage"
+    },
+    "Singapore": {
+      "value": 39,
+      "unit": "percentage"
+    },
+    "Austria": {
+      "value": 38,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 37,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 36,
+      "unit": "percentage"
+    },
+    "Luxembourg": {
+      "value": 35,
+      "unit": "percentage"
+    },
+    "Czech Republic": {
+      "value": 34,
+      "unit": "percentage"
+    },
+    "Poland": {
+      "value": 33,
+      "unit": "percentage"
+    },
+    "Greece": {
+      "value": 32,
+      "unit": "percentage"
+    },
+    "Hungary": {
+      "value": 31,
+      "unit": "percentage"
+    },
+    "Slovenia": {
+      "value": 30,
+      "unit": "percentage"
+    },
+    "Lithuania": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "Portugal": {
+      "value": 28,
+      "unit": "percentage"
+    },
+    "Estonia": {
+      "value": 27,
+      "unit": "percentage"
+    },
+    "Latvia": {
+      "value": 26,
+      "unit": "percentage"
+    },
+    "Slovakia": {
+      "value": 25,
+      "unit": "percentage"
+    },
+    "Chile": {
+      "value": 24,
+      "unit": "percentage"
+    },
+    "Mexico": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 22,
+      "unit": "percentage"
+    },
+    "China": {
+      "value": 21,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 20,
+      "unit": "percentage"
+    },
+    "Malaysia": {
+      "value": 19,
+      "unit": "percentage"
+    },
+    "Argentina": {
+      "value": 18,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 17,
+      "unit": "percentage"
+    },
+    "Thailand": {
+      "value": 16,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 15,
+      "unit": "percentage"
+    },
+    "Saudi Arabia": {
+      "value": 14,
+      "unit": "percentage"
+    },
+    "Vietnam": {
+      "value": 13,
+      "unit": "percentage"
+    },
+    "South Africa": {
+      "value": 12,
+      "unit": "percentage"
+    },
+    "Egypt": {
+      "value": 11,
+      "unit": "percentage"
+    },
+    "Nigeria": {
+      "value": 10,
+      "unit": "percentage"
+    }
+  }
+}
+

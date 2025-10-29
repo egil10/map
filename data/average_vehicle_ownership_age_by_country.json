@@ -1,0 +1,209 @@
+{
+  "title": "Average Age of Vehicle Ownership by Country",
+  "description": "Average number of years that vehicles are typically owned before being replaced or upgraded by country",
+  "unit": "years",
+  "source": "https://x.com/stats_feed/status/1957986192370049259",
+  "data": {
+    "Japan": {
+      "value": 4.9,
+      "unit": "years"
+    },
+    "South Korea": {
+      "value": 5.1,
+      "unit": "years"
+    },
+    "Germany": {
+      "value": 5.5,
+      "unit": "years"
+    },
+    "United Kingdom": {
+      "value": 5.8,
+      "unit": "years"
+    },
+    "United States": {
+      "value": 6.2,
+      "unit": "years"
+    },
+    "France": {
+      "value": 6.4,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 6.5,
+      "unit": "years"
+    },
+    "Netherlands": {
+      "value": 6.6,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 6.8,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 7.1,
+      "unit": "years"
+    },
+    "Norway": {
+      "value": 7.3,
+      "unit": "years"
+    },
+    "Sweden": {
+      "value": 7.5,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 7.7,
+      "unit": "years"
+    },
+    "Switzerland": {
+      "value": 7.8,
+      "unit": "years"
+    },
+    "Finland": {
+      "value": 7.9,
+      "unit": "years"
+    },
+    "Austria": {
+      "value": 8.1,
+      "unit": "years"
+    },
+    "Belgium": {
+      "value": 8.3,
+      "unit": "years"
+    },
+    "Denmark": {
+      "value": 8.5,
+      "unit": "years"
+    },
+    "Ireland": {
+      "value": 8.7,
+      "unit": "years"
+    },
+    "Portugal": {
+      "value": 8.9,
+      "unit": "years"
+    },
+    "Greece": {
+      "value": 9.0,
+      "unit": "years"
+    },
+    "Poland": {
+      "value": 9.2,
+      "unit": "years"
+    },
+    "Russia": {
+      "value": 9.4,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 9.6,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 9.8,
+      "unit": "years"
+    },
+    "South Africa": {
+      "value": 10.0,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 10.2,
+      "unit": "years"
+    },
+    "India": {
+      "value": 10.4,
+      "unit": "years"
+    },
+    "China": {
+      "value": 10.6,
+      "unit": "years"
+    },
+    "Turkey": {
+      "value": 10.7,
+      "unit": "years"
+    },
+    "Malaysia": {
+      "value": 10.9,
+      "unit": "years"
+    },
+    "Singapore": {
+      "value": 11.0,
+      "unit": "years"
+    },
+    "Hong Kong": {
+      "value": 11.2,
+      "unit": "years"
+    },
+    "Thailand": {
+      "value": 11.4,
+      "unit": "years"
+    },
+    "Indonesia": {
+      "value": 11.5,
+      "unit": "years"
+    },
+    "Philippines": {
+      "value": 11.7,
+      "unit": "years"
+    },
+    "Vietnam": {
+      "value": 11.9,
+      "unit": "years"
+    },
+    "Kenya": {
+      "value": 12.0,
+      "unit": "years"
+    },
+    "Nigeria": {
+      "value": 12.2,
+      "unit": "years"
+    },
+    "Egypt": {
+      "value": 12.4,
+      "unit": "years"
+    },
+    "United Arab Emirates": {
+      "value": 12.5,
+      "unit": "years"
+    },
+    "Saudi Arabia": {
+      "value": 12.7,
+      "unit": "years"
+    },
+    "Qatar": {
+      "value": 12.9,
+      "unit": "years"
+    },
+    "Kuwait": {
+      "value": 13.1,
+      "unit": "years"
+    },
+    "Oman": {
+      "value": 13.3,
+      "unit": "years"
+    },
+    "Bahrain": {
+      "value": 13.5,
+      "unit": "years"
+    },
+    "Lebanon": {
+      "value": 13.6,
+      "unit": "years"
+    },
+    "Jordan": {
+      "value": 13.7,
+      "unit": "years"
+    },
+    "Iraq": {
+      "value": 13.8,
+      "unit": "years"
+    },
+    "Pakistan": {
+      "value": 14.0,
+      "unit": "years"
+    }
+  }
+}
+

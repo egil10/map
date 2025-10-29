@@ -1,0 +1,209 @@
+{
+  "title": "Average Life Expectancy by Country",
+  "description": "Average life expectancy in years by country",
+  "unit": "years",
+  "source": "https://x.com/stats_feed/status/1965569409855914488",
+  "data": {
+    "Japan": {
+      "value": 84.6,
+      "unit": "years"
+    },
+    "Switzerland": {
+      "value": 83.3,
+      "unit": "years"
+    },
+    "Singapore": {
+      "value": 83.1,
+      "unit": "years"
+    },
+    "Italy": {
+      "value": 83.0,
+      "unit": "years"
+    },
+    "Spain": {
+      "value": 82.8,
+      "unit": "years"
+    },
+    "Australia": {
+      "value": 82.5,
+      "unit": "years"
+    },
+    "Iceland": {
+      "value": 82.3,
+      "unit": "years"
+    },
+    "France": {
+      "value": 82.2,
+      "unit": "years"
+    },
+    "Sweden": {
+      "value": 82.1,
+      "unit": "years"
+    },
+    "Canada": {
+      "value": 81.9,
+      "unit": "years"
+    },
+    "Norway": {
+      "value": 81.8,
+      "unit": "years"
+    },
+    "Netherlands": {
+      "value": 81.5,
+      "unit": "years"
+    },
+    "Ireland": {
+      "value": 81.4,
+      "unit": "years"
+    },
+    "Austria": {
+      "value": 81.3,
+      "unit": "years"
+    },
+    "Finland": {
+      "value": 81.2,
+      "unit": "years"
+    },
+    "Germany": {
+      "value": 81.0,
+      "unit": "years"
+    },
+    "United Kingdom": {
+      "value": 81.0,
+      "unit": "years"
+    },
+    "South Korea": {
+      "value": 80.9,
+      "unit": "years"
+    },
+    "Luxembourg": {
+      "value": 80.8,
+      "unit": "years"
+    },
+    "New Zealand": {
+      "value": 80.7,
+      "unit": "years"
+    },
+    "Belgium": {
+      "value": 80.5,
+      "unit": "years"
+    },
+    "Israel": {
+      "value": 80.4,
+      "unit": "years"
+    },
+    "Denmark": {
+      "value": 80.3,
+      "unit": "years"
+    },
+    "Cyprus": {
+      "value": 80.2,
+      "unit": "years"
+    },
+    "Greece": {
+      "value": 80.1,
+      "unit": "years"
+    },
+    "Malta": {
+      "value": 80.0,
+      "unit": "years"
+    },
+    "Slovenia": {
+      "value": 79.8,
+      "unit": "years"
+    },
+    "Czech Republic": {
+      "value": 79.7,
+      "unit": "years"
+    },
+    "Portugal": {
+      "value": 79.6,
+      "unit": "years"
+    },
+    "Chile": {
+      "value": 79.5,
+      "unit": "years"
+    },
+    "Estonia": {
+      "value": 79.4,
+      "unit": "years"
+    },
+    "Hungary": {
+      "value": 79.3,
+      "unit": "years"
+    },
+    "Slovakia": {
+      "value": 79.2,
+      "unit": "years"
+    },
+    "Croatia": {
+      "value": 79.1,
+      "unit": "years"
+    },
+    "Lithuania": {
+      "value": 79.0,
+      "unit": "years"
+    },
+    "Poland": {
+      "value": 78.9,
+      "unit": "years"
+    },
+    "Argentina": {
+      "value": 78.8,
+      "unit": "years"
+    },
+    "Uruguay": {
+      "value": 78.7,
+      "unit": "years"
+    },
+    "Russia": {
+      "value": 78.6,
+      "unit": "years"
+    },
+    "Colombia": {
+      "value": 78.5,
+      "unit": "years"
+    },
+    "Costa Rica": {
+      "value": 78.4,
+      "unit": "years"
+    },
+    "Cuba": {
+      "value": 78.3,
+      "unit": "years"
+    },
+    "Mexico": {
+      "value": 78.2,
+      "unit": "years"
+    },
+    "Brazil": {
+      "value": 78.1,
+      "unit": "years"
+    },
+    "Peru": {
+      "value": 78.0,
+      "unit": "years"
+    },
+    "Malaysia": {
+      "value": 77.9,
+      "unit": "years"
+    },
+    "Thailand": {
+      "value": 77.8,
+      "unit": "years"
+    },
+    "India": {
+      "value": 77.7,
+      "unit": "years"
+    },
+    "Philippines": {
+      "value": 77.6,
+      "unit": "years"
+    },
+    "South Africa": {
+      "value": 77.5,
+      "unit": "years"
+    }
+  }
+}
+

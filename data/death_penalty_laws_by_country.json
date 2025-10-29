@@ -1,0 +1,165 @@
+{
+  "title": "Death Penalty Laws by Country",
+  "description": "Countries by existence and practice of death penalty laws according to Amnesty International",
+  "unit": "status",
+  "source": "https://x.com/stats_feed/status/1749344152066899973",
+  "data": {
+    "United States": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "China": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "North Korea": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Japan": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "India": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Afghanistan": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Iraq": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Yemen": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Oman": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Egypt": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Libya": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "Retentionist",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "Retentionist for serious crimes",
+      "unit": "status"
+    },
+    "Peru": {
+      "value": "Retentionist for serious crimes",
+      "unit": "status"
+    },
+    "Chile": {
+      "value": "Retentionist for serious crimes",
+      "unit": "status"
+    },
+    "Tunisia": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Algeria": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Morocco": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Russia": {
+      "value": "Abolitionist in practice",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Australia": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Norway": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Sweden": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Finland": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Germany": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "France": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Italy": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "United Kingdom": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Austria": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "Abolitionist",
+      "unit": "status"
+    },
+    "Turkey": {
+      "value": "Abolitionist",
+      "unit": "status"
+    }
+  }
+}
+

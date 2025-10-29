@@ -1,0 +1,121 @@
+{
+  "title": "Europe's Poverty Rates by Country (2024)",
+  "description": "Percentage of population at-risk-of-poverty or social exclusion by country in Europe in 2024",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1964351365435838478",
+  "data": {
+    "Austria": {
+      "value": 16.9,
+      "unit": "percentage"
+    },
+    "Belgium": {
+      "value": 18.2,
+      "unit": "percentage"
+    },
+    "Bulgaria": {
+      "value": 30.3,
+      "unit": "percentage"
+    },
+    "Cyprus": {
+      "value": 17.1,
+      "unit": "percentage"
+    },
+    "Czech Republic": {
+      "value": 11.3,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 21.1,
+      "unit": "percentage"
+    },
+    "Denmark": {
+      "value": 18.0,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 25.8,
+      "unit": "percentage"
+    },
+    "Estonia": {
+      "value": 22.2,
+      "unit": "percentage"
+    },
+    "Finland": {
+      "value": 16.8,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 20.5,
+      "unit": "percentage"
+    },
+    "Greece": {
+      "value": 26.9,
+      "unit": "percentage"
+    },
+    "Croatia": {
+      "value": 21.7,
+      "unit": "percentage"
+    },
+    "Ireland": {
+      "value": 16.7,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 23.1,
+      "unit": "percentage"
+    },
+    "Lithuania": {
+      "value": 25.8,
+      "unit": "percentage"
+    },
+    "Luxembourg": {
+      "value": 20.0,
+      "unit": "percentage"
+    },
+    "Latvia": {
+      "value": 24.3,
+      "unit": "percentage"
+    },
+    "Malta": {
+      "value": 19.7,
+      "unit": "percentage"
+    },
+    "Netherlands": {
+      "value": 15.4,
+      "unit": "percentage"
+    },
+    "Norway": {
+      "value": 15.7,
+      "unit": "percentage"
+    },
+    "Poland": {
+      "value": 16.0,
+      "unit": "percentage"
+    },
+    "Portugal": {
+      "value": 19.7,
+      "unit": "percentage"
+    },
+    "Romania": {
+      "value": 27.9,
+      "unit": "percentage"
+    },
+    "Slovakia": {
+      "value": 18.3,
+      "unit": "percentage"
+    },
+    "Slovenia": {
+      "value": 14.4,
+      "unit": "percentage"
+    },
+    "Sweden": {
+      "value": 17.5,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 30.4,
+      "unit": "percentage"
+    }
+  }
+}
+

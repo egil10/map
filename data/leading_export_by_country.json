@@ -1,0 +1,237 @@
+{
+  "title": "Leading Export by Country",
+  "description": "Leading export commodity or product by country",
+  "unit": "export",
+  "source": "https://x.com/stats_feed/status/1974124180317560909",
+  "data": {
+    "Argentina": {
+      "value": "Soybeans",
+      "unit": "export"
+    },
+    "Australia": {
+      "value": "Iron",
+      "unit": "export"
+    },
+    "Austria": {
+      "value": "Toxins",
+      "unit": "export"
+    },
+    "Benin": {
+      "value": "Cotton",
+      "unit": "export"
+    },
+    "Brazil": {
+      "value": "Soybeans",
+      "unit": "export"
+    },
+    "Bangladesh": {
+      "value": "T-shirts",
+      "unit": "export"
+    },
+    "Canada": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "China": {
+      "value": "Electronics",
+      "unit": "export"
+    },
+    "Chile": {
+      "value": "Copper",
+      "unit": "export"
+    },
+    "Côte d'Ivoire": {
+      "value": "Cocoa",
+      "unit": "export"
+    },
+    "Cuba": {
+      "value": "Cigars",
+      "unit": "export"
+    },
+    "Denmark": {
+      "value": "Medicine",
+      "unit": "export"
+    },
+    "Guatemala": {
+      "value": "Bananas",
+      "unit": "export"
+    },
+    "Guyana": {
+      "value": "Drilling Platforms",
+      "unit": "export"
+    },
+    "Egypt": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Ethiopia": {
+      "value": "Coffee",
+      "unit": "export"
+    },
+    "Finland": {
+      "value": "Paper products",
+      "unit": "export"
+    },
+    "Fiji": {
+      "value": "Water",
+      "unit": "export"
+    },
+    "France": {
+      "value": "Aircrafts",
+      "unit": "export"
+    },
+    "Germany": {
+      "value": "Vehicle engines",
+      "unit": "export"
+    },
+    "Iceland": {
+      "value": "Aluminum",
+      "unit": "export"
+    },
+    "India": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Indonesia": {
+      "value": "Coal",
+      "unit": "export"
+    },
+    "Israel": {
+      "value": "Diamonds",
+      "unit": "export"
+    },
+    "Italy": {
+      "value": "Medicines",
+      "unit": "export"
+    },
+    "Japan": {
+      "value": "Vehicle engines",
+      "unit": "export"
+    },
+    "Kenya": {
+      "value": "Tea",
+      "unit": "export"
+    },
+    "Kiribati": {
+      "value": "Tuna",
+      "unit": "export"
+    },
+    "Madagascar": {
+      "value": "Vanilla",
+      "unit": "export"
+    },
+    "Malaysia": {
+      "value": "Electronics",
+      "unit": "export"
+    },
+    "Malawi": {
+      "value": "Tobacco",
+      "unit": "export"
+    },
+    "Maldives": {
+      "value": "Fish",
+      "unit": "export"
+    },
+    "Mexico": {
+      "value": "Vehicle engines",
+      "unit": "export"
+    },
+    "Moldova": {
+      "value": "Sunflower seeds",
+      "unit": "export"
+    },
+    "Mongolia": {
+      "value": "Coal",
+      "unit": "export"
+    },
+    "New Zealand": {
+      "value": "Dairy",
+      "unit": "export"
+    },
+    "Nigeria": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "North Korea": {
+      "value": "Watch parts",
+      "unit": "export"
+    },
+    "Norway": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Pakistan": {
+      "value": "Rice",
+      "unit": "export"
+    },
+    "Peru": {
+      "value": "Copper",
+      "unit": "export"
+    },
+    "Philippines": {
+      "value": "Electric circuits",
+      "unit": "export"
+    },
+    "Russia": {
+      "value": "Crude petroleum",
+      "unit": "export"
+    },
+    "Saudi Arabia": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Singapore": {
+      "value": "Electric circuits",
+      "unit": "export"
+    },
+    "South Africa": {
+      "value": "Gold",
+      "unit": "export"
+    },
+    "South Korea": {
+      "value": "Electric circuits",
+      "unit": "export"
+    },
+    "Sri Lanka": {
+      "value": "Bras",
+      "unit": "export"
+    },
+    "Spain": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Syria": {
+      "value": "Olive oil",
+      "unit": "export"
+    },
+    "Sweden": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Switzerland": {
+      "value": "Gold",
+      "unit": "export"
+    },
+    "Turkey": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "Ukraine": {
+      "value": "Corn",
+      "unit": "export"
+    },
+    "United Arab Emirates": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "United Kingdom": {
+      "value": "Petroleum",
+      "unit": "export"
+    },
+    "United States": {
+      "value": "Petroleum",
+      "unit": "export"
+    }
+  }
+}
+

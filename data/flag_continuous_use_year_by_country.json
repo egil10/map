@@ -1,0 +1,193 @@
+{
+  "title": "World Flags in Continuous Use by Country",
+  "description": "The year when each country's flag was adopted and has been in continuous use since",
+  "unit": "year",
+  "source": "https://x.com/stats_feed/status/1733500915322413069",
+  "data": {
+    "Denmark": {
+      "value": 1625,
+      "unit": "year"
+    },
+    "Netherlands": {
+      "value": 1660,
+      "unit": "year"
+    },
+    "Nepal": {
+      "value": 1743,
+      "unit": "year"
+    },
+    "United Kingdom": {
+      "value": 1801,
+      "unit": "year"
+    },
+    "Chile": {
+      "value": 1817,
+      "unit": "year"
+    },
+    "Argentina": {
+      "value": 1818,
+      "unit": "year"
+    },
+    "Peru": {
+      "value": 1825,
+      "unit": "year"
+    },
+    "Uruguay": {
+      "value": 1828,
+      "unit": "year"
+    },
+    "France": {
+      "value": 1830,
+      "unit": "year"
+    },
+    "Belgium": {
+      "value": 1831,
+      "unit": "year"
+    },
+    "Tunisia": {
+      "value": 1831,
+      "unit": "year"
+    },
+    "Turkey": {
+      "value": 1844,
+      "unit": "year"
+    },
+    "Japan": {
+      "value": 1870,
+      "unit": "year"
+    },
+    "South Korea": {
+      "value": 1883,
+      "unit": "year"
+    },
+    "Switzerland": {
+      "value": 1889,
+      "unit": "year"
+    },
+    "Norway": {
+      "value": 1899,
+      "unit": "year"
+    },
+    "Australia": {
+      "value": 1901,
+      "unit": "year"
+    },
+    "Sweden": {
+      "value": 1906,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 1918,
+      "unit": "year"
+    },
+    "Italy": {
+      "value": 1943,
+      "unit": "year"
+    },
+    "India": {
+      "value": 1947,
+      "unit": "year"
+    },
+    "Pakistan": {
+      "value": 1947,
+      "unit": "year"
+    },
+    "China": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Nigeria": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "United States": {
+      "value": 1960,
+      "unit": "year"
+    },
+    "Canada": {
+      "value": 1965,
+      "unit": "year"
+    },
+    "Mexico": {
+      "value": 1968,
+      "unit": "year"
+    },
+    "United Arab Emirates": {
+      "value": 1971,
+      "unit": "year"
+    },
+    "Bangladesh": {
+      "value": 1972,
+      "unit": "year"
+    },
+    "Saudi Arabia": {
+      "value": 1973,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 1981,
+      "unit": "year"
+    },
+    "Russia": {
+      "value": 1991,
+      "unit": "year"
+    },
+    "Brazil": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "Ukraine": {
+      "value": 1992,
+      "unit": "year"
+    },
+    "South Africa": {
+      "value": 1994,
+      "unit": "year"
+    },
+    "Serbia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 2006,
+      "unit": "year"
+    },
+    "Lesotho": {
+      "value": 2006,
+      "unit": "year"
+    },
+    "Venezuela": {
+      "value": 2006,
+      "unit": "year"
+    },
+    "Iraq": {
+      "value": 2008,
+      "unit": "year"
+    },
+    "Kosovo": {
+      "value": 2008,
+      "unit": "year"
+    },
+    "Myanmar": {
+      "value": 2010,
+      "unit": "year"
+    },
+    "Libya": {
+      "value": 2011,
+      "unit": "year"
+    },
+    "South Sudan": {
+      "value": 2011,
+      "unit": "year"
+    },
+    "Malawi": {
+      "value": 2012,
+      "unit": "year"
+    },
+    "Mauritania": {
+      "value": 2017,
+      "unit": "year"
+    }
+  }
+}
+

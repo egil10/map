@@ -1,0 +1,65 @@
+{
+  "title": "GDP Growth (Current Prices) 2003-2023",
+  "description": "Percentage growth in GDP (current prices) between 2003 and 2023 by country",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1894145529560613175",
+  "data": {
+    "China": {
+      "value": 966,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 503,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 455,
+      "unit": "percentage"
+    },
+    "Saudi Arabia": {
+      "value": 395,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 303,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 281,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 265,
+      "unit": "percentage"
+    },
+    "Canada": {
+      "value": 136,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 135,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 77,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 65,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 61,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 38,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": -6,
+      "unit": "percentage"
+    }
+  }
+}
+

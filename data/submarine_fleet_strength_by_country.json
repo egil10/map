@@ -1,0 +1,93 @@
+{
+  "title": "Submarine Fleet Strength by Country",
+  "description": "Number of submarines in each country's fleet according to GlobalFirepower (2025)",
+  "unit": "submarines",
+  "source": "https://x.com/stats_feed/status/1951329780789395913",
+  "data": {
+    "United States": {
+      "value": 70,
+      "unit": "submarines"
+    },
+    "Russia": {
+      "value": 63,
+      "unit": "submarines"
+    },
+    "China": {
+      "value": 61,
+      "unit": "submarines"
+    },
+    "Iran": {
+      "value": 25,
+      "unit": "submarines"
+    },
+    "Japan": {
+      "value": 24,
+      "unit": "submarines"
+    },
+    "South Korea": {
+      "value": 22,
+      "unit": "submarines"
+    },
+    "India": {
+      "value": 18,
+      "unit": "submarines"
+    },
+    "North Korea": {
+      "value": 13,
+      "unit": "submarines"
+    },
+    "Turkey": {
+      "value": 13,
+      "unit": "submarines"
+    },
+    "Greece": {
+      "value": 10,
+      "unit": "submarines"
+    },
+    "United Kingdom": {
+      "value": 9,
+      "unit": "submarines"
+    },
+    "France": {
+      "value": 9,
+      "unit": "submarines"
+    },
+    "Vietnam": {
+      "value": 9,
+      "unit": "submarines"
+    },
+    "Egypt": {
+      "value": 8,
+      "unit": "submarines"
+    },
+    "Italy": {
+      "value": 8,
+      "unit": "submarines"
+    },
+    "Pakistan": {
+      "value": 8,
+      "unit": "submarines"
+    },
+    "Singapore": {
+      "value": 6,
+      "unit": "submarines"
+    },
+    "Algeria": {
+      "value": 6,
+      "unit": "submarines"
+    },
+    "Australia": {
+      "value": 6,
+      "unit": "submarines"
+    },
+    "Germany": {
+      "value": 6,
+      "unit": "submarines"
+    },
+    "Norway": {
+      "value": 6,
+      "unit": "submarines"
+    }
+  }
+}
+

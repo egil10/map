@@ -1,0 +1,145 @@
+{
+  "title": "Mortality Caused by Road Traffic Injury by Country",
+  "description": "Mortality rate caused by road traffic injury per 100,000 population according to WHO",
+  "unit": "per 100,000 population",
+  "source": "https://x.com/stats_feed/status/1759614079919104440",
+  "data": {
+    "Dominican Republic": {
+      "value": 65,
+      "unit": "per 100,000 population"
+    },
+    "Zimbabwe": {
+      "value": 41,
+      "unit": "per 100,000 population"
+    },
+    "Venezuela": {
+      "value": 39,
+      "unit": "per 100,000 population"
+    },
+    "Saudi Arabia": {
+      "value": 36,
+      "unit": "per 100,000 population"
+    },
+    "Thailand": {
+      "value": 32,
+      "unit": "per 100,000 population"
+    },
+    "Vietnam": {
+      "value": 31,
+      "unit": "per 100,000 population"
+    },
+    "Iraq": {
+      "value": 27,
+      "unit": "per 100,000 population"
+    },
+    "South Africa": {
+      "value": 22,
+      "unit": "per 100,000 population"
+    },
+    "Nigeria": {
+      "value": 21,
+      "unit": "per 100,000 population"
+    },
+    "Armenia": {
+      "value": 20,
+      "unit": "per 100,000 population"
+    },
+    "China": {
+      "value": 17,
+      "unit": "per 100,000 population"
+    },
+    "Brazil": {
+      "value": 16,
+      "unit": "per 100,000 population"
+    },
+    "India": {
+      "value": 16,
+      "unit": "per 100,000 population"
+    },
+    "Argentina": {
+      "value": 14,
+      "unit": "per 100,000 population"
+    },
+    "Pakistan": {
+      "value": 13,
+      "unit": "per 100,000 population"
+    },
+    "Mexico": {
+      "value": 13,
+      "unit": "per 100,000 population"
+    },
+    "United States": {
+      "value": 13,
+      "unit": "per 100,000 population"
+    },
+    "Russia": {
+      "value": 12,
+      "unit": "per 100,000 population"
+    },
+    "Indonesia": {
+      "value": 11,
+      "unit": "per 100,000 population"
+    },
+    "Poland": {
+      "value": 9,
+      "unit": "per 100,000 population"
+    },
+    "Turkey": {
+      "value": 7,
+      "unit": "per 100,000 population"
+    },
+    "Canada": {
+      "value": 5,
+      "unit": "per 100,000 population"
+    },
+    "Italy": {
+      "value": 5,
+      "unit": "per 100,000 population"
+    },
+    "France": {
+      "value": 5,
+      "unit": "per 100,000 population"
+    },
+    "Finland": {
+      "value": 4,
+      "unit": "per 100,000 population"
+    },
+    "Germany": {
+      "value": 4,
+      "unit": "per 100,000 population"
+    },
+    "Denmark": {
+      "value": 4,
+      "unit": "per 100,000 population"
+    },
+    "Israel": {
+      "value": 4,
+      "unit": "per 100,000 population"
+    },
+    "Japan": {
+      "value": 4,
+      "unit": "per 100,000 population"
+    },
+    "United Kingdom": {
+      "value": 3,
+      "unit": "per 100,000 population"
+    },
+    "Ireland": {
+      "value": 3,
+      "unit": "per 100,000 population"
+    },
+    "Sweden": {
+      "value": 3,
+      "unit": "per 100,000 population"
+    },
+    "Norway": {
+      "value": 2,
+      "unit": "per 100,000 population"
+    },
+    "Switzerland": {
+      "value": 2,
+      "unit": "per 100,000 population"
+    }
+  }
+}
+
