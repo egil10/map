@@ -1,0 +1,81 @@
+{
+  "title": "Nuclear Power Capacity by Country",
+  "description": "Nuclear power capacity in gigawatts (GW) by country",
+  "unit": "GW",
+  "source": "https://x.com/stats_feed/status/1981645577784877453",
+  "data": {
+    "United States": {
+      "value": 97,
+      "unit": "GW"
+    },
+    "France": {
+      "value": 63,
+      "unit": "GW"
+    },
+    "China": {
+      "value": 55,
+      "unit": "GW"
+    },
+    "Russia": {
+      "value": 27,
+      "unit": "GW"
+    },
+    "South Korea": {
+      "value": 26,
+      "unit": "GW"
+    },
+    "Ukraine": {
+      "value": 13,
+      "unit": "GW"
+    },
+    "Canada": {
+      "value": 13,
+      "unit": "GW"
+    },
+    "Japan": {
+      "value": 13,
+      "unit": "GW"
+    },
+    "India": {
+      "value": 8,
+      "unit": "GW"
+    },
+    "Spain": {
+      "value": 7,
+      "unit": "GW"
+    },
+    "Sweden": {
+      "value": 7,
+      "unit": "GW"
+    },
+    "United Kingdom": {
+      "value": 6,
+      "unit": "GW"
+    },
+    "United Arab Emirates": {
+      "value": 5,
+      "unit": "GW"
+    },
+    "Finland": {
+      "value": 4,
+      "unit": "GW"
+    },
+    "Czech Republic": {
+      "value": 4,
+      "unit": "GW"
+    },
+    "Belgium": {
+      "value": 4,
+      "unit": "GW"
+    },
+    "Pakistan": {
+      "value": 3,
+      "unit": "GW"
+    },
+    "Switzerland": {
+      "value": 3,
+      "unit": "GW"
+    }
+  }
+}
+

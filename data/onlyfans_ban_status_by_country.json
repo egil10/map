@@ -1,0 +1,73 @@
+{
+  "title": "OnlyFans Ban Status by Country",
+  "description": "Countries where OnlyFans is banned",
+  "unit": "status",
+  "source": "https://x.com/stats_feed/status/1891339288044069085",
+  "data": {
+    "Afghanistan": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Angola": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Bahrain": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Bangladesh": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "China": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "India": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Kuwait": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Qatar": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Russia": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Thailand": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "Turkey": {
+      "value": "Banned",
+      "unit": "status"
+    },
+    "United Arab Emirates": {
+      "value": "Banned",
+      "unit": "status"
+    }
+  }
+}
+

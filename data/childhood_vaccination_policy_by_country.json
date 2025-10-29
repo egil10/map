@@ -1,0 +1,213 @@
+{
+  "title": "Childhood Vaccination Policy by Country",
+  "description": "Childhood vaccination policy status according to Vanderslott & Marks. Policies can vary at the state level in some countries. Countries are listed based on having requirements or recommendations for at least one vaccine.",
+  "unit": "policy",
+  "source": "https://x.com/stats_feed/status/1786039754351403348",
+  "data": {
+    "Mexico": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Venezuela": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Brazil": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Peru": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Chile": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Argentina": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "France": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Poland": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Czech Republic": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Hungary": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Italy": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Latvia": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Ukraine": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Egypt": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Syria": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Saudi Arabia": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Iran": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Kazakhstan": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Mongolia": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Pakistan": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Vietnam": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Indonesia": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "South Korea": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "Philippines": {
+      "value": "Mandatory",
+      "unit": "policy"
+    },
+    "United States": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Colombia": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Paraguay": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Germany": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Iraq": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Kyrgyzstan": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "United Arab Emirates": {
+      "value": "Mandatory for school entry",
+      "unit": "policy"
+    },
+    "Canada": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Bolivia": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Spain": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Portugal": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "United Kingdom": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Norway": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Sweden": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Finland": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Switzerland": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Austria": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Belarus": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Lithuania": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Netherlands": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Romania": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Turkey": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Russia": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "China": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "India": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Japan": {
+      "value": "Recommended",
+      "unit": "policy"
+    },
+    "Australia": {
+      "value": "Recommended",
+      "unit": "policy"
+    }
+  }
+}
+

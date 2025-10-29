@@ -1,0 +1,109 @@
+{
+  "title": "Favorable View of China by Country",
+  "description": "Percentage of population with favorable view of China according to Pew Research (2025)",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1970388915824554115",
+  "data": {
+    "Nigeria": {
+      "value": 81,
+      "unit": "percentage"
+    },
+    "Kenya": {
+      "value": 74,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 65,
+      "unit": "percentage"
+    },
+    "South Africa": {
+      "value": 57,
+      "unit": "percentage"
+    },
+    "Greece": {
+      "value": 56,
+      "unit": "percentage"
+    },
+    "Mexico": {
+      "value": 56,
+      "unit": "percentage"
+    },
+    "Brazil": {
+      "value": 51,
+      "unit": "percentage"
+    },
+    "Hungary": {
+      "value": 51,
+      "unit": "percentage"
+    },
+    "Argentina": {
+      "value": 47,
+      "unit": "percentage"
+    },
+    "Italy": {
+      "value": 45,
+      "unit": "percentage"
+    },
+    "United Kingdom": {
+      "value": 39,
+      "unit": "percentage"
+    },
+    "Spain": {
+      "value": 37,
+      "unit": "percentage"
+    },
+    "France": {
+      "value": 36,
+      "unit": "percentage"
+    },
+    "Poland": {
+      "value": 35,
+      "unit": "percentage"
+    },
+    "Canada": {
+      "value": 34,
+      "unit": "percentage"
+    },
+    "Israel": {
+      "value": 33,
+      "unit": "percentage"
+    },
+    "Turkey": {
+      "value": 35,
+      "unit": "percentage"
+    },
+    "Netherlands": {
+      "value": 30,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 29,
+      "unit": "percentage"
+    },
+    "Australia": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 21,
+      "unit": "percentage"
+    },
+    "United States": {
+      "value": 21,
+      "unit": "percentage"
+    },
+    "South Korea": {
+      "value": 19,
+      "unit": "percentage"
+    },
+    "Sweden": {
+      "value": 18,
+      "unit": "percentage"
+    },
+    "Japan": {
+      "value": 13,
+      "unit": "percentage"
+    }
+  }
+}
+

@@ -1,0 +1,225 @@
+{
+  "title": "World Pasta Consumption per Capita by Country",
+  "description": "Pasta consumption in kilograms per capita according to survey carried out by I.P.O. and U.N.A.F.P.A. (Data updated to October 2024)",
+  "unit": "kg per capita",
+  "source": "https://x.com/stats_feed/status/1981680255711801578",
+  "data": {
+    "Italy": {
+      "value": 23.3,
+      "unit": "kg per capita"
+    },
+    "Tunisia": {
+      "value": 17.0,
+      "unit": "kg per capita"
+    },
+    "Venezuela": {
+      "value": 13.6,
+      "unit": "kg per capita"
+    },
+    "Greece": {
+      "value": 12.2,
+      "unit": "kg per capita"
+    },
+    "Peru": {
+      "value": 9.9,
+      "unit": "kg per capita"
+    },
+    "Chile": {
+      "value": 9.6,
+      "unit": "kg per capita"
+    },
+    "Germany": {
+      "value": 9.3,
+      "unit": "kg per capita"
+    },
+    "United States": {
+      "value": 8.8,
+      "unit": "kg per capita"
+    },
+    "France": {
+      "value": 8.6,
+      "unit": "kg per capita"
+    },
+    "Iran": {
+      "value": 8.5,
+      "unit": "kg per capita"
+    },
+    "Hungary": {
+      "value": 7.5,
+      "unit": "kg per capita"
+    },
+    "Uruguay": {
+      "value": 7.5,
+      "unit": "kg per capita"
+    },
+    "Turkey": {
+      "value": 7.1,
+      "unit": "kg per capita"
+    },
+    "Egypt": {
+      "value": 7.1,
+      "unit": "kg per capita"
+    },
+    "Portugal": {
+      "value": 7.0,
+      "unit": "kg per capita"
+    },
+    "Russia": {
+      "value": 6.6,
+      "unit": "kg per capita"
+    },
+    "Czech Republic": {
+      "value": 6.4,
+      "unit": "kg per capita"
+    },
+    "Canada": {
+      "value": 6.3,
+      "unit": "kg per capita"
+    },
+    "Argentina": {
+      "value": 5.7,
+      "unit": "kg per capita"
+    },
+    "Brazil": {
+      "value": 5.4,
+      "unit": "kg per capita"
+    },
+    "Estonia": {
+      "value": 5.3,
+      "unit": "kg per capita"
+    },
+    "Switzerland": {
+      "value": 5.2,
+      "unit": "kg per capita"
+    },
+    "Poland": {
+      "value": 5.0,
+      "unit": "kg per capita"
+    },
+    "Belgium": {
+      "value": 5.0,
+      "unit": "kg per capita"
+    },
+    "Slovakia": {
+      "value": 5.0,
+      "unit": "kg per capita"
+    },
+    "Sweden": {
+      "value": 4.9,
+      "unit": "kg per capita"
+    },
+    "Bolivia": {
+      "value": 4.8,
+      "unit": "kg per capita"
+    },
+    "Austria": {
+      "value": 4.8,
+      "unit": "kg per capita"
+    },
+    "Lithuania": {
+      "value": 4.4,
+      "unit": "kg per capita"
+    },
+    "Slovenia": {
+      "value": 4.3,
+      "unit": "kg per capita"
+    },
+    "Latvia": {
+      "value": 4.1,
+      "unit": "kg per capita"
+    },
+    "Dominican Republic": {
+      "value": 4.0,
+      "unit": "kg per capita"
+    },
+    "Australia": {
+      "value": 4.0,
+      "unit": "kg per capita"
+    },
+    "Israel": {
+      "value": 4.0,
+      "unit": "kg per capita"
+    },
+    "Ecuador": {
+      "value": 4.0,
+      "unit": "kg per capita"
+    },
+    "Panama": {
+      "value": 3.8,
+      "unit": "kg per capita"
+    },
+    "Costa Rica": {
+      "value": 3.5,
+      "unit": "kg per capita"
+    },
+    "Nigeria": {
+      "value": 3.5,
+      "unit": "kg per capita"
+    },
+    "United Kingdom": {
+      "value": 3.5,
+      "unit": "kg per capita"
+    },
+    "Spain": {
+      "value": 3.2,
+      "unit": "kg per capita"
+    },
+    "Guatemala": {
+      "value": 3.2,
+      "unit": "kg per capita"
+    },
+    "Denmark": {
+      "value": 3.2,
+      "unit": "kg per capita"
+    },
+    "Finland": {
+      "value": 3.2,
+      "unit": "kg per capita"
+    },
+    "Mexico": {
+      "value": 3.0,
+      "unit": "kg per capita"
+    },
+    "Croatia": {
+      "value": 2.8,
+      "unit": "kg per capita"
+    },
+    "Netherlands": {
+      "value": 2.8,
+      "unit": "kg per capita"
+    },
+    "Colombia": {
+      "value": 2.7,
+      "unit": "kg per capita"
+    },
+    "Romania": {
+      "value": 2.7,
+      "unit": "kg per capita"
+    },
+    "Norway": {
+      "value": 2.7,
+      "unit": "kg per capita"
+    },
+    "Libya": {
+      "value": 2.0,
+      "unit": "kg per capita"
+    },
+    "South Africa": {
+      "value": 1.9,
+      "unit": "kg per capita"
+    },
+    "Japan": {
+      "value": 1.7,
+      "unit": "kg per capita"
+    },
+    "Ireland": {
+      "value": 1.0,
+      "unit": "kg per capita"
+    },
+    "El Salvador": {
+      "value": 1.0,
+      "unit": "kg per capita"
+    }
+  }
+}
+

@@ -1,0 +1,153 @@
+{
+  "title": "Cultural Similarity to Bangladesh by Country",
+  "description": "Cultural similarity index to Bangladesh according to Country Similarity Index",
+  "unit": "percentage",
+  "source": "https://x.com/stats_feed/status/1965984394146943394",
+  "data": {
+    "Pakistan": {
+      "value": 58,
+      "unit": "percentage"
+    },
+    "India": {
+      "value": 54,
+      "unit": "percentage"
+    },
+    "Nepal": {
+      "value": 51.5,
+      "unit": "percentage"
+    },
+    "Sri Lanka": {
+      "value": 50,
+      "unit": "percentage"
+    },
+    "Somalia": {
+      "value": 48.5,
+      "unit": "percentage"
+    },
+    "Malaysia": {
+      "value": 48,
+      "unit": "percentage"
+    },
+    "Bhutan": {
+      "value": 47.5,
+      "unit": "percentage"
+    },
+    "Indonesia": {
+      "value": 46.5,
+      "unit": "percentage"
+    },
+    "Brunei": {
+      "value": 46.5,
+      "unit": "percentage"
+    },
+    "Kuwait": {
+      "value": 46.5,
+      "unit": "percentage"
+    },
+    "Afghanistan": {
+      "value": 46,
+      "unit": "percentage"
+    },
+    "Djibouti": {
+      "value": 46,
+      "unit": "percentage"
+    },
+    "Qatar": {
+      "value": 46,
+      "unit": "percentage"
+    },
+    "Guinea": {
+      "value": 45.5,
+      "unit": "percentage"
+    },
+    "Egypt": {
+      "value": 45.5,
+      "unit": "percentage"
+    },
+    "United Arab Emirates": {
+      "value": 45.5,
+      "unit": "percentage"
+    },
+    "Oman": {
+      "value": 45.5,
+      "unit": "percentage"
+    },
+    "Sweden": {
+      "value": 24.5,
+      "unit": "percentage"
+    },
+    "Iceland": {
+      "value": 24.5,
+      "unit": "percentage"
+    },
+    "Denmark": {
+      "value": 24,
+      "unit": "percentage"
+    },
+    "Belgium": {
+      "value": 24,
+      "unit": "percentage"
+    },
+    "Austria": {
+      "value": 23.5,
+      "unit": "percentage"
+    },
+    "Norway": {
+      "value": 23.5,
+      "unit": "percentage"
+    },
+    "Lithuania": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "Russia": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "South Korea": {
+      "value": 23,
+      "unit": "percentage"
+    },
+    "Taiwan": {
+      "value": 22.5,
+      "unit": "percentage"
+    },
+    "Slovenia": {
+      "value": 22.5,
+      "unit": "percentage"
+    },
+    "Switzerland": {
+      "value": 22.5,
+      "unit": "percentage"
+    },
+    "Czech Republic": {
+      "value": 22,
+      "unit": "percentage"
+    },
+    "Luxembourg": {
+      "value": 22,
+      "unit": "percentage"
+    },
+    "Germany": {
+      "value": 22,
+      "unit": "percentage"
+    },
+    "Hungary": {
+      "value": 21.5,
+      "unit": "percentage"
+    },
+    "Latvia": {
+      "value": 21.5,
+      "unit": "percentage"
+    },
+    "Finland": {
+      "value": 21.5,
+      "unit": "percentage"
+    },
+    "Estonia": {
+      "value": 21,
+      "unit": "percentage"
+    }
+  }
+}
+
