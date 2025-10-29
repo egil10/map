@@ -1,0 +1,809 @@
+{
+  "title": "Recreational Cannabis Legality by Country",
+  "description": "Legal status of recreational cannabis use by country (Legal, Decriminalized, or Illegal)",
+  "unit": "status",
+  "source": "https://en.wikipedia.org/wiki/Legality_of_cannabis",
+  "data": {
+    "Nepal": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Afghanistan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Albania": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Algeria": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Andorra": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Angola": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Antigua and Barbuda": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Argentina": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Armenia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Australia": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Austria": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Azerbaijan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bahamas": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bahrain": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bangladesh": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Barbados": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Belarus": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Belgium": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Belize": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Benin": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bermuda": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Bhutan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bolivia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Botswana": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Brazil": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Brunei": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Bulgaria": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Burkina Faso": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Burundi": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Cambodia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Cameroon": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Canada": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Cape Verde": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Central African Republic": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Chad": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Chile": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Colombia": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Comoros": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Cook Islands": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Costa Rica": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Croatia": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Cuba": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Cyprus": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Czech Republic": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Denmark": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Djibouti": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Dominica": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Dominican Republic": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Ecuador": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Egypt": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "El Salvador": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Equatorial Guinea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Eritrea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Estonia": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Eswatini": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Ethiopia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Fiji": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Finland": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "France": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Gabon": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Gambia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Georgia": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Germany": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Ghana": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Greece": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Grenada": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Guatemala": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Guinea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Guinea-Bissau": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Guyana": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Haiti": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Honduras": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Hong Kong": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Hungary": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Iceland": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "India": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Indonesia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Iran": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Iraq": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Ireland": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Israel": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Italy": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Ivory Coast": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Jamaica": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Japan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Jordan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kazakhstan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kenya": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kiribati": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "North Korea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "South Korea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kosovo": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kuwait": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Kyrgyzstan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Laos": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Latvia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Lebanon": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Lesotho": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Liberia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Libya": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Liechtenstein": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Lithuania": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Luxembourg": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Macau": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Madagascar": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Malawi": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Malaysia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Maldives": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mali": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Malta": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Marshall Islands": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mauritania": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mauritius": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mexico": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Micronesia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Moldova": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Monaco": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mongolia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Montenegro": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Morocco": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Mozambique": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Myanmar": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Namibia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Nauru": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Netherlands": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "New Zealand": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Nicaragua": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Niger": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Nigeria": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "North Macedonia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Norway": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Oman": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Pakistan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Palau": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Panama": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Papua New Guinea": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Paraguay": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "China": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Peru": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Philippines": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Poland": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Portugal": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Qatar": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Congo": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Romania": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Russia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Rwanda": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Saint Lucia": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Samoa": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "San Marino": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Sao Tome and Principe": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Saudi Arabia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Senegal": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Serbia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Seychelles": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Sierra Leone": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Singapore": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Slovakia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Slovenia": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Solomon Islands": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Somalia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "South Africa": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "South Sudan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Spain": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Sri Lanka": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Sudan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Suriname": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Sweden": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Switzerland": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Syria": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Taiwan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Tajikistan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Tanzania": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Thailand": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Timor-Leste": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Togo": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Tonga": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Trinidad and Tobago": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "Tunisia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Turkey": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Turkmenistan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Tuvalu": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Uganda": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Ukraine": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "United Arab Emirates": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "United Kingdom": {
+      "value": "Decriminalized",
+      "unit": "status"
+    },
+    "United States": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Uruguay": {
+      "value": "Legal",
+      "unit": "status"
+    },
+    "Uzbekistan": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Vanuatu": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Vatican City": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Venezuela": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Vietnam": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Yemen": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Zambia": {
+      "value": "Illegal",
+      "unit": "status"
+    },
+    "Zimbabwe": {
+      "value": "Illegal",
+      "unit": "status"
+    }
+  }
+}
+
