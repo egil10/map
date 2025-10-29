@@ -1,0 +1,741 @@
+{
+  "title": "Sugar and Sweeteners Consumption per Capita by Country",
+  "description": "Annual per capita consumption of sugars and sweeteners in kilograms according to World Population Review (2025)",
+  "unit": "kg per capita",
+  "source": "https://worldpopulationreview.com/country-rankings/sugar-consumption-by-country",
+  "data": {
+    "Luxembourg": {
+      "value": 166,
+      "unit": "kg per capita"
+    },
+    "Fiji": {
+      "value": 136,
+      "unit": "kg per capita"
+    },
+    "Suriname": {
+      "value": 125,
+      "unit": "kg per capita"
+    },
+    "Montenegro": {
+      "value": 112,
+      "unit": "kg per capita"
+    },
+    "Australia": {
+      "value": 103,
+      "unit": "kg per capita"
+    },
+    "Iceland": {
+      "value": 102,
+      "unit": "kg per capita"
+    },
+    "Lithuania": {
+      "value": 96.8,
+      "unit": "kg per capita"
+    },
+    "Ireland": {
+      "value": 96.2,
+      "unit": "kg per capita"
+    },
+    "Nauru": {
+      "value": 95.9,
+      "unit": "kg per capita"
+    },
+    "Macao": {
+      "value": 94.7,
+      "unit": "kg per capita"
+    },
+    "Estonia": {
+      "value": 88.5,
+      "unit": "kg per capita"
+    },
+    "Saint Lucia": {
+      "value": 87.2,
+      "unit": "kg per capita"
+    },
+    "Saint Kitts and Nevis": {
+      "value": 86,
+      "unit": "kg per capita"
+    },
+    "Bolivia": {
+      "value": 82.3,
+      "unit": "kg per capita"
+    },
+    "Mongolia": {
+      "value": 82.1,
+      "unit": "kg per capita"
+    },
+    "Lebanon": {
+      "value": 78.7,
+      "unit": "kg per capita"
+    },
+    "Ecuador": {
+      "value": 78.5,
+      "unit": "kg per capita"
+    },
+    "Malta": {
+      "value": 77.2,
+      "unit": "kg per capita"
+    },
+    "Gambia": {
+      "value": 76.1,
+      "unit": "kg per capita"
+    },
+    "Croatia": {
+      "value": 74.5,
+      "unit": "kg per capita"
+    },
+    "Cyprus": {
+      "value": 69.7,
+      "unit": "kg per capita"
+    },
+    "Namibia": {
+      "value": 69.7,
+      "unit": "kg per capita"
+    },
+    "Guyana": {
+      "value": 69.2,
+      "unit": "kg per capita"
+    },
+    "Barbados": {
+      "value": 69.2,
+      "unit": "kg per capita"
+    },
+    "Latvia": {
+      "value": 68,
+      "unit": "kg per capita"
+    },
+    "United States": {
+      "value": 67.1,
+      "unit": "kg per capita"
+    },
+    "Norway": {
+      "value": 65.5,
+      "unit": "kg per capita"
+    },
+    "Ukraine": {
+      "value": 65.2,
+      "unit": "kg per capita"
+    },
+    "Bahamas": {
+      "value": 63.4,
+      "unit": "kg per capita"
+    },
+    "Russia": {
+      "value": 62,
+      "unit": "kg per capita"
+    },
+    "Slovakia": {
+      "value": 60.8,
+      "unit": "kg per capita"
+    },
+    "Azerbaijan": {
+      "value": 59,
+      "unit": "kg per capita"
+    },
+    "Belarus": {
+      "value": 59,
+      "unit": "kg per capita"
+    },
+    "Colombia": {
+      "value": 58.8,
+      "unit": "kg per capita"
+    },
+    "Bahrain": {
+      "value": 58.3,
+      "unit": "kg per capita"
+    },
+    "Honduras": {
+      "value": 57.9,
+      "unit": "kg per capita"
+    },
+    "Dominica": {
+      "value": 57.3,
+      "unit": "kg per capita"
+    },
+    "Denmark": {
+      "value": 57.1,
+      "unit": "kg per capita"
+    },
+    "Hong Kong": {
+      "value": 56.6,
+      "unit": "kg per capita"
+    },
+    "Guatemala": {
+      "value": 55.4,
+      "unit": "kg per capita"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": 55.3,
+      "unit": "kg per capita"
+    },
+    "New Zealand": {
+      "value": 54.9,
+      "unit": "kg per capita"
+    },
+    "Israel": {
+      "value": 54.6,
+      "unit": "kg per capita"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 54.6,
+      "unit": "kg per capita"
+    },
+    "Moldova": {
+      "value": 54,
+      "unit": "kg per capita"
+    },
+    "Eswatini": {
+      "value": 53,
+      "unit": "kg per capita"
+    },
+    "Kyrgyzstan": {
+      "value": 52.3,
+      "unit": "kg per capita"
+    },
+    "Armenia": {
+      "value": 52.1,
+      "unit": "kg per capita"
+    },
+    "Thailand": {
+      "value": 52,
+      "unit": "kg per capita"
+    },
+    "Botswana": {
+      "value": 51.8,
+      "unit": "kg per capita"
+    },
+    "Jamaica": {
+      "value": 51.8,
+      "unit": "kg per capita"
+    },
+    "Albania": {
+      "value": 51,
+      "unit": "kg per capita"
+    },
+    "South Korea": {
+      "value": 50.9,
+      "unit": "kg per capita"
+    },
+    "Panama": {
+      "value": 50.6,
+      "unit": "kg per capita"
+    },
+    "Cuba": {
+      "value": 50.5,
+      "unit": "kg per capita"
+    },
+    "Poland": {
+      "value": 50.4,
+      "unit": "kg per capita"
+    },
+    "Belgium": {
+      "value": 50.4,
+      "unit": "kg per capita"
+    },
+    "Slovenia": {
+      "value": 50.3,
+      "unit": "kg per capita"
+    },
+    "Germany": {
+      "value": 50.1,
+      "unit": "kg per capita"
+    },
+    "Uruguay": {
+      "value": 50,
+      "unit": "kg per capita"
+    },
+    "Canada": {
+      "value": 50,
+      "unit": "kg per capita"
+    },
+    "Micronesia": {
+      "value": 49.9,
+      "unit": "kg per capita"
+    },
+    "Finland": {
+      "value": 49.8,
+      "unit": "kg per capita"
+    },
+    "Hungary": {
+      "value": 49.5,
+      "unit": "kg per capita"
+    },
+    "North Macedonia": {
+      "value": 49.5,
+      "unit": "kg per capita"
+    },
+    "Jordan": {
+      "value": 48.4,
+      "unit": "kg per capita"
+    },
+    "Chile": {
+      "value": 48,
+      "unit": "kg per capita"
+    },
+    "Bulgaria": {
+      "value": 48,
+      "unit": "kg per capita"
+    },
+    "Netherlands": {
+      "value": 47.8,
+      "unit": "kg per capita"
+    },
+    "Kiribati": {
+      "value": 47.8,
+      "unit": "kg per capita"
+    },
+    "Costa Rica": {
+      "value": 47.4,
+      "unit": "kg per capita"
+    },
+    "New Caledonia": {
+      "value": 46.8,
+      "unit": "kg per capita"
+    },
+    "Antigua and Barbuda": {
+      "value": 46.6,
+      "unit": "kg per capita"
+    },
+    "Sweden": {
+      "value": 46.6,
+      "unit": "kg per capita"
+    },
+    "Kuwait": {
+      "value": 46.5,
+      "unit": "kg per capita"
+    },
+    "Dominican Republic": {
+      "value": 46.3,
+      "unit": "kg per capita"
+    },
+    "Laos": {
+      "value": 45.6,
+      "unit": "kg per capita"
+    },
+    "Trinidad and Tobago": {
+      "value": 45.1,
+      "unit": "kg per capita"
+    },
+    "Mauritania": {
+      "value": 44.8,
+      "unit": "kg per capita"
+    },
+    "Grenada": {
+      "value": 43.9,
+      "unit": "kg per capita"
+    },
+    "United Kingdom": {
+      "value": 43.8,
+      "unit": "kg per capita"
+    },
+    "Qatar": {
+      "value": 43.6,
+      "unit": "kg per capita"
+    },
+    "Czech Republic": {
+      "value": 42.9,
+      "unit": "kg per capita"
+    },
+    "Mauritius": {
+      "value": 42.9,
+      "unit": "kg per capita"
+    },
+    "Libya": {
+      "value": 42.8,
+      "unit": "kg per capita"
+    },
+    "Switzerland": {
+      "value": 41.6,
+      "unit": "kg per capita"
+    },
+    "Malaysia": {
+      "value": 41.6,
+      "unit": "kg per capita"
+    },
+    "French Polynesia": {
+      "value": 41.6,
+      "unit": "kg per capita"
+    },
+    "Austria": {
+      "value": 41.3,
+      "unit": "kg per capita"
+    },
+    "Samoa": {
+      "value": 41.2,
+      "unit": "kg per capita"
+    },
+    "Seychelles": {
+      "value": 41,
+      "unit": "kg per capita"
+    },
+    "Mexico": {
+      "value": 40.8,
+      "unit": "kg per capita"
+    },
+    "Georgia": {
+      "value": 40.8,
+      "unit": "kg per capita"
+    },
+    "Greece": {
+      "value": 40.4,
+      "unit": "kg per capita"
+    },
+    "Belize": {
+      "value": 39.9,
+      "unit": "kg per capita"
+    },
+    "Nicaragua": {
+      "value": 39.7,
+      "unit": "kg per capita"
+    },
+    "Djibouti": {
+      "value": 39.5,
+      "unit": "kg per capita"
+    },
+    "Argentina": {
+      "value": 37.9,
+      "unit": "kg per capita"
+    },
+    "Brazil": {
+      "value": 37.5,
+      "unit": "kg per capita"
+    },
+    "Italy": {
+      "value": 37.5,
+      "unit": "kg per capita"
+    },
+    "France": {
+      "value": 37.1,
+      "unit": "kg per capita"
+    },
+    "South Africa": {
+      "value": 36.9,
+      "unit": "kg per capita"
+    },
+    "Timor-Leste": {
+      "value": 36,
+      "unit": "kg per capita"
+    },
+    "São Tomé and Príncipe": {
+      "value": 35.6,
+      "unit": "kg per capita"
+    },
+    "Tunisia": {
+      "value": 34.8,
+      "unit": "kg per capita"
+    },
+    "Oman": {
+      "value": 34.8,
+      "unit": "kg per capita"
+    },
+    "Spain": {
+      "value": 34.4,
+      "unit": "kg per capita"
+    },
+    "Sudan": {
+      "value": 34.1,
+      "unit": "kg per capita"
+    },
+    "Iran": {
+      "value": 33.9,
+      "unit": "kg per capita"
+    },
+    "Maldives": {
+      "value": 33.9,
+      "unit": "kg per capita"
+    },
+    "Saudi Arabia": {
+      "value": 33.4,
+      "unit": "kg per capita"
+    },
+    "El Salvador": {
+      "value": 33.1,
+      "unit": "kg per capita"
+    },
+    "Morocco": {
+      "value": 32.9,
+      "unit": "kg per capita"
+    },
+    "Pakistan": {
+      "value": 32.9,
+      "unit": "kg per capita"
+    },
+    "Sri Lanka": {
+      "value": 32.7,
+      "unit": "kg per capita"
+    },
+    "Vietnam": {
+      "value": 32.7,
+      "unit": "kg per capita"
+    },
+    "Kazakhstan": {
+      "value": 32.5,
+      "unit": "kg per capita"
+    },
+    "United Arab Emirates": {
+      "value": 32.3,
+      "unit": "kg per capita"
+    },
+    "Comoros": {
+      "value": 31.9,
+      "unit": "kg per capita"
+    },
+    "Algeria": {
+      "value": 31.4,
+      "unit": "kg per capita"
+    },
+    "Romania": {
+      "value": 31.3,
+      "unit": "kg per capita"
+    },
+    "Indonesia": {
+      "value": 30.7,
+      "unit": "kg per capita"
+    },
+    "Venezuela": {
+      "value": 30.6,
+      "unit": "kg per capita"
+    },
+    "Turkey": {
+      "value": 29.2,
+      "unit": "kg per capita"
+    },
+    "Cape Verde": {
+      "value": 29.2,
+      "unit": "kg per capita"
+    },
+    "Portugal": {
+      "value": 29.1,
+      "unit": "kg per capita"
+    },
+    "Japan": {
+      "value": 28.5,
+      "unit": "kg per capita"
+    },
+    "Lesotho": {
+      "value": 26.5,
+      "unit": "kg per capita"
+    },
+    "Zimbabwe": {
+      "value": 26,
+      "unit": "kg per capita"
+    },
+    "Taiwan": {
+      "value": 25.9,
+      "unit": "kg per capita"
+    },
+    "Uzbekistan": {
+      "value": 25.7,
+      "unit": "kg per capita"
+    },
+    "Yemen": {
+      "value": 25.4,
+      "unit": "kg per capita"
+    },
+    "Myanmar": {
+      "value": 25.1,
+      "unit": "kg per capita"
+    },
+    "Cambodia": {
+      "value": 25,
+      "unit": "kg per capita"
+    },
+    "Philippines": {
+      "value": 24.2,
+      "unit": "kg per capita"
+    },
+    "Paraguay": {
+      "value": 23.5,
+      "unit": "kg per capita"
+    },
+    "Iraq": {
+      "value": 23.3,
+      "unit": "kg per capita"
+    },
+    "Kenya": {
+      "value": 22.6,
+      "unit": "kg per capita"
+    },
+    "Haiti": {
+      "value": 22.2,
+      "unit": "kg per capita"
+    },
+    "Egypt": {
+      "value": 22.2,
+      "unit": "kg per capita"
+    },
+    "Syria": {
+      "value": 20.5,
+      "unit": "kg per capita"
+    },
+    "Peru": {
+      "value": 20.2,
+      "unit": "kg per capita"
+    },
+    "India": {
+      "value": 20.1,
+      "unit": "kg per capita"
+    },
+    "Gabon": {
+      "value": 19.4,
+      "unit": "kg per capita"
+    },
+    "Tajikistan": {
+      "value": 19.2,
+      "unit": "kg per capita"
+    },
+    "Senegal": {
+      "value": 19.2,
+      "unit": "kg per capita"
+    },
+    "Turkmenistan": {
+      "value": 19.2,
+      "unit": "kg per capita"
+    },
+    "Guinea": {
+      "value": 19.1,
+      "unit": "kg per capita"
+    },
+    "Solomon Islands": {
+      "value": 18.9,
+      "unit": "kg per capita"
+    },
+    "Angola": {
+      "value": 16.3,
+      "unit": "kg per capita"
+    },
+    "Vanuatu": {
+      "value": 15.2,
+      "unit": "kg per capita"
+    },
+    "Republic of the Congo": {
+      "value": 15.1,
+      "unit": "kg per capita"
+    },
+    "Rwanda": {
+      "value": 14.5,
+      "unit": "kg per capita"
+    },
+    "Bhutan": {
+      "value": 14.4,
+      "unit": "kg per capita"
+    },
+    "Uganda": {
+      "value": 13.9,
+      "unit": "kg per capita"
+    },
+    "Côte d'Ivoire": {
+      "value": 13.8,
+      "unit": "kg per capita"
+    },
+    "Cameroon": {
+      "value": 12.9,
+      "unit": "kg per capita"
+    },
+    "Ghana": {
+      "value": 12.7,
+      "unit": "kg per capita"
+    },
+    "Serbia": {
+      "value": 12.6,
+      "unit": "kg per capita"
+    },
+    "Zambia": {
+      "value": 12.4,
+      "unit": "kg per capita"
+    },
+    "Papua New Guinea": {
+      "value": 11.4,
+      "unit": "kg per capita"
+    },
+    "Malawi": {
+      "value": 11.3,
+      "unit": "kg per capita"
+    },
+    "Guinea-Bissau": {
+      "value": 11.2,
+      "unit": "kg per capita"
+    },
+    "Tanzania": {
+      "value": 11,
+      "unit": "kg per capita"
+    },
+    "Chad": {
+      "value": 10.1,
+      "unit": "kg per capita"
+    },
+    "Nepal": {
+      "value": 10.1,
+      "unit": "kg per capita"
+    },
+    "Bangladesh": {
+      "value": 9.86,
+      "unit": "kg per capita"
+    },
+    "Benin": {
+      "value": 9.43,
+      "unit": "kg per capita"
+    },
+    "Mali": {
+      "value": 9.4,
+      "unit": "kg per capita"
+    },
+    "China": {
+      "value": 9.04,
+      "unit": "kg per capita"
+    },
+    "Mozambique": {
+      "value": 9.04,
+      "unit": "kg per capita"
+    },
+    "South Sudan": {
+      "value": 8.86,
+      "unit": "kg per capita"
+    },
+    "Afghanistan": {
+      "value": 8.43,
+      "unit": "kg per capita"
+    },
+    "Burkina Faso": {
+      "value": 8.4,
+      "unit": "kg per capita"
+    },
+    "Central African Republic": {
+      "value": 8.35,
+      "unit": "kg per capita"
+    },
+    "Madagascar": {
+      "value": 8.07,
+      "unit": "kg per capita"
+    },
+    "Nigeria": {
+      "value": 8.01,
+      "unit": "kg per capita"
+    },
+    "Liberia": {
+      "value": 7.75,
+      "unit": "kg per capita"
+    },
+    "Ethiopia": {
+      "value": 7.72,
+      "unit": "kg per capita"
+    },
+    "Sierra Leone": {
+      "value": 6.48,
+      "unit": "kg per capita"
+    },
+    "Niger": {
+      "value": 5.88,
+      "unit": "kg per capita"
+    },
+    "Burundi": {
+      "value": 5.88,
+      "unit": "kg per capita"
+    },
+    "Democratic Republic of the Congo": {
+      "value": 3.13,
+      "unit": "kg per capita"
+    }
+  }
+}
+

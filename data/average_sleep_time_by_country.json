@@ -1,0 +1,209 @@
+{
+  "title": "Average Sleep Time by Country",
+  "description": "Average time in bed per day in minutes according to World Population Review (2015)",
+  "unit": "minutes",
+  "source": "https://worldpopulationreview.com/country-rankings/average-sleep-time-by-country",
+  "data": {
+    "New Zealand": {
+      "value": 447,
+      "unit": "minutes"
+    },
+    "Netherlands": {
+      "value": 444,
+      "unit": "minutes"
+    },
+    "Finland": {
+      "value": 443,
+      "unit": "minutes"
+    },
+    "United Kingdom": {
+      "value": 442,
+      "unit": "minutes"
+    },
+    "Australia": {
+      "value": 440,
+      "unit": "minutes"
+    },
+    "Belgium": {
+      "value": 438,
+      "unit": "minutes"
+    },
+    "Ireland": {
+      "value": 437,
+      "unit": "minutes"
+    },
+    "Sweden": {
+      "value": 435,
+      "unit": "minutes"
+    },
+    "France": {
+      "value": 434,
+      "unit": "minutes"
+    },
+    "Denmark": {
+      "value": 434,
+      "unit": "minutes"
+    },
+    "Canada": {
+      "value": 431,
+      "unit": "minutes"
+    },
+    "Norway": {
+      "value": 429,
+      "unit": "minutes"
+    },
+    "Switzerland": {
+      "value": 428,
+      "unit": "minutes"
+    },
+    "Germany": {
+      "value": 427,
+      "unit": "minutes"
+    },
+    "Austria": {
+      "value": 427,
+      "unit": "minutes"
+    },
+    "United States": {
+      "value": 426,
+      "unit": "minutes"
+    },
+    "South Africa": {
+      "value": 424,
+      "unit": "minutes"
+    },
+    "Hungary": {
+      "value": 422,
+      "unit": "minutes"
+    },
+    "Czech Republic": {
+      "value": 420,
+      "unit": "minutes"
+    },
+    "Portugal": {
+      "value": 419,
+      "unit": "minutes"
+    },
+    "Romania": {
+      "value": 418,
+      "unit": "minutes"
+    },
+    "Slovakia": {
+      "value": 417,
+      "unit": "minutes"
+    },
+    "Spain": {
+      "value": 416,
+      "unit": "minutes"
+    },
+    "Italy": {
+      "value": 414,
+      "unit": "minutes"
+    },
+    "Greece": {
+      "value": 414,
+      "unit": "minutes"
+    },
+    "Ukraine": {
+      "value": 412,
+      "unit": "minutes"
+    },
+    "Poland": {
+      "value": 410,
+      "unit": "minutes"
+    },
+    "Russia": {
+      "value": 405,
+      "unit": "minutes"
+    },
+    "United Arab Emirates": {
+      "value": 405,
+      "unit": "minutes"
+    },
+    "China": {
+      "value": 403,
+      "unit": "minutes"
+    },
+    "Thailand": {
+      "value": 402,
+      "unit": "minutes"
+    },
+    "Brazil": {
+      "value": 400,
+      "unit": "minutes"
+    },
+    "Chile": {
+      "value": 399,
+      "unit": "minutes"
+    },
+    "Hong Kong": {
+      "value": 399,
+      "unit": "minutes"
+    },
+    "Costa Rica": {
+      "value": 399,
+      "unit": "minutes"
+    },
+    "Mexico": {
+      "value": 397,
+      "unit": "minutes"
+    },
+    "Colombia": {
+      "value": 397,
+      "unit": "minutes"
+    },
+    "Israel": {
+      "value": 396,
+      "unit": "minutes"
+    },
+    "India": {
+      "value": 395,
+      "unit": "minutes"
+    },
+    "Turkey": {
+      "value": 395,
+      "unit": "minutes"
+    },
+    "Singapore": {
+      "value": 394,
+      "unit": "minutes"
+    },
+    "Malaysia": {
+      "value": 387,
+      "unit": "minutes"
+    },
+    "Qatar": {
+      "value": 386,
+      "unit": "minutes"
+    },
+    "Indonesia": {
+      "value": 385,
+      "unit": "minutes"
+    },
+    "Taiwan": {
+      "value": 381,
+      "unit": "minutes"
+    },
+    "Kuwait": {
+      "value": 375,
+      "unit": "minutes"
+    },
+    "Philippines": {
+      "value": 368,
+      "unit": "minutes"
+    },
+    "South Korea": {
+      "value": 362,
+      "unit": "minutes"
+    },
+    "Saudi Arabia": {
+      "value": 362,
+      "unit": "minutes"
+    },
+    "Japan": {
+      "value": 352,
+      "unit": "minutes"
+    }
+  }
+}
+

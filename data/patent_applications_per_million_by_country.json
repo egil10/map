@@ -1,0 +1,461 @@
+{
+  "title": "Annual Patent Applications per Million People by Country",
+  "description": "Annual patent applications per million people according to Our World in Data (2021)",
+  "unit": "patents per million",
+  "source": "https://ourworldindata.org/grapher/patent-applications-per-million",
+  "data": {
+    "Albania": {
+      "value": 8.18,
+      "unit": "patents per million"
+    },
+    "Algeria": {
+      "value": 5.99,
+      "unit": "patents per million"
+    },
+    "Andorra": {
+      "value": 38.28,
+      "unit": "patents per million"
+    },
+    "Argentina": {
+      "value": 8.96,
+      "unit": "patents per million"
+    },
+    "Armenia": {
+      "value": 13.50,
+      "unit": "patents per million"
+    },
+    "Australia": {
+      "value": 115.47,
+      "unit": "patents per million"
+    },
+    "Austria": {
+      "value": 209.03,
+      "unit": "patents per million"
+    },
+    "Azerbaijan": {
+      "value": 11.74,
+      "unit": "patents per million"
+    },
+    "Bahrain": {
+      "value": 1.99,
+      "unit": "patents per million"
+    },
+    "Bangladesh": {
+      "value": 0.44,
+      "unit": "patents per million"
+    },
+    "Barbados": {
+      "value": 258.73,
+      "unit": "patents per million"
+    },
+    "Belarus": {
+      "value": 29.67,
+      "unit": "patents per million"
+    },
+    "Belgium": {
+      "value": 68.96,
+      "unit": "patents per million"
+    },
+    "Bolivia": {
+      "value": 0.42,
+      "unit": "patents per million"
+    },
+    "Bosnia and Herzegovina": {
+      "value": 16.33,
+      "unit": "patents per million"
+    },
+    "Botswana": {
+      "value": 1.25,
+      "unit": "patents per million"
+    },
+    "Brazil": {
+      "value": 22.27,
+      "unit": "patents per million"
+    },
+    "Brunei": {
+      "value": 4.43,
+      "unit": "patents per million"
+    },
+    "Bulgaria": {
+      "value": 25.36,
+      "unit": "patents per million"
+    },
+    "Canada": {
+      "value": 123.17,
+      "unit": "patents per million"
+    },
+    "Cape Verde": {
+      "value": 1.94,
+      "unit": "patents per million"
+    },
+    "Chile": {
+      "value": 20.66,
+      "unit": "patents per million"
+    },
+    "China": {
+      "value": 1010.11,
+      "unit": "patents per million"
+    },
+    "Colombia": {
+      "value": 8.44,
+      "unit": "patents per million"
+    },
+    "Costa Rica": {
+      "value": 2.96,
+      "unit": "patents per million"
+    },
+    "Croatia": {
+      "value": 19.85,
+      "unit": "patents per million"
+    },
+    "Cuba": {
+      "value": 1.89,
+      "unit": "patents per million"
+    },
+    "Cyprus": {
+      "value": 0.76,
+      "unit": "patents per million"
+    },
+    "Czech Republic": {
+      "value": 51.50,
+      "unit": "patents per million"
+    },
+    "Denmark": {
+      "value": 186.11,
+      "unit": "patents per million"
+    },
+    "Djibouti": {
+      "value": 2.68,
+      "unit": "patents per million"
+    },
+    "Dominican Republic": {
+      "value": 0.63,
+      "unit": "patents per million"
+    },
+    "Ecuador": {
+      "value": 1.98,
+      "unit": "patents per million"
+    },
+    "Egypt": {
+      "value": 7.94,
+      "unit": "patents per million"
+    },
+    "El Salvador": {
+      "value": 0.32,
+      "unit": "patents per million"
+    },
+    "Estonia": {
+      "value": 18.78,
+      "unit": "patents per million"
+    },
+    "Finland": {
+      "value": 280.99,
+      "unit": "patents per million"
+    },
+    "France": {
+      "value": 197.31,
+      "unit": "patents per million"
+    },
+    "Georgia": {
+      "value": 24.27,
+      "unit": "patents per million"
+    },
+    "Germany": {
+      "value": 478.65,
+      "unit": "patents per million"
+    },
+    "Greece": {
+      "value": 37.28,
+      "unit": "patents per million"
+    },
+    "Guatemala": {
+      "value": 0.51,
+      "unit": "patents per million"
+    },
+    "Guyana": {
+      "value": 49.05,
+      "unit": "patents per million"
+    },
+    "Hong Kong": {
+      "value": 54.09,
+      "unit": "patents per million"
+    },
+    "Hungary": {
+      "value": 44.96,
+      "unit": "patents per million"
+    },
+    "Iceland": {
+      "value": 91.27,
+      "unit": "patents per million"
+    },
+    "India": {
+      "value": 18.57,
+      "unit": "patents per million"
+    },
+    "Indonesia": {
+      "value": 5.05,
+      "unit": "patents per million"
+    },
+    "Iran": {
+      "value": 115.43,
+      "unit": "patents per million"
+    },
+    "Ireland": {
+      "value": 14.68,
+      "unit": "patents per million"
+    },
+    "Israel": {
+      "value": 169.88,
+      "unit": "patents per million"
+    },
+    "Italy": {
+      "value": 173.86,
+      "unit": "patents per million"
+    },
+    "Jamaica": {
+      "value": 5.64,
+      "unit": "patents per million"
+    },
+    "Japan": {
+      "value": 1769.96,
+      "unit": "patents per million"
+    },
+    "Jordan": {
+      "value": 2.26,
+      "unit": "patents per million"
+    },
+    "Kenya": {
+      "value": 3.01,
+      "unit": "patents per million"
+    },
+    "Kyrgyzstan": {
+      "value": 12.11,
+      "unit": "patents per million"
+    },
+    "Latvia": {
+      "value": 55.19,
+      "unit": "patents per million"
+    },
+    "Lithuania": {
+      "value": 28.84,
+      "unit": "patents per million"
+    },
+    "Luxembourg": {
+      "value": 174.98,
+      "unit": "patents per million"
+    },
+    "Macao": {
+      "value": 2.93,
+      "unit": "patents per million"
+    },
+    "Madagascar": {
+      "value": 0.20,
+      "unit": "patents per million"
+    },
+    "Malaysia": {
+      "value": 25.76,
+      "unit": "patents per million"
+    },
+    "Malta": {
+      "value": 9.65,
+      "unit": "patents per million"
+    },
+    "Mauritius": {
+      "value": 4.74,
+      "unit": "patents per million"
+    },
+    "Mexico": {
+      "value": 8.75,
+      "unit": "patents per million"
+    },
+    "Moldova": {
+      "value": 24.66,
+      "unit": "patents per million"
+    },
+    "Monaco": {
+      "value": 129.78,
+      "unit": "patents per million"
+    },
+    "Mongolia": {
+      "value": 32.21,
+      "unit": "patents per million"
+    },
+    "Morocco": {
+      "value": 6.87,
+      "unit": "patents per million"
+    },
+    "Mozambique": {
+      "value": 0.95,
+      "unit": "patents per million"
+    },
+    "Netherlands": {
+      "value": 118.63,
+      "unit": "patents per million"
+    },
+    "New Zealand": {
+      "value": 64.56,
+      "unit": "patents per million"
+    },
+    "North Macedonia": {
+      "value": 22.86,
+      "unit": "patents per million"
+    },
+    "Norway": {
+      "value": 174.92,
+      "unit": "patents per million"
+    },
+    "Oman": {
+      "value": 6.67,
+      "unit": "patents per million"
+    },
+    "Pakistan": {
+      "value": 1.78,
+      "unit": "patents per million"
+    },
+    "Panama": {
+      "value": 8.05,
+      "unit": "patents per million"
+    },
+    "Paraguay": {
+      "value": 1.50,
+      "unit": "patents per million"
+    },
+    "Peru": {
+      "value": 2.84,
+      "unit": "patents per million"
+    },
+    "Philippines": {
+      "value": 4.33,
+      "unit": "patents per million"
+    },
+    "Poland": {
+      "value": 91.32,
+      "unit": "patents per million"
+    },
+    "Portugal": {
+      "value": 68.62,
+      "unit": "patents per million"
+    },
+    "Qatar": {
+      "value": 18.76,
+      "unit": "patents per million"
+    },
+    "Romania": {
+      "value": 40.37,
+      "unit": "patents per million"
+    },
+    "Russia": {
+      "value": 135.19,
+      "unit": "patents per million"
+    },
+    "Rwanda": {
+      "value": 1.05,
+      "unit": "patents per million"
+    },
+    "Samoa": {
+      "value": 4.68,
+      "unit": "patents per million"
+    },
+    "San Marino": {
+      "value": 204.37,
+      "unit": "patents per million"
+    },
+    "Saudi Arabia": {
+      "value": 45.41,
+      "unit": "patents per million"
+    },
+    "Serbia": {
+      "value": 20.19,
+      "unit": "patents per million"
+    },
+    "Singapore": {
+      "value": 371.13,
+      "unit": "patents per million"
+    },
+    "Slovakia": {
+      "value": 26.80,
+      "unit": "patents per million"
+    },
+    "Slovenia": {
+      "value": 105.31,
+      "unit": "patents per million"
+    },
+    "South Africa": {
+      "value": 29.33,
+      "unit": "patents per million"
+    },
+    "South Korea": {
+      "value": 3597.58,
+      "unit": "patents per million"
+    },
+    "Spain": {
+      "value": 27.57,
+      "unit": "patents per million"
+    },
+    "Sri Lanka": {
+      "value": 12.01,
+      "unit": "patents per million"
+    },
+    "Sweden": {
+      "value": 170.03,
+      "unit": "patents per million"
+    },
+    "Switzerland": {
+      "value": 147.97,
+      "unit": "patents per million"
+    },
+    "Syria": {
+      "value": 4.72,
+      "unit": "patents per million"
+    },
+    "Thailand": {
+      "value": 12.09,
+      "unit": "patents per million"
+    },
+    "Trinidad and Tobago": {
+      "value": 1.46,
+      "unit": "patents per million"
+    },
+    "Turkey": {
+      "value": 97.85,
+      "unit": "patents per million"
+    },
+    "Uganda": {
+      "value": 0.30,
+      "unit": "patents per million"
+    },
+    "Ukraine": {
+      "value": 29.39,
+      "unit": "patents per million"
+    },
+    "United Arab Emirates": {
+      "value": 7.21,
+      "unit": "patents per million"
+    },
+    "United Kingdom": {
+      "value": 173.06,
+      "unit": "patents per million"
+    },
+    "United States": {
+      "value": 789.65,
+      "unit": "patents per million"
+    },
+    "Uzbekistan": {
+      "value": 12.06,
+      "unit": "patents per million"
+    },
+    "Vietnam": {
+      "value": 10.77,
+      "unit": "patents per million"
+    },
+    "Yemen": {
+      "value": 0.54,
+      "unit": "patents per million"
+    },
+    "Zambia": {
+      "value": 0.66,
+      "unit": "patents per million"
+    }
+  }
+}
+
