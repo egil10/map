@@ -1067,6 +1067,16 @@ class QuizGame {
         if (!this.currentQuiz) return;
         
         const colorBarGradient = document.getElementById('colorBarGradient');
+        const colorBarLabels = document.querySelector('.color-bar-labels');
+        
+        // Check if this is categorical data
+        const isCategorical = this.currentQuiz.colorScheme?.type === 'categorical';
+        
+        // Hide labels for categorical data, show for numeric data
+        if (colorBarLabels) {
+            colorBarLabels.style.display = isCategorical ? 'none' : 'flex';
+        }
+        
         if (colorBarGradient && this.currentQuiz.colorScheme) {
             const scheme = this.currentQuiz.colorScheme;
             if (scheme.type === 'gradient' && scheme.colors) {
@@ -1080,38 +1090,41 @@ class QuizGame {
             }
         }
         
-        // Update color bar labels with actual values
-        const colorBarMin = document.getElementById('colorBarMin');
-        const colorBarQ1 = document.getElementById('colorBarQ1');
-        const colorBarMid = document.getElementById('colorBarMid');
-        const colorBarQ3 = document.getElementById('colorBarQ3');
-        const colorBarMax = document.getElementById('colorBarMax');
-        
-        if (this.currentQuiz.countries) {
-            const values = Object.values(this.currentQuiz.countries)
-                .map(c => c.value)
-                .filter(v => !isNaN(v) && v !== null && v !== undefined);
+        // Only update numeric labels if this is numeric data
+        if (!isCategorical) {
+            // Update color bar labels with actual values
+            const colorBarMin = document.getElementById('colorBarMin');
+            const colorBarQ1 = document.getElementById('colorBarQ1');
+            const colorBarMid = document.getElementById('colorBarMid');
+            const colorBarQ3 = document.getElementById('colorBarQ3');
+            const colorBarMax = document.getElementById('colorBarMax');
             
-            if (values.length > 0) {
-                const sortedValues = values.sort((a, b) => a - b);
+            if (this.currentQuiz.countries) {
+                const values = Object.values(this.currentQuiz.countries)
+                    .map(c => c.value)
+                    .filter(v => !isNaN(v) && v !== null && v !== undefined);
                 
-                // Calculate quartiles
-                const minValue = sortedValues[0];
-                const maxValue = sortedValues[sortedValues.length - 1];
-                const q1Index = Math.floor(sortedValues.length * 0.25);
-                const midIndex = Math.floor(sortedValues.length * 0.5);
-                const q3Index = Math.floor(sortedValues.length * 0.75);
-                
-                const q1Value = sortedValues[q1Index];
-                const midValue = sortedValues[midIndex];
-                const q3Value = sortedValues[q3Index];
-                
-                // Update labels with actual values
-                if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue);
-                if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value);
-                if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue);
-                if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value);
-                if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue);
+                if (values.length > 0) {
+                    const sortedValues = values.sort((a, b) => a - b);
+                    
+                    // Calculate quartiles
+                    const minValue = sortedValues[0];
+                    const maxValue = sortedValues[sortedValues.length - 1];
+                    const q1Index = Math.floor(sortedValues.length * 0.25);
+                    const midIndex = Math.floor(sortedValues.length * 0.5);
+                    const q3Index = Math.floor(sortedValues.length * 0.75);
+                    
+                    const q1Value = sortedValues[q1Index];
+                    const midValue = sortedValues[midIndex];
+                    const q3Value = sortedValues[q3Index];
+                    
+                    // Update labels with actual values
+                    if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue);
+                    if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value);
+                    if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue);
+                    if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value);
+                    if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue);
+                }
             }
         }
     }

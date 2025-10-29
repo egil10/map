@@ -1,7 +1,6 @@
 {
   "title": "Number of Mobile Phone Numbers by Country",
   "data": [
-    {"country": "World", "mobile_numbers": 7950000000, "phone_numbers_per_100_citizens": 104.32},
     {"country": "China", "mobile_numbers": 1610360000, "phone_numbers_per_100_citizens": 113.38},
     {"country": "India", "mobile_numbers": 1515971713, "phone_numbers_per_100_citizens": 110.18},
     {"country": "Indonesia", "mobile_numbers": 385573398, "phone_numbers_per_100_citizens": 162.28},

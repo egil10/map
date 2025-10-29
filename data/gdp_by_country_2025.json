@@ -1,7 +1,6 @@
 {
   "title": "GDP by Country (IMF 2025 Forecast)",
   "data": [
-    {"country": "World", "gdp_million_usd": 113795678},
     {"country": "United States", "gdp_million_usd": 30507217},
     {"country": "China", "gdp_million_usd": 19231705},
     {"country": "Germany", "gdp_million_usd": 4744804},

@@ -2,10 +2,6 @@
   "title": "World Population Estimates (2025)",
   "data": [
     {
-      "country": "World",
-      "population": 8232000000
-    },
-    {
       "country": "India",
       "population": 1417492000
     },

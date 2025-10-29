@@ -1,7 +1,6 @@
 {
   "title": "Arable Land Per Person by Country",
   "data": [
-    {"country": "World", "arable_land_per_person_m2": 1800},
     {"country": "Kazakhstan", "arable_land_per_person_m2": 15456},
     {"country": "Australia", "arable_land_per_person_m2": 12062},
     {"country": "Canada", "arable_land_per_person_m2": 10027},

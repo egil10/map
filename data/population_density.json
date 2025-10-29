@@ -1,7 +1,6 @@
 {
   "title": "Country Population Densities",
   "data": [
-    {"country": "World", "density_km2": 55},
     {"country": "Macau (China)", "density_km2": 22000},
     {"country": "Monaco", "density_km2": 19000},
     {"country": "Singapore", "density_km2": 8120},
