@@ -54,8 +54,8 @@ class QuizGame {
             return;
         }
         
-        // Wait a bit longer for DOM and app to be fully ready
-        await new Promise(resolve => setTimeout(resolve, 300));
+        // Wait a bit longer for DOM and app to be fully ready (increased for 167 datasets)
+        await new Promise(resolve => setTimeout(resolve, 500));
         
         this.isReady = true;
         
@@ -248,16 +248,32 @@ class QuizGame {
             ];
             
             // Load all datasets
+            console.log(`📂 Starting to load ${dataFiles.length} dataset files...`);
             this.datasetList = [];
+            let loadedCount = 0;
+            let errorCount = 0;
             const loadPromises = dataFiles.map(async (filename) => {
                 try {
                     const response = await fetch(`data/${filename}`);
                     if (response.ok) {
                         const data = await response.json();
-                        return this.convertToQuizFormat(data, filename);
+                        const converted = this.convertToQuizFormat(data, filename);
+                        if (converted) {
+                            loadedCount++;
+                            if (loadedCount % 20 === 0) {
+                                console.log(`📊 Progress: ${loadedCount}/${dataFiles.length} datasets loaded...`);
+                            }
+                            return converted;
+                        } else {
+                            console.warn(`⚠️ Skipped: ${filename} (no valid data)`);
+                        }
+                    } else {
+                        errorCount++;
+                        console.warn(`⚠️ Failed to fetch ${filename}: ${response.status}`);
                     }
                 } catch (error) {
-                    console.warn(`⚠️ Failed to load ${filename}:`, error);
+                    errorCount++;
+                    console.error(`❌ Error loading ${filename}:`, error.message);
                 }
                 return null;
             });
@@ -265,7 +281,7 @@ class QuizGame {
                 const results = await Promise.all(loadPromises);
                 this.datasetList = results.filter(dataset => dataset !== null);
                 
-                console.log(`📊 Loaded ${this.datasetList.length} valid datasets from data folder`);
+                console.log(`📊 Successfully loaded ${this.datasetList.length} valid datasets from data folder`);
                 console.log(`⚠️ Skipped ${dataFiles.length - this.datasetList.length} invalid/empty datasets`);
                 
                 // Update the dataset counter display
@@ -635,7 +651,8 @@ class QuizGame {
         // If not ready yet, wait for initialization to complete
         if (!this.isReady) {
             console.log('⏳ Quiz not ready yet, waiting...');
-            setTimeout(() => this.startNewQuiz(), 500);
+            console.log('⏳ Current dataset count:', this.datasetList.length);
+            setTimeout(() => this.startNewQuiz(), 1000);
             return;
         }
         
