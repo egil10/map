@@ -126,6 +126,7 @@ class App {
         document.getElementById('resetMapView').addEventListener('click', () => this.resetMapView());
         document.getElementById('toggleLegend').addEventListener('click', () => this.toggleLegend());
         document.getElementById('downloadData').addEventListener('click', () => this.downloadData());
+        document.getElementById('copyData').addEventListener('click', () => this.copyData());
         
         // Dataset counter click for browsing (only in learn mode)
         document.getElementById('datasetCounter').addEventListener('click', () => {
@@ -256,6 +257,12 @@ class App {
         }
     }
     
+    copyData() {
+        if (this.quizInstance && this.quizInstance.currentQuiz) {
+            this.copyToClipboard(this.quizInstance.currentQuiz);
+        }
+    }
+    
     downloadCSV(quiz) {
         const csvContent = this.convertQuizToCSV(quiz);
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
@@ -268,6 +275,93 @@ class App {
         link.click();
         document.body.removeChild(link);
         console.log('📊 CSV downloaded:', quiz.title);
+    }
+    
+    async copyToClipboard(quiz) {
+        try {
+            const csvContent = this.convertQuizToCSV(quiz);
+            
+            // Try modern clipboard API first (only if document is focused)
+            if (navigator.clipboard && navigator.clipboard.writeText && document.hasFocus()) {
+                try {
+                    await navigator.clipboard.writeText(csvContent);
+                    console.log('📋 Data copied to clipboard:', quiz.title);
+                    this.showCopyFeedback();
+                    return;
+                } catch (clipboardError) {
+                    // Silently fall back if clipboard API fails (expected in some browsers)
+                    // Don't log this as it's not an error, just expected behavior
+                }
+            }
+            
+            // Fallback method for browsers without clipboard API or permission issues
+            const textarea = document.createElement('textarea');
+            textarea.value = csvContent;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-999999px';
+            textarea.style.top = '-999999px';
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    console.log('📋 Data copied to clipboard:', quiz.title);
+                    this.showCopyFeedback();
+                } else {
+                    throw new Error('execCommand copy failed');
+                }
+            } catch (error) {
+                console.error('❌ Failed to copy to clipboard:', error);
+                throw error;
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        } catch (error) {
+            console.error('❌ Failed to copy to clipboard:', error);
+            alert('Failed to copy to clipboard. Please try again or use the download button instead.');
+        }
+    }
+    
+    showCopyFeedback() {
+        // Visual feedback - briefly change icon to checkmark
+        const copyBtn = document.getElementById('copyData');
+        if (!copyBtn) {
+            return; // Silently return if button not found
+        }
+        
+        // Try to find icon - might be directly in button or inside SVG
+        let icon = copyBtn.querySelector('i');
+        if (!icon) {
+            // Try finding SVG element instead
+            icon = copyBtn.querySelector('svg');
+            if (!icon) {
+                return; // Silently return if icon not found
+            }
+        }
+        
+        // Check if it's a Lucide icon (has data-lucide attribute)
+        const originalIcon = icon.getAttribute('data-lucide');
+        
+        if (originalIcon) {
+            // Change to check icon temporarily
+            icon.setAttribute('data-lucide', 'check');
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+            
+            // Change back after 2 seconds
+            setTimeout(() => {
+                const currentIcon = document.getElementById('copyData')?.querySelector('[data-lucide="check"]');
+                if (currentIcon) {
+                    currentIcon.setAttribute('data-lucide', originalIcon);
+                    if (window.lucide) {
+                        window.lucide.createIcons();
+                    }
+                }
+            }, 2000);
+        }
     }
     
     convertQuizToCSV(quiz) {
