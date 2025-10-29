@@ -196,6 +196,7 @@ class QuizGame {
                 'plants_wcmc_by_country.json',
                 'popes_by_country.json',
                 'population_density.json',
+                'population_growth_rate_2023.json',
                 'population_per_lower_house_seat_by_country.json',
                 'public_libraries_by_country.json',
                 'purple_flag_countries.json',
