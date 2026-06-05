@@ -211,7 +211,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    transition: opacity 0.8s ease-out;
+    transition: opacity 0.5s ease-out;
 }
 
 .loading-content {
@@ -1743,4 +1743,46 @@ body {
 
 .choice-btn:active {
     transition: all 0.1s ease;
+}
+
+/* ===== ACCESSIBILITY & POLISH ===== */
+
+/* Visible keyboard focus for all interactive controls.
+   :focus-visible only shows the ring for keyboard users, not mouse clicks. */
+.control-btn:focus-visible,
+.reset-button:focus-visible,
+.sort-toggle-btn:focus-visible,
+.game-mode-toggle:focus-visible,
+.nav-btn:focus-visible,
+.play-again-btn:focus-visible,
+.close-btn:focus-visible,
+.dataset-item:focus-visible,
+.legend-item:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Smooth, GPU-friendly transitions on the rankings list and choice buttons */
+.legend-item,
+.dataset-item {
+    will-change: transform;
+}
+
+/* Respect users who prefer reduced motion: stop the looping loader
+   animations and neutralise non-essential transitions. */
+@media (prefers-reduced-motion: reduce) {
+    .logo-circle,
+    .logo-inner,
+    .logo-inner::before {
+        animation: none !important;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
 }

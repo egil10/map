@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>GeoQuest</title>
+    <meta name="description" content="GeoQuest — an interactive world map quiz. Guess which dataset is shown by the country colours, or explore 200+ datasets in Learn mode.">
+    <meta name="theme-color" content="#ffffff">
+    <title>GeoQuest — World Map Quiz</title>
     
     <!-- Performance optimizations -->
     <link rel="preload" href="css/style.css" as="style" />
@@ -25,11 +27,23 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Lucide Icons -->
-    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <!-- Country Mapping Test (Development Only) -->
-    <script defer src="js/test_country_mapping.js"></script>
+    <!-- Lucide Icons (pinned version for cache stability) -->
+    <script defer src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.js"></script>
+
+    <!-- Silence verbose debug logging outside local development -->
+    <script>
+        (function () {
+            var host = location.hostname;
+            var isLocal = host === 'localhost' || host === '127.0.0.1' || host === '';
+            if (!isLocal) {
+                var noop = function () {};
+                console.log = noop;
+                console.info = noop;
+                console.debug = noop;
+                // console.warn and console.error are kept for real problems.
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- Loading Screen -->

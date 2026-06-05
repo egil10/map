@@ -823,14 +823,15 @@ class WorldMap {
              }
              
             // Show standardized tooltip on hover if quiz data exists
-            if (this.currentQuiz && this.currentQuiz.countries[layer.feature.properties.NAME]) {
-                const countryData = this.currentQuiz.countries[layer.feature.properties.NAME];
-                this.updateCountryTooltip(layer.feature.properties.NAME, countryData);
-                
+            const hoverName = layer.feature.properties.name;
+            if (this.currentQuiz && this.currentQuiz.countries[hoverName]) {
+                const countryData = this.currentQuiz.countries[hoverName];
+                this.updateCountryTooltip(hoverName, countryData);
+
                 // Also show Leaflet tooltip with country name and value (no unit)
                 if (countryData && countryData.value !== undefined) {
                     const formattedValue = this.formatValue(countryData.value, '');
-                    const tooltipContent = `<strong>${layer.feature.properties.NAME}</strong><br/>${formattedValue}`;
+                    const tooltipContent = `<strong>${hoverName}</strong><br/>${formattedValue}`;
                     
                     this.currentHoverPopup = L.popup({
                         closeButton: false,
@@ -903,34 +904,25 @@ class WorldMap {
             fillOpacity: 0.8
         };
         
-        // Apply quiz colors if available
+        // Apply quiz colors if available. This runs once per country on every
+        // restyle, so it is kept allocation- and log-free for performance.
         if (this.currentQuiz && this.currentQuiz.countries[countryName]) {
             const countryData = this.currentQuiz.countries[countryName];
-            
-            // Check if we have valid data (numeric OR categorical)
+
             if (countryData && countryData.value !== null && countryData.value !== undefined) {
-                // For categorical data, use the assigned color
+                // Categorical data uses its pre-assigned colour
                 if (this.currentQuiz.colorScheme?.type === 'categorical' && countryData.color) {
                     style.fillColor = countryData.color;
                     style.fillOpacity = 0.8;
-                    console.log(`🎨 Categorical color applied for ${countryName}:`, countryData.color, 'value:', countryData.value);
                 }
-                // For numeric data, calculate gradient color
+                // Numeric data uses a computed gradient colour
                 else if (typeof countryData.value === 'number' && !isNaN(countryData.value)) {
-                    const color = this.getColorForValue(countryData.value, this.currentQuiz);
-                    style.fillColor = color;
+                    style.fillColor = this.getColorForValue(countryData.value, this.currentQuiz);
                     style.fillOpacity = 0.8;
-                    console.log(`🎨 Gradient color applied for ${countryName}:`, color, 'value:', countryData.value);
-                } else {
-                    console.warn(`🎨 Unhandled data type for ${countryName}:`, countryData);
                 }
-            } else {
-                console.warn(`🎨 Invalid data for ${countryName}:`, countryData);
             }
-        } else {
-            console.log(`🎨 No quiz data for ${countryName}`);
         }
-        
+
         return style;
     }
     
@@ -940,158 +932,26 @@ class WorldMap {
         
         // Normalize country names to match GeoJSON names
         const geoNames = new Set(this.countriesData.features.map(f => f.properties.name));
-        const usaNames = Array.from(geoNames).filter(name => 
-            name.toLowerCase().includes('united') || 
-            name.toLowerCase().includes('america') || 
-            name.toLowerCase().includes('usa')
-        );
-        console.log('🇺🇸 USA DEBUG - Available GeoJSON names:');
-        usaNames.forEach(name => console.log(`  - "${name}"`));
-        
-        // Also debug UK names
-        const ukNames = Array.from(geoNames).filter(name => 
-            name.toLowerCase().includes('kingdom') || 
-            name.toLowerCase().includes('britain') || 
-            name.toLowerCase().includes('england') ||
-            name.toLowerCase().includes('uk ')
-        );
-        console.log('🇬🇧 UK DEBUG - Available GeoJSON names:');
-        ukNames.forEach(name => console.log(`  - "${name}"`));
-        
-                 // Debug microstates and islands
-         const microstateNames = Array.from(geoNames).filter(name => 
-             name.toLowerCase().includes('monaco') ||
-             name.toLowerCase().includes('vatican') ||
-             name.toLowerCase().includes('san marino') ||
-             name.toLowerCase().includes('liechtenstein') ||
-             name.toLowerCase().includes('andorra') ||
-             name.toLowerCase().includes('malta') ||
-             name.toLowerCase().includes('luxembourg') ||
-             name.toLowerCase().includes('singapore') ||
-             name.toLowerCase().includes('macao') ||
-             name.toLowerCase().includes('hong kong')
-         );
-         console.log('🏛️ Microstates and Islands DEBUG - Available GeoJSON names:');
-         microstateNames.forEach(name => console.log(`  - "${name}"`));
-         
-         // Specific debug for Hong Kong and Macau
-         const hkMacauNames = Array.from(geoNames).filter(name => 
-             name.toLowerCase().includes('hong') ||
-             name.toLowerCase().includes('macau') ||
-             name.toLowerCase().includes('macao')
-         );
-         console.log('🇭🇰🇲🇴 Hong Kong & Macau DEBUG - Available GeoJSON names:');
-         hkMacauNames.forEach(name => console.log(`  - "${name}"`));
-        
+
         const fixed = {};
         const missingCountries = [];
-        
+
         for (const [k, v] of Object.entries(this.currentQuiz.countries)) {
             const resolvedName = resolveToGeoName(k, geoNames);
-            
-            // Debug USA specifically
-            if (k.toLowerCase().includes('united') || k.toLowerCase().includes('america')) {
-                console.log('🇺🇸 USA DEBUG - Processing:', {
-                    original: k,
-                    resolved: resolvedName,
-                    inGeoJSON: geoNames.has(resolvedName),
-                    value: v
-                });
-            }
-            
-            // Debug UK specifically
-            if (k.toLowerCase().includes('kingdom') || k.toLowerCase().includes('britain')) {
-                console.log('🇬🇧 UK DEBUG - Processing:', {
-                    original: k,
-                    resolved: resolvedName,
-                    inGeoJSON: geoNames.has(resolvedName),
-                    value: v
-                });
-            }
-            
-                         // Debug microstates and islands
-             if (k.toLowerCase().includes('monaco') || 
-                 k.toLowerCase().includes('vatican') || 
-                 k.toLowerCase().includes('san marino') || 
-                 k.toLowerCase().includes('liechtenstein') || 
-                 k.toLowerCase().includes('andorra') || 
-                 k.toLowerCase().includes('malta') || 
-                 k.toLowerCase().includes('luxembourg') || 
-                 k.toLowerCase().includes('singapore') || 
-                 k.toLowerCase().includes('macao') || 
-                 k.toLowerCase().includes('hong kong')) {
-                 console.log('🏛️ Microstate/Island DEBUG - Processing:', {
-                     original: k,
-                     resolved: resolvedName,
-                     inGeoJSON: geoNames.has(resolvedName),
-                     value: v
-                 });
-             }
-             
-             // Specific debug for Hong Kong and Macau
-             if (k.toLowerCase().includes('hong') || k.toLowerCase().includes('macau') || k.toLowerCase().includes('macao')) {
-                 console.log('🇭🇰🇲🇴 Hong Kong & Macau DEBUG - Processing:', {
-                     original: k,
-                     resolved: resolvedName,
-                     inGeoJSON: geoNames.has(resolvedName),
-                     value: v,
-                     allMatchingGeoJSON: Array.from(geoNames).filter(name => 
-                         name.toLowerCase().includes('hong') || 
-                         name.toLowerCase().includes('macau') || 
-                         name.toLowerCase().includes('macao')
-                     )
-                 });
-             }
-            
             if (!geoNames.has(resolvedName)) {
                 missingCountries.push({ original: k, resolved: resolvedName });
             }
-            
             fixed[resolvedName] = v;
         }
-        
-        // Log missing countries
+
         if (missingCountries.length > 0) {
             console.warn('⚠️ Countries missing from GeoJSON:', missingCountries);
-            console.log('Available GeoJSON countries:', Array.from(geoNames).sort());
         }
-        
+
         this.currentQuiz.countries = fixed;
-        
-        // Debug: Show final USA entries in the fixed countries object
-        const finalUSAEntries = Object.keys(fixed).filter(k => 
-            k.toLowerCase().includes('united') || 
-            k.toLowerCase().includes('america') || 
-            k.toLowerCase().includes('usa')
-        );
-        console.log('🇺🇸 USA DEBUG - Final quiz countries with USA data:');
-        finalUSAEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
-        
-        // Debug: Show final UK entries in the fixed countries object
-        const finalUKEntries = Object.keys(fixed).filter(k => 
-            k.toLowerCase().includes('kingdom') || 
-            k.toLowerCase().includes('britain') ||
-            k.toLowerCase().includes('england')
-        );
-        console.log('🇬🇧 UK DEBUG - Final quiz countries with UK data:');
-        finalUKEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
-        
-        // Debug: Show final microstate entries in the fixed countries object
-        const finalMicrostateEntries = Object.keys(fixed).filter(k => 
-            k.toLowerCase().includes('monaco') ||
-            k.toLowerCase().includes('vatican') ||
-            k.toLowerCase().includes('san marino') ||
-            k.toLowerCase().includes('liechtenstein') ||
-            k.toLowerCase().includes('andorra') ||
-            k.toLowerCase().includes('malta') ||
-            k.toLowerCase().includes('luxembourg') ||
-            k.toLowerCase().includes('singapore') ||
-            k.toLowerCase().includes('macao') ||
-            k.toLowerCase().includes('hong kong')
-        );
-        console.log('🏛️ Microstate/Island DEBUG - Final quiz countries with microstate data:');
-        finalMicrostateEntries.forEach(name => console.log(`  - "${name}": ${JSON.stringify(fixed[name])}`));
-        
+        // The country set was rebuilt, so drop any cached value range.
+        delete this.currentQuiz._valueRange;
+
         // Check if countries layer exists
         if (!this.countriesLayer) {
             console.error('Countries layer not initialized');
@@ -1157,40 +1017,6 @@ class WorldMap {
                 ${additionalInfo}
             </div>
         `;
-    }
-    
-    formatValue(value, unit) {
-        // Debug logging
-        console.log('formatValue called with:', { value, unit, type: typeof value });
-        
-        // Handle null, undefined, or NaN values
-        if (value === null || value === undefined || isNaN(value)) {
-            console.warn('Invalid value detected:', value);
-            return 'N/A';
-        }
-        
-        // Convert to number if it's a string
-        if (typeof value === 'string') {
-            const numValue = parseFloat(value);
-            if (isNaN(numValue)) {
-                console.warn('Cannot parse string value to number:', value);
-                return value; // Return original string if it can't be parsed
-            }
-            value = numValue;
-        }
-        
-        if (typeof value === 'number') {
-            if (value >= 1000000) {
-                return (value / 1000000).toFixed(1) + 'M';
-            } else if (value >= 1000) {
-                return (value / 1000).toFixed(1) + 'K';
-            } else {
-                return value.toFixed(1);
-            }
-        }
-        
-        // Fallback for other types
-        return String(value);
     }
     
     roundValueForLegend(value, unit) {
@@ -1359,11 +1185,22 @@ class WorldMap {
     }
 
     highlightCountryByName(countryName) {
-        // Find and highlight the country on the map
-        this.geoJsonLayer.eachLayer((layer) => {
-            if (layer.feature.properties.NAME === countryName || 
-                layer.feature.properties.NAME_LONG === countryName) {
-                this.highlightFeature({ target: layer });
+        // Briefly emphasise the matching country on the map (used when a
+        // rankings list item is clicked), then restore its quiz colour.
+        if (!this.countriesLayer) return;
+
+        this.countriesLayer.eachLayer((layer) => {
+            if (layer.feature && layer.feature.properties.name === countryName) {
+                layer.setStyle({ weight: 2.5, color: '#1a1a1a', fillOpacity: 0.9 });
+                if (layer.bringToFront) layer.bringToFront();
+
+                const countryData = this.currentQuiz?.countries?.[countryName];
+                if (countryData) {
+                    this.updateCountryTooltip(countryName, countryData);
+                    setTimeout(() => this.hideCountryTooltip(), 2000);
+                }
+
+                setTimeout(() => layer.setStyle(this.getCountryStyle(layer.feature)), 1500);
             }
         });
     }
@@ -1588,34 +1425,36 @@ class WorldMap {
             return quiz.colorScheme?.defaultColor || '#ffffff';
         }
         
-        // Handle numeric data
-        const values = Object.values(quiz.countries).map(country => country.value);
-        
-        // Filter out invalid values
-        const validValues = values.filter(val => 
-            val !== null && 
-            val !== undefined && 
-            !isNaN(val) && 
-            typeof val === 'number'
-        );
-        
-        if (validValues.length === 0) {
-            console.error('No valid numeric values found for color calculation');
+        // Compute the value range once per quiz and cache it. This is called
+        // once per country on every restyle, so recomputing min/max each time
+        // would make a full restyle O(n^2).
+        let range = quiz._valueRange;
+        if (!range) {
+            let min = Infinity;
+            let max = -Infinity;
+            for (const country of Object.values(quiz.countries)) {
+                const val = country.value;
+                if (typeof val === 'number' && !isNaN(val)) {
+                    if (val < min) min = val;
+                    if (val > max) max = val;
+                }
+            }
+            range = quiz._valueRange = { min, max };
+        }
+
+        if (range.min === Infinity) {
             return quiz.colorScheme?.defaultColor || '#ffffff';
         }
-        
-        const minValue = Math.min(...validValues);
-        const maxValue = Math.max(...validValues);
-        
+
         // Handle case where min and max are the same
-        if (minValue === maxValue) {
+        if (range.min === range.max) {
             return quiz.colorScheme?.minColor || '#ffffff';
         }
-        
-        const ratio = (value - minValue) / (maxValue - minValue);
+
+        const ratio = (value - range.min) / (range.max - range.min);
         const minColor = quiz.colorScheme?.minColor || '#ffffff';
         const maxColor = quiz.colorScheme?.maxColor || '#ffffff';
-        
+
         return this.interpolateColor(minColor, maxColor, ratio);
     }
     
