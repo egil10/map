@@ -1,0 +1,88 @@
+{
+  "title": "Countries Without a Standing Army",
+  "description": "Sovereign states that maintain no standing military",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/List_of_countries_without_armed_forces",
+  "data": {
+    "Costa Rica": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Panama": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Andorra": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Monaco": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Marshall Islands": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Federated States of Micronesia": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Palau": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Samoa": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Vanuatu": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Nauru": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Tuvalu": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Kiribati": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Grenada": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Saint Lucia": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Dominica": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Solomon Islands": {
+      "value": "No army",
+      "unit": "membership"
+    },
+    "Mauritius": {
+      "value": "No army",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "title": "G20 Member Countries",
+  "description": "The 19 member countries of the G20 (excluding the EU and African Union blocs)",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/G20",
+  "data": {
+    "Argentina": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Indonesia": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "South Korea": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "G20 member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "G20 member",
+      "unit": "membership"
+    }
+  }
+}

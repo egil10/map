@@ -1,0 +1,784 @@
+{
+  "title": "Mains Electricity Voltage",
+  "description": "The nominal domestic supply voltage",
+  "unit": "voltage",
+  "source": "https://en.wikipedia.org/wiki/Mains_electricity_by_country",
+  "data": {
+    "Afghanistan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Albania": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Algeria": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Andorra": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Angola": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Antigua and Barbuda": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Argentina": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Armenia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Australia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Austria": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Azerbaijan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "The Bahamas": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bahrain": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bangladesh": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Barbados": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Belarus": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Belgium": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Belize": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Benin": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bhutan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bolivia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Botswana": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Brazil": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Brunei": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Bulgaria": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Burkina Faso": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Burundi": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Cabo Verde": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Cambodia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Cameroon": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Canada": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Central African Republic": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Chad": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Chile": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "China": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Colombia": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Comoros": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Republic of the Congo": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Costa Rica": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Ivory Coast": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Croatia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Cuba": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Cyprus": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Czechia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Denmark": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Djibouti": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Dominica": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Dominican Republic": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Ecuador": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Egypt": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "El Salvador": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Equatorial Guinea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Eritrea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Estonia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "eSwatini": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Ethiopia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Fiji": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Finland": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "France": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Gabon": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Gambia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Georgia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Germany": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Ghana": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Greece": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Grenada": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Guatemala": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Guinea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Guinea-Bissau": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Guyana": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Haiti": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Honduras": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Hungary": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Iceland": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "India": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Indonesia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Iran": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Iraq": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Ireland": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Israel": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Italy": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Jamaica": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Japan": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Jordan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Kazakhstan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Kenya": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Kiribati": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "North Korea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "South Korea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Kuwait": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Kyrgyzstan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Laos": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Latvia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Lebanon": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Lesotho": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Liberia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Libya": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Liechtenstein": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Lithuania": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Luxembourg": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Madagascar": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Malawi": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Malaysia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Maldives": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mali": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Malta": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Marshall Islands": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mauritania": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mauritius": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mexico": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Federated States of Micronesia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Moldova": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Monaco": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mongolia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Montenegro": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Morocco": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Mozambique": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Myanmar": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Namibia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Nauru": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Nepal": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Netherlands": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "New Zealand": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Nicaragua": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Niger": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Nigeria": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "North Macedonia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Norway": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Oman": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Pakistan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Palau": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Panama": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Papua New Guinea": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Paraguay": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Peru": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Philippines": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Poland": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Portugal": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Qatar": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Romania": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Russia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Rwanda": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Saint Lucia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Samoa": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "San Marino": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "São Tomé and Principe": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Saudi Arabia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Senegal": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Republic of Serbia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Seychelles": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Sierra Leone": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Singapore": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Slovakia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Slovenia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Solomon Islands": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Somalia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "South Africa": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "South Sudan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Spain": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Sri Lanka": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Sudan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Suriname": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Sweden": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Switzerland": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Syria": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Tajikistan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "United Republic of Tanzania": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Thailand": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "East Timor": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Togo": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Tonga": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Trinidad and Tobago": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Tunisia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Turkey": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Turkmenistan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Tuvalu": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Uganda": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Ukraine": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "United Arab Emirates": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "United Kingdom": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "United States of America": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Uruguay": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Uzbekistan": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Vanuatu": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Venezuela": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    },
+    "Vietnam": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Yemen": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Zambia": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Zimbabwe": {
+      "value": "220–240 V",
+      "unit": "voltage"
+    },
+    "Taiwan": {
+      "value": "100–127 V",
+      "unit": "voltage"
+    }
+  }
+}

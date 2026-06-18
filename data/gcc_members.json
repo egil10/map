@@ -1,0 +1,32 @@
+{
+  "title": "Gulf Cooperation Council",
+  "description": "Members of the Gulf Cooperation Council",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Gulf_Cooperation_Council",
+  "data": {
+    "Bahrain": {
+      "value": "GCC member",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "GCC member",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "GCC member",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "GCC member",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "GCC member",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "GCC member",
+      "unit": "membership"
+    }
+  }
+}

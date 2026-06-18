@@ -1,0 +1,36 @@
+{
+  "title": "Countries Bordering Saudi Arabia",
+  "description": "Countries that share a land border with Saudi Arabia",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Saudi_Arabia",
+  "data": {
+    "Jordan": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    },
+    "Yemen": {
+      "value": "Borders Saudi Arabia",
+      "unit": "membership"
+    }
+  }
+}

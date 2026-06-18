@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build cache (source GeoJSON + scratch scripts for tools/build.js).
+# Generated outputs in data/ are committed; this is only the regeneration cache.
+tools/.cache/
+
+# Editor / OS / backups
+*.bak
+.DS_Store
+
+# Local server logs captured by the harness
+terminals/

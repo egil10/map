@@ -1,0 +1,20 @@
+{
+  "title": "Dutch as an Official Language",
+  "description": "Countries where Dutch is an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Dutch_language",
+  "data": {
+    "Netherlands": {
+      "value": "Dutch",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Dutch",
+      "unit": "membership"
+    },
+    "Suriname": {
+      "value": "Dutch",
+      "unit": "membership"
+    }
+  }
+}

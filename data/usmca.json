@@ -1,0 +1,20 @@
+{
+  "title": "USMCA (North American Trade)",
+  "description": "Parties to the United States–Mexico–Canada Agreement",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Agreement_between_the_United_States_of_America,_the_United_Mexican_States,_and_Canada",
+  "data": {
+    "Canada": {
+      "value": "USMCA",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "USMCA",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "USMCA",
+      "unit": "membership"
+    }
+  }
+}

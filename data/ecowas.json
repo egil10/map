@@ -1,0 +1,68 @@
+{
+  "title": "ECOWAS (West Africa)",
+  "description": "Members of the Economic Community of West African States",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Economic_Community_of_West_African_States",
+  "data": {
+    "Benin": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Burkina Faso": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Cabo Verde": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Ivory Coast": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Gambia": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Ghana": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Guinea": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Guinea-Bissau": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Liberia": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Nigeria": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Senegal": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Sierra Leone": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    },
+    "Togo": {
+      "value": "ECOWAS",
+      "unit": "membership"
+    }
+  }
+}

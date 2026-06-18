@@ -1,0 +1,784 @@
+{
+  "title": "Mains Electricity Frequency",
+  "description": "The frequency of the domestic electrical supply",
+  "unit": "frequency",
+  "source": "https://en.wikipedia.org/wiki/Mains_electricity_by_country",
+  "data": {
+    "Afghanistan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Albania": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Algeria": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Andorra": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Angola": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Antigua and Barbuda": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Argentina": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Armenia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Australia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Austria": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Azerbaijan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "The Bahamas": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bahrain": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bangladesh": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Barbados": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Belarus": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Belgium": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Belize": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Benin": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bhutan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bolivia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Botswana": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Brazil": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Brunei": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Bulgaria": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Burkina Faso": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Burundi": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Cabo Verde": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Cambodia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Cameroon": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Canada": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Central African Republic": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Chad": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Chile": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "China": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Colombia": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Comoros": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Republic of the Congo": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Costa Rica": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Ivory Coast": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Croatia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Cuba": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Cyprus": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Czechia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Denmark": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Djibouti": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Dominica": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Dominican Republic": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Ecuador": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Egypt": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "El Salvador": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Equatorial Guinea": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Eritrea": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Estonia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "eSwatini": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Ethiopia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Fiji": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Finland": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "France": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Gabon": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Gambia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Georgia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Germany": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Ghana": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Greece": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Grenada": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Guatemala": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Guinea": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Guinea-Bissau": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Guyana": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Haiti": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Honduras": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Hungary": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Iceland": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "India": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Indonesia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Iran": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Iraq": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Ireland": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Israel": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Italy": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Jamaica": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Japan": {
+      "value": "50/60 Hz",
+      "unit": "frequency"
+    },
+    "Jordan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Kazakhstan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Kenya": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Kiribati": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "North Korea": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "South Korea": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Kuwait": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Kyrgyzstan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Laos": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Latvia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Lebanon": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Lesotho": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Liberia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Libya": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Liechtenstein": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Lithuania": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Luxembourg": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Madagascar": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Malawi": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Malaysia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Maldives": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mali": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Malta": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Marshall Islands": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mauritania": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mauritius": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mexico": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Federated States of Micronesia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Moldova": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Monaco": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mongolia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Montenegro": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Morocco": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Mozambique": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Myanmar": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Namibia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Nauru": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Nepal": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Netherlands": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "New Zealand": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Nicaragua": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Niger": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Nigeria": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "North Macedonia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Norway": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Oman": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Pakistan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Palau": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Panama": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Papua New Guinea": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Paraguay": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Peru": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Philippines": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Poland": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Portugal": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Qatar": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Romania": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Russia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Rwanda": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Saint Lucia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Samoa": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "San Marino": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "São Tomé and Principe": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Saudi Arabia": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Senegal": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Republic of Serbia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Seychelles": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Sierra Leone": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Singapore": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Slovakia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Slovenia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Solomon Islands": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Somalia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "South Africa": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "South Sudan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Spain": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Sri Lanka": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Sudan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Suriname": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Sweden": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Switzerland": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Syria": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Tajikistan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "United Republic of Tanzania": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Thailand": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "East Timor": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Togo": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Tonga": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Trinidad and Tobago": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Tunisia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Turkey": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Turkmenistan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Tuvalu": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Uganda": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Ukraine": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "United Arab Emirates": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "United Kingdom": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "United States of America": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Uruguay": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Uzbekistan": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Vanuatu": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Venezuela": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    },
+    "Vietnam": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Yemen": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Zambia": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Zimbabwe": {
+      "value": "50 Hz",
+      "unit": "frequency"
+    },
+    "Taiwan": {
+      "value": "60 Hz",
+      "unit": "frequency"
+    }
+  }
+}

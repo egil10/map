@@ -1,0 +1,24 @@
+{
+  "title": "Visegrád Group",
+  "description": "The Visegrád Group (V4) of Central European states",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Visegr%C3%A1d_Group",
+  "data": {
+    "Czechia": {
+      "value": "V4 member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "V4 member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "V4 member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "V4 member",
+      "unit": "membership"
+    }
+  }
+}

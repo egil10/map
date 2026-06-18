@@ -1,0 +1,40 @@
+{
+  "title": "Persian Gulf Coastline",
+  "description": "Countries with a coastline on the Persian Gulf",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Persian_Gulf",
+  "data": {
+    "Iran": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Bahrain": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "Persian Gulf",
+      "unit": "membership"
+    }
+  }
+}

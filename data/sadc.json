@@ -1,0 +1,72 @@
+{
+  "title": "Southern African Development Community",
+  "description": "Members of the Southern African Development Community",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Southern_African_Development_Community",
+  "data": {
+    "Angola": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Botswana": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "eSwatini": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Lesotho": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Madagascar": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Malawi": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Mauritius": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Namibia": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Seychelles": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "United Republic of Tanzania": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Zambia": {
+      "value": "SADC member",
+      "unit": "membership"
+    },
+    "Zimbabwe": {
+      "value": "SADC member",
+      "unit": "membership"
+    }
+  }
+}

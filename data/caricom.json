@@ -1,0 +1,68 @@
+{
+  "title": "CARICOM Members",
+  "description": "Full members of the Caribbean Community",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/CARICOM",
+  "data": {
+    "Antigua and Barbuda": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "The Bahamas": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Barbados": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Belize": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Dominica": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Grenada": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Guyana": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Haiti": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Jamaica": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Montserrat": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Saint Lucia": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Suriname": {
+      "value": "CARICOM",
+      "unit": "membership"
+    },
+    "Trinidad and Tobago": {
+      "value": "CARICOM",
+      "unit": "membership"
+    }
+  }
+}

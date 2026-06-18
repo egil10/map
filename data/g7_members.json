@@ -1,0 +1,36 @@
+{
+  "title": "G7 Members",
+  "description": "The Group of Seven advanced economies",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/G7",
+  "data": {
+    "Canada": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "G7 member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "G7 member",
+      "unit": "membership"
+    }
+  }
+}

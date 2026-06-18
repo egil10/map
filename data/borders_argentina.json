@@ -1,0 +1,28 @@
+{
+  "title": "Countries Bordering Argentina",
+  "description": "Countries that share a land border with Argentina",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Argentina",
+  "data": {
+    "Chile": {
+      "value": "Borders Argentina",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Borders Argentina",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Borders Argentina",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Borders Argentina",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Borders Argentina",
+      "unit": "membership"
+    }
+  }
+}

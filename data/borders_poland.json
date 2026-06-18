@@ -1,0 +1,36 @@
+{
+  "title": "Countries Bordering Poland",
+  "description": "Countries that share a land border with Poland",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Poland",
+  "data": {
+    "Germany": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Borders Poland",
+      "unit": "membership"
+    }
+  }
+}

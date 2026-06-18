@@ -1,0 +1,28 @@
+{
+  "title": "Organization of Turkic States",
+  "description": "Members of the Organization of Turkic States",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Organization_of_Turkic_States",
+  "data": {
+    "Azerbaijan": {
+      "value": "Turkic state",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Turkic state",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "Turkic state",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "Turkic state",
+      "unit": "membership"
+    },
+    "Uzbekistan": {
+      "value": "Turkic state",
+      "unit": "membership"
+    }
+  }
+}

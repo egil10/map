@@ -1,0 +1,40 @@
+{
+  "title": "Countries Bordering France (Europe)",
+  "description": "European countries that share a land border with France",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_France",
+  "data": {
+    "Belgium": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Monaco": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Borders France",
+      "unit": "membership"
+    },
+    "Andorra": {
+      "value": "Borders France",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "title": "African Union",
+  "description": "Member states of the African Union",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/African_Union",
+  "data": {
+    "Algeria": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Angola": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Benin": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Botswana": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Burkina Faso": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Burundi": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Cameroon": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Cabo Verde": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Central African Republic": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Republic of the Congo": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Ivory Coast": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Djibouti": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Equatorial Guinea": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Eritrea": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "eSwatini": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Ethiopia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Gabon": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Gambia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Ghana": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Guinea": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Guinea-Bissau": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Kenya": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Lesotho": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Liberia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Madagascar": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Malawi": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Mauritius": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Namibia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Nigeria": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Rwanda": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "São Tomé and Principe": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Senegal": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Seychelles": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Sierra Leone": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "South Sudan": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "United Republic of Tanzania": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Togo": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Uganda": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Zambia": {
+      "value": "AU member",
+      "unit": "membership"
+    },
+    "Zimbabwe": {
+      "value": "AU member",
+      "unit": "membership"
+    }
+  }
+}

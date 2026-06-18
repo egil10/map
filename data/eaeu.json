@@ -1,0 +1,28 @@
+{
+  "title": "Eurasian Economic Union",
+  "description": "Members of the Eurasian Economic Union",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Eurasian_Economic_Union",
+  "data": {
+    "Armenia": {
+      "value": "EAEU member",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "EAEU member",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "EAEU member",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "EAEU member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "EAEU member",
+      "unit": "membership"
+    }
+  }
+}

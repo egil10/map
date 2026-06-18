@@ -1,0 +1,184 @@
+{
+  "title": "Island Nations",
+  "description": "Sovereign states made up entirely of one or more islands",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Island_country",
+  "data": {
+    "Antigua and Barbuda": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "The Bahamas": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Bahrain": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Barbados": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Brunei": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Cabo Verde": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Cuba": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Dominica": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Dominican Republic": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Fiji": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Grenada": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Indonesia": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Jamaica": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Kiribati": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Madagascar": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Maldives": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Marshall Islands": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Mauritius": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Federated States of Micronesia": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Nauru": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Palau": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Papua New Guinea": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Philippines": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Samoa": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "São Tomé and Principe": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Singapore": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Solomon Islands": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Sri Lanka": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "East Timor": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Tonga": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Trinidad and Tobago": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Tuvalu": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Vanuatu": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Haiti": {
+      "value": "Island nation",
+      "unit": "membership"
+    },
+    "Seychelles": {
+      "value": "Island nation",
+      "unit": "membership"
+    }
+  }
+}

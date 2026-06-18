@@ -1,0 +1,136 @@
+{
+  "title": "NATO Member States",
+  "description": "The 32 member states of the North Atlantic Treaty Organization",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Member_states_of_NATO",
+  "data": {
+    "Albania": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Montenegro": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "North Macedonia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "NATO member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "NATO member",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "ASEAN Member States",
+  "description": "Members of the Association of Southeast Asian Nations",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/ASEAN",
+  "data": {
+    "Brunei": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Cambodia": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Indonesia": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Laos": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Malaysia": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Myanmar": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Philippines": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Singapore": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Thailand": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    },
+    "Vietnam": {
+      "value": "ASEAN member",
+      "unit": "membership"
+    }
+  }
+}

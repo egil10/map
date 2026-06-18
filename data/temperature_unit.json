@@ -1,0 +1,780 @@
+{
+  "title": "Everyday Temperature Unit",
+  "description": "The temperature scale used in everyday life",
+  "unit": "scale",
+  "source": "https://en.wikipedia.org/wiki/Fahrenheit",
+  "data": {
+    "Afghanistan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Albania": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Algeria": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Andorra": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Angola": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Antigua and Barbuda": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Argentina": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Armenia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Australia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Austria": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Azerbaijan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "The Bahamas": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Bahrain": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Bangladesh": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Barbados": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Belarus": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Belgium": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Belize": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Benin": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Bhutan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Bolivia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Botswana": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Brazil": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Brunei": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Bulgaria": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Burkina Faso": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Burundi": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Cabo Verde": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Cambodia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Cameroon": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Canada": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Central African Republic": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Chad": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Chile": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "China": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Colombia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Comoros": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Republic of the Congo": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Costa Rica": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ivory Coast": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Croatia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Cuba": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Cyprus": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Czechia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Denmark": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Djibouti": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Dominica": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Dominican Republic": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ecuador": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Egypt": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "El Salvador": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Equatorial Guinea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Eritrea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Estonia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "eSwatini": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ethiopia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Fiji": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Finland": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "France": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Gabon": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Gambia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Georgia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Germany": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ghana": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Greece": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Grenada": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Guatemala": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Guinea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Guinea-Bissau": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Guyana": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Haiti": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Honduras": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Hungary": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Iceland": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "India": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Indonesia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Iran": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Iraq": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ireland": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Israel": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Italy": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Jamaica": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Japan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Jordan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Kazakhstan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Kenya": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Kiribati": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "North Korea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "South Korea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Kuwait": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Kyrgyzstan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Laos": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Latvia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Lebanon": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Lesotho": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Liberia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Libya": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Liechtenstein": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Lithuania": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Luxembourg": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Madagascar": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Malawi": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Malaysia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Maldives": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Mali": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Malta": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Marshall Islands": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Mauritania": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Mauritius": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Mexico": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Federated States of Micronesia": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Moldova": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Monaco": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Mongolia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Montenegro": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Morocco": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Mozambique": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Myanmar": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Namibia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Nauru": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Nepal": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Netherlands": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "New Zealand": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Nicaragua": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Niger": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Nigeria": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "North Macedonia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Norway": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Oman": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Pakistan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Palau": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Panama": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Papua New Guinea": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Paraguay": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Peru": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Philippines": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Poland": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Portugal": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Qatar": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Romania": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Russia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Rwanda": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Saint Lucia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Samoa": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "San Marino": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "São Tomé and Principe": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Saudi Arabia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Senegal": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Republic of Serbia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Seychelles": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Sierra Leone": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Singapore": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Slovakia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Slovenia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Solomon Islands": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Somalia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "South Africa": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "South Sudan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Spain": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Sri Lanka": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Sudan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Suriname": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Sweden": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Switzerland": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Syria": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Tajikistan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "United Republic of Tanzania": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Thailand": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "East Timor": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Togo": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Tonga": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Trinidad and Tobago": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Tunisia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Turkey": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Turkmenistan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Tuvalu": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Uganda": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Ukraine": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "United Arab Emirates": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "United Kingdom": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "United States of America": {
+      "value": "Fahrenheit",
+      "unit": "scale"
+    },
+    "Uruguay": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Uzbekistan": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Vanuatu": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Venezuela": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Vietnam": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Yemen": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Zambia": {
+      "value": "Celsius",
+      "unit": "scale"
+    },
+    "Zimbabwe": {
+      "value": "Celsius",
+      "unit": "scale"
+    }
+  }
+}

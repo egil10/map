@@ -1,0 +1,56 @@
+{
+  "title": "Transcontinental Countries",
+  "description": "Countries whose territory spans more than one continent",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Transcontinental_country",
+  "data": {
+    "Russia": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Georgia": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Transcontinental",
+      "unit": "membership"
+    }
+  }
+}

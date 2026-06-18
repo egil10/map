@@ -1,0 +1,88 @@
+{
+  "title": "Year the Euro Was Adopted",
+  "description": "The year each eurozone country adopted the euro",
+  "unit": "year",
+  "source": "https://en.wikipedia.org/wiki/Eurozone",
+  "data": {
+    "Austria": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Belgium": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Finland": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "France": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Ireland": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Italy": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Luxembourg": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Netherlands": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Portugal": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Greece": {
+      "value": 2001,
+      "unit": "year"
+    },
+    "Slovenia": {
+      "value": 2007,
+      "unit": "year"
+    },
+    "Cyprus": {
+      "value": 2008,
+      "unit": "year"
+    },
+    "Malta": {
+      "value": 2008,
+      "unit": "year"
+    },
+    "Slovakia": {
+      "value": 2009,
+      "unit": "year"
+    },
+    "Estonia": {
+      "value": 2011,
+      "unit": "year"
+    },
+    "Latvia": {
+      "value": 2014,
+      "unit": "year"
+    },
+    "Lithuania": {
+      "value": 2015,
+      "unit": "year"
+    },
+    "Croatia": {
+      "value": 2023,
+      "unit": "year"
+    }
+  }
+}

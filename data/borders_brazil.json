@@ -1,0 +1,44 @@
+{
+  "title": "Countries Bordering Brazil",
+  "description": "Countries that share a land border with Brazil",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Brazil",
+  "data": {
+    "Uruguay": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Venezuela": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Guyana": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    },
+    "Suriname": {
+      "value": "Borders Brazil",
+      "unit": "membership"
+    }
+  }
+}

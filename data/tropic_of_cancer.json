@@ -1,0 +1,76 @@
+{
+  "title": "Countries on the Tropic of Cancer",
+  "description": "Countries the Tropic of Cancer passes through",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Tropic_of_Cancer",
+  "data": {
+    "Mexico": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "The Bahamas": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Algeria": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Bangladesh": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Myanmar": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    },
+    "Taiwan": {
+      "value": "Tropic of Cancer",
+      "unit": "membership"
+    }
+  }
+}

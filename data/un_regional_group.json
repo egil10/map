@@ -1,0 +1,780 @@
+{
+  "title": "United Nations Regional Group",
+  "description": "The regional voting group each country belongs to at the UN",
+  "unit": "group",
+  "source": "https://en.wikipedia.org/wiki/United_Nations_Regional_Groups",
+  "data": {
+    "Afghanistan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Albania": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Algeria": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Andorra": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Angola": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Antigua and Barbuda": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Argentina": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Armenia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Australia": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Austria": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Azerbaijan": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "The Bahamas": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Bahrain": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Bangladesh": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Barbados": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Belarus": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Belgium": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Belize": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Benin": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Bhutan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Bolivia": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Botswana": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Brazil": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Brunei": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Bulgaria": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Burkina Faso": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Burundi": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Cabo Verde": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Cambodia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Cameroon": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Canada": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Central African Republic": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Chad": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Chile": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "China": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Colombia": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Comoros": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Republic of the Congo": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Costa Rica": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Ivory Coast": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Croatia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Cuba": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Cyprus": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Czechia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Denmark": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Djibouti": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Dominica": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Dominican Republic": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Ecuador": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Egypt": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "El Salvador": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Equatorial Guinea": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Eritrea": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Estonia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "eSwatini": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Ethiopia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Fiji": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Finland": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "France": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Gabon": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Gambia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Georgia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Germany": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Ghana": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Greece": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Grenada": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Guatemala": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Guinea": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Guinea-Bissau": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Guyana": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Haiti": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Honduras": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Hungary": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Iceland": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "India": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Indonesia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Iran": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Iraq": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Ireland": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Israel": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Italy": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Jamaica": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Japan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Jordan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Kazakhstan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Kenya": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Kiribati": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "North Korea": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "South Korea": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Kuwait": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Kyrgyzstan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Laos": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Latvia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Lebanon": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Lesotho": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Liberia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Libya": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Liechtenstein": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Lithuania": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Luxembourg": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Madagascar": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Malawi": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Malaysia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Maldives": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Mali": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Malta": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Marshall Islands": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Mauritania": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Mauritius": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Mexico": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Federated States of Micronesia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Moldova": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Monaco": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Mongolia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Montenegro": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Morocco": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Mozambique": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Myanmar": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Namibia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Nauru": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Nepal": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Netherlands": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "New Zealand": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Nicaragua": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Niger": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Nigeria": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "North Macedonia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Norway": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Oman": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Pakistan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Palau": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Panama": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Papua New Guinea": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Paraguay": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Peru": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Philippines": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Poland": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Portugal": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Qatar": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Romania": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Russia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Rwanda": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Saint Lucia": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Samoa": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "San Marino": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "São Tomé and Principe": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Saudi Arabia": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Senegal": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Republic of Serbia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Seychelles": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Sierra Leone": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Singapore": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Slovakia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Slovenia": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "Solomon Islands": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Somalia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "South Africa": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "South Sudan": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Spain": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Sri Lanka": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Sudan": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Suriname": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Sweden": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Switzerland": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Syria": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Tajikistan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "United Republic of Tanzania": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Thailand": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "East Timor": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Togo": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Tonga": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Trinidad and Tobago": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Tunisia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Turkey": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Turkmenistan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Tuvalu": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Uganda": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Ukraine": {
+      "value": "Eastern European Group",
+      "unit": "group"
+    },
+    "United Arab Emirates": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "United Kingdom": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "United States of America": {
+      "value": "Western European & Others",
+      "unit": "group"
+    },
+    "Uruguay": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Uzbekistan": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Vanuatu": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Venezuela": {
+      "value": "Latin American & Caribbean",
+      "unit": "group"
+    },
+    "Vietnam": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Yemen": {
+      "value": "Asia-Pacific Group",
+      "unit": "group"
+    },
+    "Zambia": {
+      "value": "African Group",
+      "unit": "group"
+    },
+    "Zimbabwe": {
+      "value": "African Group",
+      "unit": "group"
+    }
+  }
+}

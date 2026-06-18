@@ -1,0 +1,20 @@
+{
+  "title": "Baltic States",
+  "description": "The three Baltic states",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Baltic_states",
+  "data": {
+    "Estonia": {
+      "value": "Baltic state",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Baltic state",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Baltic state",
+      "unit": "membership"
+    }
+  }
+}

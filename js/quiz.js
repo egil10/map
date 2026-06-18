@@ -79,291 +79,43 @@ class QuizGame {
     }
 
     async loadQuizData() {
+        // Load every dataset from a single pre-built bundle (data/datasets.bundle.json,
+        // produced by tools/build.js). This replaces ~235 individual fetches with one
+        // request. Falls back to the manifest + individual files if the bundle is missing.
         try {
-            // Get list of all JSON files in data folder
-            const dataFiles = [
-                'academy_awards_best_international_feature_film_by_country.json',
-                'access_clean_fuels_cooking_2023_by_country.json',
-                'active_military_by_country.json',
-                'active_volcanoes_since_1800_by_country.json',
-                'active_volcanoes_since_1960_by_country.json',
-                'active_armed_conflicts_2024_by_country.json',
-                'african_countries_never_colonized.json',
-                'afrikaans_dutch_native_speakers_by_country.json',
-                'age_of_consent_by_country.json',
-                'alcohol_consumption_per_capita_by_country.json',
-                'amphibians_by_country.json',
-                'arable_land_per_person.json',
-                'average_annual_precipitation_inches.json',
-                'average_annual_precipitation_mm.json',
-                'average_annual_wages_usd_ppp_2023.json',
-                'average_age_first_relationship_by_country.json',
-                'average_cinema_ticket_price_by_country.json',
-                'average_elevation_feet.json',
-                'average_elevation_meters.json',
-                'average_height_by_country.json',
-                'average_hours_sleep_per_night_by_country.json',
-                'average_sleep_time_by_country.json',
-                'average_life_expectancy_by_country.json',
-                'average_iq_by_country.json',
-                'average_vehicle_ownership_age_by_country.json',
-                'average_years_of_schooling_2020_by_country.json',
-                'average_learning_outcomes_2020_by_country.json',
-                'belief_life_after_death_by_country.json',
-                'billionaires_by_country.json',
-                'birds_by_country.json',
-                'blood_types_by_country.json',
-                'blue_and_white_flags.json',
-                'blue_flag_countries.json',
-                'carbon_emissions_by_country.json',
-                'cattle_population_by_country.json',
-                'chinese_native_speakers_by_country.json',
-                'childhood_vaccination_policy_by_country.json',
-                'cocoa_production_by_country.json',
-                'coffee_consumption_per_capita_by_country.json',
-                'completion_rate_upper_secondary_education_2024_by_country.json',
-                'completion_rate_primary_education_1990_by_country.json',
-                'completion_rate_primary_education_2024_by_country.json',
-                'commonwealth_membership_by_country.json',
-                'container_port_traffic_by_country.json',
-                'corporate_tax_by_country.json',
-                'countries_by_continent.json',
-                'country_by_first_letter.json',
-                'country_exports_simplified.json',
-                'country_party_system.json',
-                'cultural_similarity_bangladesh_by_country.json',
-                'currencies_by_country.json',
-                'currency_exchange_rate_usd.json',
-                'death_penalty_laws_by_country.json',
-                'death_rate_conflicts_2024_by_country.json',
-                'deaths_one_sided_violence_2024_by_country.json',
-                'deaths_intrastate_conflicts_2024_by_country.json',
-                'deaths_indoor_air_pollution_2021_by_country.json',
-                'deaths_outdoor_air_pollution_2021_by_country.json',
-                'dentist_visits_per_year_by_country.json',
-                'depression_rate_by_country.json',
-                'distinct_land_neighbours_by_country.json',
-                'duration_pre_primary_education_2024_by_country.json',
-                'duration_compulsory_education_2023_by_country.json',
-                'earthquakes_by_country_2024.json',
-                'elephant_population_by_country.json',
-                'electricity_production_total_twh.json',
-                'energy_consumption_per_capita_kwh.json',
-                'europe_poverty_rates_by_country_2024.json',
-                'english_primary_language_by_country.json',
-                'english_speakers_total_by_country.json',
-                'english_speaking_population_by_country.json',
-                'external_debt_by_country.json',
-                'external_debt_percent_gdp_by_country.json',
-                'expected_years_of_schooling_2023_by_country.json',
-                'female_astronauts_by_country.json',
-                'female_average_height_by_country.json',
-                'female_population_2025.json',
-                'female_population_percentage_2024.json',
-                'fide_top_federations_open_august_2025.json',
-                'fifa_mens_world_ranking.json',
-                'favorable_view_china_by_country.json',
-                'firearms_per_100_by_country.json',
-                'fish_by_country.json',
-                'fixed_broadband_subscriptions_by_country.json',
-                'flags_without_red.json',
-                'flag_continuous_use_year_by_country.json',
-                'food_energy_intake_by_country.json',
-                'food_energy_intake_kj_per_capita.json',
-                'food_expenditure_percentage_by_country.json',
-                'forest_area_km2_by_country.json',
-                'forest_area_percentage_by_country.json',
-                'french_official_language_status_by_country.json',
-                'gdp_by_country_2025.json',
-                'gdp_per_working_hour_2023.json',
-                'gdp_growth_2003_2023_by_country.json',
-                'gdp_ppp_share_world_by_country.json',
-                'government_debt_to_gdp_by_country_2025.json',
-                'government_spending_education_gdp_2024_by_country.json',
-                'german_native_speakers_by_country.json',
-                'gni_per_capita_2024.json',
-                'gross_enrollment_ratio_tertiary_education_2023_by_country.json',
-                'green_flag_countries.json',
-                'hdi_by_country_2023.json',
-                'highest_temperature_by_country.json',
-                'high_speed_rail_by_country.json',
-                'holocene_volcanoes_by_country.json',
-                'horse_population_by_country.json',
-                'imports_by_country.json',
-                'insulin_cost_by_country.json',
-                'international_migrant_stock_2024.json',
-                'internet_speed_by_country.json',
-                'internet_usage_by_country.json',
-                'landlocked_countries.json',
-                'landlocked_countries_neighbours_with_ocean_access.json',
-                'land_area.json',
-                'latest_flag_adoption_by_country.json',
-                'leading_export_market_by_country.json',
-                'leading_export_by_country.json',
-                'leading_import_source_by_country.json',
-                'left_handed_population_by_country.json',
-                'living_languages_by_country.json',
-                'lower_house_seats_by_country.json',
-                'lowest_temperature_by_country.json',
-                'male_astronauts_by_country.json',
-                'male_median_age_by_country.json',
-                'male_minus_female_population_2025.json',
-                'male_population_2025.json',
-                'male_population_percentage_2024.json',
-                'mammals_by_country.json',
-                'marriage_rate_per_1000_by_country.json',
-                'maximum_elevation_by_country.json',
-                'mcdonalds_outlets_by_country.json',
-                'medical_cannabis_legality.json',
-                'minimum_elevation_by_country.json',
-                'median_wealth_per_adult_2023.json',
-                'median_age_by_country.json',
-                'mobile_connection_speed_by_country.json',
-                'mobile_phone_numbers_by_country.json',
-                'monarchies.json',
-                'motor_vehicle_production_2024.json',
-                'most_common_wikipedia_word_by_country.json',
-                'national_anthems_by_country.json',
-                'national_capitals_by_country.json',
-                'national_capitals_population_by_country.json',
-                'national_capitals_population_percentage_by_country.json',
-                'net_migration_2024.json',
-                'newest_countries_by_year.json',
-                'nobel_laureates_by_country.json',
-                'nobel_literature_laureates_by_country.json',
-                'nuclear_warheads_by_country.json',
-                'nuclear_power_capacity_by_country.json',
-                'number_of_islands_by_country.json',
-                'oecd_hours_latest.json',
-                'official_languages_by_country.json',
-                'onlyfans_ban_status_by_country.json',
-                'oil_production_by_country.json',
-                'olympics_hosted_by_country.json',
-                'percent_christian_by_country.json',
-                'percentage_would_fight_for_country.json',
-                'percentage_population_college_degree_by_country.json',
-                'percentage_cheating_married_men_by_country.json',
-                'percent_water.json',
-                'plants_wcmc_by_country.json',
-                'popes_by_country.json',
-                'pasta_consumption_per_capita_by_country.json',
-                'patent_applications_per_million_by_country.json',
-                'pizza_consumption_per_capita_by_country.json',
-                'pm25_air_pollution_2019_by_country.json',
-                'primary_energy_consumption_per_capita_2024_by_country.json',
-                'population_density.json',
-                'population_growth_rate_2023.json',
-                'population_per_lower_house_seat_by_country.json',
-                'public_libraries_by_country.json',
-                'public_holidays_annually_by_country.json',
-                'purple_flag_countries.json',
-                'r_d_researchers_per_million_2022_by_country.json',
-                'recreational_cannabis_legality.json',
-                'red_flag_countries.json',
-                'reptiles_by_country.json',
-                'road_network_size_by_country.json',
-                'road_traffic_mortality_by_country.json',
-                'scientific_publications_per_million_2020.json',
-                'scientific_publications_total_2020.json',
-                'second_primary_value_by_country.json',
-                'sex_ratio_by_country.json',
-                'share_women_stem_graduates_2018_by_country.json',
-                'share_students_studying_abroad_2022_by_country.json',
-                'share_female_secondary_teachers_2024_by_country.json',
-                'share_primary_school_age_out_of_school_2024_by_country.json',
-                'share_population_no_education_1870_by_country.json',
-                'share_population_no_education_2020_by_country.json',
-                'share_population_some_education_1870_by_country.json',
-                'share_population_some_education_2020_by_country.json',
-                'sheep_population_by_country.json',
-                'shoe_size_by_country.json',
-                'soccer_players_by_country.json',
-                'spanish_native_speakers_by_country.json',
-                'steel_production_by_country.json',
-                'stock_market_capitalization_by_country.json',
-                'strongest_earthquake_magnitude_by_country_2024.json',
-                'submarine_fleet_strength_by_country.json',
-                'sugar_consumption_per_capita_by_country.json',
-                'summer_olympic_bronze_medals_by_country.json',
-                'summer_olympic_gold_medals_by_country.json',
-                'summer_olympic_silver_medals_by_country.json',
-                'tea_consumption_per_capita_by_country.json',
-                'time_zones_by_country.json',
-                'tobacco_use_male_adults_by_country.json',
-                'top_goods_export_by_country.json',
-                'total_fertility_rate_2025.json',
-                'total_literacy_rate_by_country.json',
-                'total_naval_assets_by_country.json',
-                'traffic_related_death_rate_by_country.json',
-                'uefa_champions_league_runners_up_by_country.json',
-                'uefa_champions_league_winners_by_country.json',
-                'unesco_sites_by_country.json',
-                'usd_to_country_currencies.json',
-                'us_immigrants_by_nationality.json',
-                'waterways_length_by_country.json',
-                'water_area_by_country.json',
-                'wealth_gini_percent_by_country.json',
-                'wheat_production_by_country.json',
-                'white_flag_countries.json',
-                'wild_tigers_by_country.json',
-                'wine_consumption_per_capita_by_country.json',
-                'wine_production_by_country.json',
-                'winter_olympic_gold_medals_by_country.json',
-                'world_bank_income_group_by_country.json',
-                'world_bank_population_2024.json',
-                'world_cup_wins_by_country.json',
-                'world_figure_skating_gold_medals_by_country.json',
-                'world_population_2025.json',
-                'world_population_by_country.json',
-                'years_colonized_by_country.json',
-                'yellow_flag_countries.json'
-            ];
-            
-            // Load all datasets
-            console.log(`📂 Starting to load ${dataFiles.length} dataset files...`);
-            this.datasetList = [];
-            let loadedCount = 0;
-            let errorCount = 0;
-            const loadPromises = dataFiles.map(async (filename) => {
+            const bundleResp = await fetch('data/datasets.bundle.json');
+            if (bundleResp.ok) {
+                const bundle = await bundleResp.json();
+                this.datasetList = Object.entries(bundle)
+                    .map(([filename, data]) => this.convertToQuizFormat(data, filename))
+                    .filter(dataset => dataset !== null);
+                console.log(`📊 Loaded ${this.datasetList.length} datasets from bundle`);
+                this.updateDatasetCounter();
+                return;
+            }
+
+            console.warn('⚠️ Dataset bundle unavailable, falling back to manifest');
+            const manifestResp = await fetch('data/manifest.json');
+            const dataFiles = manifestResp.ok ? await manifestResp.json() : [];
+            const results = await Promise.all(dataFiles.map(async (filename) => {
                 try {
                     const response = await fetch(`data/${filename}`);
-                    if (response.ok) {
-                        const data = await response.json();
-                        const converted = this.convertToQuizFormat(data, filename);
-                        if (converted) {
-                            loadedCount++;
-                            if (loadedCount % 20 === 0) {
-                                console.log(`📊 Progress: ${loadedCount}/${dataFiles.length} datasets loaded...`);
-                            }
-                            return converted;
-                        } else {
-                            console.warn(`⚠️ Skipped: ${filename} (no valid data)`);
-                        }
-                    } else {
-                        errorCount++;
-                        console.warn(`⚠️ Failed to fetch ${filename}: ${response.status}`);
-                    }
+                    if (!response.ok) return null;
+                    return this.convertToQuizFormat(await response.json(), filename);
                 } catch (error) {
-                    errorCount++;
                     console.error(`❌ Error loading ${filename}:`, error.message);
+                    return null;
                 }
-                return null;
-            });
-            
-                const results = await Promise.all(loadPromises);
-                this.datasetList = results.filter(dataset => dataset !== null);
-                
-                console.log(`📊 Successfully loaded ${this.datasetList.length} valid datasets from data folder`);
-                console.log(`⚠️ Skipped ${dataFiles.length - this.datasetList.length} invalid/empty datasets`);
-                
-                // Update the dataset counter display
-                this.updateDatasetCounter();
+            }));
+            this.datasetList = results.filter(dataset => dataset !== null);
+            console.log(`📊 Loaded ${this.datasetList.length} datasets via manifest fallback`);
+            this.updateDatasetCounter();
         } catch (error) {
             console.error('❌ Failed to load quiz data:', error);
             this.datasetList = [];
         }
     }
-    
+
     convertToQuizFormat(data, filename) {
         // Convert various data formats to quiz format
         let title = data.title || filename.replace('.json', '').replace(/_/g, ' ');
@@ -789,11 +541,12 @@ class QuizGame {
         // Update color bar
         this.updateColorBar();
         
-        // Update source attribution in play mode
-        if (window.app && window.app.updateSourceAttribution) {
-            window.app.updateSourceAttribution();
+        // Keep the source hidden in play mode until the player answers, so the
+        // website name doesn't spoil the dataset. It is revealed on answer.
+        if (window.app && window.app.hideSourceAttribution) {
+            window.app.hideSourceAttribution();
         }
-        
+
         if (this.gameMode === 'play') {
             console.log('🎯 Showing play mode (multiple choice)');
             this.hideAnswerTitle();
@@ -984,7 +737,12 @@ class QuizGame {
         
         // Update progress
         this.updateProgressBar(isCorrect);
-        
+
+        // Now that the answer is locked in, reveal the source attribution.
+        if (window.app && window.app.updateSourceAttribution) {
+            window.app.updateSourceAttribution();
+        }
+
         // Auto-advance after 2 seconds for multiple choice
         setTimeout(() => {
             this.nextQuestion();
@@ -1032,7 +790,12 @@ class QuizGame {
         
         // Show the correct answer as feedback (like in learn mode)
         this.showAnswerTitle();
-        
+
+        // Answer is in — reveal the source attribution.
+        if (window.app && window.app.updateSourceAttribution) {
+            window.app.updateSourceAttribution();
+        }
+
         // Wait for Enter key press to advance instead of auto-advance
         this.waitingForNext = true;
         this.setupNextQuestionListener();
@@ -1244,8 +1007,9 @@ class QuizGame {
                     const midValue = sortedValues[midIndex];
                     const q3Value = sortedValues[q3Index];
                     
-                    // Update labels with actual values
-                    const unit = this.currentQuiz.unit || '';
+                    // Update labels with actual values. Hide the unit during
+                    // play so it doesn't give away the dataset.
+                    const unit = this.gameMode === 'play' ? '' : (this.currentQuiz.unit || '');
                     if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, unit);
                     if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, unit);
                     if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, unit);

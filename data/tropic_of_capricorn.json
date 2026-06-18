@@ -1,0 +1,48 @@
+{
+  "title": "Countries on the Tropic of Capricorn",
+  "description": "Countries the Tropic of Capricorn passes through",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Tropic_of_Capricorn",
+  "data": {
+    "Chile": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Namibia": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Botswana": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Madagascar": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Tropic of Capricorn",
+      "unit": "membership"
+    }
+  }
+}

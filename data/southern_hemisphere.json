@@ -1,0 +1,112 @@
+{
+  "title": "Countries Entirely in the Southern Hemisphere",
+  "description": "Sovereign states located completely south of the Equator",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Southern_Hemisphere",
+  "data": {
+    "Argentina": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Namibia": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Botswana": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Zimbabwe": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Zambia": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Malawi": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Lesotho": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "eSwatini": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Madagascar": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Angola": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Fiji": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Papua New Guinea": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Solomon Islands": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Vanuatu": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Samoa": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Tonga": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Tuvalu": {
+      "value": "Southern",
+      "unit": "membership"
+    },
+    "Nauru": {
+      "value": "Southern",
+      "unit": "membership"
+    }
+  }
+}

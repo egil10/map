@@ -1,0 +1,32 @@
+{
+  "title": "Countries Bordering South Africa",
+  "description": "Countries that share a land border with South Africa",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_South_Africa",
+  "data": {
+    "Namibia": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    },
+    "Botswana": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    },
+    "Zimbabwe": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    },
+    "eSwatini": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    },
+    "Lesotho": {
+      "value": "Borders South Africa",
+      "unit": "membership"
+    }
+  }
+}

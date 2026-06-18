@@ -1,0 +1,792 @@
+{
+  "title": "World Region (UN Geoscheme)",
+  "description": "The geographic subregion each country belongs to",
+  "unit": "region",
+  "source": "https://en.wikipedia.org/wiki/United_Nations_geoscheme",
+  "data": {
+    "Afghanistan": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Albania": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Algeria": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "Andorra": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Angola": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Antigua and Barbuda": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Argentina": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Armenia": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Australia": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Austria": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Azerbaijan": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "The Bahamas": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Bahrain": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Bangladesh": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Barbados": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Belarus": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Belgium": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Belize": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Benin": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Bhutan": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Bolivia": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Botswana": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Brazil": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Brunei": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Bulgaria": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Burkina Faso": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Burundi": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Cabo Verde": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Cambodia": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Cameroon": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Canada": {
+      "value": "Northern America",
+      "unit": "region"
+    },
+    "Central African Republic": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Chad": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Chile": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "China": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "Colombia": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Comoros": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Republic of the Congo": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Costa Rica": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Ivory Coast": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Croatia": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Cuba": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Cyprus": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Czechia": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Denmark": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Djibouti": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Dominica": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Dominican Republic": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Ecuador": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Egypt": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "El Salvador": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Equatorial Guinea": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Eritrea": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Estonia": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "eSwatini": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Ethiopia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Fiji": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Finland": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "France": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Gabon": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Gambia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Georgia": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Germany": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Ghana": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Greece": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Grenada": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Guatemala": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Guinea": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Guinea-Bissau": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Guyana": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Haiti": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Honduras": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Hungary": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Iceland": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "India": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Indonesia": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Iran": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Iraq": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Ireland": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Israel": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Italy": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Jamaica": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Japan": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "Jordan": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Kazakhstan": {
+      "value": "Central Asia",
+      "unit": "region"
+    },
+    "Kenya": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Kiribati": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "North Korea": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "South Korea": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "Kuwait": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Kyrgyzstan": {
+      "value": "Central Asia",
+      "unit": "region"
+    },
+    "Laos": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Latvia": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Lebanon": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Lesotho": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Liberia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Libya": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "Liechtenstein": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Lithuania": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Luxembourg": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Madagascar": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Malawi": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Malaysia": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Maldives": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Mali": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Malta": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Marshall Islands": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Mauritania": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Mauritius": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Mexico": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Federated States of Micronesia": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Moldova": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Monaco": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Mongolia": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "Montenegro": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Morocco": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "Mozambique": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Myanmar": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Namibia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Nauru": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Nepal": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Netherlands": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "New Zealand": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Nicaragua": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Niger": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Nigeria": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "North Macedonia": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Norway": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Oman": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Pakistan": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Palau": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Panama": {
+      "value": "Central America",
+      "unit": "region"
+    },
+    "Papua New Guinea": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Paraguay": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Peru": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Philippines": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Poland": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Portugal": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Qatar": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Romania": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Russia": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Rwanda": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Saint Lucia": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Samoa": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "San Marino": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "São Tomé and Principe": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Saudi Arabia": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Senegal": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Republic of Serbia": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Seychelles": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Sierra Leone": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Singapore": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Slovakia": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "Slovenia": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Solomon Islands": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Somalia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "South Africa": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "South Sudan": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Spain": {
+      "value": "Southern Europe",
+      "unit": "region"
+    },
+    "Sri Lanka": {
+      "value": "Southern Asia",
+      "unit": "region"
+    },
+    "Sudan": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "Suriname": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Sweden": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "Switzerland": {
+      "value": "Western Europe",
+      "unit": "region"
+    },
+    "Syria": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Tajikistan": {
+      "value": "Central Asia",
+      "unit": "region"
+    },
+    "United Republic of Tanzania": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Thailand": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "East Timor": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Togo": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Tonga": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Trinidad and Tobago": {
+      "value": "Caribbean",
+      "unit": "region"
+    },
+    "Tunisia": {
+      "value": "Northern Africa",
+      "unit": "region"
+    },
+    "Turkey": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Turkmenistan": {
+      "value": "Central Asia",
+      "unit": "region"
+    },
+    "Tuvalu": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Uganda": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Ukraine": {
+      "value": "Eastern Europe",
+      "unit": "region"
+    },
+    "United Arab Emirates": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "United Kingdom": {
+      "value": "Northern Europe",
+      "unit": "region"
+    },
+    "United States of America": {
+      "value": "Northern America",
+      "unit": "region"
+    },
+    "Uruguay": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Uzbekistan": {
+      "value": "Central Asia",
+      "unit": "region"
+    },
+    "Vanuatu": {
+      "value": "Oceania",
+      "unit": "region"
+    },
+    "Venezuela": {
+      "value": "South America",
+      "unit": "region"
+    },
+    "Vietnam": {
+      "value": "South-Eastern Asia",
+      "unit": "region"
+    },
+    "Yemen": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Zambia": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Zimbabwe": {
+      "value": "Sub-Saharan Africa",
+      "unit": "region"
+    },
+    "Taiwan": {
+      "value": "Eastern Asia",
+      "unit": "region"
+    },
+    "Palestine": {
+      "value": "Western Asia",
+      "unit": "region"
+    },
+    "Vatican": {
+      "value": "Southern Europe",
+      "unit": "region"
+    }
+  }
+}

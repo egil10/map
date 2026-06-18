@@ -1,0 +1,160 @@
+{
+  "title": "OECD Member States",
+  "description": "Members of the Organisation for Economic Co-operation and Development",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/OECD",
+  "data": {
+    "Australia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Austria": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Costa Rica": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Israel": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "South Korea": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "OECD member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "OECD member",
+      "unit": "membership"
+    }
+  }
+}

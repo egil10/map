@@ -1,0 +1,40 @@
+{
+  "title": "Countries on the Prime Meridian",
+  "description": "Countries that the Prime Meridian (0° longitude) passes through",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Prime_meridian_(Greenwich)",
+  "data": {
+    "United Kingdom": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Algeria": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Burkina Faso": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Togo": {
+      "value": "On Meridian",
+      "unit": "membership"
+    },
+    "Ghana": {
+      "value": "On Meridian",
+      "unit": "membership"
+    }
+  }
+}

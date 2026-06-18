@@ -1,0 +1,40 @@
+{
+  "title": "Countries Bordering Turkey",
+  "description": "Countries that share a land border with Turkey",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Turkey",
+  "data": {
+    "Greece": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Georgia": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Armenia": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "Borders Turkey",
+      "unit": "membership"
+    }
+  }
+}

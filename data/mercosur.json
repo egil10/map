@@ -1,0 +1,28 @@
+{
+  "title": "Mercosur Members",
+  "description": "Full members of the Southern Common Market",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Mercosur",
+  "data": {
+    "Argentina": {
+      "value": "Mercosur",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Mercosur",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Mercosur",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Mercosur",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Mercosur",
+      "unit": "membership"
+    }
+  }
+}

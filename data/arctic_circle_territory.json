@@ -1,0 +1,40 @@
+{
+  "title": "Countries with Territory in the Arctic Circle",
+  "description": "Countries with land north of the Arctic Circle",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Arctic_Circle",
+  "data": {
+    "Norway": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "Arctic territory",
+      "unit": "membership"
+    }
+  }
+}

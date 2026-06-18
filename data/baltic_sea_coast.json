@@ -1,0 +1,44 @@
+{
+  "title": "Baltic Sea Coastline",
+  "description": "Countries with a coastline on the Baltic Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Baltic_Sea",
+  "data": {
+    "Sweden": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Baltic Sea",
+      "unit": "membership"
+    }
+  }
+}

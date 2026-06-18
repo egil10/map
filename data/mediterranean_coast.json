@@ -1,0 +1,92 @@
+{
+  "title": "Mediterranean Sea Coastline",
+  "description": "Countries with a coastline on the Mediterranean Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Mediterranean_Sea",
+  "data": {
+    "Spain": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Monaco": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Montenegro": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Albania": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Lebanon": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Israel": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Algeria": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Mediterranean",
+      "unit": "membership"
+    }
+  }
+}

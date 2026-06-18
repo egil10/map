@@ -1,0 +1,780 @@
+{
+  "title": "Standard Paper Size",
+  "description": "The everyday office paper size standard",
+  "unit": "standard",
+  "source": "https://en.wikipedia.org/wiki/Paper_size",
+  "data": {
+    "Afghanistan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Albania": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Algeria": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Andorra": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Angola": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Antigua and Barbuda": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Argentina": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Armenia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Australia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Austria": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Azerbaijan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "The Bahamas": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bahrain": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bangladesh": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Barbados": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Belarus": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Belgium": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Belize": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Benin": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bhutan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bolivia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Botswana": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Brazil": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Brunei": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Bulgaria": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Burkina Faso": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Burundi": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Cabo Verde": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Cambodia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Cameroon": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Canada": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Central African Republic": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Chad": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Chile": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "China": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Colombia": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Comoros": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Republic of the Congo": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Costa Rica": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Ivory Coast": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Croatia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Cuba": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Cyprus": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Czechia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Denmark": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Djibouti": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Dominica": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Dominican Republic": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Ecuador": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Egypt": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "El Salvador": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Equatorial Guinea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Eritrea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Estonia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "eSwatini": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Ethiopia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Fiji": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Finland": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "France": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Gabon": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Gambia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Georgia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Germany": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Ghana": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Greece": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Grenada": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Guatemala": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Guinea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Guinea-Bissau": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Guyana": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Haiti": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Honduras": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Hungary": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Iceland": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "India": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Indonesia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Iran": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Iraq": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Ireland": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Israel": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Italy": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Jamaica": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Japan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Jordan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Kazakhstan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Kenya": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Kiribati": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "North Korea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "South Korea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Kuwait": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Kyrgyzstan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Laos": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Latvia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Lebanon": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Lesotho": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Liberia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Libya": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Liechtenstein": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Lithuania": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Luxembourg": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Madagascar": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Malawi": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Malaysia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Maldives": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mali": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Malta": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Marshall Islands": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mauritania": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mauritius": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mexico": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Federated States of Micronesia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Moldova": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Monaco": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mongolia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Montenegro": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Morocco": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Mozambique": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Myanmar": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Namibia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Nauru": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Nepal": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Netherlands": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "New Zealand": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Nicaragua": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Niger": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Nigeria": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "North Macedonia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Norway": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Oman": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Pakistan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Palau": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Panama": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Papua New Guinea": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Paraguay": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Peru": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Philippines": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Poland": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Portugal": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Qatar": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Romania": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Russia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Rwanda": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Saint Lucia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Samoa": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "San Marino": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "São Tomé and Principe": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Saudi Arabia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Senegal": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Republic of Serbia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Seychelles": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Sierra Leone": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Singapore": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Slovakia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Slovenia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Solomon Islands": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Somalia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "South Africa": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "South Sudan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Spain": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Sri Lanka": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Sudan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Suriname": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Sweden": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Switzerland": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Syria": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Tajikistan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "United Republic of Tanzania": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Thailand": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "East Timor": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Togo": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Tonga": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Trinidad and Tobago": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Tunisia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Turkey": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Turkmenistan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Tuvalu": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Uganda": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Ukraine": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "United Arab Emirates": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "United Kingdom": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "United States of America": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Uruguay": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Uzbekistan": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Vanuatu": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Venezuela": {
+      "value": "US Letter",
+      "unit": "standard"
+    },
+    "Vietnam": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Yemen": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Zambia": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    },
+    "Zimbabwe": {
+      "value": "A4 (ISO 216)",
+      "unit": "standard"
+    }
+  }
+}

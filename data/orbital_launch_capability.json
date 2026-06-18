@@ -1,0 +1,52 @@
+{
+  "title": "Independent Orbital Launch Capability",
+  "description": "Countries that have launched a satellite into orbit using their own rockets",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Timeline_of_first_orbital_launches_by_country",
+  "data": {
+    "Russia": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "Israel": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "North Korea": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    },
+    "South Korea": {
+      "value": "Spacefaring",
+      "unit": "membership"
+    }
+  }
+}

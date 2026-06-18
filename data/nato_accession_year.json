@@ -1,0 +1,136 @@
+{
+  "title": "Year Joined NATO",
+  "description": "The year each member state joined the North Atlantic Treaty Organization",
+  "unit": "year",
+  "source": "https://en.wikipedia.org/wiki/Enlargement_of_NATO",
+  "data": {
+    "Belgium": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Canada": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Denmark": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "France": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Iceland": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Italy": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Luxembourg": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Netherlands": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Norway": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Portugal": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "United Kingdom": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "United States of America": {
+      "value": 1949,
+      "unit": "year"
+    },
+    "Greece": {
+      "value": 1952,
+      "unit": "year"
+    },
+    "Turkey": {
+      "value": 1952,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 1955,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 1982,
+      "unit": "year"
+    },
+    "Czechia": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Hungary": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Poland": {
+      "value": 1999,
+      "unit": "year"
+    },
+    "Bulgaria": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Estonia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Latvia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Lithuania": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Romania": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Slovakia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Slovenia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Albania": {
+      "value": 2009,
+      "unit": "year"
+    },
+    "Croatia": {
+      "value": 2009,
+      "unit": "year"
+    },
+    "Montenegro": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "North Macedonia": {
+      "value": 2020,
+      "unit": "year"
+    },
+    "Finland": {
+      "value": 2023,
+      "unit": "year"
+    },
+    "Sweden": {
+      "value": 2024,
+      "unit": "year"
+    }
+  }
+}

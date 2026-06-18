@@ -1,0 +1,64 @@
+{
+  "title": "CFA Franc Zone",
+  "description": "African countries using the CFA franc",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/CFA_franc",
+  "data": {
+    "Benin": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Burkina Faso": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Ivory Coast": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Guinea-Bissau": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Senegal": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Togo": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Cameroon": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Central African Republic": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Republic of the Congo": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Equatorial Guinea": {
+      "value": "CFA franc",
+      "unit": "membership"
+    },
+    "Gabon": {
+      "value": "CFA franc",
+      "unit": "membership"
+    }
+  }
+}

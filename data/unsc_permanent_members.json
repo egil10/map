@@ -1,0 +1,28 @@
+{
+  "title": "UN Security Council Permanent Members",
+  "description": "The five permanent members of the United Nations Security Council",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Permanent_members_of_the_United_Nations_Security_Council",
+  "data": {
+    "United States of America": {
+      "value": "P5 member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "P5 member",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "P5 member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "P5 member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "P5 member",
+      "unit": "membership"
+    }
+  }
+}

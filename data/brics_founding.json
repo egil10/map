@@ -1,0 +1,28 @@
+{
+  "title": "BRICS Founding Members",
+  "description": "The five founding members of BRICS",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/BRICS",
+  "data": {
+    "Brazil": {
+      "value": "BRICS member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "BRICS member",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "BRICS member",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "BRICS member",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "BRICS member",
+      "unit": "membership"
+    }
+  }
+}

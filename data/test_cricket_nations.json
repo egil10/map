@@ -1,0 +1,56 @@
+{
+  "title": "Test Cricket Nations",
+  "description": "Countries with full International Cricket Council membership (Test status)",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Test_cricket",
+  "data": {
+    "Afghanistan": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Bangladesh": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Pakistan": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Sri Lanka": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Samoa": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "Zimbabwe": {
+      "value": "Test nation",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Test nation",
+      "unit": "membership"
+    }
+  }
+}

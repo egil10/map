@@ -1,0 +1,40 @@
+{
+  "title": "Commonwealth of Independent States",
+  "description": "Member states of the Commonwealth of Independent States",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States",
+  "data": {
+    "Armenia": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Tajikistan": {
+      "value": "CIS member",
+      "unit": "membership"
+    },
+    "Uzbekistan": {
+      "value": "CIS member",
+      "unit": "membership"
+    }
+  }
+}

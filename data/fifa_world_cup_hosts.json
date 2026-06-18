@@ -1,0 +1,80 @@
+{
+  "title": "FIFA World Cup Host Nations",
+  "description": "Countries that have hosted the FIFA World Cup",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/FIFA_World_Cup",
+  "data": {
+    "Uruguay": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "South Korea": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "Host",
+      "unit": "membership"
+    }
+  }
+}

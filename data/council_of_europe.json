@@ -1,0 +1,192 @@
+{
+  "title": "Council of Europe",
+  "description": "Member states of the Council of Europe",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Member_states_of_the_Council_of_Europe",
+  "data": {
+    "Albania": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Andorra": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Armenia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Austria": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Georgia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Moldova": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Monaco": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Montenegro": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "North Macedonia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "San Marino": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Republic of Serbia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Member",
+      "unit": "membership"
+    }
+  }
+}

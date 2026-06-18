@@ -1,0 +1,24 @@
+{
+  "title": "Countries Bordering Thailand",
+  "description": "Countries that share a land border with Thailand",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Thailand",
+  "data": {
+    "Myanmar": {
+      "value": "Borders Thailand",
+      "unit": "membership"
+    },
+    "Laos": {
+      "value": "Borders Thailand",
+      "unit": "membership"
+    },
+    "Cambodia": {
+      "value": "Borders Thailand",
+      "unit": "membership"
+    },
+    "Malaysia": {
+      "value": "Borders Thailand",
+      "unit": "membership"
+    }
+  }
+}

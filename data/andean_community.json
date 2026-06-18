@@ -1,0 +1,24 @@
+{
+  "title": "Andean Community",
+  "description": "Members of the Andean Community (CAN)",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Andean_Community",
+  "data": {
+    "Bolivia": {
+      "value": "Andean",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "Andean",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "Andean",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "Andean",
+      "unit": "membership"
+    }
+  }
+}

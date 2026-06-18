@@ -1,0 +1,36 @@
+{
+  "title": "North Sea Coastline",
+  "description": "Countries with a coastline on the North Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/North_Sea",
+  "data": {
+    "United Kingdom": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "North Sea",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "North Sea",
+      "unit": "membership"
+    }
+  }
+}

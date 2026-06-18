@@ -1,0 +1,48 @@
+{
+  "title": "Countries in the Sahara",
+  "description": "Countries that contain part of the Sahara Desert",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Sahara",
+  "data": {
+    "Algeria": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "Sahara",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "Sahara",
+      "unit": "membership"
+    }
+  }
+}

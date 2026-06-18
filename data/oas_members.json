@@ -1,0 +1,148 @@
+{
+  "title": "Organization of American States",
+  "description": "Member states of the Organization of American States",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Organization_of_American_States",
+  "data": {
+    "Antigua and Barbuda": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "The Bahamas": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Barbados": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Belize": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Costa Rica": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Cuba": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Dominica": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Dominican Republic": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "El Salvador": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Grenada": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Guatemala": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Guyana": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Haiti": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Honduras": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Jamaica": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Nicaragua": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Panama": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Saint Lucia": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Suriname": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Trinidad and Tobago": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "OAS member",
+      "unit": "membership"
+    },
+    "Venezuela": {
+      "value": "OAS member",
+      "unit": "membership"
+    }
+  }
+}

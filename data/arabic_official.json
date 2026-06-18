@@ -1,0 +1,104 @@
+{
+  "title": "Arabic as an Official Language",
+  "description": "Countries where Arabic is an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Arabic",
+  "data": {
+    "Algeria": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Bahrain": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Djibouti": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Eritrea": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Jordan": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Lebanon": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Palestine": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "Arabic",
+      "unit": "membership"
+    },
+    "Yemen": {
+      "value": "Arabic",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,784 @@
+{
+  "title": "Primary Date Format",
+  "description": "The most common way dates are written",
+  "unit": "format",
+  "source": "https://en.wikipedia.org/wiki/Date_format_by_country",
+  "data": {
+    "Afghanistan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Albania": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Algeria": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Andorra": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Angola": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Antigua and Barbuda": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Argentina": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Armenia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Australia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Austria": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Azerbaijan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "The Bahamas": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bahrain": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bangladesh": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Barbados": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Belarus": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Belgium": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Belize": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Benin": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bhutan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bolivia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Botswana": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Brazil": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Brunei": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Bulgaria": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Burkina Faso": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Burundi": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Cabo Verde": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Cambodia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Cameroon": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Canada": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Central African Republic": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Chad": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Chile": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "China": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Colombia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Comoros": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Republic of the Congo": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Costa Rica": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ivory Coast": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Croatia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Cuba": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Cyprus": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Czechia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Denmark": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Djibouti": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Dominica": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Dominican Republic": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ecuador": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Egypt": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "El Salvador": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Equatorial Guinea": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Eritrea": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Estonia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "eSwatini": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ethiopia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Fiji": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Finland": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "France": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Gabon": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Gambia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Georgia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Germany": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ghana": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Greece": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Grenada": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Guatemala": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Guinea": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Guinea-Bissau": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Guyana": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Haiti": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Honduras": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Hungary": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Iceland": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "India": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Indonesia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Iran": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Iraq": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ireland": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Israel": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Italy": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Jamaica": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Japan": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Jordan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Kazakhstan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Kenya": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Kiribati": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "North Korea": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "South Korea": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Kuwait": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Kyrgyzstan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Laos": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Latvia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Lebanon": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Lesotho": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Liberia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Libya": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Liechtenstein": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Lithuania": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Luxembourg": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Madagascar": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Malawi": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Malaysia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Maldives": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mali": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Malta": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Marshall Islands": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mauritania": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mauritius": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mexico": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Federated States of Micronesia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Moldova": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Monaco": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mongolia": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    },
+    "Montenegro": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Morocco": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Mozambique": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Myanmar": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Namibia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Nauru": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Nepal": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Netherlands": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "New Zealand": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Nicaragua": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Niger": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Nigeria": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "North Macedonia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Norway": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Oman": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Pakistan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Palau": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Panama": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Papua New Guinea": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Paraguay": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Peru": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Philippines": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Poland": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Portugal": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Qatar": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Romania": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Russia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Rwanda": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Saint Lucia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Samoa": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "San Marino": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "São Tomé and Principe": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Saudi Arabia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Senegal": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Republic of Serbia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Seychelles": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Sierra Leone": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Singapore": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Slovakia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Slovenia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Solomon Islands": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Somalia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "South Africa": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "South Sudan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Spain": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Sri Lanka": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Sudan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Suriname": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Sweden": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Switzerland": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Syria": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Tajikistan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "United Republic of Tanzania": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Thailand": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "East Timor": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Togo": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Tonga": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Trinidad and Tobago": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Tunisia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Turkey": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Turkmenistan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Tuvalu": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Uganda": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Ukraine": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "United Arab Emirates": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "United Kingdom": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "United States of America": {
+      "value": "MM/DD/YYYY",
+      "unit": "format"
+    },
+    "Uruguay": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Uzbekistan": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Vanuatu": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Venezuela": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Vietnam": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Yemen": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Zambia": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Zimbabwe": {
+      "value": "DD/MM/YYYY",
+      "unit": "format"
+    },
+    "Taiwan": {
+      "value": "YYYY/MM/DD",
+      "unit": "format"
+    }
+  }
+}

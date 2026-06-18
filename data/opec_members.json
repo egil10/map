@@ -1,0 +1,56 @@
+{
+  "title": "OPEC Member States",
+  "description": "Members of the Organization of the Petroleum Exporting Countries (2024)",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/OPEC",
+  "data": {
+    "Algeria": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Republic of the Congo": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Equatorial Guinea": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Gabon": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Nigeria": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "OPEC member",
+      "unit": "membership"
+    },
+    "Venezuela": {
+      "value": "OPEC member",
+      "unit": "membership"
+    }
+  }
+}

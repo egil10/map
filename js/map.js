@@ -448,8 +448,11 @@ class WorldMap {
         try {
             console.log('🗺️ Loading countries GeoJSON data...');
             
-            // Try multiple GeoJSON sources to ensure we get all microstates and islands
+            // Load the local, precision-reduced base map first (≈1.4 MB, built by
+            // tools/build.js). Fall back to the full remote sources only if it is
+            // unavailable. This replaces a 14.6 MB download on every page load.
             const sources = [
+                'data/world_countries.geojson',
                 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson',
                 'https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson'
             ];
@@ -480,47 +483,7 @@ class WorldMap {
                 type: this.countriesData.type,
                 hasProperties: this.countriesData.features[0]?.properties ? true : false
             });
-            
-            // Debug: Log all country names containing "United" to see what's available
-            const unitedCountries = this.countriesData.features
-                .map(f => f.properties.name)
-                .filter(name => name && name.toLowerCase().includes('united'))
-                .sort();
-            console.log('GeoJSON countries containing "United":', unitedCountries);
-            
-            // Debug: Also check for "America" and "USA" variations
-            const americaCountries = this.countriesData.features
-                .map(f => f.properties.name)
-                .filter(name => name && (name.toLowerCase().includes('america') || name.toLowerCase().includes('usa')))
-                .sort();
-            console.log('GeoJSON countries containing "America" or "USA":', americaCountries);
-            
-            // Debug: Check for microstates and islands
-            const microstates = this.countriesData.features
-                .map(f => f.properties.name)
-                .filter(name => name && (
-                    name.toLowerCase().includes('monaco') ||
-                    name.toLowerCase().includes('vatican') ||
-                    name.toLowerCase().includes('san marino') ||
-                    name.toLowerCase().includes('liechtenstein') ||
-                    name.toLowerCase().includes('andorra') ||
-                    name.toLowerCase().includes('malta') ||
-                    name.toLowerCase().includes('luxembourg') ||
-                    name.toLowerCase().includes('singapore') ||
-                    name.toLowerCase().includes('macao') ||
-                    name.toLowerCase().includes('hong kong')
-                ))
-                .sort();
-            console.log('GeoJSON microstates and islands found:', microstates);
-            
-            // Debug: Log a sample of all country names
-            const allCountryNames = this.countriesData.features
-                .map(f => f.properties.name)
-                .filter(name => name)
-                .sort()
-                .slice(0, 20);
-            console.log('Sample of all GeoJSON country names:', allCountryNames);
-            
+
             // Ensure microstates and islands are included
             this.ensureMicrostatesIncluded();
 
@@ -974,30 +937,13 @@ class WorldMap {
             return;
         }
         
-        // Apply colors to the single layer
+        // Recolour every country in place. setStyle repaints the existing SVG
+        // paths directly — no need to tear down and re-add the whole layer, which
+        // was the main source of per-question flicker and lag.
         this.countriesLayer.setStyle((feature) => {
             return this.getCountryStyle(feature);
         });
-        
-        // Force redraw to ensure colors appear on all repeating instances
-        // For GeoJSON layers, we need to refresh the map to see changes on repeating instances
-        if (this.map && typeof this.map.invalidateSize === 'function') {
-            this.map.invalidateSize();
-        }
-        
-        // Force a complete layer refresh to ensure proper rendering
-        if (this.countriesLayer) {
-            this.map.removeLayer(this.countriesLayer);
-            this.map.addLayer(this.countriesLayer);
-            
-            // Additional refresh after re-adding
-            setTimeout(() => {
-                if (this.map && typeof this.map.invalidateSize === 'function') {
-                    this.map.invalidateSize();
-                }
-            }, 50);
-        }
-        
+
         // Create legend
         this.createLegend(quiz);
     }
@@ -1184,9 +1130,11 @@ class WorldMap {
                 ? sortedCountries.length - index // Reverse rank for low to high
                 : index + 1; // Normal rank for high to low
             
+            // Hide the unit during play so it doesn't give away the dataset.
+            const displayUnit = this.currentGameMode === 'play' ? '' : country.unit;
             item.innerHTML = `
                 <span class="legend-country">${rank}. ${country.country}</span>
-                <span class="legend-value">${this.formatValue(country.value, country.unit)}</span>
+                <span class="legend-value">${this.formatValue(country.value, displayUnit)}</span>
             `;
             
             // Add click handler to highlight country on map

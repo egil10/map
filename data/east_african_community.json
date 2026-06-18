@@ -1,0 +1,40 @@
+{
+  "title": "East African Community",
+  "description": "Member states of the East African Community",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/East_African_Community",
+  "data": {
+    "Burundi": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "Kenya": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "Rwanda": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "South Sudan": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "United Republic of Tanzania": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "Uganda": {
+      "value": "EAC member",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "EAC member",
+      "unit": "membership"
+    }
+  }
+}

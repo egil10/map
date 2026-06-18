@@ -1,0 +1,212 @@
+{
+  "title": "United Nations Founding Members (1945)",
+  "description": "The 51 original member states of the United Nations",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+  "data": {
+    "Argentina": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Costa Rica": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Cuba": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Dominican Republic": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "El Salvador": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Ethiopia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Guatemala": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Haiti": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Honduras": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Lebanon": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Liberia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Nicaragua": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Panama": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Philippines": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "South Africa": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Venezuela": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Founding member",
+      "unit": "membership"
+    },
+    "Republic of Serbia": {
+      "value": "Founding member",
+      "unit": "membership"
+    }
+  }
+}

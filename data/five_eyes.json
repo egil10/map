@@ -1,0 +1,28 @@
+{
+  "title": "Five Eyes Alliance",
+  "description": "The Five Eyes intelligence alliance",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Five_Eyes",
+  "data": {
+    "Australia": {
+      "value": "Five Eyes",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "Five Eyes",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Five Eyes",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Five Eyes",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Five Eyes",
+      "unit": "membership"
+    }
+  }
+}

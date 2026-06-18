@@ -1,0 +1,128 @@
+{
+  "title": "European Economic Area",
+  "description": "Members of the European Economic Area (EU plus Iceland, Liechtenstein, Norway)",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/European_Economic_Area",
+  "data": {
+    "Austria": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "EEA member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "EEA member",
+      "unit": "membership"
+    }
+  }
+}

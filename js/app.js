@@ -182,8 +182,9 @@ class App {
             } else {
                 // Hide dataset counter in play mode
                 datasetCounter.style.display = 'none';
-                // Show source attribution in play mode
-                this.updateSourceAttribution();
+                // Keep the source hidden until the player answers — the website
+                // name often gives away the dataset. It is revealed on answer.
+                this.hideSourceAttribution();
             }
         }
         
@@ -215,7 +216,14 @@ class App {
             sourceAttribution.style.display = 'none';
         }
     }
-    
+
+    hideSourceAttribution() {
+        const sourceAttribution = document.getElementById('sourceAttribution');
+        if (sourceAttribution) {
+            sourceAttribution.style.display = 'none';
+        }
+    }
+
     formatSourceUrl(url) {
         try {
             const urlObj = new URL(url);

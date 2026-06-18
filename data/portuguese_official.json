@@ -1,0 +1,44 @@
+{
+  "title": "Portuguese as an Official Language",
+  "description": "Countries where Portuguese is an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Portuguese_language",
+  "data": {
+    "Portugal": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Angola": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Guinea-Bissau": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Cabo Verde": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "São Tomé and Principe": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "East Timor": {
+      "value": "Portuguese",
+      "unit": "membership"
+    },
+    "Equatorial Guinea": {
+      "value": "Portuguese",
+      "unit": "membership"
+    }
+  }
+}

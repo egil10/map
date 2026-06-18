@@ -1,0 +1,780 @@
+{
+  "title": "Driving Side",
+  "description": "Which side of the road traffic drives on",
+  "unit": "side",
+  "source": "https://en.wikipedia.org/wiki/Left-_and_right-hand_traffic",
+  "data": {
+    "Afghanistan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Albania": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Algeria": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Andorra": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Angola": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Antigua and Barbuda": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Argentina": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Armenia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Australia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Austria": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Azerbaijan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "The Bahamas": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Bahrain": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Bangladesh": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Barbados": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Belarus": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Belgium": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Belize": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Benin": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Bhutan": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Bolivia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Botswana": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Brazil": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Brunei": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Bulgaria": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Burkina Faso": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Burundi": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Cabo Verde": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Cambodia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Cameroon": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Canada": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Central African Republic": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Chad": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Chile": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "China": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Colombia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Comoros": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Republic of the Congo": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Costa Rica": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Ivory Coast": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Croatia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Cuba": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Cyprus": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Czechia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Denmark": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Djibouti": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Dominica": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Dominican Republic": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Ecuador": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Egypt": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "El Salvador": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Equatorial Guinea": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Eritrea": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Estonia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "eSwatini": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Ethiopia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Fiji": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Finland": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "France": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Gabon": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Gambia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Georgia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Germany": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Ghana": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Greece": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Grenada": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Guatemala": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Guinea": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Guinea-Bissau": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Guyana": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Haiti": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Honduras": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Hungary": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Iceland": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "India": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Indonesia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Iran": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Iraq": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Ireland": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Israel": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Italy": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Jamaica": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Japan": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Jordan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Kazakhstan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Kenya": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Kiribati": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "North Korea": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "South Korea": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Kuwait": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Kyrgyzstan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Laos": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Latvia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Lebanon": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Lesotho": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Liberia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Libya": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Liechtenstein": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Lithuania": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Luxembourg": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Madagascar": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Malawi": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Malaysia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Maldives": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Mali": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Malta": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Marshall Islands": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Mauritania": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Mauritius": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Mexico": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Federated States of Micronesia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Moldova": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Monaco": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Mongolia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Montenegro": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Morocco": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Mozambique": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Myanmar": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Namibia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Nauru": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Nepal": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Netherlands": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "New Zealand": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Nicaragua": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Niger": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Nigeria": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "North Macedonia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Norway": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Oman": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Pakistan": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Palau": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Panama": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Papua New Guinea": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Paraguay": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Peru": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Philippines": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Poland": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Portugal": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Qatar": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Romania": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Russia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Rwanda": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Saint Lucia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Samoa": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "San Marino": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "São Tomé and Principe": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Saudi Arabia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Senegal": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Republic of Serbia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Seychelles": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Sierra Leone": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Singapore": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Slovakia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Slovenia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Solomon Islands": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Somalia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "South Africa": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "South Sudan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Spain": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Sri Lanka": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Sudan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Suriname": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Sweden": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Switzerland": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Syria": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Tajikistan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "United Republic of Tanzania": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Thailand": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "East Timor": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Togo": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Tonga": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Trinidad and Tobago": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Tunisia": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Turkey": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Turkmenistan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Tuvalu": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Uganda": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Ukraine": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "United Arab Emirates": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "United Kingdom": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "United States of America": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Uruguay": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Uzbekistan": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Vanuatu": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Venezuela": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Vietnam": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Yemen": {
+      "value": "Right-hand",
+      "unit": "side"
+    },
+    "Zambia": {
+      "value": "Left-hand",
+      "unit": "side"
+    },
+    "Zimbabwe": {
+      "value": "Left-hand",
+      "unit": "side"
+    }
+  }
+}

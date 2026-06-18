@@ -1,0 +1,784 @@
+{
+  "title": "FIFA Confederation",
+  "description": "The continental football confederation each country belongs to",
+  "unit": "confederation",
+  "source": "https://en.wikipedia.org/wiki/List_of_football_associations",
+  "data": {
+    "Afghanistan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Albania": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Algeria": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Andorra": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Angola": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Antigua and Barbuda": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Argentina": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Armenia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Australia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Austria": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Azerbaijan": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "The Bahamas": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Bahrain": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Bangladesh": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Barbados": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Belarus": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Belgium": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Belize": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Benin": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Bhutan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Bolivia": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Botswana": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Brazil": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Brunei": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Bulgaria": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Burkina Faso": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Burundi": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Cabo Verde": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Cambodia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Cameroon": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Canada": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Central African Republic": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Chad": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Chile": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "China": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Colombia": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Comoros": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Republic of the Congo": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Costa Rica": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Ivory Coast": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Croatia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Cuba": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Cyprus": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Czechia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Denmark": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Djibouti": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Dominica": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Dominican Republic": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Ecuador": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Egypt": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "El Salvador": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Equatorial Guinea": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Eritrea": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Estonia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "eSwatini": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Ethiopia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Fiji": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Finland": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "France": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Gabon": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Gambia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Georgia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Germany": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Ghana": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Greece": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Grenada": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Guatemala": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Guinea": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Guinea-Bissau": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Guyana": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Haiti": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Honduras": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Hungary": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Iceland": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "India": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Indonesia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Iran": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Iraq": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Ireland": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Israel": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Italy": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Jamaica": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Japan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Jordan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Kazakhstan": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Kenya": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Kiribati": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "North Korea": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "South Korea": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Kuwait": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Kyrgyzstan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Laos": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Latvia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Lebanon": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Lesotho": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Liberia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Libya": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Liechtenstein": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Lithuania": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Luxembourg": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Madagascar": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Malawi": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Malaysia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Maldives": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Mali": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Malta": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Marshall Islands": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Mauritania": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Mauritius": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Mexico": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Federated States of Micronesia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Moldova": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Monaco": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Mongolia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Montenegro": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Morocco": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Mozambique": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Myanmar": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Namibia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Nauru": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Nepal": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Netherlands": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "New Zealand": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Nicaragua": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Niger": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Nigeria": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "North Macedonia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Norway": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Oman": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Pakistan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Palau": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Panama": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Papua New Guinea": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Paraguay": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Peru": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Philippines": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Poland": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Portugal": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Qatar": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Romania": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Russia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Rwanda": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Saint Lucia": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Samoa": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "San Marino": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "São Tomé and Principe": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Saudi Arabia": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Senegal": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Republic of Serbia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Seychelles": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Sierra Leone": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Singapore": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Slovakia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Slovenia": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Solomon Islands": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Somalia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "South Africa": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "South Sudan": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Spain": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Sri Lanka": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Sudan": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Suriname": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Sweden": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Switzerland": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Syria": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Tajikistan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "United Republic of Tanzania": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Thailand": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "East Timor": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Togo": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Tonga": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Trinidad and Tobago": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Tunisia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Turkey": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "Turkmenistan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Tuvalu": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Uganda": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Ukraine": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "United Arab Emirates": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "United Kingdom": {
+      "value": "UEFA (Europe)",
+      "unit": "confederation"
+    },
+    "United States of America": {
+      "value": "CONCACAF (N./C. America)",
+      "unit": "confederation"
+    },
+    "Uruguay": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Uzbekistan": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Vanuatu": {
+      "value": "OFC (Oceania)",
+      "unit": "confederation"
+    },
+    "Venezuela": {
+      "value": "CONMEBOL (South America)",
+      "unit": "confederation"
+    },
+    "Vietnam": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Yemen": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    },
+    "Zambia": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Zimbabwe": {
+      "value": "CAF (Africa)",
+      "unit": "confederation"
+    },
+    "Palestine": {
+      "value": "AFC (Asia)",
+      "unit": "confederation"
+    }
+  }
+}

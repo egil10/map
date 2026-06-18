@@ -1,0 +1,48 @@
+{
+  "title": "Shanghai Cooperation Organisation",
+  "description": "Member states of the Shanghai Cooperation Organisation",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Shanghai_Cooperation_Organisation",
+  "data": {
+    "China": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Pakistan": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Tajikistan": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Uzbekistan": {
+      "value": "SCO member",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "SCO member",
+      "unit": "membership"
+    }
+  }
+}

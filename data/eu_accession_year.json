@@ -1,0 +1,116 @@
+{
+  "title": "Year Joined the European Union",
+  "description": "The year each current member state joined the EU (or its predecessors)",
+  "unit": "year",
+  "source": "https://en.wikipedia.org/wiki/Enlargement_of_the_European_Union",
+  "data": {
+    "Belgium": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "France": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Italy": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Luxembourg": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Netherlands": {
+      "value": 1958,
+      "unit": "year"
+    },
+    "Denmark": {
+      "value": 1973,
+      "unit": "year"
+    },
+    "Ireland": {
+      "value": 1973,
+      "unit": "year"
+    },
+    "Greece": {
+      "value": 1981,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 1986,
+      "unit": "year"
+    },
+    "Portugal": {
+      "value": 1986,
+      "unit": "year"
+    },
+    "Austria": {
+      "value": 1995,
+      "unit": "year"
+    },
+    "Finland": {
+      "value": 1995,
+      "unit": "year"
+    },
+    "Sweden": {
+      "value": 1995,
+      "unit": "year"
+    },
+    "Cyprus": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Czechia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Estonia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Hungary": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Latvia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Lithuania": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Malta": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Poland": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Slovakia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Slovenia": {
+      "value": 2004,
+      "unit": "year"
+    },
+    "Bulgaria": {
+      "value": 2007,
+      "unit": "year"
+    },
+    "Romania": {
+      "value": 2007,
+      "unit": "year"
+    },
+    "Croatia": {
+      "value": 2013,
+      "unit": "year"
+    }
+  }
+}

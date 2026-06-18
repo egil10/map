@@ -1,0 +1,60 @@
+{
+  "title": "Countries on the Equator",
+  "description": "Countries that the Equator passes through",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Equator",
+  "data": {
+    "Ecuador": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "São Tomé and Principe": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Gabon": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Republic of the Congo": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Uganda": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Kenya": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Indonesia": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Maldives": {
+      "value": "On Equator",
+      "unit": "membership"
+    },
+    "Kiribati": {
+      "value": "On Equator",
+      "unit": "membership"
+    }
+  }
+}

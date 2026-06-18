@@ -1,0 +1,236 @@
+{
+  "title": "Organisation of Islamic Cooperation",
+  "description": "Member states of the Organisation of Islamic Cooperation",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation",
+  "data": {
+    "Afghanistan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Albania": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Algeria": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Bahrain": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Bangladesh": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Benin": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Brunei": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Burkina Faso": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Cameroon": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Chad": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Ivory Coast": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Djibouti": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Gabon": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Gambia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Guinea": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Guinea-Bissau": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Guyana": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Indonesia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Jordan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Lebanon": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Malaysia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Maldives": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Mali": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Mozambique": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Niger": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Nigeria": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Pakistan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Palestine": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Senegal": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Sierra Leone": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Suriname": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Tajikistan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Togo": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Turkey": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Turkmenistan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Uganda": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Uzbekistan": {
+      "value": "OIC member",
+      "unit": "membership"
+    },
+    "Yemen": {
+      "value": "OIC member",
+      "unit": "membership"
+    }
+  }
+}

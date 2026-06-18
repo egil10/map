@@ -1,0 +1,88 @@
+{
+  "title": "Spanish as an Official Language",
+  "description": "Countries where Spanish is an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geographical_distribution_of_Spanish",
+  "data": {
+    "Spain": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Mexico": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Colombia": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Venezuela": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Chile": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Guatemala": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Cuba": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Dominican Republic": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Honduras": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Paraguay": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "El Salvador": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Nicaragua": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Costa Rica": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Panama": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Spanish",
+      "unit": "membership"
+    },
+    "Equatorial Guinea": {
+      "value": "Spanish",
+      "unit": "membership"
+    }
+  }
+}

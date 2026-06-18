@@ -1,0 +1,32 @@
+{
+  "title": "Countries Bordering India",
+  "description": "Countries that share a land border with India",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Borders_of_India",
+  "data": {
+    "Pakistan": {
+      "value": "Borders India",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Borders India",
+      "unit": "membership"
+    },
+    "Nepal": {
+      "value": "Borders India",
+      "unit": "membership"
+    },
+    "Bhutan": {
+      "value": "Borders India",
+      "unit": "membership"
+    },
+    "Bangladesh": {
+      "value": "Borders India",
+      "unit": "membership"
+    },
+    "Myanmar": {
+      "value": "Borders India",
+      "unit": "membership"
+    }
+  }
+}

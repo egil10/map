@@ -1,0 +1,32 @@
+{
+  "title": "German as an Official Language",
+  "description": "Countries where German is an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/German_language",
+  "data": {
+    "Germany": {
+      "value": "German",
+      "unit": "membership"
+    },
+    "Austria": {
+      "value": "German",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "German",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "German",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "German",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "German",
+      "unit": "membership"
+    }
+  }
+}

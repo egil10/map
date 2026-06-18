@@ -1,0 +1,108 @@
+{
+  "title": "Countries Using the Euro",
+  "description": "Countries and microstates that use the euro as their official currency",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Euro",
+  "data": {
+    "Austria": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Monaco": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "San Marino": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Vatican": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Andorra": {
+      "value": "Uses euro",
+      "unit": "membership"
+    },
+    "Montenegro": {
+      "value": "Uses euro",
+      "unit": "membership"
+    }
+  }
+}

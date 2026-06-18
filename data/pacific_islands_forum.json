@@ -1,0 +1,72 @@
+{
+  "title": "Pacific Islands Forum",
+  "description": "Members of the Pacific Islands Forum",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Pacific_Islands_Forum",
+  "data": {
+    "Australia": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Cook Islands": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Fiji": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Kiribati": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Marshall Islands": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Federated States of Micronesia": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Nauru": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Palau": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Papua New Guinea": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Samoa": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Solomon Islands": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Tonga": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Tuvalu": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Vanuatu": {
+      "value": "PIF member",
+      "unit": "membership"
+    },
+    "Niue": {
+      "value": "PIF member",
+      "unit": "membership"
+    }
+  }
+}

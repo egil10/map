@@ -1,0 +1,28 @@
+{
+  "title": "Arctic Ocean Coastline",
+  "description": "The five littoral states of the Arctic Ocean",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Arctic_Ocean",
+  "data": {
+    "Canada": {
+      "value": "Arctic Ocean",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Arctic Ocean",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Arctic Ocean",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Arctic Ocean",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Arctic Ocean",
+      "unit": "membership"
+    }
+  }
+}

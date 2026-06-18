@@ -1,0 +1,788 @@
+{
+  "title": "First Day of the Week",
+  "description": "The day considered the first of the week on calendars",
+  "unit": "day",
+  "source": "https://en.wikipedia.org/wiki/Week#Week_numbering",
+  "data": {
+    "Afghanistan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Albania": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Algeria": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Andorra": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Angola": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Antigua and Barbuda": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Argentina": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Armenia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Australia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Austria": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Azerbaijan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "The Bahamas": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bahrain": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bangladesh": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Barbados": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Belarus": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Belgium": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Belize": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Benin": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bhutan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bolivia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Botswana": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Brazil": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Brunei": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Bulgaria": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Burkina Faso": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Burundi": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Cabo Verde": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Cambodia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Cameroon": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Canada": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Central African Republic": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Chad": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Chile": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "China": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Colombia": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Comoros": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Republic of the Congo": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Costa Rica": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ivory Coast": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Croatia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Cuba": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Cyprus": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Czechia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Denmark": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Djibouti": {
+      "value": "Saturday",
+      "unit": "day"
+    },
+    "Dominica": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Dominican Republic": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ecuador": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Egypt": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "El Salvador": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Equatorial Guinea": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Eritrea": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Estonia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "eSwatini": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ethiopia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Fiji": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Finland": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "France": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Gabon": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Gambia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Georgia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Germany": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ghana": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Greece": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Grenada": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Guatemala": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Guinea": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Guinea-Bissau": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Guyana": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Haiti": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Honduras": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Hungary": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Iceland": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "India": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Indonesia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Iran": {
+      "value": "Saturday",
+      "unit": "day"
+    },
+    "Iraq": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ireland": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Israel": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Italy": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Jamaica": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Japan": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Jordan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Kazakhstan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Kenya": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Kiribati": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "North Korea": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "South Korea": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Kuwait": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Kyrgyzstan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Laos": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Latvia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Lebanon": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Lesotho": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Liberia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Libya": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Liechtenstein": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Lithuania": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Luxembourg": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Madagascar": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Malawi": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Malaysia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Maldives": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mali": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Malta": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Marshall Islands": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mauritania": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mauritius": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mexico": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Federated States of Micronesia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Moldova": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Monaco": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mongolia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Montenegro": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Morocco": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Mozambique": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Myanmar": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Namibia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Nauru": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Nepal": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Netherlands": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "New Zealand": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Nicaragua": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Niger": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Nigeria": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "North Macedonia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Norway": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Oman": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Pakistan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Palau": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Panama": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Papua New Guinea": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Paraguay": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Peru": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Philippines": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Poland": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Portugal": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Qatar": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Romania": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Russia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Rwanda": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Saint Lucia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Samoa": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "San Marino": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "São Tomé and Principe": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Saudi Arabia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Senegal": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Republic of Serbia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Seychelles": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Sierra Leone": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Singapore": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Slovakia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Slovenia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Solomon Islands": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Somalia": {
+      "value": "Saturday",
+      "unit": "day"
+    },
+    "South Africa": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "South Sudan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Spain": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Sri Lanka": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Sudan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Suriname": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Sweden": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Switzerland": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Syria": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Tajikistan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "United Republic of Tanzania": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Thailand": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "East Timor": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Togo": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Tonga": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Trinidad and Tobago": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Tunisia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Turkey": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Turkmenistan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Tuvalu": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Uganda": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Ukraine": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "United Arab Emirates": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "United Kingdom": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "United States of America": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Uruguay": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Uzbekistan": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Vanuatu": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Venezuela": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Vietnam": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Yemen": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Zambia": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Zimbabwe": {
+      "value": "Monday",
+      "unit": "day"
+    },
+    "Hong Kong S.A.R.": {
+      "value": "Sunday",
+      "unit": "day"
+    },
+    "Taiwan": {
+      "value": "Sunday",
+      "unit": "day"
+    }
+  }
+}

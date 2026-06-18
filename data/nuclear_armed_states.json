@@ -1,0 +1,44 @@
+{
+  "title": "Nuclear-Armed States",
+  "description": "Countries known or believed to possess nuclear weapons",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons",
+  "data": {
+    "United States of America": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "Pakistan": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "North Korea": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    },
+    "Israel": {
+      "value": "Nuclear-armed",
+      "unit": "membership"
+    }
+  }
+}

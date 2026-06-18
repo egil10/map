@@ -1,0 +1,64 @@
+{
+  "title": "Countries Bordering China",
+  "description": "Countries that share a land border with China",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Borders_of_China",
+  "data": {
+    "Mongolia": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "North Korea": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Vietnam": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Laos": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Myanmar": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "India": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Bhutan": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Nepal": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Pakistan": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Afghanistan": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Tajikistan": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "Borders China",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Borders China",
+      "unit": "membership"
+    }
+  }
+}

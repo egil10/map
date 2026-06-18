@@ -1,0 +1,28 @@
+{
+  "title": "Arab Maghreb Union",
+  "description": "Members of the Arab Maghreb Union",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Arab_Maghreb_Union",
+  "data": {
+    "Algeria": {
+      "value": "Maghreb",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Maghreb",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "Maghreb",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "Maghreb",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "Maghreb",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,780 @@
+{
+  "title": "Decimal Separator",
+  "description": "The symbol used to separate the integer and fractional parts of a number",
+  "unit": "separator",
+  "source": "https://en.wikipedia.org/wiki/Decimal_separator",
+  "data": {
+    "Afghanistan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Albania": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Algeria": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Andorra": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Angola": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Antigua and Barbuda": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Argentina": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Armenia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Australia": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Austria": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Azerbaijan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "The Bahamas": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bahrain": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bangladesh": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Barbados": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Belarus": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Belgium": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Belize": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Benin": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bhutan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bolivia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Botswana": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Brazil": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Brunei": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Bulgaria": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Burkina Faso": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Burundi": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Cabo Verde": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Cambodia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Cameroon": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Canada": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Central African Republic": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Chad": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Chile": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "China": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Colombia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Comoros": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Republic of the Congo": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Costa Rica": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ivory Coast": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Croatia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Cuba": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Cyprus": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Czechia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Denmark": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Djibouti": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Dominica": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Dominican Republic": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ecuador": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Egypt": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "El Salvador": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Equatorial Guinea": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Eritrea": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Estonia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "eSwatini": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ethiopia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Fiji": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Finland": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "France": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Gabon": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Gambia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Georgia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Germany": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ghana": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Greece": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Grenada": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Guatemala": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Guinea": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Guinea-Bissau": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Guyana": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Haiti": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Honduras": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Hungary": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Iceland": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "India": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Indonesia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Iran": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Iraq": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ireland": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Israel": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Italy": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Jamaica": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Japan": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Jordan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Kazakhstan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Kenya": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Kiribati": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "North Korea": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "South Korea": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Kuwait": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Kyrgyzstan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Laos": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Latvia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Lebanon": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Lesotho": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Liberia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Libya": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Liechtenstein": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Lithuania": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Luxembourg": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Madagascar": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Malawi": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Malaysia": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Maldives": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mali": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Malta": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Marshall Islands": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mauritania": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mauritius": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mexico": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Federated States of Micronesia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Moldova": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Monaco": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mongolia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Montenegro": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Morocco": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Mozambique": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Myanmar": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Namibia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Nauru": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Nepal": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Netherlands": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "New Zealand": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Nicaragua": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Niger": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Nigeria": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "North Macedonia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Norway": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Oman": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Pakistan": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Palau": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Panama": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Papua New Guinea": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Paraguay": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Peru": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Philippines": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Poland": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Portugal": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Qatar": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Romania": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Russia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Rwanda": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Saint Lucia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Samoa": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "San Marino": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "São Tomé and Principe": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Saudi Arabia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Senegal": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Republic of Serbia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Seychelles": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Sierra Leone": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Singapore": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Slovakia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Slovenia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Solomon Islands": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Somalia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "South Africa": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "South Sudan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Spain": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Sri Lanka": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Sudan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Suriname": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Sweden": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Switzerland": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Syria": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Tajikistan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "United Republic of Tanzania": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Thailand": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "East Timor": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Togo": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Tonga": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Trinidad and Tobago": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Tunisia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Turkey": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Turkmenistan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Tuvalu": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Uganda": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Ukraine": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "United Arab Emirates": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "United Kingdom": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "United States of America": {
+      "value": "Point (3.14)",
+      "unit": "separator"
+    },
+    "Uruguay": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Uzbekistan": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Vanuatu": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Venezuela": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Vietnam": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Yemen": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Zambia": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    },
+    "Zimbabwe": {
+      "value": "Comma (3,14)",
+      "unit": "separator"
+    }
+  }
+}

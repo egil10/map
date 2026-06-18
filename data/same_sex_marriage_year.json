@@ -1,0 +1,156 @@
+{
+  "title": "Year Same-Sex Marriage Was Legalized",
+  "description": "The year same-sex marriage became legal nationwide",
+  "unit": "year",
+  "source": "https://en.wikipedia.org/wiki/Same-sex_marriage",
+  "data": {
+    "Netherlands": {
+      "value": 2001,
+      "unit": "year"
+    },
+    "Belgium": {
+      "value": 2003,
+      "unit": "year"
+    },
+    "Spain": {
+      "value": 2005,
+      "unit": "year"
+    },
+    "Canada": {
+      "value": 2005,
+      "unit": "year"
+    },
+    "South Africa": {
+      "value": 2006,
+      "unit": "year"
+    },
+    "Norway": {
+      "value": 2009,
+      "unit": "year"
+    },
+    "Sweden": {
+      "value": 2009,
+      "unit": "year"
+    },
+    "Portugal": {
+      "value": 2010,
+      "unit": "year"
+    },
+    "Iceland": {
+      "value": 2010,
+      "unit": "year"
+    },
+    "Argentina": {
+      "value": 2010,
+      "unit": "year"
+    },
+    "Denmark": {
+      "value": 2012,
+      "unit": "year"
+    },
+    "Brazil": {
+      "value": 2013,
+      "unit": "year"
+    },
+    "France": {
+      "value": 2013,
+      "unit": "year"
+    },
+    "Uruguay": {
+      "value": 2013,
+      "unit": "year"
+    },
+    "New Zealand": {
+      "value": 2013,
+      "unit": "year"
+    },
+    "United Kingdom": {
+      "value": 2014,
+      "unit": "year"
+    },
+    "Luxembourg": {
+      "value": 2015,
+      "unit": "year"
+    },
+    "United States of America": {
+      "value": 2015,
+      "unit": "year"
+    },
+    "Ireland": {
+      "value": 2015,
+      "unit": "year"
+    },
+    "Colombia": {
+      "value": 2016,
+      "unit": "year"
+    },
+    "Finland": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "Malta": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "Germany": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "Australia": {
+      "value": 2017,
+      "unit": "year"
+    },
+    "Austria": {
+      "value": 2019,
+      "unit": "year"
+    },
+    "Taiwan": {
+      "value": 2019,
+      "unit": "year"
+    },
+    "Ecuador": {
+      "value": 2019,
+      "unit": "year"
+    },
+    "Costa Rica": {
+      "value": 2020,
+      "unit": "year"
+    },
+    "Switzerland": {
+      "value": 2022,
+      "unit": "year"
+    },
+    "Chile": {
+      "value": 2022,
+      "unit": "year"
+    },
+    "Slovenia": {
+      "value": 2022,
+      "unit": "year"
+    },
+    "Cuba": {
+      "value": 2022,
+      "unit": "year"
+    },
+    "Andorra": {
+      "value": 2023,
+      "unit": "year"
+    },
+    "Estonia": {
+      "value": 2024,
+      "unit": "year"
+    },
+    "Greece": {
+      "value": 2024,
+      "unit": "year"
+    },
+    "Liechtenstein": {
+      "value": 2024,
+      "unit": "year"
+    },
+    "Thailand": {
+      "value": 2025,
+      "unit": "year"
+    }
+  }
+}

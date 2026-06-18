@@ -1,0 +1,40 @@
+{
+  "title": "Countries Using the US Dollar",
+  "description": "Countries that use the US dollar as official legal tender",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/United_States_dollar",
+  "data": {
+    "United States of America": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "El Salvador": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "Panama": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "East Timor": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "Marshall Islands": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "Federated States of Micronesia": {
+      "value": "Uses USD",
+      "unit": "membership"
+    },
+    "Palau": {
+      "value": "Uses USD",
+      "unit": "membership"
+    }
+  }
+}

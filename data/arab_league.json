@@ -1,0 +1,96 @@
+{
+  "title": "Arab League Members",
+  "description": "The 22 member states of the Arab League",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Arab_League",
+  "data": {
+    "Algeria": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Bahrain": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Comoros": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Djibouti": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Egypt": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Iraq": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Jordan": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Kuwait": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Lebanon": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Libya": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Mauritania": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Morocco": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Oman": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Palestine": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Qatar": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Somalia": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Syria": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Tunisia": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "United Arab Emirates": {
+      "value": "Arab League",
+      "unit": "membership"
+    },
+    "Yemen": {
+      "value": "Arab League",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Red Sea Coastline",
+  "description": "Countries with a coastline on the Red Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Red_Sea",
+  "data": {
+    "Egypt": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Sudan": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Eritrea": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Djibouti": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Saudi Arabia": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Yemen": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Israel": {
+      "value": "Red Sea",
+      "unit": "membership"
+    },
+    "Jordan": {
+      "value": "Red Sea",
+      "unit": "membership"
+    }
+  }
+}

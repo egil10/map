@@ -1,0 +1,20 @@
+{
+  "title": "Benelux",
+  "description": "The Benelux political-economic union",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Benelux",
+  "data": {
+    "Belgium": {
+      "value": "Benelux",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Benelux",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Benelux",
+      "unit": "membership"
+    }
+  }
+}

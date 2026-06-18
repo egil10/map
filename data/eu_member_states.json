@@ -1,0 +1,116 @@
+{
+  "title": "European Union Member States",
+  "description": "The 27 member states of the European Union",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Member_state_of_the_European_Union",
+  "data": {
+    "Austria": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "EU member",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "EU member",
+      "unit": "membership"
+    }
+  }
+}

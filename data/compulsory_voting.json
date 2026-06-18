@@ -1,0 +1,52 @@
+{
+  "title": "Countries with Compulsory Voting",
+  "description": "Countries where voting in elections is legally required",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Compulsory_voting",
+  "data": {
+    "Australia": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Brazil": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Argentina": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Ecuador": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Peru": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Uruguay": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Bolivia": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Singapore": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    },
+    "Nauru": {
+      "value": "Compulsory voting",
+      "unit": "membership"
+    }
+  }
+}

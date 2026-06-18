@@ -1,0 +1,60 @@
+{
+  "title": "Winter Olympics Host Nations",
+  "description": "Countries that have hosted the Winter Olympic Games",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Winter_Olympic_Games",
+  "data": {
+    "France": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "United States of America": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Austria": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Japan": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "South Korea": {
+      "value": "Host",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Host",
+      "unit": "membership"
+    }
+  }
+}

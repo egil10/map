@@ -1,0 +1,44 @@
+{
+  "title": "Countries Bordering Germany",
+  "description": "Countries that share a land border with Germany",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Geography_of_Germany",
+  "data": {
+    "Denmark": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Austria": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Borders Germany",
+      "unit": "membership"
+    }
+  }
+}

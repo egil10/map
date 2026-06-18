@@ -1,0 +1,28 @@
+{
+  "title": "Nordic Countries",
+  "description": "The five Nordic countries",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Nordic_countries",
+  "data": {
+    "Denmark": {
+      "value": "Nordic",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Nordic",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "Nordic",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Nordic",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "Nordic",
+      "unit": "membership"
+    }
+  }
+}

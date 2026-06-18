@@ -1,0 +1,780 @@
+{
+  "title": "Measurement System",
+  "description": "The primary system of measurement used officially",
+  "unit": "system",
+  "source": "https://en.wikipedia.org/wiki/Metrication",
+  "data": {
+    "Afghanistan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Albania": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Algeria": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Andorra": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Angola": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Antigua and Barbuda": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Argentina": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Armenia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Australia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Austria": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Azerbaijan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "The Bahamas": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bahrain": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bangladesh": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Barbados": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Belarus": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Belgium": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Belize": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Benin": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bhutan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bolivia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bosnia and Herzegovina": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Botswana": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Brazil": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Brunei": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Bulgaria": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Burkina Faso": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Burundi": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Cabo Verde": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Cambodia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Cameroon": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Canada": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Central African Republic": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Chad": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Chile": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "China": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Colombia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Comoros": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Republic of the Congo": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Democratic Republic of the Congo": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Costa Rica": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ivory Coast": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Croatia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Cuba": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Cyprus": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Czechia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Denmark": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Djibouti": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Dominica": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Dominican Republic": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ecuador": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Egypt": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "El Salvador": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Equatorial Guinea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Eritrea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Estonia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "eSwatini": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ethiopia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Fiji": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Finland": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "France": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Gabon": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Gambia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Georgia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Germany": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ghana": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Greece": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Grenada": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Guatemala": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Guinea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Guinea-Bissau": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Guyana": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Haiti": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Honduras": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Hungary": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Iceland": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "India": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Indonesia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Iran": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Iraq": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ireland": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Israel": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Italy": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Jamaica": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Japan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Jordan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Kazakhstan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Kenya": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Kiribati": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "North Korea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "South Korea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Kuwait": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Kyrgyzstan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Laos": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Latvia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Lebanon": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Lesotho": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Liberia": {
+      "value": "Imperial / US customary",
+      "unit": "system"
+    },
+    "Libya": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Liechtenstein": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Lithuania": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Luxembourg": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Madagascar": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Malawi": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Malaysia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Maldives": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mali": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Malta": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Marshall Islands": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mauritania": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mauritius": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mexico": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Federated States of Micronesia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Moldova": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Monaco": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mongolia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Montenegro": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Morocco": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Mozambique": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Myanmar": {
+      "value": "Imperial / US customary",
+      "unit": "system"
+    },
+    "Namibia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Nauru": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Nepal": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Netherlands": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "New Zealand": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Nicaragua": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Niger": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Nigeria": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "North Macedonia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Norway": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Oman": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Pakistan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Palau": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Panama": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Papua New Guinea": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Paraguay": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Peru": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Philippines": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Poland": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Portugal": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Qatar": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Romania": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Russia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Rwanda": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Saint Lucia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Samoa": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "San Marino": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "São Tomé and Principe": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Saudi Arabia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Senegal": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Republic of Serbia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Seychelles": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Sierra Leone": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Singapore": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Slovakia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Slovenia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Solomon Islands": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Somalia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "South Africa": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "South Sudan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Spain": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Sri Lanka": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Sudan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Suriname": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Sweden": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Switzerland": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Syria": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Tajikistan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "United Republic of Tanzania": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Thailand": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "East Timor": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Togo": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Tonga": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Trinidad and Tobago": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Tunisia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Turkey": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Turkmenistan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Tuvalu": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Uganda": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Ukraine": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "United Arab Emirates": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "United Kingdom": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "United States of America": {
+      "value": "Imperial / US customary",
+      "unit": "system"
+    },
+    "Uruguay": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Uzbekistan": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Vanuatu": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Venezuela": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Vietnam": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Yemen": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Zambia": {
+      "value": "Metric",
+      "unit": "system"
+    },
+    "Zimbabwe": {
+      "value": "Metric",
+      "unit": "system"
+    }
+  }
+}

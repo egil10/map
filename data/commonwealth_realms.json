@@ -1,0 +1,68 @@
+{
+  "title": "Commonwealth Realms",
+  "description": "Countries with King Charles III as head of state",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Commonwealth_realm",
+  "data": {
+    "Antigua and Barbuda": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Australia": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "The Bahamas": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Belize": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Canada": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Grenada": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Jamaica": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "New Zealand": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Papua New Guinea": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Saint Kitts and Nevis": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Saint Lucia": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Saint Vincent and the Grenadines": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Solomon Islands": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "Tuvalu": {
+      "value": "Realm",
+      "unit": "membership"
+    },
+    "United Kingdom": {
+      "value": "Realm",
+      "unit": "membership"
+    }
+  }
+}

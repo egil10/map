@@ -1,0 +1,88 @@
+{
+  "title": "Eurozone Members",
+  "description": "Countries that use the euro and are part of the eurozone",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Eurozone",
+  "data": {
+    "Austria": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Cyprus": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Ireland": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "Eurozone",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Eurozone",
+      "unit": "membership"
+    }
+  }
+}

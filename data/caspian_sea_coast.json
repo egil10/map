@@ -1,0 +1,28 @@
+{
+  "title": "Caspian Sea Coastline",
+  "description": "Countries bordering the Caspian Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Caspian_Sea",
+  "data": {
+    "Russia": {
+      "value": "Caspian Sea",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Caspian Sea",
+      "unit": "membership"
+    },
+    "Turkmenistan": {
+      "value": "Caspian Sea",
+      "unit": "membership"
+    },
+    "Iran": {
+      "value": "Caspian Sea",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "Caspian Sea",
+      "unit": "membership"
+    }
+  }
+}

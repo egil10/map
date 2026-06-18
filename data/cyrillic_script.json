@@ -1,0 +1,52 @@
+{
+  "title": "Countries Using the Cyrillic Script",
+  "description": "Countries that use the Cyrillic alphabet for an official language",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Cyrillic_script",
+  "data": {
+    "Russia": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Republic of Serbia": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "North Macedonia": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Montenegro": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Kyrgyzstan": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Tajikistan": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    },
+    "Mongolia": {
+      "value": "Cyrillic",
+      "unit": "membership"
+    }
+  }
+}

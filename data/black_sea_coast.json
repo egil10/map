@@ -1,0 +1,32 @@
+{
+  "title": "Black Sea Coastline",
+  "description": "Countries with a coastline on the Black Sea",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Black_Sea",
+  "data": {
+    "Turkey": {
+      "value": "Black Sea",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "Black Sea",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "Black Sea",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Black Sea",
+      "unit": "membership"
+    },
+    "Russia": {
+      "value": "Black Sea",
+      "unit": "membership"
+    },
+    "Georgia": {
+      "value": "Black Sea",
+      "unit": "membership"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Countries Bordering Russia",
+  "description": "Countries that share a land border with Russia",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Borders_of_Russia",
+  "data": {
+    "Norway": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Belarus": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Ukraine": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Georgia": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Azerbaijan": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Kazakhstan": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "China": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "Mongolia": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    },
+    "North Korea": {
+      "value": "Borders Russia",
+      "unit": "membership"
+    }
+  }
+}

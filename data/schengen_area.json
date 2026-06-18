@@ -1,0 +1,124 @@
+{
+  "title": "Schengen Area",
+  "description": "Countries in the Schengen passport-free travel area",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/Schengen_Area",
+  "data": {
+    "Austria": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Belgium": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Bulgaria": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Croatia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Czechia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Denmark": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Estonia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Finland": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "France": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Germany": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Greece": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Hungary": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Iceland": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Italy": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Latvia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Lithuania": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Luxembourg": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Malta": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Netherlands": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Poland": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Portugal": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Romania": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Slovakia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Slovenia": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Spain": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Sweden": {
+      "value": "Schengen",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "Schengen",
+      "unit": "membership"
+    }
+  }
+}

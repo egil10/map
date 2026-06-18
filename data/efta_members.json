@@ -1,0 +1,24 @@
+{
+  "title": "EFTA Members",
+  "description": "Members of the European Free Trade Association",
+  "unit": "membership",
+  "source": "https://en.wikipedia.org/wiki/European_Free_Trade_Association",
+  "data": {
+    "Iceland": {
+      "value": "EFTA member",
+      "unit": "membership"
+    },
+    "Liechtenstein": {
+      "value": "EFTA member",
+      "unit": "membership"
+    },
+    "Norway": {
+      "value": "EFTA member",
+      "unit": "membership"
+    },
+    "Switzerland": {
+      "value": "EFTA member",
+      "unit": "membership"
+    }
+  }
+}
