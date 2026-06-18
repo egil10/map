@@ -1252,14 +1252,26 @@ class QuizGame {
     }
 
     formatValue(value) {
-        if (value >= 1000000) {
-            return (value / 1000000).toFixed(1) + 'M';
-        } else if (value >= 1000) {
-            return (value / 1000).toFixed(1) + 'K';
-        } else if (value >= 1) {
-            return value.toFixed(0);
+        if (value === null || value === undefined) {
+            return '—';
+        }
+        if (typeof value === 'string') {
+            return value;
+        }
+
+        const num = typeof value === 'number' ? value : parseFloat(value);
+        if (isNaN(num)) {
+            return String(value);
+        }
+
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(1) + 'M';
+        } else if (num >= 1000) {
+            return (num / 1000).toFixed(1) + 'K';
+        } else if (num >= 1) {
+            return num.toFixed(0);
         } else {
-            return value.toFixed(2);
+            return num.toFixed(2);
         }
     }
 

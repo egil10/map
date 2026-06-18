@@ -348,6 +348,7 @@ class WorldMap {
          this.popupTimeout = null; // Track popup timeout
          this.rankingsSortAscending = false; // Rankings sort direction (false = high to low, true = low to high)
          this.allCountriesData = null; // Store all countries data for sorting
+         this.pendingQuizConfig = null; // Quiz to apply once GeoJSON layer is ready
          
          this.init();
      }
@@ -401,21 +402,6 @@ class WorldMap {
         
         // Load countries data
         this.loadCountriesData();
-        
-        // Lazy load quiz data after map is ready
-        this.map.on('load', () => {
-            console.log('🗺️ Map tiles loaded successfully');
-            // Use requestIdleCallback for better performance, fallback to setTimeout
-            if (window.requestIdleCallback) {
-                requestIdleCallback(() => {
-                    this.notifyQuizDataReady();
-                }, { timeout: 1000 });
-            } else {
-                setTimeout(() => {
-                    this.notifyQuizDataReady();
-                }, 100);
-            }
-        });
         
         // Make map instance globally available
         window.mapInstance = this;
@@ -891,6 +877,17 @@ class WorldMap {
                 console.log('🗺️ Map invalidated after countries layer creation');
             }
         }, 100);
+
+        this.flushPendingQuizConfig();
+        this.notifyQuizDataReady();
+    }
+
+    flushPendingQuizConfig() {
+        if (!this.pendingQuizConfig || !this.countriesData?.features || !this.countriesLayer) {
+            return;
+        }
+        const { quiz, gameMode } = this.pendingQuizConfig;
+        this._applyQuizConfigurationNow(quiz, gameMode);
     }
     
     getCountryStyle(feature) {
@@ -927,6 +924,17 @@ class WorldMap {
     }
     
     applyQuizConfiguration(quiz, gameMode = 'play') {
+        this.pendingQuizConfig = { quiz, gameMode };
+
+        if (!this.countriesData?.features || !this.countriesLayer) {
+            console.log('⏳ Map not ready yet, queuing quiz configuration:', quiz.title);
+            return;
+        }
+
+        this._applyQuizConfigurationNow(quiz, gameMode);
+    }
+
+    _applyQuizConfigurationNow(quiz, gameMode = 'play') {
         this.currentQuiz = quiz;
         this.currentGameMode = gameMode;
         
@@ -1570,12 +1578,26 @@ class WorldMap {
     }
     
     formatValue(value, unit) {
-        if (value >= 1000000) {
-            return (value / 1000000).toFixed(1) + 'M';
-        } else if (value >= 1000) {
-            return (value / 1000).toFixed(1) + 'K';
+        if (value === null || value === undefined) {
+            return '—';
+        }
+        if (typeof value === 'string') {
+            return value;
+        }
+
+        const num = typeof value === 'number' ? value : parseFloat(value);
+        if (isNaN(num)) {
+            return String(value);
+        }
+
+        if (num >= 1000000) {
+            return (num / 1000000).toFixed(1) + 'M';
+        } else if (num >= 1000) {
+            return (num / 1000).toFixed(1) + 'K';
+        } else if (Number.isInteger(num)) {
+            return String(num);
         } else {
-            return value.toFixed(1);
+            return num.toFixed(1);
         }
     }
  }
