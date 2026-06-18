@@ -324,13 +324,15 @@ function resolveToGeoName(name, geoNames) {
 
 // Throttle function for performance optimization
 function throttle(fn, wait = 50) {
-    let timeout;
+    // Leading-edge: run immediately, then suppress for `wait` ms. This avoids a
+    // deferred call firing after a mouseout (which would re-open a hover popup
+    // with no matching mouseout to close it, leaving the annotation stuck).
+    let last = 0;
     return (...args) => {
-        if (timeout) return;
-        timeout = setTimeout(() => {
-            fn(...args);
-            timeout = null;
-        }, wait);
+        const now = Date.now();
+        if (now - last < wait) return;
+        last = now;
+        fn(...args);
     };
 }
 
