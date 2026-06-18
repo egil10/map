@@ -795,7 +795,7 @@ class WorldMap {
              
              // Close any existing hover popup
              if (this.currentHoverPopup) {
-                 this.currentHoverPopup.closePopup();
+                 this.map.closePopup(this.currentHoverPopup);
                  this.currentHoverPopup = null;
              }
              
@@ -838,6 +838,12 @@ class WorldMap {
             
             // Hide standardized tooltip
             this.hideCountryTooltip();
+
+             // Close any open hover popup so annotations don't linger
+             if (this.currentHoverPopup) {
+                 this.map.closePopup(this.currentHoverPopup);
+                 this.currentHoverPopup = null;
+             }
              
              // Explicitly reset to original quiz style
              const originalStyle = this.getCountryStyle(layer.feature);
