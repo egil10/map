@@ -585,6 +585,7 @@ class QuizGame {
             answer_variations: answerVariations,
             source: data.source || null,
             colorScheme: colorScheme,
+            unit: data.unit || Object.values(validCountriesObj)[0]?.unit || '',
             countries: validCountriesObj
         };
     }
@@ -706,6 +707,7 @@ class QuizGame {
         this.lastGuess = null;
         this.lastCorrectAnswer = null;
         this.resetProgressBar();
+        this.removeCompletionScreen();
     }
 
     startLearnMode() {
@@ -722,6 +724,8 @@ class QuizGame {
         console.log(`🎯 Starting new quiz in ${this.gameMode} mode`);
         console.log(`🎯 Available datasets: ${this.datasetList.length}`);
         console.log(`🎯 Is ready: ${this.isReady}`);
+        
+        this.removeCompletionScreen();
         
         // If not ready yet, wait for initialization to complete
         if (!this.isReady) {
@@ -1241,17 +1245,18 @@ class QuizGame {
                     const q3Value = sortedValues[q3Index];
                     
                     // Update labels with actual values
-                    if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue);
-                    if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value);
-                    if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue);
-                    if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value);
-                    if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue);
+                    const unit = this.currentQuiz.unit || '';
+                    if (colorBarMin) colorBarMin.textContent = this.formatValue(minValue, unit);
+                    if (colorBarQ1) colorBarQ1.textContent = this.formatValue(q1Value, unit);
+                    if (colorBarMid) colorBarMid.textContent = this.formatValue(midValue, unit);
+                    if (colorBarQ3) colorBarQ3.textContent = this.formatValue(q3Value, unit);
+                    if (colorBarMax) colorBarMax.textContent = this.formatValue(maxValue, unit);
                 }
             }
         }
     }
 
-    formatValue(value) {
+    formatValue(value, unit) {
         if (value === null || value === undefined) {
             return '—';
         }
@@ -1264,15 +1269,25 @@ class QuizGame {
             return String(value);
         }
 
+        let formatted = '';
         if (num >= 1000000) {
-            return (num / 1000000).toFixed(1) + 'M';
+            formatted = (num / 1000000).toFixed(1) + 'M';
         } else if (num >= 1000) {
-            return (num / 1000).toFixed(1) + 'K';
+            formatted = (num / 1000).toFixed(1) + 'K';
         } else if (num >= 1) {
-            return num.toFixed(0);
+            formatted = num.toFixed(0);
         } else {
-            return num.toFixed(2);
+            formatted = num.toFixed(2);
         }
+
+        if (unit) {
+            const trimmedUnit = unit.trim();
+            if (trimmedUnit === '%' || trimmedUnit.toLowerCase() === 'percent') {
+                return formatted + '%';
+            }
+            return formatted + ' ' + trimmedUnit;
+        }
+        return formatted;
     }
 
     resetProgressBar() {
@@ -1509,19 +1524,11 @@ class QuizGame {
         this.startNewQuiz();
     }
 
-    clearCountrySelection() {
-        console.log('Clearing country selection...');
-        if (window.mapInstance && window.mapInstance.map) {
-            // Clear any selected countries on the map
-            window.mapInstance.map.eachLayer(layer => {
-                if (layer.setStyle) {
-                    layer.setStyle({
-                        weight: 1,
-                        color: '#cccccc'
-                    });
-                }
-            });
-        }
+    removeCompletionScreen() {
+        const existingCompletion = document.querySelector('.completion-screen');
+        const existingBackdrop = document.querySelector('.completion-backdrop');
+        if (existingCompletion) existingCompletion.remove();
+        if (existingBackdrop) existingBackdrop.remove();
     }
 
     openDatasetBrowser() {

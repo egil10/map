@@ -519,11 +519,11 @@ class WorldMap {
                 .slice(0, 20);
             console.log('Sample of all GeoJSON country names:', allCountryNames);
             
-            // Create the countries layer
-            this.createCountriesLayer();
-            
             // Ensure microstates and islands are included
             this.ensureMicrostatesIncluded();
+
+            // Create the countries layer
+            this.createCountriesLayer();
         } catch (error) {
             console.error('Error loading countries data:', error);
             // Final fallback: create a simple world outline
@@ -816,7 +816,7 @@ class WorldMap {
 
                 // Also show Leaflet tooltip with country name and value (no unit)
                 if (countryData && countryData.value !== undefined) {
-                    const formattedValue = this.formatValue(countryData.value, '');
+                    const formattedValue = this.formatValue(countryData.value, countryData.unit);
                     const tooltipContent = `<strong>${hoverName}</strong><br/>${formattedValue}`;
                     
                     this.currentHoverPopup = L.popup({
@@ -1484,8 +1484,8 @@ class WorldMap {
     
     selectCountry(layer, feature) {
         // Clear previous selection
-        if (this.selectedCountry) {
-            this.countriesLayer.resetStyle();
+        if (this.selectedLayer) {
+            this.countriesLayer.resetStyle(this.selectedLayer);
         }
         
         // Highlight selected country
@@ -1497,6 +1497,7 @@ class WorldMap {
         });
         
         this.selectedCountry = feature.properties.name;
+        this.selectedLayer = layer;
         
         // Get country quiz data if available
         let countryQuizData = null;
@@ -1513,6 +1514,14 @@ class WorldMap {
         // For now, we'll just log it
         if (countryData) {
             console.log(`${countryName}: ${this.formatValue(countryData.value, countryData.unit)}`);
+        }
+    }
+    
+    clearSelection() {
+        if (this.selectedLayer) {
+            this.countriesLayer.resetStyle(this.selectedLayer);
+            this.selectedLayer = null;
+            this.selectedCountry = null;
         }
     }
     
@@ -1590,15 +1599,25 @@ class WorldMap {
             return String(value);
         }
 
+        let formatted = '';
         if (num >= 1000000) {
-            return (num / 1000000).toFixed(1) + 'M';
+            formatted = (num / 1000000).toFixed(1) + 'M';
         } else if (num >= 1000) {
-            return (num / 1000).toFixed(1) + 'K';
+            formatted = (num / 1000).toFixed(1) + 'K';
         } else if (Number.isInteger(num)) {
-            return String(num);
+            formatted = String(num);
         } else {
-            return num.toFixed(1);
+            formatted = num.toFixed(1);
         }
+
+        if (unit) {
+            const trimmedUnit = unit.trim();
+            if (trimmedUnit === '%' || trimmedUnit.toLowerCase() === 'percent') {
+                return formatted + '%';
+            }
+            return formatted + ' ' + trimmedUnit;
+        }
+        return formatted;
     }
  }
 
